@@ -1,3 +1,3 @@
-# andrew-jones657.github.io
+# Andrew Jones
 
 <p> Welcome to my website. </p>
