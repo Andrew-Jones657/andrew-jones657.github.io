@@ -1,5 +1,5 @@
 layout: page
-title: About me
+title: "About me"
 permalink: https://andrew-jones657.github.io/about
 
 <div>
