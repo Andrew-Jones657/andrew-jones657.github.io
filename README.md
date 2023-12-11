@@ -6,7 +6,7 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     
-<p><a href="./Blog.html"> Link to my blog </a>.</p> 
+<p><a href="./Blog"> Link to my blog </a>.</p> 
 
 <h1> About me </h1>
 
