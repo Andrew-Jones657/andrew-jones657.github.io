@@ -9,8 +9,6 @@
 
  <body>
 
-<p><a href="./Blog"> Link to my blog </a>.</p> 
-
 <h1> About me </h1>
 
 <p> Welcome to my website. I am a geospatial professional. </p> <br>
