@@ -1,4 +1,3 @@
 theme: jekyll-theme-slate
 title: Andrew Jones
-description: Welcome to my website <br>
-<p><a href="./Blog"> Blog </a> <a href="./Projects"> </a> <a href="CV/Resume"> </a> </p> 
+description: <p><a href="./Blog"> Blog </a> <a href="./Projects"> </a> <a href="CV/Resume"> </a> </p> 
