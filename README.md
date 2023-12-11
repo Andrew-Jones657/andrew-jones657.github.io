@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en-US">
 
   <head>
@@ -10,15 +9,6 @@
 
  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-
-          <h1 id="project_title"> Andrew Jones </h1>
-          <h2 id="project_tagline"> Welcome to my website </h2>
-          
-        </header>
-    </div>
 <p><a href="./Blog"> Link to my blog </a>.</p> 
 
 <h1> About me </h1>
