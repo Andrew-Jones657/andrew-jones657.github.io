@@ -11,6 +11,9 @@
 
 <h1> About me </h1>
 
+<a href="https://imgur.com/eKZqX44"><img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" /></a>
+
+
 <p> Welcome to my website. I am a geospatial professional. </p> <br>
 
 <p> My educational background is in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University in 2020 with Bachelor's degrees in Human Geography and German, as well as minors in mathematics and GIS. </p> <br>
