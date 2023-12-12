@@ -11,7 +11,7 @@
 
 <h1> About me </h1>
 
-<a href="https://imgur.com/eKZqX44"><img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/eKZqX44"><img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="100" height="48"/></a>
 
 
 <p> Welcome to my website. I am a geospatial professional. </p> <br>
