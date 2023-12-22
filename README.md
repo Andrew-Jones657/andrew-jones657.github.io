@@ -18,7 +18,11 @@
 
 <p> My educational background is in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University in 2020 with Bachelor's degrees in Human Geography and German, as well as minors in mathematics and GIS. </p> <br>
 
-<p> Outside of work, I enjoy walking, cycling, hiking, traveling, camping, photography, and spending time with my friends and family. </p>
+<p> Outside of work, I enjoy walking, cycling, hiking, traveling, camping, photography, and spending time with my friends and family. </p> <br>
+
+<p> Check out some photos of places I have visited in this web map below. I have a rather large backlog, so more locations and photos will be added over time. </p> <br>
+
+<p> WIP </p>
 
 
 </body>
