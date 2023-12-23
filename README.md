@@ -20,7 +20,7 @@
 
 <p> Outside of work, I enjoy walking, cycling, hiking, traveling, camping, photography, and spending time with my friends and family. </p> <br>
 
-<p> Check out some photos of places I have visited in this web map below. I have a rather large backlog, so more locations and photos will be added over time. </p> <br>
+<p> Below is a web map displaying some photos from my travels -- feel free to take a look. I will be adding more over time as I have a fairly large backlog. </p> <br>
 
 <p> WIP </p>
 
