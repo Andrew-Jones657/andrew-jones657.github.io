@@ -39,7 +39,7 @@
 <div id="map" style="width: 800px; height: 600px;">
 
 <script>
-  
+<script src= "Travel_Map.js"></script>
 </script>
 
 </body>
