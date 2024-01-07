@@ -34,7 +34,7 @@
 
 <p> Feel free to have a look at some photos from my travels -- I will gradually update this with more photos. </p> <br>
 
-<div id="map" style="width: 650px; height: 500px;">
+<div id="map" style="width: 625px; height: 450px;">
 
 <script src= "Travel_Map.js"></script>
 
