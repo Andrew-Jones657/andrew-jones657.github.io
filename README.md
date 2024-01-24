@@ -17,6 +17,8 @@
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 
+<p> <a href="https://andrew-jones657.github.io/"> Home </a>   <a href="./_posts"> Blog </a>   <a href="./Projects"> Projects </a>   <a href="./CV-Resume"> CV-Resume </a> </p> 
+
 </head>
 
 <body>
