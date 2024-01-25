@@ -8,3 +8,5 @@ My intention for this blog is to blend personal life events with some (arguably)
 
 <p2> 12/12/2023 </p2> 
 
+
+{% post_url /_posts/2023-12-12-Starting-Up %}
