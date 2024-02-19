@@ -1,12 +1,7 @@
 <main>
 
-<h1> Starting up </h1>
+<h1> Welcome to my blog! </h1>
 
-<p1> Greetings and welcome to the start of a new blog. While I am in the process of wrangling this site's backbones together, I am hoping that it will provide a suitable venue for 
-exploring creative and interesting geospatial ideas. My intention for this blog is to blend personal life events with some (arguably) clever uses of geospatial applications. Do read on! <br> </p1>
-
-<p2> 12/12/2023 </p2>
-
-
-
+<p> <a href="_posts/2023-12-12-Starting-Up.md"> Starting Up 12/12/2023 </a> </p>
+  
 </main>
