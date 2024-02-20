@@ -11,7 +11,7 @@
 
 <h1> Welcome to my blog! </h1>
 
-<p> <a href="https://andrew-jones657.github.io/_posts/2023-12-12-Starting-Up.md"> Starting Up 12/12/2023 </a> </p>
+<p> <a href="https://andrew-jones657.github.io/_webpages/_blog_posts/2023-12-12-Starting-Up.md"> Starting Up 12/12/2023 </a> </p>
   
 </main>
 </html>
