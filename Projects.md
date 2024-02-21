@@ -13,6 +13,8 @@
 <body>
 
 <h1> Welcome to my projects page </h1>
+
+<p1> This page is currently under development, but I intend on adding a variety of academic and work projects. </p1>
   
 </body>
 </html>
