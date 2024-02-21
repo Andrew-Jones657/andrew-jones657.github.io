@@ -36,7 +36,7 @@
 
 <div id="map" style="width: 625px; height: 450px;">
 
-<script src= "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/_files/_travelmap/Travel_Map.js" ></script>
+<script src= "./_files/_travelmap/Travel_Map.js" ></script>
 
 </body>
 </html>
