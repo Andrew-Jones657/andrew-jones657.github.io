@@ -36,7 +36,7 @@
 
 <div id="map" style="width: 625px; height: 450px;">
 
-<script src= "./_files/_travelmap/Travel_Map.js" ></script>
+<script src= "./_files/_travelmap/Travel_Map" ></script>
 
 </body>
 </html>
