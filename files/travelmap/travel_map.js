@@ -11,7 +11,7 @@
 	map.addControl(new L.Control.Fullscreen());
 
 	// the url for the geojson file
-	const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/_files/_travelmap/Travel_22_23.geojson";
+	const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/travelmap/travel22_23.geojson";
 	
 	// Create popups and bind the Name and Url fields from the geojson file to the popups
 	function onEachFeature(feature, layer) {
