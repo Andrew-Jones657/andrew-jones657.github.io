@@ -10,12 +10,7 @@
 </head> 
 
 <body>
-  
-<h1> Congressional Redistricting in Missouri in 2022 </h1>
 
-<p1> During the 2022 congressional redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this nonpartisan position, I assisted in drafting representatives’ ideas for congressional districts.   </p1> <br>
-
-<p2> There is a lot of misinformation about how congressional redistricting works, so I want to discuss it as well as some of the history behind the process in Missouri (at least since the 2002 cycle).  I will not delve into any personal details or use specific names in this article: this is merely a chronological look at congressional redistricting in Missouri from someone who has worked on it. I am also not going to provide any kind of critical evaluation on any map. Finally, I am not a legal professional, and this narrative does not serve as legal advice, consultation, or any form of legal interpretation.  </p2> <br>
 
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislators and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br>
 
