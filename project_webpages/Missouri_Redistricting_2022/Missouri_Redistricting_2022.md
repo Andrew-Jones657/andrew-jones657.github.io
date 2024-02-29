@@ -70,6 +70,79 @@
          </ul>
       </td>
   </tr>
+  <tr>
+     <td> Criteria </td>
+     <td> Communities of Interest </td>
+     <td> 
+        <ul>
+        <li> A term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. </li>
+        <li> Many factors can constitute a community of interest: this can be helpful in that it describes so many qualitative aspects of the underlying population that cannot be observed in census data alone.  </li>
+        <li> However, district numbers are fixed and require a certain population, so it is not always possible to preserve every possible community of interest. </li>
+        </ul>
+     </td>
+  </tr>
+  <tr>
+     <td> Criteria </td>
+     <td> Boundary Preservation </td>
+     <td> 
+        <ul> 
+        <li> Districts should follow natural and human boundaries such as rivers, municipality lines, country borders, roads, etc. </li>    
+        <li> Generally, districts with preserved boundaries appear less arbitrarily drawn and are more easily understood by the public. </li>    
+        </ul>
+     </td>
+  </tr>
+  <tr>
+     <td> Criteria </td>
+     <td> Cultural and Physical Geography</td>
+     <td>
+        <ul>
+        <li> Cultural and physical geography often play into creating congressional districts where inhabitants have a shared lifestyle/area that they live in.  </li>
+        <li> Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. </li>    
+        <li> Such districts are often based on shared history between inhabitants, linking back to Communities of Interest. </li>     
+        </ul>
+     </td>
+  </tr>
+  <tr> 
+     <td> Criteria </td>
+     <td> Minimize Splitting </td>
+     <td> 
+        <ul>
+        <li> A straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. </li>
+        <li> Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections. </li>    
+        </ul>     
+     </td>
+  </tr>
+  <tr>
+     <td> Criteria </td>
+     <td> Preserving District Cores </td>
+     <td>
+        <ul>
+        <li> Preserving district cores means keeping the bulk of the population within the same district during redistricting.  </li>   
+        <li> This is typically a method incorporated in least-change maps. </li>
+        </ul>        
+     </td> 
+  </tr>
+  <tr>
+    <td> Criteria </td>
+    <td> Safe Districts </td>
+    <td>
+       <ul>
+       <li>  This refers to drawing districts that have a strong partisan lean.  </li>  
+       <li>  Districts are drawn as such to keep congressional election results consistent. </li>    
+       </ul>   
+    </td>
+  </tr>
+  <tr> 
+     <td> Criteria </td>
+     <td> Competitive/Proportional Districts </td>
+     <td> 
+        <ul>
+        <li> Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible.  </li>
+        <li> Proportional districts are districts drawn to reflect the margins of statewide elections. </li>    
+        </ul>
+     </td> 
+  </tr>
 </table>
 
+<p20> This article still a work in progress! </p20>
 </body>
