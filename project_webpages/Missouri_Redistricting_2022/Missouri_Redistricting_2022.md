@@ -25,4 +25,51 @@
 
 <p6> Many requirements and criteria apply when drawing a congressional district – attempting to work in even a few of the following factors becomes complex. This is not intended to be a deeply extensive list, but simply a glimpse at what all may be considered in drawing congressional districts.  </p6> <br>
 
+
+
+<table>
+  <tr>
+      <td> Requirement </td>
+      <td> Population </td>
+      <td> 
+          <ul> 
+          <li> Congressional districts must be drawn down to the person, with population deviations as minimal as practicable. </li> 
+          <li> Some states may have constitutional rules that allow for some flexibility on this (such as preventing splitting counties), but, in general, congressional districts are permitted far smaller   population deviations than other types of political districts. </li>
+          </ul>  
+      </td>
+  </tr>
+  <tr>
+      <td> Requirement </td>
+      <td> Contiguity </td>
+      <td>  
+          <ul>
+          <li> Congressional districts must also be contiguous, meaning that districts are one geographic unit without separate portions surrounded by another district.  </li>
+          <li> At the highest geographic scale, this means that all the census blocks within a district are connected by at least one edge (not vertex).  </li>
+          </ul>
+      </td>
+  </tr>
+  <tr>
+     <td> Requirement</td>
+     <td> Voting Rights Act</td>
+     <td> Minority groups have the opportunity to elect their candidate of choice following the Gingles factors from Thornberry v Gingles (1986):
+         <ol>
+         <li> There is a sufficiently large and geographically compact racial minority or language group to form a majority in a single-member district. </li>
+         <li> This minority group is politically cohesive (members vote similarly) </li>
+         <li> The majority votes sufficiently as a bloc to enable it … usually to defeat the minority’s preferred candidate. </li>
+         </ol>
+     </td>    
+  </tr>
+  <tr> 
+      <td> Requirement </td>
+      <td> Compactness </td>
+      <td> 
+         <ul>
+         <li> Congressional districts should be compact, meaning they are square shaped and do not have strange protrusions. </li>
+         <li> This is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be more ambiguous. </li>
+         <li> Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </li>
+         </ul>
+      </td>
+  </tr>
+</table>
+
 </body>
