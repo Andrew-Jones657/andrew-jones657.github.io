@@ -139,5 +139,20 @@
   </tr>
 </table>
 
+<p7> Considering all the criteria and requirements for redistricting (Table 1), one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
+
+<h2> History of the process </h2>
+
+<p8> Touching on some history of congressional redistricting in Missouri towards the end of the 20th century, the process had been plagued by a good deal of stalemates. In both the 1970s and 1980s cycle, the legislature failed to agree on a congressional map. The Democrat dominated state legislature could not create consensus among its caucus members or broker an arrangement with republicans, and ultimately the congressional map was drawn by the courts. Democrats were able to pass a map for both the 1990s and 2000s cycle, and generally the map remained consistent in terms of the parts of the Missouri the congressional districts represented.  </p8>
+
+<h3> Redistricting in the new Millenium </h3>
+
+<p9> Map goes here </p9>
+
+<p10> The 2002 redistricting cycle serves as an interesting place to start, as it occurred during a vast upheaval in Missouri’s political landscape: the flip of the state legislature from Democrat control to Republican control. This would have stark consequences down the line, but during the 2002 redistricting cycle, legislative power was split between the chambers. While the house was still Democrat led, the Republicans had gained the senate in the previous 2000 election.  </p10>
+
+<p11> Looking at the makeup of the districts at the time: </p11>
+
+
 <p20> This article still a work in progress! </p20>
 </body>
