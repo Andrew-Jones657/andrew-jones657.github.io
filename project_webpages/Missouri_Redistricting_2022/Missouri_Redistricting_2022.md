@@ -143,16 +143,24 @@
 
 <h2> History of the process </h2>
 
-<p8> Touching on some history of congressional redistricting in Missouri towards the end of the 20th century, the process had been plagued by a good deal of stalemates. In both the 1970s and 1980s cycle, the legislature failed to agree on a congressional map. The Democrat dominated state legislature could not create consensus among its caucus members or broker an arrangement with republicans, and ultimately the congressional map was drawn by the courts. Democrats were able to pass a map for both the 1990s and 2000s cycle, and generally the map remained consistent in terms of the parts of the Missouri the congressional districts represented.  </p8>
+<p8> Touching on some history of congressional redistricting in Missouri towards the end of the 20th century, the process had been plagued by a good deal of stalemates. In both the 1970s and 1980s cycle, the legislature failed to agree on a congressional map. The Democrat dominated state legislature could not create consensus among its caucus members or broker an arrangement with republicans, and ultimately the congressional map was drawn by the courts. In particular, the 1980s cycle dealt with the loss of a congressional district which exacerbated tensions even further. However, in the 1990s and 2000s cycles, Democrats were able to successfully pass maps. </p8>
+
+<p9>  </p9> 
 
 <h3> Redistricting in the new Millenium </h3>
 
-<p9> Map goes here </p9>
+<p10> Map goes here </p10>
 
-<p10> The 2002 redistricting cycle serves as an interesting place to start, as it occurred during a vast upheaval in Missouri’s political landscape: the flip of the state legislature from Democrat control to Republican control. This would have stark consequences down the line, but during the 2002 redistricting cycle, legislative power was split between the chambers. While the house was still Democrat led, the Republicans had gained the senate in the previous 2000 election.  </p10>
+<p11> The 2002 redistricting cycle serves as an interesting place to start, as it occurred during a vast upheaval in Missouri’s political landscape: the flip of the state legislature from Democrat control to Republican control. This would have stark consequences down the line, but during the 2002 redistricting cycle, legislative power was split between the chambers. While the house was still Democrat led, the Republicans had gained the senate in the previous 2000 election.  </p11>
 
-<p11> Looking at the makeup of the districts at the time: </p11>
+<p12> Looking at the makeup of the districts at the time: </p12>
 
+<ul>
+<li> The first congressional district consisted of northern and central corridors of St Louis City as well as northern suburbs in St Louis County. It changed greatly in this cycle, as it was reworked to lose inner ring suburbs and gain more of northwestern St Louis County suburbs such as Breckenridge Hills, Bridgeton, Creve Coeur, Edmunson, Florissant, Frontenac, Hazelwood, Ladue, Maryland Heights, Olivette, Overland, St. Ann, and Woodson Terrace. Although it lost some black population in this change, the district remained the state’s single majority black district.  </li>
+<li> The second congressional district consisted of western St. Louis County, suburban portions of St. Charles County, and Lincoln County. It gained Lincoln County and more of St. Charles County in this cycle to make up for the parts of St. Louis County it lost.  </li>
+<li>  </li>
+    
+</ul>
 
 <p20> This article still a work in progress! </p20>
 </body>
