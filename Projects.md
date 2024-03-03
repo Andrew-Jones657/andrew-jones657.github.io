@@ -17,6 +17,7 @@
 <p1> This page is currently under development, but I intend on adding a variety of academic and work projects. </p1>
 
 <p2> <a href="./project_webpages/Missouri_Redistricting_2022/Missouri_Redistricting_2022"> Temp </a> </p2>
+
   
 </body>
 </html>
