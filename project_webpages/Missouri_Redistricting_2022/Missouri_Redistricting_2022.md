@@ -149,7 +149,7 @@
 
 <h3> Redistricting in the new Millenium </h3>
 
-<a href="https://imgur.com/a/lWClDTQ"><img src="https://i.imgur.com/a/lWClDTQ.tif" class="center"> </a> <br>
+<a href="https://imgur.com/5i8cXyC"><img src="https://i.imgur.com/5i8cXyC.jpg" title="source: imgur.com" class="center"> </a> <br>
 
 <p11> The 2002 redistricting cycle serves as an interesting place to start, as it occurred during a vast upheaval in Missouri’s political landscape: the flip of the state legislature from Democrat control to Republican control. This would have stark consequences down the line, but during the 2002 redistricting cycle, legislative power was split between the chambers. While the house was still Democrat led, the Republicans had gained the senate in the previous 2000 election.  </p11>
 
