@@ -163,7 +163,7 @@
 
 <p> Looking at the makeup of the districts and how they changed since 1992: </p> <br> 
 
-<ul>
+<ol>
 <li> The first congressional district consisted of northern and central corridors of St Louis City as well as northern suburbs in St Louis County. It changed greatly in this cycle, as it was reworked to lose inner ring suburbs and gain more of northwestern St Louis County suburbs such as Breckenridge Hills, Bridgeton, Creve Coeur, Edmunson, Florissant, Frontenac, Hazelwood, Ladue, Maryland Heights, Olivette, Overland, St. Ann, and Woodson Terrace. Although it lost some black population in this change, the district remained the state’s single majority black and most democratic district.  </li>
 <li> The second congressional district consisted of western St. Louis County, suburban portions of St. Charles County, and Lincoln County. It gained Lincoln County and more of St. Charles County in this cycle to make up for the parts of St. Louis County it lost. It did, however, gain some South St. Louis County municipalities such as Concord, Crestwood, Grantwood Village, Sappington and parts of Kirkwood and Sunset Hills.  </li>
 <li> The third congressional district consisted of South St. Louis City, Central and Southern St. Louis County suburbs, Jefferson County, and Ste. Genevieve County. It gained many liberal inner-ring suburbs in this cycle such as Brentwood, Clayton, Maplewood, Richmond Heights, Rock Hill, and parts of Kirkwood, University City, and Webster Groves. It was a democrat leaning district consisting mainly of white middle- and working-class democrats.  </li>
@@ -173,9 +173,28 @@
 <li> The seventh district consisted of southwestern Missouri, including the Springfield and Joplin areas, as well as portions of Polk and Taney Counties. It grew greatly since the 1990s, and lost Barton, Cedar, Dade, Douglas, and Ozark Counties. It also lost portions of Polk and Taney Counties.    </li>
 <li> The eighth congressional district consisted of much of southern and southeastern Missouri, including Cape Girardeau, the Bootheel, Poplar Bluff, and much of the Ozarks. It gained Douglas, Ozark, and Taney Counties while losing Crawford County.  </li>
 <li> The ninth congressional district consisted of rural northeastern Missouri, mid Missouri, and St Louis exurbs. It included Hannibal, Kirksville, Columbia, and parts of Lake of the Ozarks. Since it had lost Lincoln County and large parts of St. Charles County to the second, it expanded further south to include Crawford, Maries, Miller, Osage, and parts of Camden County. </li>
-</ul>
+</ol> <br> <br>
 
-<a href="https://i.imgur.com/3u5ebKr.jpg"><img src="https://i.imgur.com/3u5ebKr.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center"> </a> <br>
+<h> The 2012 cycle </h>
+
+<a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center"> </a> <br>
+
+<p> Before it even began, the 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, not only does it have to adjust for existing population deviations, but the remaining districts must also absorb the population of the lost district: this means every district must expand. This also meant one of the nine congressmen at the time would no longer have a seat. </p> <br> <br>
+
+<p> At this point, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governorship, it would be the Republicans who had control of the map drawing process. Given the Republican control over the legislature, the proposed redistricting bills in the House, HB 193, (link) and Senate, SB 264, (link) were fairly similar to one another.  </p>
+
+<p> </p>
+
+<ol>
+<li> The first district took in all of St Louis City, as well as taking in many of the liberal inner ring (Interstate 170) urban municipalities that it had exchanged out in the previous redistricting cycle. This included Maplewood and parts Clayton, Richmond Heights, Rock Hill, and Webster Groves. The district lost parts of Bridgeton, Creve Coeur, Frontenac, Ladue, Maryland Heights, and Westwood that it had gained in the previous redistricting cycle. With this configuration, it maximized the number of African American or Black residents and remained the most Democrat district in the state. </li>  
+<li>  </li>
+<li>  </li>
+<li>  </li>
+<li>  </li>
+<li>  </li>
+<li> The seventh district, like in the previous cycle, was the least altered. It took in the rest of Taney and Polk Counties as well as part of Webster County.  </li>
+<li> The eighth district added Crawford and Ste. Genevieve Counties, as well as parts of Jefferson County. The portion of Taney County was removed.  </li>
+</ol>
 
 <a href="https://i.imgur.com/Xrk6Br4.jpg"><img src="https://i.imgur.com/Xrk6Br4.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center"> </a> <br>
 
