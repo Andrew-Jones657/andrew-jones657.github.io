@@ -149,7 +149,7 @@
 
 <h3> Redistricting in the new Millenium </h3>
 
-<a href="https://i.imgur.com/5i8cXyC.jpg"><img src="https://i.imgur.com/5i8cXyC.jpg" title="source: imgur.com" class="center"> </a> <br>
+<a href="https://i.imgur.com/3u5ebKr.jpg"><img src="https://i.imgur.com/3u5ebKr.jpg" title="Missouri's Congressional Districts from 2003-2013" class="center"> </a> <br>
 
 <p10> The 2001 redistricting cycle serves as a salient place to begin, as it occurred during a transitionary period in Missouri’s political landscape: the flip of the state legislature from Democrat control to Republican control. This would have stark consequences down the line, but during the 2001 redistricting cycle, legislative power was split between the chambers. While the governor’s seat and the house were still held by Democrats, the Republicans had gained the senate in the previous 2000 election.  </p11> <br> <br>
 
@@ -174,6 +174,10 @@
 <li> The eighth congressional district consisted of much of southern and southeastern Missouri, including Cape Girardeau, the Bootheel, Poplar Bluff, and much of the Ozarks. It gained Douglas, Ozark, and Taney Counties while losing Crawford County.  </li>
 <li> The ninth congressional district consisted of rural northeastern Missouri, mid Missouri, and St Louis exurbs. It included Hannibal, Kirksville, Columbia, and parts of Lake of the Ozarks. Since it had lost Lincoln County and large parts of St. Charles County to the second, it expanded further south to include Crawford, Maries, Miller, Osage, and parts of Camden County. </li>
 </ul>
+
+<a href="https://i.imgur.com/3u5ebKr.jpg"><img src="https://i.imgur.com/3u5ebKr.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center"> </a> <br>
+
+<a href="https://i.imgur.com/Xrk6Br4.jpg"><img src="https://i.imgur.com/Xrk6Br4.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center"> </a> <br>
 
 <p20> This article still a work in progress! </p20>
 </body>
