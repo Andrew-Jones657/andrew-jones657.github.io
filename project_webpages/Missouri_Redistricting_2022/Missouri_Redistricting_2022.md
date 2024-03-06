@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <style>
       html,
       body,
-      #map {
+      #viewDiv {
         padding: 0;
         margin: 0;
         height: 100%;
@@ -212,7 +212,7 @@
 
 <p> This article is still under construction </p> <br> <br>
 
-<div id="map" style="width: 625px; height: 450px;">
+<div id="viewDiv" style="width: 625px; height: 450px;"></div>
 
 <script src=”./files/CDs/MO_CDs_13_23.js”></script> <br>
 
