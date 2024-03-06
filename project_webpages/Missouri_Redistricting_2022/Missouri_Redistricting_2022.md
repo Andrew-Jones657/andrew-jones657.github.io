@@ -216,5 +216,16 @@
 
 <script src=”./files/CDs/MO_CDs_13_23.js”></script> <br>
 
+<p> The changes to the congressional districts between 2013 and 2023: </p> <br>
+<ol>
+<li> The first district expanded further into St Louis County. This included parts of municipalities in central and northwestern St Louis County such as Bridgeton, Maryland Heights, Creve Coeur, Frontenac, Ladue, Brentwood, Rock Hill, Webster Groves, Richmond Heights, and unincorporated St Louis County. The district lost Bella Villa, Lemay, Maplewood, and part of Richmond Heights. </li>
+<li> The second district expanded west into exurban areas, picking up Franklin County as well as parts of Warren and rural St. Charles Counties. The portion of Jefferson County was removed, as well as some suburban parts of St. Charles County. This shifted the second from being a competitive district to a Republican leaning one.  </li>
+<li> The third district remained a mid-Missouri district with St. Louis suburbs, albeit with an altered composition. It now has more of suburban St. Charles County as well as the southern half of Boone County and part of the City of Columbia. Crawford, Cooper, Moniteau, and Washington counties were also added to the third district. The portion of Jefferson County in the third also shifted from being mid Jefferson County to the exurban and rural western portion of Jefferson County. The district lost Lincoln County and parts of Camden County.   </li>
+<li> The fourth district regained Lafayette and Saline Counties as well as some eastern portions of Jackson County. The district also gained Howard County, as well as the northern half Boone County and the city of Columbia. Polk County to the south was added back into the district as well. Ray County was removed and placed in the sixth district.  </li>
+<li> The fifth district shed its rural counties, namely Lafayette, Ray, and Saline, and took in more suburban portions of Clay and Jackson Counties. In Jackson County, all of Lee’s Summit is now contained in the fifth district. The district became more democrat leaning and more rooted in Kansas City proper.  </li>
+<li> The sixth district took in Lincoln, Randolph, and Ray Counties, while losing parts of Clay and Jackson Counties. The district continues to be an agricultural northern Missouri district with some suburban and exurban areas from Kansas City and St. Louis. </li>
+<li> The seventh district lost Polk County and took in more of Webster County. The district remained one of the least altered districts.   </li>
+<li> The eighth district took in the populated suburbs of Jefferson County by the Mississippi River. This rendered the district as more suburban, as these portion of Jefferson County contain more than half of its population. The district lost Crawford and Washington Counties to facilitate the changes in the third district. </li>    
+</ol>
 
 </body>
