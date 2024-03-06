@@ -7,6 +7,9 @@
     layout: page
     title: Missouri Congressional Redistricting 2022
    permalink: /Missouri_Redistricting_2022
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.28/"></script>
+
 </head> 
 
 <body>
@@ -201,6 +204,8 @@
 <p> Unlike the 2012 redistricting cycle, Missouri did not suffer from losing a congressional seat during the 2020 US Census apportionment. Republicans held both chambers of the legislature by large majorities and the governor’s seat – it had been a longtime since the conditions to pass a new congressional map were this favorable.    </p> <br> <br>
 
 <p>  </p>
+
+<script src=”./files/CDs/MO_CDs_13_23.js”></script>
 
 <p20> This article still a work in progress! </p20>
 </body>
