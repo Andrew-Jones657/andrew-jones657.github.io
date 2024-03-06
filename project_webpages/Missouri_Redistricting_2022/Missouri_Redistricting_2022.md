@@ -212,7 +212,7 @@
 
 <p> This article is still under construction </p> <br> <br>
 
-<div id="map">
+<div id="map" style="width: 625px; height: 450px;">
 
 <script src=”./files/CDs/MO_CDs_13_23.js”></script> <br>
 
