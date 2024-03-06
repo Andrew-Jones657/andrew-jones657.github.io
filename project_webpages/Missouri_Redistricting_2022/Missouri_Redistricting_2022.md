@@ -210,12 +210,6 @@
 
 <p> Unlike the 2012 redistricting cycle, Missouri did not suffer from losing a congressional seat during the 2020 US Census apportionment. Republicans held both chambers of the legislature by large majorities and the governor’s seat – it had been a longtime since the conditions to pass a new congressional map were this favorable.    </p> <br> <br>
 
-<p> This article is still under construction </p> <br> <br>
-
-<div id="viewDiv" style="width: 625px; height: 450px;"></div>
-
-<script src=”./files/CDs/MO_CDs_13_23.js”></script> <br>
-
 <p> The changes to the congressional districts between 2013 and 2023: </p> <br>
 <ol>
 <li> The first district expanded further into St Louis County. This included parts of municipalities in central and northwestern St Louis County such as Bridgeton, Maryland Heights, Creve Coeur, Frontenac, Ladue, Brentwood, Rock Hill, Webster Groves, Richmond Heights, and unincorporated St Louis County. The district lost Bella Villa, Lemay, Maplewood, and part of Richmond Heights. </li>
@@ -227,5 +221,11 @@
 <li> The seventh district lost Polk County and took in more of Webster County. The district remained one of the least altered districts.   </li>
 <li> The eighth district took in the populated suburbs of Jefferson County by the Mississippi River. This rendered the district as more suburban, as these portion of Jefferson County contain more than half of its population. The district lost Crawford and Washington Counties to facilitate the changes in the third district. </li>    
 </ol>
+
+<p> This article is still under construction </p> <br> <br>
+
+<div id="viewDiv" style="width: 625px; height: 450px;"></div>
+
+<script src=”./files/CDs/MO_CDs_13_23.js”></script> <br>
 
 </body>
