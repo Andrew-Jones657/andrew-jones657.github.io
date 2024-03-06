@@ -194,9 +194,13 @@
 <li> The sixth district took in the rural northeastern counties from the former the ninth district disappeared, namely Adair, Clark, Knox, Lewis, Macon, Marion, Monroe, Pike, Scotland, Shelby, Ralls, and parts of Audrain, creating one large agricultural north Missouri district. In Jackson County, it took in a little more of Lee’s Summit while losing some of Blue Springs. It also lost some Democrat leaning parts of Kansas City in Clay County.   </li>
 <li> The seventh district, like in the previous cycle, was the least altered. It took in the rest of Taney and Polk Counties as well as part of Webster County.  </li>
 <li> The eighth district added Crawford and Ste. Genevieve Counties, as well as parts of Jefferson County. The portion of Taney County was removed.  </li>
-</ol>
+</ol> <br> <br>
 
 <a href="https://i.imgur.com/Xrk6Br4.jpg"><img src="https://i.imgur.com/Xrk6Br4.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center"> </a> <br>
+
+<p> Unlike the 2012 redistricting cycle, Missouri did not suffer from losing a congressional seat during the 2020 US Census apportionment. Republicans held both chambers of the legislature by large majorities and the governor’s seat – it had been a longtime since the conditions to pass a new congressional map were this favorable.    </p> <br> <br>
+
+<p>  </p>
 
 <p20> This article still a work in progress! </p20>
 </body>
