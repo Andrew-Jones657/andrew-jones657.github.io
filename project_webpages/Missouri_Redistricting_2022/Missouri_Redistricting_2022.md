@@ -1,15 +1,22 @@
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    layout: page
-    title: Missouri Congressional Redistricting 2022
-    permalink: /Missouri_Redistricting_2022
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.28/"></script>
-
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
 </head> 
 
 <body>
