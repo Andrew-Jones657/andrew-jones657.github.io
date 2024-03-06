@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     layout: page
     title: Missouri Congressional Redistricting 2022
-   permalink: /Missouri_Redistricting_2022
+    permalink: /Missouri_Redistricting_2022
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.28/"></script>
 
