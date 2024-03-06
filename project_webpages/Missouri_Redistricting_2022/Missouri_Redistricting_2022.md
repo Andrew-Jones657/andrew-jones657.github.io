@@ -210,6 +210,10 @@
 
 <p> Unlike the 2012 redistricting cycle, Missouri did not suffer from losing a congressional seat during the 2020 US Census apportionment. Republicans held both chambers of the legislature by large majorities and the governor’s seat – it had been a longtime since the conditions to pass a new congressional map were this favorable.    </p> <br> <br>
 
+<p> Despite this, Missouri was one of the last states in the nation to pass a new congressional map. Due to the coronavirus pandemic, the 2020 census data was delayed until September of 2021, and since the governor did not request a special session for congressional redistricting, the process was delayed until the next regular session in January of 2022. In that period, there was copious debate within the Republican caucus over maintaining the “6-2” congressional balance, or six safe seats for Republicans and two safe seats for Democrats; or totally redrawing the map to create a “7-1” map, a map that would disassemble the Kansas City based fifth congressional district to create another Republican district.  </p> <br> <br>
+
+<p>  </p>
+
 <p> The changes to the congressional districts between 2013 and 2023: </p> <br>
 <ol>
 <li> The first district expanded further into St Louis County. This included parts of municipalities in central and northwestern St Louis County such as Bridgeton, Maryland Heights, Creve Coeur, Frontenac, Ladue, Brentwood, Rock Hill, Webster Groves, Richmond Heights, and unincorporated St Louis County. The district lost Bella Villa, Lemay, Maplewood, and part of Richmond Heights. </li>
