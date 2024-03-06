@@ -8,7 +8,7 @@
     <style>
       html,
       body,
-      #viewDiv {
+      #map {
         padding: 0;
         margin: 0;
         height: 100%;
@@ -212,7 +212,7 @@
 
 <p> This article is still under construction </p> <br> <br>
 
-<div id="viewDiv"></div>
+<div id="map">
 
 <script src=”./files/CDs/MO_CDs_13_23.js”></script> <br>
 
