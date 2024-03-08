@@ -17,6 +17,11 @@
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+
 </head>
 
 <body>
@@ -36,7 +41,9 @@
 
 <div id="map" style="width: 625px; height: 450px;">
 
-<script src="./files/travelmap/travel_map.js"></script>
+<script src="./files/travelmap/travel_map.js"></script> <br> 
+
+<script src="./files/CDs/MO_CDs_13_23.js"> </script>
 
 </body>
 </html>
