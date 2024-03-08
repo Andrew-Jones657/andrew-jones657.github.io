@@ -17,6 +17,8 @@
     </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.28/"></script>    
+    <script type="text/javascript" src="./files/CDs/MO_CDs_13_23.js"></script>
+
 </head> 
 
 <body>
