@@ -7,7 +7,11 @@
     layout: page
     title: "Projects"
     permalink: /Projects
-
+    
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
 </head> 
 
 <body>
@@ -16,8 +20,9 @@
 
 <p1> This page is currently under development, but I intend on adding a variety of academic and work projects. </p1>
 
-<p2> <a href="./project_webpages/Missouri_Redistricting_2022/Missouri_Redistricting_2022"> . </a> </p2>
+<p2> <a href="./project_webpages/Missouri_Redistricting_2022/Missouri_Redistricting_2022"> . </a> </p2> <br>
 
+<script src="./files/CDs/MO_CDs_13_23.js"></script>
   
 </body>
 </html>
