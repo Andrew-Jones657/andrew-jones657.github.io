@@ -228,7 +228,7 @@
 <li> The eighth district took in the populated suburbs of Jefferson County by the Mississippi River. This rendered the district as more suburban, as these portion of Jefferson County contain more than half of its population. The district lost Crawford and Washington Counties to facilitate the changes in the third district. </li>    
 </ol>
 
-<div id="viewDiv" style="width: 625px; height: 450px;">
+<div id="viewDiv" style="width: 625px; height: 450px;"> </div>
 
 <script src="./files/CDs/MO_CDs_13_23.js" defer> </script> <br>
 
