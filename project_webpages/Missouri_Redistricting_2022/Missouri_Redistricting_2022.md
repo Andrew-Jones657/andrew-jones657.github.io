@@ -228,7 +228,7 @@
 
 <div id="viewDiv" style="width: 625px; height: 450px;">
 
-<script src="./files/CDs/MO_CDs_13_23.js"> </script> <br>
+<script src="./files/CDs/MO_CDs_13_23.js" defer> </script> <br>
 
 <p> This article is still under construction </p> <br> <br>
 
