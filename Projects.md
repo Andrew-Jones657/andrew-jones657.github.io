@@ -23,7 +23,9 @@
 <p2> <a href="./project_webpages/Missouri_Redistricting_2022/Missouri_Redistricting_2022"> . </a> </p2> <br>
 
 <p3> <a href="./Projects/Missouri_Redistricting_2022"> ! </a> </p3> <br>
-<p4> <a href="./Missouri_Redistricting_2022.md">  ? </a> </p4> <br>
+<p4> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">  ? </a> </p4> <br>
+
+https://andrew-jones657.github.io/Projects
 
 <div id="viewDiv" style="width: 625px; height: 450px;"></div>
 
