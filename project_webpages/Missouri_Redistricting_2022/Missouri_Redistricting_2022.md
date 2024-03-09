@@ -230,7 +230,7 @@
 
 <div id="viewDiv" style="width: 625px; height: 450px;"> </div>
 
-<script src="files/CDs/MO_CDs_13_23.js"></script>
+<script src="main/files/CDs/MO_CDs_13_23.js"></script>
 
 <p> This article is still under construction </p> <br> <br>
 
