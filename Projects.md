@@ -22,7 +22,7 @@
 
 <p2> <a href="./project_webpages/Missouri_Redistricting_2022/Missouri_Redistricting_2022"> . </a> </p2> <br>
 
-<p3> <a href="./Projects/Missouri_Redistricting_2022.md"> ! </a> </p3> <br>
+<p3> <a href="./Projects/Missouri_Redistricting_2022"> ! </a> </p3> <br>
 
 <div id="viewDiv" style="width: 625px; height: 450px;"></div>
 
