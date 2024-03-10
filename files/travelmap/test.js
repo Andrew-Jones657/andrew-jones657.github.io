@@ -1,5 +1,5 @@
 	// Create a map and set the view lat-long and zoom level 
-	const map = L.map("map").setView([36.5980, -38.4648], 4);
+	const map = L.map("map");
 
 	// Load in the basemap -- OpenStreetMaps
 	const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
