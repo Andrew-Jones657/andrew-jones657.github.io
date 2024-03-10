@@ -28,9 +28,20 @@
 
 </div>
 
-	
-	<div id="map" style="width: 800px; height: 600px;">
+<h1> About me </h1>
 
-	</div>
+<a href="https://imgur.com/eKZqX44"><img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto class="center"></a>
 
-	<script src="./files/travelmap/travel_map.js"></script>
+
+<p> Welcome to my website. I am a geospatial professional. </p> <br>
+
+<p> My educational background is in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University in 2020 with Bachelor's degrees in Human Geography and German, as well as minors in mathematics and GIS. </p> <br>
+
+<p> Outside of work, I enjoy walking, cycling, hiking, traveling, camping, photography, and spending time with my friends and family. </p> <br>
+
+<p> Feel free to have a look at some photos from my travels -- this web app will gradually be updated. </p> <br>
+
+<div id="map" style="width: 625px; height: 400px;  border: 1px solid #AAA;"> <br>
+
+<script src="./files/travelmap/travel_map.js"></script> <br> 
+
