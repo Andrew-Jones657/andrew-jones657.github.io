@@ -14,25 +14,11 @@
 			max-height: 100%;
 		}
 	</style>
-	.openlayers-map img{ margin:0px }
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>        
 	
 
 </div>
-
-<h1> About me </h1>
-
-<a href="https://imgur.com/eKZqX44"><img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto class="center"></a>
-
-
-<p> Welcome to my website. I am a geospatial professional. </p> <br>
-
-<p> My educational background is in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University in 2020 with Bachelor's degrees in Human Geography and German, as well as minors in mathematics and GIS. </p> <br>
-
-<p> Outside of work, I enjoy walking, cycling, hiking, traveling, camping, photography, and spending time with my friends and family. </p> <br>
-
-<p> Feel free to have a look at some photos from my travels -- this web app will gradually be updated. </p> <br>
 
 <div id="map" style="width: 625px; height: 400px;  border: 1px solid #AAA;"> <br>
 
