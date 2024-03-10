@@ -2,7 +2,7 @@
 	const map = L.map("map").setView([36.5980, -38.4648], 2);
 
 	// Load in the basemap -- OpenStreetMaps
-	const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+	const tiles = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
