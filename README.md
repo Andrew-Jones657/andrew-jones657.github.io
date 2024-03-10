@@ -37,6 +37,3 @@
 
 <script src="./files/travelmap/travel_map.js"></script> <br> 
 
-
-</body>
-</html>
