@@ -13,6 +13,10 @@
 			max-width: 100%;
 			max-height: 100%;
 		}
+		.leaflet-tile-container img {
+    			width: 256.5px !important;
+    			height: 256.5px !important;
+		}
 	</style>
 	.openlayers-map img{ margin:0px }
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
