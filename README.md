@@ -35,7 +35,7 @@
 
 <p> Feel free to have a look at some photos from my travels -- this web app will gradually be updated. </p> <br>
 
-<div id="map"></div>
+<div id="map">
 
 <script src="./files/travelmap/travel_map.js"></script> <br> 
 
