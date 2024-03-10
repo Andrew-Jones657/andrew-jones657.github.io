@@ -22,5 +22,5 @@
 
 <div id="map" style="width: 625px; height: 400px;  border: 1px solid #AAA;"> <br>
 
-<script src="./files/travelmap/travel_map.js"></script> <br> 
+<script src="./files/travelmap/test.js"></script> <br> 
 
