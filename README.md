@@ -46,7 +46,6 @@
 
 <div id="map" style="width: 625px; height: 400px;  border: 1px solid #AAA;"> <br>
 
-<script> L_DISABLE_3D = true </script>
 
 <script src="./files/travelmap/travel_map.js"></script> <br> 
 
