@@ -1,3 +1,6 @@
+	// Disable translate3d
+	L_DISABLE_3D = true;
+
 	// Create a map and set the view lat-long and zoom level 
 	const map = L.map("map").setView([36.5980, -38.4648], 4);
 
