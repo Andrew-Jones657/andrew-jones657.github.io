@@ -5,7 +5,7 @@
 	const map = L.map("map").setView([36.5980, -38.4648], 4);
 
 	// Load in the basemap -- OpenStreetMaps
-	const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+	const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
 	}).addTo(map);
 
