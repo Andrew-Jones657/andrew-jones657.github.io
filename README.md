@@ -43,7 +43,7 @@
 
 <p> Outside of work, I enjoy walking, cycling, hiking, traveling, camping, photography, and spending time with my friends and family. </p> <br>
 
-<p> Feel free to have a look at some photos from my travels -- this web app will gradually be updated. </p> <br>
+<p> Feel free to explore some photos from my travels. I do recommend using the full screen functionality at the top-left part of the web map. Addtionally, the ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
 
 <div id="map" style="width: 625px; height: 400px;  border: 1px solid #AAA;"> <br>
 
