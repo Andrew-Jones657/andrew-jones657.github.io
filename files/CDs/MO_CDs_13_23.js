@@ -95,7 +95,13 @@
 	let legend = new Legend({
   	  view: view
 	});
-     
+
+	const legendExpand = new Expand({
+	  view: view,
+	  content: legend,
+	  closeOnEsc: false
+	});
+	      
         const fullscreen = new Fullscreen({
           view: view
         });
@@ -108,6 +114,6 @@
 	}); 
 
       view.ui.add(fullscreen, "top-left");
-      view.ui.add(legend, "bottom-right");
+      view.ui.add(legendExpand, "bottom-right");
       view.ui.add(swipe);
       });
