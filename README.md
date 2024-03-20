@@ -10,6 +10,7 @@
         margin: 0;
         height: 100%;
         width: 100%;
+        border: 1px solid #AAA;
         }
 
         #viewDiv {
