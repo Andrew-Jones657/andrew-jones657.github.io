@@ -10,7 +10,6 @@
         margin: 0;
         height: 100%;
         width: 100%;
-        border: 1px solid #AAA;
         }
 
         #viewDiv {
@@ -20,6 +19,7 @@
             width: 100%;
             min-height: 450px;
             mid-width: 650px;
+            border: 1px solid #444444;
         }
     </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
@@ -41,7 +41,7 @@
 
 <p> Feel free to explore some photos from my travels. I do recommend using the full screen functionality at the top-left part of the web map. Addtionally, the ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
 
-<div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #AAA;"> </div> <br>
+<div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 
 <script src="./files/travelmap/travel_map.js"></script> <br> 
     
