@@ -34,7 +34,7 @@
 
 <body>
 
-<div id="viewDiv" style="width: 625px; height: 400px;  border: 1px solid #AAA;"> <br>
+<div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #AAA;"> </div> <br>
 
 <script src="./files/travelmap/travel_map.js"></script> <br> 
     
