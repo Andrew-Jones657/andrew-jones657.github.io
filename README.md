@@ -32,8 +32,12 @@
 
 <p> Feel free to explore some photos from my travels. I do recommend using the full screen functionality at the top-left part of the web map. Addtionally, the ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
 
+<body>
+
 <div id="viewDiv" style="width: 625px; height: 400px;  border: 1px solid #AAA;"> <br>
 
-
 <script src="./files/travelmap/travel_map.js"></script> <br> 
+    
+</body>
+
 
