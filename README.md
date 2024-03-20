@@ -5,7 +5,13 @@
     <title> Travel Photo Web Map </title>
     <style>
         html,
-        body,
+        body { 
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        }
+
         #viewDiv {
             padding: 0;
             margin: 0;
