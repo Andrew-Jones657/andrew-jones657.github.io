@@ -17,6 +17,8 @@
             margin: 0;
             height: 100%;
             width: 100%;
+            min-height: 450px;
+            mid-width: 650px;
         }
     </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
