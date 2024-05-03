@@ -20,11 +20,11 @@
 
 <p1> This page is currently under development, but I intend on adding a variety of academic and work projects. </p1>
 
-<p2> <a href="./project_webpages/Missouri_Redistricting_2022/Missouri_Redistricting_2022"> . </a> </p2> <br>
 
-<p3> <a href="./Projects/Missouri_Redistricting_2022"> ! </a> </p3> <br>
+
 <p4> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">  ? </a> </p4> <br>
 <p5> <a href="https://andrew-jones657.github.io/test"> % </a> </p5> <br>
+<p6> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p6> 
 
 </body>
 </html>
