@@ -8,6 +8,11 @@
     title: "Projects"
     permalink: /Projects
     
+    /* Solid border */
+    hr.solid {
+        border-top: 3px solid #bbb;
+    }
+    
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.28/"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
@@ -20,7 +25,7 @@
 
 <p1> This page is currently under development, but I intend on adding a variety of academic and work projects. </p1>
 
-
+<hr class="solid">
 
 <p4> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">  ? </a> </p4> <br>
 <p5> <a href="https://andrew-jones657.github.io/test"> % </a> </p5> <br>
