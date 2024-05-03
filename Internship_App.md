@@ -19,8 +19,8 @@
             margin: 0;
             height: 100%;
             width: 100%;
-            min-height: 450px;
-            mid-width: 650px;
+            min-height: 750px;
+            mid-width: 1050px;
             border: 1px solid #444444;
         }
     </style>
@@ -32,7 +32,7 @@
 
 <body>
 
-<div id="viewDiv" style="width: 800px; height: 600px; border: 1px solid #444444;"></div>
+<div id="viewDiv" style="width: 1050px; height: 750px; border: 1px solid #444444;"></div>
 <script src="./files/SummitSW/SUMMIT_ASSET.js"></script> 
     
 </body>
