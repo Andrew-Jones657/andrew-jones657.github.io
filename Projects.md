@@ -26,7 +26,7 @@
 <p1> This page is currently under development, but I intend on adding a variety of academic and work projects. </p1>
 
 <hr class="solid">
-
+<h3> Work Projects </h3> <br> <br>
 <p4> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">  ? </a> </p4> <br>
 <p5> <a href="https://andrew-jones657.github.io/test"> % </a> </p5> <br>
 <p6> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p6> 
