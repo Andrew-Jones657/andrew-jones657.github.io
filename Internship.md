@@ -4,10 +4,16 @@
     <meta charset='utf-8'>
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <title> Travel Photo Web Map </title>
+    <title> Internship </title>
     <style>
         html,
-        body,
+        body { 
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        }
+        
         #viewDiv {
             padding: 0;
             margin: 0;
@@ -29,7 +35,7 @@
 
 <h1> Placeholder for internship storymap </h1> <br> <br>
 
-<div id="viewDiv" style="width: 800px; height: 600px;"></div>
+<div id="viewDiv" style="width: 800px; height: 600px; border: 1px solid #444444;"></div>
 <script src="./files/SummitSW/SUMMIT_ASSET.js"></script> 
     
 </body>
