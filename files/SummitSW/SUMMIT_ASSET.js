@@ -1,6 +1,3 @@
-<script>
-
-
 	require([
 	"esri/Map",
 	"esri/Basemap",
@@ -226,4 +223,4 @@
     });
 
 
-</script>
+
