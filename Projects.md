@@ -29,7 +29,12 @@
 <h3> Work Projects </h3> <br> <br>
 <p4> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">  ? </a> </p4> <br>
 <p5> <a href="https://andrew-jones657.github.io/test"> % </a> </p5> <br>
-<p6> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p6> 
+<p6> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p6> <br>
+<p6> <a href="https://andrew-jones657.github.io/Internship_App"> Internship JS APP </a> </p6> <br>
+
+<hr class="solid">
+<h3> Personal Projects </h3> <br> <br>
+
 
 </body>
 </html>
