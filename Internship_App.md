@@ -16,7 +16,7 @@
         
         #viewDiv {
             padding: 0;
-            margin: 0;
+            margin: auto;
             height: 100%;
             width: 100%;
             min-height: 750px;
