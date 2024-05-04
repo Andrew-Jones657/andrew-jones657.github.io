@@ -15,7 +15,7 @@
 
 <hr class="solid">
 <h3> Work Projects </h3> <br> <br>
-<p2> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">  ? </a> </p4> <br>
+
 <p3> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p6> <br>
 
 <hr class="solid">
