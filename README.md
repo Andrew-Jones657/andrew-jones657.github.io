@@ -28,29 +28,29 @@
 
 </div>
 
-<h1> A little bit about me </h1>
+<h1> <b> A little bit about me </b> </h1>
 
 <a href="https://imgur.com/eKZqX44"><img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto class="center"></a>
 
-<h1> <b> Where I am from </b> </h1>
+<h2> Where I am from </h2>
 
 <p> I was born and raised in Bowling Green, Kentucky to an American father and a German mother. It's about as an ideal place to raise a family as possible and somewhat of a sleeper city. </p> <br>
 
 <p> I tend to have a lot of interests, but as a child, I always had an interest in my dad's 1981 copy of the National Geographic World Atlas. This ended up inspiring me to take AP Human Geography in 12th grade and later majoring in Geography at Western Kentucky University. </p> <br>
 
-<h1> <b> My educational background </b></h1>
+<h1> My educational background </h1>
 
-<p> Formally, I've been educated in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University in 2020 with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. </p> <br>
+<p> Formally, I've been educated in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. </p> <br>
 
-<h1> <b> What I used to do </b> </h1>
+<h1> What I used to do  </h1>
 
-<p> In the past, I have worked at Warren County Public Works Division of Stormwater Management and the the Missouri House of Representatives.   </p> <br>
+<p> In the past, I worked at Warren County Public Works Division of Stormwater Management and the Missouri House of Representatives.   </p> <br>
 
-<h1> <b> What I am doing now </b> </h1>
+<h1> What I am doing now </h1>
 
-<p> Unfortunately, there have been some impediments in my life recently.   </p>
+<p> Recently things have been quiet!    </p>
 
-<h1> <b> My hobbies </b> </h1> <br> 
+<h1> My hobbies </h1> <br> 
 
 <p> Outside of work, I enjoy walking, camping, cycling, disc golf, hiking, photography, spending time with my friends and family, and traveling. </p> <br> <br>
 
