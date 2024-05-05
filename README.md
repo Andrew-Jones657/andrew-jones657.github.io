@@ -30,27 +30,27 @@
 
 <h1> <b> A little bit about me </b> </h1>
 
-<a href="https://imgur.com/eKZqX44"><img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto style="float:right"></a>
+<img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto style="float:right"></a>
 
-<h2> Where I am from </h2>
+<h3> Where I am from </h3>
 
 <p> I was born and raised in Bowling Green, Kentucky to an American father and a German mother. It's about as an ideal place to raise a family as possible and somewhat of a sleeper city. </p> <br>
 
 <p> I tend to have a lot of interests, but as a child, I always had an interest in my dad's 1981 copy of the National Geographic World Atlas. This ended up inspiring me to take AP Human Geography in 12th grade and later majoring in Geography at Western Kentucky University. </p> <br>
 
-<h1> My educational background </h1>
+<h3> My educational background </h3>
 
 <p> Formally, I've been educated in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. </p> <br>
 
-<h1> What I used to do  </h1>
+<h3> What I used to do  </h3>
 
 <p> In the past, I worked at Warren County Public Works Division of Stormwater Management and the Missouri House of Representatives.   </p> <br>
 
-<h1> What I am doing now </h1>
+<h3> What I am doing now </h3>
 
 <p> Recently things have been quiet!    </p>
 
-<h1> My hobbies </h1> <br> 
+<h3> My hobbies </h3> <br> 
 
 <p> Outside of work, I enjoy walking, camping, cycling, disc golf, hiking, photography, spending time with my friends and family, and traveling. </p> <br> <br>
 
