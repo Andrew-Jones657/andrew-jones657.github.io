@@ -50,11 +50,11 @@
 
 <p> Recently things have been quiet.     </p>
 
-<h3> My hobbies </h3> <br> 
+<h3> My hobbies </h3> 
 
-<p> Outside of work, I enjoy camping, cycling, disc golf, hiking, photography, spending time with my friends and family, traveling, and walking. </p> <br> <br>
+<p> Outside of work, I enjoy camping, cycling, disc golf, hiking, photography, spending time with my friends and family, traveling, and walking. </p> <br> 
 
-<p> Feel free to explore some photos from my travels. I do recommend using the full screen functionality at the top-left part of the web map. The ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
+<p> Feel free to explore some photos from my travels. I recommend using the full screen functionality at the top-left part of the web map. The ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
 
 <div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 
