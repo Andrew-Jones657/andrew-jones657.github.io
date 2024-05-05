@@ -16,10 +16,14 @@
 <hr class="solid">
 <h3> Work Projects </h3> <br> <br>
 
-<p3> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p6> <br>
+<p2> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p2> <br>
 
 <hr class="solid">
 <h3> Personal Projects </h3> <br> <br>
+
+<h3> Academic Projects </h3> <br> <br>
+
+<p3> <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/"> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </a> </p3>
 
 
 </body>
