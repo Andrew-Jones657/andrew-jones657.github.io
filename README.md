@@ -30,7 +30,7 @@
 
 <h1> <b> A little bit about me </b> </h1>
 
-<img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto style="float:right"></a>
+<img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto style="float:right">
 
 <h3> Where I am from </h3>
 
