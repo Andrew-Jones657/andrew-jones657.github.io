@@ -30,12 +30,12 @@
 <h3> Work Projects </h3> <br> <br>
 
 
-
+<figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Internship">
   <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship">
 </a>
-
-<p2> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p2> <br>
+  <figcaption> Internship Storymap</figcaption>
+</figure>
 
 <hr class="solid">
 <h3> Personal Projects </h3> <br> <br>
