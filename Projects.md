@@ -16,6 +16,11 @@
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
     
+    figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+    }
+    
     </style>
 
 </head> 
@@ -32,7 +37,7 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Internship">
-  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" text-align: center>
+  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship">
 </a>
   <figcaption> Internship Storymap </figcaption>
 </figure>
