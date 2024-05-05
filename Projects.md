@@ -32,9 +32,9 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Internship">
-  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship">
+  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" text-align: center>
 </a>
-  <figcaption> Internship Storymap</figcaption>
+  <figcaption> Internship Storymap </figcaption>
 </figure>
 
 <hr class="solid">
