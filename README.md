@@ -40,11 +40,11 @@
 
 <h3> My educational background </h3>
 
-<p> In May of 2020, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. At first glance, it's an unusual combination of subjects, but all of it ties together well. My minors truly elevated my understanding of spatial analysis, and I was able to incoporate each of these subjects together in a honors thesis.     </p> <br>
+<p> In May of 2020, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. At first glance, it's an unusual combination of subjects, but all of it ties together well. My minors truly elevated my understanding of spatial analysis, and I was able to incoporate each of these subjects together in a <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/"> honors thesis </a>.  </p> <br>
 
 <h3> What I used to do  </h3>
 
-<p> Most recently, I worked at the Missouri House of Representatives as the GIS redistricting analyst. In this position, I assisted representatives with drafting congressional district plans and provided all sorts of data figures from the 2020 US Census. I also helped update the House's web map API from the old Google Maps API to Leaflet, and I created 163 custom maps for each of the newly redistricted state house districts.  <br> I have also worked at Warren County Public Works Division of Stormwater Management as a GIS services intern. Here, I had the opportunity to do various GIS related tasks for the department, and I learned a lot about database management by helping create the stormwater asset collection form that I later used to collect over 1000 stormwater assets across Warren County, KY.    </p> <br>
+<p> Most recently, I worked at <b> the Missouri House of Representatives </b> as the GIS redistricting analyst. In this position, I assisted representatives with drafting congressional district plans and I provided all sorts of data figures from the 2020 US Census. I also helped update the House's web map API from the old Google Maps API to the Leaflet API, and I created 163 custom maps for each of the newly redistricted state house districts.  <br> <br> I have also worked at <b> Warren County Public Works Division of Stormwater Management </b> as a GIS services intern. Here, I had the opportunity to do various GIS related tasks for the department, and I learned a lot about database management by helping create the stormwater asset collection form that I later used to collect over 1000 stormwater assets across Warren County, KY.    </p> <br>
 
 <h3> What I am doing now </h3>
 
@@ -52,7 +52,7 @@
 
 <h3> My hobbies </h3> <br> 
 
-<p> Outside of work, I enjoy walking, camping, cycling, disc golf, hiking, photography, spending time with my friends and family, and traveling. </p> <br> <br>
+<p> Outside of work, I enjoy camping, cycling, disc golf, hiking, photography, spending time with my friends and family, traveling, and walking. </p> <br> <br>
 
 <p> Feel free to explore some photos from my travels. I do recommend using the full screen functionality at the top-left part of the web map. The ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
 
