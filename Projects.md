@@ -14,6 +14,7 @@
 
     img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    class="center";
     }
     
     figure figcaption {
@@ -36,7 +37,7 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Internship">
-  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="center">
+  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship">
 </a>
   <figcaption> Internship Storymap </figcaption>
 </figure>
