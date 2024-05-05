@@ -20,6 +20,13 @@
     figure figcaption {
     text-align: center;
     }
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
     
     </style>
 
@@ -37,7 +44,7 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Internship">
-  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship">
+  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="center">
 </a>
   <figcaption> Internship Storymap </figcaption>
 </figure>
