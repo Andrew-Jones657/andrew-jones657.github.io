@@ -17,7 +17,6 @@
     }
     
     figure figcaption {
-    border: 1px dotted blue;
     text-align: center;
     }
     
