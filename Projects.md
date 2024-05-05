@@ -4,6 +4,19 @@
     <meta charset='utf-8'>
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <style>
+    img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    }
+
+    img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    
+    </style>
 
 </head> 
 
@@ -15,13 +28,13 @@
 
 <hr class="solid">
 <h3> Work Projects </h3> <br> <br>
-div {
-  width: 320px;
-  height: 50px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
-}
+
+
+
+<a target="_blank" href="https://andrew-jones657.github.io/Internship">
+  <img src="https://imgur.com/a/h9WdoQ3" alt="Internship">
+</a>
+
 <p2> <a href="https://andrew-jones657.github.io/Internship"> Internship </a> </p2> <br>
 
 <hr class="solid">
