@@ -48,7 +48,7 @@
 
 <h3> What I am doing now </h3>
 
-<p> Recently things have been quiet.     </p>
+<p>    </p>
 
 <h3> My hobbies </h3> 
 
