@@ -30,25 +30,25 @@
 
 <h1> <b> A little bit about me </b> </h1>
 
-<img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="200" height=auto style="float:right; border-radius: 30px" >
+<img src="https://i.imgur.com/eKZqX44.jpg" title="source: imgur.com" width="180" height=auto style="float:right; border-radius: 30px" >
 
 <h3> Where I am from </h3>
 
-<p> I was born and raised in Bowling Green, Kentucky to an American father and a German mother. It's about as an ideal place to raise a family as possible and somewhat of a sleeper city. </p> <br>
+<p> I was born and raised in Bowling Green, Kentucky to an American father and a German mother. It's a great place to raise a family and just up the road from Nashville. </p> <br>
 
-<p> I tend to have a lot of interests, but as a child, I always had an interest in my dad's 1981 copy of the National Geographic World Atlas. This ended up inspiring me to take AP Human Geography in 12th grade and later majoring in Geography at Western Kentucky University. </p> <br>
+<p> I tend to have a lot of interests, but as a child, I was particularly fascinated by my dad's 1981 National Geographic World Atlas. After three semesters at Western Kentucky University, I realized I was truly passionate about geography. </p> <br>
 
 <h3> My educational background </h3>
 
-<p> Formally, I've been educated in geography, German language and culture, Geographic Information Science, and mathematics. More specfically, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. </p> <br>
+<p> In May of 2020, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. At first glance, it's an unusual combination of subjects, but all of it ties together well. My minors truly elevated my understanding of spatial analysis, and I was able to incoporate each of these subjects together in a honors thesis.     </p> <br>
 
 <h3> What I used to do  </h3>
 
-<p> In the past, I worked at Warren County Public Works Division of Stormwater Management and the Missouri House of Representatives.   </p> <br>
+<p> Most recently, I worked at the Missouri House of Representatives as the GIS redistricting analyst. In this position, I assisted representatives with drafting congressional district plans and provided all sorts of data figures from the 2020 US Census. I also helped update the House's web map API from the old Google Maps API to Leaflet, and I created 163 custom maps for each of the newly redistricted state house districts.  <br> I have also worked at Warren County Public Works Division of Stormwater Management as a GIS services intern. Here, I had the opportunity to do various GIS related tasks for the department, and I learned a lot about database management by helping create the stormwater asset collection form that I later used to collect over 1000 stormwater assets across Warren County, KY.    </p> <br>
 
 <h3> What I am doing now </h3>
 
-<p> Recently things have been quiet!    </p>
+<p> Recently things have been quiet.     </p>
 
 <h3> My hobbies </h3> <br> 
 
