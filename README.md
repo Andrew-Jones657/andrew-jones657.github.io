@@ -48,7 +48,7 @@
 
 <h3> What I am doing now </h3>
 
-<p>    </p>
+<p> Currently, I am searching for a new position! Since my temporary position at the Missouri House of Representatives ended in July of 2023, I have been spending my time helping my family out with temporary health issues, traveling, and working as a salesperson for my brother's secondhand goods business. </p> <br>
 
 <h3> My hobbies </h3> 
 
