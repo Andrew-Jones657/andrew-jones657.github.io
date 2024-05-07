@@ -35,7 +35,7 @@
 
 <h1> Welcome to my projects page </h1>
 
-<p1> This page is currently under development, but I intend on adding a variety of academic and work projects. </p1>
+<p> This page is currently under development, but I intend on adding a variety of academic and work projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p>
 
 <hr class="solid">
 <h3> Work Projects </h3> <br> <br>
