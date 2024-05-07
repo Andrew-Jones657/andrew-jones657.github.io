@@ -52,7 +52,7 @@
 <hr class="solid">
 <h3> Personal Projects </h3> <br> <br>
 
-<p> <a href=https://andrew-jones657.github.io/GIS_Programming"> GIS Programming  (WIP) </a> </p> <br>
+<p> <a href="https://andrew-jones657.github.io/GIS_Programming"> GIS Programming  (WIP) </a> </p> <br>
 
 <p> A Site Selection and Service Area Analysis in Warren County, Kentucky (WIP) </p> <br>
 
