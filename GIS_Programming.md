@@ -15,10 +15,20 @@
 
     <p> Static Version </p>
 
-    <pre><code> # Summation function
+    <pre><code>
+## ---------------------------------------------------------------------------
+## DescriptiveStatistics_Static.py
+## Created on: 2019-4-12
+## Last Modified on: 2024-05-07
+## Created by: Andrew Jones
+## Description: This static script calculates the summation of a list of numbers
+## as well as the mean, maximum, minimum, range, variation, and standard deviation
+## ---------------------------------------------------------------------------
+
+# Summation function
 def FunSum(theNumList):
-    # Calculate sum with a for loop
-    theSum = 0                     # assign zero initially so theSum variable is created
+    # Calculate the summation with a for loop
+    theSum = 0                     # assign zero initially so theSum variable exists
     for theNum in theNumList:
         theSum = theSum + theNum   # summation of the numbers in the list
     return theSum                  # return the sum
@@ -84,10 +94,10 @@ testMax = FunMax(theNumList)       # call FunMax function
 testMin = FunMin(theNumList)       # call FunMin function
 testRange = FunRange(theNumList)   # call FunRange function
 testVar = FunVar(theNumList)       # call FunVar function
-testStD = FunStdDev(theNumList)       # call FunStD function
+testStD = FunStdDev(theNumList)       # call FunStdDev function
 
 # prints the results of the functions
-print("The Summation of the samples is:",testSum)
+print("The summation of the samples is:",testSum)
 print("The mean of the samples is:",testMean)
 print("The maximum of the samples is:",testMax)
 print("The minimum of the samples is:",testMin)
