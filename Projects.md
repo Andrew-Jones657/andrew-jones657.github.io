@@ -68,7 +68,7 @@
   <figcaption> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </figcaption>
 </figure>
 
-<p3> <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/"> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </a> </p3>
+
 
 
 </body>
