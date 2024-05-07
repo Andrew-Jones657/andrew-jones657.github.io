@@ -51,9 +51,22 @@
 <hr class="solid">
 <h3> Personal Projects </h3> <br> <br>
 
+<p> GIS Programming  (WIP)</p> <br>
+
+<p> A Site Selection and Service Area Analysis in Warren County, Kentucky (WIP) </p> <br>
+
+<p>  </p>
+
 <hr class="solid">
 
 <h3> Academic Projects </h3> <br> <br>
+
+<figure>
+<a target="_blank" href="https://digitalcommons.wku.edu/stu_hon_theses/866/">
+  <img src="https://i.imgur.com/SASJige.jpg" alt="Bremen St" class="center">
+</a>
+  <figcaption> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </figcaption>
+</figure>
 
 <p3> <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/"> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </a> </p3>
 
