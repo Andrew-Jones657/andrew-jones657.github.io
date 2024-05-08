@@ -772,16 +772,7 @@ arcpy.AddMessage(tableOut)
 
     </code></pre>
 	
-    <p>This is the <code>Panel</code> constructor:</p>
-    <pre><code>function Panel(element, canClose, closeHandler) {
-      this.element = element;
-      this.canClose = canClose;
-      this.closeHandler = function () { if (closeHandler) closeHandler() };
-    }</code></pre>
-    
-    <py-script>
-      print("Hello World")
-    </py-script>
+
   </body>
 </html>
 
