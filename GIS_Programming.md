@@ -9,7 +9,7 @@
     
     <h3> Python Scripts </h3>
 
-    <h4> Descriptive Statistics Tool for ArcGIS </h4>
+    <h4> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/Statistics_Update.py"> Descriptive Statistics Tool for ArcGIS  </a> </h4>
 
     <p> This tool is designed to calculate some basic descriptive statistics based off a user input list of numbers. In order for it work correctly, it needs to be saved as a script in a toolbox in ArcGIS and then these parameters must be setup. </p>
 
