@@ -251,6 +251,11 @@ arcpy.AddMessage(tableOut)
     <p> Travel Photo Map (Home Page) </p> <br>
 
     <pre><code> 
+	     <head>
+ 	     <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+             <script src="https://js.arcgis.com/4.29/"></script>
+    	     </head>
+	<script>
     	require([
 		"esri/Map", 
 		"esri/Basemap", 
@@ -536,7 +541,7 @@ arcpy.AddMessage(tableOut)
      
      });
 
-
+    </script>
     </code></pre>
 
     <p> Stormwater Assets in the Summit Subdivision (Internship Storymap </p> <br>
