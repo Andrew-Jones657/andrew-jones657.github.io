@@ -245,17 +245,12 @@ arcpy.AddMessage(tableOut)
 
     <h3> ArcGIS Javascript API </h3>
 
-    <p> Here I will post code for the various instances of the ArcGIS Javascript API I have scattered around this website. Feel free to modify the code for your purposes -- do note that you need these tags ( <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.29/"></script> ) in your html for the API to function.  </p> <br>
+    <p> Here I will post code for the various instances of the ArcGIS Javascript API I have scattered around this website. Feel free to modify the code for your purposes -- do note that you need these <a href="https://i.imgur.com/rSD74RP.jpeg"> tags </a> in your html for the API to function.  </p> <br>
 
     <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/travelmap/travel_map.js"> Travel Photo Map (Home Page) </a> </p> <br>
 
     <pre><code> 
-	     <head>
- 	     <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
-             <script src="https://js.arcgis.com/4.29/"></script>
-    	     </head>
-	<script>
+
     	require([
 		"esri/Map", 
 		"esri/Basemap", 
@@ -541,7 +536,7 @@ arcpy.AddMessage(tableOut)
      
      });
 
-    </script>
+
     </code></pre>
 
     <p> Stormwater Assets in the Summit Subdivision (Internship Storymap </p> <br>
