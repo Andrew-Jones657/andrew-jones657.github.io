@@ -83,7 +83,7 @@
                 values: "Missouri"	  
 	    }]
          }, {
-            heading: "Devber and Rocky Mountain National Park, Aug 2022",
+            heading: "Denver and Rocky Mountain National Park, Aug 2022",
             classes: [{
                 label: "Colorado",
                 symbol: {type: "simple-marker", color: "rgba(220, 73, 29, 1)",  outline: { color: "rgba(242, 104, 63, 0.8)",  width: 5 }  },
