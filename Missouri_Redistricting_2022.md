@@ -154,45 +154,13 @@
 
 <p7> Considering all the criteria and requirements for redistricting (Table 1), one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
 
-<h2> History of the process </h2>
+<p> Before getting into the most recent congressional redistricting cycle, it is prudent to take a look at the previous cycle and observe how the districts were altered. </p> <br>
 
-<p8> Touching on some history of congressional redistricting in Missouri towards the end of the 20th century, the process had been plagued by a good deal of stalemates. In both the 1970s and 1980s cycle, the legislature failed to agree on a congressional map. The Democrat dominated state legislature could not create consensus among its caucus members or broker an arrangement with republicans, and ultimately the congressional map was drawn by the courts. In particular, the 1980s cycle dealt with the loss of a congressional district which exacerbated tensions even further. However, in the 1990s and 2000s cycles, Democrats were able to successfully pass maps. </p8>
-
-<p9>  </p9> 
-
-<h3> Redistricting in the new Millenium </h3>
-
-<a href="https://i.imgur.com/3u5ebKr.jpg"><img src="https://i.imgur.com/3u5ebKr.jpg" title="Missouri's Congressional Districts from 2003-2013" class="center"> </a> <br>
-
-<p10> The 2001 redistricting cycle serves as a salient place to begin, as it occurred during a transitionary period in Missouri’s political landscape: the flip of the state legislature from Democrat control to Republican control. This would have stark consequences down the line, but during the 2001 redistricting cycle, legislative power was split between the chambers. While the governor’s seat and the house were still held by Democrats, the Republicans had gained the senate in the previous 2000 election.  </p11> <br> <br>
-
-<p11> The process of passing the map took some bipartisan compromise. Two different maps, HB 1000 (link) and SB 536 (link) were drafted in each chamber respectively. Most of the debate stemmed over how to deal with the congressional districts in the St. Louis area.  </p11> <br> <br>
-
-<p12> In the House, the debate stemmed mainly over how to maintain the two Democrat congressional districts in the St. Louis area. Both the first and the third districts, represented by Democrats, had to expand to be in equal in population to other districts. The House plan had the first expand far west into suburbs, while the third picked up some liberal inner-ring (I170) suburbs. The third also shed some more Republican municipalities in South St. Louis County. The second then would take in all of St. Charles County.  The fifth in Kansas City would have taken in more of Jackson County, leaving only northeast Jackson County in the sixth. The rural districts were generally similar, though they had some minor adjustments as well. The house map (link) was ultimately passed on a partisan vote.  </p12> <br> <br>
-
-<p13> In the Senate, many senators felt that the first congressional district should not expand further west into St. Louis County and should instead take in the rest of St. Louis City, which would then represent a singular community of interest. This would have left the third district more conservative, as parts of South and West St. Louis County would have been used to make up for that population change. The fifth district in Jackson County would have taken in democrat leaning suburbs in Clay County and lose portions of Jackson County. Like in the House plan, the changes to the rural districts in the Senate plan were mainly to maintain minimal population deviations. </p13> <br> <br>
-
-<p14> Ultimately, with a democratic house and governor, compromise was reached with SCS HS HB 1000 (link), which maintained the layout of the first and third district from HCS HB 1000, while incorporating the second district layout from SCS SB 536. The fifth district ultimately took in portions of Cass County. The layouts for the rural districts were also the result of compromise and different from the original bills. </p14> <br> <br>
-
-<p> Looking at the makeup of the districts and how they changed since 1992: </p> <br> 
-
-<ol>
-<li> The first congressional district consisted of northern and central corridors of St Louis City as well as northern suburbs in St Louis County. It changed greatly in this cycle, as it was reworked to lose inner ring suburbs and gain more of northwestern St Louis County suburbs such as Breckenridge Hills, Bridgeton, Creve Coeur, Edmunson, Florissant, Frontenac, Hazelwood, Ladue, Maryland Heights, Olivette, Overland, St. Ann, and Woodson Terrace. Although it lost some black population in this change, the district remained the state’s single majority black and most democratic district.  </li>
-<li> The second congressional district consisted of western St. Louis County, suburban portions of St. Charles County, and Lincoln County. It gained Lincoln County and more of St. Charles County in this cycle to make up for the parts of St. Louis County it lost. It did, however, gain some South St. Louis County municipalities such as Concord, Crestwood, Grantwood Village, Sappington and parts of Kirkwood and Sunset Hills.  </li>
-<li> The third congressional district consisted of South St. Louis City, Central and Southern St. Louis County suburbs, Jefferson County, and Ste. Genevieve County. It gained many liberal inner-ring suburbs in this cycle such as Brentwood, Clayton, Maplewood, Richmond Heights, Rock Hill, and parts of Kirkwood, University City, and Webster Groves. It was a democrat leaning district consisting mainly of white middle- and working-class democrats.  </li>
-<li> The fourth congressional district consisted of rural western Missouri, mid Missouri, and Kansas City suburbs and exurbs. It had moved further south in this cycle, gaining Barton, Cedar, Dade, and parts of Polk County, while losing its eastern counties, namely Maries, Miller, Osage, and parts of Camden County to the ninth. It also lost urbanized portions in Cass and Jackson Counties. Although it had a Republican lean, it was represented by a longtime conservative Democrat.   </li>
-<li> The fifth congressional district consisted of Kansas City in Jackson County, as well as parts of Independence, Lee’s Summit, and southeastern Jackson County. Parts of suburban Cass County, such as Raymore and Belton, were added into the fifth in this cycle. Like the first and third districts, the fifth was a reliable democrat district.   </li>
-<li> The sixth district consisted of rural northwestern Missouri and northern Kansas City and suburbs. Other than losing Ray County and gaining some portions of Jackson County, it remained the same.  </li>
-<li> The seventh district consisted of southwestern Missouri, including the Springfield and Joplin areas, as well as portions of Polk and Taney Counties. It grew greatly since the 1990s, and lost Barton, Cedar, Dade, Douglas, and Ozark Counties. It also lost portions of Polk and Taney Counties.    </li>
-<li> The eighth congressional district consisted of much of southern and southeastern Missouri, including Cape Girardeau, the Bootheel, Poplar Bluff, and much of the Ozarks. It gained Douglas, Ozark, and Taney Counties while losing Crawford County.  </li>
-<li> The ninth congressional district consisted of rural northeastern Missouri, mid Missouri, and St Louis exurbs. It included Hannibal, Kirksville, Columbia, and parts of Lake of the Ozarks. Since it had lost Lincoln County and large parts of St. Charles County to the second, it expanded further south to include Crawford, Maries, Miller, Osage, and parts of Camden County. </li>
-</ol> <br> <br>
-
-<h> The 2012 cycle </h>
+<h3> The 2012 cycle </h3>
 
 <a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center"> </a> <br>
 
-<p> Before it even began, the 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, not only does it have to adjust for existing population deviations, but the remaining districts must also absorb the population of the lost district: this means every district must expand. This also meant one of the nine congressmen at the time would no longer have a seat. </p> <br> <br>
+<p> Before it even began, the 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, not only does it have to adjust for existing population deviations, but the remaining districts must also absorb the population of the lost district: this means every district must expand. This also meant one of the <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a seat. </p> <br> <br>
 
 <p> At this point, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governorship, it would be the Republicans who had control of the map drawing process. Given the Republican control over the legislature, the proposed redistricting bills in the House, HB 193, (link) and Senate, SB 264, (link) were fairly similar to one another.  </p>
 
@@ -234,6 +202,10 @@
 <script src="./files/CDs/MO_CDs_13_23.js" > </script>
 
 <p> This article is still under construction </p> <br> <br>
+
+<h4> Additional Resources </h4>
+
+<p> <a href="https://i.imgur.com/3u5ebKr.jpg"> Missouri's Congressional Districts from 2001 - 2012 </a> </p>
 
 </body>
 </html>
