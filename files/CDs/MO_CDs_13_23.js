@@ -1,7 +1,7 @@
       require(["esri/Map", "esri/Basemap", "esri/widgets/Expand", "esri/widgets/Home", "esri/layers/GeoJSONLayer", "esri/widgets/Fullscreen", "esri/widgets/Legend", "esri/views/MapView", "esri/widgets/Swipe"], (Map, Basemap, Expand, Home, GeoJSONLayer, Fullscreen, Legend, MapView, Swipe) => {
         const url_2013 = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/CDs/MO_CDs_2013.geojson";
 	const url_2023 = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/CDs/MO_CDs_2023.geojson";
-        const counties = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/CDs/MO_Counties.geojson"; 
+        const url_counties = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/CDs/MO_Counties.geojson"; 
 
 	let bordersRenderer = {
 	  type: "unique-value",
@@ -66,6 +66,18 @@
 	  }],
         };
 
+	let countiesRenderer = {
+	  type: "simple-fill", 
+	  symbol: {
+	    type: "simple-fill",
+	    color: "rgba(215,194,158,0)",
+            outline: {
+	      color: "rgba(0, 0, 0, 0.9)", 
+	      width: 1,
+	      style: "dash"
+	      }
+	}};	
+
         const geojsonLayer2013 = new GeoJSONLayer({
 	  url: url_2013,
 	  listmode: "hide",
@@ -79,10 +91,16 @@
 	  renderer: bordersRenderer,
 	  title: "Congressional Districts"
 	});
+
+	const geojsonLayerCounties = new GeoJSONLayer({
+	  url: url_counties,
+	  renderer: countiesRenderer,
+	  title: "Missouri Counties"
+	});
     
 	const map = new Map({
 	  basemap: "topo-vector",
-	  layers: [geojsonLayer2023, geojsonLayer2013]
+	  layers: [geojsonLayer2023, geojsonLayer2013, geojsonLayerCounties]
 	 });
 
         const view = new MapView({
@@ -107,8 +125,8 @@
         });
 	
 	const swipe = new Swipe({
-	  leadingLayers: [geojsonLayer2023],
-	  trailingLayers: [geojsonLayer2013],
+	  leadingLayers: [geojsonLayer2023, geojsonLayerCounties],
+	  trailingLayers: [geojsonLayer2013, geojsonLayerCounties],
 	  position: 50, // set position of widget to 50%
 	  view: view
 	}); 
