@@ -24,7 +24,7 @@
 
 <body>
 
-<h1> Missouri's Congressional 2022 Redistricting Cycle </h1> <br>
+<h1> Missouri's 2022 Congressional Redistricting </h1> <br>
 
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislators and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
@@ -35,6 +35,8 @@
 <p6> Many requirements and criteria apply when drawing a congressional district – attempting to work in even a few of the following factors becomes complex. This is not intended to be a deeply extensive list, but simply a glimpse at what all may be considered in drawing congressional districts.  </p6> <br> 
 
 <hr> 
+
+<h3> Congressional Redistricting Criteria </h3> <br>
 
 <p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations as minimal as practicable. This is a hard requirement, as failing to uphold population equality will often result in a congressional map being thrown out.  </p> <br> 
 
