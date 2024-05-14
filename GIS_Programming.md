@@ -75,6 +75,10 @@
     
     <h3> Python Scripts </h3>
 
+    <h4> A model to automate areal proportion in population estimation </h4>
+
+    <h4> A model to automate kernel density estimation </h4>
+
     <h4> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/Statistics_Update.py"> Descriptive Statistics Tool for ArcGIS  </a> </h4>
 
     <p> This tool is designed to calculate some basic descriptive statistics based off a user input list of numbers. Users can select which statistics they wish to include.  In order for it work correctly, it needs to be saved as a script in an ArcGIS toolbox and then the parameters in the image below     must be setup. </p> <br>
