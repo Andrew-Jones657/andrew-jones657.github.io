@@ -40,8 +40,13 @@
 <hr class="solid">
 <h3> Work Projects </h3> <br> <br>
 
-<p> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022.md">  Missouri Congressional Redistricting in 2022 (WIP) </a> </p> <br>
+<figure>
+<p> <a href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">  Missouri Congressional Redistricting in 2022 (WIP) </a> </p> <br>
+<a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
+    <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" class="center">
+</figure> <br> <br> 
 
+    
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Internship">
   <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="center">
