@@ -43,7 +43,7 @@
 <h1> Missouri's 2022 Congressional Redistricting </h1> <br>
 
 <figure>
-    <img src="https://i.imgur.com/euS37YR.jpg" alt="United States Congressional Districts" class="center">
+    <img src="https://i.imgur.com/euS37YR.jpg" alt="United States Congressional Districts" class="center" style="width: 625px; height: 450px;">
     <figcaption> 118th United States Congress </figcaption>
 </figure> <br> <br> 
 
