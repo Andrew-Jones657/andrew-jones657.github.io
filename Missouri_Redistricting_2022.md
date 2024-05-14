@@ -42,27 +42,27 @@
 
 <p> <em> Contiguity </em> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
 
-<p> Congressional districts should be <b> Compact </b>, meaning they are square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
+<p> Congressional districts should be <em> Compact </em>, meaning they are square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
 
-<p> Section II of the <b> Voting Rights Act of 1965 </b> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
+<p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
 
 <p> The remaining methods used in congressionasl district drawing are moreso criteria than hard requirements. </p> <br>
 
-<p> <b> Communities of Interest </b> is a term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. Many factors can constitute a community of interest: this can be helpful in that it describes qualitative aspects of the underlying population that cannot be observed in census data alone. However, as other rules are paramount, it is not always possible to preserve every possible community of interest. </p>
+<p> <em> Communities of Interest </em> is a term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. Many factors can constitute a community of interest: this can be helpful in that it describes qualitative aspects of the underlying population that cannot be observed in census data alone. However, as other rules are paramount, it is not always possible to preserve every possible community of interest. </p>
 
 <p7> Considering all the criteria and requirements for redistricting, one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
 
-<p> <b> Boundary Preservation </b> suggests that congressional districts should follow natural and human boundaries such as rivers, municipality lines, country borders, roads, etc. Generally, districts with preserved boundaries appear less arbitrarily drawn and are more easily understood by the public.  </p> <br>
+<p> <em> Boundary Preservation </em> suggests that congressional districts should follow natural and human boundaries such as rivers, municipality lines, country borders, roads, etc. Generally, districts with preserved boundaries appear less arbitrarily drawn and are more easily understood by the public.  </p> <br>
 
-<p> <b> Cultural and Physical Geography </b> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
+<p> <em> Cultural and Physical Geography </em> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
 
-<p> <b> Minimizing Splitting </b> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
+<p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
 
-<p> <b> Preserving District Cores </b> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
+<p> <em> Preserving District Cores </em> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
 
-<p> <b> Safe Districts </b> refers to districts that have a strong partisan lean. These districts tend to keep congressional election results consistent.  </p> <br>
+<p> <em> Safe Districts </em> refers to districts that have a strong partisan lean. These districts tend to keep congressional election results consistent.  </p> <br>
 
-<p> <b> Competitive or Proportional Districts </b> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
+<p> <em> Competitive or Proportional Districts </em> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
 
 <p> Before getting into the most recent congressional redistricting cycle, it is prudent to take a look at the previous cycle and observe how the districts were altered. </p> <br>
 
