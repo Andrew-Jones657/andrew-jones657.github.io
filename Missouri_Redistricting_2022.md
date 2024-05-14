@@ -34,6 +34,8 @@
 
 <p6> Many requirements and criteria apply when drawing a congressional district – attempting to work in even a few of the following factors becomes complex. This is not intended to be a deeply extensive list, but simply a glimpse at what all may be considered in drawing congressional districts.  </p6> <br> 
 
+<hr> 
+
 <p> <b> Population Equality </b> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations as minimal as practicable. This is a hard requirement, as failing to uphold population equality will often result in a congressional map being thrown out.  </p> <br> 
 
 <p> <b> Contiguity </b> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
