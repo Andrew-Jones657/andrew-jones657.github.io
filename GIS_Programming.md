@@ -12,6 +12,7 @@
         height: 100%;
         width: 100%;
         }
+    </style>
   </head>
   <body>
     <p> Welcome to my programming page, here I have various GIS scripts I have developed and used over the years. For the longer scripts, the hyperlinks on each heading will lead to the raw file hosted on github. </p> <br>
@@ -33,9 +34,44 @@
 
     <p> This code works by declaring the label text as a variable so that it can be used in a function. In this case, the Left helper function is used to preserve the left part of each string up until a certain point. However, since these city names are of many various different lengths, we cannot simply pick a number to stop at, since that would exclude many entries. Instead, we take the total number of characters with the count function and subtract that by three, which removes the state abbreviation and empty space. </p> <br>
 
-    <h4> Creating customized symbology with Arcade </h4> 
+    <h4> Mapping numerical plurality groups </h4> 
 
-    <p> Arcade can also be used to write customized symbology schemes that are not available in ArcGIS Pro. </p>
+    <p> Arcade can also be used to write customized symbology schemes that are not available in ArcGIS Pro. This script is an abstraction based off of ESRI's demographic team work on the 2020 US Census. </p>
+
+    <precode><code>
+    var dec_var_POP1 = $feature.POP1;
+    var dec_var_POP2 = $feature.POP2;
+    ...
+    var dec_var_POPN = $feature.POPN;
+
+    $feature["POP1"];
+    $feature["POP2"];
+    ...
+    $feature["POPN"];
+
+    var fieldNames = ["POP1", "POP2", ..., "POPN"];
+    var numFields = "N";
+    var maxValueField = null;
+    var maxValue = -Infinity;
+    var value i, totalValue = null;
+
+    for(i = 0; i < numFields: i++){
+      value = $feature[fieldNames[i]];
+
+      if(value > 0) {
+        if(value > maxValue) {
+	  maxValue = value;
+   	  maxValueField = fieldNames[i];
+        }
+	else if(value == maxValue){
+ 	  maxValueField = null;
+    	  }
+        }
+      }
+
+      return maxValueField;
+
+    </precode></code>
     
     <h3> Python Scripts </h3>
 
