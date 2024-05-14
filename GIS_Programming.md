@@ -28,9 +28,9 @@
     
     <p> This small snippet of code temporarily removes the last three characters on each of the entries without altering the underlieing data, thereby allowing for cleaner labels. </p>
 
-    <code>
+    <pre><code>
     var txt = $feature.NAME;  return Left(txt, Count(txt)-3)
-    </code>
+    </code></pre>
 
     <p> This code works by declaring the label text as a variable so that it can be used in a function. In this case, the Left helper function is used to preserve the left part of each string up until a certain point. However, since these city names are of many various different lengths, we cannot simply pick a number to stop at, since that would exclude many entries. Instead, we take the total number of characters with the count function and subtract that by three, which removes the state abbreviation and empty space. </p> <br>
 
@@ -38,7 +38,7 @@
 
     <p> Arcade can also be used to write customized symbology schemes that are not available in ArcGIS Pro. This script is an abstraction based off of ESRI's demographic team work on the 2020 US Census. </p>
 
-    <code>
+    <pre><code>
     var dec_var_POP1 = $feature.POP1;
     var dec_var_POP2 = $feature.POP2;
     ...
@@ -71,7 +71,7 @@
 
       return maxValueField;
 
-    </code>
+    </code></pre>
     
     <h3> Python Scripts </h3>
 
