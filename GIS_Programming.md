@@ -38,7 +38,7 @@
 
     <p> Arcade can also be used to write customized symbology schemes that are not available in ArcGIS Pro. This script is an abstraction based off of ESRI's demographic team work on the 2020 US Census. </p>
 
-    <precode><code>
+    <code>
     var dec_var_POP1 = $feature.POP1;
     var dec_var_POP2 = $feature.POP2;
     ...
