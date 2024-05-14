@@ -1,7 +1,7 @@
       require(["esri/Map", "esri/Basemap", "esri/widgets/Expand", "esri/widgets/Home", "esri/layers/GeoJSONLayer", "esri/widgets/Fullscreen", "esri/widgets/Legend", "esri/views/MapView", "esri/widgets/Swipe"], (Map, Basemap, Expand, Home, GeoJSONLayer, Fullscreen, Legend, MapView, Swipe) => {
         const url_2013 = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/CDs/MO_CDs_2013.geojson";
 	const url_2023 = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/CDs/MO_CDs_2023.geojson";
-        
+        const counties = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/CDs/MO_Counties.geojson"; 
 
 	let bordersRenderer = {
 	  type: "unique-value",
