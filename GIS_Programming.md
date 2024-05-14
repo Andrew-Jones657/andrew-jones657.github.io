@@ -3,9 +3,23 @@
 
   </head>
   <body>
-    <p> Welcome to my programming page, here I have various GIS scripts I have developed and used over the years. The hyperlinks on each heading will lead to the raw file hosted on github. </p> <br>
+    <p> Welcome to my programming page, here I have various GIS scripts I have developed and used over the years. For the longer scripts, the hyperlinks on each heading will lead to the raw file hosted on github. </p> <br>
 
     <h3> Arcade Scripts </h3>
+
+    <h4> Managing Labels with Arcade </h4>
+
+    <p> One of the most useful features of Arcade is its ability to to vastly improve label depiction and information. Imagine, for instance, that you have a field with city names followed by state abbreviations. For labeling purposes, you only need the city names, and it might be the case that 
+    you do not particularly want to create a variable just for different names. This small snippet of code temporarily removes the last three characters on each of the entries without altering the underlieing data, thereby allowing for cleaner labels. </p>
+
+    <precode><code>
+    var txt = $feature.NAME;
+    return Left(txt, Count(txt)-3)
+    </code></precode>
+
+    <h4> Creating customized symbology with Arcade </h4> 
+
+    <p> Arcade can also be used to write customized symbology schemes that are not available in ArcGIS Pro. </p>
     
     <h3> Python Scripts </h3>
 
