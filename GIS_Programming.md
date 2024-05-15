@@ -99,7 +99,7 @@
 
     <figure>
     <img src="https://i.imgur.com/R7k0Oag.jpeg" alt="Census blocks and block groups" class="center">
-    <figcaption> Under areal proportion analysis, smaller geographic units data are aggregated to larger geographic units </figcaption>
+    <figcaption> <em> Under areal proportion analysis, smaller geographic units data are aggregated to larger geographic units </em> </figcaption>
     </figure>
 
     <p> This script is designed to automate an arial proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
