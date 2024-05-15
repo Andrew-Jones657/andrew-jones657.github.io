@@ -78,7 +78,7 @@
     <p> Here are various python scripts I have developed. These are designed for use with ESRI's ArcGIS software. These are dynamic tools, meaning that you can use them for your own purposes as long as 
     you establish the proper parameters -- I intend to provide a screenshot of the necessary parameters for each tool. </p> <br>
 
-    <h4> Automating areal proportion analyses using census blocks </h4>
+    <h4> <a href="https://github.com/Andrew-Jones657/andrew-jones657.github.io/blob/main/files/Python/AggPopEstimator.py"> Automating areal proportion analyses using census blocks </a> </h4>
 
     <p> This script is designed to automate an arial proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
 	In this case, these small units are census blocks whereas the larger units are the choice of the user. </p> <br>   
