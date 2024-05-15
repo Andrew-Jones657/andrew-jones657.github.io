@@ -81,7 +81,9 @@
     <h4> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> Automating areal proportion analyses using census blocks </a> </h4>
 
     <p> This script is designed to automate an arial proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
-	In this case, these small units are census blocks whereas the larger units are the choice of the user. </p> <br>   
+	In this case, these small units are census blocks whereas the larger units are the choice of the user. </p> <br>
+
+    <a href="https://i.imgur.com/ctqad00.jpeg"><img src="https://i.imgur.com/ctqad00.jpeg" title ="Tool Parameters" class="center"> </a> <br>
 
     <h4> A model to automate kernel density estimation </h4>
 
