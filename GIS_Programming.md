@@ -106,7 +106,7 @@
     <p> This script is designed to automate an areal proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
 	In this case, these small units are census blocks whereas the larger units are the choice of the user. </p> <br>
 
-    <a href="https://i.imgur.com/ctqad00.jpeg"><img src="https://i.imgur.com/ctqad00.jpeg" title ="Tool Parameters" class="center"> </a> <br>
+    <a href="https://i.imgur.com/ctqad00.jpeg"><img src="https://i.imgur.com/ctqad00.jpeg" title ="Tool Parameters" class="center" style="width: 630px; height: auto;"> </a> <br>
 
     <h5> A model to automate kernel density estimation </h5>
 
@@ -114,7 +114,7 @@
 
     <p> This tool is designed to calculate some basic descriptive statistics based off a user input list of numbers. Users can select which statistics they wish to include.  In order for it work correctly, it needs to be saved as a script in an ArcGIS toolbox, with the following parameters established. </p> <br>
 
-    <a href="https://i.imgur.com/JMczU4a.jpeg"><img src="https://i.imgur.com/JMczU4a.jpeg" title="Tool Parameters" class="center"> </a> <br>
+    <a href="https://i.imgur.com/JMczU4a.jpeg"><img src="https://i.imgur.com/JMczU4a.jpeg" title="Tool Parameters" class="center" style="width: 630px; height: auto;"> </a> <br>
 
 
     <h5> Find and Save Unique Values in a Table </h5>
