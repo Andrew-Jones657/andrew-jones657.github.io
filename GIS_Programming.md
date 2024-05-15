@@ -16,7 +16,9 @@
 	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 	class="center";
 	}
-
+	    
+	h3 {text-align: center;}
+	    
 	figure figcaption {
 	text-align: center;
 	}
@@ -32,7 +34,7 @@
   <body>
     <p> Welcome to my programming page, here I have various GIS scripts I have developed and used over the years. For the longer scripts, the hyperlinks on each heading will lead to the raw file hosted on github. </p> <br>
 
-    <h3> Arcade Scripts <class="center"> </h3>
+    <h3> Arcade Scripts </h3>
 
     <h4> Managing Labels with Arcade </h4>
 
