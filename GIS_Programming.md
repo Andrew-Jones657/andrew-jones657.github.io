@@ -98,7 +98,7 @@
     <h5> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> Automating areal proportion analyses using census blocks </a> </h5>
 
     <figure>
-    <img src="https://i.imgur.com/R7k0Oag.jpeg" alt="Census blocks and block groups" class="center">
+    <img src="https://i.imgur.com/HNXFGt5.jpeg" alt="Census tracts overlaid on census blocks" class="center">
     <figcaption> <em> Under areal proportion analysis, smaller geographic units data are aggregated to larger geographic units </em> </figcaption>
     </figure>
 
