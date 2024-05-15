@@ -12,6 +12,21 @@
         height: 100%;
         width: 100%;
         }
+	img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+	class="center";
+	}
+
+	figure figcaption {
+	text-align: center;
+	}
+
+	.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
     </style>
   </head>
   <body>
@@ -79,6 +94,12 @@
     you establish the proper parameters -- I intend to provide a screenshot of the necessary parameters for each tool. </p> <br>
 
     <h4> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> Automating areal proportion analyses using census blocks </a> </h4>
+
+    <figure>
+    <img src="https://i.imgur.com/R7k0Oag.jpeg" alt="Census blocks and block groups" class="center">
+    </a>
+    <figcaption> Census blocks' population values in black are aggregated to the census block groups in green under areal proportion analysis </figcaption>
+    </figure>
 
     <p> This script is designed to automate an arial proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
 	In this case, these small units are census blocks whereas the larger units are the choice of the user. </p> <br>
