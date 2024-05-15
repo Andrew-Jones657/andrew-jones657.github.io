@@ -32,7 +32,7 @@
     </style>
   </head>
   <body>
-	  <img src="https://i.imgur.com/ixpJBjV.jpeg" style="width: 630px; height: 425px;"> <br>
+	  <img src="https://i.imgur.com/ixpJBjV.jpeg" style="width: 630px; height: auto;"> <br>
     <p> Welcome to my programming page, here I have various GIS scripts I have developed and used over the years. For the longer scripts, the hyperlinks on each heading will lead to the raw file hosted on github. </p> <br>
 
     <h3> Arcade Scripts </h3>
