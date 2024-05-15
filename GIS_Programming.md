@@ -18,7 +18,7 @@
 	}
 	    
 	h3 {text-align: center;}
-	    
+	h5 {text-align: center;}
 	figure figcaption {
 	text-align: center;
 	}
@@ -36,7 +36,7 @@
 
     <h3> Arcade Scripts </h3>
 
-    <h4> Managing Labels with Arcade </h4>
+    <h5> Managing Labels with Arcade </h5>
 
     <p> One of the most useful features of Arcade is its ability to to vastly improve label depiction and information. Imagine, for instance, that you have a field with city names followed by state abbreviations. For labeling purposes, you only need the city names, and it might be the case that 
     you do not particularly want to create a variable just for different names. </p> <br>
@@ -51,7 +51,7 @@
 
     <p> This code works by declaring the label text as a variable so that it can be used in a function. In this case, the Left helper function is used to preserve the left part of each string up until a certain point. However, since these city names are of many various different lengths, we cannot simply pick a number to stop at, since that would exclude many entries. Instead, we take the total number of characters with the count function and subtract that by three, which removes the state abbreviation and empty space. </p> <br>
 
-    <h4> Mapping numerical plurality groups </h4> 
+    <h5> Mapping numerical plurality groups </h5> 
 
     <p> Arcade can also be used to write customized symbology schemes that are not available in ArcGIS Pro. This script is an abstraction based off of ESRI's demographic team work on the 2020 US Census. </p>
 
@@ -95,7 +95,7 @@
     <p> Here are various python scripts I have developed. These are designed for use with ESRI's ArcGIS software. These are dynamic tools, meaning that you can use them for your own purposes as long as 
     you establish the proper parameters -- I intend to provide a screenshot of the necessary parameters for each tool. </p> <br>
 
-    <h4> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> Automating areal proportion analyses using census blocks </a> </h4>
+    <h5> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> Automating areal proportion analyses using census blocks </a> </h5>
 
     <figure>
     <img src="https://i.imgur.com/R7k0Oag.jpeg" alt="Census blocks and block groups" class="center">
@@ -107,16 +107,16 @@
 
     <a href="https://i.imgur.com/ctqad00.jpeg"><img src="https://i.imgur.com/ctqad00.jpeg" title ="Tool Parameters" class="center"> </a> <br>
 
-    <h4> A model to automate kernel density estimation </h4>
+    <h5> A model to automate kernel density estimation </h5>
 
-    <h4> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/Statistics_Update.py"> Descriptive Statistics Tool for ArcGIS  </a> </h4>
+    <h5> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/Statistics_Update.py"> Descriptive Statistics Tool for ArcGIS  </a> </h5>
 
     <p> This tool is designed to calculate some basic descriptive statistics based off a user input list of numbers. Users can select which statistics they wish to include.  In order for it work correctly, it needs to be saved as a script in an ArcGIS toolbox, with the following parameters established. </p> <br>
 
     <a href="https://i.imgur.com/JMczU4a.jpeg"><img src="https://i.imgur.com/JMczU4a.jpeg" title="Tool Parameters" class="center"> </a> <br>
 
 
-    <h4> Find and Save Unique Values in a Table </h4>
+    <h5> Find and Save Unique Values in a Table </h5>
 
     <p> This tool is designed to find the unique values in an ArcGIS field for a feature class or shapefile and then list them in a dBase file. </p>
 
