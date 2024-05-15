@@ -95,14 +95,14 @@
     <p> Here are various python scripts I have developed. These are designed for use with ESRI's ArcGIS software. These are dynamic tools, meaning that you can use them for your own purposes as long as 
     you establish the proper parameters -- I intend to provide a screenshot of the necessary parameters for each tool. </p> <br>
 
-    <h5> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> Automating areal proportion analyses using census blocks </a> </h5>
+    <h5> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> Automating an areal proportion analysis </a> </h5>
 
     <figure>
-    <img src="https://i.imgur.com/HNXFGt5.jpeg" alt="Census tracts overlaid on census blocks" class="center">
+    <img src="https://i.imgur.com/HNXFGt5.jpeg" style="width: 625px; height: 450px;" alt="Census tracts overlaid on census blocks" class="center">
     <figcaption> <em> Under areal proportion analysis, smaller geographic units data are aggregated to larger geographic units </em> </figcaption>
     </figure>
 
-    <p> This script is designed to automate an arial proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
+    <p> This script is designed to automate an areal proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
 	In this case, these small units are census blocks whereas the larger units are the choice of the user. </p> <br>
 
     <a href="https://i.imgur.com/ctqad00.jpeg"><img src="https://i.imgur.com/ctqad00.jpeg" title ="Tool Parameters" class="center"> </a> <br>
