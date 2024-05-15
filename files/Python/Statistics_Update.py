@@ -16,7 +16,7 @@
 ## ---------------------------------------------------------------------------
 
 # Import arcpy  and SSUtilities
-# These two module must be imported for geoprocessig and I/O with a tool dialog
+# These two modules must be imported for geoprocessing and using I/O tool dialog
 import arcpy
 import SSUtilities
 
@@ -54,14 +54,14 @@ def FunMin(NumList):
 
 # Range Function
 def FunRange(NumList):
-    theRange = FunMax(NumList) - FunMin(NumList) # subtracts the max from the min
+    theRange = FunMax(NumList) - FunMin(NumList) # subtracts the max from the min to find the range
 
     return theRange                                    # return the range
 
-# Variation Function
+# Variance Function
 def FunVar(NumList):
     theMean = FunMean(NumList)                          # calls the mean
-    theSumSqDif = 0                                        # establishes the sum of squared differences
+    theSumSqDif = 0                                        # placeholder for the sum of squared differences
     for theNum in NumList:
         theSumSqDif = theSumSqDif + (theNum - theMean) **2 # evaluates the sum of squared differences
     theVar = theSumSqDif / len(NumList)                 # calculates the variance
@@ -71,10 +71,10 @@ def FunVar(NumList):
 # Standard Deviation Function
 def FunStdDev(NumList):
     theMean = FunMean(NumList)                          # calls the mean
-    theSumSqDif = 0                                        # establishes the sum of squared differences
+    theSumSqDif = 0                                        # placeholder for the sum of squared differences
     for theNum in NumList:
         theSumSqDif = theSumSqDif + (theNum - theMean) **2 # evaluates the square root of a sum of squared diffences
-    theVar = theSumSqDif / len(NumList)                 # calculates the Variance
+    theVar = theSumSqDif / len(NumList)                 # calculates the variance
     theStdDev = (theVar **(0.5))        # calculates the standard deviation by taking the square root of the variance 
     
     return theStdDev                    # return the standard deviation
@@ -145,7 +145,7 @@ else:
     print("The Range was not checked.")
 
 # Call FunVar function
-if varChecked:                   # if Variation is checked
+if varChecked:                   # if Variance is checked
     thisVar = FunVar(numList)
 else:
     print("The Variation was not checked.")
