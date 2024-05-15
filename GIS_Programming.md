@@ -73,15 +73,21 @@
 
     </code></pre>
     
-    <h3> Python Scripts </h3>
+    <h3> Python Scripts </h3> <br>
 
-    <h4> A model to automate areal proportion in population estimation </h4>
+    <p> Here are various python scripts I have developed. These are designed for use with ESRI's ArcGIS software. These are dynamic tools, meaning that you can use them for your own purposes as long as 
+    you establish the proper parameters -- I intend to provide a screenshot of the necessary parameters for each tool. </p> <br>
+
+    <h4> Automating areal proportion analyses using census blocks </h4>
+
+    <p> This script is designed to automate an arial proportion analysis, which aggregates the population values of small geographic units to larger geographic units.
+	In this case, these small units are census blocks whereas the larger units are the choice of the user. </p> <br>   
 
     <h4> A model to automate kernel density estimation </h4>
 
     <h4> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/Statistics_Update.py"> Descriptive Statistics Tool for ArcGIS  </a> </h4>
 
-    <p> This tool is designed to calculate some basic descriptive statistics based off a user input list of numbers. Users can select which statistics they wish to include.  In order for it work correctly, it needs to be saved as a script in an ArcGIS toolbox and then the parameters in the image below     must be setup. </p> <br>
+    <p> This tool is designed to calculate some basic descriptive statistics based off a user input list of numbers. Users can select which statistics they wish to include.  In order for it work correctly, it needs to be saved as a script in an ArcGIS toolbox, with the following parameters established. </p> <br>
 
     <a href="https://i.imgur.com/JMczU4a.jpeg"><img src="https://i.imgur.com/JMczU4a.jpeg" title="Tool Parameters" class="center"> </a> <br>
 
