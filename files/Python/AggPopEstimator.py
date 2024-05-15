@@ -1,3 +1,22 @@
+##----------------------------------------------------------------------
+## AggPopEstimator.py
+## Created on: 5-14-2024
+## Last Modified on: 5-15-2024
+## Created by: Andrew Jones
+## Usage: AggPopEstimator(blockLayer), AggPopEstimator(aggregateLayer),
+## AggPopEstimator(populationField), AggPopEstimator(blockJoinField), AggPopEstimator(aggregateJoinField)
+##              In order to use this script, the user needs to have a census block layer 
+##              containing population data. The user must also have a larger layer that will 
+##              act as the aggregation layer. 
+##              Additionally, the user needs to identify the desired population field as 
+##              well as the fields used to join the table to the aggregate layer. Typically 
+##              this is the same field as the block field.         
+## Description: This script is designed to automate an arial proportion analysis
+##              and aggregate the population values of census blocks to larger geographic units. 
+##              The results are stored in a dBase table which can then be joined to the larger geographic unit.
+## Note: This tool may result in an error message if it is run more than once while the aggregate table 
+##       is on the active ArcGIS Pro Table of Contents. Remove the aggregate table from the Table of Contents to avoid this. 
+## ----------------------------------------------------------------------
 import arcpy
 import SSUtilities
 from sys import argv
