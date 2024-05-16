@@ -117,7 +117,7 @@
     <a href="https://i.imgur.com/JMczU4a.jpeg"><img src="https://i.imgur.com/JMczU4a.jpeg" title="Tool Parameters" class="center" style="width: 630px; height: auto;"> </a> <br>
 
 
-    <h5> Find and Save Unique Values in a Table </h5>
+    <h5> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/DataAccess.py"> Extract Unique Values from a Feature Layer and save them in a dBase file </a> </h5> <br>
 
     <p> This tool is designed to find the unique values in an ArcGIS field for a feature class or shapefile and then list them in a dBase file. </p>
 
