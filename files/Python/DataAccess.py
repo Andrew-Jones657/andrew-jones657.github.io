@@ -1,13 +1,16 @@
 ##----------------------------------------------------------------------
 ## DataAccess.py
 ## Created on: 4-21-2019
-## Last Modified on: 5-08-2024
+## Last Modified on: 5-16-2024
 ## Created by: Andrew Jones
 ## Usage: DataAccess(featureLayer), DataAccess([Field]),
 ## DataAccess(Output Dbase file)
-## Description: This script is designed to extract a single field's values
-##               from a  and then  
-##              list the first occurence of each value in a .dbf file. 
+##              When running this script for the first time, it is possible that
+##              the unique value dBase file will be located one directory higher than 
+##              the target directory. This does not occur if the dBase file "uniquevalue.dbf" 
+##              already exists in a directory. 
+## Description: This script is designed to extract unique field's values
+##               from a feature layer and save them into a dBase file.   
 ## Note: This is a dynamic script modified from a static script
 ##       so it can run as an ArcGIS script tool. 
 ## ----------------------------------------------------------------------
