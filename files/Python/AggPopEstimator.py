@@ -10,7 +10,7 @@
 ##              act as the aggregation layer. 
 ##              Additionally, the user needs to identify the desired population field as 
 ##              well as the fields used to join the table to the aggregate layer. Typically 
-##              this is the same field as the block field.
+##              this is the same field as the block field. Remember to setup the parameters or this tool will not function!
 ##              So far, this tool has successfully functioned using census blocks, block groups, tracts, and zip codes. 
 ## Description: This script is designed to automate an areal proportion analysis
 ##              and aggregate the population values of census blocks to larger geographic units. 
