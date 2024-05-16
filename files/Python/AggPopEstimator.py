@@ -10,12 +10,16 @@
 ##              act as the aggregation layer. 
 ##              Additionally, the user needs to identify the desired population field as 
 ##              well as the fields used to join the table to the aggregate layer. Typically 
-##              this is the same field as the block field.         
-## Description: This script is designed to automate an arial proportion analysis
+##              this is the same field as the block field.
+##              So far, this tool has successfully functioned using census blocks, block groups, tracts, and zip codes. 
+## Description: This script is designed to automate an areal proportion analysis
 ##              and aggregate the population values of census blocks to larger geographic units. 
 ##              The results are stored in a dBase table which can then be joined to the larger geographic unit.
+##              Areal proportion analysis assumes that the population within census blocks is evenly dispersed.
 ## Note: This tool may result in an error message if it is run more than once while the aggregate table 
-##       is on the active ArcGIS Pro Table of Contents. Remove the aggregate table from the Table of Contents to avoid this. 
+##       is on the active ArcGIS Pro Table of Contents. Remove the aggregate table from the Table of Contents to avoid this.
+##       Additionally, this tool was designed to work with census boundary files. Using it on other boundaries may create unexpected
+##       results. 
 ## ----------------------------------------------------------------------
 import arcpy
 import SSUtilities
