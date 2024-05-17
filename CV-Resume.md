@@ -63,11 +63,11 @@
 			<h2 class="title">Education</h2> 
 			<div class="description">
    			<h5> Western Kentucky University </h5>
-      			<span class="BS"> Bachelor of Science, Geography and Environmental Studies </span> <br>
+      			<span class="BS"> Bachelor of Science, Geography and Environmental Studies </span>
 	 		<span class="date" style="float:right"> May 2020 </span>
 	 		<p> Minors: Mathematics and Geographic Information Science </p><br>
     			<span class="BA"> Bachelor of Arts, German Language and Culture </span><br>
-       			<span class="date1"> style="float:right"> May 2020 </span>
+       			<span class="date1" style="float:right"> May 2020 </span>
 				
 			
 			
