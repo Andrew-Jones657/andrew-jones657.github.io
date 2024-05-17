@@ -66,7 +66,7 @@
       			<span class="BS"> <em> Bachelor of Science, Geography and Environmental Studies </em> </span> 
 	 		<span class="date" style="float:right"> May 2020 </span>
 	 		<p> Minors: Mathematics and Geographic Information Science </p>
-    			<span class="BA"> Bachelor of Arts, German Language and Culture </span>
+    			<span class="BA"> <em> Bachelor of Arts, German Language and Culture </em> </span>
        			<span class="date1" style="float:right"> May 2020 </span>
 				
 			
@@ -135,6 +135,13 @@
 		Additional Software: Adobe Photoshop, Adobe Acrobat, SPSS <br>
   		</p>
   		</div>
+
+  		<!--Honors -->
+    		<div id="Honors">
+
+      		<h2> Honors </h2>
+		<span class="eagle"> Eagle Scout </span>
+  		<span class="edate" style="float:right"> Sep 2013 </span>
 		
 		<!-- Extra-Curricular Activities -->
 		
