@@ -30,7 +30,7 @@
 			
 			<p>Missouri House of Representatives</p>
   			<span class="title"> <em> GIS Analyst </em></span>
-   			<span class="duration" style="right">Feb 2021 -- Jul 2023</span>
+   			<span class="duration" "float:right" >Feb 2021 -- Jul 2023</span>
 			<ul> 
 			<li> Drafted congressional district plans with Maptitude for Redistricting for representatives during the 2022 redistricting cycle </li>
 			<li> Created demographic data products from 2020 US Census for House Democrat and Republican caucuses to assist with redistricting decision making process </li>
