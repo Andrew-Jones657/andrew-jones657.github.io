@@ -11,6 +11,7 @@
 
 <h1> Welcome to my blog! </h1>
 
+<p> <a href="./blog_posts/5-3-2024"> Continuing On 5/3/2024 </a> </p>
 <p> <a href="./blog_posts/12-12-2023-Starting-Up"> Starting Up 12/12/2023 </a> </p>
   
 </main>
