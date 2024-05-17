@@ -25,7 +25,7 @@
   		<h1 id="work"> Work Experience</h1>
 		<div id="Work Experience">
 		
-			<span class="title">GIS Analyst</span>
+			<span class="title">GIS Analyst                               </span>
 			<span class="organization">Missouri House of Representatives</span>
 		
 		</div>
