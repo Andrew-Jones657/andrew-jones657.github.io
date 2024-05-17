@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
@@ -7,22 +6,6 @@
 	
 </head>
 <body>
-	<div class="container">
-	<header>
-		<h1 id="name">Andrew Jones</h1>
-		
-		<div id="designation">
-		
-			<span class="title">your designation</span>
-			<span class="organization">The organisation name</span>
-		
-		</div>
-		
-		<div class="contact">
-			<div class="email">john@example.com</div>
-		</div>
-		
-	</header>
 	
 	<div class="content" role=main>
 	
@@ -34,7 +17,24 @@
 				</p>			
 			</div> <!-- end description -->
 		</section>
+  
+	<div class="container">
+	<header>
+		<h1 id="name">Andrew Jones</h1> <br>
+
+  		<h1 id="work"> Work Experience</h1>
+		<div id="Work Experience">
 		
+			<span class="title">GIS Analyst</span>
+			<span class="organization">Missouri House of Representatives</span>
+		
+		</div>
+		
+		<div class="contact">
+			<div class="email">john@example.com</div>
+		</div>
+		
+	</header>
 		
 		<section id="Education">
 			<h2 class="title">Education</h2>
