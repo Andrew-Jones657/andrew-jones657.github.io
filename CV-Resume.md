@@ -30,7 +30,7 @@
 			
 			<p>Missouri House of Representatives</p>
   			<span class="title"> <em> GIS Analyst </em></span>
-   			<span class="duration" style="float:right" >Feb 2021 -- Jul 2023</span>
+   			<span class="duration" style="float:right" >Feb 2021 - Jul 2023</span>
 			<ul> 
 			<li> Drafted congressional district plans with Maptitude for Redistricting for representatives during the 2022 redistricting cycle </li>
 			<li> Created demographic data products from 2020 US Census for House Democrat and Republican caucuses to assist with redistricting decision making process </li>
@@ -42,7 +42,7 @@
 			
 			<p> Warren County Public Works Division of Stormwater Management</p>
    			<span class="title"> <em> GIS Services Intern </em> </span>
-   			<span class="duration">Mar 2020 -- Jan 2021</span>
+   			<span class="duration" style="float:right" >Mar 2020 - Jan 2021</span>
       			<ul> 
 			<li> Worked to fulfill the NPDES federal mandate for Warren County, Kentucky, by recording over one thousand stormwater assets with a Trimble R2 surveyor and terraflex software as well as digitizing outfalls along rivers </li>
 			<li> Conducted the annual Warren County road review on ArcMap by comparing road centerline shapefile and county ownership of roads with 2019 orthophotos of Warren County </li>
