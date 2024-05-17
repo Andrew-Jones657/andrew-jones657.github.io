@@ -147,9 +147,9 @@
   		<span class="mdate" style="float:right"> May 2020 </span>
     		<p> Honor's thesis: <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/"> An Ethnic Cultural Landscape: German Breweries and Social Institutions from 1860 to 1920 in Covington, KY </a> </p>
       		<span class="summa"> WKU: Summa Cum Laude (GPA 3.84) </span>
-		<span class="sdate" style="float:right"> May 2020 </span>
+		<span class="sdate" style="float:right"> May 2020 </span> <br>
 		<span class="Potter"> WKU: 2018 Potter College Award for Outstanding Student in German </span>
-		<span class="pdate" style="float:right"> May 2018 </span>
+		<span class="pdate" style="float:right"> May 2018 </span> <br>
   		<span class="Ogden"> WKU: 2020 Ogden College Award for Outstanding Student in Geography </span>
  		<span class="odate" style="float:right"> May 2020 </span>
     		</div>
