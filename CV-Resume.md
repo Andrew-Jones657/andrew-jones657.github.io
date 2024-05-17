@@ -26,11 +26,11 @@
 	
 	<div class="content" role=main>
 	
-		<section id="objective">
-			<h2 class="title">Objective</h2>
+		<section id="Professional Summary">
+			<h2 class="title">Professional Summary</h2>
 			<div class="description">
 				<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+					Motivated and responsible GIS Analyst with a versatile background in GIS, mathematics, spatial data analysis, and statistics searching for a data analysis position in a stimulating work environment. Able to adapt technical skills and personnel management 						experience to successfully execute client projects in an individual or a team setting.
 				</p>			
 			</div> <!-- end description -->
 		</section>
