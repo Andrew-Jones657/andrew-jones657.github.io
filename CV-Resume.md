@@ -21,7 +21,7 @@
 	<div class="container">
 	<header>
   		<h1 id="work"> Work Experience</h1>
-		<div id="Work Experience">
+		<div id="MissouriHouse">
 		
 			<span class="title">GIS Analyst</span>
 			<span class="organization">Missouri House of Representatives</span>
@@ -32,11 +32,24 @@
 			<li> Created general reference maps for each of the newly redistricted 163 state house districts  </li>
 			<li> Assisted in updating the House's old Google Maps web api to Leaflet for the purpose of displaying house district boundaries </li>
    			</ul>
-		</div>
+		</div> <br>
+  		<div id="Internship">
+			<span class="title">GIS Services Intern</span>
+			<span class="organization">Warren County Public Works Division of Stormwater Management</span>
+   			<span class="duration">Mar 2020 -- Jan 2021</span>
+      			<ul> 
+			<li> Worked to fulfill the NPDES federal mandate for Warren County, Kentucky, by recording over one thousand stormwater assets with a Trimble R2 surveyor and terraflex software as well as digitizing outfalls along rivers </li>
+			<li> Conducted the annual Warren County road review on ArcMap by comparing road centerline shapefile and county ownership of roads with 2019 orthophotos of Warren County </li>
+			<li> Enhanced practical knowledge on ArcSDE and Trimble datasheets by assisting in the development of MS4 collection form in a relational database environment </li>
+   			</ul>
 		
-		<div class="contact">
-			<div class="email">john@example.com</div>
-		</div>
+  
+  		
+    
+    
+    
+    
+    		</div>
 		
 	</header>
 		
@@ -115,7 +128,19 @@
 		
 		
 		<!-- Technical Skills -->
-		
+		<div id="Tech">
+		<p>
+		ESRI Suite: ArcGIS Pro, Developer, Enterprise, Portal, Online, Dashboards, Collector, Survey123, StoryMaps
+		ESRI Extensions: 3D Analyst, Geostatistical Analyst, Network Analyst, Spatial Analyst
+		Data Models: Network, Raster, TIN, Topology, Vector
+		Geospatial Tools: Google Earth Pro, Maptitude for Redistricting, Mobile311, Quantum GIS
+		Languages: Arcade, CSS, HTML, Javascript, Jupiter, SQL, Python, R, SAS
+		Hardware: Epson Surecolor T5270D, HP DesignJet Z6100ps Trimble R2, Trimble GPS GeoXT
+		Libraries: ArcGIS Javascript API, ArcPy, Leaflet, Mapbox, OpenStreetMap
+		Microsoft Suite: Access, Excel, Outlook, Powerpoint, Teams, Word
+		Additional Software: Adobe Photoshop, Adobe Acrobat, SPSS
+  		</p>
+  		</div>
 		
 		<!-- Extra-Curricular Activities -->
 		
