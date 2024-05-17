@@ -29,8 +29,8 @@
 		
 			
 			<p>Missouri House of Representatives</p>
-  			<span class="title"><strong>GIS Analyst</strong></span>
-   			<span class="duration">Feb 2021 -- Jul 2023</span>
+  			<span class="title">**GIS Analyst**</span>
+   			<span class="duration" style="right">Feb 2021 -- Jul 2023</span>
 			<ul> 
 			<li> Drafted congressional district plans with Maptitude for Redistricting for representatives during the 2022 redistricting cycle </li>
 			<li> Created demographic data products from 2020 US Census for House Democrat and Republican caucuses to assist with redistricting decision making process </li>
@@ -41,7 +41,7 @@
   		<div id="Internship">
 			
 			<p> Warren County Public Works Division of Stormwater Management</p>
-   			<span class="title"><strong>GIS Services Intern </strong></span>
+   			<span class="title">**GIS Services Intern**</span>
    			<span class="duration">Mar 2020 -- Jan 2021</span>
       			<ul> 
 			<li> Worked to fulfill the NPDES federal mandate for Warren County, Kentucky, by recording over one thousand stormwater assets with a Trimble R2 surveyor and terraflex software as well as digitizing outfalls along rivers </li>
@@ -60,8 +60,12 @@
 	</header>
 		
 		<section id="Education">
-			<h2 class="title">Education</h2> <span class="Western Kentucky University" style="right">
+			<h2 class="title">Education</h2> 
 			<div class="description">
+   			<h5> Western Kentucky University </h5>
+      			<span class="BS"> **Bachelor of Science, Geography and Environmental Studies** </p><br>
+	 		<p> Minors: Mathematics and Geographic Information Science </p><br>
+    			<p> **Bachelor of Arts, German Language and Culture** </p><br>
 				
 			
 			
