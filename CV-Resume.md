@@ -142,7 +142,12 @@
       		<h2> Honors </h2>
 		<span class="eagle"> Eagle Scout </span>
   		<span class="edate" style="float:right"> Sep 2013 </span>
-		
+    		<p> Eagle Project: Repainting the Historic Mentz Hotel in Park City, KY </p> 
+		<span class="mahurin"> WKU: Mahurin Honor's College Graduate </span>
+  		<span class="mdate" style="float:right"> May 2020 </span>
+    		<p> Honor's thesis: <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/" An Ethnic Cultural Landscape: German Breweries and Social Institutions from 1860 to 1920 in Covington, KY </a> </p>
+      		<span class="summa"> WKU: Summa Cum Laude (GPA 3.84) </span>
+		<span class="sdate" style="float:right"> May 2020 </span>
 		<!-- Extra-Curricular Activities -->
 		
 		
