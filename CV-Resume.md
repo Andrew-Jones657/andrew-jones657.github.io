@@ -2,13 +2,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	
+	<style>
+	.right{
+	margin-left: auto; 
+	margin-right: 0;
+	}
+	</style>
 	
 </head>
 <body>
 	
 	<div class="content" role=main>
-		<h1 id="name">Andrew Jones</h1> <br>
 		<section id="Professional Summary">
 			<h2 class="title">Professional Summary</h2>
 			<div class="description">
@@ -56,30 +60,10 @@
 	</header>
 		
 		<section id="Education">
-			<h2 class="title">Education</h2>
+			<h2 class="title">Education</h2> <span class="Western Kentucky University" style="right">
 			<div class="description">
 				
-				<table>
-					<thead>
-						<td>School</td>
-						<td>Qualification</td>
-						<td>Duration</td>
-					</thead>
-					
-					<!-- edit this/ row-wise-->
-					<tr>
-						<td>Western Kentucky University</td>
-						<td>Bachelor of Science, Geography and Environmental Studies</td>
-						<td>Aug 2015 - May 2020</td>
-					</tr>
-					
-					<tr> <!-- row2 -->
-						<td>Western Kentucky University</td>
-						<td>Bachelor of Arts, German Language and Culture</td>
-						<td>Aug 2015 - May 2020</td>
-					</tr>					
-					
-				</table>
+			
 			
 			
 			</div> <!-- end description -->
