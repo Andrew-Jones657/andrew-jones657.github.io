@@ -9,7 +9,7 @@
 <body>
 	<div class="container">
 	<header>
-		<h1 id="name">Your Name</h1>
+		<h1 id="name">Andrew Jones</h1>
 		
 		<div id="designation">
 		
@@ -42,25 +42,22 @@
 				
 				<table>
 					<thead>
-						<td>Duration</td>
+						<td>School</td>
 						<td>Qualification</td>
-						<td>Institute/School</td>
-						<td>Result</td>
+						<td>Duration</td>
 					</thead>
 					
 					<!-- edit this/ row-wise-->
 					<tr>
-						<td>abc</td>
-						<td>abc</td>
-						<td>abc</td>
-						<td>abc</td>
+						<td>Western Kentucky University</td>
+						<td>Bachelor of Science, Geography and Environmental Studies</td>
+						<td>Aug 2015 - May 2020</td>
 					</tr>
 					
 					<tr> <!-- row2 -->
-						<td>abc</td>
-						<td>abc</td>
-						<td>abc</td>
-						<td>abc</td>
+						<td>Western Kentucky University</td>
+						<td>Bachelor of Arts, German Language and Culture</td>
+						<td>Aug 2015 - May 2020</td>
 					</tr>					
 					
 				</table>
