@@ -8,7 +8,7 @@
 <body>
 	
 	<div class="content" role=main>
-	
+		<h1 id="name">Andrew Jones</h1> <br>
 		<section id="Professional Summary">
 			<h2 class="title">Professional Summary</h2>
 			<div class="description">
@@ -20,14 +20,18 @@
   
 	<div class="container">
 	<header>
-		<h1 id="name">Andrew Jones</h1> <br>
-
   		<h1 id="work"> Work Experience</h1>
 		<div id="Work Experience">
 		
-			<span class="title">GIS Analyst                               </span>
+			<span class="title">GIS Analyst</span>
 			<span class="organization">Missouri House of Representatives</span>
-		
+   			<span class="duration">Feb 2021 -- Jul 2023</span>
+			<ul> 
+			<li> Drafted congressional district plans with Maptitude for Redistricting for representatives during the 2022 redistricting cycle </li>
+			<li> Created demographic data products from 2020 US Census for House Democrat and Republican caucuses to assist with redistricting decision making process </li>
+			<li> Created general reference maps for each of the newly redistricted 163 state house districts  </li>
+			<li> Assisted in updating the House's old Google Maps web api to Leaflet for the purpose of displaying house district boundaries </li>
+   			</ul>
 		</div>
 		
 		<div class="contact">
