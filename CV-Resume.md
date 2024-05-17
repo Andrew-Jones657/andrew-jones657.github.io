@@ -129,16 +129,18 @@
 		
 		<!-- Technical Skills -->
 		<div id="Tech">
-		<p>
-		ESRI Suite: ArcGIS Pro, Developer, Enterprise, Portal, Online, Dashboards, Collector, Survey123, StoryMaps
-		ESRI Extensions: 3D Analyst, Geostatistical Analyst, Network Analyst, Spatial Analyst
-		Data Models: Network, Raster, TIN, Topology, Vector
-		Geospatial Tools: Google Earth Pro, Maptitude for Redistricting, Mobile311, Quantum GIS
-		Languages: Arcade, CSS, HTML, Javascript, Jupiter, SQL, Python, R, SAS
-		Hardware: Epson Surecolor T5270D, HP DesignJet Z6100ps Trimble R2, Trimble GPS GeoXT
-		Libraries: ArcGIS Javascript API, ArcPy, Leaflet, Mapbox, OpenStreetMap
-		Microsoft Suite: Access, Excel, Outlook, Powerpoint, Teams, Word
-		Additional Software: Adobe Photoshop, Adobe Acrobat, SPSS
+		
+  		<h2> Technical Skills </h2>
+  		<p>
+		ESRI Suite: ArcGIS Pro, Developer, Enterprise, Portal, Online, Dashboards, Collector, Survey123, StoryMaps <br>
+		ESRI Extensions: 3D Analyst, Geostatistical Analyst, Network Analyst, Spatial Analyst <br>
+		Data Models: Network, Raster, TIN, Topology, Vector <br>
+		Geospatial Tools: Google Earth Pro, Maptitude for Redistricting, Mobile311, Quantum GIS <br>
+		Languages: Arcade, CSS, HTML, Javascript, Jupiter, SQL, Python, R, SAS <br>
+		Hardware: Epson Surecolor T5270D, HP DesignJet Z6100ps Trimble R2, Trimble GPS GeoXT <br>
+		Libraries: ArcGIS Javascript API, ArcPy, Leaflet, Mapbox, OpenStreetMap <br>
+		Microsoft Suite: Access, Excel, Outlook, Powerpoint, Teams, Word <br>
+		Additional Software: Adobe Photoshop, Adobe Acrobat, SPSS <br>
   		</p>
   		</div>
 		
