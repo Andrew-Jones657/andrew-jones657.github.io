@@ -23,8 +23,9 @@
   		<h1 id="work"> Work Experience</h1>
 		<div id="MissouriHouse">
 		
-			<span class="title">GIS Analyst</span>
-			<span class="organization">Missouri House of Representatives</span>
+			
+			<p>Missouri House of Representatives</p>
+  			<span class="title"><strong>GIS Analyst</strong></span>
    			<span class="duration">Feb 2021 -- Jul 2023</span>
 			<ul> 
 			<li> Drafted congressional district plans with Maptitude for Redistricting for representatives during the 2022 redistricting cycle </li>
@@ -34,8 +35,9 @@
    			</ul>
 		</div> <br>
   		<div id="Internship">
-			<span class="title">GIS Services Intern</span>
-			<span class="organization">Warren County Public Works Division of Stormwater Management</span>
+			
+			<p> Warren County Public Works Division of Stormwater Management</p>
+   			<span class="title"><strong>GIS Services Intern </strong></span>
    			<span class="duration">Mar 2020 -- Jan 2021</span>
       			<ul> 
 			<li> Worked to fulfill the NPDES federal mandate for Warren County, Kentucky, by recording over one thousand stormwater assets with a Trimble R2 surveyor and terraflex software as well as digitizing outfalls along rivers </li>
