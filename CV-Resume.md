@@ -154,14 +154,16 @@
  		<span class="odate" style="float:right"> May 2020 </span>
     		</div>
 		<!-- Memberships -->
+
+  		<h2> Memberships </h2>
   		<span class="ESRI"> ESRI Newsroom </span>
-    		<span class="ESdate" style="float:right"> Aug 2017 (Ongoing) </span>
+    		<span class="ESdate" style="float:right"> Aug 2017 (Ongoing) </span> <br>
     		<span class="NSLS"> National Society of Leadership and Success </span>
-      		<span class="NSLSdate" style="float:right"> Aug 2017 (Ongoing) </span>
+      		<span class="NSLSdate" style="float:right"> Aug 2017 (Ongoing) </span> <br>
       		<span class="NCSL">National Conference of State Legislatures </span>
-		<span class="NCSLdate" style="float:right"> Feb 2021 - Jun 2023 </span>
+		<span class="NCSLdate" style="float:right"> Feb 2021 - Jun 2023 </span> <br>
   		<span class="Beta"> Beta Club </span>
-    		<span class="BETAdate" style="float:right"> Aug 2013 - May 2015 </span>
+    		<span class="BETAdate" style="float:right"> Aug 2013 - May 2015 </span> <br>
     		<span class="BSA"> Boy Scouts of America </span>
       		<span class="BSAdate" style="float:right"> Aug 2003 - Dec 2013 </span>
   		
