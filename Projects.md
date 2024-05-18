@@ -44,7 +44,7 @@
 <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
     <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" class="center">
 </a>
-    <figcaption> Changes in Missouri's Congressional Districts from 2012 to 2022 </figcaption>
+    <figcaption> Missouri's 2022 Congressional Redistricting </figcaption>
 </figure> <br> <br> 
 
     
