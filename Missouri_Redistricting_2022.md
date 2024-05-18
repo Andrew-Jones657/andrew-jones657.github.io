@@ -60,7 +60,7 @@
 
 <p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations as minimal as practicable. This is a hard requirement, as failing to uphold population equality may result in a redrawing of the map.  </p> <br> 
 
-<img src="https://i.imgur.com/XP9jvpq.jpg" style="float:center"> 
+<img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
 
 <p> <em> Contiguity </em> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
 
