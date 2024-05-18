@@ -64,9 +64,15 @@
 
 <p> <em> Contiguity </em> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
 
+<img src="https://i.imgur.com/geQOe6F.jpeg" class="center">
+
 <p> Congressional districts should be <em> Compact </em>, meaning they are square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
 
+<img src="https://i.imgur.com/0ug1IbG.jpeg" class="center">
+
 <p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
+
+
 
 <p> The remaining methods used in congressionasl district drawing are moreso criteria than hard requirements. </p> <br>
 
