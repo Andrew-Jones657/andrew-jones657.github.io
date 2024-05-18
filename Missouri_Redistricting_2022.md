@@ -74,7 +74,7 @@
 
 
 
-<p> The remaining methods used in congressionasl district drawing are moreso criteria than hard requirements. </p> <br>
+<p> Below are general criteria used in congressional redistricting. These are guidelines rather than hard requirements. </p> <br>
 
 <p> <em> Communities of Interest </em> is a term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. Many factors can constitute a community of interest: this can be helpful in that it describes qualitative aspects of the underlying population that cannot be observed in census data alone. However, as other rules are paramount, it is not always possible to preserve every possible community of interest. </p>
 
