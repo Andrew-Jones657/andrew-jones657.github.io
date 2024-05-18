@@ -125,6 +125,8 @@
     		<span class="ESdate" style="float:right"> Aug 2017 (Ongoing) </span> <br>
     		<span class="NSLS"> National Society of Leadership and Success </span>
       		<span class="NSLSdate" style="float:right"> Aug 2017 (Ongoing) </span> <br>
+		<span class="Alumni"> WKU Alumni Association </span>
+  		<span class="AlumniDate" style="float:right"> Aug 2020 (Ongoing) </span> <br>
       		<span class="NCSL">National Conference of State Legislatures </span>
 		<span class="NCSLdate" style="float:right"> Feb 2021 - Jun 2023 </span> <br>
   		<span class="Beta"> Beta Club </span>
