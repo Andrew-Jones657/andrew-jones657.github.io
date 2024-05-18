@@ -63,7 +63,7 @@
 <img src="https://i.imgur.com/ixpJBjV.jpg" alt="GIS Programming" class="center">
 </a>
 <figcaption> GIS Programming </figcaption>
-</figure> 
+</figure> <br>
 
 <p> A Site Selection and Service Area Analysis in Warren County, Kentucky (WIP) </p> <br>
 
