@@ -105,11 +105,17 @@
 
 <p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
 
+<figure>
+<span> <img src="https://i.imgur.com/WBJ6g3B.jpeg" class="left"> </span>
+<span> <img src="https://i.imgur.com/HQHi4XK.jpg" class="right"> </span>
+<figcaption> <em> Under the 2012 congressional district plan, Jefferson County was split three ways. Under the current plan, Jackson County is split three ways. </em></figcaption>
+</figure>
+
 <p> <em> Preserving District Cores </em> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
 
 <figure>
 <span> <img src="https://i.imgur.com/wRRVOQq.jpeg" class="left"> </span>
-<span> <img src="https://i.imgur.com/xeE00eu.jpe" class="right"> </span>
+<span> <img src="https://i.imgur.com/xeE00eu.jpeg" class="right"> </span>
 <figcaption> <em> Missouri's seventh congressional district steadfast population gain and location in southwest Missouri makes redistricting straightforward. </em></figcaption>
 </figure>
 
@@ -121,6 +127,11 @@
 </figure>
 
 <p> <em> Competitive or Proportional Districts </em> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
+
+<figure>
+<img src="https://i.imgur.com/5bFZs0t.jpeg" class="center">
+<figcaption> Michigan's congressional districts, drawn by an indepedent commission, tend to be more proportional to the states overall election results. </figcaption>
+</figure>
 
 <p7> Considering all the criteria and requirements for redistricting, one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
 
