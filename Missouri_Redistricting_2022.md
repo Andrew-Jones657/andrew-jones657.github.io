@@ -24,6 +24,9 @@
     text-align: center;
     }
 
+    .imgContainer{
+    float:left;
+    }
     .center {
     display: block;
     margin-left: auto;
@@ -103,6 +106,9 @@
 
 <p> <em> Cultural and Physical Geography </em> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
 
+<figure>
+<img src="https://i.imgur.com/AFA4epU.jpeg" class="center"> 
+</figure>
 <p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
 
 <figure>
@@ -130,7 +136,7 @@
 
 <figure>
 <img src="https://i.imgur.com/5bFZs0t.jpeg" class="center">
-<figcaption> Michigan's congressional districts, drawn by an indepedent commission, tend to be more proportional to the states overall election results. </figcaption>
+<figcaption> <em> Michigan's congressional districts, drawn by an indepedent commission, tend to be more proportional to the states overall election results. </em> </figcaption>
 </figure>
 
 <p7> Considering all the criteria and requirements for redistricting, one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
