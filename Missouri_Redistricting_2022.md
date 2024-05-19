@@ -107,11 +107,17 @@
 
 <p> <em> Preserving District Cores </em> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
 
+<figure>
+<span> <img src="https://i.imgur.com/wRRVOQq.jpeg" class="left"> </span>
+<span> <img src="https://i.imgur.com/xeE00eu.jpe" class="right"> </span>
+<figcaption> <em> Missouri's seventh congressional district steadfast population gain and location in southwest Missouri makes redistricting straightforward. </em></figcaption>
+</figure>
+
 <p> <em> Safe Districts </em> refers to districts that have a strong partisan lean. These districts tend to keep congressional election results consistent.  </p> <br>
 
 <figure>
-<img src="" class="center">
-    
+<img src="https://i.imgur.com/ZLNPwCt.jpeg" class="center">
+<figcaption> <em> Missouri's congressional districts tend to have predictable general election results. </em></figcaption>
 </figure>
 
 <p> <em> Competitive or Proportional Districts </em> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
