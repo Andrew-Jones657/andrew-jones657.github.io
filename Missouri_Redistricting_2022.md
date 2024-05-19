@@ -61,7 +61,7 @@
 <p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations as minimal as practicable. This is a hard requirement, as failing to uphold population equality may result in a redrawing of the map.  </p> <br> 
 <figure>
 <img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
-<figcaption> An example of population deviations "as minimal as practicable".  </figcaption>
+<figcaption> <em> An example of population deviations "as minimal as practicable". </em>  </figcaption>
 </figure>
 
 
@@ -69,20 +69,21 @@
 
 <figure>
 <img src="https://i.imgur.com/geQOe6F.jpeg" class="center">
-<figcaption> A fictitious rendition of Missouri's first congressional district that is not contiguous. The separate polygon would have to connect to the large red polygon or disappear for the fictitious district to be contiguous. </figcaption>
+<figcaption> <em> A fictitious rendition of Missouri's first congressional district that is not contiguous. The separate polygon over Rock Hill would have to connect to the rest of the district to establish contiguity. </em> </figcaption>
 </figure>
 
 
 <p> Congressional districts should be <em> Compact </em>, meaning they are square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
 <figure>
 <img src="https://i.imgur.com/0ug1IbG.jpeg" class="center">
-<figcaption> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </figcaption>
+<figcaption> <em> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </em> </figcaption>
 </figure>
 
 
 <p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
 <figure>
-
+<img src="https://i.imgur.com/MxywcnN.jpeg" class="center">
+<figcaption> <em> Missouri's first congressional district is generally regarded as a VRA protected district, as it contains a plurality Black/African-American population. </em> </figcaption>
     
 </figure>
 
@@ -100,6 +101,11 @@
 <p> <em> Preserving District Cores </em> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
 
 <p> <em> Safe Districts </em> refers to districts that have a strong partisan lean. These districts tend to keep congressional election results consistent.  </p> <br>
+
+<figure>
+<img src="" class="center">
+    
+</figure>
 
 <p> <em> Competitive or Proportional Districts </em> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
 
