@@ -92,6 +92,13 @@
 
 <p> <em> Communities of Interest </em> is a term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. Many factors can constitute a community of interest: this can be helpful in that it describes qualitative aspects of the underlying population that cannot be observed in census data alone. However, as other rules are paramount, it is not always possible to preserve every possible community of interest. </p>
 
+<figure>
+<span> <img src="https://i.imgur.com/v0ydmYx.jpeg" class="left"> </span>
+<span> <img src="https://i.imgur.com/HQHi4XK.jpeg" class="right"> </span>
+<figcaption> <em> Missouri's fifth congressional district under HB 2117 versus HB 2909. Under HB 2117, the district preserved more of Jackson County, whereas under HB 2909 the district unites more of Kansas City. </em></figcaption>
+</figure>
+
+
 <p> <em> Boundary Preservation </em> suggests that congressional districts should follow natural and human boundaries such as rivers, municipality lines, country borders, roads, etc. Generally, districts with preserved boundaries appear less arbitrarily drawn and are more easily understood by the public.  </p> <br>
 
 <p> <em> Cultural and Physical Geography </em> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
