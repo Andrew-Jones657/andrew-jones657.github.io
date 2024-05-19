@@ -59,19 +59,32 @@
 <h3> Congressional Redistricting Criteria </h3> <br>
 
 <p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations as minimal as practicable. This is a hard requirement, as failing to uphold population equality may result in a redrawing of the map.  </p> <br> 
-
+<figure>
 <img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
+<figcaption> An example of population deviations "as minimal as practicable".  </figcaption>
+</figure>
+
 
 <p> <em> Contiguity </em> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
 
+<figure>
 <img src="https://i.imgur.com/geQOe6F.jpeg" class="center">
+<figcaption> A fictitious rendition of Missouri's first congressional district that is not contiguous. The separate polygon would have to connect to the large red polygon or disappear for the fictitious district to be contiguous. </figcaption>
+</figure>
+
 
 <p> Congressional districts should be <em> Compact </em>, meaning they are square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
-
+<figure>
 <img src="https://i.imgur.com/0ug1IbG.jpeg" class="center">
+<figcaption> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </figcaption>
+</figure>
+
 
 <p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
+<figure>
 
+    
+</figure>
 
 
 <p> Below are general criteria used in congressional redistricting. These are guidelines rather than hard requirements. </p> <br>
