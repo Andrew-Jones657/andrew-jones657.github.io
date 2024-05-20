@@ -20,19 +20,19 @@
     class="center";
     }
 
-     /* Three image containers (use 25% for four, and 50% for two, etc) */
-    .column {
-    float: left;
-    width: 50%;
-    padding: 1px;
+    * {
+    box-sizing: border-box;
     }
 
-    /* Clear floats after image containers */
-    .row::after {
-    content: "";
-    clear: both;
-    display: table;
-    } 
+    .row {
+    display: flex;
+    }
+
+    /* Create three equal columns that sits next to each other */
+    .column {
+    flex: 50%;
+    padding: 5px;
+    }
     
     figure figcaption {
     text-align: center;
@@ -111,10 +111,10 @@
  
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/v0ydmYx.jpeg" alt="Snow" style="width:50%">
+    <img src="https://i.imgur.com/v0ydmYx.jpeg" alt="Snow" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/HQHi4XK.jpeg" alt="Forest" style="width:50%">
+    <img src="https://i.imgur.com/HQHi4XK.jpeg" alt="Forest" style="width:100%">
   </div>
 </div> 
 
