@@ -200,7 +200,7 @@
 </figure>
 <p> Before it even began, the 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, not only does it have to adjust for existing population deviations, but the remaining districts must also absorb the population of the lost district: this means every district must expand. This also meant one of the <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a seat. </p> <br> 
 
-<p> At this point, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governorship, it would be the Republicans who had control of the map drawing process. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg"> HB 193</a>, and the Senate, <a href="https://i.imgur.com/qUJGsTG.jpeg"> SB 264</a>, were fairly similar to one another.  </p>
+<p> At this point, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governorship, it would be the Republicans who had control of the map drawing process. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg"> HB 193</a>, and the Senate, <a href="[https://i.imgur.com/qUJGsTG.jpeg](https://i.imgur.com/qUJGsTG.jpeg)"> SB 264</a>, were fairly similar to one another.  </p>
 
 <p> </p>
 
@@ -242,6 +242,9 @@
 <script src="./files/CDs/MO_CDs_13_23.js" > </script> <br>
 
 <h3> What does the Future hold? </h3> <br>
+
+<p> Predicting future apportionment changes is no easy feat, though Missouri appears to be on course to hold steady and maintain its eight congressional districts. How the congressional districts change is difficult to discern, as it will be highly dependent on political control of state government 
+in the next decade. </p> <br>
 
 <p> This article is still under construction </p> <br> <br>
 
