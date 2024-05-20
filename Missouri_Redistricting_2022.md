@@ -65,7 +65,7 @@
     <figcaption><em> 118th United States Congress</em> </figcaption>
 </figure> <br> <br> 
 
-<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. In this project, I am discussing the congressional redistricting process in general, as well as providing an analysis on changes in the congressional districts. </p> <br> 
+<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide an analysis on changes in the congressional districts. </p> <br> 
 
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
@@ -239,13 +239,21 @@
 
 <div id="viewDiv" style="width: 625px; height: 450px;"> </div>
 
-<script src="./files/CDs/MO_CDs_13_23.js" > </script>
+<script src="./files/CDs/MO_CDs_13_23.js" > </script> <br>
+
+<h3> What does the Future hold? </h3> <br>
 
 <p> This article is still under construction </p> <br> <br>
 
-<h4> Additional Resources </h4>
+<h3> Additional Resources and References </h3>
 
-<p> <a href="https://i.imgur.com/3u5ebKr.jpg"> Missouri's Congressional Districts from 2001 - 2012 </a> </p>
+<p> <a href="https://i.imgur.com/3u5ebKr.jpg"> Missouri's Congressional Districts from 2001 - 2012 </a> </p> <br>
+
+<p> <a href="https://davesredistricting.org/" > Dave's Redistricting </a> </p> <br>
+
+<p> <a href="https://house.mo.gov/default.aspx"> Missouri House of Representatives </a> </p> <br>
+
+<p> <a href="https://www.senate.mo.gov/"> Missouri Senate </a> </p> <br>
 
 </body>
 </html>
