@@ -60,8 +60,10 @@
 
 <figure>
     <img src="https://i.imgur.com/euS37YR.jpg" alt="United States Congressional Districts" class="center" style="width: 625px; height: 450px;">
-    <figcaption> 118th United States Congress </figcaption>
+    <figcaption><em> 118th United States Congress</em> </figcaption>
 </figure> <br> <br> 
+
+<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. In this project, I am discussing the congressional redistricting process in general, as well as providing an analysis on changes in the congressional districts. </p> <br> <br>
 
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
@@ -73,7 +75,7 @@
 
 <hr> 
 
-<h3> Congressional Redistricting Criteria </h3> <br>
+<h3> Rules for Congressional Redistricting </h3> <br>
 
 <p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations as minimal as practicable. This is a hard requirement, as failing to uphold population equality may result in a redrawing of the map.  </p> <br> 
 <figure>
@@ -85,14 +87,14 @@
 <p> <em> Contiguity </em> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
 
 <figure>
-<img src="https://i.imgur.com/geQOe6F.jpeg" class="center">
+<img src="https://i.imgur.com/geQOe6F.jpeg" class="center" style="width:625px">
 <figcaption> <em> A fictitious rendition of Missouri's first congressional district that is not contiguous. The separate polygon over Rock Hill would have to connect to the rest of the district to establish contiguity. </em> </figcaption>
 </figure>
 
 
 <p> Congressional districts should be <em> Compact</em>, meaning residents within the district live close to one another. Compact districts tend to be square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
 <figure>
-<img src="https://i.imgur.com/0ug1IbG.jpeg" class="center">
+<img src="https://i.imgur.com/0ug1IbG.jpeg" class="center" style="width:625px">
 <figcaption> <em> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </em> </figcaption>
 </figure>
 
@@ -102,8 +104,11 @@
 <img src="https://i.imgur.com/MxywcnN.jpeg" class="center" style="width:625px">
 <figcaption> <em> Missouri's first congressional district is generally regarded as a VRA protected district, as it contains a plurality Black/African-American population. </em> </figcaption>
     
-</figure>
+</figure> <br> 
 
+<hr> 
+
+<h3> Congressional Redistricting Criteria </h3> <br>
 
 <p> Below are general criteria used in congressional redistricting. These are guidelines rather than hard requirements. </p> <br>
 
@@ -128,7 +133,7 @@
 <p> <em> Cultural and Physical Geography </em> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
 
 <figure>
-<img src="https://i.imgur.com/AFA4epU.jpeg" class="center"> 
+<img src="https://i.imgur.com/AFA4epU.jpeg" class="center" style="width:625px"> 
 <figcaption> <em> Missouri's eighth congressional district has long contained Missouri's Bootheel. </em> </figcaption>
 </figure>
 <p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
@@ -164,14 +169,14 @@
 <p> <em> Safe Districts </em> refers to districts that have a strong partisan lean. These districts tend to keep congressional election results consistent.  </p> <br>
 
 <figure>
-<img src="https://i.imgur.com/ZLNPwCt.jpeg" class="center">
+<img src="https://i.imgur.com/ZLNPwCt.jpeg" class="center" style="width:625px">
 <figcaption> <em> Missouri's congressional districts tend to have predictable general election results. </em></figcaption>
 </figure>
 
 <p> <em> Competitive or Proportional Districts </em> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
 
 <figure>
-<img src="https://i.imgur.com/5bFZs0t.jpeg" class="center">
+<img src="https://i.imgur.com/5bFZs0t.jpeg" class="center" style="width:625px">
 <figcaption> <em> Michigan's congressional districts, drawn by an indepedent commission, tend to be more proportional to the states overall election results. </em> </figcaption>
 </figure>
 
