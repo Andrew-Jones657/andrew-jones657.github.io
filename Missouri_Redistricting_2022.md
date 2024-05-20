@@ -75,9 +75,9 @@
 
 <hr> 
 
-<h3> Rules for Congressional Redistricting </h3> <br>
+<h3 class="center"> Rules for Congressional Redistricting </h3> <br>
 
-<p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations must be as minimal as practicable. This is a hard requirement, as failing to uphold population equality can render a map unconstitutional.  </p> <br> 
+<p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this may vary somewhat depending on redistricting provisions in a state's constitution (e.g. in Iowa and West Virginia counties cannot be split), generally, population deviations must be as minimal as practicable. This is a hard requirement, as failing to uphold population equality can render a map unconstitutional.  </p> <br> 
 <figure>
 <img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
 <figcaption> <em> An example of population deviations "as minimal as practicable". </em>  </figcaption>
@@ -110,7 +110,7 @@
 
 <hr> 
 
-<h3> Congressional Redistricting Criteria </h3> <br>
+<h3 class="center"> Congressional Redistricting Criteria </h3> <br>
 
 <p> Below are general criteria used in congressional redistricting. These are guidelines rather than hard requirements. </p> <br>
 
@@ -191,7 +191,7 @@
 
 <p> Before getting into the most recent congressional redistricting cycle, it is prudent to take a look at the previous 2012 cycle and observe how the districts were altered. </p> <br>
 
-<h3> The 2012 cycle </h3>
+<h3 class="center"> Missouri's 2011 Redistricting Cycle </h3>
 <figure>
 <a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> <br>
 <figcaption> <em> Missouri's congressional districts from 2013 to 2023 </em> </figcaption>
@@ -212,6 +212,8 @@
 <li> The seventh district, like in the previous cycle, was the least altered. It took in the rest of Taney and Polk Counties as well as part of Webster County.  </li>
 <li> The eighth district added Crawford and Ste. Genevieve Counties, as well as parts of Jefferson County. The portion of Taney County was removed.  </li>
 </ol> <br> <br>
+
+<h3 class="center"> Missouri's 2022 Redistricting Cycle </h3> <br>
 
 <a href="https://i.imgur.com/Xrk6Br4.jpg"><img src="https://i.imgur.com/Xrk6Br4.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> <br>
 
