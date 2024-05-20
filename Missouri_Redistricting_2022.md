@@ -81,7 +81,7 @@
 <figure>
 <img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
 <figcaption> <em> An example of population deviations "as minimal as practicable". </em>  </figcaption>
-</figure>
+</figure> <br>
 
 
 <p> <em> Contiguity </em> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
@@ -89,14 +89,16 @@
 <figure>
 <img src="https://i.imgur.com/geQOe6F.jpeg" class="center" style="width:625px">
 <figcaption> <em> A fictitious rendition of Missouri's first congressional district that is not contiguous. The separate polygon over Rock Hill would have to connect to the rest of the district to establish contiguity. </em> </figcaption>
-</figure>
+</figure> <br>
+
 
 
 <p> Congressional districts should be <em> Compact</em>, meaning residents within the district live close to one another. Compact districts tend to be square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
 <figure>
 <img src="https://i.imgur.com/0ug1IbG.jpeg" class="center" style="width:625px">
 <figcaption> <em> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </em> </figcaption>
-</figure>
+</figure> <br>
+
 
 
 <p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
