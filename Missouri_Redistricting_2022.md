@@ -19,6 +19,20 @@
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     class="center";
     }
+
+     /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    } 
     
     figure figcaption {
     text-align: center;
@@ -94,10 +108,17 @@
 <p> Below are general criteria used in congressional redistricting. These are guidelines rather than hard requirements. </p> <br>
 
 <p> <em> Communities of Interest </em> is a term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. Many factors can constitute a community of interest: this can be helpful in that it describes qualitative aspects of the underlying population that cannot be observed in census data alone. However, as other rules are paramount, it is not always possible to preserve every possible community of interest. </p>
+ 
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/v0ydmYx.jpeg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/HQHi4XK.jpeg" alt="Forest" style="width:100%">
+  </div>
+</div> 
 
 <figure>
-<span> <img src="https://i.imgur.com/v0ydmYx.jpeg" class="left"> </span>
-<span> <img src="https://i.imgur.com/HQHi4XK.jpeg" class="right"> </span>
 <figcaption> <em> Missouri's fifth congressional district under HB 2117 versus HB 2909. Under HB 2117, the district preserved more of Jackson County, whereas under HB 2909 the district unites more of Kansas City. </em></figcaption>
 </figure>
 
