@@ -125,7 +125,7 @@
 
 <figure>
 <figcaption> <em> Missouri's fifth congressional district under HB 2117 versus HB 2909. Under HB 2117, the district preserved more of Jackson County, whereas under HB 2909 the district unites more of Kansas City. </em></figcaption>
-</figure>
+</figure> <br>
 
 
 <p> <em> Boundary Preservation </em> suggests that congressional districts should follow natural and human boundaries such as rivers, municipality lines, country borders, roads, etc. Generally, districts with preserved boundaries appear less arbitrarily drawn and are more easily understood by the public.  </p> <br>
@@ -140,7 +140,7 @@
 <figure>
 <img src="https://i.imgur.com/AFA4epU.jpeg" class="center" style="width:625px"> 
 <figcaption> <em> Missouri's eighth congressional district has long contained Missouri's Bootheel. </em> </figcaption>
-</figure>
+</figure> <br>
 <p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
 
  <div class="row">
@@ -154,7 +154,7 @@
 
 <figure>
 <figcaption> <em> Under the 2012 congressional district plan, Jefferson County was split three ways. Under the current plan, Jackson County is split three ways. </em></figcaption>
-</figure>
+</figure> <br>
 
 <p> <em> Preserving District Cores </em> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
 
@@ -169,14 +169,14 @@
 
 <figure>
 <figcaption> <em> Missouri's seventh congressional district steadfast population gain and location in southwest Missouri makes redistricting straightforward. </em></figcaption>
-</figure>
+</figure> <br>
 
 <p> <em> Safe Districts </em> refers to districts that have a strong partisan lean. These districts tend to keep congressional election results consistent.  </p> <br>
 
 <figure>
 <img src="https://i.imgur.com/ZLNPwCt.jpeg" class="center" style="width:625px">
 <figcaption> <em> Missouri's congressional districts tend to have predictable general election results. </em></figcaption>
-</figure>
+</figure> <br>
 
 <p> <em> Competitive or Proportional Districts </em> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
 
