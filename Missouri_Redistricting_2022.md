@@ -90,7 +90,7 @@
 </figure>
 
 
-<p> Congressional districts should be <em> Compact </em>, meaning they are square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
+<p> Congressional districts should be <em> Compact</em>, meaning residents within the district live close to one another. Compact districts tend to be square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
 <figure>
 <img src="https://i.imgur.com/0ug1IbG.jpeg" class="center">
 <figcaption> <em> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </em> </figcaption>
@@ -99,7 +99,7 @@
 
 <p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
 <figure>
-<img src="https://i.imgur.com/MxywcnN.jpeg" class="center">
+<img src="https://i.imgur.com/MxywcnN.jpeg" class="center" style="width:625px">
 <figcaption> <em> Missouri's first congressional district is generally regarded as a VRA protected district, as it contains a plurality Black/African-American population. </em> </figcaption>
     
 </figure>
@@ -129,7 +129,7 @@
 
 <figure>
 <img src="https://i.imgur.com/AFA4epU.jpeg" class="center"> 
-<figcaption> Missouri's eighth congressional district has long contained Missouri's Bootheel. </figcaption>
+<figcaption> <em> Missouri's eighth congressional district has long contained Missouri's Bootheel. </em> </figcaption>
 </figure>
 <p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
 
