@@ -63,7 +63,7 @@
     <figcaption><em> 118th United States Congress</em> </figcaption>
 </figure> <br> <br> 
 
-<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. In this project, I am discussing the congressional redistricting process in general, as well as providing an analysis on changes in the congressional districts. </p> <br> <br>
+<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. In this project, I am discussing the congressional redistricting process in general, as well as providing an analysis on changes in the congressional districts. </p> <br> 
 
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
@@ -129,6 +129,11 @@
 
 
 <p> <em> Boundary Preservation </em> suggests that congressional districts should follow natural and human boundaries such as rivers, municipality lines, country borders, roads, etc. Generally, districts with preserved boundaries appear less arbitrarily drawn and are more easily understood by the public.  </p> <br>
+
+<figure>
+<img src="https://i.imgur.com/SvhMiKf.jpeg" alt="Colorado First" style="width:625px">
+<figcaption> The city limits of Denver constitute Colorado's first congressional district. </figcaption>
+</figure> <br>
 
 <p> <em> Cultural and Physical Geography </em> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
 
