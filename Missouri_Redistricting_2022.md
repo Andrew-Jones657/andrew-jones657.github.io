@@ -24,7 +24,7 @@
     .column {
     float: left;
     width: 50%;
-    padding: 5px;
+    padding: 1px;
     }
 
     /* Clear floats after image containers */
