@@ -111,10 +111,10 @@
  
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/v0ydmYx.jpeg" alt="Snow" style="width:90%">
+    <img src="https://i.imgur.com/v0ydmYx.jpeg" alt="Snow" style="width:50%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/HQHi4XK.jpeg" alt="Forest" style="width:90%">
+    <img src="https://i.imgur.com/HQHi4XK.jpeg" alt="Forest" style="width:50%">
   </div>
 </div> 
 
