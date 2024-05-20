@@ -111,10 +111,10 @@
  
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/v0ydmYx.jpeg" alt="Snow" style="width:100%">
+    <img src="https://i.imgur.com/v0ydmYx.jpeg" alt="HB 2117" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/HQHi4XK.jpeg" alt="Forest" style="width:100%">
+    <img src="https://i.imgur.com/HQHi4XK.jpeg" alt="HB 2909" style="width:100%">
   </div>
 </div> 
 
@@ -132,17 +132,31 @@
 </figure>
 <p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
 
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/WBJ6g3B.jpeg" alt="Jefferson County 2012" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/HQHi4XK.jpg" alt="Jackson County 2022" style="width:100%">
+  </div>
+</div> 
+
 <figure>
-<span> <img src="https://i.imgur.com/WBJ6g3B.jpeg" class="left"> </span>
-<span> <img src="https://i.imgur.com/HQHi4XK.jpg" class="right"> </span>
 <figcaption> <em> Under the 2012 congressional district plan, Jefferson County was split three ways. Under the current plan, Jackson County is split three ways. </em></figcaption>
 </figure>
 
 <p> <em> Preserving District Cores </em> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
 
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/wRRVOQq.jpeg" alt="Missouri's seventh congressional district in 2012" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/xeE00eu.jpeg" alt="Missouri's seventh congressional district in 2022" style="width:100%">
+  </div>
+</div> 
+
 <figure>
-<span> <img src="https://i.imgur.com/wRRVOQq.jpeg" class="left"> </span>
-<span> <img src="https://i.imgur.com/xeE00eu.jpeg" class="right"> </span>
 <figcaption> <em> Missouri's seventh congressional district steadfast population gain and location in southwest Missouri makes redistricting straightforward. </em></figcaption>
 </figure>
 
