@@ -129,6 +129,7 @@
 
 <figure>
 <img src="https://i.imgur.com/AFA4epU.jpeg" class="center"> 
+<figcaption> Missouri's eighth congressional district has long contained Missouri's Bootheel. </figcaption>
 </figure>
 <p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
 
