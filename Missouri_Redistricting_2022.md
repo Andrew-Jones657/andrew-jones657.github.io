@@ -38,6 +38,8 @@
     text-align: center;
     }
 
+    h3 {text-align: center;}
+    
     .imgContainer{
     float:left;
     }
