@@ -77,7 +77,7 @@
 
 <h3> Rules for Congressional Redistricting </h3> <br>
 
-<p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations as minimal as practicable. This is a hard requirement, as failing to uphold population equality may result in a redrawing of the map.  </p> <br> 
+<p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this is not always possible depending on a state's population, population deviations must be as minimal as practicable. This is a hard requirement, as failing to uphold population equality can render a map unconstitutional.  </p> <br> 
 <figure>
 <img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
 <figcaption> <em> An example of population deviations "as minimal as practicable". </em>  </figcaption>
@@ -132,7 +132,7 @@
 
 <figure>
 <img src="https://i.imgur.com/SvhMiKf.jpeg" alt="Colorado First" style="width:625px">
-<figcaption> The city limits of Denver constitute Colorado's first congressional district. </figcaption>
+<figcaption> <em> The city limits of Denver constitute Colorado's first congressional district. </em> </figcaption>
 </figure> <br>
 
 <p> <em> Cultural and Physical Geography </em> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
@@ -183,19 +183,20 @@
 <figure>
 <img src="https://i.imgur.com/5bFZs0t.jpeg" class="center" style="width:625px">
 <figcaption> <em> Michigan's congressional districts, drawn by an indepedent commission, tend to be more proportional to the states overall election results. </em> </figcaption>
-</figure>
+</figure> <br>
 
 <p7> Considering all the criteria and requirements for redistricting, one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
 
 <p> Before getting into the most recent congressional redistricting cycle, it is prudent to take a look at the previous 2012 cycle and observe how the districts were altered. </p> <br>
 
 <h3> The 2012 cycle </h3>
-
+<figure>
 <a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> <br>
+<figcaption> <em> Missouri's congressional districts from 2013 to 2023 </em> </figcaption>
+</figure>
+<p> Before it even began, the 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, not only does it have to adjust for existing population deviations, but the remaining districts must also absorb the population of the lost district: this means every district must expand. This also meant one of the <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a seat. </p> <br> 
 
-<p> Before it even began, the 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, not only does it have to adjust for existing population deviations, but the remaining districts must also absorb the population of the lost district: this means every district must expand. This also meant one of the <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a seat. </p> <br> <br>
-
-<p> At this point, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governorship, it would be the Republicans who had control of the map drawing process. Given the Republican control over the legislature, the proposed redistricting bills in the House, HB 193, (link) and Senate, SB 264, (link) were fairly similar to one another.  </p>
+<p> At this point, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governorship, it would be the Republicans who had control of the map drawing process. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg"> HB 193</a>, and the Senate, <a href="https://i.imgur.com/qUJGsTG.jpeg"> SB 264</a>, were fairly similar to one another.  </p>
 
 <p> </p>
 
