@@ -65,13 +65,13 @@
     <figcaption><em> 118th United States Congress</em> </figcaption>
 </figure> <br> <br> 
 
-<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide an analysis on changes in the congressional districts. Due to the nature of my position, however, I cannot provide a critical evaluation on the quality of a congressional redistricting plan. </p> <br> 
+<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide an analysis on changes in Missouri's congressional districts. Due to the nature of my position, however, I cannot provide a critical evaluation on the quality of a congressional redistricting plan. </p> <br> 
 
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
 <p4> Congressional maps are drawn using boundary and population information from the US Census bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files such as counties, cities, voting precincts, and census blocks serve as boundary files, and the population and demographic information is included in PL 94-171. </p4> <br> <br>
  
-<p5> When the census data is ready, the process of map drawing may begin. Counties, cities, voting precincts, and census blocks are assigned district numbers to create new congressional districts. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
+<p5> When the census data is ready, the process of map drawing may begin. Counties, cities, voting precincts, and census blocks are assigned to new congressional districts. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
 
 <p6> Many requirements and criteria apply when drawing congressional districts. Attempting to work in even a few of the following factors becomes complex. This list of criteria is simply a glimpse at what may be considered in drawing congressional districts.  </p6> <br> 
 
@@ -79,7 +79,7 @@
 
 <h3 class="center"> Rules for Congressional Redistricting </h3> <br>
 
-<p> <em> Population Equality </em> is particularly important, as congressional districts must be drawn down to the person. While this may vary somewhat depending on redistricting provisions in a state's constitution (e.g. in Iowa and West Virginia counties cannot be split), generally, population deviations must be as minimal as practicable. This is a hard requirement, as failing to uphold population equality can render a map unconstitutional.  </p> <br> 
+<p> <em> Population Equality </em> is essential, as congressional districts must be drawn down to the person. While this may vary somewhat depending on redistricting provisions in a state's constitution (e.g. in Iowa and West Virginia counties cannot be split), generally, population deviations must be as minimal as practicable. This is a hard requirement, as failing to uphold population equality can render a map unconstitutional.  </p> <br> 
 <figure>
 <img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
 <figcaption> <em> An example of population deviations "as minimal as practicable". </em>  </figcaption>
@@ -198,7 +198,7 @@
 <a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> 
 <figcaption> <em> Missouri's congressional districts from 2013 to 2023 </em> </figcaption>
 </figure> <br>
-<p> The 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, the remaining districts must absorb the population of the lost district: this means every district must expand. Alongside existing population deviations, this can result in drastically altered districts. For Missouri, this also meant one of the <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a seat. </p> <br> 
+<p> The 2011 redistricting cycle was bound to be tumultuous, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, the remaining districts must absorb the population of the lost district: this means every district must expand. Alongside existing population deviations, this can result in drastically altered districts. For Missouri, this also meant one of the <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a seat. </p> <br> 
 
 <p> At this point in time, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governor's seat, Republicans had control of the map drawing process with a near supermajority. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg"> HB 193</a>, and the Senate, <a href="https://i.imgur.com/qUJGsTG.jpeg"> SB 264</a>, were fairly similar to one another.  </p> <br>
 
