@@ -49,7 +49,7 @@
 
     
 <figure>
-<a target="_blank" href="https://andrew-jones657.github.io/Internship">
+<a target="_blank" href="https://storymaps.arcgis.com/stories/7974c51bca5f4bf69004515d4c7179b7?header">
   <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="center">
 </a>
   <figcaption> Internship Storymap </figcaption>
