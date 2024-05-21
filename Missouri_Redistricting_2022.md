@@ -235,7 +235,9 @@
 <li> The sixth district took in Lincoln, Randolph, and Ray Counties, while losing parts of Clay and Jackson Counties. The district continues to be an agricultural northern Missouri district with some suburban and exurban areas from Kansas City and St. Louis. </li>
 <li> The seventh district lost Polk County and took in more of Webster County. The district remained one of the least altered districts.   </li>
 <li> The eighth district took in the populated suburbs of Jefferson County by the Mississippi River. This rendered the district as more suburban, as these portion of Jefferson County contain more than half of its population. The district lost Crawford and Washington Counties to facilitate the changes in the third district. </li>    
-</ol>
+</ol> <br>
+
+<p> Below is a web app that displays the changes in Missouri's congressional districts. To the left of the swipe widget are the new congressional districts, and to the right are the previous congressional districts.  </p> <br>
 
 <div id="viewDiv" style="width: 625px; height: 450px;"> </div>
 
@@ -243,8 +245,7 @@
 
 <h3> What does the Future hold? </h3> <br>
 
-<p> Predicting future apportionment changes is no easy feat, though Missouri appears to be on course to hold steady and maintain its eight congressional districts. How the congressional districts change is difficult to discern, as it will be highly dependent on political control of state government 
-in the next decade. </p> <br>
+<p> It is not easy to predict future apportionment changes from so far out in time, though according to the Brennan Center and the American Redistricting Project, Missouri appears to be on course to hold steady and maintain its eight congressional districts. How the congressional districts change is difficult to discern, as it will be highly dependent on political control of state government in the next decade. </p> <br>
 
 <p> This article is still under construction </p> <br> <br>
 
