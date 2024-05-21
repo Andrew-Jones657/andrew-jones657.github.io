@@ -65,7 +65,7 @@
     <figcaption><em> 118th United States Congress</em> </figcaption>
 </figure> <br> <br> 
 
-<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide an analysis on changes in the congressional districts. </p> <br> 
+<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide an analysis on changes in the congressional districts. Due to the nature of my position, however, I cannot provide a critical evaluation on the quality of a congressional redistricting plan. </p> <br> 
 
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
@@ -191,16 +191,16 @@
 
 <p7> Considering all the criteria and requirements for redistricting, one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
 
-<p> Before looking at the 2022 congressional redistricting cycle, the previous 2012 cycle provides a good deal of context as to how congressional districts are modified under a Republican supermajority. </p> <br>
+<p> Shifting focus over specififcally to Missouri, the previous 2012 cycle provides a good deal of context as to how congressional districts are modified under a Republican supermajority. </p> <br>
 
 <h3 class="center"> Missouri's 2011 Redistricting Cycle </h3>
 <figure>
-<a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> <br>
+<a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> 
 <figcaption> <em> Missouri's congressional districts from 2013 to 2023 </em> </figcaption>
-</figure>
+</figure> <br>
 <p> The 2011 redistricting cycle was bound to be saddled with turmoil, as Missouri lost a congressional district after the 2010 US Census reapportionment. When a state loses a congressional district, the remaining districts must absorb the population of the lost district: this means every district must expand. Alongside existing population deviations, this can result in drastically altered districts. For Missouri, this also meant one of the <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a seat. </p> <br> 
 
-<p> At this point in time, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governor's seat, Republicans had control of the map drawing process with a near supermajority. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg"> HB 193</a>, and the Senate, <a href="[https://i.imgur.com/qUJGsTG.jpeg](https://i.imgur.com/qUJGsTG.jpeg)"> SB 264</a>, were fairly similar to one another.  </p>
+<p> At this point in time, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governor's seat, Republicans had control of the map drawing process with a near supermajority. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg"> HB 193</a>, and the Senate, <a href="https://i.imgur.com/qUJGsTG.jpeg"> SB 264</a>, were fairly similar to one another.  </p>
 
 <p> </p>
 
