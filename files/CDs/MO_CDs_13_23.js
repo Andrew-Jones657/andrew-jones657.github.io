@@ -85,11 +85,11 @@
                     symbol: {
                     type: "text",  // autocasts as new TextSymbol()
                 color: "white",
-                haloColor: "blue",
+                haloColor: "black",
                 haloSize: 1,
                 font: {  // autocast as new Font()
                     family: "Noto Sans",
-                size: 8
+                	size: 7
         			}
     			},
                 labelPlacement: "above-right",
