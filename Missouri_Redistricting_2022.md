@@ -268,5 +268,9 @@
 
 <p> <a href="https://www.senate.mo.gov/"> Missouri Senate </a> </p> <br>
 
+<p> <a href="https://maps.geo.census.gov/ddmv/map.html"> 2020 Census Demographic Data Map Viewer </a> </p> <br>
+
+<p> <a href="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824"> ESRI Atlas of Census 2020 Redistricting Data </a> </p> <br>
+
 </body>
 </html>
