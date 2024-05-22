@@ -76,7 +76,7 @@
 
 <p4> Congressional maps are drawn using boundary and population information from the US Census bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files such as counties, cities, voting precincts, and census blocks serve as boundary files, and the population and demographic information is included in PL 94-171. </p4> <br> <br>
 
-<iframe src="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824" title="ESRI Census Demographic Web Maps" style="width: 625px; height: 450px;"> 
+<iframe src="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824" title="ESRI Census Demographic Web Maps" style="width: 625px; height: 600px;"> 
 <figcaption> <em> The company ESRI provides visually stylistic demographic data from the 2020 US Census </em> </figcaption>
 </iframe> <br>
  
