@@ -62,7 +62,7 @@
 
 <figure>
     <img src="https://i.imgur.com/euS37YR.jpg" alt="United States Congressional Districts" class="center" style="width: 625px; height: 450px;">
-    <figcaption><em> The 118th United States Congress by</em> </figcaption>
+    <figcaption><em> The 118th United States Congress</em> </figcaption>
 </figure> <br> <br> 
 
 <p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide an analysis on changes in Missouri's congressional districts. Due to the nature of my position, however, I cannot provide a critical evaluation on the quality of a congressional redistricting plan. </p> <br> 
@@ -75,6 +75,10 @@
 </figure> <br>
 
 <p4> Congressional maps are drawn using boundary and population information from the US Census bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files such as counties, cities, voting precincts, and census blocks serve as boundary files, and the population and demographic information is included in PL 94-171. </p4> <br> <br>
+
+<iframe src="https://maps.geo.census.gov/ddmv/map.html" title="Census Bureau Demographic Web Viewer" width="625px"> <br>
+
+<iframe src="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824" title="ESRI Census Demographic Web Maps"  width="625px"> <br>
  
 <p5> When the census data is ready, the process of map drawing may begin. Counties, cities, voting precincts, and census blocks are assigned to new congressional districts. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
 
