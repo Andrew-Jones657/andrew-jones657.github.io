@@ -70,7 +70,7 @@
 <p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
 <figure>
-<img src="https://i.imgur.com/gRiNord.png" class="center" style="height:450px;width:625px"> 
+<img src="https://i.imgur.com/gRiNord.png" class="center" style="width: 625px; height: 450px;"> 
 <figcaption> <em> The result of the most recent congressional apportionment process. Missouri remained steady with eight seats. </em> </figcaption>    
 </figure> <br>
 
