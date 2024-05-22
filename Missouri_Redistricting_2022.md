@@ -260,17 +260,17 @@
 
 <h3> Additional Resources and References </h3>
 
-<p> <a href="https://i.imgur.com/3u5ebKr.jpg"> Missouri's Congressional Districts from 2001 - 2012 </a> </p> <br>
+<p> <a href="https://i.imgur.com/3u5ebKr.jpg" class="center"> Missouri's Congressional Districts from 2001 - 2012 </a> </p> <br>
 
-<p> <a href="https://davesredistricting.org/" > Dave's Redistricting </a> </p> <br>
+<p> <a href="https://davesredistricting.org/" class="center"> Dave's Redistricting </a> </p> <br>
 
-<p> <a href="https://house.mo.gov/default.aspx"> Missouri House of Representatives </a> </p> <br>
+<p> <a href="https://house.mo.gov/default.aspx" class="center"> Missouri House of Representatives </a> </p> <br>
 
-<p> <a href="https://www.senate.mo.gov/"> Missouri Senate </a> </p> <br>
+<p> <a href="https://www.senate.mo.gov/" class="center"> Missouri Senate </a> </p> <br>
 
-<p> <a href="https://maps.geo.census.gov/ddmv/map.html"> 2020 Census Demographic Data Map Viewer </a> </p> <br>
+<p> <a href="https://maps.geo.census.gov/ddmv/map.html" class="center"> 2020 Census Demographic Data Map Viewer </a> </p> <br>
 
-<p> <a href="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824"> ESRI Atlas of Census 2020 Redistricting Data </a> </p> <br>
+<p> <a href="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824" class="center"> ESRI Atlas of Census 2020 Redistricting Data </a> </p> <br>
 
 </body>
 </html>
