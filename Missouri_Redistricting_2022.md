@@ -265,7 +265,7 @@ forethought, mindfulness, and preparation.   </p6> <br> <br>
 
 <p> Below is a web app that displays the changes in Missouri's congressional districts. To the left of the swipe widget are the new congressional districts, and to the right are the previous congressional districts.  </p> <br>
 
-<div id="viewDiv" style="width: 625px; height: 450px;"> </div>
+<div id="viewDiv" style="width: 625px; height: 450px; border: 1px solid #444444;"> </div>
 
 <script src="./files/CDs/MO_CDs_13_23.js" > </script> <br>
 
@@ -273,7 +273,7 @@ forethought, mindfulness, and preparation.   </p6> <br> <br>
 
 <p> It is not easy to predict future apportionment changes from so far out in time, though according to the Brennan Center and the American Redistricting Project, Missouri appears to be on course to hold steady and maintain its eight congressional districts. How the congressional districts change is difficult to discern, as it will be highly dependent on political control of state government in the next decade. </p> <br>
 
-<p> This article is still under construction </p> <br> <br>
+<p> This article is still under construction. I may also periodically come back and update it. </p> <br> <br>
 
 <h3> Additional Resources and References </h3>
 
