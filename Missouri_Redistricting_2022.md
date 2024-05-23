@@ -87,6 +87,11 @@ The Public Law 94-171 dataset contains population and demographic information in
  
 <p5> When the census data is ready, the process of map drawing may begin. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
 
+<figure>
+<img src="https://i.imgur.com/13XzQRp.jpeg">
+<figcaption> <em> Maptitude for Redistricting is used by a majority of state legislatures for redistricting purposes. </em> </figcaption>
+</figure>
+
 <p6> While requirements and criteria for congressional redistricting can vary from state to state, there are federal 
 provisions and rulings that act as universal rules. One quickly finds that drawing a constitutional map requires
 forethought, mindfulness, and preparation.   </p6> <br> 
@@ -270,6 +275,8 @@ forethought, mindfulness, and preparation.   </p6> <br>
 <p> <a href="https://i.imgur.com/3u5ebKr.jpg" class="center"> Missouri's Congressional Districts from 2001 - 2012 </a> </p> <br>
 
 <p> <a href="https://davesredistricting.org/" class="center"> Dave's Redistricting </a> </p> <br>
+
+<p> <a href="https://www.caliper.com/redistricting-software.htm"> Maptitude for Redistricting </a> </p> <br>
 
 <p> <a href="https://house.mo.gov/default.aspx" class="center"> Missouri House of Representatives </a> </p> <br>
 
