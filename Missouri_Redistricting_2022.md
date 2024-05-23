@@ -86,7 +86,7 @@ The Public Law 94-171 dataset contains population and demographic information in
 <figure>
 <img src="https://i.imgur.com/FtJNeJR.jpeg" class="center" style="width: 625px">
 <figcaption> <em> Counties, voting districts, and census blocks in the St. Louis area. </em> </figcaption>
-</figure>
+</figure> <br>
 
  
 <p5> When the census data is ready, the process of map drawing may begin. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
