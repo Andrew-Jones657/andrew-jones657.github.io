@@ -80,7 +80,7 @@
 eight congressional seats. </em> </figcaption>    
 </figure> <br>
 
-<p4> Congressional maps are drawn using boundary and population information from the US Census Bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files, which include counties, cities, voting precincts, andcensus blocks, serve as boundary files. 
+<p4> Congressional maps are drawn using boundary and population information from the US Census Bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files, which include counties, cities, voting precincts, and census blocks, serve as boundary files. 
 The Public Law 94-171 dataset contains population and demographic information in a series of tables. Combined together, these highly detailed files are used to shape new congressional districts. </p4> <br> <br>
 
 <figure>
