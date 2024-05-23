@@ -83,6 +83,10 @@ eight congressional seats. </em> </figcaption>
 <p4> Congressional maps are drawn using boundary and population information from the US Census Bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files, which include counties, cities, voting precincts, andcensus blocks, serve as boundary files. 
 The Public Law 94-171 dataset contains population and demographic information in a series of tables. Combined together, these highly detailed files are used to shape new congressional districts. </p4> <br> <br>
 
+<figure>
+<img src="https://i.imgur.com/FtJNeJR.jpeg" class="center" style="width: 625px">
+<figcaption> <em> Counties, voting districts, and census blocks in the St. Louis area. </em> </figcaption>
+</figure>
 
  
 <p5> When the census data is ready, the process of map drawing may begin. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
@@ -94,7 +98,7 @@ The Public Law 94-171 dataset contains population and demographic information in
 
 <p6> While requirements and criteria for congressional redistricting can vary from state to state, there are federal 
 provisions and rulings that act as universal rules. One quickly finds that drawing a constitutional map requires
-forethought, mindfulness, and preparation.   </p6> <br> 
+forethought, mindfulness, and preparation.   </p6> <br> <br> 
 
 <hr> 
 
