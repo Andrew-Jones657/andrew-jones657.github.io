@@ -88,7 +88,7 @@ The Public Law 94-171 dataset contains population and demographic information in
 <p5> When the census data is ready, the process of map drawing may begin. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
 
 <figure>
-<img src="https://i.imgur.com/13XzQRp.jpeg">
+<img src="https://i.imgur.com/13XzQRp.jpeg" class="center" style="width: 625px">
 <figcaption> <em> Maptitude for Redistricting is used by a majority of state legislatures for redistricting purposes. </em> </figcaption>
 </figure>
 
