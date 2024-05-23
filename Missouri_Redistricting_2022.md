@@ -65,22 +65,31 @@
     <figcaption><em> The 118th United States Congress</em> </figcaption>
 </figure> <br> <br> 
 
-<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide an analysis on changes in Missouri's congressional districts. Due to the nature of my position, however, I cannot provide a critical evaluation on the quality of a congressional redistricting plan. </p> <br> 
+<p> During the 2020 redistricting cycle, I worked as the GIS Redistricting Analyst for the Missouri House of Representatives. In this position, I assisted representatives with drawing plans for new congressional districts. Here, I intend to discuss congressional redistricting in general, as well as provide a detailed summary on changes in Missouri's congressional districts. Due to the nature of my position, however, I cannot provide a critical evaluation on the quality of Missouri's congressional redistricting plan. </p> <br>
 
-<p3> Congressional redistricting occurs every ten years after both the US Census and apportionment are completed. Apportionment is the process by which each state’s population and population change is used to calculate its number of congressional seats. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, Congressional maps are passed by state legislatures, nonpartisan/bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
+<figure>
+<img src="https://i.imgur.com/GasizLY.jpeg" class="center" style="width: 625px">
+<figcaption> <em> The Missouri Legislature </em> </figcaption>    
+</figure> <br>
+
+<p3> Congressional redistricting occurs every ten years after both the US Census and the apportionment process are completed. Apportionment is the process by which the number of congressional districts for each state is determined -- this entails sophisticated mathematics using a state's population and population change. In Missouri, the congressional map is drawn by the state legislature and passed like a normal bill. Depending on the state, congressional maps are passed by state legislatures, nonpartisan or bipartisan citizens commissions, or select commissions.  </p3> <br> <br>
 
 <figure>
 <img src="https://i.imgur.com/gRiNord.png" class="center" style="width: 625px"> 
-<figcaption> <em> The result of the most recent congressional apportionment process. Missouri remained steady with eight seats. </em> </figcaption>    
+<figcaption> <em> The result of the most recent congressional apportionment process. Missouri experienced no change and continues to hold
+eight congressional seats. </em> </figcaption>    
 </figure> <br>
 
-<p4> Congressional maps are drawn using boundary and population information from the US Census bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files such as counties, cities, voting precincts, and census blocks serve as boundary files, and the population and demographic information is included in PL 94-171. </p4> <br> <br>
+<p4> Congressional maps are drawn using boundary and population information from the US Census Bureau. Topologically Integrated Geographic Encoding and Referencing (TIGER) line files, which include counties, cities, voting precincts, andcensus blocks, serve as boundary files. 
+The Public Law 94-171 dataset contains population and demographic information in a series of tables. Combined together, these highly detailed files are used to shape new congressional districts. </p4> <br> <br>
 
 
  
-<p5> When the census data is ready, the process of map drawing may begin. Counties, cities, voting precincts, and census blocks are assigned to new congressional districts. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
+<p5> When the census data is ready, the process of map drawing may begin. Typically, software such as Maptitude for Redistricting or ESRI Redistricting are used to create and manage redistricting plans. In the past two redistricting cycles, online redistricting programs have opened the process to the public, who can now more easily provide input on the process to map makers.   </p5> <br> <br>
 
-<p6> Many requirements and criteria apply when drawing congressional districts. Attempting to work in even a few of the following factors becomes complex. This list of criteria is simply a glimpse at what may be considered in drawing congressional districts.  </p6> <br> 
+<p6> While requirements and criteria for congressional redistricting can vary from state to state, there are federal 
+provisions and rulings that act as universal rules. One quickly finds that drawing a constitutional map requires
+forethought, mindfulness, and preparation.   </p6> <br> 
 
 <hr> 
 
