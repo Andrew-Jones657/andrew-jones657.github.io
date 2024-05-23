@@ -90,7 +90,7 @@ The Public Law 94-171 dataset contains population and demographic information in
 <figure>
 <img src="https://i.imgur.com/13XzQRp.jpeg" class="center" style="width: 625px">
 <figcaption> <em> Maptitude for Redistricting is used by a majority of state legislatures for redistricting purposes. </em> </figcaption>
-</figure>
+</figure> <br>
 
 <p6> While requirements and criteria for congressional redistricting can vary from state to state, there are federal 
 provisions and rulings that act as universal rules. One quickly finds that drawing a constitutional map requires
@@ -101,6 +101,7 @@ forethought, mindfulness, and preparation.   </p6> <br>
 <h3 class="center"> Rules for Congressional Redistricting </h3> <br>
 
 <p> <em> Population Equality </em> is essential, as congressional districts must be drawn down to the person. This rule stems from the Reynolds v Sims (1964) decision that the equal protection clause from the 14th Amendment also applies to legislative districts -- this is where the phrase "one person, one vote" originates.  While this may vary somewhat depending on redistricting provisions in a state's constitution (e.g. in Iowa and West Virginia counties cannot be split), generally, population deviations must be as minimal as practicable. This is a hard requirement, as failing to uphold population equality can render a map unconstitutional.  </p> <br> 
+
 <figure>
 <img src="https://i.imgur.com/EhQxOLe.jpeg" class="center"> 
 <figcaption> <em> An example of population deviations "as minimal as practicable". </em>  </figcaption>
