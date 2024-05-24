@@ -116,7 +116,9 @@ Otherwise, failing to uphold population equality can render a map unconstitution
 </figure> <br>
 
 
-<p> <em> Contiguity </em> is also particularly important, as congressional districts must consist of one geographic unit without separate portions surrounded by another district. Like population equality, this is also a hard requirement. </p> <br>
+<p> <em> Contiguity </em> is also important, as 23 states have statute or constitutional provisions that dictate
+congressional districts must consist of one geographic unit without separate portions surrounded by another district.  
+Nearly all states follow this principle regardless as to whether it is codified into law. </p> <br>
 
 <figure>
 <img src="https://i.imgur.com/geQOe6F.jpeg" class="center" style="width:625px">
@@ -124,13 +126,11 @@ Otherwise, failing to uphold population equality can render a map unconstitution
 </figure> <br>
 
 
-
 <p> Congressional districts should be <em> Compact</em>, meaning residents within the district live close to one another. Compact districts tend to be square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
 <figure>
 <img src="https://i.imgur.com/0ug1IbG.jpeg" class="center" style="width:625px">
 <figcaption> <em> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </em> </figcaption>
 </figure> <br>
-
 
 
 <p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
