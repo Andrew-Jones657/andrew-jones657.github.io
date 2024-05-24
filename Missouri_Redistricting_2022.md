@@ -126,7 +126,13 @@ Nearly all states follow this principle regardless as to whether it is codified 
 </figure> <br>
 
 
-<p> Congressional districts should be <em> Compact</em>, meaning residents within the district live close to one another. Compact districts tend to be square shaped and do not have strange protrusions. While this is important and in some cases a hard requirement, this is a more difficult criteria to evaluate than population deviations or contiguity, as the line between a compact and non-compact district can be ambiguous. Compactness is typically measured with mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc. </p> <br>
+<p> 
+Congressional districts should be <em> Compact </em>, meaning residents within the district live close to one another. 
+Compact districts are square shaped without strange protrusions. 
+While compactness is important and in 18 states a statutorial or constitutional requirement, it is a more difficult criteria to evaluate than population deviations or contiguity, 
+as the line between a compact and non-compact district can be ambiguous. 
+Compactness is typically measured through visual examination and mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc.  </p> <br>
+
 <figure>
 <img src="https://i.imgur.com/0ug1IbG.jpeg" class="center" style="width:625px">
 <figcaption> <em> Kentucky's newly redistricted first congressional district brought up some concerns regarding its compactness. </em> </figcaption>
@@ -134,6 +140,7 @@ Nearly all states follow this principle regardless as to whether it is codified 
 
 
 <p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
+
 <figure>
 <img src="https://i.imgur.com/MxywcnN.jpeg" class="center" style="width:625px">
 <figcaption> <em> Missouri's first congressional district is generally regarded as a VRA protected district, as it contains a plurality Black/African-American population. </em> </figcaption>
