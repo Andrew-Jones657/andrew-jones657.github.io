@@ -105,9 +105,9 @@ forethought, mindfulness, and preparation.   </p6> <br> <br>
 <h3 class="center"> Rules for Congressional Redistricting </h3> <br>
 
 <p> <em> Population Equality </em> is essential, as congressional districts must be drawn down to the person. 
-This principle stems from the Wesberry v Sanders (1964) decision, in which the US Supreme Court reviewed large population deviations in congressional districts in Georgia, 
-and determined that the equal protection clause from the 14th Amendment also applies to congressional districts. 
-While this may vary somewhat depending on redistricting provisions in a state's constitution (e.g. in Iowa and West Virginia counties cannot be split), generally, population deviations must be as minimal as practicable. 
+This principle stems from the Wesberry v Sanders (1964) decision, in which the US Supreme Court reviewed large population deviations in congressional districts in Georgia 
+and determined that the equal protection clause from the 14th Amendment also applies to voters in congressional districts. 
+While the degree of population equality may vary depending on redistricting provisions in a state's constitution (e.g. in Iowa and West Virginia counties cannot be split), generally, population deviations must be as minimal as practicable. 
 Otherwise, failing to uphold population equality can render a map unconstitutional.  </p> <br> 
 
 <figure>
