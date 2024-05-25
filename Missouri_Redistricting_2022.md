@@ -127,9 +127,9 @@ Nearly all states follow this principle regardless as to whether it is codified 
 
 
 <p> 
-Congressional districts should be <em> Compact </em>, meaning residents within the district live close to one another. 
-Compact districts are square shaped without strange protrusions. 
-While compactness is important and in 18 states a statutorial or constitutional requirement, it is a more difficult criteria to evaluate than population deviations or contiguity, 
+Congressional districts should be <em> Compact</em>, meaning residents within the district live close to one another. 
+These districts are square shaped without strange protrusions. 18 states have a statutorial or constitutional requirement for compact districts. 
+Compactness is, however, a more difficult criteria to evaluate than population deviations or contiguity, 
 as the line between a compact and non-compact district can be ambiguous. 
 Compactness is typically measured through visual examination and mathematical tests such as Roeck, Schwartzberg, Polbsy-Popper, etc.  </p> <br>
 
@@ -139,7 +139,10 @@ Compactness is typically measured through visual examination and mathematical te
 </figure> <br>
 
 
-<p> Section II of the <em> Voting Rights Act of 1965 </em> delineates circumstances or factors in which minority groups have the opportunity to elect their candidate of choice. </p> <br> 
+<p> Section II of the <em> Voting Rights Act of 1965</em> prohibits voting practices or procedures that discriminate 
+on the basis of race, color, or membership in certain language minority groups. 
+Thornburg v. Gingles (1986) delineates necessary preconditions for minority groups
+to elect their candidate of choice.  </p> <br> 
 
 <figure>
 <img src="https://i.imgur.com/MxywcnN.jpeg" class="center" style="width:625px">
