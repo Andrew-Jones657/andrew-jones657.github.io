@@ -309,7 +309,7 @@ congressional districts were previously redistricted.  </p> <br>
 
 <p> This article is still under construction. I may also periodically come back and update it with further mapping enhancements. </p> <br> <br>
 
-<h3> Additional Resources and References </h3>
+<h3> Additional Resources and References </h3> <br>
 
 <p> <a href="https://i.imgur.com/Xrk6Br4.jpg" > Missouri's Congressional Districts from 2023 - 2033 </a> </p> 
 
