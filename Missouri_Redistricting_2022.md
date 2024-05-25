@@ -334,13 +334,17 @@ for the figures under the "Rules for Congressional Redistricting" and "Congressi
 <p> This link leads to Caliper Corporation's web page for Maptitude for Redistricting. Maptitude was the redistricting software used by the Missouri legislature for congressional redistricting. 
 The figure image from the title section is also from this webpage. </p> <br>
 
+<p> <a href="https://www.ncsl.org/redistricting-and-census/redistricting-criteria"> National Conference of State Legislatures (NCSL) Redistricting Criteria </a> </p>
+
+<p> A list of redistricting criteria provided by the NCSL. This list includes required redistricting provisions for each state on both the congressional and state level. </p>
+
 
 <p> <a href="https://house.mo.gov/default.aspx" class="center"> Missouri House of Representatives </a> </p> 
 
 <p> This link will lead to the webpage for the Missouri House of Representatives. 
     <ul>
     <li> To see information on the 2022 redistricting bill, go to the legislation header at the top. From there, click the dropdown button at the top left and select "2022 Regular Session". From there, under "House and Senate Joint Bill Tracking", type in either 2117 for House Bill 2117 (the original redistricting house bill) or 2909 for House Bill 2909 (the final compromise bill introduced towards the end of session). On these pages, one can find the bill text, summary, and map, as well as the same information for all of the amendments offered in the House. </li> 
-    <li> For information on 2011 redistricting bill, follow the same information as above, but set the regular session to 2011 and search for 193 for House Bill 193. </li>
+    <li> For information on the 2011 redistricting bill, follow the same information as above, but set the regular session to 2011 and search for 193 for House Bill 193. </li>
     <li> For information on the 2001 redistricting bill, follow the same information as above, but set the regular session to 2001 and serach for 1000 for House Bill 1000. </li>
     </ul>
 </p> <br>
@@ -365,6 +369,14 @@ Public Law 94-171 redistricting dataset. </p> <br>
 <p> <a href="https://thearp.org/blog/apportionment/2030-asof121923/"> The American Redistricting Project </a> </p> 
 
 <p> This link will lead to the American Redistricting Project's apportionment estimate for 2030. </p> <br>
+
+<p> <a href="https://www.oyez.org/cases/1985/83-1968"> Thornburg v Gingles (1986) </a> </p>
+
+<p> Further information on the Thornburg v Gingles US Supreme Court case. </p> <br>
+
+<p> <a href="https://www.oyez.org/cases/1963/22"> Wesberry v Sanders (1964) </a> </p> 
+
+<p> Further information on the Wesberry v Sanders US Supreme Court case. </p> <br>
 
 </body>
 </html>
