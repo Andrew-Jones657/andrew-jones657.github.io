@@ -311,13 +311,39 @@ congressional districts were previously redistricted.  </p> <br>
 
 <h3> Additional Resources and References </h3>
 
-<p> <a href="https://i.imgur.com/3u5ebKr.jpg" class="center"> Missouri's Congressional Districts from 2001 - 2012 </a> </p> <br>
+<p> <a href="https://i.imgur.com/Xrk6Br4.jpg" > Missouri's Congressional Districts from 2023 - 2033 </p> <br>
+
+<p> The current map of Missouri's congressional districts during the 2023 - 2033 elections. I am the author of this map.  </p> <br>
+
+<p> <a href="https://i.imgur.com/WH8hI3i.jpg" > Missouri's Congressional Districts from 2013 - 2023 </p> <br>
+
+<p> The previous map of Missouri's congressional districts during the 2013 - 2023 elections. I am the author of this map.  </p> <br>
+
+<p> <a href="https://i.imgur.com/3u5ebKr.jpg" > Missouri's Congressional Districts from 2003 - 2013 </a> </p> <br>
+
+<p> The previous map of Missouri's congressional districts during the 2001 - 2012 elections. I am the author of this map.  </p> <br>
 
 <p> <a href="https://davesredistricting.org/" class="center"> Dave's Redistricting </a> </p> <br>
 
+<p> Dave's Redistricting is a popular website that allows users to draw and manage congressional plans online. It contains 
+the official maps for every state, as well user contributed maps that score high under certain metrics. I used Dave's Redistricting 
+for the figures under the "Rules for Congressional Redistricting" and "Congressional Redistricting Criteria" sections. </p> <br>
+
 <p> <a href="https://www.caliper.com/redistricting-software.htm"> Maptitude for Redistricting </a> </p> <br>
 
+<p> This link leads to Caliper Corporation's web page for Maptitude for Redistricting. It was the redistricting software used by the Missouri legislature for congressional redistricting. 
+The figure image from the title section is also from this webpage. </p> <br>
+
+
 <p> <a href="https://house.mo.gov/default.aspx" class="center"> Missouri House of Representatives </a> </p> <br>
+
+<p> This link will lead to the webpage for the Missouri House of Representatives. 
+    <ul>
+    <li> To see information on the 2022 redistricting bill, go to the legislation header at the top. From there, click the dropdown button at the top left and select "2022 Regular Session". From there, under "House and Senate Joint Bill Tracking", type in either 2117 for House Bill 2117 (the original redistricting house bill) or 2909 for House Bill 2909 (the final compromise bill introduced towards the end of session). On these pages, one can find the bill text, summary, and map, as well as the same information for all of the amendments offered in the House. </li> 
+    <li> For information on 2011 redistricting bill, follow the same information as above, but set the regular session to 2011 and search for 193 for House Bill 193. </li>
+    <li> For information on the 2001 redistricting bill, follow the same information as above, but set the regular session to 2001 and serach for 1000 for House Bill 1000. </li>
+    </ul>
+</p>
 
 <p> <a href="https://www.senate.mo.gov/" class="center"> Missouri Senate </a> </p> <br>
 
@@ -325,7 +351,9 @@ congressional districts were previously redistricted.  </p> <br>
 
 <p> <a href="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824" class="center"> ESRI Atlas of Census 2020 Redistricting Data </a> </p> <br>
 
-<h3> References </h3>
+<p> <a href="https://www.brennancenter.org/our-work/analysis-opinion/how-congressional-maps-could-change-2030"> </a> Brennan Center </p> <br>
+
+<p> <a href="https://thearp.org/blog/apportionment/2030-asof121923/"> The American Redistricting Project </a> </p> <br>
 
 </body>
 </html>
