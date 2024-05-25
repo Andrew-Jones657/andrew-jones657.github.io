@@ -287,17 +287,17 @@ congressional districts were previously redistricted.  </p> <br>
 
 <p> Individual district changes between 2011 and 2022: </p> <br>
 <ol>
-<li> The first district expanded further into St Louis County. This included parts of municipalities in central and northwestern St Louis County such as Bridgeton, Maryland Heights, Creve Coeur, Frontenac, Ladue, Brentwood, Rock Hill, Webster Groves, Richmond Heights, and unincorporated St Louis County. The district lost Bella Villa, Lemay, Maplewood, and part of Richmond Heights. </li> <br>
-<li> The second district expanded west into exurban areas, picking up Franklin County as well as parts of Warren and rural St. Charles Counties. The portion of Jefferson County was removed, as well as some suburban parts of St. Charles County. This shifted the second from being a competitive district to a Republican leaning one.  </li> <br>
-<li> The third district remained a mid-Missouri district with St. Louis suburbs, albeit with an altered composition. It now has more of suburban St. Charles County as well as the southern half of Boone County and part of the City of Columbia. Crawford, Cooper, Moniteau, and Washington counties were also added to the third district. The portion of Jefferson County in the third also shifted from being mid Jefferson County to the exurban and rural western portion of Jefferson County. The district lost Lincoln County and parts of Camden County.   </li> <br>
-<li> The fourth district regained Lafayette and Saline Counties as well as some eastern portions of Jackson County. The district also gained Howard County, as well as the northern half Boone County and the city of Columbia. Polk County to the south was added back into the district as well. Ray County was removed and placed in the sixth district.  </li> <br>
-<li> The fifth district shed its rural counties, namely Lafayette, Ray, and Saline, and took in more suburban portions of Clay and Jackson Counties. In Jackson County, all of Lee’s Summit is now contained in the fifth district. The district became more democrat leaning and more rooted in Kansas City proper.  </li> <br>
+<li> The first district expanded further into St Louis County. This included parts of municipalities in central and northwestern St Louis County such as Bridgeton, Maryland Heights, Creve Coeur, Frontenac, Ladue, Brentwood, Rock Hill, Webster Groves, Richmond Heights, and unincorporated St. Louis County. The district lost Bella Villa, Lemay, Maplewood, and part of Richmond Heights. </li> <br>
+<li> The second district expanded west into exurban areas, picking up Franklin County as well as parts of Warren and rural St. Charles Counties. The portion of Jefferson County was removed, as well as some suburban parts of St. Charles County. This shifted the second from being a competitive district to a Republican leaning district.  </li> <br>
+<li> The third district remained a central Missouri district with St. Louis suburbs, albeit with an altered composition. It now has more of suburban St. Charles County as well as the southern half of Boone County and part of the City of Columbia. Crawford, Cooper, Moniteau, and Washington counties were also added to the third district. The portion of Jefferson County in the third also shifted from being central Jefferson County to the exurban and rural western portion of Jefferson County. The district lost Lincoln County and parts of Camden County.   </li> <br>
+<li> The fourth district, like the third, remained a central Missouri district. The district regained Lafayette and Saline Counties as well as some eastern portions of Jackson County. The district also gained Howard County, as well as the northern half Boone County and the city of Columbia. Polk County to the south was added back into the district as well. Ray County was removed and placed in the sixth district.  </li> <br>
+<li> The fifth district shed its rural counties, namely Lafayette, Ray, and Saline, and took in more suburban portions of Clay and Jackson Counties. In Jackson County, all of Lee’s Summit is now contained in the fifth district. The district became more democrat leaning, more rooted in Kansas City proper, and thereby more urban.  </li> <br>
 <li> The sixth district took in Lincoln, Randolph, and Ray Counties, while losing parts of Clay and Jackson Counties. The district continues to be an agricultural northern Missouri district with some suburban and exurban areas from Kansas City and St. Louis. </li> <br>
 <li> The seventh district lost Polk County and took in more of Webster County. The district remained one of the least altered districts.   </li> <br>
 <li> The eighth district took in the populated suburbs of Jefferson County by the Mississippi River. This rendered the district as more suburban, as these portion of Jefferson County contain more than half of its population. The district lost Crawford and Washington Counties to facilitate the changes in the third district. </li> <br>    
 </ol> <br>
 
-<p> Below, I designed a web map that displays the changes in Missouri's congressional districts. To the left of the swipe widget are the new congressional districts, and to the right are the previous congressional districts.  </p> <br>
+<p> Below is a web map that displays the changes in Missouri's congressional districts. To the left of the swipe widget are the new congressional districts, and to the right are the previous congressional districts. The legend can be found at the bottom right.  </p> <br>
 
 <div id="viewDiv" style="width: 625px; height: 450px; border: 1px solid #444444;"> </div>
 
@@ -305,11 +305,11 @@ congressional districts were previously redistricted.  </p> <br>
 
 <h3> What does the Future hold? </h3> <br>
 
-<p> It is not easy to predict future apportionment changes from so far out in time, though according to the Brennan Center and the American Redistricting Project, Missouri appears to be on course to hold steady and maintain its eight congressional districts. How the congressional districts change is difficult to discern, as it will be highly dependent on political control of state government in the next decade. </p> <br>
+<p> It is not easy to predict future apportionment changes so far out in time, though according to the <a href="https://www.brennancenter.org/our-work/analysis-opinion/how-congressional-maps-could-change-2030"> Brennan Center </a> and the <a href="https://thearp.org/blog/apportionment/2030-asof121923/"> American Redistricting Project</a>, Missouri appears to be on course to hold steady and maintain its eight congressional districts. How redistricting will shape out is difficult to discern, as it will be highly dependent on political control of state government in the next decade. </p> <br>
 
 <p> This article is still under construction. I may also periodically come back and update it with further mapping enhancements. </p> <br> <br>
 
-<h3> Additional Resources </h3>
+<h3> Additional Resources and References </h3>
 
 <p> <a href="https://i.imgur.com/3u5ebKr.jpg" class="center"> Missouri's Congressional Districts from 2001 - 2012 </a> </p> <br>
 
