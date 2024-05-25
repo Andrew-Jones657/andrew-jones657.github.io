@@ -287,9 +287,9 @@ to elect their candidate of choice.  </p> <br>
 
 <p> It is not easy to predict future apportionment changes from so far out in time, though according to the Brennan Center and the American Redistricting Project, Missouri appears to be on course to hold steady and maintain its eight congressional districts. How the congressional districts change is difficult to discern, as it will be highly dependent on political control of state government in the next decade. </p> <br>
 
-<p> This article is still under construction. I may also periodically come back and update it. </p> <br> <br>
+<p> This article is still under construction. I may also periodically come back and update it with further mapping enhancements. </p> <br> <br>
 
-<h3> Additional Resources and References </h3>
+<h3> Additional Resources </h3>
 
 <p> <a href="https://i.imgur.com/3u5ebKr.jpg" class="center"> Missouri's Congressional Districts from 2001 - 2012 </a> </p> <br>
 
@@ -304,6 +304,8 @@ to elect their candidate of choice.  </p> <br>
 <p> <a href="https://maps.geo.census.gov/ddmv/map.html" class="center"> 2020 Census Demographic Data Map Viewer </a> </p> <br>
 
 <p> <a href="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824" class="center"> ESRI Atlas of Census 2020 Redistricting Data </a> </p> <br>
+
+<h3> References </h3>
 
 </body>
 </html>
