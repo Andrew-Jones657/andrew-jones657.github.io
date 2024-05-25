@@ -311,11 +311,11 @@ congressional districts were previously redistricted.  </p> <br>
 
 <h3> Additional Resources and References </h3>
 
-<p> <a href="https://i.imgur.com/Xrk6Br4.jpg" > Missouri's Congressional Districts from 2023 - 2033 </p> <br>
+<p> <a href="https://i.imgur.com/Xrk6Br4.jpg" > Missouri's Congressional Districts from 2023 - 2033 </a> </p> <br>
 
 <p> The current map of Missouri's congressional districts during the 2023 - 2033 elections. I am the author of this map.  </p> <br>
 
-<p> <a href="https://i.imgur.com/WH8hI3i.jpg" > Missouri's Congressional Districts from 2013 - 2023 </p> <br>
+<p> <a href="https://i.imgur.com/WH8hI3i.jpg" > Missouri's Congressional Districts from 2013 - 2023 </a> </p> <br>
 
 <p> The previous map of Missouri's congressional districts during the 2013 - 2023 elections. I am the author of this map.  </p> <br>
 
@@ -331,7 +331,7 @@ for the figures under the "Rules for Congressional Redistricting" and "Congressi
 
 <p> <a href="https://www.caliper.com/redistricting-software.htm"> Maptitude for Redistricting </a> </p> <br>
 
-<p> This link leads to Caliper Corporation's web page for Maptitude for Redistricting. It was the redistricting software used by the Missouri legislature for congressional redistricting. 
+<p> This link leads to Caliper Corporation's web page for Maptitude for Redistricting. Maptitude was the redistricting software used by the Missouri legislature for congressional redistricting. 
 The figure image from the title section is also from this webpage. </p> <br>
 
 
@@ -343,17 +343,28 @@ The figure image from the title section is also from this webpage. </p> <br>
     <li> For information on 2011 redistricting bill, follow the same information as above, but set the regular session to 2011 and search for 193 for House Bill 193. </li>
     <li> For information on the 2001 redistricting bill, follow the same information as above, but set the regular session to 2001 and serach for 1000 for House Bill 1000. </li>
     </ul>
-</p>
+</p> <br>
 
 <p> <a href="https://www.senate.mo.gov/" class="center"> Missouri Senate </a> </p> <br>
 
+<p> This link will lead to the webpage for the Missouri Senate. </p> <br>
+
 <p> <a href="https://maps.geo.census.gov/ddmv/map.html" class="center"> 2020 Census Demographic Data Map Viewer </a> </p> <br>
+
+<p> This link will lead to the US Census' demographic web viewer for the 2020 US Census. It is a great resource for viewing the data contained in the 
+Public Law 94-171 redistricting dataset. </p> <br>
 
 <p> <a href="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=4cdbe664bc2049378d3a17c923f07824" class="center"> ESRI Atlas of Census 2020 Redistricting Data </a> </p> <br>
 
-<p> <a href="https://www.brennancenter.org/our-work/analysis-opinion/how-congressional-maps-could-change-2030"> </a> Brennan Center </p> <br>
+<p> This link will lead to web maps of the 2020 US Census prepared by ESRI's demographics team. These provide a great deal of information beyond the Census bureau's demographic web viewer.  </p> <br>
+
+<p> <a href="https://www.brennancenter.org/our-work/analysis-opinion/how-congressional-maps-could-change-2030"> Brennan Center </a> </p> <br>
+
+<p> This link will lead to the Brennan Center's apportionment estimate for 2030. </p> <br>
 
 <p> <a href="https://thearp.org/blog/apportionment/2030-asof121923/"> The American Redistricting Project </a> </p> <br>
+
+<p> This link will lead to the American Redistricting Project's apportionment estimate for 2030. </p> <br>
 
 </body>
 </html>
