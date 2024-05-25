@@ -146,7 +146,7 @@ to elect their candidate of choice.  </p> <br>
 
 <figure>
 <img src="https://i.imgur.com/MxywcnN.jpeg" class="center" style="width:625px">
-<figcaption> <em> Missouri's first congressional district is generally regarded as a VRA protected district, as it contains a plurality Black/African-American population. </em> </figcaption>
+<figcaption> <em> Missouri's first congressional district is generally regarded as a VRA protected district, as has contained a plurality Black or African-American population since the mid 1960s. </em> </figcaption>
     
 </figure> <br> 
 
@@ -156,7 +156,10 @@ to elect their candidate of choice.  </p> <br>
 
 <p> Below are general criteria used in congressional redistricting. These are guidelines rather than hard requirements. </p> <br>
 
-<p> <em> Communities of Interest </em> is a term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. Many factors can constitute a community of interest: this can be helpful in that it describes qualitative aspects of the underlying population that cannot be observed in census data alone. However, as other rules are paramount, it is not always possible to preserve every possible community of interest. </p>
+<p> <em> Communities of Interest </em>(COIs) is a term used to describe any group of people in a location or area with a shared interest, practice, occupation, lifestye, activities, etc. 
+COIs can be helpful in that they describe qualitative aspects of the underlying population that cannot be observed in census data alone. 
+However, it is not always possible to preserve every possible COI. This may be due to COIs overlapping, or other constitutional
+or statutory requirements superceding potential COIs.  </p>
  
  <div class="row">
   <div class="column">
@@ -172,20 +175,29 @@ to elect their candidate of choice.  </p> <br>
 </figure> <br>
 
 
-<p> <em> Boundary Preservation </em> suggests that congressional districts should follow natural and human boundaries such as rivers, municipality lines, country borders, roads, etc. Generally, districts with preserved boundaries appear less arbitrarily drawn and are more easily understood by the public.  </p> <br>
+<p> <em> Boundary Preservation </em>suggests that congressional districts should follow natural and human boundaries such as rivers, 
+municipality lines, country borders, roads, etc. Generally, congressional districts with preserved boundaries appear clear and 
+are more easily understood by the public.  </p> <br>
 
 <figure>
 <img src="https://i.imgur.com/SvhMiKf.jpeg" alt="Colorado First" style="width:625px">
-<figcaption> <em> The city limits of Denver constitute Colorado's first congressional district. </em> </figcaption>
+<figcaption> <em> The city limits of Denver constitute the vast majority of Colorado's first congressional district. </em> </figcaption>
 </figure> <br>
 
-<p> <em> Cultural and Physical Geography </em> often play a role into creating congressional districts, as districts may contain regions where inhabitants have a shared lifestyle or area. Examples of this in Missouri could include formal and vernacular regions such as St Louis, Kansas City, the Ozarks, the Bootheel, Little Dixie, the Lead Belt, etc. Such districts are often based on shared history between inhabitants, linking back to Communities of Interest.  </p> <br>
+<p> The theme of <em> Region </em>from cultural geography plays a role in creating congressional districts. Region 
+refers to a geography with relatively homogeneous human activity. In the context of redistricting,  
+a region can be considered a large community of interest. 
+Examples of this in Missouri could include formal and vernacular regions such as St. Louis, Kansas City, the Ozarks, 
+the Bootheel, Little Dixie, the Lead Belt, etc.   </p> <br>
 
 <figure>
 <img src="https://i.imgur.com/AFA4epU.jpeg" class="center" style="width:625px"> 
 <figcaption> <em> Missouri's eighth congressional district has long contained Missouri's Bootheel. </em> </figcaption>
 </figure> <br>
-<p> <em> Minimizing Splitting </em> is a straightforward criterion that states counties, cities, and voting districts should be split as minimally as possible. Generally, this is in the interest of good governance, as it is much easier for the public to understand unsplit congressional districts and for county officials to conduct elections.  </p> <br>
+<p> Preserving areas, such as cities and counties, is usually refered to as <em>Minimizing Splitting</em>. 
+This is similar to boundary preservation, albeit it with the intent of maintaining geographies.    
+Generally, this is in the interest of good governance, as congressional districts with few splits are clearly delineated and create 
+less of an administrative burden on government entities such as election officials.   </p> <br>
 
  <div class="row">
   <div class="column">
@@ -200,7 +212,8 @@ to elect their candidate of choice.  </p> <br>
 <figcaption> <em> Under the 2012 congressional district plan, Jefferson County was split three ways. Under the current plan, Jackson County is split three ways. </em></figcaption>
 </figure> <br>
 
-<p> <em> Preserving District Cores </em> means keeping the bulk of the population within the same district during redistricting. This is typically a method incorporated in least-change congressional maps, which are generally modified as minimally as possible.  </p> <br>
+<p> <em> Preserving District Cores </em> means keeping the majority of a district's population within the same district during redistricting,
+rather than drawing a completely different district. This is typically a method incorporated in least-change congressional maps.   </p> <br>
 
  <div class="row">
   <div class="column">
@@ -212,26 +225,31 @@ to elect their candidate of choice.  </p> <br>
 </div> 
 
 <figure>
-<figcaption> <em> Missouri's seventh congressional district steadfast population gain and location in southwest Missouri makes redistricting straightforward. </em></figcaption>
+<figcaption> <em> The location of Missouri's seventh congressional district in the southwest corner and the district's steady population growth
+means it experiences few changes during congressional redistricting.  </em></figcaption>
 </figure> <br>
 
-<p> <em> Safe Districts </em> refers to districts that have a strong partisan lean. These districts tend to keep congressional election results consistent.  </p> <br>
+<p> <em> Safe Districts </em> have a strong partisan lean. These districts usually have predictable general elections.  </p> <br>
 
 <figure>
 <img src="https://i.imgur.com/ZLNPwCt.jpeg" class="center" style="width:625px">
 <figcaption> <em> Missouri's congressional districts tend to have predictable general election results. </em></figcaption>
 </figure> <br>
 
-<p> <em> Competitive or Proportional Districts </em> are the opposite of safe districts as they tend to have moderate partisan leans. Competitive districts, as the name suggests, are congressional districts drawn as close to 50/50 partisan values as possible. Proportional districts are districts drawn to reflect the margins of statewide elections. </p> <br>
+<p> <em> Competitive or Proportional Districts </em>tend to have moderate partisan leans. 
+Competitive districts, as the name suggests, are congressional districts drawn to be as competitive as possible. 
+Proportional districts are districts drawn to reflect the margins of statewide elections.  </p> <br>
 
 <figure>
 <img src="https://i.imgur.com/5bFZs0t.jpeg" class="center" style="width:625px">
-<figcaption> <em> Michigan's congressional districts, drawn by an indepedent commission, tend to be more proportional to the states overall election results. </em> </figcaption>
+<figcaption> <em> Michigan's congressional districts, drawn by an indepedent commission, tend to be proportional to the states overall election results. </em> </figcaption>
 </figure> <br>
 
-<p7> Considering all the criteria and requirements for redistricting, one quickly finds that that it is impossible to create a map incorporating all the criteria. Some of these criteria, such as competitiveness and safe districts, outright contradict one another. Typically, whatever entity draws the congressional districts will focus on a few of these criteria during the mapmaking process.  </p7> <br>
+<p7> These criteria and provisions are an example of what is considered during congressional redistricting and perhaps showcase the 
+complexity of the process. Naturally, statutory and constitutional provisions will dictate what guidelines are incorporated during the map drawing process.   </p7> <br>
 
-<p> Shifting focus over specififcally to Missouri, the previous 2012 cycle provides a good deal of context as to how congressional districts are modified under a Republican supermajority. </p> <br>
+<p> Shifting focus over to Missouri, the 2011 cycle provides a good deal of context as to how 
+congressional districts were previously redistricted.  </p> <br>
 
 <h3 class="center"> Missouri's 2011 Redistricting Cycle </h3>
 <figure>
@@ -277,7 +295,7 @@ to elect their candidate of choice.  </p> <br>
 <li> The eighth district took in the populated suburbs of Jefferson County by the Mississippi River. This rendered the district as more suburban, as these portion of Jefferson County contain more than half of its population. The district lost Crawford and Washington Counties to facilitate the changes in the third district. </li>    
 </ol> <br>
 
-<p> Below is a web app that displays the changes in Missouri's congressional districts. To the left of the swipe widget are the new congressional districts, and to the right are the previous congressional districts.  </p> <br>
+<p> Below, I designed a web map that displays the changes in Missouri's congressional districts. To the left of the swipe widget are the new congressional districts, and to the right are the previous congressional districts.  </p> <br>
 
 <div id="viewDiv" style="width: 625px; height: 450px; border: 1px solid #444444;"> </div>
 
