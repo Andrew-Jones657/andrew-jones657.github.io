@@ -204,7 +204,7 @@ less of an administrative burden on government entities such as election officia
     <img src="https://i.imgur.com/WBJ6g3B.jpeg" alt="Jefferson County 2012" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/HQHi4XK.jpg" alt="Jackson County 2022" style="width:100%;height:300px">
+    <img src="https://i.imgur.com/HQHi4XK.jpg" alt="Jackson County 2022" style="width:100%;height:260px">
   </div>
 </div> 
 
@@ -220,7 +220,7 @@ rather than drawing a completely different district. This is typically a method 
     <img src="https://i.imgur.com/wRRVOQq.jpeg" alt="Missouri's seventh congressional district in 2012" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/xeE00eu.jpeg" alt="Missouri's seventh congressional district in 2022" style="width:100%">
+    <img src="https://i.imgur.com/xeE00eu.jpeg" alt="Missouri's seventh congressional district in 2022" style="width:100%;height:260px">
   </div>
 </div> 
 
