@@ -40,7 +40,7 @@
 
 <h3> My educational background </h3>
 
-<p> In May of 2020, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. At first glance, it's an unusual combination of subjects, but all of it ties together well. My minors truly elevated my understanding of spatial analysis, and I was able to incoporate each of these subjects together in a <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/"> honors thesis </a>.  </p> <br>
+<p> In May of 2020, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. At first glance, it's an unusual combination of subjects, but each of them tie together well. My minors provided a much stronger quantitative and scientific backbone to my geography degree, while my German degree allowed me to experience more of the liberal arts side of things.  </p> <br>
 
 <h3> What I used to do  </h3>
 
@@ -48,7 +48,7 @@
 
 <h3> What I am doing now </h3>
 
-<p> Currently, I am searching for a new position! Since my temporary position at the Missouri House of Representatives ended in July of 2023, I have been spending my time helping my family out with temporary health issues, traveling, and working as a salesperson for my brother's secondhand goods business. </p> <br>
+<p> Currently, I am searching for a new position! Since my temporary position at the Missouri House of Representatives ended in July of 2023, I have been spending my time helping my family out with temporary health issues, traveling, and working part time as a freelance analyst. </p> <br>
 
 <h3> My hobbies </h3> 
 
