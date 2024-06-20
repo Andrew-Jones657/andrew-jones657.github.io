@@ -76,6 +76,7 @@
     <table>
     <tr>
     <td> Quantile Classification </td>
+    <td> Weight </td>
     </tr>
     <tr>
     <td> $48645 -- $142778 </td>   
@@ -104,9 +105,21 @@
     </table>
     </td>
    </tr>
+<tr>
+<td> Karst Areas in Kentucky </td>	
+<td> KYGovMaps </td>	
+<td> Avoid sites with known karst geology -- Warren County is prone to sinkhole formations </td>	
+<td> Hard Constraint </td>	
+<td> Boolean (a candidate site does or does not have karst geology) </td>	
+</tr>
  </tbody>
  
-</table>
+</table> <br>
+
+<figure>
+<img src="https://i.imgur.com/07mO4wR.jpeg" alt="Constraints and Opportunities" class="center">
+<figcaption> Figure 1. The various spatial data used as constraints or opportunities to filter parcel sites down to ideal sites. </figcaption>
+</figure> <br>
 
 
 <p> Placeholder </p>
