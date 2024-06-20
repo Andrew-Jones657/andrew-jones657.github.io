@@ -30,8 +30,8 @@
 <table><caption>Table 1. Spatial Data used in the Land Suitability Analysis </caption>
  <thead>
    <tr>
-	<th>Data Layer </th>
-	<th>Data Source </th>
+    <th>Data Layer </th>
+    <th>Data Source </th>
     <th>Purpose </th>
     <th>Category </th>
     <th>Weights </th>
@@ -42,8 +42,8 @@
 	<td>US Census SF1 Data / TIGER lines (Block, Block Group, Tract, and County levels)</td>
 	<td>US Census Bureau / TIGER lines</td>
 	<td>Population density and projections / Demand weights for location - allocation analysis </td>
-    <td>Soft Opportunity </td>
-    <td> <table> 
+        <td>Soft Opportunity </td>
+        <td> <table> 
     <tr> 
     <td> 2000 - 2020 Population Growth 
     <td> Weights </td>
@@ -181,7 +181,6 @@
 <td> Not Applicable </td>	
 </tr>
  </tbody>
-</table>
 </table> <br>
 
 
