@@ -16,13 +16,7 @@
     </style>
 
 
-<script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'fitImagesInViewport': false,
-      'wrapAround': true
-    })
-</script>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -208,7 +202,13 @@
 
 <p> Placeholder </p>
 
-
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'fitImagesInViewport': false,
+      'wrapAround': true
+    })
+</script>
   
 </body>
 
