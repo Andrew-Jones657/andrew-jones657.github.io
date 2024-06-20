@@ -265,7 +265,7 @@
 </table> <br> <br>
 
 
-<img id="myImg" class="Constraints and Opportunities" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:300px">
+<img id="myImg" class="Constraints and Opportunities" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
