@@ -46,6 +46,7 @@
   display: block;
   width: 80%;
   max-width: 900px;
+  max-height: 650px;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
