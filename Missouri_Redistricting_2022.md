@@ -255,12 +255,12 @@ congressional districts were previously redistricted.  </p> <br>
 
 <h3 class="center"> Missouri's 2011 Redistricting Cycle </h3>
 <figure>
-<a href="https://i.imgur.com/WH8hI3i.jpg"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> 
+<a href="https://i.imgur.com/WH8hI3i.jpg" data-lightbox="Missouri Congressional Districts 2013-2023"><img src="https://i.imgur.com/WH8hI3i.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> 
 <figcaption> <em> Missouri's congressional districts from 2013 to 2023 </em> </figcaption>
 </figure> <br>
 <p> The 2011 redistricting cycle was bound to be tumultuous, as Missouri lost a congressional district after the 2010 apportionment process. When a state loses a congressional district, the remaining districts must absorb the population of the lost district: this means every district must expand. Alongside existing population deviations, this can result in drastically altered districts. This also meant one of Missouri's <a href="https://i.imgur.com/3u5ebKr.jpg"> nine </a> congressmen at the time would no longer have a district. </p> <br> 
 
-<p> At this point in time, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governor's seat, Republicans had control of the map drawing process with a near supermajority. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg"> HB 193</a>, and the Senate, <a href="https://i.imgur.com/qUJGsTG.jpeg"> SB 264</a>, were fairly similar to one another. Ultimately, both chambers of the legislature agreed on the map shown above and sent it to governor. Despite the governor's veto, the Republicans were able to override the veto with support from some Democrats.  </p> <br>
+<p> At this point in time, the Missouri House and Senate had both been controlled by Republicans since 2003. While Democrats held the governor's seat, Republicans had control of the map drawing process with a near supermajority. Given the Republican control over the legislature, the proposed redistricting bills in the House, <a href="https://i.imgur.com/coCwNLG.jpeg" data-lightbox="Missouri Congressional Districts 2003-2013"> HB 193</a>, and the Senate, <a href="https://i.imgur.com/qUJGsTG.jpeg"> SB 264</a>, were fairly similar to one another. Ultimately, both chambers of the legislature agreed on the map shown above and sent it to governor. Despite the governor's veto, the Republicans were able to override the veto with support from some Democrats.  </p> <br>
 
 <p> As a quick side note, I mentioned that the redistricting cycle is in 2011 whereas the map's in effect date is from 2013 to 2023. The bill for the congressional districts was passed in 2011, but the congressional districts were first used in 2013 after elections had taken place and congress members were sworn in.  </p> <br>
 
@@ -279,7 +279,7 @@ congressional districts were previously redistricted.  </p> <br>
 
 <h3 class="center"> Missouri's 2022 Redistricting Cycle </h3> <br>
 
-<a href="https://i.imgur.com/Xrk6Br4.jpg"><img src="https://i.imgur.com/Xrk6Br4.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> <br>
+<a href="https://i.imgur.com/Xrk6Br4.jpg" data-lightbox="Missouri Congressional Districts 2023-2033"><img src="https://i.imgur.com/Xrk6Br4.jpg" title="Missouri's Congressional Districts from 2013-2023" class="center" style="width: 625px; height: 450px;"> </a> <br>
 
 <p> Unlike the 2011 redistricting cycle, Missouri did not suffer from losing a congressional seat during the 2020 apportionment process. Republicans held both chambers of the legislature by large majorities and the governor’s seat. It had been a long time since the conditions to pass a new congressional map were this favorable.    </p> <br>
 
