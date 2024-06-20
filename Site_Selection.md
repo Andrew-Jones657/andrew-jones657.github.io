@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
     img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
     height: 450px;
     width: 625px;
     }
