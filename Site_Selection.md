@@ -37,7 +37,8 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-height: 750 px;
+  max-width: 1000px;
   }
 
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
