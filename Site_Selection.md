@@ -16,7 +16,7 @@
     </style>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
-<link rel="stylesheet" href="dist/css/lightbox.min.css">
+<link rel="stylesheet" href="./dist/css/lightbox.css">
 
 </head>
 
@@ -196,8 +196,7 @@
 
 <p> Placeholder </p>
 
-  <script src="/dist/js/lightbox-plus-jquery.min.js"></script>
-  <script src="/src/js/lightbox.js"></script> -->
+  <script src="./src/js/lightbox.js"></script> 
 
 
   
