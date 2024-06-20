@@ -183,7 +183,8 @@
 </table> <br> <br>
 
 <figure>
-<a class="Constraints-and-Opportunities-Link" href="https://i.imgur.com/07mO4wR.jpeg" data-lightbox="Site Poster" data-title="Constraints and Opportunities" class="center"> Site Selection </a>
+<a class="Constraints-and-Opportunities-Link" href="https://i.imgur.com/07mO4wR.jpeg" data-lightbox="Site Poster" data-title="Constraints and Opportunities" class="center"> 
+<img class="Constraints and Opportunities" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County"> </a>
 <figcaption> Figure 1. The various spatial data used as constraints or opportunities to filter parcel sites down to ideal sites. </figcaption>
 </figure> <br>
 
