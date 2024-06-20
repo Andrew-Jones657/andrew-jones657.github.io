@@ -44,7 +44,10 @@
 	<td>Population density and projections / Demand weights for location - allocation analysis </td>
     <td>Soft Opportunity </td>
     <td> <table> 
-    <tr> 2000 - 2020 Population Growth </tr>
+    <tr> 
+    <td> 2000 - 2020 Population Growth </td>
+    <td> Weights </td>
+    </tr>
     <tr>
     <td> 0-1%</td>
     <td> 0.05</td>
@@ -115,8 +118,12 @@
 </tr>
  </tbody>
  
-</table> <br>
+</table> <br> <br>
 
+<figure>
+<img src="https://i.imgur.com/07mO4wR.jpeg" alt="Constraints and Opportunities" class="center">
+<figcaption> Figure 1. The various spatial data used as constraints or opportunities to filter parcel sites down to ideal sites. </figcaption>
+</figure> <br>
 
 
 <p> Placeholder </p>
