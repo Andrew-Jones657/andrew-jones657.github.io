@@ -173,6 +173,13 @@
 </table>
 </td>
 </tr>
+<tr>
+<td> Warren County Fire Stations </td>	
+<td> Bowling Green Open Data Hub </td>	
+<td> Used as facilities in service area analysis and location allocation analysis </td>	
+<td> Not Applicable </td>	
+<td> Not Applicable </td>	
+</tr>
 
  </tbody>
  
