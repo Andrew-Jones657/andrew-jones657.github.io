@@ -9,11 +9,21 @@
     height: 450px;
     width: 625px;
     }
-
+ 
     .gallery-lightbox-background {
     background-color: none;
     }
     </style>
+
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'fitImagesInViewport': false,
+      'wrapAround': true
+    })
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
