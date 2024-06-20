@@ -151,6 +151,27 @@
 <td> Hard Constraint </td>
 <td> Boolean (A candidate site cannot be built in a floodplain) </td>
 </tr>
+<tr>
+<td> CCPC Future Land Use Map </td>
+<td> Bowling Green Open Data Hub </td>
+<td> Compare with parcel data and identify new residential areas as high population. </td>
+<td> Soft Constraint </td>
+<td>  
+<table>
+<tr>
+<td> Land Use Type </td>	
+<td> Weight </td>	
+</tr>
+<tr>
+<td> Low Density </td>	
+<td> 0.75 </td>	
+</tr>
+<tr>
+<td> Rural Density </td>	
+<td> 0.5 </td>	 
+</tr>
+</table>
+
  </tbody>
  
 </table> <br> <br>
