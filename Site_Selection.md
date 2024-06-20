@@ -265,13 +265,13 @@
 </table> <br> <br>
 
 
-<img id="Site_Poster" class="Constraints and Opportunities" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County">
+<img id="myImg" class="Constraints and Opportunities" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:300px">
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
-   <div id="caption"></div>   
-
+   <div id="Various spatial data in Warren County used to narrow down an ideal site."></div>   
+</div>
 <p> Placeholder </p>
 
 <script>
