@@ -116,6 +116,41 @@
 <td> Hard Constraint </td>	
 <td> Boolean (a candidate site does or does not have karst geology) </td>	
 </tr>
+<tr> 
+<td> Water TIGER lines (Area Water) </td>
+<td> US Census TIGER lines </td>
+<td> Avoid site in a body of water. </td>
+<td> Hard Constraint </td>
+<td> Boolean (A candidate site does or does not contain water) </td>
+</tr>
+<tr>
+<td> Digital Elevation Model of Kentucky </td>
+<td> KYfromAbove </td>
+<td> Calculate slope to avoid areas with >15 ft slope </td>
+<td> Hard Constraint </td>
+<td> Boolean (A candidate site is or is not >15 ft in slope) </td>
+</tr>
+<tr>
+<td> All Roads and Major Roads </td>
+<td> KY Department of Transportation </td>
+<td> Used for network dataset construction / close proximity to major roads as an opportunity </td>
+<td> Soft Opportunity </td>
+<td> Buffer 1/3rd mile: 0.75</td>
+</tr>
+<tr>
+<td> City County Planning Commission (CCPC) Parcel Data </td>
+<td> Bowling Green Open Data Hub </td>
+<td> Base Layer for Analysis / Query certain types of land use </td>
+<td> Hard Constraint </td>
+<td> Boolean (A candidate site must be Agricultural, Commercial, Public, or Vacant. Other values are discluded.) </td>
+</tr>
+<tr>
+<td> CCPC Zoning Data </td>
+<td> Bowling Green Open Data Hub </td>
+<td> Find and remove floodplains </td>
+<td> Hard Constraint </td>
+<td> Boolean (A candidate site cannot be built in a floodplain) </td>
+</tr>
  </tbody>
  
 </table> <br> <br>
