@@ -10,7 +10,7 @@
     width: 625px;
     }
     #myImg{
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
   transition: 0.3s;
   }
@@ -37,7 +37,7 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 900px;
+  max-width: 700px;
   }
 
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -45,8 +45,7 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 900px;
-  max-height: 650px;
+  max-width: 700px;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
@@ -265,9 +264,10 @@
  
 </table> <br> <br>
 
-
+<figure> 
 <img id="myImg" class="Constraints and Opportunities" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
-
+<figcaption> Various spatial data in Warren County used to narrow down an ideal site. </figcaption>
+</figure>
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
