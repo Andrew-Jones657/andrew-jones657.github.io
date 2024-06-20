@@ -156,7 +156,7 @@
 <td> Bowling Green Open Data Hub </td>
 <td> Compare with parcel data and identify new residential areas as high population. </td>
 <td> Soft Constraint </td>
-<td>  
+<td>
 <table>
 <tr>
 <td> Land Use Type </td>	
@@ -171,6 +171,8 @@
 <td> 0.5 </td>	 
 </tr>
 </table>
+</td>
+</tr>
 
  </tbody>
  
