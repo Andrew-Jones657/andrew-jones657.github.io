@@ -181,7 +181,7 @@
 <td> Not Applicable </td>	
 </tr>
  </tbody>
- 
+</table>
 </table> <br>
 
 <figure>
