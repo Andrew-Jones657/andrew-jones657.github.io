@@ -26,6 +26,87 @@
 
 <p> Data for this project stems from many sources. These include economic (median property value), demographic (census data), governmental (land use, future land use, transportation, zoning), and physical (elevation, karst, water) data. Detailed information about these data, such as the type of data and their purpose, is contained in Table 1 below. A visualization of each data layer is also depicted in Figure 1. </p> <br>
 
+<table><caption>Table 1. Spatial Data used in the Land Suitability Analysis </caption>
+ <thead>
+   <tr>
+	<th>Data Layer </th>
+	<th>Data Source </th>
+    <th>Purpose </th>
+    <th>Category </th>
+    <th>Weights </th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+	<td>US Census SF1 Data / TIGER lines (Block, Block Group, Tract, and County levels)</td>
+	<td>US Census Bureau / TIGER lines</td>
+	<td>Population density and projections / Demand weights for location - allocation analysis </td>
+    <td>Soft Opportunity </td>
+    <td> <table> 
+    <tr> 2000 - 2020 Population Growth </tr>
+    <tr>
+    <td> 0-1%</td>
+    <td> 0.05</td>
+    </tr>
+    <tr>
+    <td> 1-5%</td>
+    <td> 0.25</td>
+    </tr>
+    <tr>
+    <td> 5-25% </td>
+    <td> 0.5</td>
+    </tr>
+    <tr>
+    <td> 25-50% </td>
+    <td> 0.75</td>
+    </tr>
+    <tr> 
+    <td> >50% </td>
+    <td> 1 </td>
+    </tr>
+    </table>  
+    </td>
+   </tr>
+   <tr>
+	<td> US Census ACS Data (Median Home Value, Tract Level) </td>
+	<td> US Census Bureau / ESRI Online </td>
+	<td> Provide equitable property value increase for homes near new or improved fire station </td>
+    <td> Soft Opportunity </td>
+    <td>
+    <table>
+    <tr>
+    <td> Quantile Classification </td>
+    </tr>
+    <tr>
+    <td> $48645 -- $142778 </td>   
+    <td> 0.5 </td>
+    </tr>
+    <tr>
+    <td> $142779 -- $187542 </td>
+    <td> 0.4 </td>
+    </tr>
+    <tr>
+    <td> $187543 -- $257888 </td>
+    <td> 0.3 </td>
+    </tr>
+    <tr>
+    <td> $257889 -- $271482 </td>
+    <td> 0.2 </td>
+    </tr>
+    <tr>
+    <td> $271483 -- $305546 </td>
+    <td> 0.1 </td>
+    </tr>
+    <tr>
+    <td> $305547 -- $385897 </td>
+    <td> 0 </td>
+    </tr>
+    </table>
+    </td>
+   </tr>
+ </tbody>
+ 
+</table>
 
 
 <p> Placeholder </p>
