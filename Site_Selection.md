@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
     img {
-    border: 0px solid #ddd;
+    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     height: 450px;
@@ -14,6 +14,9 @@
     }
 
     </style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="../dist/css/lightbox.min.css">
 
 </head>
 
@@ -186,14 +189,15 @@
 </table> <br> <br>
 
 <figure>
-<img src="https://i.imgur.com/07mO4wR.jpeg" alt="Constraints and Opportunities" class="center">
+<a href="https://i.imgur.com/07mO4wR.jpeg" data-lightbox="Site Poster" data-title="Constraints and Opportunities" class="center"> Constraints and Opportunities </a>
 <figcaption> Figure 1. The various spatial data used as constraints or opportunities to filter parcel sites down to ideal sites. </figcaption>
 </figure> <br>
 
 
 <p> Placeholder </p>
 
-
+  <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="../src/js/lightbox.js"></script> -->
 
 
   
