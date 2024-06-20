@@ -9,7 +9,8 @@
     </style>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
-<link rel="stylesheet" href="./dist/css/lightbox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css" rel="stylesheet" />
 
 </head>
 
@@ -188,8 +189,6 @@
 
 
 <p> Placeholder </p>
-
-  <script src="./src/js/lightbox.js"></script> 
 
 
   
