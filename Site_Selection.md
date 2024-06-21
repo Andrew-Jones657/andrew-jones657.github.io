@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
 	    
-    #h3{
+  h3{
   text-align: center;
   }
 
@@ -342,7 +342,7 @@ span.onclick = function() {
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
-   <div id="Various spatial data in Warren County used to narrow down an ideal site."></div>   
+   <div id="caption"></div>   
 </div> <br>
 
 
