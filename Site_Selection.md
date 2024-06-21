@@ -263,7 +263,7 @@
 
 <figure> 
 <img id="myImg" class="Constraints and Opportunities" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
-<figcaption> Various spatial data in Warren County used to narrow down an ideal site. </figcaption>
+<figcaption> Figure 1. Various spatial data in Warren County used to narrow down an ideal site. </figcaption>
 </figure>
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
@@ -271,6 +271,13 @@
    <div id="Various spatial data in Warren County used to narrow down an ideal site."></div>   
 </div>
 <p> Placeholder </p>
+
+
+
+
+
+
+
 
 <script>
 // Get the modal
