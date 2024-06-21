@@ -11,6 +11,11 @@
   transition: 0.3s;
   }
 
+  figure figcaption {
+  text-align: center; 
+  }
+
+  
   #myImg:hover {opacity: 0.7;}
 
   /* The Modal (background) */
