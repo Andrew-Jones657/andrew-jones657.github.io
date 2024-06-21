@@ -294,11 +294,11 @@
 
 <p> The detailed workflow for this project is presented in Figure 2 below. As mentioned earlier, it is a complex albeit iterative analysis. The site selection process is focused on narrowing down information to whatever criteria the user deems important. The latter half of the workflow is more dependent on correctly establishing field values, parameters, and settings for the service area and location allocation analyses within the network dataset.  </p> <br>
 
-
+<p> Click on the hyper link by Figure 2 to download the flow chart. </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
-<figcaption> Figure 2. Project workflow </figcaption>
+<figcaption> Figure 2. < a href="https://i.imgur.com/vKeMTww.jp"> Project workflow </a> </figcaption>
 </figure>
 
 
