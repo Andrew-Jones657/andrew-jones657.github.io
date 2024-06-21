@@ -300,7 +300,7 @@
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
-<figcaption> Figure 2. < a href="https://i.imgur.com/vKeMTww.jp"> Project workflow </a> </figcaption>
+<figcaption> Figure 2. <a href="https://i.imgur.com/vKeMTww.jpeg"> Project workflow </a> </figcaption>
 </figure>
 
 
