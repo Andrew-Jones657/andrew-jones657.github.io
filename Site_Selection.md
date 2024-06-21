@@ -281,12 +281,12 @@
 
 
 <figure> 
-<img id="myImg2" class="Constraints and Opportunities" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
+<img id="myImg" class="Constraints and Opportunities" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
 <figcaption> Figure 2. Project workflow </figcaption>
 </figure>
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
-   <img class="modal-content" id="img02">
+   <img class="modal-content" id="img01">
    <div id="Project workflow"></div>   
 </div> <br>
 
