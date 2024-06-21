@@ -5,10 +5,6 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
-    img {
-    height: 450px;
-    width: 625px;
-    }
     #myImg{
   border-radius: 2px;
   cursor: pointer;
