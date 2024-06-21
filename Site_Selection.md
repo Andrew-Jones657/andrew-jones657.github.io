@@ -309,12 +309,16 @@
 <p> Before looking at the fire response service in Warren County, it is worthwhile to observe the distribution of and changes in the overall population. Figure 3 below depicts a dot density map of Warren County, whose population at the time was 134,510 people. Bowling Green, containing more than half of Warren County’s population at 72,642 people, is essentially saddled between I-65 and I-165 in the center of the county. Suburban sprawl northeast and south of Bowling Green shows a moderate population density, and the rest of Warren County, more rural in character, has a low population density.  </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/MgyutPx.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/MgyutPx.jpeg" alt="2020 Warren County Population Density" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Dot density population of Warren County in 2020 on the census block group level. </figcaption>
 </figure>
 
+<p> Moving to observing population trends, Figure 4 below shows a choropleth map of percent population change between 2000 and 2020, as well as the population dot density in 2000 overlayed with the absolute population change dot density between 2000 and 2020. In this time, Warren County grew by 42,032 people, with population growth primarily occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green came into existence during this time span. Some of the highest population growth occurred in the corridor between Russellville Road and I-65. Considering how much population growth occurred in newly developed suburban areas, these areas may hold the ideal candidate site for a new or improved fire station.  </p> <br>
 
-
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpeg" alt="Population Change in Warren County 2000-2020" style="width:100%;max-width:625px">
+<figcaption> Figure 4. Warren County population change between 2000 and 2020. </figcaption>
+</figure>
 
 <h3> Considering Fire Response Times and Establishing the Network Dataset and its Parameters </h3> <br>
 
