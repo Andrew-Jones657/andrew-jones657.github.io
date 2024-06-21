@@ -5,7 +5,11 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
-	    
+
+  h1{
+  text-align: center;
+  }
+  
   h3{
   text-align: center;
   }
@@ -51,7 +55,8 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-height: 650px;
+  max-width: 900px;
 }
 
 #caption {
