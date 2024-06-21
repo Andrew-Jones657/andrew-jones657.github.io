@@ -308,7 +308,7 @@ span.onclick = function() {
 </table> <br> <br>
 
 <figure> 
-<img id="myImg" class="myImages" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
 <figcaption> Figure 1. Various spatial data in Warren County used to narrow down an ideal site. </figcaption>
 </figure>
 
@@ -318,7 +318,7 @@ span.onclick = function() {
 
 
 <figure> 
-<img id="myImg" class="myImages" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
 <figcaption> Figure 2. Project workflow </figcaption>
 </figure>
 
@@ -328,7 +328,7 @@ span.onclick = function() {
 <p> Before looking at the fire response service in Warren County, it is worthwhile to observe the distribution of and changes in the overall population. Figure 3 below depicts a dot density map of Warren County, whose population at the time was 134,510 people. Bowling Green, containing more than half of Warren County’s population at 72,642 people, is essentially saddled between I-65 and I-165 in the center of the county. Suburban sprawl northeast and south of Bowling Green shows a moderate population density, and the rest of Warren County, more rural in character, has a low population density.  </p> <br>
 
 <figure> 
-<img id="myImg" class="myImages" src="https://i.imgur.com/MgyutPx.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/MgyutPx.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Dot density population of Warren County in 2020 on the census block group level. </figcaption>
 </figure>
 
