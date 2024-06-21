@@ -293,6 +293,17 @@
 </div> <br>
 
 <h3> Demographic and Zoning Data Important for Site Selection </h3> <br>
+<figure> 
+<img id="myImg" class="Constraints and Opportunities" src="https://i.imgur.com/MgyutPx.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
+<figcaption> Figure 3. Dot density population of Warren County in 2020 on the census block group level. </figcaption>
+</figure>
+<div id="myModal" class="modal">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="img01">
+   <div id="Various spatial data in Warren County used to narrow down an ideal site."></div>   
+</div> <br>
+
+
 
 <h3> Considering Fire Response Times and Establishing the Network Dataset and its Parameters </h3> <br>
 
