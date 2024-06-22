@@ -303,7 +303,13 @@
 <figcaption> Figure 2. <a href="https://i.imgur.com/vKeMTww.jpeg"> Project workflow </a> </figcaption>
 </figure> <br>
 
-<h3> How most of these </h3>
+<h3> A Brief Summary on the Site Selection Criteria </h3>
+
+<p> Some of the site selection criteria are tailored towards avoiding physical impediments. Bodies of water or floodplains were discluded as potential candidate sites. Various parts of Warren County contain prominent topography, so land parcels with a change in slope over 15 feet were avoided as candidate sites. More unique to Warren County is its karst landscape, which can result in sudden sinkhole collapse -- land parcels with known karst geology were removed from the candidate site list. </p> <br>
+
+<p> To respond quickly to emergencies, the fire stations must be located close to major roads. To accomadate this in the site selection process, land parcels within a 1/3rd mile of major roads were weighed positively. </p> <br>
+
+<p> Since the presence of a professional fire station can lower home insurance rates, a quantile classification of property home values from the American Community Survey (Census Tract level) was used to ensure that these discounts were equitable. Lower valued homes were weighed higher than higher valued homes.  </p> <br>
 
 <h3> Demographic and Zoning Data Important for Site Selection </h3> <br>
 
