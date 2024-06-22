@@ -118,7 +118,7 @@
 
 <body>
 
-<h1> Finding an Ideal Site for a new Fire Station in Warren County, Kentucky </h1> <br>
+<h1> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </h1> <br>
 
 <p> One of the most common and useful applications of GIS analysis is land suitability analysis, a process through which an ideal site is chosen from many candidate sites. This analysis process often involves considering geographic factors, whether social, economic, environmental, or physical, to determine how suitable an area is for a specific land use and human activity. Consequently, it tends to be complex and iterative, as numerous techniques such as overlays, queries, buffers, intersections, raster operations, and others are common in this analysis.  </p> <br>
 
@@ -291,7 +291,7 @@
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
 <figcaption> Figure 1. Various spatial data in Warren County used to narrow down an ideal site. </figcaption>
-</figure>
+</figure> <br>
 
 
 <p> The detailed workflow for this project is presented in Figure 2 below. As mentioned earlier, it is a complex albeit iterative analysis. The site selection process is focused on narrowing down information to whatever criteria the user deems important. The latter half of the workflow is more dependent on correctly establishing field values, parameters, and settings for the service area and location allocation analyses within the network dataset.  </p> <br>
@@ -301,7 +301,7 @@
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
 <figcaption> Figure 2. <a href="https://i.imgur.com/vKeMTww.jpeg"> Project workflow </a> </figcaption>
-</figure>
+</figure> <br>
 
 
 <h3> Demographic and Zoning Data Important for Site Selection </h3> <br>
@@ -311,14 +311,29 @@
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/MgyutPx.jpeg" alt="2020 Warren County Population Density" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Dot density population of Warren County in 2020 on the census block group level. </figcaption>
-</figure>
+</figure> <br>
 
-<p> Moving to observing population trends, Figure 4 below shows a choropleth map of percent population change between 2000 and 2020, as well as the population dot density in 2000 overlayed with the absolute population change dot density between 2000 and 2020. In this time, Warren County grew by 42,032 people, with population growth primarily occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green came into existence during this time span. Some of the highest population growth occurred in the corridor between Russellville Road and I-65. Considering how much population growth occurred in newly developed suburban areas, these areas may hold the ideal candidate site for a new or improved fire station.  </p> <br>
+<p> Beyond population density in 2020, population changes since 2000 illustrate how the population distribution has changed. Figure 4 below shows a choropleth map of percent population change between 2000 and 2020, as well as the population dot density in 2000 overlayed with the absolute population change dot density between 2000 and 2020. In this time, Warren County grew by 42,032 people, with population growth primarily occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green came into existence during this period. Some of the highest population growth occurred in the corridor between Russellville Road and I-65. Considering how much population growth occurred in newly developed suburban areas, these areas may hold the ideal candidate site for a new or improved fire station.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpeg" alt="Population Change in Warren County 2000-2020" style="width:100%;max-width:625px">
-<figcaption> Figure 4. Warren County population change between 2000 and 2020. </figcaption>
+<figcaption> Figure 4. Population change in Warren County between 2000 and 2020. </figcaption>
+</figure> <br>
+
+<p> </p> <br>
+
+<figure>
+<img class="myImages" src="https://i.imgur.com/09vHtse.jpeg" alt="Land Use in Warren County" style="width:100%;max-width:625px">
+<figcaption> Figure 5. Land Use in Warren County </figcaption>
 </figure>
+
+<p> </p> <br>
+
+<figure>
+<img class="myImages" src="https://i.imgur.com/MdrSqxv.jpeg" alt="Future Land Use Map (2030) of Warren County" style="width:100%;max-width:625px">
+<figcaption> Figure 6. Future Land Use Map (2030) of Warren County </figcaption>
+</figure> <br>
+
 
 <h3> Considering Fire Response Times and Establishing the Network Dataset and its Parameters </h3> <br>
 
