@@ -503,7 +503,7 @@
 <tr> 
 <td> Volunteer (Seven-Minute Startup Delay) </td>
 <td> </td>
-<td> <td> Delay in Minutes ( 10 seconds per junction ) </td> </td>
+<td> Delay in Minutes ( 10 seconds per junction ) </td>
 <td> </td>
 </tr>
 </tbody>
