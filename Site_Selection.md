@@ -348,7 +348,7 @@
 
 <p> Bowling Green and Warren County provide two different kinds of fire services. The City of Bowling Green has a fully staffed professional fire service, whereas Warren County’s fire service is more reliant on volunteers. To represent this in a GIS, city fire stations will be classified as “professional” and county fire stations will be classified as “volunteer”. Since city fire stations are fully staffed, it is expected that they are able to respond to emergencies quickly, thus, they are assigned a one-minute startup delay. Volunteer fire stations, however, might require responders to first come in to prepare to respond to an emergency, so these fire stations are assigned a seven-minute startup delay. The overall fire response will be measured in the amount of time it takes to get from a fire station to a location in Warren County – a detailed breakdown of these ratings is presented in Table 2. These ratings are based on a summary of observations from Lexipol (Moore-Merrell, 2023). Note that fire service still exists beyond the 20-minute threshold, it is simply very slow.  </p> <br>
 
-<table>
+<table> <caption>Table 2. Fire Response Time Quality </caption>
 <thead>
 <tr>
 <td> Response Time </td>
@@ -381,7 +381,106 @@
 <td> Unacceptable </td>
 </tr>
 </tbody>
-</table>
+</table> <br>
+
+<p> Concerning travel speeds, speed limits by road type can be found in Table 3. However, the major roads in Warren County have been linear referenced, and thus have more detailed variations in their travel speed. Since fire response vehicles carry vast amounts of water, they are very heavy and cannot necessarily travel at or above the speed limit safely. For this reason, travel speed will be reduced by five miles per hour. Interstate and parkway use will also be restricted due to the high speeds.  </p> <br>
+
+<table> <caption> Table 3. Speed Limits by Road Type </caption>
+<thead> 
+<tr>
+<td> Type </td>
+<td> Speed </td>
+<td> Restriction </td>
+<td> Travel Speed </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Country Road </td>
+<td> 55 </td>
+<td> Allowed </td>
+<td> 50 </td>
+</tr>
+<tr>
+<td> City Street </td>
+<td> 30 </td>
+<td> Allowed </td>
+<td> 25 </td>
+</tr>
+<tr>
+<td> Federal Department </td>
+<td> 55 </td>
+<td> Allowed </td>
+<td> 50 </td>
+</tr>
+<tr>
+<td> Interstate </td>
+<td> 70 </td>
+<td> Not Allowed </td>
+<td> 65 </td>
+</tr>
+<tr>
+<td> University Roads </td>
+<td> 25 </td>
+<td> Allowed </td>
+<td> 20 </td>
+</tr>
+<tr>
+<td> Kentucky State Highway </td>
+<td> 55 </td>
+<td> Not Allowed </td>
+<td> 50 </td>
+</tr>
+<tr>
+<td> Franklin Simpson Parks and Rec </td>
+<td> 25 </td>
+<td> Not Allowed </td>
+<td> 20 </td>
+</tr>
+<tr>
+<td> Louie B. Nunn Cumberland Expressway </td>
+<td> 70 </td>
+<td> Not Allowed </td>
+<td> 65 </td>
+</tr>
+<tr>
+<td> Private Road </td>
+<td> 30 </td>
+<td> Allowed </td>
+<td> 25 </td>
+</tr>
+<tr>
+<td> Private Street </td>
+<td> 30 </td>
+<td> Allowed </td>
+<td> 25 </td>
+</tr>
+<tr>
+<td> Private Venue </td>
+<td> 30 </td>
+<td> Allowed </td>
+<td> 25 </td>
+</tr>
+<tr>
+<td> US Highway </td>
+<td> 55 </td>
+<td> Allowed </td>
+<td> 50 </td>
+</tr>
+<tr>
+<td> Wendell H. Ford Western Kentucky Parkway </td>
+<td> 70 </td>
+<td> Not Allowed </td>
+<td> 65 </td>
+</tr>
+<tr>
+<td> Old Kentucky State Highways </td>
+<td> 35 </td>
+<td> Not Allowed </td>
+<td> 30 </td>
+</tr>
+</tbody>
+</table> <br>
 
 <p> Placeholder </p>
 
