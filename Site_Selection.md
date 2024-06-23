@@ -495,33 +495,22 @@
 </thead>
 <tbody>
 <tr>
-<table>
-<tr>
 <td> Professional (One-Minute Startup Delay) </td>
-<td> Volunteer (Seven-Minute Startup Delay) </td>
-</tr>
-</table>
-<table>
-<tr> 
 <td> Road Access (Boolean: 0 Allowed 1 Not Allowed) </td> 
-<td> </td>
-</tr>
-</table>
-<table>
-<tr> 
 <td> Time in Minutes ( [Distance] / [Travel Speed] * 60 ) </td>
-<td> Delay in Minutes ( 10 seconds per junction ) </td>
+ <td> Five mph lower than posted speed limit </td>
 </tr>
-</table>
-<table>
-<tr>
-<td> Five mph lower than posted speed limit </td>
+<tr> 
+<td> Volunteer (Seven-Minute Startup Delay) </td>
 <td> </td>
-</tr>
-</table>
+<td> <td> Delay in Minutes ( 10 seconds per junction ) </td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table> <br>
+
+
+
 
 <p> Placeholder </p>
 
