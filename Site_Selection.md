@@ -344,6 +344,45 @@
 
 <h3> Considering Fire Response Times and Establishing the Network Dataset and its Parameters </h3> <br>
 
+<p> Quantifying a fire station’s response quality in a spatial model is complex. Depending on the type of emergency occurring, first responders have various goal times that they wish to meet within a certain percentage of cases. Additionally, properly handling different types of emergencies requires different types of vehicles and response procedures. Attempting to deal with every possible nuance in a GIS environment becomes difficult and extends beyond the scope of this project. To resolve this issue, some generalizations will be made regarding how fire stations respond to emergencies.  </p> <br>
+
+<p> Bowling Green and Warren County provide two different kinds of fire services. The City of Bowling Green has a fully staffed professional fire service, whereas Warren County’s fire service is more reliant on volunteers. To represent this in a GIS, city fire stations will be classified as “professional” and county fire stations will be classified as “volunteer”. Since city fire stations are fully staffed, it is expected that they are able to respond to emergencies quickly, thus, they are assigned a one-minute startup delay. Volunteer fire stations, however, might require responders to first come in to prepare to respond to an emergency, so these fire stations are assigned a seven-minute startup delay. The overall fire response will be measured in the amount of time it takes to get from a fire station to a location in Warren County – a detailed breakdown of these ratings is presented in Table 2. These ratings are based on a summary of observations from Lexipol (Moore-Merrell, 2023). Note that fire service still exists beyond the 20-minute threshold, it is simply very slow.  </p> <br>
+
+<table>
+<thead>
+<tr>
+<td> Response Time </td>
+<td> Rating </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Under five minutes </td>
+<td> Excellent </td>
+</tr>
+<tr>
+<td> Five to eight minutes </td>
+<td> Good </td>
+</tr>
+<tr>
+<td> Eight to ten minutes </td>
+<td> Fair </td>
+</tr>
+<tr>
+<td> Ten to 12 minutes </td>
+<td>  Delayed</td>
+</tr>
+<tr>
+<td> 12 to 15 minutes </td>
+<td> Poor </td>
+</tr>
+<tr>
+<td> 15 to 20 minutes </td>
+<td> Unacceptable </td>
+</tr>
+</tbody>
+</table>
+
 <p> Placeholder </p>
 
 <div id="myModal" class="modal">
