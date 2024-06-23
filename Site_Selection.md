@@ -351,8 +351,8 @@
 <table> <caption>Table 2. Fire Response Time Quality </caption>
 <thead>
 <tr>
-<td> Response Time </td>
-<td> Rating </td>
+<th> Response Time </th>
+<th> Rating </th>
 </tr>
 </thead>
 <tbody>
@@ -388,10 +388,10 @@
 <table class="center"> <caption> Table 3. Speed Limits by Road Type </caption>
 <thead> 
 <tr>
-<td> Type </td>
-<td> Speed </td>
-<td> Restriction </td>
-<td> Travel Speed </td>
+<th> Type </th>
+<th> Speed </th>
+<th> Restriction </th>
+<th> Travel Speed </th>
 </tr>
 </thead>
 <tbody>
@@ -487,10 +487,10 @@
 <table class="center"><caption> Table 4. Network Dataset Parameters </caption> 
 <thead>
 <tr>
-<td> Fire Station Type </td>
-<td> Restriction </td>
-<td> Costs </td>
-<td> Speed </td>
+<th> Fire Station Type </th>
+<th> Restriction </th>
+<th> Costs </th>
+<th> Speed </th>
 </tr>
 </thead>
 <tbody>
