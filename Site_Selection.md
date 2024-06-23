@@ -385,7 +385,7 @@
 
 <p> Concerning travel speeds, speed limits by road type can be found in Table 3. However, the major roads in Warren County have been linear referenced, and thus have more detailed variations in their travel speed. Since fire response vehicles carry vast amounts of water, they are very heavy and cannot necessarily travel at or above the speed limit safely. For this reason, travel speed will be reduced by five miles per hour. Interstate and parkway use will also be restricted due to the high speeds.  </p> <br>
 
-<table> <caption> Table 3. Speed Limits by Road Type </caption>
+<table class="center"> <caption> Table 3. Speed Limits by Road Type </caption>
 <thead> 
 <tr>
 <td> Type </td>
