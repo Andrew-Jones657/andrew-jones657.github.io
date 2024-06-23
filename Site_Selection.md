@@ -493,7 +493,6 @@
 <td> Speed </td>
 </tr>
 </thead>
-	
 <tbody>
 <tr>
 <table>
@@ -505,6 +504,7 @@
 <table>
 <tr> 
 <td> Road Access (Boolean: 0 Allowed 1 Not Allowed) </td> 
+<td> </td>
 </tr>
 </table>
 <table>
@@ -516,6 +516,7 @@
 <table>
 <tr>
 <td> Five mph lower than posted speed limit </td>
+<td> </td>
 </tr>
 </table>
 </tr>
