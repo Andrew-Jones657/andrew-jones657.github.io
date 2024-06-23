@@ -493,21 +493,30 @@
 <td> Speed </td>
 </tr>
 </thead>
+	
 <tbody>
 <tr>
 <table>
-<tr> Professional (One-Minute Startup Delay) </tr>
-<tr> Volunteer (Seven-Minute Startup Delay) </tr>
+<tr>
+<td> Professional (One-Minute Startup Delay) </td>
+<td> Volunteer (Seven-Minute Startup Delay) </td>
+</tr>
 </table>
 <table>
-<tr> Road Access (Boolean: 0 Allowed 1 Not Allowed) </tr>
+<tr> 
+<td> Road Access (Boolean: 0 Allowed 1 Not Allowed) </td> 
+</tr>
 </table>
 <table>
-<tr> Time in Minutes ( [Distance] / [Travel Speed] * 60 ) </tr>
-<tr> Delay in Minutes ( 10 seconds per junction ) </tr>
+<tr> 
+<td> Time in Minutes ( [Distance] / [Travel Speed] * 60 ) </td>
+<td> Delay in Minutes ( 10 seconds per junction ) </td>
+</tr>
 </table>
 <table>
-<tr> Five mph lower than posted speed limit </tr>
+<tr>
+<td> Five mph lower than posted speed limit </td>
+</tr>
 </table>
 </tr>
 </tbody>
