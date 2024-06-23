@@ -482,6 +482,37 @@
 </tbody>
 </table> <br>
 
+<p> Having considered how fire response behavior should function, parameters for the network dataset can be setup (Table 4). Except for costs, these have been previously described. The costs represent the accumulation of travel time from the fire station to a location in Warren County. Time is created in the road network by dividing distance over travel speed, and then multiplied by 60 to convert from seconds to minutes. The delay is a generalized assumption that fire response vehicles will have to slow down at junctions to either turn or pass through carefully. Since this cost is in minutes, it was input as a 0.1667 (ten second) cost at junctions.     </p> <br>
+
+<table class="center"><caption> Table 4. Network Dataset Parameters </caption> 
+<thead>
+<tr>
+<td> Fire Station Type </td>
+<td> Restriction </td>
+<td> Costs </td>
+<td> Speed </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<table>
+<tr> Professional (One-Minute Startup Delay) </tr>
+<tr> Volunteer (Seven-Minute Startup Delay) </tr>
+</table>
+<table>
+<tr> Road Access (Boolean: 0 Allowed 1 Not Allowed) </tr>
+</table>
+<table>
+<tr> Time in Minutes ( [Distance] / [Travel Speed] * 60 ) </tr>
+<tr> Delay in Minutes ( 10 seconds per junction ) </tr>
+</table>
+<table>
+<tr> Five mph lower than posted speed limit </tr>
+</table>
+</tr>
+</tbody>
+</table> <br>
+
 <p> Placeholder </p>
 
 <div id="myModal" class="modal">
