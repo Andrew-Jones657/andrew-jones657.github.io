@@ -305,11 +305,11 @@
 
 <h3> A Brief Summary on the Site Selection Criteria </h3>
 
-<p> Some of the site selection criteria are tailored towards avoiding physical impediments. Bodies of water or floodplains were discluded as potential candidate sites. Various parts of Warren County contain prominent topography, so land parcels with a change in slope over 15 feet were avoided as candidate sites. More unique to Warren County is its karst landscape, which can result in sudden sinkhole collapse -- land parcels with known karst geology were removed from the candidate site list. </p> <br>
+<p> Some of the site selection criteria are tailored towards avoiding physical impediments. Bodies of water or floodplains were discluded as potential candidate sites. Various parts of Warren County are topographically prominent, so land parcels with a change in slope over 15 feet were avoided as candidate sites. More unique to Warren County is its karst landscape, which can result in the formation of sinkholes -- land parcels with known karst geology were removed from the candidate site list. </p> <br>
 
 <p> To respond quickly to emergencies, the fire stations must be located close to major roads. To accomadate this in the site selection process, land parcels within a 1/3rd mile of major roads were weighed positively. </p> <br>
 
-<p> Since the presence of a professional fire station can lower home insurance rates, a quantile classification of property home values from the American Community Survey (Census Tract level) was used to ensure that these discounts were equitable. Lower valued homes were weighed higher than higher valued homes.  </p> <br>
+<p> Since the presence of a professional fire station can lower home insurance rates, a quantile classification of property home values from the American Community Survey (Census Tract level) was used to ensure that these discounts were equitably distributed. Lower valued homes were weighed higher than higher valued homes.  </p> <br> 
 
 <h3> Demographic and Zoning Data Important for Site Selection </h3> <br>
 
@@ -327,14 +327,14 @@
 <figcaption> Figure 4. Population change in Warren County between 2000 and 2020. </figcaption>
 </figure> <br>
 
-<p> </p> <br>
+<p> Like population density and trends, existing land use represents an important element of this study.  As mentioned above in Figure 1, land use types in the site selection process were limited to agricultural, commercial, public, or vacant. These land use types were selected on the basis that they would be the easiest to rezone. The Bowling Green Warren County City County Planning Commission’s (CCPC) map of land use in Warren County shows how land use is distributed among land parcels (Figure 5).  Note that the yellow and red areas depict residential parcels. These parcels contain most of the population seen in Figures 3 and 4, so ensuring that they are close to a new or improved fire station is important.  </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/09vHtse.jpeg" alt="Land Use in Warren County" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Land Use in Warren County </figcaption>
 </figure>
 
-<p> </p> <br>
+<p> The CCPC also has a future land use map, which shows how Warren County’s land use may change over the next 20 years (Figure 6). This map was released in 2012 with predictions for 2030. The low and rural density land use areas on this map are of particular importance, as they suggest that much of the agricultural land close to Bowling Green will take on a more populated, residential nature. Naturally, it will be important for these areas to have a good fire response service, and for this reason, low density and rural density were weighed positively in the site selection process.  </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/MdrSqxv.jpeg" alt="Future Land Use Map (2030) of Warren County" style="width:100%;max-width:625px">
