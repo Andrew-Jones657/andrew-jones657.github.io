@@ -509,6 +509,13 @@
 </tbody>
 </table> <br>
 
+<p> After setting up the network analyst dataset, a service area analysis model of the current fire service in Warren County was created (Figure 7).   </p> <br>
+
+
+<figure>
+<img class="myImages" src="https://i.imgur.com/hdprVyx.jpg" alt="Current Fire Service in Warren County" style="width:100%;max-width:625px">
+<figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
+</figure> <br>
 
 
 
