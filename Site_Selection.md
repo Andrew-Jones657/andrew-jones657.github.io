@@ -243,7 +243,7 @@
 <tr>
 <td> City County Planning Commission (CCPC) Parcel Data </td>
 <td> Bowling Green Open Data Hub </td>
-<td> Base Layer for Analysis / Query certain types of land use </td>
+<td> Base Layer for Analysis / Query certain types of land use / Impose >= 1 acre land parcel size requirement </td>
 <td> Hard Constraint </td>
 <td> Boolean (A candidate site must be Agricultural, Commercial, Public, or Vacant. Other values are discluded.) </td>
 </tr>
@@ -514,6 +514,7 @@
 <p> After setting up the network analyst dataset, a service area analysis model of the current fire service in Warren County was created (Figure 7). Observing the map, the city of Bowling Green clearly has very good fire service, as few parts of the city have a response time over eight minutes. Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. Considering the areas with the highest population growth in Figure 4, some of the best volunteer candidates for improvement would be Alvaton Fire Station Number 1, Plano Fire Station Number 1, and Woodburn Fire Station Number 2. Each of these fire stations lie south of Bowling Green and would benefit from an upgrade.   </p> <br>
 
 
+
 <figure>
 <img class="myImages" src="https://i.imgur.com/hdprVyx.jpg" alt="Current Fire Service in Warren County" style="width:100%;max-width:625px">
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
@@ -522,7 +523,7 @@
 <p> The end results of the site selection process. </p> <br>
 
 <figure>
-<img class="myImages" src="https://i.imgur.com/vOh4CF6.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
+<img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
 <figcaption> Figure 8. Candidate Sites for New Fire Stations in Warren County</figcaption>
 </figure> <br>
 
