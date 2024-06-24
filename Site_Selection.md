@@ -346,7 +346,9 @@
 
 <p> Quantifying a fire station’s response quality in a spatial model is complex. Depending on the type of emergency occurring, first responders have various goal times that they wish to meet within a certain percentage of cases. Additionally, properly handling different types of emergencies requires different types of vehicles and response procedures. Attempting to deal with every possible nuance in a GIS environment becomes difficult and extends beyond the scope of this project. To resolve this issue, some generalizations will be made regarding how fire stations respond to emergencies.  </p> <br>
 
-<p> Bowling Green and Warren County provide two different kinds of fire services. The City of Bowling Green has a fully staffed professional fire service, whereas Warren County’s fire service is more reliant on volunteers. To represent this in a GIS, city fire stations will be classified as “professional” and county fire stations will be classified as “volunteer”. Since city fire stations are fully staffed, it is expected that they are able to respond to emergencies quickly, thus, they are assigned a one-minute startup delay. Volunteer fire stations, however, might require responders to first come in to prepare to respond to an emergency, so these fire stations are assigned a seven-minute startup delay. The overall fire response will be measured in the amount of time it takes to get from a fire station to a location in Warren County – a detailed breakdown of these ratings is presented in Table 2. These ratings are based on a summary of observations from Lexipol (Moore-Merrell, 2023). Note that fire service still exists beyond the 20-minute threshold, it is simply very slow.  </p> <br>
+<p> Bowling Green and Warren County provide two different kinds of fire services. The City of Bowling Green has a fully staffed professional fire service, whereas Warren County’s fire service is more reliant on volunteers. To represent this in a GIS, city fire stations will be classified as “professional” and county fire stations will be classified as “volunteer”. Since city fire stations are fully staffed, it is expected that they are able to respond to emergencies quickly, thus, they are assigned a one-minute startup delay. Volunteer fire stations, however, might require responders to first come in to prepare to respond to an emergency, so these fire stations are assigned a seven-minute startup delay. </p> <br>
+
+<p> The overall fire response will be measured in the amount of time it takes to get from a fire station to a location in Warren County – a detailed breakdown of these ratings is presented in Table 2. These ratings are based on a summary of observations from Lexipol (Moore-Merrell, 2023). Note that fire service still exists beyond the 20-minute threshold, it is simply very slow. Maximizing good fire service coverage to the highest number of people is the goal of the service area analysis, so the fire station that has the highest number of people in the first two response categories (eight minutes or less) will be chosen as the ideal station.   </p> <br>
 
 <table> <caption>Table 2. Fire Response Time Quality </caption>
 <thead>
@@ -509,7 +511,7 @@
 </tbody>
 </table> <br>
 
-<p> After setting up the network analyst dataset, a service area analysis model of the current fire service in Warren County was created (Figure 7).   </p> <br>
+<p> After setting up the network analyst dataset, a service area analysis model of the current fire service in Warren County was created (Figure 7). Observing the map, the city of Bowling Green clearly has very good fire service, as few parts of the city have a response time over eight minutes. Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. Considering the areas with the highest population growth in Figure 4, some of the best volunteer candidates for improvement would be Alvaton Fire Station Number 1, Plano Fire Station Number 1, and Woodburn Fire Station Number 2. Each of these fire stations lie south of Bowling Green and would benefit from an upgrade.   </p> <br>
 
 
 <figure>
@@ -517,7 +519,7 @@
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
 </figure> <br>
 
-
+<p> The end results of the site selection process. </p> <br>
 
 <p> Placeholder </p>
 
