@@ -521,7 +521,11 @@
 
 <p> The end results of the site selection process. </p> <br>
 
-<p> (Insert picture of site selection map here) </p> <br>
+<figure>
+<img class="myImages" src="https://i.imgur.com/vOh4CF6.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
+<figcaption> Figure 8. Candidate Sites for New Fire Stations in Warren County</figcaption>
+</figure> <br>
+
 
 <p> With the candidate fire stations selected, a service area analysis can be conducted for each station.  </p> <br>
 
