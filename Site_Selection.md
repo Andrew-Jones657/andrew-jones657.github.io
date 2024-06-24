@@ -521,6 +521,12 @@
 
 <p> The end results of the site selection process. </p> <br>
 
+<p> (Insert picture of site selection map here) </p> <br>
+
+<p> With the candidate fire stations selected, a service area analysis can be conducted for each station.  </p> <br>
+
+<p> (Insert picture of all possible stations here) </p> <br>
+
 <p> Placeholder </p>
 
 <div id="myModal" class="modal">
