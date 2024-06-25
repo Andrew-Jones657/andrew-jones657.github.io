@@ -542,6 +542,109 @@
 <p>  </p> <br>
 
 <table class="center"><caption> Table 5. Fire Response Quality for every Candidate Fire Station </caption>  
+<thead>
+<tr>
+<td> </td>
+<td> Current Service </td>
+<td> Alvaton </td>
+<td> Hounds Run </td>
+<td> Mt Olivet </td>
+<td> Plano </td>
+<td> Woodburn </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 0-5 Min </td>
+<td> 70,576 </td>
+<td> 73,270 </td>
+<td> 74,157 </td>
+<td> 73,594 </td>
+<td> 74,688 </td>
+<td> 74,858 </td>
+</tr>
+<tr>
+<td> 5 - 8 Min </td>
+<td> 33,944 </td>
+<td> 35,200 </td>
+<td> 33,822 </td>
+<td> 33,856 </td>
+<td> 33,099 </td>
+<td> 32,987 </td>
+</tr>
+<tr> 
+<td> 8-10 Min </td>
+<td> 13,653 </td>
+<td> 13,747 </td>
+<td> 11,519 </td>
+<td> 13,685 </td>
+<td> 12,950 </td>
+<td> 13,616 </td>
+</tr>
+<tr>
+<td> 10-12 Min </td>
+<td> 6,321 </td>
+<td> 6,177 </td>
+<td> 6,766 </td>
+<td> 6,357 </td>
+<td> 6,450 </td>
+<td> 6,235 </td>
+</tr>
+<tr>
+<td> 12-15 Min </td>
+<td> 6,319 </td>
+<td> 3,934 </td>
+<td> 5,853 </td>
+<td> 5,662 </td>
+<td> 5,005 </td>
+<td> 5,501 </td>
+</tr>
+<tr>
+<td> 15-20 Min </td>
+<td> 1,532 </td>
+<td> 676 </td>
+<td> 872 </td>
+<td> 848 </td>
+<td> 805 </td>
+<td> 812 </td>
+</tr>
+<tr>
+<td> 0-20 Min </td>
+<td> 132,345 </td>
+<td> 133,004 </td>
+<td> 132,989 </td>
+<td> 133,002 </td>
+<td> 132,997 </td>
+<td> 133,009 </td>
+</tr>
+<tr>
+<td> 0-8 Min </td>
+<td> 104,520 </td>
+<td> 108,470 </td>
+<td> 107,979 </td>
+<td> 107,450 </td>
+<td> 107,787 </td>
+<td> 107,845 </td>
+</tr>
+<tr>
+<td> % 0-8 Min </td>
+<td> 77.7% </td>
+<td> 80.64% </td>
+<td> 80.28% </td>
+<td> 79.88% </td>
+<td> 80.13% </td>
+<td> 80.18% </td>
+</tr>
+<tr> 
+<td> Rank </td>
+<td> 6 </td>
+<td> 1 </td>
+<td> 2 </td>
+<td> 5 </td>
+<td> 4 </td>
+<td> 3 </td>
+</tr>
+</tbody>
 </table> <br>
 
 <p> Placeholder </p>
