@@ -532,7 +532,7 @@
 </figure> <br>
 
 
-<p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 9 below shows how each of the new candidate stations alters the fire response time visually, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 9. </p> <br>
+<p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 9 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 9. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/LoAuPiu.jpeg" alt="Fire Service Response Times for each Candidate Station" style="width:100%;max-width:625px">
