@@ -311,6 +311,8 @@
 
 <p> Since the presence of a professional fire station can lower home insurance rates, a quantile classification of property home values from the American Community Survey (Census Tract level) was used to ensure that these discounts were equitably distributed. Lower valued homes were weighed higher than higher valued homes.  </p> <br> 
 
+<p> Land parcels need to have enough space to accomadate a fire station. The amount of acreage that is required depends on how large the station is, with some sources recommending at least five acres (American planning association). For this study, however, the smallest existing professional fire stations land parcel size will be used -- in this case, it is a one acre land parcel. </p> <br>
+
 <h3> Demographic and Zoning Data Important for Site Selection </h3> <br>
 
 <p> Before looking at the fire response service in Warren County, it is worthwhile to observe the distribution of and changes in the overall population. Figure 3 below depicts a dot density map of Warren County, whose population at the time was 134,510 people. Bowling Green, containing more than half of Warren County’s population at 72,642 people, is essentially saddled between I-65 and I-165 in the center of the county. Suburban sprawl northeast and south of Bowling Green shows a moderate population density, and the rest of Warren County, more rural in character, has a low population density.  </p> <br>
@@ -520,7 +522,9 @@
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
 </figure> <br>
 
-<p> The end results of the site selection process. </p> <br>
+<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the canidiate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green. </p> <br>
+
+<p> Additionally, the top two candidate stations from the site selection process are highlighted with an orange border. These were selected in a somewhat heuristic fashion -- the new stations were selected in a manner that would seemingly best improve the current fire service. Since the other three stations will be improvements, this finalizes the top five candidate stations. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
@@ -528,9 +532,12 @@
 </figure> <br>
 
 
-<p> With the candidate fire stations selected, a service area analysis can be conducted for each station.  </p> <br>
+<p> With the candidate fire stations selected, a service area analysis can be conducted for each station.   </p> <br>
 
-<p> (Insert picture of all possible stations here) </p> <br>
+<figure>
+<img class="myImages" src="https://i.imgur.com/LoAuPiu.jpeg" alt="Fire Service Response Times for each Candidate Station" style="width:100%;max-width:625px">
+<figcaption> Figure 9. Fire Service Response Times for each Candidate Station </figcaption>
+</figure> <br>
 
 <p> Placeholder </p>
 
