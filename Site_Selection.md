@@ -13,7 +13,12 @@
   h3{
   text-align: center;
   }
-
+  
+  .tablecenter {
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
   figure figcaption {
   text-align: center; 
   }
@@ -541,7 +546,7 @@
 
 <p>  </p> <br>
 
-<table class="center"><caption> Table 5. Fire Response Quality by Station </caption>  
+<table class="tablecenter"><caption> Table 5. Fire Response Quality by Station </caption>  
 <thead>
 <tr>
 <th> </th>
