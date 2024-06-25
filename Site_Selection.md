@@ -357,7 +357,7 @@
 
 <p> The overall fire response will be measured in the amount of time it takes to get from a fire station to a location in Warren County – a detailed breakdown of these ratings is presented in Table 2. These ratings are based on a summary of observations from Lexipol (Moore-Merrell, 2023). Note that fire service still exists beyond the 20-minute threshold, it is simply very slow. Maximizing good fire service coverage to the highest number of people is the goal of the service area analysis, so the fire station that has the highest number of people in the first two response categories (eight minutes or less) will be chosen as the ideal station.   </p> <br>
 
-<table> <caption>Table 2. Fire Response Time Quality </caption>
+<table class="tablecenter"> <caption>Table 2. Fire Response Time Quality </caption>
 <thead>
 <tr>
 <th> Response Time </th>
