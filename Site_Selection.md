@@ -437,13 +437,13 @@
 <tr>
 <td> Kentucky State Highway </td>
 <td> 55 </td>
-<td> Not Allowed </td>
+<td> Allowed </td>
 <td> 50 </td>
 </tr>
 <tr>
 <td> Franklin Simpson Parks and Rec </td>
 <td> 25 </td>
-<td> Not Allowed </td>
+<td> Allowed </td>
 <td> 20 </td>
 </tr>
 <tr>
@@ -485,7 +485,7 @@
 <tr>
 <td> Old Kentucky State Highways </td>
 <td> 35 </td>
-<td> Not Allowed </td>
+<td> Allowed </td>
 <td> 30 </td>
 </tr>
 </tbody>
@@ -536,6 +536,7 @@
 <figcaption> Figure 8. Candidate Sites for New Fire Stations in Warren County</figcaption>
 </figure> <br>
 
+<h3> The Results of the Service Area Analysis </h3> <br>
 
 <p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 9 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 9. </p> <br>
 
@@ -544,9 +545,11 @@
 <figcaption> Figure 9. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p>  </p> <br>
+<p> The population covered for each map in Figure 9 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the best service to the highest number of people under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Each of the candidate stations are, however, quite close in terms of performance, and the service area analysis does not take into account the demand of the underlying population. A location allocation analysis is necessary to observe underlying population demand. 
 
-<table class="tablecenter"><caption> Table 5. Fire Response Quality by Station </caption>  
+   </p> <br>
+
+<table class="tablecenter"><caption> Table 5. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
 <tr>
 <th> </th>
@@ -651,6 +654,10 @@
 </tr>
 </tbody>
 </table> <br>
+
+<h3> The Results of the Location Allocation Analysis </h3>
+
+<p> </p> <br>
 
 <p> Placeholder </p>
 
