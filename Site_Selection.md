@@ -545,9 +545,7 @@
 <figcaption> Figure 9. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 9 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the best service to the highest number of people under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Each of the candidate stations are, however, quite close in terms of performance, and the service area analysis does not take into account the demand of the underlying population. A location allocation analysis is necessary to observe underlying population demand. 
-
-   </p> <br>
+<p> The population covered for each map in Figure 9 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the best service to the highest number of people under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Each of the candidate stations are, however, quite close in terms of performance, and the service area analysis does not take into account the demand of the underlying population. A location allocation analysis is necessary to observe underlying population demand. </p> <br>
 
 <table class="tablecenter"><caption> Table 5. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
@@ -657,7 +655,16 @@
 
 <h3> The Results of the Location Allocation Analysis </h3>
 
-<p> </p> <br>
+<p> Location Allocation analysis seeks to  </p> <br>
+
+<table> <caption> Table 6. Location Allocation Analyis Setup </caption>
+
+</table>
+
+<figure>
+<img class="myImages" src=" " alt="Fire Service Response Times for each Candidate Station" style="width:100%;max-width:625px">
+<figcaption> Figure 10.  </figcaption>
+</figure> <br>
 
 <p> Placeholder </p>
 
