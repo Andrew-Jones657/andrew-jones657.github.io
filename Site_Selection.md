@@ -534,7 +534,7 @@
 
 <p> In order to find which stations would benefit the most from an upgrade to professional status, the underlying demand by the population also needs to be analyzed. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations currently experience the most demand. Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
 
-<table> <caption> Table 6. Location Allocation Analyis Setup </caption>
+<table> <caption> Table 5. Location-Allocation Analyis Setup </caption>
 <thead>
 <tr> 
 <th> Facilities </th>
@@ -566,11 +566,11 @@
 <figcaption> Figure 10. Current Population Demands for Fire Service in Warren County, Kentucky </figcaption>
 </figure> <br>
 
-<p> Looking at Table 7, it would appear that the three best candidates for improved fire stations are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, considering the current fire service response under the location-allocation layer, it is easy to see that much of the population demand in the Alvaton and Browning stations already receives good service. Even though these two stations have the highest population demand, improving them would only slightly increase good fire response to the overall. Instead, it is likely that the best fire stations to improve will be in the quickly growing suburban areas presented in Figures 4 and 6. 
+<p> Looking at Table 6, it would appear that the three best candidates for improved fire stations are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, considering the current fire service response under the location-allocation layer, it is easy to see that much of the population demand in the Alvaton and Browning stations already receives good service. Even though these two stations have the highest population demand, improving them would only slightly increase good fire response to the overall. Instead, it is likely that the best fire stations to improve will be in the quickly growing suburban areas presented in Figures 4 and 6. 
 	
 	Considering the areas with the highest population growth in Figure 4, some of the best volunteer candidates for improvement would be Alvaton Fire Station Number 1, Plano Fire Station Number 1, and Woodburn Fire Station Number 2. Each of these fire stations lie south of Bowling Green and would benefit from an upgrade. </p> <br>
 
-<table> <caption> Table 7. Location allocation facilities sorted by population demand </caption> 
+<table> <caption> Table 6. Location allocation facilities sorted by population demand </caption> 
 
 </table>
 
@@ -590,7 +590,7 @@
 
 <p> The population covered for each map in Figure 9 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the best service to the highest number of people under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Each of the candidate stations are, however, quite close in terms of performance, and the service area analysis does not take into account the demand of the underlying population. A location allocation analysis is necessary to observe underlying population demand. </p> <br>
 
-<table class="tablecenter"><caption> Table 5. Population covered by Fire Response under each potential Candidate Station </caption>  
+<table class="tablecenter"><caption> Table 7. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
 <tr>
 <th> </th>
@@ -696,7 +696,7 @@
 </tbody>
 </table> <br>
 
-<h3> </h3> <br>
+<h3> Discussion and Some Final Thoughts </h3> <br>
 
 <p> Placeholder </p>
 
