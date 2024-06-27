@@ -520,7 +520,30 @@
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
 
-<p> After setting up the network analyst dataset, a service area analysis model of the current fire service in Warren County was created (Figure 7). Observing the map, the city of Bowling Green clearly has very good fire service, as few parts of the city have a response time over eight minutes. Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. </p> <br>
+<p> With the network dataset paremeters prepared, a service area analysis can be modeled. Table ? below depcits the parameters used in this analysis. </p> <br>
+
+<table> <caption> Table ?. Parameters for the Service Area Analysis </caption>
+<thead>
+<tr>
+<th> Facilities </th>
+<th> Time Attribute </th>
+<th> Cutoffs </th>
+<th> Polygons </th>
+<th> Trim Distance </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Fire Stations </td>
+<td> Delay </td>
+<td> 5, 8, 10, 12, 15, 20 (same as Table 2) </td>
+<td> High Precision, Boundary Type: Dissolve, Polygon: Rings </td>
+<td> Trim Distance: 531 Meters </td>
+</tr>
+</tbody>
+</table> <br>
+
+<p> After establishing the service area analysis parameters in Table ?, a service area analysis model of the current fire service in Warren County was created (Figure 7). Observing the map, the city of Bowling Green clearly has very good fire service, as few parts of the city have a response time over eight minutes. Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. </p> <br>
 
 
 <figure>
@@ -528,13 +551,13 @@
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
 </figure> <br>
 
-<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the canidiate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green. Additionally, the top two candidate stations from the site selection process are highlighted with an orange border. <em> These were selected in a somewhat heuristic fashion -- the new stations were selected in a manner that would seemingly best improve the current fire service.  Since the other three stations will be improvements, this finalizes the top five candidate stations. </em> </p> <br>
+<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the canidiate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green -- the two best sites are highlighted with an orange boundary. </p> <br>
 
 <h3> Using Location-Allocation Analysis to Find the Ideal Improved Fire Station </h3>
 
-<p> In order to find which stations would benefit the most from an upgrade to professional status, the underlying demand by the population also needs to be analyzed. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations currently experience the most demand. Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
+<p> In order to find the volunteer fire station that would best benefit the most from an upgrade to professional status, the underlying population demand needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that finds the optimal facility location or locations given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations outside the current fire service experience the most population demand.  Table ? below displays the parameters and setup for the location-allocation analysis layer. </p>
 
-<table> <caption> Table 5. Location-Allocation Analyis Setup </caption>
+<table> <caption> Table ?. Location-Allocation Analyis Setup </caption>
 <thead>
 <tr> 
 <th> Facilities </th>
