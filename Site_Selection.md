@@ -528,9 +528,9 @@
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
 </figure> <br>
 
-<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the canidiate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green. </p> <br>
+<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the canidiate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green. Additionally, the top two candidate stations from the site selection process are highlighted with an orange border. <em> These were selected in a somewhat heuristic fashion -- the new stations were selected in a manner that would seemingly best improve the current fire service.  Since the other three stations will be improvements, this finalizes the top five candidate stations. </em> </p> <br>
 
-<p> Additionally, the top two candidate stations from the site selection process are highlighted with an orange border. <em> These were selected in a somewhat heuristic fashion -- the new stations were selected in a manner that would seemingly best improve the current fire service.  Since the other three stations will be improvements, this finalizes the top five candidate stations. </em> </p> <br>
+<h3> Using Location-Allocation Analysis to Find the Ideal Improved Fire Station </h3>
 
 <p> In order to find which stations would benefit the most from an upgrade to professional status, the underlying demand by the population also needs to be analyzed. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations currently experience the most demand. Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
 
@@ -579,7 +579,7 @@
 <figcaption> Figure 8. Candidate Sites for New Fire Stations in Warren County</figcaption>
 </figure> <br>
 
-<h3> The Results of the Service Area Analysis </h3> <br>
+<h3> The Top Five Candidate Fire Stations </h3> <br>
 
 <p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 9 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 9. </p> <br>
 
@@ -696,10 +696,7 @@
 </tbody>
 </table> <br>
 
-<h3> The Results of the Location Allocation Analysis </h3>
-
-<p> Location Allocation analysis seeks to  </p> <br>
-
+<h3> </h3> <br>
 
 <p> Placeholder </p>
 
