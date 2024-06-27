@@ -147,9 +147,9 @@
  </thead>
  <tbody>
    <tr>
-	<td>US Census SF1 Data / TIGER lines (Block, Block Group, Tract, and County levels)</td>
-	<td>US Census Bureau / TIGER lines</td>
-	<td>Population density and projections / Demand weights for location - allocation analysis </td>
+	<td>US Census SF1 Data, TIGER lines (Block, Block Group, Tract, and County levels)</td>
+	<td>US Census Bureau, TIGER lines</td>
+	<td>Population density and projections, Demand weights for location - allocation analysis </td>
     <td>Soft Opportunity </td>
     <td> <table> 
     <tr> 
@@ -181,7 +181,7 @@
    </tr>
    <tr>
 	<td> US Census ACS Data (Median Home Value, Tract Level) </td>
-	<td> US Census Bureau / ESRI Online </td>
+	<td> US Census Bureau, ESRI Online </td>
 	<td> Provide equitable property value increase for homes near new or improved fire station </td>
     <td> Soft Opportunity </td>
     <td>
@@ -241,14 +241,14 @@
 <tr>
 <td> All Roads and Major Roads </td>
 <td> KY Department of Transportation </td>
-<td> Used for network dataset construction / close proximity to major roads as an opportunity </td>
+<td> Used for network dataset construction, close proximity to major roads as an opportunity </td>
 <td> Soft Opportunity </td>
 <td> Buffer 1/3rd mile: 0.75</td>
 </tr>
 <tr>
 <td> City County Planning Commission (CCPC) Parcel Data </td>
 <td> Bowling Green Open Data Hub </td>
-<td> Base Layer for Analysis / Query certain types of land use / Impose >= 1 acre land parcel size requirement </td>
+<td> Base Layer for Analysis, Query certain types of land use, Impose >= 1 acre land parcel size requirement </td>
 <td> Hard Constraint </td>
 <td> Boolean (A candidate site must be Agricultural, Commercial, Public, or Vacant. Other values are discluded.) </td>
 </tr>
@@ -520,9 +520,9 @@
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
 
-<p> With the network dataset paremeters prepared, a service area analysis can be modeled. Table ? below depcits the parameters used in this analysis. </p> <br>
+<p> With the network dataset paremeters prepared, a service area analysis can be modeled. Table 5 below depcits the parameters used in this analysis. </p> <br>
 
-<table> <caption> Table ?. Parameters for the Service Area Analysis </caption>
+<table> <caption> Table 5. Parameters for the Service Area Analysis </caption>
 <thead>
 <tr>
 <th> Facilities </th>
@@ -543,7 +543,7 @@
 </tbody>
 </table> <br>
 
-<p> After establishing the service area analysis parameters in Table ?, a service area analysis model of the current fire service in Warren County was created (Figure 7). Observing the map, the city of Bowling Green clearly has very good fire service, as few parts of the city have a response time over eight minutes. Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. </p> <br>
+<p> After establishing the service area analysis parameters in Table 5, a service area analysis model of the current fire service in Warren County was created (Figure 7). Observing the map, the city of Bowling Green clearly has very good fire service, as few parts of the city have a response time over eight minutes. Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. </p> <br>
 
 
 <figure>
@@ -555,9 +555,9 @@
 
 <h3> Using Location-Allocation Analysis to Find the Ideal Improved Fire Station </h3>
 
-<p> In order to find the volunteer fire station that would best benefit the most from an upgrade to professional status, the underlying population demand needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that finds the optimal facility location or locations given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations outside the current fire service experience the most population demand.  Table ? below displays the parameters and setup for the location-allocation analysis layer. </p>
+<p> In order to find the volunteer fire station that would best benefit the most from an upgrade to professional status, the underlying population demand needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that finds the optimal facility location or locations given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations outside the current fire service experience the most population demand.  Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
 
-<table> <caption> Table ?. Location-Allocation Analyis Setup </caption>
+<table> <caption> Table 6. Location-Allocation Analyis Setup </caption>
 <thead>
 <tr> 
 <th> Facilities </th>
@@ -582,38 +582,302 @@
 
 <p> Quickly explaining some of the setup parameters. Like the service area analysis, the facilites will be fire stations. Unique to location allocation analysis are demand points. In this case, the demand points will be census block centroids weighted by population -- the location allocation analysis will aggregate the population demands together and then the population demand for each fire station can viewed. Location-allocation analysis has seven different "problem types" that can be solved -- these include minimizing the number of facilities, maximizing market share, minimzing weighted impedance, etc. but in this case, maximizing coverage is the desired effect. Warren County and the City of Bowling Green have a shared response agreement where both entities will assist each other with fire emergencies, so there is not a limit in the amount of service a station can provide. The cutoff will be at eight minutes, which is the qualifying factor for good service in this analysis. Cost attributes to accumulate will be time and delay, just as in the service area analysis. Finally, the number of facilities to locate will be 32, which is the number of existing fire stations.  </p> <br>
 
-<p> Below is the current fire demand per fire station overlaid on the current fire service (Figure ?). The fire stations connected to more census block centroids have a higher demand by the nearby population.  </p>
+<p> Below is the current fire demand per fire station overlaid on the current fire service (Figure 8). The fire stations connected to more census block centroids have a higher demand by the nearby population.  </p>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/UHlr6JD.jpeg" alt="Current Population Demands for Fire Service in Warren County, Kentucky" style="width:100%;max-width:625px">
-<figcaption> Figure 10. Current Population Demands for Fire Service in Warren County, Kentucky </figcaption>
+<figcaption> Figure 8. Current Population Demands for Fire Service in Warren County, Kentucky </figcaption>
 </figure> <br>
 
-<p> Looking at Table 6, it would appear that the three best candidates for improved fire stations are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, considering the current fire service response under the location-allocation layer, it is easy to see that much of the population demand in the Alvaton and Browning stations already receives good service. Even though these two stations have the highest population demand, improving them would only slightly increase good fire response to the overall. Instead, it is likely that the best fire stations to improve will be in the quickly growing suburban areas presented in Figures 4 and 6. 
+<p> Looking at Table 6, it would appear that the three best candidates for improved fire stations are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, considering the current fire service response under the location-allocation layer, it is easy to see that much of the population demand in the Alvaton and Browning stations already receive good service from other fire stations. Even though these two stations have the highest population demand, improving them would only slightly increase good fire response overall. Instead, it is likely that the best fire stations to improve will be in the quickly growing suburban areas presented in Figures 4 and 6. 
 	
 	Considering the areas with the highest population growth in Figure 4, some of the best volunteer candidates for improvement would be Alvaton Fire Station Number 1, Plano Fire Station Number 1, and Woodburn Fire Station Number 2. Each of these fire stations lie south of Bowling Green and would benefit from an upgrade. </p> <br>
 
-<table> <caption> Table 6. Location allocation facilities sorted by population demand </caption> 
+<table class="table table-bordered table-hover table-condensed"> <caption> Table 7. Location Allocation Facilities sorted by Population Demand </caption> 
+<thead><tr><th title="Field #1">Address</th>
+<th title="Field #2">Name</th>
+<th title="Field #3">Facility Type</th>
+<th title="Field #4">Allocated Census Blocks</th>
+<th title="Field #5">Allocated Census Block Population</th>
+<th title="Field #6">Station Type</th>
+</tr></thead>
+<tbody><tr>
+<td>835 MORGANTOWN RD</td>
+<td>Westside Fire Station</td>
+<td>Required</td>
+<td align="right">218</td>
+<td align="right">22477</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>201 CHERRY FARM LN</td>
+<td>Greenwood Fire Station</td>
+<td>Required</td>
+<td align="right">136</td>
+<td align="right">14581</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>150 BENNETT LN</td>
+<td>Southside Fire Station</td>
+<td>Required</td>
+<td align="right">141</td>
+<td align="right">14187</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>701 E 7TH AV</td>
+<td>Central Fire Station</td>
+<td>Required</td>
+<td align="right">276</td>
+<td align="right">14105</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>1102 WOODHURST ST</td>
+<td>Airport Fire Station</td>
+<td>Required</td>
+<td align="right">63</td>
+<td align="right">6473</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>7055 NASHVILLE RD</td>
+<td>Woodburn Fire Station 2</td>
+<td>Required</td>
+<td align="right">67</td>
+<td align="right">6137</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>3383 CUMBERLAND TRACE RD</td>
+<td>Alvaton Fire Station 4</td>
+<td>Required</td>
+<td align="right">67</td>
+<td align="right">5663</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>325 KITCHENS SOUTH RD</td>
+<td>Browning Fire Station 2</td>
+<td>Required</td>
+<td align="right">39</td>
+<td align="right">4674</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>288 OAK ST</td>
+<td>Richardsville Fire Station 3</td>
+<td>Required</td>
+<td align="right">51</td>
+<td align="right">4497</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>6403 OLD SCOTTSVILLE RD</td>
+<td>Alvaton Fire Station 1</td>
+<td>Required</td>
+<td align="right">46</td>
+<td align="right">3643</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>3210 PLANO RD</td>
+<td>Plano Fire Station 1</td>
+<td>Required</td>
+<td align="right">29</td>
+<td align="right">3636</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>756 GLASGOW RD</td>
+<td>Transpark Fire Station</td>
+<td>Required</td>
+<td align="right">47</td>
+<td align="right">3271</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>122 JFS CIR</td>
+<td>Alvaton Fire Station 3</td>
+<td>Required</td>
+<td align="right">34</td>
+<td align="right">2854</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>7124 WOODBURN ALLEN SPRINGS RD</td>
+<td>Plano Fire Station 2</td>
+<td>Required</td>
+<td align="right">39</td>
+<td align="right">2703</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>385 LOVERS LN</td>
+<td>Lovers Ln Fire Station</td>
+<td>Required</td>
+<td align="right">49</td>
+<td align="right">2680</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>529 BROOKWOOD DR</td>
+<td>Barren River Fire Station 2</td>
+<td>Required</td>
+<td align="right">36</td>
+<td align="right">2079</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>1107 MT OLIVET GIRKIN RD</td>
+<td>Richardsville Fire Station 2</td>
+<td>Required</td>
+<td align="right">17</td>
+<td align="right">2069</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>124 MAIN ST S</td>
+<td>Smiths Grove Fire Station 1</td>
+<td>Required</td>
+<td align="right">84</td>
+<td align="right">1835</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>250 PORTER PKE</td>
+<td>Northside Fire Station</td>
+<td>Required</td>
+<td align="right">17</td>
+<td align="right">1683</td>
+<td>Professional</td>
+</tr>
+<tr>
+<td>8352 CEMETERY RD</td>
+<td>Alvaton Fire Station 2</td>
+<td>Required</td>
+<td align="right">23</td>
+<td align="right">1638</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>1185 RICHARDSVILLE RD</td>
+<td>Richardsville Fire Station 1</td>
+<td>Required</td>
+<td align="right">18</td>
+<td align="right">1631</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>900 WOODBURN ALLEN SPRINGS RD</td>
+<td>Woodburn Fire Station 1</td>
+<td>Required</td>
+<td align="right">45</td>
+<td align="right">1248</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>198 SLIM ISLAND RD</td>
+<td>Richardsville Fire Station 5</td>
+<td>Required</td>
+<td align="right">29</td>
+<td align="right">1206</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>5636 PORTER PKE</td>
+<td>Gott Fire Station</td>
+<td>Required</td>
+<td align="right">19</td>
+<td align="right">1110</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>6906 GOTTS HYDRO RD</td>
+<td>Smiths Grove Fire Station 2</td>
+<td>Required</td>
+<td align="right">31</td>
+<td align="right">1054</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>9408 KY HWY 185</td>
+<td>Richardsville Fire Station 4</td>
+<td>Required</td>
+<td align="right">23</td>
+<td align="right">966</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>255 HADLEY SCHOOL RD</td>
+<td>Hadley Fire Station </td>
+<td>Required</td>
+<td align="right">50</td>
+<td align="right">832</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>3866 BROWNING RD</td>
+<td>Browning Fire Station 1</td>
+<td>Required</td>
+<td align="right">20</td>
+<td align="right">696</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>3773 RIVERSIDE BENLEO RD</td>
+<td>Richardsville Fire Station 6</td>
+<td>Required</td>
+<td align="right">19</td>
+<td align="right">681</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>11047 GLASGOW RD</td>
+<td>Smiths Grove Fire Station 3</td>
+<td>Required</td>
+<td align="right">17</td>
+<td align="right">673</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>121 JENKINS RD</td>
+<td>Barren River Fire Station 1</td>
+<td>Required</td>
+<td align="right">20</td>
+<td align="right">672</td>
+<td>Volunteer</td>
+</tr>
+<tr>
+<td>1424 SUNNYSIDE GOTTS RD</td>
+<td>Gott Fire Station 2</td>
+<td>Required</td>
+<td align="right">11</td>
+<td align="right">348</td>
+<td>Volunteer</td>
+</tr>
+</tbody>
+</table> <br>
 
-</table>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
-<figcaption> Figure 8. Candidate Sites for New Fire Stations in Warren County</figcaption>
+<figcaption> Figure 9. Candidate Sites for New Fire Stations in Warren County</figcaption>
 </figure> <br>
 
 <h3> The Top Five Candidate Fire Stations </h3> <br>
 
-<p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 9 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 9. </p> <br>
+<p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 10 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 9. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/LoAuPiu.jpeg" alt="Fire Service Response Times for each Candidate Station" style="width:100%;max-width:625px">
-<figcaption> Figure 9. Fire Service Response Times for each Candidate Station </figcaption>
+<figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 9 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the best service to the highest number of people under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Each of the candidate stations are, however, quite close in terms of performance, and the service area analysis does not take into account the demand of the underlying population. A location allocation analysis is necessary to observe underlying population demand. </p> <br>
+<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the best service to the highest number of people under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Each of the candidate stations are, however, quite close in terms of performance, and the service area analysis does not take into account the demand of the underlying population. A location allocation analysis is necessary to observe underlying population demand. </p> <br>
 
-<table class="tablecenter"><caption> Table 7. Population covered by Fire Response under each potential Candidate Station </caption>  
+<table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
 <tr>
 <th> </th>
