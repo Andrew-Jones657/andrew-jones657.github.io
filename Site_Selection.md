@@ -530,7 +530,7 @@
 
 <p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the canidiate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green. </p> <br>
 
-<p> Additionally, the top two candidate stations from the site selection process are highlighted with an orange border. These were selected in a somewhat heuristic fashion -- the new stations were selected in a manner that would seemingly best improve the current fire service. <em> Since the other three stations will be improvements, this finalizes the top five candidate stations. </em> </p> <br>
+<p> Additionally, the top two candidate stations from the site selection process are highlighted with an orange border. <em> These were selected in a somewhat heuristic fashion -- the new stations were selected in a manner that would seemingly best improve the current fire service.  Since the other three stations will be improvements, this finalizes the top five candidate stations. </em> </p> <br>
 
 <p> In order to find which stations would benefit the most from an upgrade to professional status, the underlying demand by the population also needs to be analyzed. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations currently experience the most demand. Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
 
@@ -557,12 +557,22 @@
 </tbody>
 </table> <br>
 
+<p> Quickly explaining some of the setup parameters. Like the service area analysis, the facilites will be fire stations. Unique to location allocation analysis are demand points. In this case, the demand points will be census block centroids weighted by population -- the location allocation analysis will aggregate the population demands together and then the population demand for each fire station can viewed. Location-allocation analysis has seven different "problem types" that can be solved -- these include minimizing the number of facilities, maximizing market share, minimzing weighted impedance, etc. but in this case, maximizing coverage is the desired effect. Warren County and the City of Bowling Green have a shared response agreement where both entities will assist each other with fire emergencies, so there is not a limit in the amount of service a station can provide. The cutoff will be at eight minutes, which is the qualifying factor for good service in this analysis. Cost attributes to accumulate will be time and delay, just as in the service area analysis. Finally, the number of facilities to locate will be 32, which is the number of existing fire stations.  </p> <br>
+
+<p> Below is the current fire demand per fire station overlaid on the current fire service (Figure ?). The fire stations connected to more census block centroids have a higher demand by the nearby population.  </p>
+
 <figure>
-<img class="myImages" src=" " alt="Current Population Demands for Fire Service in Warren County, Kentucky" style="width:100%;max-width:625px">
+<img class="myImages" src="https://i.imgur.com/UHlr6JD.jpeg" alt="Current Population Demands for Fire Service in Warren County, Kentucky" style="width:100%;max-width:625px">
 <figcaption> Figure 10. Current Population Demands for Fire Service in Warren County, Kentucky </figcaption>
 </figure> <br>
 
-<p> Considering the areas with the highest population growth in Figure 4, some of the best volunteer candidates for improvement would be Alvaton Fire Station Number 1, Plano Fire Station Number 1, and Woodburn Fire Station Number 2. Each of these fire stations lie south of Bowling Green and would benefit from an upgrade. </p> <br>
+<p> Looking at Table 7, it would appear that the three best candidates for improved fire stations are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, considering the current fire service response under the location-allocation layer, it is easy to see that much of the population demand in the Alvaton and Browning stations already receives good service. Even though these two stations have the highest population demand, improving them would only slightly increase good fire response to the overall. Instead, it is likely that the best fire stations to improve will be in the quickly growing suburban areas presented in Figures 4 and 6. 
+	
+	Considering the areas with the highest population growth in Figure 4, some of the best volunteer candidates for improvement would be Alvaton Fire Station Number 1, Plano Fire Station Number 1, and Woodburn Fire Station Number 2. Each of these fire stations lie south of Bowling Green and would benefit from an upgrade. </p> <br>
+
+<table> <caption> Table 7. Location allocation facilities sorted by population demand </caption> 
+
+</table>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
