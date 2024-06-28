@@ -1,3 +1,18 @@
 theme: jekyll-theme-slate
 title: Andrew Jones
 description: <p> <a href="https://andrew-jones657.github.io/"> Home </a>   <a href="https://andrew-jones657.github.io/Blog"> Blog </a>   <a href="https://andrew-jones657.github.io/Projects"> Projects </a>   <a href="https://andrew-jones657.github.io/CV-Resume"> CV-Resume </a> </p> 
+
+<head>
+  h1{
+  text-align: center;
+  }
+
+  h2{
+  text-align: center;
+  }
+
+  h3{
+  text-align: center;
+  }
+  
+  </head>
