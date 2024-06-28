@@ -295,7 +295,7 @@
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/07mO4wR.jpeg" alt="Various spatial data in Warren County" style="width:100%;max-width:625px">
-<figcaption> Figure 1. Various spatial data in Warren County used to narrow down an ideal site. </figcaption>
+<figcaption> Figure 1. A Visualization of the Spatial Data used in the Site Selection Process </figcaption>
 </figure> <br>
 
 
@@ -875,7 +875,7 @@
 <figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the best service to the highest number of people under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Each of the candidate stations are, however, quite close in terms of performance, and the service area analysis does not consider the demand of the underlying population. A location allocation analysis is necessary to observe underlying population demand. </p> <br>
+<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the total number of people served in under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service.  </p> <br>
 
 <table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
@@ -988,7 +988,7 @@
 <p>  </p>
 
 <h3> List of Figures and Tables </h3> <br>
-<p> Figure 1.  </p>
+<p> Figure 1. A Visualization of the Spatial Data used in the Site Selection Process  </p>
 <p> Figure 2. Project Workflow </p>
 <p> Figure 3. Dot Density Population of Warren County in 2020 </p>
 <p> Figure 4. Population Changes in Warren County between 2000 and 2020  </p>
