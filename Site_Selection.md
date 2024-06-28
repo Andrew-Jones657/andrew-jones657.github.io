@@ -520,7 +520,7 @@
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
 
-<p> With the network dataset parameters prepared, a service area analysis can be modeled. Table 5 below depicts the parameters used in this analysis. </p> <br>
+<p> With the network dataset parameters prepared, the settings for the service area analysis can be established. Table 5 below depicts the parameters used in the fire response service area analysis. </p> <br>
 
 <table> <caption> Table 5. Parameters for the Service Area Analysis </caption>
 <thead>
@@ -528,7 +528,7 @@
 <th> Facilities </th>
 <th> Time Attribute </th>
 <th> Cutoffs </th>
-<th> Polygons </th>
+<th> Polygon Settings </th>
 <th> Trim Distance </th>
 </tr>
 </thead>
@@ -536,14 +536,14 @@
 <tr>
 <td> Fire Stations </td>
 <td> Delay </td>
-<td> 5, 8, 10, 12, 15, 20 (same as Table 2) </td>
+<td> 5, 8, 10, 12, 15, 20 Minutes </td>
 <td> High Precision, Boundary Type: Dissolve, Polygon: Rings </td>
 <td> Trim Distance: 531 Meters </td>
 </tr>
 </tbody>
 </table> <br>
 
-<p> After establishing the service area analysis parameters in Table 5, a service area analysis model of the current fire service in Warren County was created (Figure 7). Observing the map, the city of Bowling Green clearly has very good fire service, as few parts of the city have a response time over eight minutes. Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. </p> <br>
+<p> After establishing the service area analysis parameters in Table 5, a service area analysis model of the current fire service in Warren County was created (Figure 7). The city of Bowling Green clearly has excellent fire service, as few parts of the city have a response time over eight minutes.  Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. </p> <br>
 
 
 <figure>
@@ -552,6 +552,11 @@
 </figure> <br>
 
 <p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the candidate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green -- the two best sites are highlighted with an orange boundary. </p> <br>
+
+<figure>
+<img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
+<figcaption> Figure 8. Candidate Sites for New Fire Stations in Warren County</figcaption>
+</figure> <br>
 
 <h3> Using Location-Allocation Analysis to Find the Ideal Improved Fire Station </h3>
 
@@ -582,11 +587,11 @@
 
 <p> Quickly explaining some of the setup parameters. Like the service area analysis, the facilities will be fire stations. Unique to location allocation analysis are demand points. In this case, the demand points will be census block centroids weighted by population -- the location allocation analysis will aggregate the population demands together and then the population demand for each fire station can viewed. Location-allocation analysis has seven different "problem types" that can be solved -- these include minimizing the number of facilities, maximizing market share, minimizing weighted impedance, etc. but in this case, maximizing coverage is the desired effect. Warren County and the City of Bowling Green have a shared response agreement where both entities will assist each other with fire emergencies, so there is not a limit in the amount of service a station can provide. The cutoff will be at eight minutes, which is the qualifying factor for good service in this analysis. Cost attributes to accumulate will be time and delay, just as in the service area analysis. Finally, the number of facilities to locate will be 32, which is the number of existing fire stations.  </p> <br>
 
-<p> Below is the current fire demand per fire station overlaid on the current fire service (Figure 8). The fire stations connected to more census block centroids have a higher demand from the nearby population.  </p>
+<p> Below is the current fire demand per fire station overlaid on the current fire service (Figure 9). The fire stations connected to more census block centroids have a higher demand from the nearby population.  </p>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/UHlr6JD.jpeg" alt="Current Population Demands for Fire Service in Warren County, Kentucky" style="width:100%;max-width:625px">
-<figcaption> Figure 8. Current Population Demands for Fire Service in Warren County, Kentucky </figcaption>
+<figcaption> Figure 9. Current Population Demands for Fire Service in Warren County, Kentucky </figcaption>
 </figure> <br>
 
 <p> Looking at Table 6, the three best candidates for improved fire stations are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, considering the current fire service response under the location-allocation layer, it is easy to see that much of the population demand in the Alvaton and Browning stations already receive good service from other fire stations. Even though these two stations have the highest population demand, improving them would only slightly increase good fire response overall. Instead, it is likely that the best fire stations to improve will be in the quickly growing suburban areas presented in Figures 4 and 6. </p> <br>
@@ -859,10 +864,7 @@
 </table> <br>
 
 
-<figure>
-<img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
-<figcaption> Figure 9. Candidate Sites for New Fire Stations in Warren County</figcaption>
-</figure> <br>
+
 
 <h3> The Top Five Candidate Fire Stations </h3> <br>
 
