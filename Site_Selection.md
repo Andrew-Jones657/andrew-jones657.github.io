@@ -305,7 +305,7 @@
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/vKeMTww.jpeg" alt="Project Workflow" style="width:100%;max-width:625px">
-<figcaption> Figure 2. <a href="https://i.imgur.com/vKeMTww.jpeg"> Project workflow </a> </figcaption>
+<figcaption> Figure 2. <a href="https://i.imgur.com/vKeMTww.jpeg"> Project Workflow </a> </figcaption>
 </figure> <br>
 
 <h3> A Brief Summary on the Site Selection Criteria </h3>
@@ -324,14 +324,14 @@
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/MgyutPx.jpeg" alt="2020 Warren County Population Density" style="width:100%;max-width:625px">
-<figcaption> Figure 3. Dot density population of Warren County in 2020 on the census block group level. </figcaption>
+<figcaption> Figure 3. Dot Density Population of Warren County in 2020 </figcaption>
 </figure> <br>
 
 <p> Beyond population density in 2020, population changes since 2000 illustrate how the population distribution has changed. Figure 4 below shows a choropleth map of percent population change between 2000 and 2020, as well as the population dot density in 2000 overlayed with the absolute population change dot density between 2000 and 2020. In this time, Warren County grew by 42,032 people, with population growth primarily occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green came into existence during this period. Some of the highest population growth occurred in the corridor between Russellville Road and I-65. Considering how much population growth occurred in newly developed suburban areas, these areas were weighed highly in the site selection analysis, as it is likely that growth will continue there.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpeg" alt="Population Change in Warren County 2000-2020" style="width:100%;max-width:625px">
-<figcaption> Figure 4. Population Changes in Warren County between 2000 and 2020. </figcaption>
+<figcaption> Figure 4. Population Changes in Warren County between 2000 and 2020 </figcaption>
 </figure> <br>
 
 <p> Like population density and trends, existing land use represents an important element of this study.  As mentioned above in Figure 1, land use types in the site selection process were limited to agricultural, commercial, public, or vacant. These land use types were selected on the basis that they would be the easiest to rezone. The Bowling Green Warren County City County Planning Commission’s (CCPC) map of land use in Warren County shows how land use is distributed among land parcels (Figure 5).  Note that the yellow and red areas depict residential parcels. These parcels contain most of the population seen in Figures 3 and 4, so ensuring that they are close to a new or improved fire station is important.  </p> <br>
@@ -562,7 +562,7 @@
 
 <p> To find the volunteer fire station that best benefits from an upgrade to professional status, the underlying population demand needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that finds an optimal facility location given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations outside the current fire service experience the most population demand.  Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
 
-<table> <caption> Table 6. Location-Allocation Analyis Setup </caption>
+<table> <caption> Table 6. Parameters for Location-Allocation Analysis </caption>
 <thead>
 <tr> 
 <th> Facilities </th>
@@ -591,12 +591,12 @@
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/UHlr6JD.jpeg" alt="Current Population Demands for Fire Service in Warren County, Kentucky" style="width:100%;max-width:625px">
-<figcaption> Figure 9. Current Population Demands for Fire Service in Warren County, Kentucky </figcaption>
+<figcaption> Figure 9. Current Population Demands for Fire Service in Warren County </figcaption>
 </figure> <br>
 
 <p> Looking at Table 6, the three best candidates for improved fire stations are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, considering the current fire service response under the location-allocation layer, it is easy to see that much of the population demand in the Alvaton and Browning stations already receive good service from other fire stations. Even though these two stations have the highest population demand, improving them would only slightly increase good fire response overall. Instead, it is likely that the best fire stations to improve will be in the quickly growing suburban areas presented in Figures 4 and 6. </p> <br>
 
-<table class="table table-bordered table-hover table-condensed"> <caption> Table 7. Location Allocation Facilities sorted by Population Demand </caption> 
+<table class="table table-bordered table-hover table-condensed"> <caption> Table 7. Population Demand per Fire Station </caption> 
 <thead><tr><th title="Field #1">Address</th>
 <th title="Field #2">Name</th>
 <th title="Field #3">Facility Type</th>
@@ -900,7 +900,7 @@
 <td> 74,858 </td>
 </tr>
 <tr>
-<td> 5 - 8 Minutes </td>
+<td> 5-8 Minutes </td>
 <td> 33,944 </td>
 <td> 35,200 </td>
 <td> 33,822 </td>
@@ -984,6 +984,30 @@
 </table> <br>
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
+
+<p>  </p>
+
+<h3> List of Figures and Tables </h3> <br>
+<p> Figure 1.  </p>
+<p> Figure 2. Project Workflow </p>
+<p> Figure 3. Dot Density Population of Warren County in 2020 </p>
+<p> Figure 4. Population Changes in Warren County between 2000 and 2020  </p>
+<p> Figure 5. Land Use in Warren County </p>
+<p> Figure 6. Future Land Use Map (2030) of Warren County </p>
+<p> Figure 7. Current Fire Service in Warren County </p>
+<p> Figure 8. Candidate Sites for New Fire Stations in Warren County </p>
+<p> Figure 9. Current Population Demands for Fire Service in Warren County </p>
+<p> Figure 10. Fire Service Response Times for each Candidate Station  </p>
+<p> Table 1. Spatial Data used in the Site Selection Analysis  </p>
+<p> Table 2. Fire Response Time Quality  </p>
+<p> Table 3. Speed Limits by Road Type </p>
+<p> Table 4. Network Dataset Parameters  </p>
+<p> Table 5. Parameters for the Service Area Analysis  </p>
+<p> Table 6. Parameters for Location-Allocation Analysis </p>
+<p> Table 7. Population Demand per Fire Station </p>
+<p> Table 8. Population covered by Fire Response under each potential Candidate Station  </p> <br>
+
+<h3> References </h3> <br>
 
 <p> Placeholder </p>
 
