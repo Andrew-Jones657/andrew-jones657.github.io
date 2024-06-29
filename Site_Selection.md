@@ -325,6 +325,8 @@
 
 <p> Beyond population density in 2020, population changes since 2000 illustrate how the population distribution has changed. Figure 4 below shows a choropleth map of percent population change between 2000 and 2020, as well as the population dot density in 2000 overlayed with the absolute population change dot density between 2000 and 2020. In this time, Warren County grew by 42,032 people, with population growth primarily occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green came into existence during this period. Some of the highest population growth occurred in the corridor between Russellville Road and I-65. Considering how much population growth occurred in newly developed suburban areas, these areas were weighed highly in the site selection analysis, as it is likely that growth will continue there.  </p> <br>
 
+<p> -Briefly Describe Areal Proportion Analysis- </p> <br>
+
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpeg" alt="Population Change in Warren County 2000-2020" style="width:100%;max-width:625px">
 <figcaption> Figure 4. Population Changes in Warren County between 2000 and 2020 </figcaption>
@@ -515,6 +517,8 @@
 </table> <br>
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
+
+<p> -Briefly Describe Service Area Analysis- </p> <br>
 
 <p> With the network dataset parameters prepared, the settings for the service area analysis can be established. Table 5 below depicts the parameters used in the fire response service area analysis. </p> <br>
 
