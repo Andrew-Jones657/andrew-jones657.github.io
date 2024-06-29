@@ -5,10 +5,6 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
-	    
-  h2{
-  text-align: center;
-  }
 
   h3{
   text-align: center;
@@ -123,7 +119,7 @@
 
 <body>
 
-<h2> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </h2> <br>
+<h3> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </h3> <br>
 
 <p> One of the most common and useful applications of GIS analysis is site selection analysis, a process through which an ideal site is chosen from many candidate sites. This analysis process often involves considering geographic factors, whether social, economic, environmental, or physical, to determine how suitable an area is for a specific land use and human activity. Consequently, it tends to be complex and iterative, as numerous techniques such as overlays, queries, buffers, intersections, raster operations, and others are common in this analysis.  </p> <br>
 
@@ -985,7 +981,11 @@
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p>  </p>
+<p> Having selected an optimal site for a fire station improvement, this concludes the project. It is important to note that this study was fairly sensitive to parameter adjustments. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been the ideal one.   </p> <br>
+
+<p> It would be interesting to see what a mathematically optimized candidate station could produce. While this study produced a very good candidate station as a result, one has to wonder how running a service area analysis from each of the candidate sites would improve the current fire service.  </p>
+
+<p> In the future, I may add further mapping enhancements to this project. </p> <br>
 
 <h3> List of Figures and Tables </h3> <br>
 <p> Figure 1. A Visualization of the Spatial Data used in the Site Selection Process  </p>
