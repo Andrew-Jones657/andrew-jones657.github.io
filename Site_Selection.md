@@ -306,9 +306,9 @@
 
 <h3> A Brief Summary on the Site Selection Criteria </h3>
 
-<p> Some of the site selection criteria are tailored towards avoiding physical impediments. Bodies of water or floodplains were discluded as potential candidate sites. Various parts of Warren County are topographically prominent, so land parcels with a change in slope over 15 feet were avoided as candidate sites. More unique to Warren County is its karst landscape, which can result in the formation of sinkholes -- land parcels with known karst geology were removed from the candidate site list. </p> <br>
+<p> Some of the site selection criteria are tailored towards avoiding physical impediments. Bodies of water or floodplains were discluded as potential candidate sites. Various parts of Warren County are topographically prominent, so land parcels with a change in slope over 15 feet were avoided as candidate sites. More unique to Warren County is its karst landscape, which can result in the formation of sinkholes. Land parcels with known karst geology were removed from the candidate site list. </p> <br>
 
-<p> To respond quickly to emergencies, the fire stations must be located close to major roads. To accommodate this in the site selection process, land parcels within a 1/3rd mile of major roads were weighed positively. </p> <br>
+<p> To respond quickly to emergencies, fire stations must be located close to major roads. To accommodate this in the site selection process, land parcels within a 1/3rd mile of major roads were weighed positively. </p> <br>
 
 <p> Since the presence of a professional fire station can lower home insurance rates, a quantile classification of property home values from the American Community Survey (Census Tract level) was used to ensure that these discounts were equitably distributed. Lower valued homes were weighed higher than higher valued homes.  </p> <br> 
 
@@ -875,7 +875,7 @@
 <figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the total number of people served in under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service.  </p> <br>
+<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the total number of people served in under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Alvaton has experienced strong growth over the past 20 years, and it is   </p> <br>
 
 <table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
