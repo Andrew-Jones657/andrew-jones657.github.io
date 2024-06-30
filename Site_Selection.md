@@ -518,7 +518,7 @@
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
 
-<p> -Briefly Describe Service Area Analysis- </p> <br>
+<p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis for determining the region that encompasses all accessible streets (streets that lied within a specific impedance). For example, the 20-minute service area for a network location (such as a fire station) includes all the streets that can be reached within 20 minutes from that location.  </p> <br>
 
 <p> With the network dataset parameters prepared, the settings for the service area analysis can be established. Table 5 below depicts the parameters used in the fire response service area analysis. </p> <br>
 
