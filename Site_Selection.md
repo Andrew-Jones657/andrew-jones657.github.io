@@ -125,7 +125,7 @@
 
 <p> In this project, the objective is to find an ideal site for a new professional fire station or upgrade an existing volunteer fire station in Warren County, Kentucky. Since land use data is essential to this study, land parcels will serve as the base layer. Various other spatial data relevant to locating an ideal site will be collected, processed, and weighed as either a constraint or an opportunity. Then, these data will be intersected with the land parcel data to produce a set of ideal sites. Population density, long term population trends, and potential future land use changes will be used to identify existing fire stations suitable for an upgrade to a professional fire station. As fire stations are the object of this analysis, it is also important to locate a fire station that will best improve the fire response service to the underlying population. This will be achieved using service area analysis, areal proportion analysis, and location allocation analysis methods.  </p> <br>
 
-<p> <em> To best read content on this article, you may need zoom in on your browser using CTRL and the + key or CTRL and UP on the mouse scroll wheel. You can also click on images to see a zoomed in pop up. </em></p> <br>
+<p> <em> To best read content on this article, you may need zoom in on your browser using CTRL and the + key or CTRL and UP on the mouse scroll wheel. You can also click on images to see a zoomed in pop up. </em> </p> <br>
 
 <h3> Spatial Data for the Site Selection Analysis and General Workflow </h3> <br>
 
@@ -489,7 +489,7 @@
 </tbody>
 </table> <br>
 
-<p> Having considered how fire response behavior should function, parameters for the network dataset can be setup (Table 4). Except for costs, these have been previously described. The costs represent the accumulation of travel time from the fire station to a location in Warren County. Time is created in the road network by dividing distance over travel speed, and then multiplied by 60 to convert from seconds to minutes. The delay is a generalized assumption that fire response vehicles will have to slow down at junctions to either turn or pass through carefully. Since this cost is in minutes, it was input as a 0.1667 (ten second) cost at junctions.     </p> <br>
+<p> Having considered how fire response behavior should function, parameters for the network dataset can be setup (Table 4). Except for costs, these have been previously described. The costs represent the accumulation of travel time from the fire station to a location in Warren County. Time is created in the road network by dividing distance over travel speed, and then multiplied by 60 to convert from seconds to minutes. The delay is a generalized assumption that fire response vehicles will have to slow down at junctions to either turn or pass through carefully. Since this cost is in minutes, it was input as a 0.1667 (ten seconds) cost at junctions.     </p> <br>
 
 <table class="center"><caption> Table 4. Network Dataset Parameters </caption> 
 <thead>
@@ -518,7 +518,7 @@
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
 
-<p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis for determining the region that encompasses all accessible streets (streets that lied within a specific impedance). For example, the 20-minute service area for a network location (such as a fire station) includes all the streets that can be reached within 20 minutes from that location.  </p> <br>
+<p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis for determining the region that encompasses all accessible streets within a specific impedance. In this case, the 20-minute service area for a network location (such as a fire station) includes all the streets that can be reached within 20 minutes from that location.  </p> <br>
 
 <p> With the network dataset parameters prepared, the settings for the service area analysis can be established. Table 5 below depicts the parameters used in the fire response service area analysis. </p> <br>
 
