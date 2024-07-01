@@ -325,7 +325,7 @@
 
 <p> Beyond population density in 2020, population changes since 2000 illustrate how the population distribution has changed. Figure 4 below shows a choropleth map of percent population change between 2000 and 2020, as well as the population dot density in 2000 overlayed with the absolute population change dot density between 2000 and 2020. In this time, Warren County grew by 42,032 people, with population growth primarily occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green came into existence during this period. Some of the highest population growth occurred in the corridor between Russellville Road and I-65. Considering how much population growth occurred in newly developed suburban areas, these areas were weighed highly in the site selection analysis, as it is likely that growth will continue there.  </p> <br>
 
-<p> -Briefly Describe Areal Proportion Analysis- </p> <br>
+<p> <em> A quick note on Figure 4: since the boundaries of census block groups change over time, one cannot directly calculate the population change between 2000 and 2020. Instead, census blocks from 2000 must be aggregated to the boundaries of the 2020 census block groups. Then, a population change estimate can be calculated. This process is also known as areal proportion analysis. </em>  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpeg" alt="Population Change in Warren County 2000-2020" style="width:100%;max-width:625px">
