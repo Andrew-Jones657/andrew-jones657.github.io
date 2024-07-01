@@ -69,11 +69,10 @@
 <p> <a href="https://andrew-jones657.github.io/Site_Selection"> 
 <img src="https://i.imgur.com/hdprVyx.jpeg" class="center">
 </a>
-<figcaption> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </figcaption>
+<figcaption> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky (WIP) </figcaption>
 </figure> <br>
 
 
-<p>  </p>
 
 <hr class="solid">
 
