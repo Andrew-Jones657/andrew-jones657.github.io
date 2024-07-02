@@ -876,7 +876,7 @@
 <figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are ranked based on which station serves as the best improvement to the current fire response under eight minutes. Each of the candidate stations provides a solid boost to the current fire performance, but Alvaton Fire Station 1 takes first place. Alvaton represents a densely populated area that does not currently have good fire service, particularly since it is further from Bowling Green than the other candidate sites. An improved fire station in Alvaton would bring the highest number of people into good coverage. </p> <br>
+<p> The population covered for each map in Figure 10 is presented in Table 8 below. The candidate fire stations are ranked based on which station serves as the best improvement to the current fire response under eight minutes. Each of the candidate stations provides a solid boost to the current fire performance, but Alvaton Fire Station 1 takes first place. Alvaton represents a densely populated area that does not currently have good fire service, particularly since it is further from Bowling Green than the other candidate sites. An improved fire station in Alvaton would bring the highest number of people into good coverage. </p> <br>
 
 <table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
@@ -984,6 +984,13 @@
 </tbody>
 </table> <br>
 
+<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). It is a fairly striking difference, as the entire Alvaton area now has good fire service.  </p> <br>
+
+<figure>
+<img class="myImages" src="https://i.imgur.com/z9eSK3q.jpeg" alt="Alvaton Fire Station 1 Improvement Response Service" style="width:100%;max-width:625px">
+<figcaption> Figure 11. Alvaton Fire Station 1 Improvement Response Service </figcaption>
+</figure> <br>
+
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
 <p> Having selected an optimal site for a fire station improvement, this concludes the project. It is important to note that this study was fairly sensitive to parameter adjustments. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been the ideal one.   </p> <br>
@@ -1003,6 +1010,7 @@
 <p> Figure 8. Candidate Sites for New Fire Stations in Warren County </p>
 <p> Figure 9. Current Population Demands for Fire Service in Warren County </p>
 <p> Figure 10. Fire Service Response Times for each Candidate Station  </p>
+<p> Figure 11. Alvaton Fire Station 1 Improvement Response Service </p>
 <p> Table 1. Spatial Data used in the Site Selection Analysis  </p>
 <p> Table 2. Fire Response Time Quality  </p>
 <p> Table 3. Speed Limits by Road Type </p>
