@@ -518,7 +518,7 @@
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
 
-<p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis for determining the region that encompasses all accessible streets within a specific impedance. In this case, the service area will be divided by the cutoff times in Table 5 -- these polygons will include all the streets that can be reached within those respective times from fire stations. </p> <br>
+<p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis for determining the region that encompasses all accessible streets within a specific impedance. In this case, the service area will be divided by the cutoff times in Table 5 -- these polygons will represent travel time from all fire stations. </p> <br>
 
 
 <table> <caption> Table 5. Parameters for the Service Area Analysis </caption>
@@ -550,7 +550,7 @@
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
 </figure> <br>
 
-<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. Most of the candidate parcels are in clusters along well-connected roadways. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to a lower population. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green -- the two best sites are highlighted with an orange boundary. </p> <br>
+<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green -- the two best sites are highlighted with an orange boundary. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to  lower populations. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
@@ -559,7 +559,7 @@
 
 <h3> Using Location-Allocation Analysis to Find the Ideal Improved Fire Station </h3>
 
-<p> To find the volunteer fire station that best benefits from an upgrade to professional status, the underlying population demand needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that finds an optimal facility location given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations outside the current fire service experience the most population demand.  Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
+<p> To find the volunteer fire station that, after an upgrade, would best improves the current fire service, the underlying population demand for each fire station needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that finds an optimal facility location given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations outside the current fire service experience the most population demand.  Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
 
 <table> <caption> Table 6. Parameters for Location-Allocation Analysis </caption>
 <thead>
