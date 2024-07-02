@@ -869,14 +869,14 @@
 
 <h3> The Top Five Candidate Fire Stations </h3> <br>
 
-<p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 10 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 9. </p> <br>
+<p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 10 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 10. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/LoAuPiu.jpeg" alt="Fire Service Response Times for each Candidate Station" style="width:100%;max-width:625px">
 <figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are also ranked based on which provides the total number of people served in under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. Alvaton has experienced strong growth over the past 20 years, and it is   </p> <br>
+<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are ranked based on which candidates station provides the best fire service to the population under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. </p> <br>
 
 <table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
