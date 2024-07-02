@@ -876,18 +876,18 @@
 <figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are ranked based on which candidates station provides the best fire service to the population under eight minutes. In this case, Alvaton Fire Station Number 1 provides the best service. </p> <br>
+<p> The population covered for each map in Figure 10 is presented in Table 5 below. The candidate fire stations are ranked based on which station serves as the best improvement to the current fire response under eight minutes. Each of the candidate stations provides a solid boost to the current fire performance, but Alvaton Fire Station 1 takes first place. Alvaton represents a densely populated area that does not currently have good fire service, particularly since it is further from Bowling Green than the other candidate sites. An improved fire station in Alvaton would bring the highest number of people into good coverage. </p> <br>
 
 <table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
 <tr>
 <th> </th>
 <th> Current Service </th>
-<th> Alvaton </th>
-<th> Hounds Run </th>
-<th> Mt Olivet </th>
-<th> Plano </th>
-<th> Woodburn </th>
+<th> Alvaton Fire Station 1 </th>
+<th> Hounds Run New Fire Station </th>
+<th> Mt Olivet New Fire Station </th>
+<th> Plano Fire Station 1 </th>
+<th> Woodburn Fire Station 2 </th>
 </tr>
 </thead>
 <tbody>
