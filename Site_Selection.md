@@ -984,7 +984,7 @@
 </tbody>
 </table> <br>
 
-<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). It is a fairly striking difference, as the entire Alvaton area now has good fire service. It is connected to Bowling Green's fire service via a thin strip on Highway 231,   </p> <br>
+<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). The differences are striking, as the entire Alvaton area now has good fire service. Unlike the other candidate stations, it is just barely connected to Bowling Green's current fire service via Highway 231.   </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/z9eSK3q.jpeg" alt="Alvaton Fire Station 1 Improvement Response Service" style="width:100%;max-width:625px">
@@ -1034,13 +1034,13 @@
  
 <p class="reference">Moore-Merrell, L. (2023, July 26). <em>Understanding and measuring fire department response times</em>. Lexipol. <a href="https://www.lexipol.com/resources/blog/understanding-and-measuring-fire-department-response-times/?fwp" target="_blank" rel="nofollow noopener noreferrer">https://www.lexipol.com/resources/blog/understanding-and-measuring-fire-department-response-times/?fwp</a></p>
 
-<p class="reference"> <em> KyFromAbove - Kentucky’s Aerial Photography & Elevation Data Program </em>. (n.d.). <a href="https://kyfromabove.ky.gov/" target="_blank" rel="nofollow noopener noreferrer">https://kyfromabove.ky.gov/</a></p>
+<p class="reference"> <em> KyFromAbove - Kentucky’s Aerial Photography & Elevation Data Program</em>. (n.d.). <a href="https://kyfromabove.ky.gov/" target="_blank" rel="nofollow noopener noreferrer">https://kyfromabove.ky.gov/</a></p>
 
-<p class="reference"> <em> DataMart </em>. (n.d.). <a href="https://datamart.kytc.ky.gov/" target="_blank" rel="nofollow noopener noreferrer">https://datamart.kytc.ky.gov/</a></p>
+<p class="reference"> <em> DataMart</em>. (n.d.). <a href="https://datamart.kytc.ky.gov/" target="_blank" rel="nofollow noopener noreferrer">https://datamart.kytc.ky.gov/</a></p>
 
-<p class="reference"> <em> City of Bowling Green Open data Hub </em>. (n.d.). <a href="https://data-bgky.hub.arcgis.com/" target="_blank" rel="nofollow noopener noreferrer">https://data-bgky.hub.arcgis.com/</a></p>
+<p class="reference"> <em> City of Bowling Green Open data Hub</em>. (n.d.). <a href="https://data-bgky.hub.arcgis.com/" target="_blank" rel="nofollow noopener noreferrer">https://data-bgky.hub.arcgis.com/</a></p>
 
-<p class="reference"> <em> Fire house location planning </em>. (n.d.). American Planning Association. <a href="https://www.planning.org/pas/reports/report98.htm" target="_blank" rel="nofollow noopener noreferrer">https://www.planning.org/pas/reports/report98.htm</a></p>
+<p class="reference"> <em> Fire house location planning</em>. (n.d.). American Planning Association. <a href="https://www.planning.org/pas/reports/report98.htm" target="_blank" rel="nofollow noopener noreferrer">https://www.planning.org/pas/reports/report98.htm</a></p>
 
 
 
