@@ -1026,14 +1026,23 @@
 
 <h3> References </h3> <br>
 
-<div class="wysiwyg lengthy" ><p class="reference">Bologna, C. (2019, October 31). <em>Why some people with anxiety love watching horror movies</em>. HuffPost. <a href="https://www.huffpost.com/entry/anxiety-love-watching-horror-movies_l_5d277587e4b02a5a5d57b59e" target="_blank" rel="nofollow noopener noreferrer">https://www.huffpost.com/entry/anxiety-love-watching-horror-movies_l_5d277587e4b02a5a5d57b59e</a></p>
-<p class="reference">Roberts, N. (2020, June 10). <em>Trayvon Martin’s mother, Sybrina Fulton, qualifies to run for elected office</em>. BET News. <a href="https://www.bet.com/news/national/2020/06/10/trayvon-martin-mother-sybrina-fulton-qualifies-for-office-florid.html" target="_blank" rel="nofollow noopener noreferrer">https://www.bet.com/news/national/2020/06/10/trayvon-martin-mother-sybrina-fulton-qualifies-for-office-florid.html</a></p>
-<p class="reference">Toner, K. (2020, September 24). <em>When Covid-19 hit, he turned his newspaper route into a lifeline for senior citizens</em>. CNN. <a href="https://www.cnn.com/2020/06/04/us/coronavirus-newspaper-deliveryman-groceries-senior-citizens-cnnheroes-trnd/index.html" target="_blank" rel="nofollow noopener noreferrer">https://www.cnn.com/2020/06/04/us/coronavirus-newspaper-deliveryman-groceries-senior-citizens-cnnheroes-trnd/index.html</a></p>
-<p> </p>
-<ul>
-<li><em><strong>Parenthetical citations</strong></em>: (Bologna, 2019; Roberts, 2020; Toner, 2020)</li>
-<li><em><strong>Narrative citations</strong></em>: Bologna (2019), Roberts (2020), and Toner (2020)</li>
-</ul> </div>
+<div class="wysiwyg lengthy" ><p class="reference">U.S. Census Bureau. (n.d.). <em>Explore Census data</em>. <a href="https://data.census.gov/" target="_blank" rel="nofollow noopener noreferrer">https://data.census.gov/</a></p>
+
+<p class="reference">U.S. Census Bureau. (2024, January 9). <em>TIGER/Line shapefiles</em>. Census.gov. <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" target="_blank" rel="nofollow noopener noreferrer">https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html</a></p>
+
+<p class="reference"> <em> Ky Water Resources Polygons sinkholes</em>. (n.d.). <a href="https://opengisdata.ky.gov/datasets/kygeonet::ky-water-resources-polygons-sinkholes/about" target="_blank" rel="nofollow noopener noreferrer">https://opengisdata.ky.gov/datasets/kygeonet::ky-water-resources-polygons-sinkholes/about</a></p>
+ 
+<p class="reference">Moore-Merrell, L. (2023, July 26). <em>Understanding and measuring fire department response times</em>. Lexipol. <a href="https://www.lexipol.com/resources/blog/understanding-and-measuring-fire-department-response-times/?fwp" target="_blank" rel="nofollow noopener noreferrer">https://www.lexipol.com/resources/blog/understanding-and-measuring-fire-department-response-times/?fwp</a></p>
+
+<p class="reference"> <em> KyFromAbove - Kentucky’s Aerial Photography & Elevation Data Program </em>. (n.d.). <a href="https://kyfromabove.ky.gov/" target="_blank" rel="nofollow noopener noreferrer">https://kyfromabove.ky.gov/</a></p>
+
+<p class="reference"> <em> DataMart </em>. (n.d.). <a href="https://datamart.kytc.ky.gov/" target="_blank" rel="nofollow noopener noreferrer">https://datamart.kytc.ky.gov/</a></p>
+
+<p class="reference"> <em> City of Bowling Green Open data Hub </em>. (n.d.). <a href="https://data-bgky.hub.arcgis.com/" target="_blank" rel="nofollow noopener noreferrer">https://data-bgky.hub.arcgis.com/</a></p>
+
+<p class="reference"> <em> Fire house location planning </em>. (n.d.). American Planning Association. <a href="https://www.planning.org/pas/reports/report98.htm" target="_blank" rel="nofollow noopener noreferrer">https://www.planning.org/pas/reports/report98.htm</a></p>
+
+
 
 
 <p> Placeholder </p>
