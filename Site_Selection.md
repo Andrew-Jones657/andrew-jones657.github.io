@@ -984,7 +984,7 @@
 </tbody>
 </table> <br>
 
-<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). It is a fairly striking difference, as the entire Alvaton area now has good fire service.  </p> <br>
+<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). It is a fairly striking difference, as the entire Alvaton area now has good fire service. It is connected to Bowling Green's fire service via a thin strip on Highway 231,   </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/z9eSK3q.jpeg" alt="Alvaton Fire Station 1 Improvement Response Service" style="width:100%;max-width:625px">
@@ -993,9 +993,13 @@
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p> Having selected an optimal site for a fire station improvement, this concludes the project. It is important to note that this study was fairly sensitive to parameter adjustments. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been the ideal one.   </p> <br>
+<p> Having selected an optimal site for a fire station improvement, this concludes the project. It is important to note that this study was parameter sensitive. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been the ideal one. Additionally,   </p> <br>
 
-<p> It would be interesting to see what a mathematically optimized candidate station could produce. While this study produced a very good candidate station as a result, one has to wonder how running a service area analysis from each of the candidate sites would improve the current fire service.  </p>
+<p> The original idea for this project stemmed from an urban GIS applications course from my time at Western Kentucky University. It was simpler, as it did not involve using soft constraints or opportunities (i.e. weighing spatial layers numerically) or location-allocation analysis to potentially improve a fire station. It also involved fewer spatial data to find a suitable site. At some point, I may redo this project with further advanced geospatial techniques. </p>
+
+<p> It would be interesting to see what a mathematically optimized candidate station could produce. While this study produced a very good candidate station as a result, one has to wonder how running a service area analysis from each of the candidate sites would improve the current fire service.  </p> <br>
+
+
 
 <p> In the future, I may add further mapping enhancements to this project. </p> <br>
 
