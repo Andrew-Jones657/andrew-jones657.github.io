@@ -1026,6 +1026,16 @@
 
 <h3> References </h3> <br>
 
+<div class="wysiwyg lengthy" ><p class="reference">Bologna, C. (2019, October 31). <em>Why some people with anxiety love watching horror movies</em>. HuffPost. <a href="https://www.huffpost.com/entry/anxiety-love-watching-horror-movies_l_5d277587e4b02a5a5d57b59e" target="_blank" rel="nofollow noopener noreferrer">https://www.huffpost.com/entry/anxiety-love-watching-horror-movies_l_5d277587e4b02a5a5d57b59e</a></p>
+<p class="reference">Roberts, N. (2020, June 10). <em>Trayvon Martin’s mother, Sybrina Fulton, qualifies to run for elected office</em>. BET News. <a href="https://www.bet.com/news/national/2020/06/10/trayvon-martin-mother-sybrina-fulton-qualifies-for-office-florid.html" target="_blank" rel="nofollow noopener noreferrer">https://www.bet.com/news/national/2020/06/10/trayvon-martin-mother-sybrina-fulton-qualifies-for-office-florid.html</a></p>
+<p class="reference">Toner, K. (2020, September 24). <em>When Covid-19 hit, he turned his newspaper route into a lifeline for senior citizens</em>. CNN. <a href="https://www.cnn.com/2020/06/04/us/coronavirus-newspaper-deliveryman-groceries-senior-citizens-cnnheroes-trnd/index.html" target="_blank" rel="nofollow noopener noreferrer">https://www.cnn.com/2020/06/04/us/coronavirus-newspaper-deliveryman-groceries-senior-citizens-cnnheroes-trnd/index.html</a></p>
+<p> </p>
+<ul>
+<li><em><strong>Parenthetical citations</strong></em>: (Bologna, 2019; Roberts, 2020; Toner, 2020)</li>
+<li><em><strong>Narrative citations</strong></em>: Bologna (2019), Roberts (2020), and Toner (2020)</li>
+</ul> </div>
+
+
 <p> Placeholder </p>
 
 <div id="myModal" class="modal">
