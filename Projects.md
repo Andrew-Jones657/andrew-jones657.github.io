@@ -72,7 +72,11 @@
 <figcaption> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky (WIP) </figcaption>
 </figure> <br>
 
+<p> Managing your GIS Data (WIP) </p> <br>
 
+<p> Interpolation Methods: Using Kriging on a Dataset (WIP) </p> <br>
+
+<p> Some Multivariate Statistics in ArcGIS Pro (WIP </p> <br>
 
 <hr class="solid">
 
