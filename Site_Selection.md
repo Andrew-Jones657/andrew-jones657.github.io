@@ -993,13 +993,9 @@
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p> Having selected an optimal site for a fire station improvement, the project is concluded. It is important to note that this study was sensitive to the parameters and decisions that I made. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been the ideal one. Additionally, limiting whether a fire station could be improved or expanding the number of fire stations to improve would also likely create some different results.   </p> <br>
+<p>  The project is now concluded having selected an optimal site for a fire station improvement. It is important to note that the results of this study were parameter sensitive. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been ideal. Additionally, limiting whether a fire station could be improved or expanding the number of fire stations for improvement would also create different results.   </p> <br>
 
-<p> The original idea for this project stemmed from an urban GIS applications course from my time at Western Kentucky University. It was simpler, as it did not involve using soft constraints or opportunities (i.e. weighing spatial layers numerically) or location-allocation analysis to potentially improve a fire station. It also involved fewer spatial data to find a suitable site. At some point, I may redo this project with further advanced geospatial techniques. </p>
-
-<p> It would be interesting to see what a mathematically optimized candidate station could produce. While this study produced a very good candidate station as a result, one has to wonder how running a service area analysis from each of the candidate sites would improve the current fire service.  </p> <br>
-
-
+<p> The original idea for this project stemmed from an urban GIS applications course from my time at Western Kentucky University. It was simpler, as it did not involve using soft constraints or opportunities (i.e. weighing spatial layers numerically) or location-allocation analysis to potentially improve a fire station. It also involved fewer types of spatial data to find a suitable site. At some point, I may redo this project with further advanced geospatial techniques and more detailed datasets.  </p>
 
 <p> In the future, I may add further mapping enhancements to this project. </p> <br>
 
