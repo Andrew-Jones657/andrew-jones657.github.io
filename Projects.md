@@ -62,7 +62,7 @@
 <p> <a href="https://andrew-jones657.github.io/GIS_Programming"> 
 <img src="https://i.imgur.com/ixpJBjV.jpg" alt="GIS Programming" class="center">
 </a>
-<figcaption> GIS Programming </figcaption>
+<figcaption> GIS Programming (WIP) </figcaption>
 </figure> <br>
 
 <figure> 
@@ -74,7 +74,7 @@
 
 <p> Managing your GIS Data (WIP) </p> <br>
 
-<p> Interpolation Methods: Using Kriging on a Dataset (WIP) </p> <br>
+<p> <a href="https://andrew-jones657.github.io/Interpolation"> Interpolation Methods: Using Kriging on a Dataset (WIP) </p> <br>
 
 <p> Some Multivariate Statistics in ArcGIS Pro (WIP </p> <br>
 
