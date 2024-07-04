@@ -984,7 +984,7 @@
 </tbody>
 </table> <br>
 
-<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). The differences are striking, as the entire Alvaton area now has good fire service. Unlike the other candidate stations, it is just barely connected to Bowling Green's current fire service via Highway 231.   </p> <br>
+<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). The differences are striking, as the entire Alvaton area now has good fire service. Unlike the other candidate stations, it is just barely connected to Bowling Green's current fire service via Highway 231.  </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/z9eSK3q.jpeg" alt="Alvaton Fire Station 1 Improvement Response Service" style="width:100%;max-width:625px">
@@ -993,7 +993,7 @@
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p> Having selected an optimal site for a fire station improvement, this concludes the project. It is important to note that this study was parameter sensitive. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been the ideal one. Additionally,   </p> <br>
+<p> Having selected an optimal site for a fire station improvement, the project is concluded. It is important to note that this study was sensitive to the parameters and decisions that I made. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been the ideal one. Additionally, limiting whether a fire station could be improved or expanding the number of fire stations to improve would also likely create some different results.   </p> <br>
 
 <p> The original idea for this project stemmed from an urban GIS applications course from my time at Western Kentucky University. It was simpler, as it did not involve using soft constraints or opportunities (i.e. weighing spatial layers numerically) or location-allocation analysis to potentially improve a fire station. It also involved fewer spatial data to find a suitable site. At some point, I may redo this project with further advanced geospatial techniques. </p>
 
