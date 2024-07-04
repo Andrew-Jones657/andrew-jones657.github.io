@@ -74,9 +74,9 @@
 
 <p> Managing your GIS Data (WIP) </p> <br>
 
-<p> <a href="https://andrew-jones657.github.io/Interpolation"> Interpolation Methods: Using Kriging on a Dataset (WIP) </p> <br>
+<p> <a href="https://andrew-jones657.github.io/Interpolation"> Interpolation Methods: Using Kriging on a Dataset (WIP) </p> </a> <br>
 
-<p> Some Multivariate Statistics in ArcGIS Pro (WIP </p> <br>
+<p> Some Multivariate Statistics in ArcGIS Pro (WIP) </p> <br>
 
 <hr class="solid">
 
