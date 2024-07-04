@@ -9,6 +9,16 @@
 
 
 <body>
+
+<h1> Interpolation Methods: Using Kriging on a Dataset </h1> <br>
+
+<h3> Drought Anomaly Data for this Project </h3> <br>
+
+<h3> Inverse Distanced Weighed Interpolation  </h3> <br>
+
+<h3> Exploratory Data Analysis </h3> <br>
+
+<h3> Kriging </h3> <br>
   
 </body>
 
