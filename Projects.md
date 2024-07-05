@@ -72,11 +72,11 @@
 <figcaption> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky (WIP) </figcaption>
 </figure> <br>
 
-<p> Managing your GIS Data (WIP) </p> <br>
+<p> Managing your GIS Data: Options for Data Hosting (WIP) </p> <br>
 
-<p> <a href="https://andrew-jones657.github.io/Interpolation"> Interpolation Methods: Using Kriging on a Dataset (WIP) </p> </a> <br>
+<p> <a href="https://andrew-jones657.github.io/Interpolation_Multivariate"> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset (WIP) </p> </a> <br>
 
-<p> Some Multivariate Statistics in ArcGIS Pro (WIP) </p> <br>
+
 
 <hr class="solid">
 
