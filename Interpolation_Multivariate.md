@@ -36,7 +36,15 @@
 <h3> Exploratory Data Analysis </h3> <br>
 
 <h3> Kriging </h3> <br>
-  
+
+<h1> Multivariate Methods: Cluster Analysis </h1> <br>
+
+<h3> Picking Another Month from the Drought Anomaly Data </h3> <br>
+
+<h3> Agglomerative Clustering </h3> <br>
+
+<h3> K-Means </h3>
+
 </body>
 
 </html>
