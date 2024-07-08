@@ -59,14 +59,14 @@
 <h3> Personal Projects </h3> <br> <br>
 
 <figure>
-<p> <a href="https://andrew-jones657.github.io/GIS_Programming"> 
+<a href="https://andrew-jones657.github.io/GIS_Programming"> 
 <img src="https://i.imgur.com/ixpJBjV.jpg" alt="GIS Programming" class="center">
 </a>
 <figcaption> GIS Programming (WIP) </figcaption>
 </figure> <br>
 
 <figure> 
-<p> <a href="https://andrew-jones657.github.io/Site_Selection"> 
+<a href="https://andrew-jones657.github.io/Site_Selection"> 
 <img src="https://i.imgur.com/hdprVyx.jpeg" class="center">
 </a>
 <figcaption> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky (WIP) </figcaption>
