@@ -11,7 +11,7 @@
 
 <h1> Welcome to my blog! </h1>
 
-<iframe style="height:450px;width:625px;border:none;" title="Blog" src="./blog_posts/7-9-2024-Progress.md">  </iframe> <br>
+<iframe style="height:450px;width:625px;border:none;" title="Blog" src="./blog_posts/7-9-2024-Progress">  </iframe> <br>
 
 <p> <a href="./blog_posts/7-9-2024-Progress"> Progress 7/9/2024 </a> </p>
 <p> <a href="./blog_posts/5-3-2024"> Continuing On 5/3/2024 </a> </p>
