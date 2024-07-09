@@ -17,7 +17,7 @@
 </div>
 
 
-<iframe width="100%" frameborder="none" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress" height="400"> </iframe> <br>
+<iframe width="100%" style="margin-top:-150px;" frameborder="none" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress" height="400"> </iframe> <br>
 
 <p> <a href="./blog_posts/7-9-2024-Progress"> Progress 7/9/2024 </a> </p>
 <p> <a href="./blog_posts/5-3-2024"> Continuing On 5/3/2024 </a> </p>
