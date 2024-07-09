@@ -11,7 +11,7 @@
 
 <h1> Welcome to my blog! </h1>
 
-<iframe style="height:450px;width:625px;border:none;" title="Blog" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress">  </iframe> <br>
+<iframe width="100%" frameborder="none" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress" height="400"> </iframe> <br>
 
 <p> <a href="./blog_posts/7-9-2024-Progress"> Progress 7/9/2024 </a> </p>
 <p> <a href="./blog_posts/5-3-2024"> Continuing On 5/3/2024 </a> </p>
