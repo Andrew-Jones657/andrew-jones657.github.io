@@ -12,7 +12,7 @@
 <h1> Welcome to my blog! </h1>
 
 <div style="border: 3px solid rgb(201, 0, 1); overflow: hidden; margin: 15px auto; max-width: 736px;">
-<iframe scrolling="no" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress" style="border: 0px none; margin-left: 0px; height: 450px; margin-top: -150px; width="100%">
+<iframe scrolling="no" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress" style="border: 0px; margin-left: 0px; height: 450px; margin-top: -150px; width="100%">
 </iframe>
 </div>
 
