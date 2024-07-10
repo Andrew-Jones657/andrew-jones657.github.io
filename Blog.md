@@ -11,8 +11,8 @@
 
 <h1> Welcome to my blog! </h1>
 
-<div style="border: 3px solid rgb(201, 0, 1); overflow: hidden; margin: 15px auto; max-width: 736px;">
-<iframe scrolling="no" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress" style="border: none; margin-left: 0px; height: 850px; margin-top: -250px;">
+<div style="border: 2px solid rgb(0, 0, 0); overflow: hidden; margin: 15px auto; max-width: 736px;">
+<iframe scrolling="no" src="https://andrew-jones657.github.io/blog_posts/7-9-2024-Progress" style="border: none; height: 850px; margin-top: -250px; margin-bottom: -50px">
 </iframe>
 </div>
 
