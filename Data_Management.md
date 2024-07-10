@@ -25,15 +25,15 @@
 
   <body> 
 
-  <h1> Data Management Options for Sharing and Disseminating Spatial Data </h1> <br>
+<h1> Data in GIS: Methods for Disseminating, Managing, Obtaining, and Processing Data </h1> <br>
 
-  <h3> What I Use to Disseminate Data </h3> <br>
+<h3> Obtaining GIS Data: Common Geospatial Data Sources </h3> <br>
+
+<h3> Managing My GIS Data: Postgresql </h3 <br>
+
+<h3> Disseminating GIS Data: What I have used  </h3> <br>
 
 
-
-  <h3>  </h3> <br>
-
-  <h3>  </h3>
 
   </body>
 
