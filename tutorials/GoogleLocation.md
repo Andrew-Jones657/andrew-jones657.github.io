@@ -155,9 +155,9 @@
 <figcaption> Figure 4. Export Options for Google Takeout  </figcaption>
 </figure> <br>
 
-<p> The big caveat to the Google Takeout data is that it is in a proprietary JSON format.  To use it in ArcGIS Pro, some adjustments will need to be made to standardize the data. </p> <br>
+<p> It is quite likely that the Google Takeout data will be large – mine ended up being around 651 megabytes in size. The big caveat, however, is that the data is in a proprietary JSON format.  To use it in ArcGIS Pro, some adjustments will need to be made to standardize the data.  </p> <br>
 
-
+<p> Considering the size of the Google Takeout data, attempting to manually edit it would be inefficient. At this point, it is best to consider a Python script to transform the data into standardized JSON or another format. Thankfully, there are several python scripts on Github for such a purpose. The most straightforward one to use is <a href="https://github.com/Andrew-Jones657/location-history-json-converter?tab=readme-ov-file"> location-history-json-convertor </a> by Gerwin Sturm. </p> <br> 
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
