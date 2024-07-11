@@ -15,9 +15,11 @@
 
 <hr> <br>
 
+<p> <a href="./blog_posts/7-9-2024-Progress"> Progress 7/9/2024 </a> </p>
+
 <p> Downloading and Processing US Census Data for GIS Implementation (WIP) </p> <br>
 
-<p> Your Location History: Using Google Location History in ArcGIS Pro (WIP) </p> <br>
+<p> <a href="./tutorials/GoogleLocation"> Your Location History: Using Google Location History in ArcGIS Pro (WIP) </a> </p> <br>
 
 <p> KYFromAbove: Downloading and Processing LIDAR data (WIP) </p> <br>
 
