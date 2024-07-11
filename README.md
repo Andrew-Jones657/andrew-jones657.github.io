@@ -59,6 +59,8 @@
 <div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 
 <script src="./files/travelmap/travel_map.js"></script> <br> 
+
+<p> Curious about the web map? You can create something similar following this tutorial. </p> <br>
     
 
 
