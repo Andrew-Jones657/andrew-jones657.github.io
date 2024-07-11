@@ -9,7 +9,11 @@
 
 <body>
 
-<h3> Tutorials </h3>
+<h1> Welcome to my Tutorials Page </h1> <br>
+
+<p> Here I intend to post various tutorials. </p> <br>
+
+<hr> <br>
 
 <p> Downloading and Processing US Census Data for GIS Implementation (WIP) </p> <br>
 
