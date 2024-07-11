@@ -11,7 +11,7 @@
 
 <h1> Welcome to my Tutorials Page </h1> <br>
 
-<p> Here I intend to post various tutorials. </p> <br>
+<p> Here I intend to post various tutorials. Many of these are related to the personal projects I have posted, as they serve as some of the data processing steps necessary to create those projects.  </p> <br>
 
 <hr> <br>
 
@@ -19,7 +19,7 @@
 
 <p> Your Location History: Using Google Location History in ArcGIS Pro (WIP) </p> <br>
 
-<p>  (WIP) </p> <br>
+<p> KYFromAbove: Downloading and Processing LIDAR data (WIP) </p> <br>
 
 </body>
 
