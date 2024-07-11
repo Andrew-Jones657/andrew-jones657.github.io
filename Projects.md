@@ -74,7 +74,7 @@
 
 <p> Managing your GIS Data: Options for Data Hosting (WIP) </p> <br>
 
-<p> <a href="https://andrew-jones657.github.io/Interpolation_Multivariate"> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset (WIP) </p> </a> <br>
+<p> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset (WIP) </p> <br>
 
 
 
