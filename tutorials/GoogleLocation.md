@@ -157,18 +157,32 @@
 
 <p> Go ahead and download the Google Takeout data from either your email link or cloud storage and unzip it. It is quite likely that it will be large – mine ended up being around 651 megabytes in size. The big caveat, however, is that the data is in a proprietary JSON format.  To use it in ArcGIS Pro, some adjustments will need to be made to standardize the data.  </p> <br>
 
-<p> Considering the size of the Google Takeout data, attempting to manually edit it would be inefficient. At this point, it is best to consider a Python script to transform the data into standardized JSON or another format. Thankfully, there are several python scripts on Github for such a purpose. The most straightforward one to use is <a href="https://github.com/Andrew-Jones657/location-history-json-converter?tab=readme-ov-file"> location-history-json-convertor </a> by Gerwin Sturm. Download the location-history-json-convertor.py script. </p> <br> 
+<p> Considering the size of the Google Takeout data, attempting to manually edit it would be inefficient. At this point, it is best to consider a Python script to transform the data into standardized JSON or another format. Thankfully, there are several python scripts on Github for such a purpose. The most straightforward one to use is <a href="https://github.com/Andrew-Jones657/location-history-json-converter?tab=readme-ov-file"> location-history-json-convertor </a> by Gerwin Sturm (Figure 5). Download the location-history-json-convertor.py script. </p> <br> 
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/S0MFjBK.jpeg" alt="Location History Convertor" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Location History Convertor Python Script  </figcaption>
 </figure> <br>
 
-<p> To keep things organized, it is best to move the unzipped Google Takeout data and the Python script into the same folder.  </p> <br>
+<p> To keep things organized, it is best to move the unzipped Google Takeout data and the Python script into the same folder (Figure 6).  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/Zj9LlKg.jpeg" alt="Folder for Data" style="width:100%;max-width:625px">
 <figcaption> Figure 6. Storing the Google Takeout Data and Python Script in the Same Folder   </figcaption>
+</figure> <br>
+
+<p> Now consider the requisties to run the Python script. Python 3.2 or higher is needed, so ensure that it is installed and up to date. Additionally, there are a few Python libraries that will be needed. These are listed in the "requirements.txt" file on the Python script's webpage, though listed here, they are "Ijson", "Shapely", and "python-dateutil". These can be installed using PIP on Windows Command Prompt (Figure 7). Simply type "pip install ___" where the blank is replaced by each of the aforementioned packages (Ijson, Shapely, python-dateutil). Leave command prompt open since it will be used in the next step. </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/4sLD272.jpeg" alt="Using PIP" style="width:100%;max-width:625px">
+<figcaption> Figure 7. Using PIP to Install Required Python Packages   </figcaption>
+</figure> <br>
+
+<p> With the packages installed, the Python script can now be run. This will also be done on the command prompt. On command prompt, navigate to the folder where your Google Takeout data and Python script are located. This can be done by typing "cd (system path to your folder)" (Figure 8). </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/o7V8NWq.jpeg" alt="CMD cd" style="width:100%;max-width:625px">
+<figcaption> Figure 8. Changing your Directory on Command Prompt   </figcaption>
 </figure> <br>
 
 <p>  </p> <br>
