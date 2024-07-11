@@ -185,7 +185,18 @@
 <figcaption> Figure 8. Changing your Directory on Command Prompt   </figcaption>
 </figure> <br>
 
-<p>  </p> <br>
+<p> For the purposes of the tutorial, .kml will be used as the output file format. Later on it will be converted into a shapefile. Some other options include .csv, .json, .js, and .gpx. To run the script, enter the following parameters in the command prompt: </p> <br>
+  
+<p>  python location_history_json_convertor.py LocationHistory.json MyLocations.kml </p> <br> 
+  
+<p> Run the script.   </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/msHrYux.jpeg" alt="Running Python script" style="width:100%;max-width:625px">
+<figcaption> Figure 9. Inputting the Parameters for and Running the Python Script    </figcaption>
+</figure> <br>
+
+
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
