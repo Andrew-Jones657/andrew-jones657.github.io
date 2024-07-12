@@ -1,6 +1,6 @@
 <html>
   
-<head>
+<div>
     <meta charset="utf-8" />
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -121,7 +121,7 @@
   <script src="https://js.arcgis.com/4.29/"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
-</head>
+</div>
 
 <body>
 
