@@ -196,7 +196,14 @@
 <figcaption> Figure 9. Inputting the Parameters for and Running the Python Script    </figcaption>
 </figure> <br>
 
+<p> The .kml file should have successfully generated. Add it to ArcGIS Pro (or whichever GIS software you are using) to create a visual depiction of it. Converting it to a shapefile may provide an easier means of editing it, so on ArcGIS Pro, run the KML to feature tools. Do note, if you have a huge location history file, this may take a very long time to run. If ArcGIS Pro seems to get stuck, it may be prudent to consider what location data you specifically want and convert that Google Takeout data to .kml. Figure 10 below displays the shapefile of my location history.  </p> <br> 
 
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/gwkJfUs.jpeg" alt="Location History" style="width:100%;max-width:625px">
+<figcaption> Figure 10. My Location History   </figcaption>
+</figure> <br>
+
+<p> At this point, you can do whatever you desire with your location history.  </p> <br>
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
