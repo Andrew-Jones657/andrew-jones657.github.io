@@ -117,9 +117,9 @@
 }
     </style>
     
-    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.29/"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.29/"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head>
 
@@ -207,6 +207,7 @@
 
 
 
+<div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 <script src="./files/travelmap/travel_map.js"></script> <br> 
 
 <div id="myModal" class="modal">
