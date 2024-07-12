@@ -172,8 +172,15 @@
 
   <h3> Finding GIS Boundary Files at the Census Tract Level </h3> <br>
 
+  <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a>.  </p> <br>
 
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/yyEckxw.jpeg" alt="US Census Tiger Lines" style="width:100%;max-width:625px">
+  <figcaption> Figure 4. US Census TIGER Line Website  </figcaption>
+  </figure> <br>
+
+ 
   </body>
 
-
+  </html>
   
