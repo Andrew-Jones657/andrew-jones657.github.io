@@ -38,7 +38,7 @@
 
 <hr> <br>
 
-<p> Downloading and Processing US Census Data for GIS Implementation (WIP) </p> <br>
+<p> <a href="/tutorials/CensusData"> Downloading and Processing US Census Data for GIS Implementation (WIP) </a> </p> <br>
 
 <figure>
 <a target="_blank" href="/tutorials/GoogleLocation">
