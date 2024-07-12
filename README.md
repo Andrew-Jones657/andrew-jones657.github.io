@@ -12,14 +12,14 @@
         width: 100%;
         }
 
-        #viewDiv {
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            min-height: 450px;
-            mid-width: 650px;
-            border: 1px solid #444444;
+#viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        min-height: 450px;
+        mid-width: 650px;
+        border: 1px solid #444444;
         }
     </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
