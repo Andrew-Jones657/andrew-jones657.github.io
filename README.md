@@ -60,7 +60,7 @@
 
 <script src="./files/travelmap/travel_map.js"></script> <br> 
 
-<p> Curious about the web map? You can create something similar following this tutorial. </p> <br>
+<p> Curious about the web map? You can create something similar following this <a href="./tutorials/GoogleLocation"> tutorial</a>. </p> <br>
     
 
 
