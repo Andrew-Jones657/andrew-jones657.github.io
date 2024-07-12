@@ -41,7 +41,7 @@
 <p> Downloading and Processing US Census Data for GIS Implementation (WIP) </p> <br>
 
 <figure>
-<a target="_blank" href="./tutorials/GoogleLocation">
+<a target="_blank" href="/tutorials/GoogleLocation">
     <img src="https://i.imgur.com/gwkJfUs.jpg" alt="Missouri's Congressional Districts" class="center">
 </a>
     <figcaption> Your Location History: Using Google Location History in ArcGIS Pro  </figcaption>
