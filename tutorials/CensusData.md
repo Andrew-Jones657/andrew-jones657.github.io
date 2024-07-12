@@ -125,9 +125,9 @@
 
   <p> Using US Census data in GIS allows analysts to map and visualize demographic trends such as population distribution, age demographics, and socioeconomic status across different geographic areas. By integrating Census data into GIS platforms, urban planners can make informed decisions      regarding infrastructure development, resource allocation, and community outreach initiatives. This spatial analysis helps governments and organizations understand spatial patterns and make evidence-based policy decisions tailored to specific localities. </p> <br>
 
-  <p> In this tutorial, we will be downloading census files for Boone County, Missouri. The goal is to create a population chloropleth map at the census tract level, so we will be searching for both census tracts datasets and census tract boundary files.   </p> <br>
+  <p> In this tutorial, we will be downloading census files for Boone County, Missouri. The goal is to create a population chloropleth map at the census tract level, so we will be searching for both census tracts datasets and census tract boundary files. Essentially, this will be a table and a shapefile, though the table will require some processing to be usable in a GIS environment.  </p> <br>
 
-  <p> US Census data is based on a very hierarchical system. At the lowest level (or highest geographic scale) are census blocks, which are formed by human made and natural features such as streets, roads, railroads, streams, and visible physical and cultural features. Since they are at the bottom    of the geographic hierarchy, they form other census geographies when aggregated. Above census blocks are block groups, tracts (which is what we will look at), counties, states, divisions, regions, and finally the entire nation. Figure 1 below depicts the standard hierarchy as well as specific       offshoots.  </p> <br>
+  <p> US Census data is based on a hierarchical system. At the lowest level (or highest geographic scale) are census blocks, which are formed by human made and natural features such as streets, roads, railroads, streams, and visible physical and cultural features. Since they are at the bottom    of the geographic hierarchy, they form other census geographies when aggregated. Above census blocks are block groups, tracts (which is what we will look at), counties, states, divisions, regions, and finally the entire nation. Figure 1 below depicts the standard hierarchy as well as specific       offshoots.  </p> <br>
 
   
   <figure> 
@@ -135,9 +135,25 @@
   <figcaption> Figure 1. The Hierarchy of Census Geographies  </figcaption>
   </figure> <br>
 
-  <h3> Searching for Population Tables </h3> <br>
+  <h3> Searching for Population Tables at the Census Tract Level </h3> <br>
 
-  <h3> Finding GIS Boundary Files </h3> <br>
+  <p> We can visit the US Census data website  <a href="https://data.census.gov/">here</a>. Since we want to implement this table in a GIS software, we have to be prudent as to how we search for data -- the US Census has a massive number of similaraly named datasets which can be quite confusing to navigate through. Realistically, we will have to use the "advanced search" option to apply a couple of filters to narrow down our dataset. Select “advanced search” under the main search bar to begin (Figure 2). </p>  <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/BusE2V2.jpeg" alt="US Census Data" style="width:100%;max-width:625px">
+  <figcaption> Figure 2. The US Census Data Website  </figcaption>
+  </figure> <br>
+
+  <p> On the left side of the webpage are multiple different subjects through which the search can be refined. </p> <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/mT8nRO2.jpeg" alt="US Census Advanced Search" style="width:100%;max-width:625px">
+  <figcaption> Figure 3. The Advanced Search Pane on the US Census Data Website  </figcaption>
+  </figure> <br>
+
+
+
+  <h3> Finding GIS Boundary Files at the Census Tract Level </h3> <br>
 
 
   </body>
