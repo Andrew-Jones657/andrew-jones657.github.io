@@ -125,7 +125,7 @@
 
   <p> Using US Census data in GIS allows analysts to map and visualize demographic trends such as population distribution, age demographics, and socioeconomic status across different geographic areas. By integrating Census data into GIS platforms, urban planners can make informed decisions      regarding infrastructure development, resource allocation, and community outreach initiatives. This spatial analysis helps governments and organizations understand spatial patterns and make evidence-based policy decisions tailored to specific localities. </p> <br>
 
-  <p> In this tutorial, we will be downloading census files for Boone County, Missouri. The goal is to create a population chloropleth map at the census tract level, so we will be searching for both census tracts datasets and census tract boundary files. Essentially, this will be a table and a shapefile, though the table will require some processing to be usable in a GIS environment.  </p> <br>
+  <p> In this tutorial, we will be downloading census files for Boone County, Missouri. These files should contain information about the total population as well as racial and ethnic groups at the census tract level. The goal is to create a population chloropleth map at the census tract level, so we will be searching for both census tracts datasets and census tract boundary files. Essentially, this will be a table and a shapefile, though the table will require some processing to be usable in a GIS environment.  </p> <br>
 
   <p> US Census data is based on a hierarchical system. At the lowest level (or highest geographic scale) are census blocks, which are formed by human made and natural features such as streets, roads, railroads, streams, and visible physical and cultural features. Since they are at the bottom    of the geographic hierarchy, they form other census geographies when aggregated. Above census blocks are block groups, tracts (which is what we will look at), counties, states, divisions, regions, and finally the entire nation. Figure 1 below depicts the standard hierarchy as well as specific       offshoots.  </p> <br>
 
@@ -151,7 +151,24 @@
   <figcaption> Figure 3. The Advanced Search Pane on the US Census Data Website  </figcaption>
   </figure> <br>
 
+  <p> Now we can start to filter this data to download what we need.  Starting with “Geographies”, click on “Census Tract”, choose “Missouri” from the popup list, then choose “Boone County”, and finally check on “All Census Tracts within Boone County, Missouri”. This limits the datasets to census tracts in Boone County, Missouri.  </p> <br>
 
+  <p> Next, under “Topics”, select “Populations and People”. A list of ethnic and racial groups should pop up, ultimately check “Race and Ethnicity”. This should provide us with the option to map out specific racial or ethnic groups.  </p> <br>
+
+  <p> Now, looking at “Surveys”, there are a several different options. To map the total population in 2020, we need information from an official census release rather than a survey. Select “Decennial Census” and then select “Demographic and Housing Characteristics”. Each of the options here is based on the same underlying data, though we chose Demographic and Housing Characteristics as it is easier to process than the others.  </p> <br>
+
+  <p> Under “Years”, select “2020” as we need 2020 US Census data. At this point you should have something that looks like Figure 4 below. </p> <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/wwVNZch.jpeg" alt="US Census Advanced Search" style="width:100%;max-width:625px">
+  <figcaption> Figure 3. US Census Advanced Search Filters Input  </figcaption>
+  </figure> <br>
+
+  <p> The top option, “P9”, works out quite well for the purpose of this tutorial. This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial break down for both of those categories. It is important to note that being Hispanic or Latino is counted by the census as an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are counted as racial groups.   </p> <br>
+
+  <p> This file needs to be downloaded in a specific way. You can collapse the search menu and look at the table, but you do not want to use the .zip, .csv, or .xlsx download options directly above the table – these options format the table in a way that makes it difficult to use in GIS. Instead, under the results menu, you can click “P9” and then select “download” above it. The file needs to be downloaded like this because it preserves the “GEOID” field, which will be the unique identifier field used to join it to the census tract boundaries.    </p> <br>
+
+  <p> With our census dataset file downloaded, we can go ahead and find the census tract boundaries before processing our dataset file.  </p> <br>
 
   <h3> Finding GIS Boundary Files at the Census Tract Level </h3> <br>
 
