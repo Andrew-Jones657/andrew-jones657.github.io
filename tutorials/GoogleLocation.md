@@ -204,7 +204,10 @@
 <figcaption> Figure 10. My Location History   </figcaption>
 </figure> <br>
 
-<p> At this point, you can do whatever you desire with your location history. I wanted to use this data to create a ArcGIS Javascript API web map that would display some of my travel photos. To do this, I used around 120 of the points that corresponded with where I took my photos. I uploaded my photos to imgur, and then I created a field in my partitioned location data that contained each of the image links. Then, I converted my location data shapefile into a geojson file (features to json) so that it would work seamlessly for online display.    </p> <br>
+<p> At this point, you can do whatever you desire with your location history. I wanted to use this data to create a ArcGIS Javascript API web map that would display some of my travel photos. To do this, I used around 120 of the points that corresponded with photo locations. I uploaded my photos to imgur, and then I created a field in my partitioned location data that contained each of the image links. Then, I converted my location data shapefile into a geojson file (features to json) so that it would work seamlessly for online display.    </p> <br>
+
+
+<p> Below is the interactive web map of my travel photos: it is identical to the one on the front page of this website. The code for it can be found on the bottom of my <a href="./GIS_Programming">GIS Programming page</a>.  </p> <br>
 
 <div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 <script src="/files/travelmap/travel_map.js"></script> <br> 
