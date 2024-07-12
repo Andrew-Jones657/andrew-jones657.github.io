@@ -34,7 +34,7 @@
 
 <h1> Welcome to my Tutorials Page </h1> <br>
 
-<p> Here I intend to post various tutorials. Many of these are related to the personal projects I have posted, as they serve as some of the data processing steps necessary to create those projects.  </p> <br>
+<p> Here are various GIS tutorials I have prepared. Many of the tutorials are related to the projects under my projects page in that these tutorials "fill in the gaps" concerning some of the workflows. While informal in nature, it is assumed you have a good grasp of GIS fundamentals (i.e. Data Management, some Python exposure, some familiarity with raster and vector data formats).  </p> <br>
 
 <hr> <br>
 
