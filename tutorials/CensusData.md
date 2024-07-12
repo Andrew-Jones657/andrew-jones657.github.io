@@ -179,6 +179,17 @@
   <figcaption> Figure 4. US Census TIGER Line Website  </figcaption>
   </figure> <br>
 
+  <p> We will go ahead and choose 2023 as the year for our boundary file. You could also take 2020-2022 without running into issues. We have the choice of using either the web interface or the ftp archive. I would recommend using the web interface first, since it is more user friendly. Here, there   are dropdown boxes for the year and layer type. Make sure you have 2023 for the year and census tracts for the layer type as in Figure ? below.   </p>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/h6e0Fp5.jpeg" alt="US Census Tiger Line Web Interface" style="width:100%;max-width:625px">
+  <figcaption> Figure 5. Using the Web Interface to Find 2023 Census Tract Boundaries  </figcaption>
+  </figure> <br>
+
+
+  <p> <em> Note why census tracts newer than 2019 must be chosen: the boundaries of census tracts, block groups, and blocks can and do change between decades. Since these boundaries are at a higher geographic scale, they are often updated (change in boundaries, size, split, or even removed) to reflect changes in population, urban growth, and other changes to the physical landscape.   </em> </p> <br>
+
+  <p> Hit submit to go to the census tract download page. Unfortunately, all of the census tracts for Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or your GIS software of choice. To have a visual overlay of Boone County's location,  I recommend downloading the counties file from the same web interface or quickly adding it from the ArcGIS Living Atlas. </p> <br>
  
   </body>
 
