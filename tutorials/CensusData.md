@@ -200,8 +200,46 @@
   <figcaption> Figure 6. Using the Census TIGER lines FTP  </figcaption>
   </figure> <br>
   
+  <p> Since we need census tracts, we need to find a directory that reflects that name. Scrolling down, there is the “TRACT/” folder, select that. This leads us to a seemingly perplexing list of zip files, all of which are headed by “tl_2023_xx_tract.zip”. The number represented by the “xx” is the states FIPS code. The census bureau uses these codes to give each geographic entity a completely unique identifier – the FIPS codes become longer for smaller, higher scale geographic entities such as census blocks. We can find a lookup guide by the FCC <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. We want the FIPS code for Missouri, which is 29. On the FTP site, click on tl_2023_29_tract.zip to download it.   </p> <br>
+
 
   <h3> Processing the US Census Tract Dataset to make it Compatible with GIS </h3> <br>
+  
+
+  <div id="myModal" class="modal">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="img01">
+   <div id="caption"></div>   
+</div> <br>
+
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
  
   </body>
 
