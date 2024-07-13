@@ -170,7 +170,7 @@
 
   <p> With our census dataset file downloaded, we can go ahead and find the census tract boundaries before processing our dataset file.  </p> <br>
 
-  <h3> Finding GIS Boundary Files at the Census Tract Level </h3> <br>
+  <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interfacae </h3> <br>
 
   <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a>.  </p> <br>
 
@@ -189,7 +189,19 @@
 
   <p> <em> Note why census tracts newer than 2019 must be chosen: the boundaries of census tracts, block groups, and blocks can and do change between decades. Since these boundaries are at a higher geographic scale, they are often updated (change in boundaries, size, split, or even removed) to reflect changes in population, urban growth, and other changes to the physical landscape.   </em> </p> <br>
 
-  <p> Hit submit to go to the census tract download page. Unfortunately, all of the census tracts for Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or your GIS software of choice. To have a visual overlay of Boone County's location,  I recommend downloading the counties file from the same web interface or quickly adding it from the ArcGIS Living Atlas. </p> <br>
+  <p> Hit submit to go to the census tract download page. Unfortunately, all of the census tracts for Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or your GIS software of choice. To have a visual overlay of Boone County's location  in Missouri, I recommend downloading the counties file from the same web interface or quickly adding it from the ArcGIS Living Atlas. </p> <br>
+
+  <h3> Finding GIS Boundary FIles at the Census Tract Level with the US Census FTP </h3> <br>
+
+  <p> The FTP (File Transfer Protocol) archive is the other way of obtaining census boundary files. It can be faster to use than the web interface, though it is initially a little less intuitive.  Go back to the main webpage of the TIGER files site and select “ftp archive”. Appearance wise this is a bit more rudimentary (Figure 6).   </p> <br>
+  
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/53tUw8O.jpeg" alt="US Census Tiger Line FTP" style="width:100%;max-width:625px">
+  <figcaption> Figure 6. Using the Census TIGER lines FTP  </figcaption>
+  </figure> <br>
+  
+
+  <h3> Processing the US Census Tract Dataset to make it Compatible with GIS </h3> <br>
  
   </body>
 
