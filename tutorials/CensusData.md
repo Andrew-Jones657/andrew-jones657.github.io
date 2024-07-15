@@ -204,7 +204,20 @@
 
 
   <h3> Processing the US Census Tract Dataset to make it Compatible with GIS </h3> <br>
-  
+
+  <p> Open the census dataset spreadsheet that was downloaded earlier. It should look something like Figure 7 below. Notice that there are two headers, where the second acts as metadata for the first. Additionally, it has a GEOID field, which is necessary for joining it to the census tract boundaries. </p> <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/uHZOpz7.jpeg" alt="US Census Data Raw" style="width:100%;max-width:625px">
+  <figcaption> Figure 7. The Raw Census Dataset  </figcaption>
+  </figure> <br>
+
+<p> The second header needs to be deleted, though before doing so, be sure to rename the columns in the first header that you need. In Figure 8 below, several of the columns in the main header were renamed.   </p> <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/EWqBHjR.jpeg" alt="US Census Data Processed" style="width:100%;max-width:625px">
+  <figcaption> Figure 8. The Processed Census Dataset  </figcaption>
+  </figure> <br>
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
