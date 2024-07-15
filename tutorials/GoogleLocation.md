@@ -226,7 +226,7 @@
 
 <h3> References </h3> <br>
 
-<div class="wysiwyg lengthy" > <p>Andrew-Jones. (n.d.).<em> GitHub - Andrew-Jones657/location-history-json-converter: Convert the Location History JSON File from Google Takeout into a useable format</em>. GitHub. https://github.com/Andrew-Jones657/location-history-json-converter?tab=readme-ov-file </p>
+<div class="wysiwyg lengthy" > <p> Scarygami. (n.d.).<em> GitHub - Scarygami/location-history-json-converter: Convert the Location History JSON File from Google Takeout into a useable format</em>. GitHub. https://github.com/Scarygami/location-history-json-converter</p>
   
   <p> <em> Sign in - Google Accounts</em>. (n.d.). https://takeout.google.com/settings/takeout </p>
 
