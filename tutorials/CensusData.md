@@ -237,7 +237,7 @@
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census Chloropleth" style="width:100%;max-width:625px">
-  <figcaption> Figure 10. A Chloropleth Map Created with US Census Data  </figcaption>
+  <figcaption> Figure 10. A Chloropleth Map Created with 2020 US Census Data  </figcaption>
   </figure> <br>
 
   <h3> Using Older Census Datasets </h3> <br>
@@ -249,11 +249,18 @@
   <p> Comparing the attribute table of both layers, you will notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries. </p> <br>
 
   <figure> 
-  <img class="myImages" id="myImg" src="https://i.imgur.com/2kT3W8U.jpeg" alt=" " style="width:100%;max-width:625px">
+  <img class="myImages" id="myImg" src="https://i.imgur.com/2kT3W8U.jpeg" alt="Trim GEO_ID Field" style="width:100%;max-width:625px">
   <figcaption> Figure 11. Trimming the GEO_ID Field in the Census Dataset to Match the Census Boundary's "GEOID" Field   </figcaption>
   </figure> <br>
 
+  <p> Setup the chloropleth map for the 2010 data as you did for the 2020 data. If you look closely at the census tracts afterwards, you can see that they are different between 2010 and 2020.  </p>
 
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/Ifv6zjY.jpeg" alt="US Census Chloropleth 2010 " style="width:100%;max-width:625px">
+  <figcaption> Figure 12. A Chloropleth Map Created with 2010 US Census Data   </figcaption>
+  </figure> <br>
+
+  <p> This concludes the tutorial for obtaining and processing US Census data for GIS use. </p>   
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
