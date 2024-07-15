@@ -228,6 +228,13 @@
   <figcaption> Figure 9. Joining the Census Tract Dataset to the Census Tract Boundaries  </figcaption>
   </figure> <br>
 
+  <p> With the two datasets joined together, export the layer to your geodatabase to save it. We can now map census data with this feature layer. To map the underlying population data, we will create a simple chloropleth map where each census tract represents a percentage of the overall population in Boone County. On the newly selected layer, go to the symbology settings and choose “Graduated Colors” as the primary symbology. Then, select “Total” as the field, where normalization is equal to “<percentage of total>”. Since the data is close to being normally distributed, use “Quantile” as the break method. A white to brown color scheme would also fit well with a population map. The results are presented in Figure 10 below.  </p> <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census Chloropleth" style="width:100%;max-width:625px">
+  <figcaption> Figure 10. A Chloropleth Map Created with US Census Data  </figcaption>
+  </figure> <br>
+
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
