@@ -38,7 +38,15 @@
 
 <hr> <br>
 
-<p> <a href="/tutorials/CensusData"> Downloading and Processing US Census Data for GIS Implementation (WIP) </a> </p> <br>
+
+<figure>
+<a target="_blank" href="/tutorials/CensusData">
+    <img src="https://i.imgur.com/3Kl75Zs.jpeg" alt="Missouri's Congressional Districts" class="center">
+</a>
+    <figcaption> Downloading and Processing US Census Data for GIS Implementation  </figcaption>
+</figure> <br> <br> 
+
+
 
 <figure>
 <a target="_blank" href="/tutorials/GoogleLocation">
