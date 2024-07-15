@@ -212,6 +212,25 @@
 <div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 <script src="/files/travelmap/travel_map.js"></script> <br> 
 
+<h3> List of Figures and Tables </h3> <br>
+<p> Figure 1. Searching for Google Takeout on the Web   </p>
+<p> Figure 2. Data Options from Google Takeout  </p>
+<p> Figure 3. Checking Off Location History in Google Takeout  </p>
+<p> Figure 4. Export Options for Google Takeout   </p>
+<p> Figure 5. Location History Convertor Python Script  </p>
+<p> Figure 6. Storing the Google Takeout Data and Python Script in the Same Folder  </p>
+<p> Figure 7. Using PIP to Install Required Python Packages </p>
+<p> Figure 8. Changing your Directory on Command Prompt  </p>
+<p> Figure 9. Inputting the Parameters for and Running the Python Script  </p>
+<p> Figure 10. My Location History  </p>
+
+<h3> References </h3> <br>
+
+<div class="wysiwyg lengthy" > <p>Andrew-Jones. (n.d.).<em> GitHub - Andrew-Jones657/location-history-json-converter: Convert the Location History JSON File from Google Takeout into a useable format</em>. GitHub. https://github.com/Andrew-Jones657/location-history-json-converter?tab=readme-ov-file </p>
+  
+  <p> <em> Sign in - Google Accounts</em>. (n.d.). https://takeout.google.com/settings/takeout </p>
+
+
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
