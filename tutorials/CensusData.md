@@ -235,6 +235,10 @@
   <figcaption> Figure 10. A Chloropleth Map Created with US Census Data  </figcaption>
   </figure> <br>
 
+  <h3> Using Older Census Datasets </h3> <br>
+
+  <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To present this, I will download the same census data for Boone County, but for 2010 instead of 2020. The process for obtaining the census dataset is similar to the 2020 data, though instead of searching for "Demographic and Housing Characteristics" or "2020", I will select "DEC Summary File 1" and "2010". The summary files denotation is used with older data (2000 -- 2010). Obtaining the census boundary files is simple, as you only need to repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
+
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
