@@ -16,6 +16,11 @@
   figure figcaption {
   text-align: center; 
          }
+  
+  h3{
+  text-align: center;
+  }
+  
          
   #viewDiv {
   padding: 0;
