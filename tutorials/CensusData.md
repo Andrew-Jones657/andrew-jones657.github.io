@@ -214,9 +214,18 @@
 
 <p> The second header needs to be deleted, though before doing so, be sure to rename the columns in the first header that you need. In Figure 8 below, several of the columns in the main header were renamed.   </p> <br>
 
+
+
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/EWqBHjR.jpeg" alt="US Census Data Processed" style="width:100%;max-width:625px">
   <figcaption> Figure 8. The Processed Census Dataset  </figcaption>
+  </figure> <br>
+
+  <p> Next, add the census dataset to ArcGIS Pro so that it is on the same map as the census tract boundaries. Export the census dataset to the geodatabase so that it can be edited. Now you will join the census dataset to its tract boundaries. Use “GEOIDFQ” as the join field from the census tract boundaries and “GEO_ID” as the join field from the census tract dataset.  Figure 9 below shows the fields used for the join. </p> <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/ABdp77Y.jpeg" alt="US Census Join" style="width:100%;max-width:625px">
+  <figcaption> Figure 9. Joining the Census Tract Dataset to the Census Tract Boundaries  </figcaption>
   </figure> <br>
 
   <div id="myModal" class="modal">
