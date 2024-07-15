@@ -239,7 +239,16 @@
 
   <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To present this, I will download the same census data for Boone County, but for 2010 instead of 2020. The process for obtaining the census dataset is similar to the 2020 data, though instead of searching for "Demographic and Housing Characteristics" or "2020", I will select "DEC Summary File 1" and "2010". The summary files denotation is used with older data (2000 -- 2010). Obtaining the census boundary files is simple, as you only need to repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
 
-  <p> </p>
+  <p> The 2010 census dataset is like the 2020 census dataset, so process it in the same manner as earlier. Add both it and the 2010 census tract boundary to ArcGIS Pro. When attempting to join the two datasets, however, you will notice that there is no “GEOIDFQ” field in the census tract boundaries like there was in the 2020 boundaries. </p> <br>
+
+  <p> Comparing the attribute table of both layers, you will notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries. </p> <br>
+
+  <figure> 
+  <img class="myImages" id="myImg" src="https://i.imgur.com/2kT3W8U.jpeg" alt=" " style="width:100%;max-width:625px">
+  <figcaption> Figure 11. Trimming the GEO_ID Field in the Census Dataset to Match the Census Boundary's "GEOID" Field   </figcaption>
+  </figure> <br>
+
+
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
