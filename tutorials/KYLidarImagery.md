@@ -170,7 +170,14 @@
 <figcaption> Figure 4. LAS Data from a Distance and LAS Data up close. </figcaption>
 </figure> <br>
 
-<p>  </p>
+<p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. As a side note, if you had multiple LAS files, they could be input and turned into one large LAS dataset. Technically we could create a LAS dataset for all of downtown Bowling Green -- it would just be time consuming to do so. </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/sRBNlZv.jpeg" alt="Creating LAS Dataset" style="width:100%;max-width:625px">
+<figcaption> Figure 5. Creating an LAS Dataset   </figcaption>
+</figure> <br>
+
+
 
 <h3> List of Figures and Tables </h3> <br>
 
