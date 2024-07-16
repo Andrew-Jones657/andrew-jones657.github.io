@@ -132,12 +132,26 @@
 
 <p> In this tutorial, we will be downloading, processing, and modeling LIDAR data from KYFromAbove -- a government sponsored website that is "focused on building and maintaining a current basemap for the Commonwealth that can meet the needs of its users at the state, federal, local, and regional level" (KYFromAbove, 2024). The goal is to create hillshade data that demonstrates the elevation change in a particular LIDAR tile. To provide additional clarity, this tutorial is focused on the workflow for downloading and using LIDAR data. If you wish to use LIDAR data outside of Kentucky, the same general steps apply. Some possible sources of LIDAR data can be found <a href="https://gisgeography.com/top-6-free-lidar-data-sources/"> here</a>. </p> <br>
 
-<p> Begin by going to <a href="https://kyfromabove.ky.gov/"> KYFromAbove</a>. Scroll down until you find "Download Point Cloud Data" and select "View".  </p> <br>
+<p> Begin by going to <a href="https://kyfromabove.ky.gov/"> KYFromAbove</a>. Scroll down until you find "Download Point Cloud Data" and select "View" (Figure 1).  </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/yo7ecd7.jpeg" alt=" " style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/yo7ecd7.jpeg" alt="Point Cloud Data" style="width:100%;max-width:625px">
 <figcaption> Figure 1. Finding Point Cloud Data on KYFromAbove   </figcaption>
 </figure> <br>
+
+<p> This will bring up an index grid map of KY, with each grid containing compressed LIDAR (LAZ) data representing the corresponding area. The grids are numbered by their position, with tile grids in Kentucky following the format of NxxxExxx, where “x” is a number. Zoom in on to the grid map and click on the desired tile to bring up its metadata, download link, and decompression software. Download the latest version of the data using the FTP link. Any grid is viable for this project, because they are all processed in the same way as the one in the example, which was N169E188 (Figure 2). It is ideal, however, to choose a grid with some buildings in it so that the result of this project is more impressive.   </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/mqkr31z.jpeg" alt="LIDAR Web Map " style="width:100%;max-width:625px">
+<figcaption> Figure 2. Selecting a LIDAR Index Grid to Download on the ArcGIS Web Map    </figcaption>
+</figure> <br>
+
+
+
+<h3> List of Figures and Tables </h3> <br>
+
+<h3> References </h3> <br>
+
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
