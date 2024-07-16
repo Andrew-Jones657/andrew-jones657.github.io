@@ -58,6 +58,10 @@
 
 <p> KYFromAbove: Downloading and Processing LIDAR data (WIP) </p> <br>
 
+<p> Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map </p> <br>
+
+<p> Hosting GIS Data on the Cloud: A Guide to Setting up Geoserver on Amazon Web Services </p> <br>
+
 </body>
 
 </html>
