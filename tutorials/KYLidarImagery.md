@@ -159,10 +159,10 @@
 
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:100%">
+    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:50%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:100%">
+    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:50%">
   </div>
 </div> 
 
@@ -170,6 +170,7 @@
 <figcaption> Figure 4. LAS Data from a Distance and LAS Data up close. </figcaption>
 </figure> <br>
 
+<p>  </p>
 
 <h3> List of Figures and Tables </h3> <br>
 
