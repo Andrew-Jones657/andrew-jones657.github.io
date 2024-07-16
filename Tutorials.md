@@ -58,9 +58,11 @@
 
 <p> KYFromAbove: Downloading and Processing LIDAR data (WIP) </p> <br>
 
-<p> Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map </p> <br>
+<p> Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map (WIP) </p> <br>
 
-<p> Hosting GIS Data on the Cloud: A Guide to Setting up Geoserver on Amazon Web Services </p> <br>
+<p> Hosting GIS Data on the Cloud: A Guide to Setting up Geoserver on Amazon Web Services (WIP) </p> <br>
+
+<p> Creating a Regression Model: Analyzing the 2016 US Presidential Election (WIP) </p> <br>
 
 </body>
 
