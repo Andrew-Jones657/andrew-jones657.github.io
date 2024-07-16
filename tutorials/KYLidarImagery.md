@@ -159,10 +159,10 @@
 
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:50%">
+    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:40%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:50%">
+    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:40%">
   </div>
 </div> 
 
