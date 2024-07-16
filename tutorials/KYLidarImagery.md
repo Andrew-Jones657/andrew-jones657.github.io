@@ -139,13 +139,36 @@
 <figcaption> Figure 1. Finding Point Cloud Data on KYFromAbove   </figcaption>
 </figure> <br>
 
-<p> This will bring up an index grid map of KY, with each grid containing compressed LIDAR (LAZ) data representing the corresponding area. The grids are numbered by their position, with tile grids in Kentucky following the format of NxxxExxx, where “x” is a number. Zoom in on to the grid map and click on the desired tile to bring up its metadata, download link, and decompression software. Download the latest version of the data using the FTP link. Any grid is viable for this project, because they are all processed in the same way as the one in the example, which was N169E188 (Figure 2). It is ideal, however, to choose a grid with some buildings in it so that the result of this project is more impressive.   </p> <br>
+<p> This will bring up an index grid map of KY, with each grid containing compressed LIDAR (LAZ) data representing the corresponding area. The grids are numbered by their position, with tile grids in Kentucky following the format of NxxxExxx, where “x” is a number. Zoom in on to the grid map and click on the desired tile to bring up its metadata and download link. Download the latest version of the data using the FTP link. Any grid is viable for this project, because they are all processed in the same way. Grid N169E188 was selected for this tutorial (Figure 2). It is recommended, however, to choose a grid with some buildings in it so that the result of this project is more impressive.   </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/mqkr31z.jpeg" alt="LIDAR Web Map " style="width:100%;max-width:625px">
 <figcaption> Figure 2. Selecting a LIDAR Index Grid to Download on the ArcGIS Web Map    </figcaption>
 </figure> <br>
 
+<p> Next, this LAZ data needs to be decompressed. A LAZ file is a compressed file type used to store LIDAR data. A LAS file is the uncompressed form of a LAZ file and is compatible with GIS software. LAS files are typically compressed into LAZ files due to the sheer amount of space LAS files take up. </p> <br>
+
+<p> To decompress the LAZ dataset, use the "Convert LAS" tool on ArcGIS Pro. It may be helpful to create a folder for the uncompressed LAS data. Input the LAZ dataset, the target folder for the LAS dataset, set "Compression" to "No Compression", and leave LAS Options as default (Figure 3). Run the tool.  </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/VX7E2pf.jpeg" alt="Decompressing LAZ" style="width:100%;max-width:625px">
+<figcaption> Figure 3. Converting LAZ to LAS on ArcGIS Pro   </figcaption>
+</figure> <br>
+
+<p> Add the newly uncompressed LAS dataset from the target folder into ArcGIS Pro. Zoomed out, it appears as a red square overlaid on part of Bowling Green. When zooming in, however, it appears as a dense set of multicolored points, where blue points represent lower elevation and red points represent higher elevations. </p> <br>
+
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:100%">
+  </div>
+</div> 
+
+<figure>
+<figcaption> Figure 4. LAS Data from a Distance and LAS Data up close. </figcaption>
+</figure> <br>
 
 
 <h3> List of Figures and Tables </h3> <br>
