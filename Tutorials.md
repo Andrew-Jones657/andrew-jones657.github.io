@@ -56,7 +56,7 @@
 </figure> <br> <br> 
 
 
-<p> KYFromAbove: Downloading and Processing LIDAR data (WIP) </p> <br>
+<p> <a href="/tutorials/KYLidarImagery"> KYFromAbove: Downloading and Processing LIDAR data (WIP)</a> </p> <br>
 
 <p> Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map (WIP) </p> <br>
 
