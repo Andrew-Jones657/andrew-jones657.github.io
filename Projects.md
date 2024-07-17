@@ -40,6 +40,8 @@
 <hr class="solid">
 <h3> Work Projects </h3> <br> <br>
 
+<p> Working as a Frealance Analyst (WIP) </p> <br>
+
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
     <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" class="center">
