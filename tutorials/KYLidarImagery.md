@@ -190,15 +190,20 @@
 
 <p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and tree tops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters, so take time to look over them.  </p> <br>
 
-<p> Rasters can be saved to several different formats such as TIFF, BMP, GIF, GRID, IMG, JPG, PNG, or BIL. IMG, TIFF, GRID, and BIL files are all uncompressed image files that support negative values when the raster is over 8 bits in size. This allows for broader applications for these rasters, though it comes at the cost of using more storage space. JPG, GIF, PNG, and BMP files have the advantage of being compressed file formats, meaning they take up much less space than the other group at the cost of high-quality resolution. Each typically has a specific use. For example, .tif image are typically used for highly detailed images such as DSLR camera photos because they are uncompressed, whereas a .jpg are compressed, smaller image files that are used in camera phones. For this tutorial, it must be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. A .img file is a type of file that contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture.     </p> <br>
-
-<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”.  </p>
-
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/URUnKrx.jpeg" alt="Creating a raster" style="width:100%;max-width:625px">
 <figcaption> Figure 6. Creating a Raster from the LAS Dataset   </figcaption>
 </figure> <br>
 
+<p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. A .img file is a type of file that contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture.     </p> <br>
+
+<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”. Leave the parameter as default with "Binning". For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
+
+<p> The "Output Data Type" should be set to "Integer".  </p> <br>
+
+<p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
+
+<p> Under the "Environments" tab, there are a few more settings. </p>
 
 <h3> List of Figures and Tables </h3> <br>
 
