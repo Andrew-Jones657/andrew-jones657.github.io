@@ -205,6 +205,13 @@
 
 <p> Under the "Environments" tab, there are a few more settings. </p>
 
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/0lEyIJZ.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
+<figcaption> Figure 7. Creating a Hillshade from the Raster Dataset   </figcaption>
+</figure> <br>
+
+
 <h3> List of Figures and Tables </h3> <br>
 
 <h3> References </h3> <br>
