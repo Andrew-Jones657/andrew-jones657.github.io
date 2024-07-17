@@ -41,7 +41,7 @@
 
 <figure>
 <a target="_blank" href="/tutorials/CensusData">
-    <img src="https://i.imgur.com/3Kl75Zs.jpeg" alt="Missouri's Congressional Districts" class="center">
+    <img src="https://i.imgur.com/3Kl75Zs.jpeg" alt="Census Data" class="center">
 </a>
     <figcaption> Downloading and Processing US Census Data for GIS Implementation  </figcaption>
 </figure> <br> <br> 
@@ -50,13 +50,19 @@
 
 <figure>
 <a target="_blank" href="/tutorials/GoogleLocation">
-    <img src="https://i.imgur.com/gwkJfUs.jpg" alt="Missouri's Congressional Districts" class="center">
+    <img src="https://i.imgur.com/gwkJfUs.jpg" alt="Google History" class="center">
 </a>
     <figcaption> Your Location History: Using Google Location History in ArcGIS Pro  </figcaption>
 </figure> <br> <br> 
 
 
-<p> <a href="/tutorials/KYLidarImagery"> KYFromAbove: Downloading and Processing LIDAR data (WIP)</a> </p> <br>
+<figure>
+<a target="_blank" href="/tutorials/KYLidarImagery">
+    <img src="https://i.imgur.com/nSm2QXS.jpeg" alt="LIDAR" class="center">
+</a>
+    <figcaption> KYFromAbove: Downloading and Processing LIDAR data  </figcaption>
+</figure> <br> <br> 
+
 
 <p> Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map (WIP) </p> <br>
 
