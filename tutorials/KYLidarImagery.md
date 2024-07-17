@@ -16,7 +16,16 @@
   figure figcaption {
   text-align: center; 
          }
-         
+      .row {
+    display: flex;
+    }
+
+    /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 5px;
+    }
+    
   #viewDiv {
   padding: 0;
   margin: 0;
