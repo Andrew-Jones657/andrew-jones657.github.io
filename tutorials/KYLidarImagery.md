@@ -164,7 +164,7 @@
 <figcaption> Figure 3. Converting LAZ to LAS on ArcGIS Pro   </figcaption>
 </figure> <br>
 
-<p> Add the newly uncompressed LAS dataset from the target folder into ArcGIS Pro. Zoomed out, it appears as a red square overlaid on part of Bowling Green. When zooming in, however, it appears as a dense set of multicolored points, where blue points represent lower elevation and red points represent higher elevations. </p> <br>
+<p> Add the newly uncompressed LAS dataset from the target folder into ArcGIS Pro. Zoomed out, it appears as a red square overlaid on part of Bowling Green. When zooming in, however, it appears as a dense set of multicolored points, where blue points represent lower elevation and red points represent higher elevations (Figure 4). </p> <br>
 
  <div class="row">
   <div class="column">
@@ -179,14 +179,26 @@
 <figcaption> Figure 4. LAS Data from a Distance and LAS Data up close. </figcaption>
 </figure> <br>
 
-<p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. As a side note, if you had multiple LAS files, they could be input and turned into one large LAS dataset. Technically we could create a LAS dataset for all of downtown Bowling Green -- it would just be time consuming to do so. Create the LAS Dataset. </p> <br>
+<p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. As a side note, if you had multiple LAS files, they could be input and turned into one large LAS dataset. Technically we could create a LAS dataset for all of downtown Bowling Green -- it would just be time consuming to do so. Create the LAS Dataset (Figure 5). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/sRBNlZv.jpeg" alt="Creating LAS Dataset" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Creating an LAS Dataset   </figcaption>
 </figure> <br>
 
-<p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- take some time to observe how these settings display different kinds of information about the physical landscape. "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, or specific criteria. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
+<p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- take some time to observe how these settings display different kinds of information about the physical landscape. "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
+
+<p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and tree tops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters, so take time to look over them.  </p> <br>
+
+<p> Rasters can be saved to several different formats such as TIFF, BMP, GIF, GRID, IMG, JPG, PNG, or BIL. IMG, TIFF, GRID, and BIL files are all uncompressed image files that support negative values when the raster is over 8 bits in size. This allows for broader applications for these rasters, though it comes at the cost of using more storage space. JPG, GIF, PNG, and BMP files have the advantage of being compressed file formats, meaning they take up much less space than the other group at the cost of high-quality resolution. Each typically has a specific use. For example, .tif image are typically used for highly detailed images such as DSLR camera photos because they are uncompressed, whereas a .jpg are compressed, smaller image files that are used in camera phones. For this tutorial, it must be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. A .img file is a type of file that contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture.     </p> <br>
+
+<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”.  </p>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/URUnKrx.jpeg" alt="Creating a raster" style="width:100%;max-width:625px">
+<figcaption> Figure 6. Creating a Raster from the LAS Dataset   </figcaption>
+</figure> <br>
+
 
 <h3> List of Figures and Tables </h3> <br>
 
