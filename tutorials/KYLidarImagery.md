@@ -168,10 +168,10 @@
 
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:100%">
+    <img class="myImages" id="myImg" src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:100%">
+    <img class="myImages" id="myImg" src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:100%">
   </div>
 </div> 
 
@@ -195,7 +195,28 @@
 <figcaption> Figure 6. Creating a Raster from the LAS Dataset   </figcaption>
 </figure> <br>
 
-<p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. The .img file format contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture. Other raster extensions include TIFF, BMP, GIF, GRID, JPG, PNG, or BIL. IMG, TIFF, GRID, and BIL files are all uncompressed image files that support negative values when the raster is over 8 bits in size. This allows for broader applications, though it comes at the cost of using more storage space. JPG, GIF, PNG, and BMP files have the advantage of being compressed file formats, meaning they take up much less space than the other group at the cost of high-quality resolution.     </p> <br>
+<p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. The .img file format contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture. Other raster extensions include TIFF, BMP, GIF, GRID, JPG, PNG, or BIL. Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found here https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm </p> 
+
+<table title="Image File Extensions as Raster Datasets">
+<thead>
+<th> Image File Extensions </th>  
+<th> Compression Type </th>
+<th> Ideal Use </th>
+</thead>
+<tbody>
+<tr>
+<td> IMG, TIFF, GRID, BIL </td>
+<td> Uncompressed </td>
+<td> These image file formats support negative values when the raster is over 8-bits in size. This allows for boarder applications of the raster data, though it comes at the cost of using more storage space. </td>
+</tr>
+<tr>
+<td> JPG, GIF, PNG, BMP </td>
+<td> Compressed </td>
+<td> As they are compressed, these image file formats are more space efficient. This comes at the cost of high-qualtiy resolution  </td>
+</tr>
+</tbody>
+</table>
+
 
 <p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”. Binning determines the value of a pixel by observing the points within the pixel to calculate the final value, whereas triangulation uses a method called Delaunay triangulation that creates a surface from a network of triangular facets composed of nodes and edges that cover the surface and are rasterized. Triangulation is best used when the point density of the LAS dataset is low: this is typically when the point size of the pixel is less than three to four times bigger than the average distance between pixels. Leave the parameter as default with "Binning". For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
 
