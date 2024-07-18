@@ -218,7 +218,26 @@
 </table>
 
 
-<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”. Binning determines the value of a pixel by observing the points within the pixel to calculate the final value, whereas triangulation uses a method called Delaunay triangulation that creates a surface from a network of triangular facets composed of nodes and edges that cover the surface and are rasterized. Triangulation is best used when the point density of the LAS dataset is low: this is typically when the point size of the pixel is less than three to four times bigger than the average distance between pixels. Leave the parameter as default with "Binning". For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
+<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”.</p>
+
+<table title="Binning vs Triangulation">
+<thead>
+<th> Interpolation Type </th>
+<th> Description </th>
+</thead>
+<tbody>
+<tr>
+<td> Binning </td>
+<td>  </td>
+</tr>
+<tr>
+<td> Triangulation </td>
+<td>  </td>
+</tr>
+</tbody>
+</table> <br>
+  
+Binning determines the value of a pixel by observing the points within the pixel to calculate the final value, whereas triangulation uses a method called Delaunay triangulation that creates a surface from a network of triangular facets composed of nodes and edges that cover the surface and are rasterized. Triangulation is best used when the point density of the LAS dataset is low: this is typically when the point size of the pixel is less than three to four times bigger than the average distance between pixels. Leave the parameter as default with "Binning". For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
 
 <p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. "Floating" rasters include decimal points, which makes them ideal for displaying elevation data -- the caveat to that is since infinitesimal values are included, there is no way to create an attribute table for the raster. If you wish to create a TIN model for 3D modeling with building footprints or need to extract elevation values to a feature layer, then it may be better to select an "Integer" type raster.   </p> <br>
 
