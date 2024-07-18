@@ -176,7 +176,7 @@
 </div> 
 
 <figure>
-<figcaption> Figure 4. LAS Data from a Distance and LAS Data up close. </figcaption>
+<figcaption> Figure 4. LAS Data from a Distance and LAS Data up close </figcaption>
 </figure> <br>
 
 <p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. As a side note, if you had multiple LAS files, they could be input and turned into one large LAS dataset. Technically we could create a LAS dataset for all of downtown Bowling Green -- it would just be time consuming to do so. Create the LAS Dataset (Figure 5). </p> <br>
@@ -195,25 +195,34 @@
 <figcaption> Figure 6. Creating a Raster from the LAS Dataset   </figcaption>
 </figure> <br>
 
-<p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. A .img file is a type of file that contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture.     </p> <br>
+<p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. The .img file format contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture. Other raster extensions include TIFF, BMP, GIF, GRID, JPG, PNG, or BIL. IMG, TIFF, GRID, and BIL files are all uncompressed image files that support negative values when the raster is over 8 bits in size. This allows for broader applications, though it comes at the cost of using more storage space. JPG, GIF, PNG, and BMP files have the advantage of being compressed file formats, meaning they take up much less space than the other group at the cost of high-quality resolution.     </p> <br>
 
-<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”. Leave the parameter as default with "Binning". For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
+<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”. Binning determines the value of a pixel by observing the points within the pixel to calculate the final value, whereas triangulation uses a method called Delaunay triangulation that creates a surface from a network of triangular facets composed of nodes and edges that cover the surface and are rasterized. Triangulation is best used when the point density of the LAS dataset is low: this is typically when the point size of the pixel is less than three to four times bigger than the average distance between pixels. Leave the parameter as default with "Binning". For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
 
-<p> The "Output Data Type" should be set to "Integer".  </p> <br>
+<p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. "Floating" rasters include decimal points, which makes them ideal for displaying elevation data -- the caveat to that is since infinitesimal values are included, there is no way to create an attribute table for the raster. If you wish to create a TIN model for 3D modeling with building footprints or need to extract elevation values to a feature layer, then it may be better to select an "Integer" type raster.   </p> <br>
 
 <p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
 
 <p> Under the "Environments" tab, there are a few more settings. </p> <br>
 
-<p> Search for the "Hillsahde" tool in the geoprocessing toolbox. </p> <br>
+<p> Search for the "Hillshade" tool in the geoprocessing toolbox. There are a couple parameters to consider here when creating a hillshade.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/0lEyIJZ.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
 <figcaption> Figure 7. Creating a Hillshade from the Raster Dataset   </figcaption>
 </figure> <br>
 
+<p> With a hillshade created, this concludes the tutorial. Naturally, there are many things that can be done with the hillshade, raster elevation dataset, or the LIDAR data. </p>
 
-<h3> List of Figures and Tables </h3> <br>
+
+<h3> List of Figures </h3> <br>
+<p> Figure 1. Finding Point Cloud Data on KYFromAbove </p>
+<p> Figure 2. Selecting a LIDAR Index Grid to Download on the ArcGIS Web Map  </p>
+<p> Figure 3. Converting LAZ to LAS on ArcGIS Pro  </p>
+<p> Figure 4. LAS Data from a Distance and LAS Data up close </p>
+<p> Figure 5. Creating a LAS Dataset </p>
+<p> Figure 6. Creating a Raster from the LAS Dataset </p>
+<p> Figure 7. Creating a Hillshade from the Raster Dataset </p> <br>
 
 <h3> References </h3> <br>
 
