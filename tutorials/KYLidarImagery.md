@@ -168,10 +168,10 @@
 
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:40%">
+    <img src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:40%">
+    <img src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:100%">
   </div>
 </div> 
 
@@ -179,7 +179,7 @@
 <figcaption> Figure 4. LAS Data from a Distance and LAS Data up close </figcaption>
 </figure> <br>
 
-<p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. As a side note, if you had multiple LAS files, they could be input and turned into one large LAS dataset. Technically we could create a LAS dataset for all of downtown Bowling Green -- it would just be time consuming to do so. Create the LAS Dataset (Figure 5). </p> <br>
+<p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. As a side note, if you have multiple LAS files, they could be input and turned into one large LAS dataset. Technically a LAS dataset for all of downtown Bowling Green could be created like this -- it would be time consuming, however. Create the LAS Dataset (Figure 5). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/sRBNlZv.jpeg" alt="Creating LAS Dataset" style="width:100%;max-width:625px">
@@ -188,7 +188,7 @@
 
 <p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- take some time to observe how these settings display different kinds of information about the physical landscape. "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
 
-<p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and tree tops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters, so take time to look over them.  </p> <br>
+<p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and tree tops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/URUnKrx.jpeg" alt="Creating a raster" style="width:100%;max-width:625px">
@@ -203,7 +203,30 @@
 
 <p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
 
-<p> Under the "Environments" tab, there are a few more settings. </p> <br>
+<p> Under the "Environments" tab, there are a few more settings. Pay particular attention to the "Resampling Technique" parameter, as this  </p> <br>
+
+<table title="Resampling Techniques for Raster Datasets">
+<thead>
+<tr>
+<th> Method </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Nearest Neighbor </td>
+<td> The Nearest Neighbor method uses the value of the closest cell to assign a value to the output cell. This is the ideal method to use for discrete data, such as land use, that has integer values as it does not smooth out the data.  </td>
+</tr>
+<tr>
+<td> Bilinear Interpolation </td>
+<td> Bilinear Interpolation is typically used for continuous data sets, such as elevation, as it uses the weighted distance average of the four nearest cell values to determine the value of a new cell.  </td>  
+</tr>
+<tr>
+<td> Cubic Convolution </td>
+<td> Cubic Convolution is similar to the bilinear interpolation method, the difference is that it uses the weighted distance average of the nearest 16 cell values. This results in a less distorted raster that is ideal for continuous data, albeit at the cost of a higher processing time. It can also have output cell values that are outside the range of the input cells.  </td>  
+</tr>
+</tbody>
+</table>
 
 <p> Search for the "Hillshade" tool in the geoprocessing toolbox. There are a couple parameters to consider here when creating a hillshade.  </p> <br>
 
@@ -225,6 +248,8 @@
 <p> Figure 7. Creating a Hillshade from the Raster Dataset </p> <br>
 
 <h3> References </h3> <br>
+
+<div class="wysiwyg lengthy" ><p class="reference"><em>Map Viewer</em>. (n.d.). <a href="https://kygeonet.maps.arcgis.com/apps/mapviewer/index.html?webmap=b5ff91df6309491090c20333c8f58f52" target="_blank" rel="nofollow noopener noreferrer">https://kygeonet.maps.arcgis.com/apps/mapviewer/index.html?webmap=b5ff91df6309491090c20333c8f58f52</a></p>
 
 
 <div id="myModal" class="modal">
