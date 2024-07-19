@@ -228,22 +228,69 @@
 <tbody>
 <tr>
 <td> Binning </td>
-<td>  </td>
+<td> Binning determines the value of a pixel by observing the points within the pixel to calculate the final value </td>
 </tr>
 <tr>
 <td> Triangulation </td>
-<td>  </td>
+<td> Triangulation uses a method called Delaunay triangulation that creates a surface from a network of triangular facets composed of nodes and edges that cover the surface and are rasterized. Triangulation is best used when the point density of the LAS dataset is low: this is typically when the point size of the pixel is less than three to four times bigger than the average distance between pixels. </td>
 </tr>
 </tbody>
 </table> <br>
   
-Binning determines the value of a pixel by observing the points within the pixel to calculate the final value, whereas triangulation uses a method called Delaunay triangulation that creates a surface from a network of triangular facets composed of nodes and edges that cover the surface and are rasterized. Triangulation is best used when the point density of the LAS dataset is low: this is typically when the point size of the pixel is less than three to four times bigger than the average distance between pixels. Leave the parameter as default with "Binning". For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
+<p> Leave the parameter as default with "Binning". Notice that if you switch between "Binning" and "Triangulation", the parameters below them change. Table ? below summarizes each of the parameters. </p> <br>
+
+<table title="Binning Options">
+<thead>
+<tr>
+<th> Binning </th>
+<th> Cell Assignment </th>
+<th> Void Fill </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>  </td>
+<td>
+<ul>
+<li> Average: uses the mean of the points in the cell </li>  
+<li> IDW: uses inverse distance weight interpolation to calculate cell values -- a greater distance from a point results in a smaller value  </li>  
+<li> Maximum: uses the largest point in the cell </li>  
+<li> Minimum: uses the smallest point in the cell </li> 
+<li> Nearest: uses the value of neighboring points so that the distance between each point is equal everywhere  </li>  
+</ul>
+</td>
+</tr>
+<tr>
+<td>  </td>
+<td> 
+<ul>
+<li> None: leaves those cells empty </li>  
+<li> Simple: uses the mean of the nearest points to assign a value to the empty cell </li>  
+<li> Linear: uses triangular interpolation to fill the empty cell -- this is similar to the "Nearest" option for cell assignment </li>  
+<li> Natural Neighbor: uses a more sophisticated method of the linear void fill method for a smoother interpolation result </li>  
+</ul>
+</td> 
+</tr>
+</tbody>  
+</table>
+
+<table title="Triangulation Options">
+<thead>
+<tr>
+<th>  </th>
+<th>  </th>  
+</tr>  
+</thead>
+</table>
+
+
+<p> For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
 
 <p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. "Floating" rasters include decimal points, which makes them ideal for displaying elevation data -- the caveat to that is since infinitesimal values are included, there is no way to create an attribute table for the raster. If you wish to create a TIN model for 3D modeling with building footprints or need to extract elevation values to a feature layer, then it may be better to select an "Integer" type raster.   </p> <br>
 
 <p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
 
-<p> Under the "Environments" tab, there are a few more settings. Pay particular attention to the "Resampling Technique" parameter, as this  </p> <br>
+<p> Under the "Environments" tab, there are a few more settings. Pay particular attention to the "Resampling Technique" parameter, as this will affect he appearance of the raster dataset. </p> <br>
 
 <table title="Resampling Techniques for Raster Datasets">
 <thead>
@@ -255,7 +302,7 @@ Binning determines the value of a pixel by observing the points within the pixel
 <tbody>
 <tr>
 <td> Nearest Neighbor </td>
-<td> The Nearest Neighbor method uses the value of the closest cell to assign a value to the output cell. This is the ideal method to use for discrete data, such as land use, that has integer values as it does not smooth out the data.  </td>
+<td> The Nearest Neighbor method uses the value of the closest cell to assign a value to the output cell. This is the ideal method to use for discrete data, such as land use, that use integer values as this method does not smooth out the data.  </td>
 </tr>
 <tr>
 <td> Bilinear Interpolation </td>
