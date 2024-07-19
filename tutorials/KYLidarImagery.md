@@ -269,14 +269,40 @@
 </tbody>  
 </table> <br>
 
+<p> Likewise, Table ? below summarizes each of the parameters for "Triangulation". </p> <br>
+
 <table title="Triangulation Options">
 <thead>
 <tr>
-<th>  </th>
-<th>  </th>  
+<th> Interpolation Methods </th>
+<th> Thinning Type </th>
+<th> Selection Method (Window Size Only) </th>
 </tr>  
 </thead>
-</table>
+<tbody>
+<tr>
+<td>
+<ul>
+<li> Linear: uses the value of neighboring points so that the distance between each point is equal everywhere   </li>
+<li> Natural Neighbor: uses a more sophisticated method of the linear void fill method for a smoother interpolation result </li>
+</ul>
+</td>
+<td>
+<ul>
+<li> No Thinning: leaves the output size raster as is  </li>
+<li> Window Size: this “thins” the raster which may make it faster to process </li>
+</ul>
+</td>
+<td>
+<ul> 
+<li> Maximum: uses the highest point in the window size  </li>
+<li> Minimum: uses the lowest point in the window size  </li>
+<li> Closest to Mean: uses the closest approximation to the mean of the points in the window size </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table> <br>
 
 
 <p> For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
