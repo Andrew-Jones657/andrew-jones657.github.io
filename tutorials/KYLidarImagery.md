@@ -179,14 +179,18 @@
 <figcaption> Figure 4. LAS Data from a Distance and LAS Data up close </figcaption>
 </figure> <br>
 
-<p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. As a side note, if you have multiple LAS files, they could be input and turned into one large LAS dataset. Technically a LAS dataset for all of downtown Bowling Green could be created like this -- it would be time consuming, however. Create the LAS Dataset (Figure 5). </p> <br>
+<p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. </p> <br>
+  
+<p> As a side note, if you have multiple LAS files, they could be input and turned into one large LAS dataset. Technically a LAS dataset for all of downtown Bowling Green could be created like this -- it would be time consuming, however. Create the LAS Dataset (Figure 5). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/sRBNlZv.jpeg" alt="Creating LAS Dataset" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Creating an LAS Dataset   </figcaption>
 </figure> <br>
 
-<p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- take some time to observe how these settings display different kinds of information about the physical landscape. "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
+<p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- take some time to observe how these settings display different kinds of information about the physical landscape. </p> <br>
+  
+<p> "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
 
 <p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and tree tops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
 
@@ -362,7 +366,7 @@
 <figcaption> Figure 7. Creating a Hillshade from the Raster Dataset   </figcaption>
 </figure> <br>
 
-<p> With a hillshade created, this concludes the tutorial. Naturally, there are many things that can be done with the hillshade, raster elevation dataset, or the LIDAR data. </p>
+<p> With a hillshade created, this concludes the tutorial. Naturally, there are many things that can be done with the hillshade, raster elevation dataset, or the LIDAR data. </p> <br>
 
 
 <h3> List of Figures </h3> <br>
