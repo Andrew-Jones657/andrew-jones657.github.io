@@ -307,7 +307,26 @@
 
 <p> For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
 
-<p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. "Floating" rasters include decimal points, which makes them ideal for displaying elevation data -- the caveat to that is since infinitesimal values are included, there is no way to create an attribute table for the raster. If you wish to create a TIN model for 3D modeling with building footprints or need to extract elevation values to a feature layer, then it may be better to select an "Integer" type raster.   </p> <br>
+<p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. Table ? below presents a brief summary of the differences. </p>
+
+<table title="Floating and Integer Valued Rasters">
+<thead>
+<tr>
+<th> Output Data Type </th>
+<th> Description </th>
+</tr>  
+</thead>
+<tbody>
+<tr>
+<td> Floating </td>
+<td> "Floating" rasters include decimal points, which makes them ideal for displaying elevation data -- the caveat to that is since infinitesimal values are included, there is no way to create an attribute table for the raster. Generally, this renders floating point rasters ideal for data visualization, but not as useful for analytical workflows. </td>
+</tr>
+<tr>
+<td> Integer </td>
+<td> Integer rasters retain an attribute table since their values are countable. If you wish to create a TIN model for 3D modeling with building footprints or need to extract elevation values to a feature layer, then it may be better to select an "Integer" type raster. The disadvantage to integer rasters is that they cannot display data in a manner as detailed as floating point rasters. </td>  
+</tr>
+</tbody>
+</table> <br>
 
 <p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
 
