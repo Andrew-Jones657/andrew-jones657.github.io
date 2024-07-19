@@ -257,8 +257,6 @@
 <li> Nearest: uses the value of neighboring points so that the distance between each point is equal everywhere  </li>  
 </ul>
 </td>
-</tr>
-<tr>
 <td>  
 <ul>
 <li> None: leaves those cells empty </li>  
@@ -266,10 +264,10 @@
 <li> Linear: uses triangular interpolation to fill the empty cell -- this is similar to the "Nearest" option for cell assignment </li>  
 <li> Natural Neighbor: uses a more sophisticated method of the linear void fill method for a smoother interpolation result </li>  
 </ul>
-</td> 
+</td>   
 </tr>
 </tbody>  
-</table>
+</table> <br>
 
 <table title="Triangulation Options">
 <thead>
