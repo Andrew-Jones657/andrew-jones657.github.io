@@ -199,6 +199,10 @@
 <figcaption> Figure 6. Creating a Raster from the LAS Dataset   </figcaption>
 </figure> <br>
 
+<h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
+
+<p> As a quick break from the tutorial, these next few steps will describe some parameters used in creating raster datasets.   </p> <br>
+
 <p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. The .img file format contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture. Other raster extensions include TIFF, BMP, GIF, GRID, JPG, PNG, or BIL. Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found here https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm </p> 
 
 <table title="Image File Extensions as Raster Datasets">
