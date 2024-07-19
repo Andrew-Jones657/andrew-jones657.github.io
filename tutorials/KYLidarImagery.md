@@ -313,7 +313,7 @@
 </table> <br>
 
 
-<p> For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear".  </p> <br>
+<p> For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear". These parameters will help preserve the edges of buildings, structures, and trees.  </p> <br>
 
 <p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. Table ? below presents a brief summary of the differences. </p>
 
@@ -363,7 +363,33 @@
 </tbody>
 </table>
 
-<p> Search for the "Hillshade" tool in the geoprocessing toolbox. There are a couple parameters to consider here when creating a hillshade.  </p> <br>
+<p> Search for the "Hillshade" tool in the geoprocessing toolbox. Like creating a raster dataset, there are a couple parameters to consider when creating a hillshade.  </p> <br>
+
+<table title="Hillshade Dataset Parameters">
+<thead>
+<tr>
+<th> Setting </th>
+<th> Description </th>
+</thead>
+<tbody>
+<tr> 
+<td> Azimuth </td>
+<td>  </td>
+</tr>
+<tr>
+<td> Altitude </td>
+<td>  </td>
+</tr>
+<tr>
+<td> Model shadows </td>
+<td> </td>
+</tr>
+<tr>
+<td> Z factor </td>
+<td>  </td>
+</tr>
+</tbody>
+</table> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/0lEyIJZ.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
