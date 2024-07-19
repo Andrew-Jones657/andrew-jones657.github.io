@@ -237,20 +237,18 @@
 </tbody>
 </table> <br>
   
-<p> Leave the parameter as default with "Binning". Notice that if you switch between "Binning" and "Triangulation", the parameters below them change. Table ? below summarizes each of the parameters. </p> <br>
+<p> Leave the parameter as default with "Binning". Notice that if you switch between "Binning" and "Triangulation", the parameters below them change. Table ? below summarizes each of the parameters for "Binning". </p> <br>
 
 <table title="Binning Options">
 <thead>
 <tr>
-<th> Binning </th>
 <th> Cell Assignment </th>
 <th> Void Fill </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>  </td>
-<td>
+<td>  
 <ul>
 <li> Average: uses the mean of the points in the cell </li>  
 <li> IDW: uses inverse distance weight interpolation to calculate cell values -- a greater distance from a point results in a smaller value  </li>  
@@ -261,8 +259,7 @@
 </td>
 </tr>
 <tr>
-<td>  </td>
-<td> 
+<td>  
 <ul>
 <li> None: leaves those cells empty </li>  
 <li> Simple: uses the mean of the nearest points to assign a value to the empty cell </li>  
