@@ -374,15 +374,16 @@
 <tbody>
 <tr> 
 <td> Azimuth </td>
-<td>  </td>
+<td> The angle from which the light source interacts with the hillshade. It is measured clockwise starting at north. The default azimuth is 315°, or a light source simulated from the northwest. </td>
 </tr>
 <tr>
 <td> Altitude </td>
-<td>  </td>
+<td> The angle of illumination above the horizon, it ranges from 0° to 90°. A 0° is on the horizon, whereas a 90° is directly above the hillshade.
+ </td>
 </tr>
 <tr>
 <td> Model shadows </td>
-<td> </td>
+<td> A checkbox that determines whether shadows should be modeled or not. Possible values range from 0 to 255, with 0 being the darkest areas and 255 being the brightest areas. If unchecked, the hillshade will only consider local illumination angles. If checked, shadows will be considered as well. By default, this option is unchecked.  </td>
 </tr>
 <tr>
 <td> Z factor </td>
