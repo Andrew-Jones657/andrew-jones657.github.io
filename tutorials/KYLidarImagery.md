@@ -203,13 +203,13 @@
 
 <h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
 
-<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. Rasters are stored in a grid, which is composed of a series of rows and columns filled with values that create a matrix. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily.     </p> <br>
+<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. Rasters are stored in a grid, which is composed of a series of rows and columns filled with values that create a matrix. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
 
-<p> On the topic of raster data storage, the amount of data a raster can store depends upon the number of bits it contains. An 8-bit raster can contain 255 values, a 16-bit raster can contain 65535 values, and a 32-bit raster can contain 4294967295 values. With the LAS Dataset to Raster tool you created a 32-bit signed raster.  </p> <br>
+<p> The amount of data a raster can store depends upon its bit number. An 8-bit raster can contain 255 values, a 16-bit raster can contain 65535 values, and a 32-bit raster can contain 4294967295 values. With the LAS Dataset to Raster tool you created a 32-bit signed raster.  </p> <br>
 
-<p>  </p> <br>
+<p> Raster data also comes in signed and unsigned data formats. Signed rasters can contain negative values, whereas unsigned rasters contain only positive values. An 8-bit unsigned raster's values range from 0 to 255, whereas an 8-bit signed raster's values range from -128 to 127. </p> <br>
 
-<p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. The .img file format contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture. Other raster extensions include TIFF, BMP, GIF, GRID, JPG, PNG, or BIL. Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found here https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm </p> <br>
+<p> Raster extensions include TIFF, BMP, GIF, IMG, GRID, JPG, PNG, or BIL. For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. This is a proprietary file format owned by ERDAS, a company specializing in remote sensing data capture -- IMG rasters tend to be of high-quality at the cost of more storage space.  Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found here https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm </p> <br>
 
 <table title="Image File Extensions as Raster Datasets">
 <thead>
