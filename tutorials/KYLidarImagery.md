@@ -390,6 +390,7 @@
 <tr>
 <th> Setting </th>
 <th> Description </th>
+</tr>
 </thead>
 <tbody>
 <tr> 
@@ -433,6 +434,8 @@
 <h3> References </h3> <br>
 
 <div class="wysiwyg lengthy" ><p class="reference"><em>Map Viewer</em>. (n.d.). <a href="https://kygeonet.maps.arcgis.com/apps/mapviewer/index.html?webmap=b5ff91df6309491090c20333c8f58f52" target="_blank" rel="nofollow noopener noreferrer">https://kygeonet.maps.arcgis.com/apps/mapviewer/index.html?webmap=b5ff91df6309491090c20333c8f58f52</a></p>
+
+<p class="reference"> <em>Raster file formats—ArcGIS Pro | Documentation</em>. (n.d.). <a href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm" target="_blank" rel="nofollow noopener noreferrer"> https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm</a> </p>
 
 
 <div id="myModal" class="modal">
