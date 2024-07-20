@@ -190,7 +190,7 @@
 
 <h3> Working with a LAS Dataset </h3> <br>
 
-<p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- take some time to observe how these settings display different kinds of information about the physical landscape. </p> <br>
+<p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- observe how these settings display different kinds of information about the physical landscape. </p> <br>
   
 <p> "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
 
@@ -203,13 +203,15 @@
 
 <h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
 
-<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. Rasters are stored in a grid, which is composed of a series of rows and columns filled with values that create a matrix. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
+<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format.  </p> <br>
+  
+<p> Rasters are stored in a grid, which is composed of a series of rows and columns filled with values that create a matrix. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
 
 <p> The amount of data a raster can store depends upon its bit number. An 8-bit raster can contain 255 values, a 16-bit raster can contain 65535 values, and a 32-bit raster can contain 4294967295 values. With the LAS Dataset to Raster tool you created a 32-bit signed raster.  </p> <br>
 
 <p> Raster data also comes in signed and unsigned data formats. Signed rasters can contain negative values, whereas unsigned rasters contain only positive values. An 8-bit unsigned raster's values range from 0 to 255, whereas an 8-bit signed raster's values range from -128 to 127. </p> <br>
 
-<p> Raster extensions include TIFF, BMP, GIF, IMG, GRID, JPG, PNG, or BIL. For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. This is a proprietary file format owned by ERDAS, a company specializing in remote sensing data capture -- IMG rasters tend to be of high-quality at the cost of more storage space.  Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found <a href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm"> here</a>. </p> <br>
+<p> At this point we can look at and discuss each parameter in Figure 6. Raster extensions include TIFF, BMP, GIF, IMG, GRID, JPG, PNG, or BIL. For this tutorial, the "Output raster" (Figure 6) should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. IMG is a proprietary file format owned by ERDAS, a company specializing in remote sensing data capture -- IMG rasters tend to be of high-quality at the cost of more storage space.  Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found <a href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm"> here</a>. </p> <br>
 
 <table title="Image File Extensions as Raster Datasets"> <caption> Table 1. Image Files as Raster Datasets </caption>
 <thead>
@@ -369,6 +371,16 @@
 </tbody>
 </table>
 
+<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. </p> <br
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/BY9TVgk.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
+<figcaption> Figure 7. The Elevation Raster   </figcaption>
+</figure> <br>
+
+
+
+
 <h3> Creating a Hillshade from a Raster Dataset </h3> <br>
 
 <p> Search for the "Hillshade" tool in the geoprocessing toolbox. Like creating a raster dataset, there are a couple parameters to consider when creating a hillshade.  </p> <br>
@@ -415,7 +427,8 @@
 <p> Figure 4. LAS Data from a Distance and LAS Data up close </p>
 <p> Figure 5. Creating a LAS Dataset </p>
 <p> Figure 6. Creating a Raster from the LAS Dataset </p>
-<p> Figure 7. Creating a Hillshade from the Raster Dataset </p> <br>
+<p> Figure 7. The Elevation Raster </p>
+<p> Figure 8. Creating a Hillshade from the Raster Dataset </p> <br>
 
 <h3> References </h3> <br>
 
