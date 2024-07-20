@@ -209,9 +209,9 @@
 
 <p> Raster data also comes in signed and unsigned data formats. Signed rasters can contain negative values, whereas unsigned rasters contain only positive values. An 8-bit unsigned raster's values range from 0 to 255, whereas an 8-bit signed raster's values range from -128 to 127. </p> <br>
 
-<p> Raster extensions include TIFF, BMP, GIF, IMG, GRID, JPG, PNG, or BIL. For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. This is a proprietary file format owned by ERDAS, a company specializing in remote sensing data capture -- IMG rasters tend to be of high-quality at the cost of more storage space.  Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found here https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm </p> <br>
+<p> Raster extensions include TIFF, BMP, GIF, IMG, GRID, JPG, PNG, or BIL. For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. This is a proprietary file format owned by ERDAS, a company specializing in remote sensing data capture -- IMG rasters tend to be of high-quality at the cost of more storage space.  Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found <a href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm"> here</a>. </p> <br>
 
-<table title="Image File Extensions as Raster Datasets">
+<table title="Image File Extensions as Raster Datasets"> <caption> Table 1. Image Files as Raster Datasets </caption>
 <thead>
 <th> Image File Extensions </th>  
 <th> Compression Type </th>
@@ -232,9 +232,9 @@
 </table>
 
 
-<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation”.</p>
+<p> Looking at "Interpolation Type", note that there are numerous ways in which a raster can be interpolated. The primary choices here are either “Binning” or “Triangulation” (Table 2).</p>
 
-<table title="Binning vs Triangulation">
+<table title="Binning vs Triangulation"> <caption> Table 2. Binning vs Triangulation Interpolation </caption>
 <thead>
 <th> Interpolation Type </th>
 <th> Description </th>
@@ -251,9 +251,9 @@
 </tbody>
 </table> <br>
   
-<p> Leave the parameter as default with "Binning". Notice that if you switch between "Binning" and "Triangulation", the parameters below them change. Table ? below summarizes each of the parameters for "Binning". </p> <br>
+<p> Leave the parameter as default with "Binning". Notice that if you switch between "Binning" and "Triangulation", the parameters below them change. Table 3 below summarizes each of the parameters for "Binning". </p> <br>
 
-<table title="Binning Options">
+<table title="Binning Options"> <caption> Table 3. Binning Options </caption>
 <thead>
 <tr>
 <th> Cell Assignment </th>
@@ -283,9 +283,9 @@
 </tbody>  
 </table> <br>
 
-<p> Likewise, Table ? below summarizes each of the parameters for "Triangulation". </p> <br>
+<p> Likewise, Table 4 below summarizes each of the parameters for "Triangulation". </p> <br>
 
-<table title="Triangulation Options">
+<table title="Triangulation Options"><caption> Table 4. Triangulation Options </caption>
 <thead>
 <tr>
 <th> Interpolation Methods </th>
@@ -321,9 +321,9 @@
 
 <p> For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear". These parameters will help preserve the edges of buildings, structures, and trees.  </p> <br>
 
-<p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. Table ? below presents a brief summary of the differences. </p>
+<p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. Table 5 below presents a brief summary of the differences. </p>
 
-<table title="Floating and Integer Valued Rasters">
+<table title="Floating and Integer Valued Rasters"> <caption> Table 5. Floating and Integer Valued Rasters </caption>
 <thead>
 <tr>
 <th> Output Data Type </th>
@@ -344,9 +344,9 @@
 
 <p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
 
-<p> Under the "Environments" tab, there are a few more settings. Pay particular attention to the "Resampling Technique" parameter, as this will affect he appearance of the raster dataset. </p> <br>
+<p> Under the "Environments" tab, there are a few more settings. Pay particular attention to the "Resampling Technique" parameter, as this will affect he appearance of the raster dataset (Table 6). </p> <br>
 
-<table title="Resampling Techniques for Raster Datasets">
+<table title="Resampling Techniques for Raster Datasets"> <caption> Table 6. Resampling Methods for Raster Datasets </caption>
 <thead>
 <tr>
 <th> Method </th>
@@ -373,7 +373,7 @@
 
 <p> Search for the "Hillshade" tool in the geoprocessing toolbox. Like creating a raster dataset, there are a couple parameters to consider when creating a hillshade.  </p> <br>
 
-<table title="Hillshade Dataset Parameters">
+<table title="Hillshade Dataset Parameters"> <caption> Table 7. Hillshade Dataset Creation Parameters </caption>
 <thead>
 <tr>
 <th> Setting </th>
@@ -402,7 +402,7 @@
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/0lEyIJZ.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
-<figcaption> Figure 7. Creating a Hillshade from the Raster Dataset   </figcaption>
+<figcaption> Figure 8. Creating a Hillshade from the Raster Dataset   </figcaption>
 </figure> <br>
 
 <p> With a hillshade created, this concludes the tutorial. Naturally, there are many things that can be done with the hillshade, raster elevation dataset, or the LIDAR data. </p> <br>
