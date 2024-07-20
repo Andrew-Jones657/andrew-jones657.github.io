@@ -188,6 +188,8 @@
 <figcaption> Figure 5. Creating an LAS Dataset   </figcaption>
 </figure> <br>
 
+<h3> Working with a LAS Dataset </h3> <br>
+
 <p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- take some time to observe how these settings display different kinds of information about the physical landscape. </p> <br>
   
 <p> "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
@@ -201,7 +203,7 @@
 
 <h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
 
-<p> As a quick break from the tutorial, these next few steps will describe some parameters used in creating raster datasets.   </p> <br>
+<p> As a quick break from the tutorial, these next few steps will describe some parameters used in creating raster datasets as well as general information.   </p> <br>
 
 <p> For this tutorial, the "Output raster" should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. The .img file format contains a digital representation of an image using tiny pixels organized in a square grid that represent a cell value; the .img file format is owned by ERDAS, a company specializing in remote sensing data capture. Other raster extensions include TIFF, BMP, GIF, GRID, JPG, PNG, or BIL. Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found here https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm </p> 
 
@@ -362,6 +364,8 @@
 </tr>
 </tbody>
 </table>
+
+<h3> Creating a Hillshade from a Raster Dataset </h3> <br>
 
 <p> Search for the "Hillshade" tool in the geoprocessing toolbox. Like creating a raster dataset, there are a couple parameters to consider when creating a hillshade.  </p> <br>
 
