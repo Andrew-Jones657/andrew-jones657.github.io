@@ -160,7 +160,7 @@
 <p> To decompress the LAZ dataset, use the "Convert LAS" tool on ArcGIS Pro. It may be helpful to create a folder for the uncompressed LAS data. Input the LAZ dataset, the target folder for the LAS dataset, set "Compression" to "No Compression", and leave LAS Options as default (Figure 3). Run the tool.  </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/VX7E2pf.jpeg" alt="Decompressing LAZ" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/KTdJ6BD.jpeg" alt="Decompressing LAZ" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Converting LAZ to LAS on ArcGIS Pro   </figcaption>
 </figure> <br>
 
@@ -171,7 +171,7 @@
     <img class="myImages" id="myImg" src="https://i.imgur.com/oWrramV.jpeg" alt= "LAS from a Distance" style="width:100%">
   </div>
   <div class="column">
-    <img class="myImages" id="myImg" src="https://i.imgur.com/j8znyIA.jpeg" alt="LAS up close " style="width:100%">
+    <img class="myImages" id="myImg" src="https://i.imgur.com/ovSiIsL.jpeg" alt="LAS up close " style="width:100%">
   </div>
 </div> 
 
