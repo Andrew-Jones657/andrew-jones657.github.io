@@ -378,7 +378,7 @@
 <p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://imgur.com/BwxGVou" alt="Elevation Raster" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/BwxGVou.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
 <figcaption> Figure 7. The Elevation Raster   </figcaption>
 </figure> <br>
 
