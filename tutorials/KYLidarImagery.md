@@ -201,13 +201,13 @@
 <p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and treetops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/URUnKrx.jpeg" alt="Creating a raster" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/naE0k8d.jpeg" alt="Creating a raster" style="width:100%;max-width:625px">
 <figcaption> Figure 6. Creating a Raster from the LAS Dataset   </figcaption>
 </figure> <br>
 
 <h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
 
-<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. When it comes time to fill in the parameters, I will take a line by line approach and give a brief summary on each of the options.  </p> <br>
+<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. When it comes time to fill in the parameters, I will take a line by line approach and give a brief summary on each of the parameter's options.  </p> <br>
   
 <p> Raster datasets exist in the form of a grid, which is composed of a series of rows and columns. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
 
