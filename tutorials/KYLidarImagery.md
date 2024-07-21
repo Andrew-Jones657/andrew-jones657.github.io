@@ -192,9 +192,9 @@
 
 <p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- observe how these settings display different kinds of information about the physical landscape. </p> <br>
   
-<p> "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and tree tops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
+<p> "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and treetops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
 
-<p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and tree tops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
+<p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and treetops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/URUnKrx.jpeg" alt="Creating a raster" style="width:100%;max-width:625px">
@@ -205,7 +205,7 @@
 
 <p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format.  </p> <br>
   
-<p> Rasters are stored in a grid, which is composed of a series of rows and columns filled with values that create a matrix. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
+<p> Raster datasets exist in the form of a grid, which is composed of a series of rows and columns. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
 
 <p> The amount of data a raster can store depends upon its bit number. An 8-bit raster can contain 255 values, a 16-bit raster can contain 65535 values, and a 32-bit raster can contain 4294967295 values. With the LAS Dataset to Raster tool you created a 32-bit signed raster.  </p> <br>
 
@@ -371,7 +371,7 @@
 </tbody>
 </table>
 
-<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. </p> <br
+<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/BY9TVgk.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
