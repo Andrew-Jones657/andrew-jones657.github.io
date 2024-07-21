@@ -13,6 +13,10 @@
         width: 100%;
         }
 
+  h3{
+  text-align: center;
+  }
+
   figure figcaption {
   text-align: center; 
          }
@@ -184,7 +188,7 @@
 <p> As a side note, if you have multiple LAS files, they could be input and turned into one large LAS dataset. Technically a LAS dataset for all of downtown Bowling Green could be created like this -- it would be time consuming, however. Create the LAS Dataset (Figure 5). </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/sRBNlZv.jpeg" alt="Creating LAS Dataset" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/8uX8Bl5.jpeg" alt="Creating LAS Dataset" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Creating an LAS Dataset   </figcaption>
 </figure> <br>
 
@@ -203,7 +207,7 @@
 
 <h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
 
-<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format.  </p> <br>
+<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. When it comes time to fill in the parameters, I will take a line by line approach and give a brief summary on each of the options.  </p> <br>
   
 <p> Raster datasets exist in the form of a grid, which is composed of a series of rows and columns. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
 
