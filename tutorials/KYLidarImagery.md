@@ -207,7 +207,7 @@
 
 <h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
 
-<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. When it comes time to fill in the parameters, I will take a line by line approach and give a brief summary on each of the parameter's options.  </p> <br>
+<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. When it comes time to fill in the parameters, I will take a line by line approach to the geoprocessing tool and give a brief summary on each of the parameter's options.  </p> <br>
   
 <p> Raster datasets exist in the form of a grid, which is composed of a series of rows and columns. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
 
@@ -215,7 +215,7 @@
 
 <p> Raster data also comes in signed and unsigned data formats. Signed rasters can contain negative values, whereas unsigned rasters contain only positive values. An 8-bit unsigned raster's values range from 0 to 255, whereas an 8-bit signed raster's values range from -128 to 127. </p> <br>
 
-<p> At this point we can look at and discuss each parameter in Figure 6. Raster extensions include TIFF, BMP, GIF, IMG, GRID, JPG, PNG, or BIL. For this tutorial, the "Output raster" (Figure 6) should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. IMG is a proprietary file format owned by ERDAS, a company specializing in remote sensing data capture -- IMG rasters tend to be of high-quality at the cost of more storage space.  Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found <a href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm"> here</a>. </p> <br>
+<p> At this point, we can look at and discuss each parameter in Figure 6. Raster extensions include TIFF, BMP, GIF, IMG, GRID, JPG, PNG, or BIL. For this tutorial, the "Output raster" (Figure 6) should be a .img raster file -- simply add the ".img" file extension to the end of the "Output Raster" name. IMG is a proprietary file format owned by ERDAS, a company specializing in remote sensing data capture -- IMG rasters tend to be of high-quality at the cost of more storage space.  Table 1 below presents a basic delineation of uses for different file formats. An exhaustive list can be found <a href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm"> here</a>. </p> <br>
 
 <table title="Image File Extensions as Raster Datasets"> <caption> Table 1. Image Files as Raster Datasets </caption>
 <thead>
@@ -378,7 +378,7 @@
 <p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/BY9TVgk.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://imgur.com/BwxGVou" alt="Elevation Raster" style="width:100%;max-width:625px">
 <figcaption> Figure 7. The Elevation Raster   </figcaption>
 </figure> <br>
 
