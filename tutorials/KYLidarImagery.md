@@ -375,7 +375,9 @@
 </tbody>
 </table>
 
-<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. </p> <br>
+<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. Notice that it is fairly pixelated and has stark edges around trees and structures -- this is due to the parameters that were selected in its creation. If more intensive resampling methods and cell assignment methods were used, then there would have been a smoother gradient between elevation values.  </p> <br>
+  
+<p> Visually analyzing the raster, there are a few notable observations. The top-left part of the raster has bright white structures -- these are buildings on Western Kentucky University's (WKU) campus, which is situated on the historic Vinegar Hill. The bright white color denotes a higher elevation. East of the Western Kentucky University's campus are some high elevation tree tops in the College Hill Historic District, which connects to Resevoir Hill (not included in the raster). Looking south, there is a solid black line dotted with moderate sized structures that cuts the raster in half somewhat diagonally. This is the US-31W Bypass, which was once the edge of Bowling Green in the 1950s and 1960s -- it now serves as a major road in the middle of Bowling Green. In the south central part of the raster, there is a large structure that sits lower than WKU. This is the TC Cherry Elementary School, which serves most of downtown and southern Bowling Green.       </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/BwxGVou.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
