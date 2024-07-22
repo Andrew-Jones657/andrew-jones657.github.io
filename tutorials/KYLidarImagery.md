@@ -143,7 +143,7 @@
 
 <p> LIDAR data is incredibly important because it allows us to create detailed and accurate maps of the Earth's surface and objects on it. By using laser beams to measure distances, LIDAR can create 3D models of forests, cities, and even the ocean floor with high precision. This data is crucial for urban planning, managing natural resources, studying climate change, and understanding geological processes. It helps scientists, engineers, and planners make informed decisions about infrastructure, conservation efforts, disaster response, and more. In essence, LIDAR data provides a valuable perspective on our world that helps us protect the environment, plan for the future, and improve our understanding of Earth's complex systems. </p> <br>
 
-<p> In this tutorial, we will be downloading, processing, and modeling LIDAR data from KYFromAbove -- a government sponsored website that is "focused on building and maintaining a current basemap for the Commonwealth that can meet the needs of its users at the state, federal, local, and regional level" (KYFromAbove, 2024). The goal is to create hillshade data that demonstrates the elevation change in a particular LIDAR tile. To provide additional clarity, this tutorial is focused on the workflow for downloading and using LIDAR data. If you wish to use LIDAR data outside of Kentucky, the same general steps apply. Some possible sources of LIDAR data can be found <a href="https://gisgeography.com/top-6-free-lidar-data-sources/"> here</a>. </p> <br>
+<p> In this tutorial, we will be downloading, processing, and modeling LIDAR data from KYFromAbove -- a government sponsored geoportal that is "focused on building and maintaining a current basemap for the Commonwealth that can meet the needs of its users at the state, federal, local, and regional level" (KYFromAbove, 2024). The goal is to create hillshade data that demonstrates the elevation change and lighting in one particular LIDAR tile. To provide additional clarity, this tutorial is focused on the workflow for downloading and using LIDAR data. If you wish to use LIDAR data outside of Kentucky, the same general steps apply. Some possible sources of LIDAR data can be found <a href="https://gisgeography.com/top-6-free-lidar-data-sources/"> here</a>. </p> <br>
   
 <p> <em> Do note that you will need the "Spatial Analyst" extension for ArcGIS Pro to create a hillshade. If you do not have that extension enabled, then you can export the intermediary raster dataset to QGIS to create a hillshade.  </em> </p> <br>
 
@@ -200,7 +200,7 @@
   
 <p> "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and treetops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
 
-<p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and treetops. Search for the LAS Dataset to Raster tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
+<p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and treetops. Search for and select the "LAS Dataset to Raster" tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/naE0k8d.jpeg" alt="Creating a raster" style="width:100%;max-width:625px">
@@ -352,15 +352,38 @@
 
 
 
-<p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
+<p> "Sampling Type" has two choices "Cell Size" and "Observations" (Table 6). Both of these options have the "Sampling Value" and "Z factor" sub options. Since we have a square grid of LIDAR data, select "Cell Size" as the "Sampling Type". </p> <br>
+  
+<p> For "Sampling Value", a lower sampling value produce a higher resolution raster -- it can be left on the default value of ten, though you may wish to plug in a couple of other values (such as 1, 5, 25, 100) and run the tool to see how the resolution of the output raster is affected. </p> <br>
+  
+<p> The "Z factor" is used to convert x and y units to a z unit that has a different unit of measurement. If, for example, the x and y units are in feet, and the z coordinate is in meters, the z factor would be 3.28084 to convert the z units into feet from meters. It is also used as a measure of vertical exageration in 3D modeling to make the verticality of features more striking. The Z factor can be left at the default value of one since we do not need to convert measurements or prepare any 3D models.  </p> <br>
+
+<table> <caption> Table 6. Sampling Types for Raster Datasets </caption>
+<thead>
+<tr>
+<th> Sampling Type </th>
+<th> Description </th>
+</tr>  
+</thead>
+<tbody>
+<tr>
+<td> Observations </td>
+<td> The number of cells that divide the lengthiest side of the LAS dataset extent will be used. This method is ideal if the raster is rectangular rather than square shaped. </td>
+</tr>
+<tr>
+<td> Cell Size </td>
+<td> The cell size of the output raster will be used. This is the default. </td>
+</tr>
+</tbody>
+</table> <br>
 
 <p> Under the "Environments" tab, there are a few more settings. "Output Coordinates", "Raster Analysis", and "Geodatabase" are fairly straightforward, as they refer to the output coordinate system of the raster, how the rasters inputs and snap size should be considered, and whether there is a specific geodatabase configuration keyword. Pay particular attention to the "Raster Storage" parameter heading, as this will affect he appearance of the raster dataset. The "Pyramid" option is checked by default: building pyramids may expedite the drawing speed of the raster dataset. Pyramids are essentially down-sampled versions of the raster dataset, which can then be displayed quicker on ArcGIS Pro. If the user zooms in, the details from the original raster will appear. This is useful for large rasters that would otherwise take a long time to display since ArcGIS does not need to load every detail at once.   </p> <br>
 
 <p> Specific "Pyramid levels" can also be input. If the field is left empty, then all pyramids will be built. If a specific number is input, then that specific number of pyramisd will be built. Below "Pyramid levels" is the option to "Skip first", which by default is unchecked -- this would skip building the first pyramid level of the raster.     </p> <br>
 
-<p> The "Resampling Techniques" are described in Table 6 below. This affects how the values of neighboring cells are used to assign a value to the output raster cell.  </p> <br>
+<p> The "Resampling Techniques" are described in Table 7 below. This affects how the values of neighboring cells are used to assign a value to the output raster cell.  </p> <br>
 
-<table title="Resampling Techniques for Raster Datasets"> <caption> Table 6. Resampling Methods for Raster Datasets </caption>
+<table title="Resampling Techniques for Raster Datasets"> <caption> Table 7. Resampling Methods for Raster Datasets </caption>
 <thead>
 <tr>
 <th> Method </th>
@@ -388,6 +411,8 @@
 <p> Finally, these is the "Compression" field. Typically this can be left on the default value "LZ77", as that method of compression is compatible with a wide range of raster types and it preserves all cell values in the raster. A detailed breakdown on raster compression can be found <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm"> here</a>.  </p> <br>
 
 <p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. Notice that it is fairly pixelated and has stark edges around trees and structures -- this is due to the parameters that were selected in its creation. If more intensive resampling methods and cell assignment methods were used, then there would have been a smoother gradient between elevation values.   </p> <br>
+
+<p> Like the LAS Dataset, if you select the raster that was created in the Table of Contents, you will notice that there is a unique "Raster Layer" option by the top ribbon of ArcGIS Pro. Here you can alter the Symbology method, Stretch Type, and Resampling Type. Nothing here needs alteration, but it is worthwhile to look through and test out what these options do.  </p>
   
 <p> Visually analyzing the raster, there are a few notable observations. The top-left part of the raster has bright white structures -- these are buildings on Western Kentucky University's (WKU) campus, which is situated on the historic Vinegar Hill. The bright white color denotes a higher elevation. East of the Western Kentucky University's campus are some high elevation tree tops in the College Hill Historic District, which connects to Resevoir Hill (not included in the raster). Looking south, there is a solid black line dotted with moderate sized structures that cuts the raster in half somewhat diagonally. This is the US-31W Bypass, which was once the edge of Bowling Green in the 1950s and 1960s -- it now serves as a major road in the middle of Bowling Green. In the south central part of the raster, there is a large structure that sits lower than WKU (as it is darker in color). This is the TC Cherry Elementary School, which serves most of downtown and southern Bowling Green.       </p> <br>
 
@@ -401,9 +426,9 @@
 
 <h3> Creating a Hillshade from a Raster Dataset </h3> <br>
 
-<p> Search for the "Hillshade" tool in the geoprocessing toolbox. Like creating a raster dataset, there are a couple parameters to consider when creating a hillshade.  </p> <br>
+<p> Search for the "Hillshade" tool in the geoprocessing toolbox. Like creating a raster dataset, there are a couple parameters to consider when creating a hillshade (Table 8).  </p> <br>
 
-<table title="Hillshade Dataset Parameters"> <caption> Table 7. Hillshade Dataset Creation Parameters </caption>
+<table title="Hillshade Dataset Parameters"> <caption> Table 8. Hillshade Dataset Creation Parameters </caption>
 <thead>
 <tr>
 <th> Setting </th>
@@ -439,7 +464,7 @@
 <p> With a hillshade created, this concludes the tutorial. Naturally, there are many things that can be done with the hillshade, raster elevation dataset, or the LIDAR data. </p> <br>
 
 
-<h3> List of Figures </h3> <br>
+<h3> List of Figures and Tables </h3> <br>
 <p> Figure 1. Finding Point Cloud Data on KYFromAbove </p>
 <p> Figure 2. Selecting a LIDAR Index Grid to Download on the ArcGIS Web Map  </p>
 <p> Figure 3. Converting LAZ to LAS on ArcGIS Pro  </p>
@@ -448,6 +473,14 @@
 <p> Figure 6. Creating a Raster from the LAS Dataset </p>
 <p> Figure 7. The Elevation Raster </p>
 <p> Figure 8. Creating a Hillshade from the Raster Dataset </p> <br>
+
+<p> Table 1. </p>
+<p> Table 2. </p>
+<p> Table 3. </p>
+<p> Table 4. </p>
+<p> Table 5. </p>
+<p> Table 6. </p>
+<p> Table 7. </p> <br>
 
 <h3> References </h3> <br>
 
