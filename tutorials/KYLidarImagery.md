@@ -350,9 +350,15 @@
 </tbody>
 </table> <br>
 
+
+
 <p> "Sampling Type" can be left on the default "Cell Size" option. The "Sampling Value" and "Z factor" can be left on their respective default values as well. </p> <br>
 
-<p> Under the "Environments" tab, there are a few more settings. "Output Coordinates", "Raster Analysis", and "Geodatabase" are fairly straightforward, as they refer to the output coordinate system of the raster, how the rasters inputs and snap size should be considered, and whether there is a specific geodatabase configuration keyword. Pay particular attention to the "Raster Storage" parameter heading, as this will affect he appearance of the raster dataset (Table 6). </p> <br>
+<p> Under the "Environments" tab, there are a few more settings. "Output Coordinates", "Raster Analysis", and "Geodatabase" are fairly straightforward, as they refer to the output coordinate system of the raster, how the rasters inputs and snap size should be considered, and whether there is a specific geodatabase configuration keyword. Pay particular attention to the "Raster Storage" parameter heading, as this will affect he appearance of the raster dataset. The "Pyramid" option is checked by default: building pyramids may expedite the drawing speed of the raster dataset. Pyramids are essentially down-sampled versions of the raster dataset, which can then be displayed quicker on ArcGIS Pro. If the user zooms in, the details from the original raster will appear. This is useful for large rasters that would otherwise take a long time to display since ArcGIS does not need to load every detail at once.   </p> <br>
+
+<p> Specific "Pyramid levels" can also be input. If the field is left empty, then all pyramids will be built. If a specific number is input, then that specific number of pyramisd will be built. Below "Pyramid levels" is the option to "Skip first", which by default is unchecked -- this would skip building the first pyramid level of the raster.     </p> <br>
+
+<p> The "Resampling Techniques" are described in Table 6 below. This affects how the values of neighboring cells are used to assign a value to the output raster cell.  </p> <br>
 
 <table title="Resampling Techniques for Raster Datasets"> <caption> Table 6. Resampling Methods for Raster Datasets </caption>
 <thead>
@@ -377,9 +383,11 @@
 </tbody>
 </table>
 
-<p>  </p>
+<p> "Raster Statistics" is checked by default. Raster statistics are standard descriptive statistics (i.e. mean, maximum, minimum, standard deviation) calculated from the cell values of each band in a raster. These statistics are necessary for certain operations, such as applying a contrast stretch or classifying data. Even if it is unchecked, raster statistics can still be calculated later. Below are the "X skip factor", "Y skip factor", and "Statistics ignore value(s)". The X and Y skip factors, like the names imply, impose a certain skip distance between samples on the x and y axis. This can be used to limit or manage samples during raster statistics creation. Statistics ignore value(s) is a semi colon separated list of values that should be left out of raster statistics.  </p> <br>
 
-<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. Notice that it is fairly pixelated and has stark edges around trees and structures -- this is due to the parameters that were selected in its creation. If more intensive resampling methods and cell assignment methods were used, then there would have been a smoother gradient between elevation values.  </p> <br>
+<p> Finally, these is the "Compression" field. Typically this can be left on the default value "LZ77", as that method of compression is compatible with a wide range of raster types and it preserves all cell values in the raster. A detailed breakdown on raster compression can be found <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm"> here</a>.  </p> <br>
+
+<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. Notice that it is fairly pixelated and has stark edges around trees and structures -- this is due to the parameters that were selected in its creation. If more intensive resampling methods and cell assignment methods were used, then there would have been a smoother gradient between elevation values.   </p> <br>
   
 <p> Visually analyzing the raster, there are a few notable observations. The top-left part of the raster has bright white structures -- these are buildings on Western Kentucky University's (WKU) campus, which is situated on the historic Vinegar Hill. The bright white color denotes a higher elevation. East of the Western Kentucky University's campus are some high elevation tree tops in the College Hill Historic District, which connects to Resevoir Hill (not included in the raster). Looking south, there is a solid black line dotted with moderate sized structures that cuts the raster in half somewhat diagonally. This is the US-31W Bypass, which was once the edge of Bowling Green in the 1950s and 1960s -- it now serves as a major road in the middle of Bowling Green. In the south central part of the raster, there is a large structure that sits lower than WKU (as it is darker in color). This is the TC Cherry Elementary School, which serves most of downtown and southern Bowling Green.       </p> <br>
 
@@ -424,7 +432,7 @@
 </table> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/0lEyIJZ.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/M4OST2t.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
 <figcaption> Figure 8. Creating a Hillshade from the Raster Dataset   </figcaption>
 </figure> <br>
 
@@ -448,6 +456,8 @@
 <p class="reference"> <em>Raster file formats—ArcGIS Pro | Documentation</em>. (n.d.). <a href="https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm" target="_blank" rel="nofollow noopener noreferrer"> https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/supported-raster-dataset-file-formats.htm</a> </p>
 
 <p class="reference"> GISGeography. (2024, July 12).<em> Top 6 Free LiDAR data Sources</em>. GIS Geography. <a href="https://gisgeography.com/top-6-free-lidar-data-sources/" target="_blank" rel="nofollow noopener noreferrer"> https://gisgeography.com/top-6-free-lidar-data-sources/</a> </p>
+
+<p class="reference">
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
