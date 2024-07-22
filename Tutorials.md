@@ -64,7 +64,7 @@
 </figure> <br> <br> 
 
 
-<p> Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map (WIP) </p> <br>
+<p> <a href="/tutorials/LeafletSimple">Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map (WIP)</a> </p> <br>
 
 <p> Hosting GIS Data on the Cloud: A Guide to Setting up Geoserver on Amazon Web Services (WIP) </p> <br>
 
