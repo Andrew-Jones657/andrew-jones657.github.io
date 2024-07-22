@@ -40,16 +40,15 @@
 <p> In this tutorial, we will be creating a simple Leaflet web map. The aim is to incorporate some of Leaflet's primary features: we weill use a basemap, markers, renderes to color in data, and pop-up features to make the map more informative. </p> <br>
 
 <p> Generally, web maps have three core components: html, css, and javascript. The html is often a set of links that allow the web map to be displayed on the web page. For Leaflet, this is as simple as putting these two snippets of code in the head of your webpage: </p>
-    <code>  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+<p> <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
+     crossorigin=""/> </p>
 
- <!-- Make sure you put this AFTER Leaflet's CSS -->
-
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ <p> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>   
-</code> 
+     crossorigin=""></script> </p> 
+
+<p> Beyond the links, a "div" element is usually used to create the map container.  </p> <br> 
   
 </body>
 
