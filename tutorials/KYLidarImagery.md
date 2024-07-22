@@ -463,8 +463,16 @@
 </tbody>
 </table> <br>
 
+<p> The default azimuth value of 315° may seem oddly specific. There is a reason for this, however, grounded in psychology. We tend to perceive faces as lit from above and with somewhat of a leftward bias. If something is lit from below, this can create the "Crater Illusion effect", which can seemingly render elevated structures as depressions. A simple example using dots can be seen <a href="http://www.psy.ritsumei.ac.jp/akitaoka/cratorRamachandran01.jpg">here</a>. It is best to leave azimuth at the default value unless there is a good reason to alter it.  </p> <br>
+
+<p> The altitude of the lighting source can be left as default, or it can be edited to simulate the current position of the sun. Information on the current position of the sun relative to your location of choice can be calculated <a href="https://www.suncalc.org/"> here</a>. </p> <br>
+
+<p> The choice to model shadows is mainly an aesthetic choice. Feel free to enable it to see if it is pertinent to your data. I found it slightly districting, so I did not use it. </p> <br>
+
+<p> The default Z factor is set to z unit into feet from meters, which will exaggerate the features somewhat. For the purposes of the tutorial, I left it at the default value. </p> <br>
+
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/M4OST2t.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/mJPLxZU.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
 <figcaption> Figure 9. Creating a Hillshade from the Raster Dataset   </figcaption>
 </figure> <br>
 
@@ -478,18 +486,18 @@
 <p> Figure 4. LAS Data from a Distance and LAS Data up close </p>
 <p> Figure 5. Creating a LAS Dataset </p>
 <p> Figure 6. Creating a Raster from the LAS Dataset </p>
-<p> Figure 7.  </p>
-<p> Figure 8. Looking at the Environment Settings of the Create Raster from LAS Dataset Tool </p>
-<p> Figure 9. The Elevation Raster </p> 
-<p> Figure 10. Creating a Hillshade from the Raster Dataset </p> <br>
+<p> Figure 7. Looking at the Environment Settings of the Create Raster from LAS Dataset Tool   </p>
+<p> Figure 8. The Elevation Raster  </p> 
+<p> Figure 9. Creating a Hillshade from the Raster Dataset </p> <br>
 
-<p> Table 1. </p>
-<p> Table 2. </p>
-<p> Table 3. </p>
-<p> Table 4. </p>
-<p> Table 5. </p>
-<p> Table 6. </p>
-<p> Table 7. </p> <br>
+<p> Table 1. Image Files as Raster Datasets </p>
+<p> Table 2. Binning vs Triangulation Interpolation </p>
+<p> Table 3. Binning Options </p>
+<p> Table 4. Triangulation Options </p>
+<p> Table 5. Floating and Integer Valued Rasters  </p>
+<p> Table 6. Sampling Types for Raster Datasets  </p>
+<p> Table 7. Resampling Methods for Raster Datasets  </p> 
+<p> Table 8. Hillshade Dataset Creation Parameters  </p><br>
 
 <h3> References </h3> <br>
 
@@ -500,6 +508,10 @@
 <p class="reference"> GISGeography. (2024, July 12).<em> Top 6 Free LiDAR data Sources</em>. GIS Geography. <a href="https://gisgeography.com/top-6-free-lidar-data-sources/" target="_blank" rel="nofollow noopener noreferrer"> https://gisgeography.com/top-6-free-lidar-data-sources/</a> </p>
 
 <p class="reference"><em> Raster Compression—ArcMap | Documentation</em>. (n.d.). <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm" target="_blank" rel="nofollow noopener noreferrer">  https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm</a> </p>
+
+<p class="reference"> 北岡明佳の錯視のページ. (n.d.). <a href="http://www.psy.ritsumei.ac.jp/akitaoka/cratorRamachandran01.jpg" target="_blank" rel="nofollow noopener noreferrer"> http://www.psy.ritsumei.ac.jp/akitaoka/cratorRamachandran01.jpg</a> </p>
+
+<p class="reference"> <em>SunCalc sun position- und sun phases calculator</em>. (n.d.). https://www.suncalc.org/
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
