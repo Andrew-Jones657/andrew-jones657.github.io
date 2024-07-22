@@ -380,7 +380,7 @@
 <p> Under the "Environments" tab, there are a few more settings (Figure ?). </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/BwxGVou.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/xvynuS6.jpeg" alt="Environments" style="width:100%;max-width:625px">
 <figcaption> Figure 7. Looking at the Environment Settings of the Create Raster from LAS Dataset Tool     </figcaption>
 </figure> <br>
   
