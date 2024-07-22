@@ -457,7 +457,7 @@
 
 <p class="reference"> GISGeography. (2024, July 12).<em> Top 6 Free LiDAR data Sources</em>. GIS Geography. <a href="https://gisgeography.com/top-6-free-lidar-data-sources/" target="_blank" rel="nofollow noopener noreferrer"> https://gisgeography.com/top-6-free-lidar-data-sources/</a> </p>
 
-<p class="reference">
+<p class="reference"><em> Raster Compression—ArcMap | Documentation</em>. (n.d.). <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm" target="_blank" rel="nofollow noopener noreferrer">  https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm</a> </p>
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
