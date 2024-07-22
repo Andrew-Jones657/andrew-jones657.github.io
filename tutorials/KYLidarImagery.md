@@ -377,7 +377,14 @@
 </tbody>
 </table> <br>
 
-<p> Under the "Environments" tab, there are a few more settings. "Output Coordinates", "Raster Analysis", and "Geodatabase" are fairly straightforward, as they refer to the output coordinate system of the raster, how the rasters inputs and snap size should be considered, and whether there is a specific geodatabase configuration keyword. Pay particular attention to the "Raster Storage" parameter heading, as this will affect he appearance of the raster dataset. The "Pyramid" option is checked by default: building pyramids may expedite the drawing speed of the raster dataset. Pyramids are essentially down-sampled versions of the raster dataset, which can then be displayed quicker on ArcGIS Pro. If the user zooms in, the details from the original raster will appear. This is useful for large rasters that would otherwise take a long time to display since ArcGIS does not need to load every detail at once.   </p> <br>
+<p> Under the "Environments" tab, there are a few more settings (Figure ?). </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/BwxGVou.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
+<figcaption> Figure 7. Looking at the Environment Settings of the Create Raster from LAS Dataset Tool     </figcaption>
+</figure> <br>
+  
+<p> "Output Coordinates", "Raster Analysis", and "Geodatabase" are fairly straightforward, as they refer to the output coordinate system of the raster, how the rasters inputs and snap size should be considered, and whether there is a specific geodatabase configuration keyword. Pay particular attention to the "Raster Storage" parameter heading, as this will affect he appearance of the raster dataset. The "Pyramid" option is checked by default: building pyramids may expedite the drawing speed of the raster dataset. Pyramids are essentially down-sampled versions of the raster dataset, which can then be displayed quicker on ArcGIS Pro. If the user zooms in, the details from the original raster will appear. This is useful for large rasters that would otherwise take a long time to display since ArcGIS does not need to load every detail at once.   </p> <br>
 
 <p> Specific "Pyramid levels" can also be input. If the field is left empty, then all pyramids will be built. If a specific number is input, then that specific number of pyramisd will be built. Below "Pyramid levels" is the option to "Skip first", which by default is unchecked -- this would skip building the first pyramid level of the raster.     </p> <br>
 
@@ -417,8 +424,8 @@
 <p> Visually analyzing the raster, there are a few notable observations. The top-left part of the raster has bright white structures -- these are buildings on Western Kentucky University's (WKU) campus, which is situated on the historic Vinegar Hill. The bright white color denotes a higher elevation. East of the Western Kentucky University's campus are some high elevation tree tops in the College Hill Historic District, which connects to Resevoir Hill (not included in the raster). Looking south, there is a solid black line dotted with moderate sized structures that cuts the raster in half somewhat diagonally. This is the US-31W Bypass, which was once the edge of Bowling Green in the 1950s and 1960s -- it now serves as a major road in the middle of Bowling Green. In the south central part of the raster, there is a large structure that sits lower than WKU (as it is darker in color). This is the TC Cherry Elementary School, which serves most of downtown and southern Bowling Green.       </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/BwxGVou.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
-<figcaption> Figure 7. The Elevation Raster   </figcaption>
+<img class="myImages" id="myImg" src="https://i.imgur.com/enetd1E.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
+<figcaption> Figure 8. The Elevation Raster   </figcaption>
 </figure> <br>
 
 
@@ -458,7 +465,7 @@
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/M4OST2t.jpeg" alt="Creating a Hillshade" style="width:100%;max-width:625px">
-<figcaption> Figure 8. Creating a Hillshade from the Raster Dataset   </figcaption>
+<figcaption> Figure 9. Creating a Hillshade from the Raster Dataset   </figcaption>
 </figure> <br>
 
 <p> With a hillshade created, this concludes the tutorial. Naturally, there are many things that can be done with the hillshade, raster elevation dataset, or the LIDAR data. </p> <br>
@@ -471,8 +478,10 @@
 <p> Figure 4. LAS Data from a Distance and LAS Data up close </p>
 <p> Figure 5. Creating a LAS Dataset </p>
 <p> Figure 6. Creating a Raster from the LAS Dataset </p>
-<p> Figure 7. The Elevation Raster </p>
-<p> Figure 8. Creating a Hillshade from the Raster Dataset </p> <br>
+<p> Figure 7.  </p>
+<p> Figure 8. Looking at the Environment Settings of the Create Raster from LAS Dataset Tool </p>
+<p> Figure 9. The Elevation Raster </p> 
+<p> Figure 10. Creating a Hillshade from the Raster Dataset </p> <br>
 
 <p> Table 1. </p>
 <p> Table 2. </p>
