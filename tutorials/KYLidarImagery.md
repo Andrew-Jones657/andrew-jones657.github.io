@@ -511,7 +511,7 @@
 
 <p class="reference"> 北岡明佳の錯視のページ. (n.d.). <a href="http://www.psy.ritsumei.ac.jp/akitaoka/cratorRamachandran01.jpg" target="_blank" rel="nofollow noopener noreferrer"> http://www.psy.ritsumei.ac.jp/akitaoka/cratorRamachandran01.jpg</a> </p>
 
-<p class="reference"> <em>SunCalc sun position- und sun phases calculator</em>. (n.d.). https://www.suncalc.org/
+<p class="reference"> <em>SunCalc sun position- und sun phases calculator</em>. (n.d.). <a href="https://www.suncalc.org/">https://www.suncalc.org/</a> </p>
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
