@@ -96,9 +96,14 @@
 
 <h3> Going Back and Adding More Features </h3> <br>
 
+<p> So far the outline of the states is displayed and Leaflet is functioning, which is a good starting point. This map is not particularly useful yet, as it does not visualize data or convey information to the viewer. </p>
 
-
-
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWMjmMY" data-pen-title="Leaflet Tutorial Step 2" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/aj65714/pen/MWMjmMY">
+  Leaflet Tutorial Step 2</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 <h3> References </h3>
