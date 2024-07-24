@@ -60,6 +60,11 @@
 <h3> The Basic Web Map on Codepen </h3> <br>
 
 <h3> Going Back and Adding More Features </h3> <br>
+
+
+<h3> References </h3>
+
+<p> https://leafletjs.com/examples/choropleth/ </p>
   
 </body>
 
