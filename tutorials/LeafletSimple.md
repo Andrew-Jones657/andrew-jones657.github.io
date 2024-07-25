@@ -175,6 +175,50 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a chloropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p> <br>
 
+<p> Starting with some color for the map, we can create this using two functions. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. The second function serves as a general renderer that uses the first to fill the color. </p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+function getColor(d) {
+    		return d > 24.3  ? '#4a1486' :
+           	       d > 22.8  ? '#6a51a3' :
+       		       d > 21.7  ? '#807dba' :
+           	       d > 20.5  ? '#9e9ac8' :
+           	       d > 19    ? '#bcbddc' :
+           	       d > 16.7  ? '#dadaeb' :
+           	       d > 13.4  ? '#f2f0f7' :
+                      '#fcfbfd';
+	}
+
+function style(feature) {
+    		return {
+        		weight: 2,
+        		opacity: 1,
+        		color: 'white',
+        		dashArray: '3',
+        		fillOpacity: 0.7,
+        		fillColor: getColor(feature.properties.PER_BACH)
+          	};
+	}
+
+</code></pre></div></div> <br>
+
+<p> We can also create a template for pop ups. This will allow users to see the percentage of adults over 25 holding a Bachelor's degree or higher for each state.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+	// Create popups and bind the Name and Percent Bachelor Degree Holder fields from the geojson file to the popups
+    function onEachFeature(feature, layer) {
+  		    if (feature.properties) {
+                		layer.bindPopup(
+					'Percent of adults over the age of 25 in' + ' ' + feature.properties.NAME + ' ' + 'holding a Bachelors degree or higher:' + ' ' + feature.properties.PER_BACH + '%' +
+                    			'</br>' + ' ' + '</br>' +
+                    'This measurement has a ±' + ' ' + feature.properties.MOE + '%' + ' ' + 'margin of error.');
+  	                }
+    }
+
+</code></pre></div></div> <br>
+
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWMjmMY" data-pen-title="Leaflet Tutorial Step 2" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/MWMjmMY">
   Leaflet Tutorial Step 2</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
