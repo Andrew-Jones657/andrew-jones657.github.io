@@ -43,18 +43,36 @@
 
 <p> Generally, web maps have three core components: html, css, and javascript. The html is often a set of links that allow the web map to be displayed on the web page. For Leaflet, this is as simple as putting these two snippets of code in the head of your webpage: </p> <br> 
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function style(feature) {
-	return {
-		fillColor: getColor(feature.properties.density),
-		weight: 2,
-		opacity: 1,
-		color: 'white',
-		dashArray: '3',
-		fillOpacity: 0.7
-	};
-}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Preview</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- This script link estblishes the Leaflet CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 
-L.geoJson(statesData, {style: style}).addTo(map);
+ <!-- This script link establishes Leaflet itself. It has to come after the CSS link -->
+
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  
+<!-- This script link establishes Leaflet AJAX, which allows for easy access and use of a .js or .geojson file on the internet-->
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+  
+</head>
+  
+ 
+<body>
+  <div id="map"></div>  
+</body>
+</html>
+	
 </code></pre></div></div>
 
 <code> 
