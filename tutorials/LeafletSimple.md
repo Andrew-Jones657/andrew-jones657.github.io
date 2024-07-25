@@ -73,49 +73,29 @@
 </body>
 </html>
 	
-</code></pre></div></div>
-
-<code> 
-
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Leaflet Preview</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- <!-- This script link estblishes the Leaflet CSS -->
- 
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-
- <!-- This script link establishes Leaflet itself. It has to come after the CSS link -->
-
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
-  
-<!-- This script link establishes Leaflet AJAX, which allows for easy access and use of a .js or .geojson file on the internet-->
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
-  
-</head>
-  
-<!-- The <body> portion of the html should contain the <div> element with the map -->
-<body>
-  <div id="map"></div>  
-</body>
-</html>
-
-</code>
+</code></pre></div></div> <br>
 
 <p> Beyond the links, a "div" element is usually used to create the map container.  </p> <br> 
 
-<h3> Basic Javascript for Leaflet </h3> <br>
+<h3> Basic Javascript for Leaflet </h3> <br> <br>
 
-<p> </p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+// Create a map object and set the view (latitude-longitude) and zoom level
+var map = L.map('map').setView([40.0491, -97.965], 4);
+
+// Load in a Open Street Map tile layer to serve as a basemap and add it to the map
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// the url for the geojson file
+const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/LeafletTutorial/US_States_Bach.geojson";
+   
+// Loads the geojson layer from the url into the map 
+const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
+
+</code></pre></div></div> <br>
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
@@ -124,28 +104,28 @@
   Leaflet Tutorial 1</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br> 
 
 <h3> Going Back and Adding More Features </h3> <br>
 
-<p> So far the outline of the states is displayed and Leaflet is functioning, which is a good starting point. This map is not particularly useful yet, as it does not visualize data or convey information to the viewer. </p>
+<p> So far the outline of the states is displayed and Leaflet is functioning, which is a good starting point. This map is not particularly useful yet, as it does not visualize data or convey information to the viewer. </p> <br>
 
-<p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a chloropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p>
+<p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a chloropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWMjmMY" data-pen-title="Leaflet Tutorial Step 2" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/MWMjmMY">
   Leaflet Tutorial Step 2</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
-<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. </p>
+<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. </p> <br>
 
-<h3> The Final Product </h3>
+<h3> The Final Product </h3> <br>
 
-<h3> References </h3>
+<h3> References </h3> <br>
 
-<p> https://leafletjs.com/examples/choropleth/ </p>
+<p> https://leafletjs.com/examples/choropleth/ </p> 
   
 </body>
 
