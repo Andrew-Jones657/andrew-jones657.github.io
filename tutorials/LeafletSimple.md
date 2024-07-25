@@ -43,6 +43,20 @@
 
 <p> Generally, web maps have three core components: html, css, and javascript. The html is often a set of links that allow the web map to be displayed on the web page. For Leaflet, this is as simple as putting these two snippets of code in the head of your webpage: </p> <br> 
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function style(feature) {
+	return {
+		fillColor: getColor(feature.properties.density),
+		weight: 2,
+		opacity: 1,
+		color: 'white',
+		dashArray: '3',
+		fillOpacity: 0.7
+	};
+}
+
+L.geoJson(statesData, {style: style}).addTo(map);
+</code></pre></div></div>
+
 <code> 
 
 
@@ -105,6 +119,7 @@
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+<h3> The Final Product </h3>
 
 <h3> References </h3>
 
