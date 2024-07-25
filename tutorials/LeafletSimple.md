@@ -13,6 +13,94 @@
        width: 100%;
        height: 100%;
     }
+        #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+        }
+    
+  #myImg:hover {
+  opacity: 0.7;
+        }
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-height: 650px;
+  max-width: 900px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
   </style>
   
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -110,6 +198,15 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br> 
 
+<p> Here is how the entire script looks. </p> <br>
+
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/O3zmqLB.jpeg" alt="Leaflet Step 1 " style="width:100%;max-width:625px">
+<figcaption> Figure 1. The Basic Leaflet Web Map </figcaption>
+</figure> <br>
+
+
 <h3> Going Back and Adding More Features </h3> <br>
 
 <p> So far the outline of the states is displayed and Leaflet is functioning, which is a good starting point. This map is not particularly useful yet, as it does not visualize data or convey information to the viewer. </p> <br>
@@ -127,9 +224,47 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> The Final Product </h3> <br>
 
+<h3> List of Figures and Tables </h3>
+<p> Figure . </p>
+
 <h3> References </h3> <br>
 
 <p> https://leafletjs.com/examples/choropleth/ </p> 
+
+<div id="myModal" class="modal">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="img01">
+   <div id="caption"></div>   
+</div> <br>
+
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
   
 </body>
 
