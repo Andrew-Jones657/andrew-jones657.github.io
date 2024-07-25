@@ -130,12 +130,16 @@
 
 <p> So far the outline of the states is displayed and Leaflet is functioning, which is a good starting point. This map is not particularly useful yet, as it does not visualize data or convey information to the viewer. </p>
 
+<p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a chloropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p>
+
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWMjmMY" data-pen-title="Leaflet Tutorial Step 2" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/MWMjmMY">
   Leaflet Tutorial Step 2</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. </p>
 
 <h3> The Final Product </h3>
 
