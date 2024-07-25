@@ -182,7 +182,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
-<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. </p> <br>
+<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title, legend, and easier way to view the underlying data in the pop ups.  </p> <br>
 
 <h3> The Final Product </h3> <br>
 
