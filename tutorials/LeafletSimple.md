@@ -181,7 +181,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a chloropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p> <br>
 
-<p> Starting with some color for the map, we can create this using two functions. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. The second function serves as a general renderer that uses the first to fill the color. </p>
+<p> Starting with some color for the map, we can create this using two functions. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, I pulled the values off a quantile classification of the same data in ArcGIS Pro. The second function serves as a general renderer that uses the first to fill the color. </p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
@@ -232,12 +232,16 @@ function style(feature) {
 
 <h3> The Final Product </h3> <br>
 
+
+
 <h3> List of Figures and Tables </h3>
 <p> Figure . </p>
 
 <h3> References </h3> <br>
 
 <p> https://leafletjs.com/examples/choropleth/ </p> 
+
+<p> https://leaflet-extras.github.io/leaflet-providers/preview/ </p>
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
