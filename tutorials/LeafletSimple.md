@@ -246,9 +246,13 @@ function style(feature) {
 
 <p> Having prepared the last few adjustments, we can now look at our final product on codepen and embedded into the website itself. </p> <br>
 
-<div id="map" style="width: 650px; height: 425px;">
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjQKLqe" data-pen-title="Leaflet Final" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/aj65714/pen/JjQKLqe">
+  Leaflet Final</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-<script src="/files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
 
 <h3> List of Figures and Tables </h3>
 <p> Figure . </p>
