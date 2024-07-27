@@ -246,8 +246,9 @@ function style(feature) {
 
 <p> Having prepared the last few adjustments, we can now look at our final product on codepen and embedded into the website itself. </p> <br>
 
+<div id="map" style="width: 650px; height: 425px;">
 
-<script src="./files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
+<script src="/files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
 
 <h3> List of Figures and Tables </h3>
 <p> Figure . </p>
