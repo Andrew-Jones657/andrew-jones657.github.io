@@ -14,7 +14,7 @@
        height: 100%;
     }
         #myImg {
-  border-radius: 5px;
+  border-radius: 1px;
   cursor: pointer;
   transition: 0.3s;
         }
@@ -251,7 +251,7 @@ function style(feature) {
   Leaflet Final</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
 
 <h3> List of Figures and Tables </h3>
@@ -259,16 +259,21 @@ function style(feature) {
 
 <h3> References </h3> <br>
 
-<p> https://leafletjs.com/examples/choropleth/ </p> 
+<p> https://leafletjs.com/examples/choropleth/ </p> <br>
 
-<p> https://leaflet-extras.github.io/leaflet-providers/preview/ </p>
+<p> https://leaflet-extras.github.io/leaflet-providers/preview/ </p> <br>
+
+
+<div id="map" style="width: 650px; height: 425px;">
+
+<script src="/files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
+
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
    <div id="caption"></div>   
-</div> <br>
-
+</div> 
 
 <script>
 // create references to the modal...
