@@ -102,6 +102,8 @@
   }
 }
   </style>
+
+  
   
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -125,7 +127,7 @@
 
 <p> Open source web mapping applications like Leaflet play a crucial role in democratizing access to mapping technology and spatial data visualization. They empower developers, businesses, and communities to create interactive maps that are customizable, scalable, and adaptable to diverse needs. Leaflet, with its lightweight and modular design, offers a user-friendly platform for displaying geographical information on websites and mobile applications. Its extensive plugin ecosystem further enhances functionality, allowing integration with various data sources and advanced spatial analysis tools. By leveraging open source technologies like Leaflet, users can innovate freely, collaborate globally, and harness the power of spatial data to solve real-world challenges in fields ranging from urban planning and environmental management to logistics and tourism. </p> <br>
 
-<p> In this tutorial, we will be creating a simple Leaflet web map. The aim is to incorporate some of Leaflet's primary features: we weill use a basemap, markers, renderers to symbolize data, and pop-up features to make the map more informative. In an effort to incorporate different kinds of data, we will be looking at state level educational attainment data from the American Community Survey (ACS). The goal is to map out the percentage of the population with a Bachelor's degree or higher. As a point of reference, this tutorial is based on the <a href="https://leafletjs.com/examples/choropleth/"> chloropleth map tutorial</a> from Leaflet. There are some differences however that warrant creating this tutorial.  </p> <br>
+<p> In this tutorial, we will be creating a simple Leaflet web map. The aim is to incorporate some of Leaflet's primary features: we weill use a basemap, markers, renderers to symbolize data, and pop-up features to make the map more informative. In an effort to incorporate different kinds of data, we will be looking at state level educational attainment data from the American Community Survey (ACS). The goal is to map out the percentage of the population with a Bachelor's degree or higher. As a point of reference, this tutorial is based on the <a href="https://leafletjs.com/examples/choropleth/"> chloropleth map tutorial</a> from Leaflet. Naturally, there are some additional steps and different design choices that warrant creating this tutorial.  </p> <br>
 
 <h3> Some Basic Assumptions in Web Mapping </h3> <br>
 
@@ -231,6 +233,9 @@ function style(feature) {
 <p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title, legend, and easier way to view the underlying data in the pop ups.  </p> <br>
 
 <h3> The Final Product </h3> <br>
+
+<p> Having prepared the last few adjustments, we can now look at our final product on codepen and embedded into the website itself. </p> <br>
+
 
 
 
