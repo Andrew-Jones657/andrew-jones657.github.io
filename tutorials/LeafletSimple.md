@@ -318,7 +318,24 @@ function style(feature) {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
 
-<p> Do note that there is a known issue with embedding leaflet maps on GitHub Webpages. It is possible that the edges of the tile layers will have thick white borders and that the geojson layer will not line up with the reference points on the tile layer. It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez.  </p> <br>
+<p> Do note that there is a known issue with embedding leaflet maps on GitHub Webpages. It is possible that the edges of the tile layers will have thick white borders and that the geojson layer will not line up with the reference points on the tile layer. </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/3XZuK1d.jpeg" alt="Leaflet Issue" style="width:100%;max-width:625px">
+<figcaption> Figure ?. The White Tile Edge Issue with Leaflet Maps on GitHub </figcaption>
+</figure> <br>
+
+
+	
+<p> It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez.  </p> <br>
+
+<div id="map" style="width: 650px; height: 425px;">
+
+<script src="/files/LeafletTutorial/L.TileLayer.NoGap.js"></script> <br>
+
+<script src="/files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
+
+
 
 <h3> List of Figures and Tables </h3>
 <p> Figure . </p>
@@ -329,14 +346,7 @@ function style(feature) {
 
 <p> https://leaflet-extras.github.io/leaflet-providers/preview/ </p> <br>
 
-<p>  </p> <br>
-
-
-<div id="map" style="width: 650px; height: 425px;">
-
-<script src="/files/LeafletTutorial/L.TileLayer.NoGap.js"></script> <br>
-
-<script src="/files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
+<p> https://github.com/Leaflet/Leaflet.TileLayer.NoGap </p> <br>
 
 
 <div id="myModal" class="modal">
