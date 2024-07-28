@@ -348,6 +348,7 @@ function style(feature) {
 
 <p> https://github.com/Leaflet/Leaflet.TileLayer.NoGap </p> <br>
 
+<p> https://github.com/brunob/leaflet.fullscreen </p> <br>
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
