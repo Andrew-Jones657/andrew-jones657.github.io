@@ -129,6 +129,7 @@
   
   <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.css" />
   <script src="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.js"></script> 
+  <script src=""></script>
   
 </head>
 
@@ -266,6 +267,8 @@ function style(feature) {
 
 
 <div id="map" style="width: 650px; height: 425px;">
+
+<script src="L.TileLayer.NoGap.js"></script> <br>
 
 <script src="/files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
 
