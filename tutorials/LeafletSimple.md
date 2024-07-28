@@ -318,6 +318,8 @@ function style(feature) {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
 
+<p> Do note that there is a known issue with embedding leaflet maps on GitHub Webpages. It is possible that the edges of the tile layers will have thick white borders and that the geojson layer will not line up with the reference points on the tile layer. It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez.  </p> <br>
+
 <h3> List of Figures and Tables </h3>
 <p> Figure . </p>
 
@@ -326,6 +328,8 @@ function style(feature) {
 <p> https://leafletjs.com/examples/choropleth/ </p> <br>
 
 <p> https://leaflet-extras.github.io/leaflet-providers/preview/ </p> <br>
+
+<p>  </p> <br>
 
 
 <div id="map" style="width: 650px; height: 425px;">
