@@ -9,7 +9,7 @@
        margin: 0;
        padding: 0;
     }
-    html, body, #viewDiv{
+    html, body, #map{
        width: 100%;
        height: 100%;
        border: 1px solid #444444;
@@ -445,7 +445,7 @@ function style(feature) {
 	
 <p> It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez. We can see the successful results of the script with the Leaflet map embedded directly into the webpage below.  </p> <br>
 
-<div id="viewDiv" style="width: 650px; height: 425px;">
+<div id="map" style="width: 650px; height: 425px;">
 
 <script src="/files/LeafletTutorial/L.TileLayer.NoGap.js"></script> <br>
 
