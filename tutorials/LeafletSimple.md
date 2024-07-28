@@ -327,7 +327,7 @@ function style(feature) {
 
 
 	
-<p> It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez.  </p> <br>
+<p> It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez. We can see the successful results of the script with the Leaflet map embedded directly into the webpage below.  </p> <br>
 
 <div id="map" style="width: 650px; height: 425px;">
 
