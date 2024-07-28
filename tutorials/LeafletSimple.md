@@ -260,7 +260,7 @@ function style(feature) {
   	// Fill in the empty text bubble on the top right part of the map with information from the geojson dataset 
 	info.update = function (props) {
 		const contents = props ? `<b>${props.NAME}</b><br />${props.PER_BACH}% (${props.MOE}% Margin of Error)` : 'Hover over a state';
-		this._div.innerHTML = `<h4>Percentage of Population over 25 with <br> a Bachelor's Degree or Higher in 2022</h4>${contents}`;
+		this._div.innerHTML = `<em>Percentage of Population over 25 with <br> a Bachelor's Degree or Higher in 2022</em>${contents}`;
 	};
 
 	// Add the pop up data viewer to the top right part of the map
