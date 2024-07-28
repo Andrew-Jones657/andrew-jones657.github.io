@@ -149,7 +149,7 @@
 
 <h3> Basic Javascript for Leaflet </h3> <br>
 
-<p> For web maps, most of the customization work is done in javascript. Typically it is best to approach this by starting with a simple web map and adding features one by one to minimize errors.   </p> <br>
+<p> For web maps, most of the customization work is done using javascript. Typically, it is best to approach this by starting with a simple web map and adding features one by one to minimize errors.   </p> <br>
 
 <p> The code below creates a basic Leaflet web map of the 50 US States and the District of Columbia. I have added lines to each comment to explain what they do. The first line creates the map and map object that can later be used with other codes -- the setView command is appended to the map creation to hover the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet -- in this case it is OpenStreetMaps. This layer serves as a backdrop and point of reference for the other layer that we will input. In this case, that other layer is a geojson file of the 50 US States and Washington D.C.. If this layer had been hosted on a web server, then we could simply load the script into Leaflet. Since we are loading it from a GitHub repository, however, we have to use an additional extension to easily extract the geojson from a url. This is where the Leaflet Ajax extension comes in -- it simplifies the process of having to come up with another script. The direct url to the geojson is stored in a variable, and then a specific Leaflet Ajax command instantiates it into the map. </p> <br>
 
@@ -242,7 +242,69 @@ function style(feature) {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
-<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title, legend, and easier way to view the underlying data in the pop ups.  </p> <br>
+<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
+
+<p> Starting with a title, there are a few changes that can be implemented here. To start, we can provide a title so that users understand what they are looking at quickly. We can also make the current pop up method less cumbersome (i.e. clicking on every state) by allowing users to simply hover over the states to see the underlieing data. We can also add in the margin of error so that users understand the confidence intervals for the data. </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+	// Leaflet control structure that shows state info on hover
+	const info = L.control();
+
+	// Create a text bubble element on the top right part of the map using the DomUtil method
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+  	// Fill in the empty text bubble on the top right part of the map with information from the geojson dataset 
+	info.update = function (props) {
+		const contents = props ? `<b>${props.NAME}</b><br />${props.PER_BACH}% (${props.MOE}% Margin of Error)` : 'Hover over a state';
+		this._div.innerHTML = `<h4>Percentage of Population over 25 with <br> a Bachelor's Degree or Higher in 2022</h4>${contents}`;
+	};
+
+	// Add the pop up data viewer to the top right part of the map
+	info.addTo(map);
+
+ 	// Make the geojson layer highlightable and set the style of the highlights
+	function highlightFeature(e) {
+		const layer = e.target;
+
+		layer.setStyle({
+			weight: 5,
+			color: '#666',
+			dashArray: '',
+			fillOpacity: 0.7
+		});
+
+		layer.bringToFront();
+
+		info.update(layer.feature.properties);
+	}
+
+ 	// Reset the currently selected highlights when the user hovers to another state
+	function resetHighlight(e) {
+		geojsonLayer.resetStyle(e.target);
+		info.update();
+	}
+
+	// Zoom on a state when it is clicked on
+	function zoomToFeature(e) {
+		map.fitBounds(e.target.getBounds());
+	}
+
+	// Create popups and bind the Name and Percent Bachelor Degree Holder fields from the geojson file to the popups
+        function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			click: zoomToFeature
+		});
+	}
+
+</code></pre></div></div> <br>
+
+<p> Next, we can look at adding a legend to the map.  </p>
 
 <h3> The Final Product </h3> <br>
 
