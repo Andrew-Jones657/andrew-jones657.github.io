@@ -268,7 +268,7 @@ function style(feature) {
 
 <div id="map" style="width: 650px; height: 425px;">
 
-<script src="L.TileLayer.NoGap.js"></script> <br>
+<script src="/files/LeafletTutorial/L.TileLayer.NoGap.js"></script> <br>
 
 <script src="/files/LeafletTutorial/LeafletTutorial.js"></script>  <br>
 
