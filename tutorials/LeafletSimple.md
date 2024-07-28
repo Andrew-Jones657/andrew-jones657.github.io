@@ -233,6 +233,15 @@ function style(feature) {
                                         'This measurement has a ±' + ' ' + feature.properties.MOE + '%' + ' ' + 'margin of error.');
   	            }
     }
+
+<p> We also need to make sure that the "style" and "onEachFeature" functions get applied to our geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX layer. </p>
+
+        // Provide the geoJSON layer 
+        const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl, {
+		style,
+		onEachFeature: onEachFeature
+	}).addTo(map);
+ 
 </code></pre></div></div> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWMjmMY" data-pen-title="Leaflet Tutorial Step 2" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -245,6 +254,14 @@ function style(feature) {
 <p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
 
 <p> Starting with a title, there are a few changes that can be implemented here. To start, we can provide a title so that users understand what they are looking at quickly. We can also make the current pop up method less cumbersome (i.e. clicking on every state) by allowing users to simply hover over the states to see the underlieing data. We can also add in the margin of error so that users understand the confidence intervals for the data. </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+	// Some css for the title/pop up element we wish to create
+	.info { 
+	padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); 
+	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } 
+	.info h4 { margin: 0 0 5px; color: #777; }
+</code></pre></div></div> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	// Leaflet control structure that shows state info on hover
@@ -293,7 +310,7 @@ function style(feature) {
 		map.fitBounds(e.target.getBounds());
 	}
 
-	// Create popups and bind the Name and Percent Bachelor Degree Holder fields from the geojson file to the popups
+	// Create popups and bind the Name and Percent Bachelor Degree Holder fields from the geojson file to the popups. You can paste this over the previous "onEachFeature" function.
         function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
@@ -304,7 +321,104 @@ function style(feature) {
 
 </code></pre></div></div> <br>
 
-<p> Next, we can look at adding a legend to the map.  </p>
+<p> Next, we can look at adding a legend to the map. This will be done similarly to the title/pop ups with a control structure.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+	
+	// some css for the legend element
+	.legend { text-align: left; line-height: 18px; color: #555; } 
+	.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.8; }
+ 
+</code></pre></div></div> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+	// Define a function that creates a legend similar to the hover text bubble earlier. The break points for the     
+	// chloropleth map are manually input as grades, and a title for the legend is first added to the legend using   
+	// the push command. Then, "from" and "to" are defined within the function to create intervals for each  classification level. To push these intervals as labels  
+	// a for loop is used to iterate through each case sequentially. The final labels are then joined back in with line breaks as html and then returned.
+	legend.onAdd = function (map) {
+
+		const div = L.DomUtil.create('div', 'info legend');
+		const grades = [13, 16, 19, 21, 22, 23, 25];
+		let labels = [];
+		labels.push(
+			`<div ><h4 class='legend-title'>% Bachelor's <br> Attainment </h4></div>`
+		);
+		let from, to;
+
+		for (let i = 0; i < grades.length; i++) {
+			from = grades[i];
+			to = grades[i + 1];
+
+			labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}%` : '%+'}`);
+		}
+
+		div.innerHTML = labels.join('<br>');
+		return div;
+	};
+
+	// Add the legend to the map
+	legend.addTo(map);
+ 
+</code></pre></div></div> <br>
+
+<p> We can add another text bubble containing a link to our data source.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+ 	//some css for the legend element
+	.dataSource { 	padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); 
+	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;  }
+
+ </code></pre></div></div> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+	
+	// Assign a control on the bottom left part of the web map for the data source
+	const dataSource = L.control({position: 'bottomleft'});
+ 
+	// Create a data source element with the DOM Util method
+	dataSource.onAdd = function (map) {
+
+		const div = L.DomUtil.create('div', 'info dataSource');
+		let dSource = [];
+		dSource.push(
+			`<div ><p style='data-source'><h4> Data Source:</h4> <a href="https://data.census.gov/table/ACSDP5Y2022.DP02?g=010XX00US$0400000&y=2022&d=ACS%205-Year%20Estimates%20Data%20Profiles">ACS 2022 5-Year <br> Estimates Data Profile</a></p></div>`
+		);
+
+		div.innerHTML = dSource.join('<br>');
+		return div;
+
+	};
+ 
+	// Add the data source to the map
+	dataSource.addTo(map);
+
+
+</code></pre></div></div> <br>
+
+<p> Finally, we can add a fullscreen option for the web map. Thankfully, there is a downloadable extension on GitHub by user Brunob that efficiently provides this functionality.  </p> <br>
+
+<p> (Image of Tags) </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+      // create fullscreen control
+      var fsControl = L.control.fullscreen();
+
+      // add fullscreen control to the map
+      map.addControl(fsControl);
+
+      // detect fullscreen toggling
+      map.on('enterFullscreen', function(){
+      		if(window.console) window.console.log('enterFullscreen');
+      });
+      map.on('exitFullscreen', function(){
+		if(window.console) window.console.log('exitFullscreen');
+      });
+
+</code></pre></div></div> <br>
 
 <h3> The Final Product </h3> <br>
 
