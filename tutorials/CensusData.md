@@ -126,7 +126,7 @@
 
   <body>
 
-  <h1> Downloading and Processing US Census Data for GIS Implementation </h1> <br>
+  <h1 style="text-align:center;"> Downloading and Processing US Census Data for GIS Implementation </h1> <br>
 
   <p> Using US Census data in GIS allows analysts to map and visualize demographic trends such as population distribution, age demographics, and socioeconomic status across different geographic areas. By integrating Census data into GIS platforms, urban planners can make informed decisions      regarding infrastructure development, resource allocation, and community outreach initiatives. This spatial analysis helps governments and organizations understand spatial patterns and make evidence-based policy decisions tailored to specific localities. </p> <br>
 
