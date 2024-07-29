@@ -32,7 +32,7 @@
 
 <body>
 
-<h1> Welcome to my Tutorials Page </h1> <br>
+<h1 style="text-align:center;"> Welcome to my Tutorials Page </h1> <br>
 
 <p> Here are various GIS tutorials I have prepared. Many of the tutorials are related to the projects under my projects page in that these tutorials "fill in the gaps" concerning some of the workflows. While informal in nature, it is assumed you have a good grasp of GIS fundamentals (i.e. Data Management, some Python exposure, some familiarity with raster and vector data formats).  </p> <br>
 
