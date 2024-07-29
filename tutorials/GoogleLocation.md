@@ -126,7 +126,7 @@
 
 <body>
 
-<h1> Your Location History: Using Google Location History in ArcGIS Pro </h1> <br>
+<h1 style="text-align:center;"> Your Location History: Using Google Location History in ArcGIS Pro </h1> <br>
 
 <p> It should come as no surprise that Google records location history. This is done to provide personalized services like maps, traffic updates, and location-based recommendations, using data from devices linked to a Google account. This data belongs to you, however, and with a little bit of work, it is possible to export and use this data. To start, lookup “Google Takeout” on your search browser. It should look something like Figure 1 below.  </p> <br>
 
