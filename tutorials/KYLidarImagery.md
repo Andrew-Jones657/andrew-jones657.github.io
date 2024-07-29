@@ -139,7 +139,7 @@
 
 <body>
 
-<h1> KYFromAbove: Downloading and Processing LIDAR data </h1> <br>
+<h1 style="text-align:center;"> KYFromAbove: Downloading and Processing LIDAR data </h1> <br>
 
 <p> LIDAR data is incredibly important because it allows us to create detailed and accurate maps of the Earth's surface and objects on it. By using laser beams to measure distances, LIDAR can create 3D models of forests, cities, and even the ocean floor with high precision. This data is crucial for urban planning, managing natural resources, studying climate change, and understanding geological processes. It helps scientists, engineers, and planners make informed decisions about infrastructure, conservation efforts, disaster response, and more. In essence, LIDAR data provides a valuable perspective on our world that helps us protect the environment, plan for the future, and improve our understanding of Earth's complex systems. </p> <br>
 
