@@ -179,6 +179,8 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
+<p> To see how the html, css, and javascript interact with one another, we can use CodePen to display our work-in-progress map.  </p> <br>
+
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxoOGvX" data-pen-title="Leaflet Tutorial 1" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/xxoOGvX">
   Leaflet Tutorial 1</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
@@ -186,7 +188,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br> 
 
-<p> Here is how the entire script looks. </p> <br>
+<p>  </p> <br>
 
 
 <figure> 
