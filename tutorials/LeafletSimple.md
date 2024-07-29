@@ -137,7 +137,7 @@
 
 <body>
 
-<h3> Why Web Mapping is Essential </h3>
+<h1 style="text-align:center;"> Leaflet and Open Web Mapping </h1> <br>
 
 <p> Open source web mapping applications like Leaflet play a crucial role in democratizing access to mapping technology and spatial data visualization. They empower developers, businesses, and communities to create interactive maps that are customizable, scalable, and adaptable to diverse needs. Leaflet, with its lightweight and modular design, offers a user-friendly platform for displaying geographical information on websites and mobile applications. Its extensive plugin ecosystem further enhances functionality, allowing integration with various data sources and advanced spatial analysis tools. By leveraging open source technologies like Leaflet, users can innovate freely, collaborate globally, and harness the power of spatial data to solve real-world challenges in fields ranging from urban planning and environmental management to logistics and tourism. </p> <br>
 
@@ -147,7 +147,7 @@
 
 <h3> Some Basic Assumptions in Web Mapping </h3> <br>
 
-<p> If you have not made a web map before, it is important to describe the thought process that goes into creating them. Compared to ArcGIS Pro or QGIS, where you may have massive projects laden with different types of large datasets, web maps are much more minimal and typically focused on displaying a single theme. Since the map data has to tranfer over the web, one must be mindful of how large datasets can take a long time to load for the end user. This is also why shapefiles and feature classes, often used in ArcGIS Pro, are not as common on front end web APIs. These files formats can become quite large and their multi file format makes them unwieldy to use for web mapping. More common for web mapping are the geojson (geographic javascript object notation) and KML (Keyhole Markup Language) formats, as they are both lightweight and have a fairly simple structure.  </p>
+<p> Compared to ArcGIS Pro or QGIS, where you may have massive projects laden with different types of large datasets, web maps are much more minimal and typically focused on displaying a single theme. Since the map data has to tranfer over the web, one must be mindful that large datasets can take a long time to load for the end user. This is also why shapefiles and feature classes, often used in ArcGIS Pro, are not as common on front end web APIs. These files formats can become quite large and their multi file format makes them unwieldy to use for web mapping. More common for web mapping are the geojson (geographic javascript object notation) and KML (Keyhole Markup Language) formats, as they are both lightweight and have a fairly simple structure.  </p>
 
 <p> For this particular tutorial, you can use <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/LeafletTutorial/US_States_Bach.geojson">this processed dataset of the 50 US States with Bachelor's Degree data</a>. I obtained it from the US Census TIGER Lines website, added the ACS educational attainment data via a table join, and then converted it to a geojson file (<a href="/tutorials/CensusData">I have another tutorial for this workflow</a>). Initially the file was too big (~37 megabytes) to work with Leaflet. I had to go back to ArcGIS Pro and simplify the US States polygon to reduce its file size to one megabyte.  </p> <br>
 
