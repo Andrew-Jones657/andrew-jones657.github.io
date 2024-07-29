@@ -119,7 +119,7 @@
 
 <body>
 
-<h3> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </h3> <br>
+<h1 style="text-align:center;"> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </h1> <br>
 
 <p> One of the most common and useful applications of GIS analysis is site selection analysis, a process through which an ideal site is chosen from many candidate sites. This analysis process often involves considering geographic factors, whether social, economic, environmental, or physical, to determine how suitable an area is for a specific land use and human activity. Consequently, it tends to be complex and iterative, as numerous techniques such as overlays, queries, buffers, intersections, raster operations, and others are common in this analysis.  </p> <br>
 
