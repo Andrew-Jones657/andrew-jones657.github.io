@@ -7,7 +7,7 @@
     <style>
     img {
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 1px;
     padding: 5px;
     width: 200px;
     }
