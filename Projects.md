@@ -26,8 +26,13 @@
     }
 
     /* Create three equal columns that sits next to each other */
-    .column {
-    flex: 50%;
+    .columnImg {
+    flex: 33%;
+    padding: 5px;
+    }
+
+    .columnText {
+    flex: 67%;
     padding: 5px;
     }
 
@@ -67,14 +72,12 @@
 <p> Working as a Freelance Analyst (WIP) </p> <br>
 
  <div class="row">
-  <div class="column">
+  <div class="columnImg">
     <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
     <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" style="width:100%">
     </a>
   </div>
-  <div class="column">
-  </div>
-  <div class="column">
+  <div class="columnText">
     <h3> Missouri's 2022 Congressional Redistricting </h3>
     <p> An account on working at the Missouri House of Representatives as a GIS Analyst during the 2022 Congressional Redistricting. </p>
   </div>
