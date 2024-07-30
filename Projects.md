@@ -35,7 +35,7 @@
 
      .line{
     width: 600px;
-    height: 47px;
+    height: 1px;
     border-bottom: 1px solid black;
     position: absolute;
     }
