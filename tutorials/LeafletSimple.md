@@ -179,7 +179,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
-<p> To see how the html, css, and javascript interact with one another, we can use CodePen to display our work-in-progress map.  </p> <br>
+<p> To see how the html, css, and javascript interact with one another, we can use CodePen to display our work-in-progress map (Figure ?). On the left side you can look through each of the different components that go into making the basic map. On the right side you can see that the map successfully rendered under these settings. We will two more instances of CodePen to see how the web map and its code evolves.  </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxoOGvX" data-pen-title="Leaflet Tutorial 1" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/xxoOGvX">
@@ -188,12 +188,12 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br> 
 
-<p>  </p> <br>
+<p> Looking at how the entire script is written in one file, Figure ? below depicts how the entire script works together. Usually, to keep things organized, you would take the javascript between the script tags and save that as a javascript file.  </p> <br>
 
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/O3zmqLB.jpeg" alt="Leaflet Step 1 " style="width:100%;max-width:625px">
-<figcaption> Figure 1. The Basic Leaflet Web Map </figcaption>
+<img class="myImages" id="myImg" src="https://i.imgur.com/XaJTK4I.jpeg" alt="Leaflet Step 1 " style="width:100%;max-width:625px">
+<figcaption> Figure ?. The Basic Leaflet Web Map </figcaption>
 </figure> <br>
 
 
