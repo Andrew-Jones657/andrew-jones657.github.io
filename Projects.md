@@ -9,7 +9,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 225px;
+    width: 200px;
     }
 
     img:hover {
@@ -32,6 +32,13 @@
     margin-left: 0;
     margin-right: auto;
     }
+
+     .line{
+    width: 600px;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    }
     
     </style>
 
@@ -43,7 +50,8 @@
 
 <p> This page is currently under development, but I intend on adding a variety of academic and work projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p>
 
-<hr class="solid">
+<div class="line"></div> <br>
+
 <h3> Work Projects </h3> <br> <br>
 
 <p> Working as a Freelance Analyst (WIP) </p> <br>
@@ -58,24 +66,25 @@
     
 <figure>
 <a target="_blank" href="https://storymaps.arcgis.com/stories/7974c51bca5f4bf69004515d4c7179b7?header">
-  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="center">
+  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="left">
 </a>
   <figcaption> Internship Storymap </figcaption>
 </figure>
 
-<hr class="solid">
+<div class="line"></div> <br>
+
 <h3> Personal Projects </h3> <br> <br>
 
 <figure>
 <a href="https://andrew-jones657.github.io/GIS_Programming"> 
-<img src="https://i.imgur.com/ixpJBjV.jpg" alt="GIS Programming" class="center">
+<img src="https://i.imgur.com/ixpJBjV.jpg" alt="GIS Programming" class="left">
 </a>
 <figcaption> GIS Programming (WIP) </figcaption>
 </figure> <br>
 
 <figure> 
 <a href="https://andrew-jones657.github.io/Site_Selection"> 
-<img src="https://i.imgur.com/hdprVyx.jpeg" class="center">
+<img src="https://i.imgur.com/hdprVyx.jpeg" class="left">
 </a>
 <figcaption> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky (WIP) </figcaption>
 </figure> <br>
@@ -92,7 +101,7 @@
 
 <figure>
 <a target="_blank" href="https://digitalcommons.wku.edu/stu_hon_theses/866/">
-  <img src="https://i.imgur.com/SASJige.jpg" alt="Bremen St" class="center">
+  <img src="https://i.imgur.com/SASJige.jpg" alt="Bremen St" class="left">
 </a>
   <figcaption> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </figcaption>
 </figure>
