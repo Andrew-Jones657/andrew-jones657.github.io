@@ -9,7 +9,7 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 225px;
     }
 
     img:hover {
@@ -24,6 +24,12 @@
     .center {
     display: block;
     margin-left: auto;
+    margin-right: auto;
+    }
+
+    .left {
+    display: block;
+    margin-left: 0;
     margin-right: auto;
     }
     
@@ -44,9 +50,9 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
-    <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" class="center">
+    <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" class="left">
 </a>
-    <figcaption> Missouri's 2022 Congressional Redistricting </figcaption>
+
 </figure> <br> <br> 
 
     
