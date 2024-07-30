@@ -73,6 +73,8 @@
     </a>
   </div>
   <div class="column">
+  </div>
+  <div class="column">
     <h3> Missouri's 2022 Congressional Redistricting </h3>
     <p> An account on working at the Missouri House of Representatives as a GIS Analyst during the 2022 Congressional Redistricting. </p>
   </div>
