@@ -9,12 +9,12 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 500px;
+    width: 125px;
     }
 
     img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    class="center";
+    class="leftr";
     }
     
     figure figcaption {
@@ -33,7 +33,7 @@
 
 <body>
 
-<h1> Welcome to my projects page </h1>
+<h1 style="text-align:center;"> Welcome to my Projects Page </h1>
 
 <p> This page is currently under development, but I intend on adding a variety of academic and work projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p>
 
