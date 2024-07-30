@@ -12,6 +12,10 @@
     width: 200px;
     }
 
+    h3{
+    text-align:center;
+    }
+
     img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     class="left";
@@ -53,10 +57,17 @@
     margin-right: auto;
     }
 
-     .line{
+     .lineThick{
     width: 625px;
     height: 1px;
     border-bottom: 2px solid black;
+    position: absolute;
+    }
+
+    .line{
+    width: 625px;
+    height: 1px;
+    border-bottom: 1px solid black;
     position: absolute;
     }
     
@@ -70,7 +81,7 @@
 
 <p> This page is currently under development, but I intend on adding a variety of academic and work projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p>
 
-<div class="line"></div> <br>
+<div class="lineThick"></div> <br>
 
 <h3> Work Projects </h3> <br> <br>
 
@@ -101,7 +112,7 @@
 
 </figure>
 
-<div class="line"></div> <br>
+
 
 <h3> Personal Projects </h3> <br> <br>
 
