@@ -54,9 +54,9 @@
     }
 
      .line{
-    width: 600px;
+    width: 625px;
     height: 1px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     position: absolute;
     }
     
@@ -76,6 +76,8 @@
 
 <p> Working as a Freelance Analyst (WIP) </p> <br>
 
+<div class="line"></div>
+
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
@@ -85,18 +87,12 @@
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h3> Missouri's 2022 Congressional Redistricting </h3>
+    <h5> Missouri's 2022 Congressional Redistricting </h5>
     <p> An account on working at the Missouri House of Representatives as a GIS Analyst during the 2022 Congressional Redistricting. </p>
   </div>
 </div> 
 
-<figure>
-<a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
-    <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" class="left">
-</a>
-
-</figure> <br> <br> 
-
+<div class="line"></div>
     
 <figure>
 <a target="_blank" href="https://storymaps.arcgis.com/stories/7974c51bca5f4bf69004515d4c7179b7?header">
