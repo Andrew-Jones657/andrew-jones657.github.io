@@ -31,8 +31,13 @@
     padding: 5px;
     }
 
+    .columnSpace {
+    flex: 7%;
+    padding: 5px;
+    }
+    
     .columnText {
-    flex: 67%;
+    flex: 60%;
     padding: 5px;
     }
 
@@ -76,6 +81,8 @@
     <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
     <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" style="width:100%">
     </a>
+  </div>
+  <div class="columnSpace"> 
   </div>
   <div class="columnText">
     <h3> Missouri's 2022 Congressional Redistricting </h3>
