@@ -21,6 +21,16 @@
     text-align: center;
     }
 
+    .row {
+    display: flex;
+    }
+
+    /* Create three equal columns that sits next to each other */
+    .column {
+    flex: 50%;
+    padding: 5px;
+    }
+
     .center {
     display: block;
     margin-left: auto;
@@ -56,6 +66,18 @@
 
 <p> Working as a Freelance Analyst (WIP) </p> <br>
 
+ <div class="row">
+  <div class="column">
+    <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
+    <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" style="width:100%">
+    </a>
+  </div>
+  <div class="column">
+    <h3> Missouri's 2022 Congressional Redistricting </h3>
+    <p> An account on working at the Missouri House of Representatives as a GIS Analyst during the 2022 Congressional Redistricting. </p>
+  </div>
+</div> 
+
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
     <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" class="left">
@@ -68,7 +90,7 @@
 <a target="_blank" href="https://storymaps.arcgis.com/stories/7974c51bca5f4bf69004515d4c7179b7?header">
   <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="left">
 </a>
-  <figcaption> Internship Storymap </figcaption>
+
 </figure>
 
 <div class="line"></div> <br>
@@ -79,14 +101,14 @@
 <a href="https://andrew-jones657.github.io/GIS_Programming"> 
 <img src="https://i.imgur.com/ixpJBjV.jpg" alt="GIS Programming" class="left">
 </a>
-<figcaption> GIS Programming (WIP) </figcaption>
+
 </figure> <br>
 
 <figure> 
 <a href="https://andrew-jones657.github.io/Site_Selection"> 
 <img src="https://i.imgur.com/hdprVyx.jpeg" class="left">
 </a>
-<figcaption> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky (WIP) </figcaption>
+
 </figure> <br>
 
 <p> Analyzing Land Use Change in Warren County, Kentucky </p> <br>
@@ -103,7 +125,7 @@
 <a target="_blank" href="https://digitalcommons.wku.edu/stu_hon_theses/866/">
   <img src="https://i.imgur.com/SASJige.jpg" alt="Bremen St" class="left">
 </a>
-  <figcaption> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </figcaption>
+
 </figure>
 
 
