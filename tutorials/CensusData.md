@@ -132,7 +132,7 @@
 
   <p> In this tutorial, we will be downloading census files for Boone County, Missouri. These files should contain information about the total population as well as racial and ethnic groups at the census tract level. The goal is to create a population chloropleth map at the census tract level, so we will be searching for both census tracts datasets and census tract boundary files. Essentially, this will be a table and a shapefile, though the table will require some processing to be usable in a GIS environment.  </p> <br>
 
-  <p> US Census data is based on a hierarchical system. At the lowest level (or highest geographic scale) are census blocks, which are formed by human made and natural features such as streets, roads, railroads, streams, and visible physical and cultural features. Since they are at the bottom    of the geographic hierarchy, they form other census geographies when aggregated. Above census blocks are block groups, tracts (which is what we will look at), counties, states, divisions, regions, and finally the entire nation. Figure 1 below depicts the standard hierarchy as well as specific       offshoots.  </p> <br>
+  <p> US Census data is based on a hierarchical system. At the lowest level (or highest geographic scale) are census blocks, which are formed by human made and natural features such as streets, roads, railroads, streams, and visible physical and cultural features. Since they are at the bottom    of the geographic hierarchy, they form other census geographies when aggregated. Above census blocks are block groups, tracts (which is what we will look at), counties, states, divisions, regions, and finally the entire nation. Figure 1 below depicts the standard hierarchy as well as specific  offshoots.  </p> <br>
 
   
   <figure> 
@@ -142,7 +142,7 @@
 
   <h3> Searching for Population Tables at the Census Tract Level </h3> <br>
 
-  <p> We can visit the US Census data website  <a href="https://data.census.gov/">here</a>. Since we want to implement this table in a GIS software, we have to be prudent as to how we search for data -- the US Census has a massive number of similaraly named datasets which can be quite confusing to navigate through. Realistically, we will have to use the "advanced search" option to apply a couple of filters to narrow down our dataset. Select “advanced search” under the main search bar to begin (Figure 2). </p>  <br>
+  <p> We can visit the US Census data website  <a href="https://data.census.gov/">here</a>. Since we want to implement this table in a GIS software, we have to be prudent as to how we search for data -- the US Census has a massive number of similarly named datasets which can be quite confusing to navigate through. Realistically, we will have to use the "advanced search" option to apply a couple of filters to narrow down our dataset. Select “advanced search” under the main search bar to begin (Figure 2). </p>  <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/BusE2V2.jpeg" alt="US Census Data" style="width:100%;max-width:625px">
@@ -169,7 +169,7 @@
   <figcaption> Figure 3. US Census Advanced Search Filters Input  </figcaption>
   </figure> <br>
 
-  <p> The top option, “P9”, works out quite well for the purpose of this tutorial. This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial break down for both of those categories. It is important to note that being Hispanic or Latino is counted by the census as an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are counted as racial groups.   </p> <br>
+  <p> The top option, “P9”, works out quite well for the purpose of this tutorial. This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial breakdown for both of those categories. It is important to note that being Hispanic or Latino is counted by the census as an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are counted as racial groups.   </p> <br>
 
   <p> This file needs to be downloaded in a specific way. You can collapse the search menu and look at the table, but you do not want to use the .zip, .csv, or .xlsx download options directly above the table – these options format the table in a way that makes it difficult to use in GIS. Instead, under the results menu, you can click “P9” and then select “download” above it. The file needs to be downloaded like this because it preserves the “GEOID” field, which will be the unique identifier field used to join it to the census tract boundaries.    </p> <br>
 
@@ -177,14 +177,14 @@
 
   <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interfacae </h3> <br>
 
-  <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a>.  </p> <br>
+  <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a> (Figure 4).  </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/yyEckxw.jpeg" alt="US Census Tiger Lines" style="width:100%;max-width:625px">
   <figcaption> Figure 4. US Census TIGER Line Website  </figcaption>
   </figure> <br>
 
-  <p> We will go ahead and choose 2023 as the year for our boundary file. You could also take 2020-2022 without running into issues. We have the choice of using either the web interface or the ftp archive. I would recommend using the web interface first, since it is more user friendly. Here, there   are dropdown boxes for the year and layer type. Make sure you have 2023 for the year and census tracts for the layer type as in Figure ? below.   </p>
+  <p> We will go ahead and choose 2023 as the year for our boundary file. You could also take 2020-2022 without running into issues. We have the choice of using either the web interface or the ftp archive. I would recommend using the web interface first, since it is more user friendly. Here, there   are dropdown boxes for the year and layer type. Make sure you have 2023 for the year and census tracts for the layer type as in Figure 5 below.   </p>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/h6e0Fp5.jpeg" alt="US Census Tiger Line Web Interface" style="width:100%;max-width:625px">
@@ -194,7 +194,7 @@
 
   <p> <em> Note why census tracts newer than 2019 must be chosen: the boundaries of census tracts, block groups, and blocks can and do change between decades. Since these boundaries are at a higher geographic scale, they are often updated (change in boundaries, size, split, or even removed) to reflect changes in population, urban growth, and other changes to the physical landscape.   </em> </p> <br>
 
-  <p> Hit submit to go to the census tract download page. Unfortunately, all of the census tracts for Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or your GIS software of choice. To have a visual overlay of Boone County's location  in Missouri, I recommend downloading the counties file from the same web interface or quickly adding it from the ArcGIS Living Atlas. </p> <br>
+  <p> Hit submit to go to the census tract download page. Unfortunately, every census tract in Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or your GIS software of choice. To have a visual overlay of Boone County's location in Missouri, I recommend downloading the counties file from the same web interface or quickly adding it from the ArcGIS Living Atlas. </p> <br>
 
   <h3> Finding GIS Boundary FIles at the Census Tract Level with the US Census FTP </h3> <br>
 
