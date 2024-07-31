@@ -288,6 +288,8 @@
 
   <p class="reference"><em>NHGIS Data Finder</em>. (n.d.). <a href="https://data2.nhgis.org/main">https://data2.nhgis.org/main</a></p>
 
+  <p class="reference">US Census Bureau. (2021, October 8).<em>Understanding geographic relationships: counties, places, tracts and more</em>. Census.gov. <a href="https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html">https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html </a></p>
+
   
 
   <div id="myModal" class="modal">
