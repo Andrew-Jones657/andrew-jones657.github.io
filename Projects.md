@@ -137,6 +137,20 @@
 
 </figure> <br>
 
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="https://andrew-jones657.github.io/Site_Selection">
+    <img src="https://i.imgur.com/hdprVyx.jpeg" alt="Site Selection" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </h5>
+    <p> A site selection analysis that incorporates some network analysis tools to find a site for a new or improved professional fire station. </p>
+  </div>
+</div> 
+
 <p> Analyzing Land Use Change in Warren County, Kentucky </p> <br>
 
 <p> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset (WIP) </p> <br>
@@ -146,10 +160,7 @@
 
 <h3> Academic Projects </h3> <br> <br>
 
-<figure>
-<a target="_blank" href="https://digitalcommons.wku.edu/stu_hon_theses/866/">
-  <img src="https://i.imgur.com/SASJige.jpg" alt="Bremen St" class="left">
-</a>
+
 
  <div class="row">
   <div class="columnImg">
@@ -165,7 +176,7 @@
   </div>
 </div> 
 
-</figure>
+
 
 
 
