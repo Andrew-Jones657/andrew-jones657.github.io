@@ -75,11 +75,11 @@
 
 <p> Here are various GIS tutorials I have prepared. Many of the tutorials are related to the projects under my projects page in that these tutorials "fill in the gaps" concerning some of the workflows. While informal in nature, it is assumed you have a good grasp of GIS fundamentals (i.e. Data Management, some Python exposure, some familiarity with raster and vector data formats).  </p> <br>
 
-<hr> <br>
+<div class="lineThick"></div> <br>
 
  <div class="row">
   <div class="columnImg">
-    <a target="_blank" href="/tutorials/">
+    <a target="_blank" href="/tutorials/CensusData">
     <img src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census" style="width:100%">
     </a>
   </div>
@@ -91,23 +91,24 @@
   </div>
 </div> 
 
-<div class="line"></div>
-
-<figure>
-<a target="_blank" href="/tutorials/CensusData">
-    <img src="https://i.imgur.com/3Kl75Zs.jpeg" alt="Census Data" class="center">
-</a>
-    <figcaption> Downloading and Processing US Census Data for GIS Implementation  </figcaption>
-</figure> <br> <br> 
+<div class="line"></div> <br>
 
 
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="/tutorials/GoogleLocation">
+    <img src="https://i.imgur.com/gwkJfUs.jpg" alt="Google Location" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Your Location History: Using Google Location History in ArcGIS Pro  </h5>
+    <p> Methods for downloading and processing your Google Location History into useable spatial data. </p>
+  </div>
+</div> 
 
-<figure>
-<a target="_blank" href="/tutorials/GoogleLocation">
-    <img src="https://i.imgur.com/gwkJfUs.jpg" alt="Google History" class="center">
-</a>
-    <figcaption> Your Location History: Using Google Location History in ArcGIS Pro  </figcaption>
-</figure> <br> <br> 
+<div class="line"></div> <br>
 
 
 <figure>
