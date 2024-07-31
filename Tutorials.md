@@ -124,16 +124,26 @@
   </div>
 </div> 
 
-<figure>
-<a target="_blank" href="/tutorials/KYLidarImagery">
-    <img src="https://i.imgur.com/nSm2QXS.jpeg" alt="LIDAR" class="center">
-</a>
-    <figcaption> KYFromAbove: Downloading and Processing LIDAR data  </figcaption>
-</figure> <br> <br> 
 
 <div class="line"></div> <br>
 
-<p> <a href="/tutorials/LeafletSimple">Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map (WIP)</a> </p> <br>
+
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="/tutorials/LeafletSimple">
+    <img src="https://i.imgur.com/64dN2BQ.jpeg" alt="Leaflet" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map  </h5>
+    <p> Steps to create a basic Leaflet web map with some US Census Data and display it online. </p>
+  </div>
+</div> 
+
+
+<div class="line"></div> <br>
 
 <p> Automating GIS Workflows: Creating a Python Script to Automate Areal Proportion Analysis (WIP) </p> <br>
 
