@@ -105,12 +105,19 @@
 
 <div class="line"></div>
     
-<figure>
-<a target="_blank" href="https://storymaps.arcgis.com/stories/7974c51bca5f4bf69004515d4c7179b7?header">
-  <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship" class="left">
-</a>
-
-</figure>
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="https://storymaps.arcgis.com/stories/7974c51bca5f4bf69004515d4c7179b7?header">
+    <img src="https://i.imgur.com/T9Zr49K.jpg" alt="Internship Storymap" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Warren County Public Works Stormwater Division Storymap </h5>
+    <p> A story map detailing some of responsibilities and accomplishments I had at Warren County Public Works </p>
+  </div>
+</div> 
 
 
 
@@ -136,7 +143,6 @@
 
 
 
-<hr class="solid">
 
 <h3> Academic Projects </h3> <br> <br>
 
@@ -144,6 +150,20 @@
 <a target="_blank" href="https://digitalcommons.wku.edu/stu_hon_theses/866/">
   <img src="https://i.imgur.com/SASJige.jpg" alt="Bremen St" class="left">
 </a>
+
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="https://digitalcommons.wku.edu/stu_hon_theses/866/">
+    <img src="https://i.imgur.com/SASJige.jpg" alt="Honor's Thesis" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </h5>
+    <p> test </p>
+  </div>
+</div> 
 
 </figure>
 
