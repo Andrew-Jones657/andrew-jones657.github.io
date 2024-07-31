@@ -260,6 +260,8 @@
   <figcaption> Figure 13. A Choropleth Map Created with 2010 US Census Data   </figcaption>
   </figure> <br>
 
+  <p> You can repeat the same process to download census data from 2000-2010 as well. Datasets older than 2000, however, are structured differently and much more difficult to process. Thankfully, there are sources such as the <a href="https://data2.nhgis.org/main">National Historical GIS</a> which provide these files.  </p>
+
   <p> This concludes the tutorial for obtaining and processing US Census data for GIS use. </p>   
 
   <h3> List of Figures </h3> <br>
@@ -279,6 +281,14 @@
   <p> Figure 13. A Chloropleth Map Created with 2010 US Census Data  </p> <br>
   
   <h3> References </h3> <br>
+
+  <div class="wysiwyg lengthy" ><p class="reference">U.S. Census Bureau. (n.d.). <em>Explore Census data</em>. <a href="https://data.census.gov/" target="_blank" rel="nofollow noopener noreferrer">https://data.census.gov/</a></p>
+
+  <p class="reference">U.S. Census Bureau. (2024, January 9). <em>TIGER/Line shapefiles</em>. Census.gov. <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" target="_blank" rel="nofollow noopener noreferrer">https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html</a></p>
+
+  <p class="reference"><em>NHGIS Data Finder</em>. (n.d.). <a href="https://data2.nhgis.org/main">https://data2.nhgis.org/main</a></p>
+
+  
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
