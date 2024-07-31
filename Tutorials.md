@@ -110,6 +110,19 @@
 
 <div class="line"></div> <br>
 
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="/tutorials/KYLidarImagery">
+    <img src="https://i.imgur.com/nSm2QXS.jpeg" alt="KY LIDAR" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> KYFromAbove: Downloading and Processing LIDAR data   </h5>
+    <p> Download LIDAR data from a Kentucky web portal and convert it into a hillshade. </p>
+  </div>
+</div> 
 
 <figure>
 <a target="_blank" href="/tutorials/KYLidarImagery">
@@ -118,8 +131,13 @@
     <figcaption> KYFromAbove: Downloading and Processing LIDAR data  </figcaption>
 </figure> <br> <br> 
 
+<div class="line"></div> <br>
 
 <p> <a href="/tutorials/LeafletSimple">Disseminating Spatial Data Online: Creating a Simple Leaflet Web Map (WIP)</a> </p> <br>
+
+<p> Automating GIS Workflows: Creating a Python Script to Automate Areal Proportion Analysis (WIP) </p> <br>
+
+<p> Managing GIS Data: Using PostGIS and Postgresql as a Data Warehouse (WIP) </p> <br>
 
 <p> Hosting GIS Data on the Cloud: A Guide to Setting up Geoserver on Amazon Web Services (WIP) </p> <br>
 
