@@ -12,6 +12,10 @@
     width: 500px;
     }
 
+    h3{
+    text-align:center;
+    }
+
     img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     class="center";
@@ -21,10 +25,45 @@
     text-align: center;
     }
 
+    .row {
+    display: flex;
+    }
+
+    /* Create three equal columns that sits next to each other */
+    .columnImg {
+    flex: 33%;
+    padding: 5px;
+    }
+
+    .columnSpace {
+    flex: 7%;
+    padding: 5px;
+    }
+    
+    .columnText {
+    flex: 60%;
+    padding: 5px;
+    }
+
     .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    }
+
+
+    .lineThick{
+    width: 625px;
+    height: 1px;
+    border-bottom: 2px solid black;
+    position: absolute;
+    }
+
+    .line{
+    width: 625px;
+    height: 1px;
+    border-bottom: 1px solid black;
+    position: absolute;
     }
     
     </style>
@@ -38,6 +77,21 @@
 
 <hr> <br>
 
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="/tutorials/">
+    <img src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Downloading and Processing US Census Data for GIS Implementation </h5>
+    <p> A guide to finding, downloading, and processing 2000 - 2020 US Census data for use in GIS systems. </p>
+  </div>
+</div> 
+
+<div class="line"></div>
 
 <figure>
 <a target="_blank" href="/tutorials/CensusData">
