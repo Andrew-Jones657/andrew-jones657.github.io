@@ -166,7 +166,7 @@
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/wwVNZch.jpeg" alt="US Census Advanced Search" style="width:100%;max-width:625px">
-  <figcaption> Figure 3. US Census Advanced Search Filters Input  </figcaption>
+  <figcaption> Figure 4. US Census Advanced Search Filters Input  </figcaption>
   </figure> <br>
 
   <p> The top option, “P9”, works out quite well for the purpose of this tutorial. This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial breakdown for both of those categories. It is important to note that being Hispanic or Latino is counted by the census as an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are counted as racial groups.   </p> <br>
@@ -177,18 +177,18 @@
 
   <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interfacae </h3> <br>
 
-  <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a> (Figure 4).  </p> <br>
+  <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a> (Figure 5).  </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/yyEckxw.jpeg" alt="US Census Tiger Lines" style="width:100%;max-width:625px">
-  <figcaption> Figure 4. US Census TIGER Line Website  </figcaption>
+  <figcaption> Figure 5. US Census TIGER Line Website  </figcaption>
   </figure> <br>
 
-  <p> We will go ahead and choose 2023 as the year for our boundary file. You could also take 2020-2022 without running into issues. We have the choice of using either the web interface or the ftp archive. I would recommend using the web interface first, since it is more user friendly. Here, there   are dropdown boxes for the year and layer type. Make sure you have 2023 for the year and census tracts for the layer type as in Figure 5 below.   </p>
+  <p> We will go ahead and choose 2023 as the year for our boundary file. You could also take 2020-2022 without running into issues. We have the choice of using either the web interface or the ftp archive. I would recommend using the web interface first, since it is more user friendly. Here, there   are dropdown boxes for the year and layer type. Make sure you have 2023 for the year and census tracts for the layer type as in Figure 6 below.   </p>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/h6e0Fp5.jpeg" alt="US Census Tiger Line Web Interface" style="width:100%;max-width:625px">
-  <figcaption> Figure 5. Using the Web Interface to Find 2023 Census Tract Boundaries  </figcaption>
+  <figcaption> Figure 6. Using the Web Interface to Find 2023 Census Tract Boundaries  </figcaption>
   </figure> <br>
 
 
@@ -198,11 +198,11 @@
 
   <h3> Finding GIS Boundary FIles at the Census Tract Level with the US Census FTP </h3> <br>
 
-  <p> The FTP (File Transfer Protocol) archive is the other way of obtaining census boundary files. It can be faster to use than the web interface, though it is initially a little less intuitive.  Go back to the main webpage of the TIGER files site and select “ftp archive”. Appearance wise this is a bit more rudimentary (Figure 6).   </p> <br>
+  <p> The FTP (File Transfer Protocol) archive is the other way of obtaining census boundary files. It can be faster to use than the web interface, though it is initially a little less intuitive.  Go back to the main webpage of the TIGER files site and select “ftp archive”. Appearance wise this is a bit more rudimentary (Figure 7).   </p> <br>
   
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/53tUw8O.jpeg" alt="US Census Tiger Line FTP" style="width:100%;max-width:625px">
-  <figcaption> Figure 6. Using the Census TIGER lines FTP  </figcaption>
+  <figcaption> Figure 7. Using the Census TIGER lines FTP  </figcaption>
   </figure> <br>
   
   <p> Since we need census tracts, we need to find a directory that reflects that name. Scrolling down, there is the “TRACT/” folder, select that. This leads us to a seemingly perplexing list of zip files, all of which are headed by “tl_2023_xx_tract.zip”. The number represented by the “xx” is the states FIPS code. The census bureau uses these codes to give each geographic entity a completely unique identifier – the FIPS codes become longer for smaller, higher scale geographic entities such as census blocks. We can find a lookup guide by the FCC <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. We want the FIPS code for Missouri, which is 29. On the FTP site, click on tl_2023_29_tract.zip to download it.   </p> <br>
@@ -210,34 +210,34 @@
 
   <h3> Processing the US Census Tract Dataset to make it Compatible with GIS </h3> <br>
 
-  <p> Open the census dataset spreadsheet that was downloaded earlier. It should look something like Figure 7 below. Notice that there are two headers, where the second acts as metadata for the first. Additionally, it has a GEOID field, which is necessary for joining it to the census tract boundaries. </p> <br>
+  <p> Open the census dataset spreadsheet that was downloaded earlier. It should look something like Figure 8 below. Notice that there are two headers, where the second acts as metadata for the first. Additionally, it has a GEOID field, which is necessary for joining it to the census tract boundaries. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/uHZOpz7.jpeg" alt="US Census Data Raw" style="width:100%;max-width:625px">
-  <figcaption> Figure 7. The Raw Census Dataset  </figcaption>
+  <figcaption> Figure 8. The Raw Census Dataset  </figcaption>
   </figure> <br>
 
-<p> The second header needs to be deleted, though before doing so, be sure to rename the columns in the first header that you need. In Figure 8 below, several of the columns in the main header were renamed.   </p> <br>
+<p> The second header needs to be deleted, though before doing so, be sure to rename the columns in the first header that you need. In Figure 9 below, several of the columns in the main header were renamed.   </p> <br>
 
 
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/EWqBHjR.jpeg" alt="US Census Data Processed" style="width:100%;max-width:625px">
-  <figcaption> Figure 8. The Processed Census Dataset  </figcaption>
+  <figcaption> Figure 9. The Processed Census Dataset  </figcaption>
   </figure> <br>
 
-  <p> Next, add the census dataset to ArcGIS Pro so that it is on the same map as the census tract boundaries. Export the census dataset to the geodatabase so that it can be edited. Now you will join the census dataset to its tract boundaries. Use “GEOIDFQ” as the join field from the census tract boundaries and “GEO_ID” as the join field from the census tract dataset.  Figure 9 below shows the fields used for the join. </p> <br>
+  <p> Next, add the census dataset to ArcGIS Pro so that it is on the same map as the census tract boundaries. Export the census dataset to the geodatabase so that it can be edited. Now you will join the census dataset to its tract boundaries. Use “GEOIDFQ” as the join field from the census tract boundaries and “GEO_ID” as the join field from the census tract dataset.  Figure 10 below shows the fields used for the join. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/ABdp77Y.jpeg" alt="US Census Join" style="width:100%;max-width:625px">
-  <figcaption> Figure 9. Joining the Census Tract Dataset to the Census Tract Boundaries  </figcaption>
+  <figcaption> Figure 10. Joining the Census Tract Dataset to the Census Tract Boundaries  </figcaption>
   </figure> <br>
 
-  <p> With the two datasets joined together, export the layer to your geodatabase to save it. We can now map census data with this feature layer. To map the underlying population data, we will create a simple chloropleth map where each census tract represents a percentage of the overall population in Boone County. On the newly selected layer, go to the symbology settings and choose “Graduated Colors” as the primary symbology. Then, select “Total” as the field, where normalization is equal to “<percentage of total>”. Since the data is close to being normally distributed, use “Quantile” as the break method. A white to brown color scheme would also fit well with a population map. The results are presented in Figure 10 below.  </p> <br>
+  <p> With the two datasets joined together, export the layer to your geodatabase to save it. We can now map census data with this feature layer. To map the underlying population data, we will create a simple choropleth map where each census tract represents a percentage of the overall population in Boone County. On the newly selected layer, go to the symbology settings and choose “Graduated Colors” as the primary symbology. Then, select “Total” as the field, where normalization is equal to “<percentage of total>”. Since the data is close to being normally distributed, use “Quantile” as the break method. A white to brown color scheme would also fit well with a population map. The results are presented in Figure 11 below.  </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census Chloropleth" style="width:100%;max-width:625px">
-  <figcaption> Figure 10. A Chloropleth Map Created with 2020 US Census Data  </figcaption>
+  <figcaption> Figure 11. A Choropleth Map Created with 2020 US Census Data  </figcaption>
   </figure> <br>
 
   <h3> Using Older Census Datasets </h3> <br>
@@ -246,21 +246,39 @@
 
   <p> The 2010 census dataset is like the 2020 census dataset, so process it in the same manner as earlier. Add both it and the 2010 census tract boundary to ArcGIS Pro. When attempting to join the two datasets, however, you will notice that there is no “GEOIDFQ” field in the census tract boundaries like there was in the 2020 boundaries. </p> <br>
 
-  <p> Comparing the attribute table of both layers, you will notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries. </p> <br>
+  <p> Comparing the attribute table of both layers, you will notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries (Figure 12). </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/2kT3W8U.jpeg" alt="Trim GEO_ID Field" style="width:100%;max-width:625px">
-  <figcaption> Figure 11. Trimming the GEO_ID Field in the Census Dataset to Match the Census Boundary's "GEOID" Field   </figcaption>
+  <figcaption> Figure 12. Trimming the GEO_ID Field in the Census Dataset to Match the Census Boundary's "GEOID" Field   </figcaption>
   </figure> <br>
 
-  <p> Setup the chloropleth map for the 2010 data as you did for the 2020 data. If you look closely at the census tracts afterwards, you can see that they are different between 2010 and 2020.  </p>
+  <p> Setup the choropleth map for the 2010 data as you did for the 2020 data. If you look closely at the census tracts afterwards, you can see that they are different between 2010 and 2020 (Figure 13).  </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/Ifv6zjY.jpeg" alt="US Census Chloropleth 2010 " style="width:100%;max-width:625px">
-  <figcaption> Figure 12. A Chloropleth Map Created with 2010 US Census Data   </figcaption>
+  <figcaption> Figure 13. A Choropleth Map Created with 2010 US Census Data   </figcaption>
   </figure> <br>
 
   <p> This concludes the tutorial for obtaining and processing US Census data for GIS use. </p>   
+
+  <h3> List of Figures </h3> <br>
+
+  <p> Figure 1. The Hierarchy of Census Geographies  </p>
+  <p> Figure 2. The US Census Data Website  </p>
+  <p> Figure 3. The Advanced Search Pane on the US Census Data Website </p>
+  <p> Figure 4. US Census Advanced Search Filters Input  </p>
+  <p> Figure 5. US Census TIGER Line Website </p>
+  <p> Figure 6. Using the Web Interface to Find 2023 Census Tract Boundaries </p>
+  <p> Figure 7. Using the Census TIGER lines FTP </p>
+  <p> Figure 8. The Raw Census Dataset </p>
+  <p> Figure 9. The Processed Census Dataset </p>
+  <p> Figure 10. Joining the Census Tract Dataset to the Census Tract Boundaries </p>
+  <p> Figure 11. A Choropleth Map Created with 2020 US Census Data  </p>
+  <p> Figure 12. Trimming the GEO_ID Field in the Census Dataset to Match the Census Boundary's "GEOID" Field </p> 
+  <p> Figure 13. A Chloropleth Map Created with 2010 US Census Data  </p> <br>
+  
+  <h3> References </h3> <br>
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
