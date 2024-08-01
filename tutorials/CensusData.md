@@ -149,20 +149,20 @@
   <figcaption> Figure 2. The US Census Data Website  </figcaption>
   </figure> <br>
 
-  <p> On the left side of the webpage are multiple different subjects through which the search can be refined. </p> <br>
+  <p> On the left side of the webpage are multiple different subjects through which the search can be refined (Figure 3). </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/mT8nRO2.jpeg" alt="US Census Advanced Search" style="width:100%;max-width:625px">
   <figcaption> Figure 3. The Advanced Search Pane on the US Census Data Website  </figcaption>
   </figure> <br>
 
-  <p> Now we can start to filter this data to download what we need.  Starting with “Geographies”, click on “Census Tract”, choose “Missouri” from the popup list, then choose “Boone County”, and finally check on “All Census Tracts within Boone County, Missouri”. This limits the datasets to census tracts in Boone County, Missouri.  </p> <br>
+  <p> Now filters can be applied to the data. Starting with “Geographies”, click on “Census Tract”, choose “Missouri” from the popup list, then choose “Boone County”, and finally check on “All Census Tracts within Boone County, Missouri”. This limits the dataset to census tracts in Boone County, Missouri.  </p> <br>
 
-  <p> Next, under “Topics”, select “Populations and People”. A list of ethnic and racial groups should pop up, ultimately check “Race and Ethnicity”. This should provide us with the option to map out specific racial or ethnic groups.  </p> <br>
+  <p> Next, under “Topics”, select “Populations and People”. A list of ethnic and racial groups should pop up, ultimately check “Race and Ethnicity”. This will provide the option to map out specific racial or ethnic groups.  </p> <br>
 
-  <p> Now, looking at “Surveys”, there are a several different options. To map the total population in 2020, we need information from an official census release rather than a survey. Select “Decennial Census” and then select “Demographic and Housing Characteristics”. Each of the options here is based on the same underlying data, though we chose Demographic and Housing Characteristics as it is easier to process than the others.  </p> <br>
+  <p> Now, looking at “Surveys”, there are a several different options. To map the total population in 2020, information from an official census release is needed. Select “Decennial Census” and then select “Demographic and Housing Characteristics” (Demographic Profile and Redistricting Data PL 94 - 171 would also work for this tutorial, though the next steps assume "Demographic and Housing Characteristics was chosen).  </p> <br>
 
-  <p> Under “Years”, select “2020” as we need 2020 US Census data. At this point you should have something that looks like Figure 4 below. </p> <br>
+  <p> Under “Years”, select “2020” for 2020 US Census data. At this point, the results should look like Figure 4 below. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/wwVNZch.jpeg" alt="US Census Advanced Search" style="width:100%;max-width:625px">
@@ -175,7 +175,7 @@
 
   <p> With our census dataset file downloaded, we can go ahead and find the census tract boundaries before processing our dataset file.  </p> <br>
 
-  <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interfacae </h3> <br>
+  <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interface </h3> <br>
 
   <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a> (Figure 5).  </p> <br>
 
