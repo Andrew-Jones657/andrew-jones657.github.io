@@ -177,14 +177,14 @@
 
   <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interface </h3> <br>
 
-  <p> With the census dataset obtained, we need to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines. The website can be found <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-   file.html"> here</a> (Figure 5).  </p> <br>
+  <p> With the census dataset obtained, head <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"> here</a> to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines (Figure 5). </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/yyEckxw.jpeg" alt="US Census Tiger Lines" style="width:100%;max-width:625px">
   <figcaption> Figure 5. US Census TIGER Line Website  </figcaption>
   </figure> <br>
 
-  <p> We will go ahead and choose 2023 as the year for our boundary file. You could also take 2020-2022 without running into issues. We have the choice of using either the web interface or the ftp archive. I would recommend using the web interface first, since it is more user friendly. Here, there   are dropdown boxes for the year and layer type. Make sure you have 2023 for the year and census tracts for the layer type as in Figure 6 below.   </p>
+  <p> Choose 2023 as the year for the boundary file. The 2020-2022 vintages would also work without issues. The data can be downloaded via the the web interface or the ftp archive. The web interface is more user friendly, so choose it first. Here, there are dropdown boxes for the year and layer type. Make sure 2023 is selected for the year and census tracts are selected for the layer as shown in Figure 6 below.   </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/h6e0Fp5.jpeg" alt="US Census Tiger Line Web Interface" style="width:100%;max-width:625px">
@@ -192,20 +192,20 @@
   </figure> <br>
 
 
-  <p> <em> Note why census tracts newer than 2019 must be chosen: the boundaries of census tracts, block groups, and blocks can and do change between decades. Since these boundaries are at a higher geographic scale, they are often updated (change in boundaries, size, split, or even removed) to reflect changes in population, urban growth, and other changes to the physical landscape.   </em> </p> <br>
+  <p> <em> Note why census tracts newer than 2019 must be chosen: the boundaries of census tracts, block groups, and blocks can and do change between decades. Tract boundaries may be shifted, split to create new tracts or merged to fuse tracts: this is done to reflect changes in population and urban development.   </em> </p> <br>
 
-  <p> Hit submit to go to the census tract download page. Unfortunately, every census tract in Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or your GIS software of choice. To have a visual overlay of Boone County's location in Missouri, I recommend downloading the counties file from the same web interface or quickly adding it from the ArcGIS Living Atlas. </p> <br>
+  <p> Hit submit to go to the census tract download page. Unfortunately, every census tract in Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or other GIS software of choice. To have a visual overlay of Boone County's location in Missouri, download the Missouri counties file from the same web interface or quickly add it from the ArcGIS Living Atlas. </p> <br>
 
   <h3> Finding GIS Boundary FIles at the Census Tract Level with the US Census FTP </h3> <br>
 
-  <p> The FTP (File Transfer Protocol) archive is the other way of obtaining census boundary files. It can be faster to use than the web interface, though it is initially a little less intuitive.  Go back to the main webpage of the TIGER files site and select “ftp archive”. Appearance wise this is a bit more rudimentary (Figure 7).   </p> <br>
+  <p> The FTP (File Transfer Protocol) archive is another way of obtaining census boundary files. It can be faster to use than the web interface, though it is more technical in nature. Go back to the main webpage of the TIGER files site and select “ftp archive” (Figure 7).  </p> <br>
   
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/53tUw8O.jpeg" alt="US Census Tiger Line FTP" style="width:100%;max-width:625px">
-  <figcaption> Figure 7. Using the Census TIGER lines FTP  </figcaption>
+  <figcaption> Figure 7. Using the Census TIGER Lines FTP  </figcaption>
   </figure> <br>
   
-  <p> Since we need census tracts, we need to find a directory that reflects that name. Scrolling down, there is the “TRACT/” folder, select that. This leads us to a seemingly perplexing list of zip files, all of which are headed by “tl_2023_xx_tract.zip”. The number represented by the “xx” is the states FIPS code. The census bureau uses these codes to give each geographic entity a completely unique identifier – the FIPS codes become longer for smaller, higher scale geographic entities such as census blocks. We can find a lookup guide by the FCC <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. We want the FIPS code for Missouri, which is 29. On the FTP site, click on tl_2023_29_tract.zip to download it.   </p> <br>
+  <p> Since census tracts are needed, a directory that reflects that name must be found. Scrolling down, there is the “TRACT/” folder, select that. This leads to a list of zip files, all of which are headed by “tl_2023_xx_tract.zip”. The number represented by the “xx” is the states FIPS code. The census bureau uses these codes to give each geographic entity a completely unique identifier – the FIPS codes become longer for smaller, higher scale geographic entities such as census blocks (which is why having a dataset file with the GEOID field was important). The FCC provides a FIPS code lookup guide <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. Looking at the FCC guide, the FIPS code for Missouri is 29, so that is the appropriate zip file to download. On the FTP site, click on tl_2023_29_tract.zip to download it.   </p> <br>
 
 
   <h3> Processing the US Census Tract Dataset to make it Compatible with GIS </h3> <br>
@@ -217,7 +217,7 @@
   <figcaption> Figure 8. The Raw Census Dataset  </figcaption>
   </figure> <br>
 
-<p> The second header needs to be deleted, though before doing so, be sure to rename the columns in the first header that you need. In Figure 9 below, several of the columns in the main header were renamed.   </p> <br>
+<p> The second header needs to be deleted, though before doing so, be sure to rename the columns in the first header. In Figure 9 below, several of the columns in the main header were renamed.   </p> <br>
 
 
 
