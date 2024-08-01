@@ -137,7 +137,7 @@
   
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/0ptopke.jpeg" alt="Census Geography Hierarchy" style="width:100%;max-width:625px">
-  <figcaption> Figure 1. The Hierarchy of Census Geographies  </figcaption>
+  <figcaption> Figure 1. The Hierarchy of Census Geographies (US Census Bureau, 2021)  </figcaption>
   </figure> <br>
 
   <h3> Searching for Population Tables at the Census Tract Level </h3> <br>
@@ -289,6 +289,8 @@
   <p class="reference"><em>NHGIS Data Finder</em>. (n.d.). <a href="https://data2.nhgis.org/main">https://data2.nhgis.org/main</a></p>
 
   <p class="reference">US Census Bureau. (2021, October 8).<em>Understanding geographic relationships: counties, places, tracts and more</em>. Census.gov. <a href="https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html">https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html </a></p>
+
+
 
   
 
