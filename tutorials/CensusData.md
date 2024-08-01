@@ -169,11 +169,11 @@
   <figcaption> Figure 4. US Census Advanced Search Filters Input  </figcaption>
   </figure> <br>
 
-  <p> The top option, “P9”, works out quite well for the purpose of this tutorial. This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial breakdown for both of those categories. It is important to note that being Hispanic or Latino is counted by the census as an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are counted as racial groups.   </p> <br>
+  <p> The top option, “P9”, works for the purpose of this tutorial (Figure 4). This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial breakdown for both of those categories. For census data, it is important to note that being Hispanic or Latino is considered an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are considered racial groups.   </p> <br>
 
-  <p> This file needs to be downloaded in a specific way. You can collapse the search menu and look at the table, but you do not want to use the .zip, .csv, or .xlsx download options directly above the table – these options format the table in a way that makes it difficult to use in GIS. Instead, under the results menu, you can click “P9” and then select “download” above it. The file needs to be downloaded like this because it preserves the “GEOID” field, which will be the unique identifier field used to join it to the census tract boundaries.    </p> <br>
+  <p> Collapse the search menu and look at the table. Note that the table needs to be downloaded in a specific way -- do not use the .zip, .csv, or .xlsx download options directly above the table. Instead, under the results menu, you can click the “P9” checkbox and then select “download” above it. Downloading the table in this way preserves the “GEOID” field, which is the unique identifier field used to join it to the census tract boundaries.    </p> <br>
 
-  <p> With our census dataset file downloaded, we can go ahead and find the census tract boundaries before processing our dataset file.  </p> <br>
+  <p> With the census dataset file downloaded, it is time to download the census tract boundaries before processing the dataset file.  </p> <br>
 
   <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interface </h3> <br>
 
