@@ -97,7 +97,7 @@
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href="/tutorials/GoogleLocation">
-    <img src="https://i.imgur.com/gwkJfUs.jpg" alt="Google Location" style="width:100%">
+    <img src="https://i.imgur.com/UoklA56.jpeg" alt="Google Location" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
