@@ -171,7 +171,7 @@
 
   <p> The top option, “P9”, works for the purpose of this tutorial (Figure 4). This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial breakdown for both of those categories. For census data, it is important to note that being Hispanic or Latino is considered an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are considered racial groups.   </p> <br>
 
-  <p> Collapse the search menu and look at the table. Note that the table needs to be downloaded in a specific way. Do not use the .zip, .csv, or .xlsx download options directly above the table. Instead, under the results menu, you can click the “P9” checkbox and then select “download” above it. Downloading the table in this way preserves the “GEOID” field, which is the unique identifier field used to join it to the census tract boundaries.    </p> <br>
+  <p> Collapse the search menu and look at the table. Note that the table needs to be downloaded in a specific way. Do not use the .zip, .csv, or .xlsx download options directly above the table. Instead, under the results menu, click the “P9” checkbox and then select “download” above it. Downloading the table in this way preserves the “GEOID” field, which is the unique identifier field used to join it to the census tract boundaries.    </p> <br>
 
   <p> With the census dataset file downloaded, it is time to download the census tract boundaries before processing the dataset file.  </p> <br>
 
@@ -264,7 +264,7 @@
   <figcaption> Figure 13. A Choropleth Map Created with 2010 US Census Data   </figcaption>
   </figure> <br>
 
-  <p> You can repeat the same process to download census data from 2000-2010 as well. Datasets older than 2000, however, are structured differently and much more difficult to process. Thankfully, there are sources such as the <a href="https://data2.nhgis.org/main">National Historical GIS</a> which provide these files. The search method works much like the US census website, where multiple filters are used to navigate to the desired dataset.  </p>
+  <p> The same process can be repeated to download census data from 2000-2010 as well. Datasets older than 2000, however, are structured differently and much more difficult to process. Thankfully, there are sources such as the <a href="https://data2.nhgis.org/main">National Historical GIS</a> which provide these files. The search method works much like the US census website, where multiple filters are used to navigate to the desired dataset.  </p>
    
 
   <h3> List of Figures </h3> <br>
