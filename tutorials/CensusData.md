@@ -198,7 +198,7 @@
 
   <h3> Finding GIS Boundary FIles at the Census Tract Level with the US Census FTP </h3> <br>
 
-  <p> The FTP (File Transfer Protocol) archive is another way of obtaining census boundary files. It can be faster to use than the web interface, though it is more technical in nature. Go back to the main webpage of the TIGER files site and select “ftp archive” (Figure 7).  </p> <br>
+  <p> The File Transfer Protocol (FTP) archive is another way of obtaining census boundary files. It can be faster to use than the web interface, though it is more technical in nature. Go back to the main webpage of the TIGER files site and select “ftp archive” (Figure 7).  </p> <br>
   
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/53tUw8O.jpeg" alt="US Census Tiger Line FTP" style="width:100%;max-width:625px">
@@ -248,7 +248,7 @@
 
   <p> Comparing the attribute table of both layers, notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries (Figure 12).  </p> <br>
 
-  <em> As a side note, this GEOID identifier is a FIPS code like the one used to specify the Missouri census tract dataset on the FTP site (notice the each of the census tracts start with "29" which refers to the state Missouri). For reference, census block groups have a unique 12 digit FIPS code and census blocks have a unique 15 digit FIPS code.  </em>
+  <em> As a side note, this GEOID identifier is a FIPS code like the one used to specify the Missouri census tract dataset on the FTP site (notice the each of the census tracts start with "29" which refers to the state Missouri). For reference, census block groups have a unique 12 digit FIPS code and census blocks have a unique 15 digit FIPS code.  </em> <br>
 
   <p> Along with the census there is also the American Community Survey, which, as the name implies, is a continuous survey given to random members of the population to record detailed demographic information. The heading for it appeared earlier ("Surveys") when searching for census datasets. The process for downloading ACS data is the same as downloading census information. Do note that since it is a survey, however, there is a margin of error within the data. This can be quite significant at the census block group and tract levels. </p> <br>
 
