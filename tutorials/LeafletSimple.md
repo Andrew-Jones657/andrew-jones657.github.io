@@ -157,6 +157,14 @@
 
 <p> For web maps, most of the customization work is done using javascript. Javascript, along with html and css, are core languages of the web, and they are used in a vast majority of websites worldwide. Each of these languages can be considered front-end languages, creating visual elements with which the user interacts. To minimize errors, it is typically best to start with a simple web map and then add in features one-by-one. If an error does occur, it is not always imeeditaely clear what is causing it, so adding in small pieces of code steadily makes it much easier to find out what went wrong.  </p> <br>
 
+<p> To start, these tags must be placed in the head of the html in order to call Leaflet and AJAX. </p>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/AyzdnAZ.jpeg" alt="Leaflet Tags" style="width:100%;max-width:625px">
+<figcaption> Figure ?. The Basic Leaflet Web Map </figcaption>
+</figure> <br>
+
+
 <p> The code below creates a basic Leaflet web map of the 50 US States and the District of Columbia. I have added lines to each comment to explain what they do. The first line creates the map and map object that can later be used with other codes -- the setView command is appended to the map creation to hover the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet -- in this case it is OpenStreetMaps. This layer serves as a backdrop and point of reference for the other layer that we will input. In this case, that other layer is a geojson file of the 50 US States and Washington D.C.. If this layer had been hosted on a web server, then we could simply load the script into Leaflet. Since we are loading it from a GitHub repository, however, we have to use an additional extension to easily extract the geojson from a url. This is where the Leaflet Ajax extension comes in -- it simplifies the process of having to come up with another script. The direct url to the geojson is stored in a variable, and then a specific Leaflet Ajax command instantiates it into the map. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
