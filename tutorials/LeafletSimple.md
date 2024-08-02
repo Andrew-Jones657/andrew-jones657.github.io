@@ -27,6 +27,11 @@
   #myImg:hover {
   opacity: 0.7;
         }
+
+  figure figcaption {
+  text-align: center;  
+  }
+	 
 .modal {
   display: none;
   /* Hidden by default */
