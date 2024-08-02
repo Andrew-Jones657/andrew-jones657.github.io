@@ -80,7 +80,7 @@
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href="/tutorials/CensusData">
-    <img src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census" style="width:100%">
+    <img src="https://i.imgur.com/mmzCBXR.jpeg" alt="US Census" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
