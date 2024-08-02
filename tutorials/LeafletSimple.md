@@ -14,7 +14,7 @@
        height: 100%;
        border: 1px solid #444444;
        min-height: 450px;
-       mid-width: 650px;
+       min-width: 625px;
     }
         #myImg {
   border-radius: 1px;
@@ -138,7 +138,7 @@
   
   <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.css" />
   <script src="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.js"></script> 
-  <script src=""></script>
+ 
   
 </head>
 
@@ -150,7 +150,7 @@
 
 <p> There are often times when it is advantageous to disseminate data in a dynamic, interactive web map rather than a static map file or paper map. A major reason is scalability, or the ability for the user to zoom in and out of the map to capture details at various scales that could not be replicated on a static map -- this can be enormously useful in displaying dense datasets such as census blocks or clustered points. Web maps can also display multimedia (audio, images, video), whereas static maps are limited to what is printed on the map at the time of its publication. Last, web maps can be customized to display multiple different spatial datasets or layers that may be too cumbersome for a single static map. Nevertheless, static maps still have their place. When it comes to displaying a single detailed snapshot of a phenomena at an optimized spatial scale, they can be quite effective. Web map development also requires a moderate level of proficiency in javascript. This will become apparent when attempting to replicate features from ArcGIS or QGIS. </p> <br>
 
-<p> In this tutorial, a simple choropleth Leaflet web map will be created. The aim is to incorporate some of Leaflet's primary features such as a basemap, geojson layer, renderers to symbolize data, and pop-up features to make the map more informative. In an effort to incorporate different kinds of data, the example dataset consists of state level educational attainment data from the 2022 American Community Survey (ACS). The goal is to map out the percentage of the population with a Bachelor's degree or higher. As a point of reference, this tutorial is based on and modifies the code from the Leaflet <a href="https://leafletjs.com/examples/choropleth/"> chloropleth map tutorial</a> from Volodymyr Agafonkin, Leaflet's creator. Naturally, there are some additional steps and different design choices that warrant creating this tutorial.  </p> <br>
+<p> In this tutorial, a simple choropleth Leaflet web map will be created. The aim is to incorporate some of Leaflet's primary features such as a basemap, geojson layer, renderers to symbolize data, and pop-up features to make the map more informative. In an effort to incorporate different kinds of data, the example dataset consists of state level educational attainment data from the 2022 American Community Survey (ACS). The goal is to map out the percentage of the population with a Bachelor's degree or higher. As a point of reference, this tutorial is based on and modifies the code from the Leaflet <a href="https://leafletjs.com/examples/choropleth/"> choropleth map tutorial</a> from Volodymyr Agafonkin, Leaflet's creator. Naturally, there are some additional steps and different design choices that warrant creating this tutorial.  </p> <br>
 
 <h3> Some Basic Assumptions in Web Mapping </h3> <br>
 
@@ -162,15 +162,23 @@
 
 <p> For web maps, most of the customization work is done using javascript. Javascript, along with html and css, are core languages of the web, and they are used in a vast majority of websites worldwide. Each of these languages can be considered front-end languages, creating visual elements with which the user interacts. To minimize errors, it is typically best to start with a simple web map and then add in features one-by-one. If an error does occur, it is not always imeeditaely clear what is causing it, so adding in small pieces of code steadily makes it much easier to find out what went wrong.  </p> <br>
 
-<p> To start, these tags must be placed in the head of the html in order to call Leaflet and AJAX. </p>
+<p> To start, these tags must be placed in the head element of the html in order to call Leaflet and AJAX. </p>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/AyzdnAZ.jpeg" alt="Leaflet Tags" style="width:100%;max-width:625px">
-<figcaption> Figure ?. The Basic Leaflet Web Map </figcaption>
+<figcaption> Figure ?. The HTML Tags to Call Leaflet </figcaption>
+</figure> <br>
+
+<p> Additionally, some css needs to be created to add design and size to the webmap. </p>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/VXnjkpJ.jpeg" alt="Leaflet CSS" style="width:100%;max-width:625px">
+<figcaption> Figure ?. The Basic CSS Design for Leaflet </figcaption>
 </figure> <br>
 
 
-<p> The code below creates a basic Leaflet web map of the 50 US States and the District of Columbia. I have added lines to each comment to explain what they do. The first line creates the map and map object that can later be used with other codes -- the setView command is appended to the map creation to hover the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet -- in this case it is OpenStreetMaps. This layer serves as a backdrop and point of reference for the other layer that we will input. In this case, that other layer is a geojson file of the 50 US States and Washington D.C.. If this layer had been hosted on a web server, then we could simply load the script into Leaflet. Since we are loading it from a GitHub repository, however, we have to use an additional extension to easily extract the geojson from a url. This is where the Leaflet Ajax extension comes in -- it simplifies the process of having to come up with another script. The direct url to the geojson is stored in a variable, and then a specific Leaflet Ajax command instantiates it into the map. </p> <br>
+
+<p> The code below creates a basic Leaflet web map of the 50 US States and the District of Columbia. The first line creates the map and map object that can later be used with other codes -- the setView command is appended to the map creation to hover the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet -- in this case it is OpenStreetMaps. This layer serves as a backdrop and point of reference for the other layer that we will input. In this case, that other layer is a geojson file of the 50 US States and Washington D.C.. If this layer had been hosted on a web server, then we could simply load the script into Leaflet. Since we are loading it from a GitHub repository, however, we have to use an additional extension to easily extract the geojson from a url. This is where the Leaflet Ajax extension comes in -- it simplifies the process of having to come up with another script. The direct url to the geojson is stored in a variable, and then a specific Leaflet Ajax command instantiates it into the map. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -192,7 +200,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
-<p> To see how the html, css, and javascript interact with one another, we can use CodePen to display our work-in-progress map (Figure ?). On the left side you can look through each of the different components that go into making the basic map. On the right side you can see that the map successfully rendered under these settings. We will two more instances of CodePen to see how the web map and its code evolves.  </p> <br>
+<p> To see how the html, css, and javascript separately, we can use CodePen to display our work-in-progress map (Figure ?). On the left side you can look through each of the different components that go into making the basic map. On the right side you can see that the map successfully rendered under these settings. We will two more instances of CodePen to see how the web map and its code evolves.  </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxoOGvX" data-pen-title="Leaflet Tutorial 1" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/xxoOGvX">
@@ -214,9 +222,9 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <p> So far the outline of the states is displayed and Leaflet is functioning, which is a good starting point. This map is not particularly useful yet, as it does not visualize data or convey information to the viewer. </p> <br>
 
-<p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a chloropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p> <br>
+<p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a choropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p> <br>
 
-<p> Starting with some color for the map, we can create this using two functions. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, I pulled the values off a quantile classification of the same data in ArcGIS Pro. The second function serves as a general renderer that uses the first to fill the color. </p>
+<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The second function serves as a general renderer that uses the first to fill the color. </p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
@@ -355,7 +363,7 @@ function style(feature) {
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
 	// Define a function that creates a legend similar to the hover text bubble earlier. The break points for the     
-	// chloropleth map are manually input as grades, and a title for the legend is first added to the legend using   
+	// choropleth map are manually input as grades, and a title for the legend is first added to the legend using   
 	// the push command. Then, "from" and "to" are defined within the function to create intervals for each  classification level. To push these intervals as labels  
 	// a for loop is used to iterate through each case sequentially. The final labels are then joined back in with line breaks as html and then returned.
 	legend.onAdd = function (map) {
