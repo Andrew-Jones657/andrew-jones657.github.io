@@ -250,7 +250,7 @@
 
   <em> As a side note, this GEOID identifier is a FIPS code like the one used to specify the Missouri census tract dataset on the FTP site (notice the each of the census tracts start with "29" which refers to the state Missouri). For reference, census block groups have a unique 12 digit FIPS code and census blocks have a unique 15 digit FIPS code.  </em>
 
-  <p> Along with the census there is also the American Community Survey, which, as the name implies, is a continuous survey given to random members of the population to record detailed demographic information. The heading for it appeared earlier ("Surveys") when searching for census datasets. The process for downloading ACS data is the same as downloading census information. Do note that since it is a survey, however, there is a margin of error within the data, though it is not significant until one goes below the county level. </p> <br>
+  <p> Along with the census there is also the American Community Survey, which, as the name implies, is a continuous survey given to random members of the population to record detailed demographic information. The heading for it appeared earlier ("Surveys") when searching for census datasets. The process for downloading ACS data is the same as downloading census information. Do note that since it is a survey, however, there is a margin of error within the data. This can be quite significant at the census block group and tract levels. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/2kT3W8U.jpeg" alt="Trim GEO_ID Field" style="width:100%;max-width:625px">
