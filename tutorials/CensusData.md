@@ -233,7 +233,7 @@
   <figcaption> Figure 10. Joining the Census Tract Dataset to the Census Tract Boundaries  </figcaption>
   </figure> <br>
 
-  <p> With the two datasets joined together, export the layer to the geodatabase to save it. At this point, the census data is ready to be mapped.   </p> <br>
+  <p> With the two datasets joined together, export the layer to the geodatabase to save it. At this point, the census data is ready to be mapped -- for the tutorial the total population will be quickly mapped. Figure 11 below shows a simple example of a choropleth map where the percentage of the total population within each census tract is mapped.   </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census Chloropleth" style="width:100%;max-width:625px">
@@ -264,9 +264,8 @@
   <figcaption> Figure 13. A Choropleth Map Created with 2010 US Census Data   </figcaption>
   </figure> <br>
 
-  <p> You can repeat the same process to download census data from 2000-2010 as well. Datasets older than 2000, however, are structured differently and much more difficult to process. Thankfully, there are sources such as the <a href="https://data2.nhgis.org/main">National Historical GIS</a> which provide these files.  </p>
-
-  <p> This concludes the tutorial for obtaining and processing US Census data for GIS use. </p>   
+  <p> You can repeat the same process to download census data from 2000-2010 as well. Datasets older than 2000, however, are structured differently and much more difficult to process. Thankfully, there are sources such as the <a href="https://data2.nhgis.org/main">National Historical GIS</a> which provide these files. The search method works much like the US census website, where multiple filters are used to navigate to the desired dataset.  </p>
+   
 
   <h3> List of Figures </h3> <br>
 
