@@ -205,7 +205,7 @@
   <figcaption> Figure 7. Using the Census TIGER Lines FTP  </figcaption>
   </figure> <br>
   
-  <p> Since census tracts are needed, a directory that reflects that name must be found. Scrolling down, there is the “TRACT/” folder, select that. This leads to a list of zip files, all of which are headed by “tl_2023_xx_tract.zip”. The number represented by the “xx” is the states FIPS code. The census bureau uses these codes to give each geographic entity a completely unique identifier – the FIPS codes become longer for smaller, higher scale geographic entities such as census blocks (which is why having a dataset file with the GEOID field was important). The FCC provides a FIPS code lookup guide <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. Looking at the FCC guide, the FIPS code for Missouri is 29, so that is the appropriate zip file to download. On the FTP site, click on tl_2023_29_tract.zip to download it.   </p> <br>
+  <p> Since census tracts are needed, a directory that reflects that name must be found. Scrolling down, there is the “TRACT/” folder, select that. This leads to a list of zip files, all of which are headed by “tl_2023_xx_tract.zip”. The number represented by the “xx” is the states' Federal Information Processing Standards (FIPS) code. The census bureau uses these codes to give each geographic entity a completely unique identifier – the FIPS codes become longer for smaller, higher scale geographic entities such as census blocks (which is why having a dataset file with the GEOID field was important). The FCC provides a FIPS code lookup guide <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. Looking at the FCC guide, the FIPS code for Missouri is 29, so that is the appropriate zip file to download. On the FTP site, click on "tl_2023_29_tract.zip" to download it.   </p> <br>
 
 
   <h3> Processing the US Census Tract Dataset to make it Compatible with GIS </h3> <br>
@@ -226,27 +226,31 @@
   <figcaption> Figure 9. The Processed Census Dataset  </figcaption>
   </figure> <br>
 
-  <p> Next, add the census dataset to ArcGIS Pro so that it is on the same map as the census tract boundaries. Export the census dataset to the geodatabase so that it can be edited. Now you will join the census dataset to its tract boundaries. Use “GEOIDFQ” as the join field from the census tract boundaries and “GEO_ID” as the join field from the census tract dataset.  Figure 10 below shows the fields used for the join. </p> <br>
+  <p> Next, add the census dataset to ArcGIS Pro so that it is on the same map as the census tract boundaries. Export the census dataset to the geodatabase so that it can be edited. It is now time to join the census dataset to its tract boundaries. Use “GEOIDFQ” as the join field from the census tract boundaries and “GEO_ID” as the join field from the census tract dataset.  Figure 10 below shows the fields used for the join. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/ABdp77Y.jpeg" alt="US Census Join" style="width:100%;max-width:625px">
   <figcaption> Figure 10. Joining the Census Tract Dataset to the Census Tract Boundaries  </figcaption>
   </figure> <br>
 
-  <p> With the two datasets joined together, export the layer to your geodatabase to save it. We can now map census data with this feature layer. To map the underlying population data, we will create a simple choropleth map where each census tract represents a percentage of the overall population in Boone County. On the newly selected layer, go to the symbology settings and choose “Graduated Colors” as the primary symbology. Then, select “Total” as the field, where normalization is equal to “<percentage of total>”. Since the data is close to being normally distributed, use “Quantile” as the break method. A white to brown color scheme would also fit well with a population map. The results are presented in Figure 11 below.  </p> <br>
+  <p> With the two datasets joined together, export the layer to the geodatabase to save it. At this point, the census data is ready to be mapped.   </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census Chloropleth" style="width:100%;max-width:625px">
   <figcaption> Figure 11. A Choropleth Map Created with 2020 US Census Data  </figcaption>
   </figure> <br>
 
-  <h3> Using Older Census Datasets </h3> <br>
+  <h3> Using Older Census Datasets and the American Community Survey </h3> <br>
 
-  <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To present this, I will download the same census data for Boone County, but for 2010 instead of 2020. The process for obtaining the census dataset is similar to the 2020 data, though instead of searching for "Demographic and Housing Characteristics" or "2020", I will select "DEC Summary File 1" and "2010". The summary files denotation is used with older data (2000 -- 2010). Obtaining the census boundary files is simple, as you only need to repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
+  <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To present this, download the same census data for Boone County, but for 2010 instead of 2020. The process for obtaining the census dataset is similar to the 2020 data, though instead of searching for "Demographic and Housing Characteristics" or "2020", select "DEC Summary File 1" and "2010". The summary files denotation is used with older data (2000 -- 2010). Obtaining the census boundary files is simple -- repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
 
-  <p> The 2010 census dataset is like the 2020 census dataset, so process it in the same manner as earlier. Add both it and the 2010 census tract boundary to ArcGIS Pro. When attempting to join the two datasets, however, you will notice that there is no “GEOIDFQ” field in the census tract boundaries like there was in the 2020 boundaries. </p> <br>
+  <p> The 2010 census dataset is like the 2020 census dataset, so process it in the same manner as earlier. Add both it and the 2010 census tract boundary to ArcGIS Pro. When attempting to join the two datasets, however, notice that there is no “GEOIDFQ” field in the census tract boundaries like there was in the 2020 boundaries. </p> <br>
 
-  <p> Comparing the attribute table of both layers, you will notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries (Figure 12). </p> <br>
+  <p> Comparing the attribute table of both layers, notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries (Figure 12).  </p> <br>
+
+  <em> As a side note, this GEOID identifier is a FIPS code like the one used to specify the Missouri census tract dataset on the FTP site (notice the each of the census tracts start with "29" which refers to the state Missouri). For reference, census block groups have a unique 12 digit FIPS code and census blocks have a unique 15 digit FIPS code.  </em>
+
+  <p> Along with the census there is also the American Community Survey, which, as the name implies, is a continuous survey given to random members of the population to record detailed demographic information. The heading for it appeared earlier ("Surveys") when searching for census datasets. The process for downloading ACS data is the same as downloading census information. Do note that since it is a survey, however, there is a margin of error within the data, though it is not significant until one goes below the county level. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/2kT3W8U.jpeg" alt="Trim GEO_ID Field" style="width:100%;max-width:625px">
