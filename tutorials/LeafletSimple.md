@@ -143,9 +143,9 @@
 
 <p> Open source web mapping applications like Leaflet play a crucial role in democratizing access to mapping technology and spatial data visualization. They empower developers, businesses, and communities to create interactive maps that are customizable, scalable, and adaptable to diverse needs. Leaflet, with its lightweight and modular design, offers a user-friendly platform for displaying geographical information on websites and mobile applications. Its extensive plugin ecosystem further enhances functionality, allowing integration with various data sources and advanced spatial analysis tools. By leveraging open source technologies like Leaflet, users can innovate freely, collaborate globally, and harness the power of spatial data to solve real-world challenges in fields ranging from urban planning and environmental management to logistics and tourism. </p> <br>
 
-<p> There are often times when it is advantageous to disseminate data in a dynamic, interactive web map rather than a static map file or paper map. A major reason is scalability, or the ability for the user to zoom in and out of the map to capture details at various scales that could not be replicated on a static map -- this can be enormously useful in displaying dense datasets such as census blocks or clustered points. Web maps can also display multimedia (audio, images, video), whereas static maps are limited to what is printed on the map at the time of its publication. Last, web maps can be customized to display multiple different spatial datasets or layers that may be too cumbersome for a single static map. Nevertheless, static maps still have their place. When it comes to displaying a single detailed snapshot of a phenomena at an optimized spatial scale, they can be quite effective. You may also see in this tutorial that web map development requires a moderate level of proficiency in javascript. This will become apparent when attempting to replicate features from ArcGIS or QGIS via programming. </p> <br>
+<p> There are often times when it is advantageous to disseminate data in a dynamic, interactive web map rather than a static map file or paper map. A major reason is scalability, or the ability for the user to zoom in and out of the map to capture details at various scales that could not be replicated on a static map -- this can be enormously useful in displaying dense datasets such as census blocks or clustered points. Web maps can also display multimedia (audio, images, video), whereas static maps are limited to what is printed on the map at the time of its publication. Last, web maps can be customized to display multiple different spatial datasets or layers that may be too cumbersome for a single static map. Nevertheless, static maps still have their place. When it comes to displaying a single detailed snapshot of a phenomena at an optimized spatial scale, they can be quite effective. Web map development also requires a moderate level of proficiency in javascript. This will become apparent when attempting to replicate features from ArcGIS or QGIS. </p> <br>
 
-<p> In this tutorial, we will be creating a simple Leaflet web map. The aim is to incorporate some of Leaflet's primary features: we will use a basemap, geojson layer, renderers to symbolize data, and pop-up features to make the map more informative. In an effort to incorporate different kinds of data, we will be looking at state level educational attainment data from the 2022 American Community Survey (ACS). The goal is to map out the percentage of the population with a Bachelor's degree or higher. As a point of reference, this tutorial is based on and modifies the code from the Leaflet <a href="https://leafletjs.com/examples/choropleth/"> chloropleth map tutorial</a> from Volodymyr Agafonkin, Leaflet's creator. Naturally, there are some additional steps and different design choices that warrant creating this tutorial.  </p> <br>
+<p> In this tutorial, a simple choropleth Leaflet web map will be created. The aim is to incorporate some of Leaflet's primary features such as a basemap, geojson layer, renderers to symbolize data, and pop-up features to make the map more informative. In an effort to incorporate different kinds of data, the example dataset consists of state level educational attainment data from the 2022 American Community Survey (ACS). The goal is to map out the percentage of the population with a Bachelor's degree or higher. As a point of reference, this tutorial is based on and modifies the code from the Leaflet <a href="https://leafletjs.com/examples/choropleth/"> chloropleth map tutorial</a> from Volodymyr Agafonkin, Leaflet's creator. Naturally, there are some additional steps and different design choices that warrant creating this tutorial.  </p> <br>
 
 <h3> Some Basic Assumptions in Web Mapping </h3> <br>
 
@@ -207,13 +207,13 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
-    		return d > 24.3  ? '#4a1486' :
-           	       d > 22.8  ? '#6a51a3' :
-       		       d > 21.7  ? '#807dba' :
-           	       d > 20.5  ? '#9e9ac8' :
+    		return d > 24  ? '#4a1486' :
+           	       d > 23  ? '#6a51a3' :
+       		       d > 22  ? '#807dba' :
+           	       d > 21  ? '#9e9ac8' :
            	       d > 19    ? '#bcbddc' :
-           	       d > 16.7  ? '#dadaeb' :
-           	       d > 13.4  ? '#f2f0f7' :
+           	       d > 17  ? '#dadaeb' :
+           	       d > 13  ? '#f2f0f7' :
                       '#fcfbfd';
 	}
 
