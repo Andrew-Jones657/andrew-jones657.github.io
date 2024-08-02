@@ -142,7 +142,7 @@
 
   <h3> Searching for Population Tables at the Census Tract Level </h3> <br>
 
-  <p> The US Census data website can be found <a href="https://data.census.gov/">here</a>. Since this table will be implemented in GIS software, the search criteria need to be setup carefully -- the US Census has a massive number of similarly named datasets which can be quite confusing to navigate through. The "advanced search" option will be used to apply several filters to obtain to the specfic dataset. Select “advanced search” under the main search bar to begin (Figure 2). </p>  <br>
+  <p> The US Census data website can be found <a href="https://data.census.gov/">here</a>. Since this table will be implemented in GIS software, the search criteria need to be setup carefully: the US Census has many similarly named datasets. The "advanced search" option will be used to apply several filters to obtain to the specific dataset. Select “advanced search” under the main search bar to begin (Figure 2). </p>  <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/BusE2V2.jpeg" alt="US Census Data" style="width:100%;max-width:625px">
@@ -171,7 +171,7 @@
 
   <p> The top option, “P9”, works for the purpose of this tutorial (Figure 4). This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial breakdown for both of those categories. For census data, it is important to note that being Hispanic or Latino is considered an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are considered racial groups.   </p> <br>
 
-  <p> Collapse the search menu and look at the table. Note that the table needs to be downloaded in a specific way -- do not use the .zip, .csv, or .xlsx download options directly above the table. Instead, under the results menu, you can click the “P9” checkbox and then select “download” above it. Downloading the table in this way preserves the “GEOID” field, which is the unique identifier field used to join it to the census tract boundaries.    </p> <br>
+  <p> Collapse the search menu and look at the table. Note that the table needs to be downloaded in a specific way. Do not use the .zip, .csv, or .xlsx download options directly above the table. Instead, under the results menu, you can click the “P9” checkbox and then select “download” above it. Downloading the table in this way preserves the “GEOID” field, which is the unique identifier field used to join it to the census tract boundaries.    </p> <br>
 
   <p> With the census dataset file downloaded, it is time to download the census tract boundaries before processing the dataset file.  </p> <br>
 
@@ -184,7 +184,7 @@
   <figcaption> Figure 5. US Census TIGER Line Website  </figcaption>
   </figure> <br>
 
-  <p> Choose 2023 as the year for the boundary file. The 2020-2022 vintages would also work without issues. The data can be downloaded via the the web interface or the ftp archive. The web interface is more user friendly, so choose it first. Here, there are dropdown boxes for the year and layer type. Make sure 2023 is selected for the year and census tracts are selected for the layer as shown in Figure 6 below.   </p> <br>
+  <p> Choose 2023 as the year for the boundary file. The 2020-2022 vintages would also work without issues. The data can be downloaded via the web interface or the ftp archive. The web interface is more user friendly, so choose it first. Here, there are dropdown boxes for the year and layer type. Make sure 2023 is selected for the year and census tracts are selected for the layer as shown in Figure 6 below.   </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/h6e0Fp5.jpeg" alt="US Census Tiger Line Web Interface" style="width:100%;max-width:625px">
@@ -242,7 +242,7 @@
 
   <h3> Using Older Census Datasets and the American Community Survey </h3> <br>
 
-  <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To present this, download the same census data for Boone County, but for 2010 instead of 2020. The process for obtaining the census dataset is similar to the 2020 data, though instead of searching for "Demographic and Housing Characteristics" or "2020", select "DEC Summary File 1" and "2010". The summary files denotation is used with older data (2000 -- 2010). Obtaining the census boundary files is simple -- repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
+  <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To present this, download the same census data for Boone County, but for 2010 instead of 2020. The process for obtaining the census dataset is like the 2020 data, though instead of searching for "Demographic and Housing Characteristics" or "2020", select "DEC Summary File 1" and "2010". The summary files denotation is used with older data (2000 -- 2010). Obtaining the census boundary files is simple -- repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
 
   <p> The 2010 census dataset is like the 2020 census dataset, so process it in the same manner as earlier. Add both it and the 2010 census tract boundary to ArcGIS Pro. When attempting to join the two datasets, however, notice that there is no “GEOIDFQ” field in the census tract boundaries like there was in the 2020 boundaries. </p> <br>
 
@@ -257,7 +257,7 @@
   <figcaption> Figure 12. Trimming the GEO_ID Field in the Census Dataset to Match the Census Boundary's "GEOID" Field   </figcaption>
   </figure> <br>
 
-  <p> Setup the choropleth map for the 2010 data as you did for the 2020 data. If you look closely at the census tracts afterwards, you can see that they are different between 2010 and 2020 (Figure 13).  </p> <br>
+  <p> Setup the choropleth map for the 2010 data in the same manner as the 2020 data. Looking closely at the census tracts afterwards, there are differences in the boundaries between 2010 and 2020 (Figure 13).  </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/Ifv6zjY.jpeg" alt="US Census Chloropleth 2010 " style="width:100%;max-width:625px">
@@ -291,7 +291,7 @@
 
   <p class="reference"><em>NHGIS Data Finder</em>. (n.d.). <a href="https://data2.nhgis.org/main">https://data2.nhgis.org/main</a></p>
 
-  <p class="reference">US Census Bureau. (2021, October 8).<em>Understanding geographic relationships: counties, places, tracts and more</em>. Census.gov. <a href="https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html">https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html </a></p>
+  <p class="reference">US Census Bureau. (2021, October 8). <em>Understanding geographic relationships: counties, places, tracts and more</em>. Census.gov. <a href="https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html">https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html </a></p>
 
 
 
