@@ -170,7 +170,7 @@
 <figcaption> Figure 3. Converting LAZ to LAS on ArcGIS Pro   </figcaption>
 </figure> <br>
 
-<p> Add the newly uncompressed LAS dataset from the target folder into ArcGIS Pro. Zoomed out, it appears as a red square overlaid on part of Bowling Green. When zooming in, however, it appears as a dense set of multicolored points, where blue points represent lower elevation and red points represent higher elevations (Figure 4). </p> <br>
+<p> Add the newly uncompressed LAS dataset from the target folder into ArcGIS Pro. Zoomed out, it appears as a red square overlaid on part of Bowling Green. When zooming in, however, it appears as a dense set of multicolored points, where blue points represent lower elevation, and red points represent higher elevations (Figure 4). </p> <br>
 
  <div class="row">
   <div class="column">
@@ -187,7 +187,7 @@
 
 <p> To use this LAS data with elevation and raster functions, it needs to be transformed into a proper LAS dataset. Lookup "Create LAS Dataset" in the toolbox. Input the LAS data -- the rest of the options can be left as default. </p> <br>
   
-<p> As a side note, if you have multiple LAS files, they could be input and turned into one large LAS dataset. Technically a LAS dataset for all of downtown Bowling Green could be created like this -- it would be time consuming, however. Create the LAS Dataset (Figure 5). </p> <br>
+<p> As a side note, if you have multiple LAS files, they could be input and turned into one large LAS dataset. Technically a LAS dataset for all downtown Bowling Green could be created like this -- it would be time consuming, however. Create the LAS Dataset (Figure 5). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/8uX8Bl5.jpeg" alt="Creating LAS Dataset" style="width:100%;max-width:625px">
@@ -198,7 +198,7 @@
 
 <p> Take some time to look at the LAS Dataset options (LAS Dataset Layer, Data, Classification). They appear at the top ribbon when the LAS Dataset is selected in the table of contents. Most noteworthy are the "LAS Dataset Layer" options: here, the density of the LAS points can be altered, as well as the symbology and LAS Point parameters. The symbology settings can be altered to display different point, surface, and line options -- observe how these settings display different kinds of information about the physical landscape. </p> <br>
   
-<p> "LAS Points" refers the classification of the LIDAR data: these classifications can include all elevations (including building and treetops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
+<p> "LAS Points" refers to the classification of the LIDAR data: these classifications can include all elevations (including building and treetops), only ground elevations, non-ground elevations, or the first return points. For "Data", Notice that there are numerous different options for analyses here: information on concepts or objects such as power lines, buildings, statistics, area and volume, outliers, surface derivatives, and visibility can be created here.    </p> <br>
 
 <p> To create a hillshade, this LIDAR data will first need to be transformed into raster data. Ensure that the "LAS Points" setting is set to "All Points" so that it captures buildings and treetops. Search for and select the "LAS Dataset to Raster" tool in the geoprocessing toolbox. This tool has several important parameters that require a comprehensive explanation, so take time to look over them.  </p> <br>
 
@@ -209,11 +209,11 @@
 
 <h3> LIDAR to Raster: Some Information on Raster Datasets </h3> <br>
 
-<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. When it comes time to fill in the parameters, I will take a line by line approach to the geoprocessing tool and give a brief summary on each of the parameter's options.  </p> <br>
+<p> As a quick break from the workflow, these next few steps will describe some parameters used in creating raster datasets as well as general information on the raster data format. When it comes time to fill in the parameters, a line-by-line approach to the geoprocessing tool will be taken and a brief summary on each of the parameter's options will be given.  </p> <br>
   
 <p> Raster datasets exist in the form of a grid, which is composed of a series of rows and columns. Rasters can also exist in rectangular form, though other irregular shapes would not be feasible since they cannot be stored in a row and column form easily. Tiny pixels organized in the grid serve as cell values, which quantify the raster.    </p> <br>
 
-<p> The amount of data a raster can store depends upon its bit number. An 8-bit raster can contain 255 values, a 16-bit raster can contain 65535 values, and a 32-bit raster can contain 4294967295 values. With the LAS Dataset to Raster tool you created a 32-bit signed raster.  </p> <br>
+<p> The amount of data a raster can store depends upon its bit number. An 8-bit raster can contain 255 values, a 16-bit raster can contain 65535 values, and a 32-bit raster can contain 4294967295 values. With the LAS Dataset to Raster tool, a 32-bit signed raster was created.  </p> <br>
 
 <p> Raster data also comes in signed and unsigned data formats. Signed rasters can contain negative values, whereas unsigned rasters contain only positive values. An 8-bit unsigned raster's values range from 0 to 255, whereas an 8-bit signed raster's values range from -128 to 127. </p> <br>
 
@@ -234,7 +234,7 @@
 <tr>
 <td> JPG, GIF, PNG, BMP </td>
 <td> Compressed </td>
-<td> As they are compressed, these image file formats are more space efficient. This comes at the cost of high-qualtiy resolution  </td>
+<td> As they are compressed, these image file formats are more space efficient. This comes at the cost of high-quality resolution  </td>
 </tr>
 </tbody>
 </table>
@@ -329,7 +329,7 @@
 
 <p> For "Cell Assignment" use "Nearest" and for "Void Fill Method" use "Linear". These parameters will help preserve the edges of buildings, structures, and trees.  </p> <br>
 
-<p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. Table 5 below presents a brief summary of the differences. </p>
+<p> Under "Output Data Type", the options are "Floating" or "Integer". For the purposes of this tutorial, either option can be selected, though it ultimately depends on what you want to do with the raster data. Table 5 below presents a summary of the differences. </p>
 
 <table title="Floating and Integer Valued Rasters"> <caption> Table 5. Floating and Integer Valued Rasters </caption>
 <thead>
@@ -345,18 +345,18 @@
 </tr>
 <tr>
 <td> Integer </td>
-<td> Integer rasters retain an attribute table since their values are countable. If you wish to create a TIN model for 3D modeling with building footprints or need to extract elevation values to a feature layer, then it may be better to select an "Integer" type raster. The disadvantage to integer rasters is that they cannot display data in a manner as detailed as floating point rasters. </td>  
+<td> Integer rasters retain an attribute table since their values are countable. If you wish to create a TIN model for 3D modeling with building footprints or need to extract elevation values to a feature layer, then it may be better to select an "Integer" type raster. The disadvantage to integer rasters is that they cannot display data in a manner as detailed as floating-point rasters. </td>  
 </tr>
 </tbody>
 </table> <br>
 
 
 
-<p> "Sampling Type" has two choices "Cell Size" and "Observations" (Table 6). Both of these options have the "Sampling Value" and "Z factor" sub options. Since we have a square grid of LIDAR data, select "Cell Size" as the "Sampling Type". </p> <br>
+<p> "Sampling Type" has two choices "Cell Size" and "Observations" (Table 6). Both options have the "Sampling Value" and "Z factor" sub options. Since we have a square grid of LIDAR data, select "Cell Size" as the "Sampling Type". </p> <br>
   
 <p> For "Sampling Value", a lower sampling value produce a higher resolution raster -- it can be left on the default value of ten, though you may wish to plug in a couple of other values (such as 1, 5, 25, 100) and run the tool to see how the resolution of the output raster is affected. </p> <br>
   
-<p> The "Z factor" is used to convert x and y units to a z unit that has a different unit of measurement. If, for example, the x and y units are in feet, and the z coordinate is in meters, the z factor would be 3.28084 to convert the z units into feet from meters. It is also used as a measure of vertical exageration in 3D modeling to make the verticality of features more striking. The Z factor can be left at the default value of one since we do not need to convert measurements or prepare any 3D models.  </p> <br>
+<p> The "Z factor" is used to convert x and y units to a z unit that has a different unit of measurement. If, for example, the x and y units are in feet, and the z coordinate is in meters, the z factor would be 3.28084 to convert the z units into feet from meters. It is also used as a measure of vertical exaggeration in 3D modeling to make the verticality of features more striking. The Z factor can be left at the default value of one since we do not need to convert measurements or prepare any 3D models.  </p> <br>
 
 <table> <caption> Table 6. Sampling Types for Raster Datasets </caption>
 <thead>
@@ -377,16 +377,16 @@
 </tbody>
 </table> <br>
 
-<p> Under the "Environments" tab, there are a few more settings (Figure ?). </p> <br>
+<p> Under the "Environments" tab, there are a few more settings (Figure 7). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/xvynuS6.jpeg" alt="Environments" style="width:100%;max-width:625px">
 <figcaption> Figure 7. Looking at the Environment Settings of the Create Raster from LAS Dataset Tool     </figcaption>
 </figure> <br>
   
-<p> "Output Coordinates", "Raster Analysis", and "Geodatabase" are fairly straightforward, as they refer to the output coordinate system of the raster, how the rasters inputs and snap size should be considered, and whether there is a specific geodatabase configuration keyword. Pay particular attention to the "Raster Storage" parameter heading, as this will affect he appearance of the raster dataset. The "Pyramid" option is checked by default: building pyramids may expedite the drawing speed of the raster dataset. Pyramids are essentially down-sampled versions of the raster dataset, which can then be displayed quicker on ArcGIS Pro. If the user zooms in, the details from the original raster will appear. This is useful for large rasters that would otherwise take a long time to display since ArcGIS does not need to load every detail at once.   </p> <br>
+<p> "Output Coordinates", "Raster Analysis", and "Geodatabase" are straightforward parameters, as they refer to the output coordinate system of the raster, how the rasters inputs and snap size should be considered, and whether there is a specific geodatabase configuration keyword. Pay particular attention to the "Raster Storage" parameter heading, as this will affect the appearance of the raster dataset. The "Pyramid" option is checked by default: building pyramids may expedite the drawing speed of the raster dataset. Pyramids are essentially down-sampled versions of the raster dataset, which can then be displayed quicker on ArcGIS Pro. If the user zooms in, the details from the original raster will appear. This is useful for large rasters that would otherwise take a long time to display since ArcGIS does not need to load every detail at once.   </p> <br>
 
-<p> Specific "Pyramid levels" can also be input. If the field is left empty, then all pyramids will be built. If a specific number is input, then that specific number of pyramisd will be built. Below "Pyramid levels" is the option to "Skip first", which by default is unchecked -- this would skip building the first pyramid level of the raster.     </p> <br>
+<p> Specific "Pyramid levels" can also be input. If the field is left empty, then all pyramids will be built. If a specific number is input, then that specific number of pyramids will be built. Below "Pyramid levels" is the option to "Skip first", which by default is unchecked -- this would skip building the first pyramid level of the raster.     </p> <br>
 
 <p> The "Resampling Techniques" are described in Table 7 below. This affects how the values of neighboring cells are used to assign a value to the output raster cell.  </p> <br>
 
@@ -415,13 +415,13 @@
 
 <p> "Raster Statistics" is checked by default. Raster statistics are standard descriptive statistics (i.e. mean, maximum, minimum, standard deviation) calculated from the cell values of each band in a raster. These statistics are necessary for certain operations, such as applying a contrast stretch or classifying data. Even if it is unchecked, raster statistics can still be calculated later. Below are the "X skip factor", "Y skip factor", and "Statistics ignore value(s)". The X and Y skip factors, like the names imply, impose a certain skip distance between samples on the x and y axis. This can be used to limit or manage samples during raster statistics creation. Statistics ignore value(s) is a semi colon separated list of values that should be left out of raster statistics.  </p> <br>
 
-<p> Finally, these is the "Compression" field. Typically this can be left on the default value "LZ77", as that method of compression is compatible with a wide range of raster types and it preserves all cell values in the raster. A detailed breakdown on raster compression can be found <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm"> here</a>.  </p> <br>
+<p> Finally, these is the "Compression" field. Typically, this can be left on the default value "LZ77", as that method of compression is compatible with a wide range of raster types and it preserves all cell values in the raster. A detailed breakdown on raster compression can be found <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/raster-compression.htm"> here</a>.  </p> <br>
 
-<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. Notice that it is fairly pixelated and has stark edges around trees and structures -- this is due to the parameters that were selected in its creation. If more intensive resampling methods and cell assignment methods were used, then there would have been a smoother gradient between elevation values.   </p> <br>
+<p> With the parameters set, run the "LAS Dataset to Raster" tool. Something like Figure 7 below should have been created. Notice that it is pixelated and has stark edges around trees and structures -- this is due to the parameters that were selected in its creation. If more intensive resampling methods and cell assignment methods were used, then there would have been a smoother gradient between elevation values.   </p> <br>
 
 <p> Like the LAS Dataset, if you select the raster that was created in the Table of Contents, you will notice that there is a unique "Raster Layer" option by the top ribbon of ArcGIS Pro. Here you can alter the Symbology method, Stretch Type, and Resampling Type. Nothing here needs alteration, but it is worthwhile to look through and test out what these options do.  </p>
   
-<p> Visually analyzing the raster, there are a few notable observations. The top-left part of the raster has bright white structures -- these are buildings on Western Kentucky University's (WKU) campus, which is situated on the historic Vinegar Hill. The bright white color denotes a higher elevation. East of the Western Kentucky University's campus are some high elevation tree tops in the College Hill Historic District, which connects to Resevoir Hill (not included in the raster). Looking south, there is a solid black line dotted with moderate sized structures that cuts the raster in half somewhat diagonally. This is the US-31W Bypass, which was once the edge of Bowling Green in the 1950s and 1960s -- it now serves as a major road in the middle of Bowling Green. In the south central part of the raster, there is a large structure that sits lower than WKU (as it is darker in color). This is the TC Cherry Elementary School, which serves most of downtown and southern Bowling Green.       </p> <br>
+<p> Visually analyzing the raster, there are a few notable observations. The top-left part of the raster has bright white structures -- these are buildings on Western Kentucky University's (WKU) campus, which is situated on the historic Vinegar Hill. The bright white color denotes a higher elevation. East of the Western Kentucky University's campus are some high elevation tree tops in the College Hill Historic District, which connects to Reservoir Hill (not included in the raster). Looking south, there is a solid black line dotted with moderate sized structures that cuts the raster in half somewhat diagonally. This is the US-31W Bypass, which was once the edge of Bowling Green in the 1950s and 1960s -- it now serves as a major road in the middle of Bowling Green. In the south-central part of the raster, there is a large structure that sits lower than WKU (as it is darker in color). This is the TC Cherry Elementary School, which serves most of downtown and southern Bowling Green.       </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/enetd1E.jpeg" alt="Elevation Raster" style="width:100%;max-width:625px">
@@ -449,7 +449,7 @@
 </tr>
 <tr>
 <td> Altitude </td>
-<td> The angle of illumination above the horizon, it ranges from 0° to 90°. A 0° is on the horizon, whereas a 90° is directly above the hillshade.
+<td> The angle of illumination above the horizon: the value ranges from 0° to 90°. A 0° is on the horizon, whereas a 90° is directly above the hillshade.
  </td>
 </tr>
 <tr>
@@ -467,7 +467,7 @@
 
 <p> The altitude of the lighting source can be left as default, or it can be edited to simulate the current position of the sun. Information on the current position of the sun relative to your location of choice can be calculated <a href="https://www.suncalc.org/"> here</a>. </p> <br>
 
-<p> The choice to model shadows is mainly an aesthetic choice. Feel free to enable it to see if it is pertinent to your data. I found it slightly districting, so I did not use it. </p> <br>
+<p> The choice to model shadows is mainly an aesthetic choice. Feel free to enable it to see if it is pertinent to your data. </p> <br>
 
 <p> The default Z factor is set to z unit into feet from meters, which will exaggerate the features somewhat. For the purposes of the tutorial, I left it at the default value. </p> <br>
 
