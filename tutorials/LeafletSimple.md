@@ -267,8 +267,10 @@ function style(feature) {
 
 </code></pre></div></div> <br>    
 
+<p> It is important to ensure that the "style" and "onEachFeature" functions get applied to the geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX command. </p> <br>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<p> It is important to ensure that the "style" and "onEachFeature" functions get applied to the geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX command. </p>
+
 
         // Provide the geoJSON layer 
         const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl, {
