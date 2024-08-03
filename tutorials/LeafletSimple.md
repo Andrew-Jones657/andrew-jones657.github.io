@@ -160,7 +160,7 @@
 
 <h3> Basic Javascript for Leaflet </h3> <br>
 
-<p> For web maps, most of the customization work is done using javascript. Javascript, along with html and css, are core languages of the web, and they are used in a vast majority of websites worldwide. Each of these languages can be considered front-end languages, creating visual elements with which the user interacts. To minimize errors, it is typically best to start with a simple web map and then add in features one-by-one. If an error does occur, it is not always imeeditaely clear what is causing it, so adding in small pieces of code steadily makes it much easier to find out what went wrong.  </p> <br>
+<p> For web maps, most of the customization work is done using javascript. Javascript, along with html and css, are core languages of the web, and they are used in a vast majority of websites worldwide. Each of these languages can be considered front-end languages, creating visual elements with which the user interacts. To minimize errors, it is typically best to start with a simple web map and then add in features one-by-one. If an error does occur, it is not always immediately clear what is causing it, so adding in small pieces of code steadily renders troubleshooting straightforward.  </p> <br>
 
 <p> To start, these tags must be placed in the head element of the html in order to call Leaflet and AJAX. </p>
 
@@ -248,7 +248,7 @@ function style(feature) {
 	}
 </code></pre></div></div> <br>
 
-<p> Next, some pop up text bubbles will be created. This will allow users to see the percentage of adults over 25 holding a Bachelor's degree or higher for each state. This is done using the "onEachFeature" function, which will be added to the "L.GeoJSON.AJAX(geojsonurl).addTo(map);" as a parameter. The function takes in the geojson layer and its data as inputs. The "feature.properties" are invoked using conditional logic so that the feature values in the geojson layer can be called in the popup. The "layer.bindPopup" option is used to create a popup. </p> <br>
+<p> Next, some pop up text bubbles will be created. This will allow users to see the percentage of adults over 25 holding a Bachelor's degree or higher for each state. This is done using the "onEachFeature" function, which will be added to the "L.GeoJSON.AJAX(geojsonurl).addTo(map);" line as a parameter. The "onEachFeature" function takes in the geojson layer and its fields values as inputs. The "feature.properties" are invoked using conditional logic so that the feature values in the geojson layer can be called in the popup. The "layer.bindPopup" option is used to create a popup. </p> <br>
 
 <p> The content within the popup itself consists of strings concatenated with blank spaces and the feature properties from the geojson layer. Some line breaks, denoted by '</br>' are used to separate the text. </p> <br>
 
@@ -280,11 +280,13 @@ function style(feature) {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
-<p> This product is more useful than the first incarnation, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
+<p> This product is more useful than the first incarnation. The percentage of Bachelor's degree holders over 25 is now displayed as a choropleth map, and the pop ups describe the exact percentage of bacherlor's attainment in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
 
 <h3> Refining the Web Map for the Final Iteration </h3> <br>
 
-<p> Starting with a title, there are a few changes that can be implemented here. To start, we can provide a title so that users understand what they are looking at quickly. We can also make the current pop up method less cumbersome (i.e. clicking on every state) by allowing users to simply hover over the states to see the underlieing data. We can also add in the margin of error so that users understand the confidence intervals for the data. </p> <br>
+<p> Starting with a title, there are a few changes that can be implemented here. To start, a title would provide context to the user. Since the current pop up method is a little cumbersome (e.g. having to click every state to see data), the popups can be tied into the title by adding a mouse hover event listener. The margin of error for the educational attainment data can also be included the title. </p> <br>
+
+<p> First, since these are new customly defined elements, some css needs to be added in the style section. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	// Some css for the title/pop up element we wish to create
@@ -293,6 +295,8 @@ function style(feature) {
 	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } 
 	.info h4 { margin: 0 0 5px; color: #777; }
 </code></pre></div></div> <br>
+
+<p> Next, the title and popups can be configured. This requires defining several different functions.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	// Leaflet control structure that shows state info on hover
@@ -352,7 +356,7 @@ function style(feature) {
 
 </code></pre></div></div> <br>
 
-<p> Next, we can look at adding a legend to the map. This will be done similarly to the title/pop ups with a control structure.  </p> <br>
+<p> Next, a legend can be created and added to the map. Like the title and pop ups, this will be done with a control structure.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	
