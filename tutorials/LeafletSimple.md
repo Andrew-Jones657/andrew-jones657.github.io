@@ -224,7 +224,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <p> Some enhancements will be needed to make this web map more useful. Since educational attainment rates are percentages, a choropleth map would work well here. Additionally, pop up text bubbles can be created that show the percentage of adults over 25 with a Bachelor's degree or higher in each state. </p> <br>
 
-<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values. The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p>
+<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values. To create the hex values for the purple color ramp, <a href="https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7">Colorbrewer</a> was used. The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
@@ -265,7 +265,10 @@ function style(feature) {
   	            }
     }
 
-<p> It is important to ensure that the "style" and "onEachFeature" functions get applied to our geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX layer. </p>
+</code></pre></div></div> <br>    
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<p> It is important to ensure that the "style" and "onEachFeature" functions get applied to the geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX command. </p>
 
         // Provide the geoJSON layer 
         const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl, {
@@ -282,7 +285,7 @@ function style(feature) {
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
-<p> This product is more useful than what we had earlier, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
+<p> This product is more useful than the first incarnation, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
 
 <p> Starting with a title, there are a few changes that can be implemented here. To start, we can provide a title so that users understand what they are looking at quickly. We can also make the current pop up method less cumbersome (i.e. clicking on every state) by allowing users to simply hover over the states to see the underlieing data. We can also add in the margin of error so that users understand the confidence intervals for the data. </p> <br>
 
@@ -494,6 +497,8 @@ function style(feature) {
 <p> https://github.com/Leaflet/Leaflet.TileLayer.NoGap </p> <br>
 
 <p> https://github.com/brunob/leaflet.fullscreen </p> <br>
+
+<p> https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7 </p>
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
