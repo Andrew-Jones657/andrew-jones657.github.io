@@ -200,7 +200,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
-<p> To see how the html, css, and javascript separately, we can use CodePen to display our work-in-progress map (Figure ?). On the left side you can look through each of the different components that go into making the basic map. On the right side you can see that the map successfully rendered under these settings. We will two more instances of CodePen to see how the web map and its code evolves.  </p> <br>
+<p> To see how the html, css, and javascript work individually, CodePen can be used to display the work-in-progress map (Figure ?). On the left side, look through each of the different languages that form the basic map. On the right side, notice that the map has successfully rendered. Two more instances of CodePen will be used to display progress as the web map is developed.  </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxoOGvX" data-pen-title="Leaflet Tutorial 1" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/xxoOGvX">
@@ -209,7 +209,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br> 
 
-<p> Looking at how the entire script is written in one file, Figure ? below depicts how the entire script works together. Usually, to keep things organized, you would take the javascript between the script tags and save that as a javascript file.  </p> <br>
+<p> Looking at how the entire script is written in one file, Figure ? below depicts how the entire script works together. Usually, to keep things organized, the javascript portion is loaded in as a separate file. Right-click on this web page and select "View Page Source" on the dropdown menu. This will open the html, css, and javascript for the webpage. Then, scroll down to Line ??? -- this is the final Leaflet web map loaded in from a different folder on GitHub. </p> <br>
 
 
 <figure> 
@@ -220,11 +220,11 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> Going Back and Adding More Features </h3> <br>
 
-<p> So far the outline of the states is displayed and Leaflet is functioning, which is a good starting point. This map is not particularly useful yet, as it does not visualize data or convey information to the viewer. </p> <br>
+<p> The basic Leaflet instance has successfully started and the geojson layer appears to work. This map is not particularly useful yet, as it does not visualize data or convey any information about educational attainment rates to the viewer. </p> <br>
 
-<p> Let's add some enhancements to make this web map more useful. Since we have percentages as our underlieing data, a choropleth map would work well here. Additionally, we can create some pop ups that show the percentage of adults over 25 with a Bachelor's degree or higher. </p> <br>
+<p> Some enhancements will be needed to make this web map more useful. Since educational attainment rates are percentages, a choropleth map would work well here. Additionally, pop up text bubbles can be created that show the percentage of adults over 25 with a Bachelor's degree or higher in each state. </p> <br>
 
-<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The second function serves as a general renderer that uses the first to fill the color. </p>
+<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values. The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
@@ -250,7 +250,9 @@ function style(feature) {
 	}
 </code></pre></div></div> <br>
 
-<p> We can also create a template for pop ups. This will allow users to see the percentage of adults over 25 holding a Bachelor's degree or higher for each state.  </p> <br>
+<p> Next, some pop up text bubbles will be created. This will allow users to see the percentage of adults over 25 holding a Bachelor's degree or higher for each state. This is done using the "onEachFeature" function, which will be added to the "L.GeoJSON.AJAX(geojsonurl).addTo(map);" as a parameter. The function takes in the geojson layer and its data as inputs. The "feature.properties" are invoked using conditional logic so that the feature values in the geojson layer can be called in the popup. The "layer.bindPopup" option is used to create a popup. </p> <br>
+
+<p> The content within the popup itself consists of strings concatenated with blank spaces and the feature properties from the geojson layer. Some line breaks, denoted by '</br>' are used to separate the text. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 // Create popups and bind the Name and Percent Bachelor Degree Holder fields from the geojson file to the popups
@@ -263,7 +265,7 @@ function style(feature) {
   	            }
     }
 
-<p> We also need to make sure that the "style" and "onEachFeature" functions get applied to our geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX layer. </p>
+<p> It is important to ensure that the "style" and "onEachFeature" functions get applied to our geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX layer. </p>
 
         // Provide the geoJSON layer 
         const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl, {
