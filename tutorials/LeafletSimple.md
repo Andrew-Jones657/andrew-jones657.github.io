@@ -181,7 +181,6 @@
 <p> The code below creates a basic Leaflet web map of the 50 US States and the District of Columbia. The first line creates the map and map object that can later be used with other codes -- the setView command is appended to the map creation to hover the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet -- in this case it is OpenStreetMaps. This layer serves as a backdrop and point of reference for the other layer that we will input. In this case, that other layer is a geojson file of the 50 US States and Washington D.C.. If this layer had been hosted on a web server, then we could simply load the script into Leaflet. Since we are loading it from a GitHub repository, however, we have to use an additional extension to easily extract the geojson from a url. This is where the Leaflet Ajax extension comes in -- it simplifies the process of having to come up with another script. The direct url to the geojson is stored in a variable, and then a specific Leaflet Ajax command instantiates it into the map. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-
 // Create a map object and set the view (latitude-longitude) and zoom level
 var map = L.map('map').setView([40.0491, -97.965], 4);
 
@@ -195,7 +194,6 @@ const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jon
    
 // Loads the geojson layer from the url into the map 
 const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
-
 </code></pre></div></div> <br>
 
 <h3> The Basic Web Map on Codepen </h3> <br>
@@ -218,7 +216,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 </figure> <br>
 
 
-<h3> Going Back and Adding More Features </h3> <br>
+<h3> Editing the Web Map to Display Information about the Geojson Layer </h3> <br>
 
 <p> The basic Leaflet instance has successfully started and the geojson layer appears to work. This map is not particularly useful yet, as it does not visualize data or convey any information about educational attainment rates to the viewer. </p> <br>
 
@@ -232,7 +230,7 @@ function getColor(d) {
            	       d > 23  ? '#6a51a3' :
        		       d > 22  ? '#807dba' :
            	       d > 21  ? '#9e9ac8' :
-           	       d > 19    ? '#bcbddc' :
+           	       d > 19  ? '#bcbddc' :
            	       d > 17  ? '#dadaeb' :
            	       d > 13  ? '#f2f0f7' :
                       '#fcfbfd';
@@ -264,20 +262,15 @@ function style(feature) {
                                         'This measurement has a ±' + ' ' + feature.properties.MOE + '%' + ' ' + 'margin of error.');
   	            }
     }
-
 </code></pre></div></div> <br>    
 
 <p> It is important to ensure that the "style" and "onEachFeature" functions get applied to the geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX command. </p> <br>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-
-
         // Provide the geoJSON layer 
         const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl, {
 		style,
 		onEachFeature: onEachFeature
 	}).addTo(map);
- 
 </code></pre></div></div> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWMjmMY" data-pen-title="Leaflet Tutorial Step 2" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -288,6 +281,8 @@ function style(feature) {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
 
 <p> This product is more useful than the first incarnation, as we can see states that are shaded with a darker shade of purple have a higher percentage of Bachelor's degree holders over 25. The pop ups also provide a message telling us what the percentage is in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
+
+<h3> Refining the Web Map for the Final Iteration </h3> <br>
 
 <p> Starting with a title, there are a few changes that can be implemented here. To start, we can provide a title so that users understand what they are looking at quickly. We can also make the current pop up method less cumbersome (i.e. clicking on every state) by allowing users to simply hover over the states to see the underlieing data. We can also add in the margin of error so that users understand the confidence intervals for the data. </p> <br>
 
