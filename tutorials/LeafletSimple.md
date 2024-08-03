@@ -169,7 +169,7 @@
 <figcaption> Figure ?. The HTML Tags to Call Leaflet </figcaption>
 </figure> <br>
 
-<p> Additionally, some css needs to be created to add design and size to the webmap. </p>
+<p> Additionally, some css needs to be created to add design and size to the webmap. This css should go inside the head element before the script tags in Figure ? above. </p>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/VXnjkpJ.jpeg" alt="Leaflet CSS" style="width:100%;max-width:625px">
