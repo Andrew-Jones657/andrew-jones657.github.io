@@ -222,7 +222,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <p> Some enhancements will be needed to make this web map more useful. Since educational attainment rates are percentages, a choropleth map would work well here. Additionally, pop up text bubbles can be created that show the percentage of adults over 25 with a Bachelor's degree or higher in each state. </p> <br>
 
-<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values. To create the hex values for the purple color ramp, <a href="https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7">Colorbrewer</a> was used. The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p>
+<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values, and the "?" symbol is shorthand for an if-else statement (e.g. if the value of d is greater than 21 the '#9e9ac8' hexcode is used). The final hexcode constitutes all other values. To create the hex values for the purple color ramp, <a href="https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7">Colorbrewer</a> was used. The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
@@ -298,7 +298,11 @@ function style(feature) {
 
 <p> Next, the title and popups can be configured. This requires defining several different functions. First, to create the box for the title and popups, a control structure must be created via "L.control();": this is a command that tells Leaflet to include a certain element such as zoom buttons, a scale bar, a layer toggle, etc. In this case, however, the control structure is a custom defined element.  </p> <br>
 
-<p>  </p> <br>
+<p> The following portion is a little more complicated. A function need to be created that will create and update a new div element on the web map. This is achieved using "L.DomUtil.create". DOM stands for Document Object Model, which functions as a universal Application Program Interface (API) for mananging dynamic html. The variable "this" is assigned a "_div" element, which is then given the update() function in the next line. Finally, it is returned so that it affects the script globally (i.e. actually updates the title/popup text element).   </p> <br>
+
+<p> Now, the popup information under the title can be populated. This is done using by adding the update option to the info variable. A function takes in the properties of the geojson layer, and its contents are described in the "contents" variable.   </p> <br>
+
+<p> Finally, the new title and popup info are added to the map. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	// Leaflet control structure that shows state info on hover
