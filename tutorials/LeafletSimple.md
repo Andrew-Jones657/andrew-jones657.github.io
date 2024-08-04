@@ -222,7 +222,9 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <p> Some enhancements will be needed to make this web map more useful. Since educational attainment rates are percentages, a choropleth map would work well here. Additionally, pop up text bubbles can be created that show the percentage of adults over 25 with a Bachelor's degree or higher in each state. </p> <br>
 
-<p> Two functions can be used to add color to the map's educational attainment data. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values, and the "?" symbol is shorthand for an if-else statement (e.g. if the value of d is greater than 21 the '#9e9ac8' hexcode is used). The final hexcode constitutes all other values. To create the hex values for the purple color ramp, <a href="https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7">Colorbrewer</a> was used. The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p>
+<p> Two functions can be used to add color to the map's educational attainment data. Both are set to "return" their outputs to the global level -- otherwise, their values could not be used later on in other functions. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values, and the "?" symbol is shorthand for an if-else statement (e.g. if the value of d is greater than 21 the '#9e9ac8' hexcode is used). The final hexcode constitutes all other values. To create the hex values for the purple color ramp, <a href="https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7">Colorbrewer</a> was used. </p> <br>
+	
+<p> The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
@@ -370,6 +372,8 @@ function style(feature) {
 
 <p> Next, a legend can be created and added to the map. Like the title and pop ups, this will be done with a control structure.  </p> <br>
 
+<p> Like, the title and pop up dynamic html, some css will be needed here. </p> <br>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	
 	// some css for the legend element
@@ -377,6 +381,8 @@ function style(feature) {
 	.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.8; }
  
 </code></pre></div></div> <br>
+
+<p> This next portion is a little more difficult. To setup the elements in the legend, another control structure needs to be created. </p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
