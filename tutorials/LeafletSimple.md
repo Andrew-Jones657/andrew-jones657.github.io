@@ -296,7 +296,9 @@ function style(feature) {
 	.info h4 { margin: 0 0 5px; color: #777; }
 </code></pre></div></div> <br>
 
-<p> Next, the title and popups can be configured. This requires defining several different functions.  </p> <br>
+<p> Next, the title and popups can be configured. This requires defining several different functions. First, to create the box for the title and popups, a control structure must be created via "L.control();": this is a command that tells Leaflet to include a certain element such as zoom buttons, a scale bar, a layer toggle, etc. In this case, however, the control structure is a custom defined element.  </p> <br>
+
+<p>  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	// Leaflet control structure that shows state info on hover
@@ -317,6 +319,12 @@ function style(feature) {
 
 	// Add the pop up data viewer to the top right part of the map
 	info.addTo(map);
+
+	</code></pre></div></div> <br>
+
+<p> Next, some highlight features can be written. </p>
+ 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
  	// Make the geojson layer highlightable and set the style of the highlights
 	function highlightFeature(e) {
