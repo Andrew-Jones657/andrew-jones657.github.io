@@ -410,7 +410,9 @@ function style(feature) {
  
 </code></pre></div></div> <br>
 
-<p> We can add another text bubble containing a link to our data source.  </p> <br>
+<p> Another useful feature is a link to the web map's ACS dataset. This can be created using the same DOM Util method as the other elements.  </p> <br>
+
+<p> Like the other dynamic html elements, some css is needed to describe it. This is basically the same as the title and popup css. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -419,6 +421,8 @@ function style(feature) {
 	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;  }
 
  </code></pre></div></div> <br>
+
+ <p> This next portion should look familiar to the last one. Another data control structure is used, this time on the bottom left part of the screen. Since the legend breaks are not a concern on this one, the code is quite simple in comparison. An empty list "dSource" is created and then the text is inserted into using "dSource.push". In here, the "Data Source" caption and the link from the ACS dataset is placed. Then, it is once again joined with innerHTML, returned to the global settings, and added to the map.   </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	
@@ -431,7 +435,7 @@ function style(feature) {
 		const div = L.DomUtil.create('div', 'info dataSource');
 		let dSource = [];
 		dSource.push(
-			`<div ><p style='data-source'><h4> Data Source:</h4> <a href="https://data.census.gov/table/ACSDP5Y2022.DP02?g=010XX00US$0400000&y=2022&d=ACS%205-Year%20Estimates%20Data%20Profiles">ACS 2022 5-Year <br> Estimates Data Profile</a></p></div>`
+			`<div ><p style='data-source'><p> Data Source:</p> <a href="https://data.census.gov/table/ACSDP5Y2022.DP02?g=010XX00US$0400000&y=2022&d=ACS%205-Year%20Estimates%20Data%20Profiles">ACS 2022 5-Year <br> Estimates Data Profile</a></p></div>`
 		);
 
 		div.innerHTML = dSource.join('<br>');
@@ -445,14 +449,14 @@ function style(feature) {
 
 </code></pre></div></div> <br>
 
-<p> Finally, a fullscreen option can be added to the web map. Normally, this would be a complex procedure, as writing a new script would constitutes a whole tutorial. Thankfully, there is a downloadable extension on GitHub by user Brunob that efficiently provides this functionality. Like the Leaflet tags, the fullscreen extension has some html tags that need to be loaded.  </p> <br>
+<p> Finally, a fullscreen option can be added to the web map. Normally, this would be a complex procedure, as writing a new script would constitute creatong another tutorial. Thankfully, there is a downloadable extension on GitHub by user Brunob that efficiently provides this functionality. Like the Leaflet tags, the fullscreen extension has some html tags that need to be loaded.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/5D4P4ZO.jpeg" alt="Leaflet HTML Final" style="width:100%;max-width:625px">
 <figcaption> Figure ?. The Final Leaflet HTML Tags </figcaption>
 </figure> <br>
 
-<p> The implementation of the control structure for the fullscreen option is fairly simple. Creating the control structure and adding it to the map should be familiar by now. The two new parts involve console log parameters. These invoke the "window.console" and "window.console.log" (WIP) </p> <br>
+<p> The implementation of the control structure for the fullscreen option is fairly simple. Creating the control structure and adding it to the map should be familiar by now. The two new parts involve console log parameters. These invoke the "window.console" and "window.console.log". For users, this will appear as a text bubble when fullscreen mode is enabled. The "window.console" is invoked using conditional logic so that the "window.console.log" message can be written. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -475,7 +479,7 @@ function style(feature) {
 
 <h3> The Final Product </h3> <br>
 
-<p> Having prepared the last few adjustments, we can now look at our final product on codepen and embedded into the website itself. </p> <br>
+<p> Having prepared the last few adjustments, the final product can be posted on codepen and embedded into the website itself. </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjQKLqe" data-pen-title="Leaflet Final" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/JjQKLqe">
