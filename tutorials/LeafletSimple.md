@@ -445,9 +445,14 @@ function style(feature) {
 
 </code></pre></div></div> <br>
 
-<p> Finally, we can add a fullscreen option for the web map. Thankfully, there is a downloadable extension on GitHub by user Brunob that efficiently provides this functionality.  </p> <br>
+<p> Finally, a fullscreen option can be added to the web map. Normally, this would be a complex procedure, as writing a new script would constitutes a whole tutorial. Thankfully, there is a downloadable extension on GitHub by user Brunob that efficiently provides this functionality. Like the Leaflet tags, the fullscreen extension has some html tags that need to be loaded.  </p> <br>
 
-<p> (Image of Tags) </p> <br>
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/5D4P4ZO.jpeg" alt="Leaflet HTML Final" style="width:100%;max-width:625px">
+<figcaption> Figure ?. The Final Leaflet HTML Tags </figcaption>
+</figure> <br>
+
+<p> The implementation of the control structure for the fullscreen option is fairly simple. Creating the control structure and adding it to the map should be familiar by now. The two new parts involve console log parameters. These invoke the "window.console" and "window.console.log" (WIP) </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -461,6 +466,7 @@ function style(feature) {
       map.on('enterFullscreen', function(){
       		if(window.console) window.console.log('enterFullscreen');
       });
+
       map.on('exitFullscreen', function(){
 		if(window.console) window.console.log('exitFullscreen');
       });
