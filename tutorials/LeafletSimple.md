@@ -166,14 +166,14 @@
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/AyzdnAZ.jpeg" alt="Leaflet Tags" style="width:100%;max-width:625px">
-<figcaption> Figure ?. The HTML Tags to Call Leaflet </figcaption>
+<figcaption> Figure 1. The HTML Tags to Call Leaflet </figcaption>
 </figure> <br>
 
 <p> Additionally, some css needs to be created to add design and size to the webmap. This css should go inside the head element before the script tags in Figure ? above. </p>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/VXnjkpJ.jpeg" alt="Leaflet CSS" style="width:100%;max-width:625px">
-<figcaption> Figure ?. The Basic CSS Design for Leaflet </figcaption>
+<figcaption> Figure 2. The Basic CSS Design for Leaflet </figcaption>
 </figure> <br>
 
 
@@ -212,7 +212,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XaJTK4I.jpeg" alt="Leaflet Step 1 " style="width:100%;max-width:625px">
-<figcaption> Figure ?. The Basic Leaflet Web Map </figcaption>
+<figcaption> Figure 3. The Basic Leaflet Web Map </figcaption>
 </figure> <br>
 
 
@@ -514,14 +514,16 @@ function style(feature) {
 
 
 	
-<p> It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez. We can see the successful results of the script with the Leaflet map embedded directly into the webpage below.  </p> <br>
+<p> It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez.  </p> <br>
 
 
 
 
 
 <h3> List of Figures and Tables </h3>
-<p> Figure . </p>
+<p> Figure 1. The HTML Tags to Call Leaflet  </p>
+<p> Figure 2. The Basic CSS Design for Leaflet  </p>
+<p> Figure 3.  </p>
 
 <div class="wysiwyg lengthy" > <h3> References </h3> <br>
 
