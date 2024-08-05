@@ -390,7 +390,9 @@ function style(feature) {
  
 </code></pre></div></div> <br>
 
-<p> This next portion is a little more difficult. To setup the elements in the legend, another control structure needs to be created. </p>
+<p> This next portion is a little more difficult. To setup the elements in the legend, another control structure needs to be created. Again, a legend function can be described via the DOM Util method, however, some consideration needs to take place as to how this will work. To start, the break values from legends can be assigned to a list variable called "grades". Next, a title for the legend can be created using the "push" command, though for this to work, an empty list called "labels" will take the "push" command as an input.   </p> <br>
+
+<p> Creating the legend values takes some more work, however. Since the data is represented in intervals, it would be ideal for the user to see the bottom and top breaks for each interval. A method needs to be devised that allows these lower and upper breaks to appear on the legend: this will be accomplished by creating a "from" and "to" variable. With these variables declared, a for loop can be created to join each data interval together. Using the length of the grades list, or seven units, each lower and upper break are iterated through to create a legend. Then, these breaks are pushed as labels to the dynamic html, with some descriptive div elements describing how the message should appear. To tie this dynamic html into the control structure, the "div.innerHTML" is joined using the "labels.join('<br>') parameter. Finally, the div element is returned the global level.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -404,7 +406,7 @@ function style(feature) {
 		const grades = [13, 16, 19, 21, 22, 23, 25];
 		let labels = [];
 		labels.push(
-			`<div ><h4 class='legend-title'>% Bachelor's <br> Attainment </h4></div>`
+			`<div ><p class='legend-title'>% Bachelor's <br> Attainment </p></div>`
 		);
 		let from, to;
 
