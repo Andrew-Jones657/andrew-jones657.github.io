@@ -328,7 +328,15 @@ function style(feature) {
 
 	</code></pre></div></div> <br>
 
-<p> Next, some highlight features can be written. </p>
+<p> Next, some highlight features can be written. This will consist of three different functions involving a user's mouse click or touch on a smart device -- the "e" input variable represents the input mouse action. The last function should be familiar, as it is the "onEachFeature" function.  </p> <br>
+
+<p> The first function, "highlightFeature(e)", is used to highlight whichever state the user is hovering over. First, the current position of the mouse or touch is stored as a "layer". Then, that "layer" is given stylized options similar to a renderer. The "layer.bringToFront();" function ensures that it will not appear behind the current geojson layer. Last, the underlieing information from the geojson layer is used to update the title and pop up dynamic html. </p> <br>
+
+<p> The second function, "resethighlight(e)", disables the highlight on the current state when the user hovers onto another state. This one is fairly straightforward: the geojson layer is appended with a "resetStyle(e.target)" function, and then the title and popup dynamic html is updated with the "update()" function.  </p> <br>
+
+<p> The third function, "zoomToFeature(e)", zooms onto a state when it is clicked by the user. This one is also straightforward, as it uses a Leaflet map command to fit the web map to the boundary -- the user's mouse click and the "getBounds()" built in function are input parameters.  </p> <br>
+
+<p> The final function should look familiar, as it invokes the "onEachFeature" function. The previous "onEachFeature" function can be deleted and replaced with this one.  </p> <br>
  
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
