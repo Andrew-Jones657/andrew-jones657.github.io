@@ -195,6 +195,7 @@ const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jon
 // Loads the geojson layer from the url into the map 
 const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 </code></pre></div></div> <br>
+<figcaption> Figure 3. The Javascript for the Basic Leaflet Web Map </figcaption>
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
@@ -205,14 +206,15 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
   Leaflet Tutorial 1</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br> 
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
+<figcaption> Figure 4. The Basic Leaflet Web Map on CodePen </figcaption> <br>
 
 <p> Looking at how the entire script is written in one file, Figure ? below depicts how the entire script works together. Usually, to keep things organized, the javascript portion is loaded in as a separate file. Right-click on this web page and select "View Page Source" on the dropdown menu. This will open the html, css, and javascript for the webpage. Then, scroll down to Line ??? -- this is the final Leaflet web map loaded in from a different folder on GitHub. </p> <br>
 
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XaJTK4I.jpeg" alt="Leaflet Step 1 " style="width:100%;max-width:625px">
-<figcaption> Figure 3. The Basic Leaflet Web Map </figcaption>
+<figcaption> Figure 5. A Snapshot look at the Entire Code for the Basic Leaflet Web Map </figcaption>
 </figure> <br>
 
 
