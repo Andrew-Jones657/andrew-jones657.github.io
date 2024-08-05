@@ -523,17 +523,15 @@ function style(feature) {
 <h3> List of Figures and Tables </h3>
 <p> Figure . </p>
 
-<h3> References </h3> <br>
+<div class="wysiwyg lengthy" > <h3> References </h3> <br>
 
-<p> https://leafletjs.com/examples/choropleth/ </p> <br>
+<p> Agafonkin, V. (n.d.).<em>Interactive Choropleth Map - Leaflet - a JavaScript library for interactive maps</em>. Leafletjs. <a href="https://leafletjs.com/examples/choropleth/">https://leafletjs.com/examples/choropleth/</a> </p> <br>
 
-<p> https://leaflet-extras.github.io/leaflet-providers/preview/ </p> <br>
+<p> Sanchez, I. (n.d.).<em> GitHub - Leaflet/Leaflet.TileLayer.NoGap: Experiment trying to get rid of the 1px gap between tiles</em>. GitHub. <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> https://github.com/Leaflet/Leaflet.TileLayer.NoGap</a> </p> <br>
 
-<p> https://github.com/Leaflet/Leaflet.TileLayer.NoGap </p> <br>
+<p> Brunob. (n.d.). <em> GitHub - brunob/leaflet.fullscreen: Leaflet.Control.FullScreen for Leaflet</em>. GitHub.<a href="https://github.com/brunob/leaflet.fullscreen"> https://github.com/brunob/leaflet.fullscreen</a> </p> <br>
 
-<p> https://github.com/brunob/leaflet.fullscreen </p> <br>
-
-<p> https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7 </p>
+<p> Brewer, C., Harrower, M., & The Pennsylvania University. (n.d.).<em> ColorBrewer: Color advice for maps</em>. https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7 </p>
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
