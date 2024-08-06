@@ -148,7 +148,7 @@
 
 <p> Analyzing Land Use Change in Warren County, Kentucky (WIP) </p> <br>
 
-<p> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset (WIP) </p> <br>
+<p> <a href="https://andrew-jones657.github.io/Interpolation_Multivariate"> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset </a> (WIP) </p> <br>
 
 
 
