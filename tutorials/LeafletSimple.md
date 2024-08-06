@@ -31,6 +31,10 @@
   figure figcaption {
   text-align: center;  
   }
+
+figcaption {
+  text-align: center;
+         }
 	 
 .modal {
   display: none;
@@ -250,7 +254,8 @@ function style(feature) {
         		fillColor: getColor(feature.properties.PER_BACH)
           	};
 	}
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+<figcaption> Figure 6. Creating the Choropleth Map Symbology with Javascript </figcaption> <br>
 
 <p> Next, some pop up text bubbles will be created. This will allow users to see the percentage of adults over 25 holding a Bachelor's degree or higher for each state. This is done using the "onEachFeature" function, which will be added to the "L.GeoJSON.AJAX(geojsonurl).addTo(map);" line as a parameter. The "onEachFeature" function takes in the geojson layer and its fields values as inputs. The "feature.properties" are invoked using conditional logic so that the feature values in the geojson layer can be called in the popup. The "layer.bindPopup" option is used to create a popup. </p> <br>
 
@@ -266,7 +271,8 @@ function style(feature) {
                                         'This measurement has a ±' + ' ' + feature.properties.MOE + '%' + ' ' + 'margin of error.');
   	            }
     }
-</code></pre></div></div> <br>    
+</code></pre></div></div> 
+<figcaption> Figure 7. Creating the Basic Popups for each State with Javascript </figcaption> <br>
 
 <p> It is important to ensure that the "style" and "onEachFeature" functions get applied to the geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX command. </p> <br>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
@@ -275,14 +281,16 @@ function style(feature) {
 		style,
 		onEachFeature: onEachFeature
 	}).addTo(map);
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+<figcaption> Figure 8. Applying the Style and onEachFeature Functions to the AJAX GeoJSON Load </figcaption> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWMjmMY" data-pen-title="Leaflet Tutorial Step 2" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/MWMjmMY">
   Leaflet Tutorial Step 2</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
+<figcaption> Figure 9. The Work in Progress Leaflet Web Map </figcaption> <br>
 
 <p> This product is more useful than the first incarnation. The percentage of Bachelor's degree holders over 25 is now displayed as a choropleth map, and the pop ups describe the exact percentage of bacherlor's attainment in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
 
