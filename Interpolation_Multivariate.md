@@ -13,6 +13,10 @@
   margin-left: auto;
   margin-right: auto;
   }
+
+  h3 {
+  text-align: center;
+  }
   
   figure figcaption {
   text-align: center; 
@@ -37,13 +41,17 @@
 
 <h3> Kriging </h3> <br>
 
-<h1> Multivariate Methods: Cluster Analysis </h1> <br>
+<h1 style="text-align:cemter;"> Multivariate Methods: Applying some Measures to a Different Month </h1> <br>
+
+<p> Multivariate statistics play a crucial role in Geographic Information Systems (GIS) by enabling the analysis of complex spatial data involving multiple variables simultaneously. Through techniques such as principal component analysis (PCA), cluster analysis, and canonical correlation analysis, multivariate statistics help to uncover patterns, relationships, and underlying structures within geospatial datasets. For instance, PCA can reduce the dimensionality of data, highlighting the most significant variables that influence spatial phenomena, while cluster analysis can identify distinct geographical areas with similar characteristics. By applying these statistical methods, GIS professionals can gain deeper insights into spatial processes, enhance predictive modeling, and make more informed decisions about land use, environmental management, and urban planning. </p> <br>
 
 <h3> Picking Another Month from the Drought Anomaly Data </h3> <br>
 
 <h3> Agglomerative Clustering </h3> <br>
 
 <h3> K-Means </h3>
+
+<h3> Final Cluster Map and Time-Series Plot </h3>
 
 </body>
 
