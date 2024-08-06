@@ -306,7 +306,8 @@ function style(feature) {
 	padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); 
 	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } 
 	.info h4 { margin: 0 0 5px; color: #777; }
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+<figcaption> Figure 10. Additional CSS for the Title and Hover Popup Dynamic HTML Box </figcaption>
 
 <p> Next, the title and popups can be configured. This requires defining several different functions. First, to create the box for the title and popups, a control structure must be created via "L.control();": this is a command that tells Leaflet to include a certain element such as zoom buttons, a scale bar, a layer toggle, etc. In this case, however, the control structure is a custom defined element.  </p> <br>
 
@@ -336,7 +337,8 @@ function style(feature) {
 	// Add the pop up data viewer to the top right part of the map
 	info.addTo(map);
 
-	</code></pre></div></div> <br>
+	</code></pre></div></div> 
+ 	<figcaption> Figure 11. Creating a Control Structure for the Title and Popups </figcaption>
 
 <p> Next, some highlight features can be written. This will consist of three different functions involving a user's mouse click or touch on a smart device -- the "e" input variable represents the input mouse action. The last function should be familiar, as it is the "onEachFeature" function.  </p> <br>
 
@@ -386,7 +388,8 @@ function style(feature) {
 		});
 	}
 
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+<figcaption> Figure 12. Configuring the Mouse Hover Popups  </figcaption> <br>
 
 <p> Next, a legend can be created and added to the map. Like the title and pop ups, this will be done with a control structure.  </p> <br>
 
@@ -398,7 +401,8 @@ function style(feature) {
 	.legend { text-align: left; line-height: 18px; color: #555; } 
 	.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.8; }
  
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+<figcaption> Figure 13. CSS for the Legend Elements </figcaption> <br>
 
 <p> This next portion is a little more difficult. To setup the elements in the legend, another control structure needs to be created. Again, a legend function can be described via the DOM Util method, however, some consideration needs to take place as to how this will work. To start, the break values from legends can be assigned to a list variable called "grades". Next, a title for the legend can be created using the "push" command, though for this to work, an empty list called "labels" will take the "push" command as an input.   </p> <br>
 
@@ -434,7 +438,8 @@ function style(feature) {
 	// Add the legend to the map
 	legend.addTo(map);
  
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+<figcaption> Figure 14. Creating a Control Structure for the Legend </figcaption> <br>
 
 <p> Another useful feature is a link to the web map's ACS dataset. This can be created using the same DOM Util method as the other elements.  </p> <br>
 
