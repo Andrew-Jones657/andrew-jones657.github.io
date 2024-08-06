@@ -33,7 +33,11 @@
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
+<p> This project is broken into two parts. The first looks at historical drought anomaly data from June of 1999 in Kentucky. This portion involves using interpolation techniques to analyze the  </p>
+
 <h3> Drought Anomaly Data for this Project </h3> <br>
+
+<p> In this project, historical drought anomaly data of Kentucky from June of 1999 will be analyzed using interpolation and multivariate methods.  </p>
 
 <h3> Inverse Distanced Weighed Interpolation  </h3> <br>
 
@@ -52,6 +56,12 @@
 <h3> K-Means </h3>
 
 <h3> Final Cluster Map and Time-Series Plot </h3>
+
+
+<h3> List of Figures and Tables </h3> <br>
+
+<h3> References </h3> <br>
+<p> https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
 
 </body>
 
