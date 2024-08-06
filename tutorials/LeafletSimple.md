@@ -402,7 +402,7 @@ function style(feature) {
 	.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.8; }
  
 </code></pre></div></div> 
-<figcaption> Figure 13. CSS for the Legend Elements </figcaption> <br>
+<figcaption> Figure 13. CSS for the Legend Element </figcaption> <br>
 
 <p> This next portion is a little more difficult. To setup the elements in the legend, another control structure needs to be created. Again, a legend function can be described via the DOM Util method, however, some consideration needs to take place as to how this will work. To start, the break values from legends can be assigned to a list variable called "grades". Next, a title for the legend can be created using the "push" command, though for this to work, an empty list called "labels" will take the "push" command as an input.   </p> <br>
 
@@ -451,7 +451,8 @@ function style(feature) {
 	.dataSource { 	padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); 
 	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;  }
 
- </code></pre></div></div> <br>
+ </code></pre></div></div> 
+ <figcaption> Figure 15. CSS for the Data Source Element </figcaption> <br>
 
  <p> This next portion should look familiar to the last one. Another data control structure is used, this time on the bottom left part of the screen. Since the legend breaks are not a concern on this one, the code is quite simple in comparison. An empty list "dSource" is created and then the text is inserted into using "dSource.push". In here, the "Data Source" caption and the link from the ACS dataset is placed. Then, it is once again joined with innerHTML, returned to the global settings, and added to the map.   </p> <br>
 
@@ -478,7 +479,8 @@ function style(feature) {
 	dataSource.addTo(map);
 
 
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+ <figcaption> Figure 16. Creating a Control Structure for the Data Source Element  </figcaption> <br>
 
 <p> Finally, a fullscreen option can be added to the web map. Normally, this would be a complex procedure, as writing a new script would constitute creatong another tutorial. Thankfully, there is a downloadable extension on GitHub by user Brunob that efficiently provides this functionality. Like the Leaflet tags, the fullscreen extension has some html tags that need to be loaded.  </p> <br>
 
