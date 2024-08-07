@@ -43,6 +43,66 @@
 
 <h3> Exploratory Data Analysis </h3> <br>
 
+<p> (Pic of Histogram here) </p> <br>
+
+<table>
+<thead>
+<tr>
+<th> Descriptive Statistic </th>
+<th> Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Number of Observations </td>
+<td> 56</td>
+</tr>
+<tr>
+<td> Minimum Value </td>
+<td> -18.18 in </td>
+</tr>
+<tr>
+<td> Maximum Value </td>
+<td> 6.52 in </td>
+</tr>
+<tr>
+<td> Average </td>
+<td> -6.859 in </td>
+</tr>
+<tr>
+<td> Standard Deviation </td>
+<td> 4.624 in </td>
+</tr>
+<tr>
+<td> Skewness </td>
+<td> 0.498 in </td>
+</tr>
+<tr>
+<td> Kurtosis </td>
+<td> 3.844 in </td>
+</tr>
+<tr>
+<td> First Quartile </td>
+<td> -9.24 in </td>
+</tr>
+<tr>
+<td> Median </td>
+<td> -7.46 in </td>
+</tr>
+<tr>
+<td> Third Quartile </td>
+<td> -4.7 in </td>
+</tr>
+<tr>
+<td> Interquartile Range </td>
+<td> 4.115 in </td>
+</tr>
+</tbody>    
+</table> <br>
+
+<p> (Pic of QQ Plot here) </p> <br>
+
+
 <h3> Kriging </h3> <br>
 
 <h1 style="text-align:cemter;"> Multivariate Methods: Applying some Measures to a Different Month </h1> <br>
