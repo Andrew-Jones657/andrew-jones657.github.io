@@ -129,7 +129,7 @@
 
 <p> The dataset takes the form of 56 weather stations in the form of points. These points will be interpolated to look at drought anomaly surfaces. Before looking at that, it is important to conduct a visual analysis of drought data via a chloropleth and graduated symbol map.  </p>
 
-<img class="myImages" id="myImg" src="https://i.imgur.com/AC7hwbq.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/YgyNcrN.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
 <figcaption> Figure 1. Cumulative Drought Values by Weather Station as of June of 1999 </figcaption>
 </figure> <br>
 
