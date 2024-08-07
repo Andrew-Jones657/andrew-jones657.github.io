@@ -134,6 +134,24 @@
 
 <h3> Kriging </h3> <br>
 
+<p> (Intro context to kriging map) </p> <br>
+
+<p> (Stick kriging map in here) </p> <br>
+
+<p> (Stick kriging table parameters in here) </p> <br>
+
+<p> (Discuss drought distribution from kriging here) </p> <br>
+
+<p> (stick standard error map here) </p>
+
+<p> (stick standard table error in here) </p>
+
+<p> (Discuss standard error here) </p>
+
+<p> (Attach probabily map here) </p>
+
+<p> (Discuss probability here) </p>
+
 <h1 style="text-align:center;"> Multivariate Methods: Applying some Measures to a Different Month </h1> <br>
 
 <p> Multivariate statistics play a crucial role in Geographic Information Systems (GIS) by enabling the analysis of complex spatial data involving multiple variables simultaneously. Through techniques such as principal component analysis (PCA), cluster analysis, and canonical correlation analysis, multivariate statistics help to uncover patterns, relationships, and underlying structures within geospatial datasets. For instance, PCA can reduce the dimensionality of data, highlighting the most significant variables that influence spatial phenomena, while cluster analysis can identify distinct geographical areas with similar characteristics. By applying these statistical methods, GIS professionals can gain deeper insights into spatial processes, enhance predictive modeling, and make more informed decisions about land use, environmental management, and urban planning. </p> <br>
