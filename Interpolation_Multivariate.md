@@ -14,6 +14,12 @@
   margin-right: auto;
   }
 
+  #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+
   h3 {
   text-align: center;
   }
@@ -21,7 +27,89 @@
   figure figcaption {
   text-align: center; 
   }
-  
+  #myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-height: 650px;
+  max-width: 900px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
     </style>
 </head>
 
@@ -41,15 +129,18 @@
 
 <p> The dataset takes the form of 56 weather stations in the form of points. These points will be interpolated to look at drought anomaly surfaces. Before looking at that, it is important to conduct a visual analysis of drought data via a chloropleth and graduated symbol map.  </p>
 
-<p> (Map of Weather Stations here) </p> <br>
+<img class="myImages" id="myImg" src="https://i.imgur.com/AC7hwbq.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
+<figcaption> Figure 1. Cumulative Drought Values by Weather Station as of June of 1999 </figcaption>
+</figure> <br>
 
-<p> First, it would do well to consider visual patterns of drought intensity. There is a definite pattern to the intensity of droughts in Kentucky as of June of 1999 (Figure ?). There appears to be a directional effect occurring with regards to droughts in Kentucky, as moving from west to east results in going from an area with no or little droughts to an area with a large deficiency in precipitation. Western Kentucky, which typically experiences intense storms and more erratic weather than the rest of Kentucky, was generally free of droughts or only experienced a minor decrease in rainfall. Eastern Kentucky, which typically has more rain showers than the rest of the state, had multiple stations reporting a precipitation deficiency of more than ten inches. The spatial patterns occurring on this map are contrary to Kentucky’s typical precipitation patterns, as western Kentucky generally experiences droughts due to erratic precipitation and Eastern Kentucky typically has higher recorded precipitation values -- or orographic rainfall.  </p> <br>
+
+<p> First, it would do well to consider visual patterns of drought intensity. There is a definite pattern to the intensity of droughts in Kentucky as of June of 1999 (Figure 1). There appears to be a directional effect occurring with regards to droughts in Kentucky, as moving from west to east results in going from an area with no or little droughts to an area with a large deficiency in precipitation. Western Kentucky, which typically experiences intense storms and more erratic weather than the rest of Kentucky, was generally free of droughts or only experienced a minor decrease in rainfall. Eastern Kentucky, which typically has more rain showers than the rest of the state, had multiple stations reporting a precipitation deficiency of more than ten inches. The spatial patterns occurring on this map are contrary to Kentucky’s typical precipitation patterns, as western Kentucky generally experiences droughts due to erratic precipitation and Eastern Kentucky typically has higher recorded precipitation values -- or orographic rainfall.  </p> <br>
 
 <p> There are some limitations within the dataset that need to be discussed. Since the boundary of the study area is the human-imposed border of Kentucky, critical drought values occurring just outside of Kentucky will not be calculated in the interpolation model. Similarly, there are few weather stations positioned on the edge of Kentucky, which may result in high error along the border. The edge effects can be mitigated by applying a buffer on the boundary of Kentucky and then running an interpolation model. Ideally, there would also be data on weather stations just outside of Kentucky in neighboring states so that the edge effects could be mitigated.   </p> <br>
 
 <h3> Inverse Distanced Weighed Interpolation  </h3> <br>
 
-<p> Moving on, an inverse distance weighted (IDW) surface of the drought anomaly values can be created. The IDW is presented in Figure ? below. </p> <br>
+<p> Moving on, an inverse distance weighted (IDW) surface of the drought anomaly values can be created. The IDW is presented in Figure 2 below. </p> <br>
 
 <p> (Stick IDW here) </p> <br>
 
@@ -169,6 +260,44 @@
 
 <h3> References </h3> <br>
 <p> https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
+
+<div id="myModal" class="modal">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="img01">
+   <div id="caption"></div>   
+</div> <br>
+
+
+
+
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
 
 </body>
 
