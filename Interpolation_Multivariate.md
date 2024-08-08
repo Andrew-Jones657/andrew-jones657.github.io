@@ -143,7 +143,12 @@
 
 <p> Moving on, an inverse distance weighted (IDW) surface of the drought anomaly values can be created. The IDW is presented in Figure 2 below. </p> <br>
 
-<p> (Stick IDW here) </p> <br>
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/FLNvHhE.jpeg" alt="IDW" style="width:100%;max-width:625px">
+<figcaption> Figure 2. IDW of Cumulative Drought Anomalies in June of 1999  </figcaption>
+</figure> <br>
+
+
 
 <p> There are a few definitions unique to interpolative methods that need to be defined before analyzing the IDW. These pertain to the prediction accuracy of the surface created by the IDW, as well as how trustworthy the surface is. Analysis of accuracy refers to the accuracy of an interpolation model. This means examining errors, the difference between the predicted and observed values at known locations. Analysis of accuracy is done through validation and cross validation. Deterministic methods are limited to analyses of accuracy, which only consider prediction accuracy based on the sample data. Analysis of uncertainty refers to the trustworthiness of predicted values and how confident the user is about them. These analyses require a measure of uncertainty alongside the prediction surface, which limits analysis of uncertainty to stochastic interpolation methods such as kriging.  </p> <br>
 
