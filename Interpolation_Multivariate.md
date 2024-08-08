@@ -157,7 +157,7 @@
 
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/fej6N9R.png" alt="Histogram" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/ACNMao3.jpeg" alt="Histogram" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Histogram of Cumulative Drought Anomalies in June of 1999  </figcaption>
 </figure> <br>
 
@@ -222,7 +222,7 @@
 
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/xsUPFhK.png" alt="QQPlot" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/NyMQkOO.jpeg" alt="QQPlot" style="width:100%;max-width:625px">
 <figcaption> Figure 4. QQPlot of Cumulative Drought Anomalies in June of 1999  </figcaption>
 </figure> <br>
 
