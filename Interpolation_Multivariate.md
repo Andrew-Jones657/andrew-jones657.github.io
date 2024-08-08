@@ -168,7 +168,7 @@
 
 
 
-<table>
+<table class="tablecenter"> <caption> Table 1. Descriptive Statistics for the Drought Anomalies in June of 1999 </caption>
 <thead>
 <tr>
 <th> Descriptive Statistic </th>
@@ -235,6 +235,12 @@
 <p> The field values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5.  Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in the histogram in Figure ?, where the right tail of the distribution is longer than the left tail. Similarly, the QQplot in Figure ? shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a topic such as critical resource mining, then it may not be best to proceed with a kriging analysis. </p> <br>
 
 <p> (Pic of Trend Analysis and Semivariogram/Covariance Cloud here) </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/uYhqKLA.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
+<figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies in June of 1999   </figcaption>
+</figure> <br>
+
 
 <p> (Address Trend Analysis and Semivariogram/Covariance Cloud here) </p> <br>
 
