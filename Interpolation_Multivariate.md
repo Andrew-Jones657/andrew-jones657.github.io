@@ -220,7 +220,12 @@
 
 <p> One assumption of kriging is that the underlieing dataset is normally distributed. To analyze the drought anomaly data for June of 1999, a normal QQplot was created (Figure ?). </p>
 
-<p> (Pic of QQ Plot here) </p> <br>
+<h3> Exploratory Data Analysis </h3> <br>
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/xsUPFhK.png" alt="QQPlot" style="width:100%;max-width:625px">
+<figcaption> Figure 4. QQPlot of Cumulative Drought Anomalies in June of 1999  </figcaption>
+</figure> <br>
+
 
 <p> The field values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5.  Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in the histogram in Figure ?, where the right tail of the distribution is longer than the left tail. Similarly, the QQplot in Figure ? shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a topic such as critical resource mining, then it may not be best to proceed with a kriging analysis. </p> <br>
 
