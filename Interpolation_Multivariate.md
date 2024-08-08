@@ -127,8 +127,9 @@
 
 <p> The drought dataset was collected between July of 1998 and June of 2001. It is a cumulative dataset, so each proceeding month includes the values from the previous months. Most of the values within the dataset are negative, indicating that some form of drought was occuring at those particular weather stations. By selecting June 1999 for the first portion of the project, a year of drought anomaly values are being analyzed.   </p> <br>
 
-<p> The dataset takes the form of 56 weather stations in the form of points. These points will be interpolated to look at drought anomaly surfaces. Before looking at that, it is important to conduct a visual analysis of drought data via a chloropleth and graduated symbol map.  </p>
+<p> The dataset takes the form of 56 weather stations in the form of points. These points will be interpolated to look at drought anomaly surfaces. Before looking at that, it is important to conduct a visual analysis of drought data via a chloropleth and graduated symbol map.  </p> <br>
 
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ei7BZYD.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
 <figcaption> Figure 1. Cumulative Drought Values by Weather Station as of June of 1999 </figcaption>
 </figure> <br>
@@ -155,7 +156,7 @@
 <p> Finally, some limitations of the IDW model need to be considered. Major limitations include the average and bull’s eye effect. If some of the chosen values used to interpolate are not within the threshold distance of any samples, they will not produce a surface: this can make outliers and edge values particularly difficult to interpolate around accurately. Depending on the number of points selected, proper continuity may also not be achieved if there are too few points. Each point in an IDW has the same weight, which can create issues for particularly high or low values. This can lead to the “bull’s eye” effect, where distant points will simply create a distance decay circle that does not properly reflect the studied subject. Similarly, the range of interpolated values cannot exceed the number of observed values. To mitigate the edge effect, it is important that values are also positioned on the edge of the study area, though this is difficult to achieve in practice.  </p> <br>
 
 <h3> Exploratory Data Analysis </h3> <br>
-
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/fej6N9R.png" alt="Histogram" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Histogram of Cumulative Drought Anomalies in June of 1999  </figcaption>
 </figure> <br>
