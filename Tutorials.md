@@ -148,7 +148,7 @@
 
  <div class="row">
   <div class="columnImg">
-    <a target="_blank" href="/tutorials/ArealProportionPython.md">
+    <a target="_blank" href="/tutorials/ArealProportionPython">
     <img src="https://i.imgur.com/HNXFGt5.jpg" alt="PythonAutomate" style="width:100%">
     </a>
   </div>
