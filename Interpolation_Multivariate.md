@@ -234,7 +234,7 @@
 
 <p> The field values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5.  Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in the histogram in Figure ?, where the right tail of the distribution is longer than the left tail. Similarly, the QQplot in Figure ? shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a topic such as critical resource mining, then it may not be best to proceed with a kriging analysis. </p> <br>
 
-<p> (Pic of Trend Analysis and Semivariogram/Covariance Cloud here) </p> <br>
+
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/52T6KDS.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
@@ -244,14 +244,14 @@
 
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/ZgRG7Qk.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
 <figcaption> Figure 6. Semivariogram of Cumulative Drought Anomalies in June of 1999   </figcaption>
 </figure> <br>
 
+<p> There certainly appears to be a second order trend in this data. The trend analysis in Figure 4 shows an upwards projecting U-shaped curve, indicating that drought values in central Kentucky are close to the mean while drought values in western and eastern Kentucky are far from the mean. Fortunately, this trend curve is rather broad, and will not affect the kriging interpolation too much. Similarly, the semivariogram in Figure 5 shows distant values on the right side of the figure, which denotes high and low values being diffused from the mean (or in other words, high and low values are autocorrelated with one another).   </p> <br>
 
 
 
-<p> (Address Trend Analysis and Semivariogram/Covariance Cloud here) </p> <br>
 
 <h3> Kriging </h3> <br>
 
