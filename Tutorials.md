@@ -145,6 +145,21 @@
 
 <div class="line"></div> <br>
 
+
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="/tutorials/ArealProportionPython.md">
+    <img src="https://i.imgur.com/HNXFGt5.jpg" alt="PythonAutomate" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Automating GIS Workflows: Creating a Python Script to Automate Areal Proportion Analysis  </h5>
+    <p> A guide to automating a reptitive GIS workflow which aggregates small geographic units to larger geographic units. </p>
+  </div>
+</div> 
+
 <p> Automating GIS Workflows: Creating a Python Script to Automate Areal Proportion Analysis (WIP) </p> <br>
 
 <p> Managing GIS Data: Using PostGIS and Postgresql as a Data Warehouse (WIP) </p> <br>
