@@ -125,8 +125,16 @@
   </head>
   <body>
 
+<h1 style="text-align:center;"> Automating GIS Workflows: Creating a Python Script to Automate Areal Proportion Analysis </h1> <br>
+
 <p> Python has become an indispensable tool in automating Geographic Information Systems (GIS) workflows due to its versatility and the rich ecosystem of libraries it offers. By leveraging libraries such as ArcPy for Esri’s ArcGIS platform or GeoPandas for open-source GIS, Python enables users to script and automate complex geospatial tasks with ease. This includes automating data processing, performing spatial analyses, and generating maps. With Python, GIS professionals can create custom tools and workflows that streamline repetitive tasks, ensure consistency, and enhance productivity. Additionally, Python’s integration with web mapping libraries like Folium or Plotly facilitates the creation of interactive and dynamic geospatial visualizations, further expanding its utility in the GIS domain. </p> <br>
 
+<p> In this tutorial, the areal proportion analysis workflow will be automated. Areal proportion analysis involves examining the relative sizes of different spatial units within a geographic area to understand their distribution and impact.  </p> <br>
+
+
+<h3> Looking at Areal Proportion Analysis in ModelBuilder </h3> <br> 
+
+<p>  </p>
 
 
   <div id="myModal" class="modal">
