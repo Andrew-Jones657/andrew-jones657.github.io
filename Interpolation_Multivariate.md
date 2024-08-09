@@ -241,6 +241,13 @@
 <figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies in June of 1999   </figcaption>
 </figure> <br>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/ZgRG7Qk.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
+<figcaption> Figure 6. Semivariogram of Cumulative Drought Anomalies in June of 1999   </figcaption>
+</figure> <br>
+
+
+
 
 <p> (Address Trend Analysis and Semivariogram/Covariance Cloud here) </p> <br>
 
