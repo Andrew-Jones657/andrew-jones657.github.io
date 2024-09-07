@@ -158,15 +158,11 @@
     <h5> Automating GIS Workflows: Creating a Python Script to Automate Areal Proportion Analysis  </h5>
     <p> A guide to automating a reptitive GIS workflow which aggregates small geographic units to larger geographic units. </p>
   </div>
-</div> 
-
-<p> Automating GIS Workflows: Creating a Python Script to Automate Areal Proportion Analysis (WIP) </p> <br>
+</div> <br>
 
 <p> Managing GIS Data: Using PostGIS and Postgresql as a Data Warehouse (WIP) </p> <br>
 
 <p> Hosting GIS Data on the Cloud: A Guide to Setting up Geoserver on Amazon Web Services (WIP) </p> <br>
-
-<p> Creating a Regression Model: Analyzing the 2016 US Presidential Election (WIP) </p> <br>
 
 </body>
 
