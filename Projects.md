@@ -85,7 +85,6 @@
 
 <h3> Work Projects </h3> <br> <br>
 
-<p> Working as a Freelance Analyst (WIP) </p> <br>
 
 <div class="line"></div>
 
@@ -145,8 +144,6 @@
     <p> A site selection analysis that incorporates some network analysis tools to find a site for a new or improved professional fire station. </p>
   </div>
 </div> <br>
-
-<p> Analyzing Land Use Change in Warren County, Kentucky (WIP) </p> <br>
 
 <p> <a href="https://andrew-jones657.github.io/Interpolation_Multivariate"> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset </a> (WIP) </p> <br>
 
