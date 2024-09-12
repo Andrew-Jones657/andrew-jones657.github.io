@@ -129,13 +129,33 @@
 
 <p> Python has become an indispensable tool in automating Geographic Information Systems (GIS) workflows due to its versatility and the rich ecosystem of libraries it offers. By leveraging libraries such as ArcPy for Esri’s ArcGIS platform or GeoPandas for open-source GIS, Python enables users to script and automate complex geospatial tasks with ease. This includes automating data processing, performing spatial analyses, and generating maps. With Python, GIS professionals can create custom tools and workflows that streamline repetitive tasks, ensure consistency, and enhance productivity. Additionally, Python’s integration with web mapping libraries like Folium or Plotly facilitates the creation of interactive and dynamic geospatial visualizations, further expanding its utility in the GIS domain. </p> <br>
 
-<p> In this tutorial, the areal proportion analysis workflow will be automated. Areal proportion analysis involves examining the relative sizes of different spatial units within a geographic area to understand their distribution and impact.  </p> <br>
+<p> In this tutorial, the areal proportion analysis workflow will be automated. Areal proportion analysis involves examining the relative sizes of different spatial units within a geographic area to understand their distribution and impact. This analysis can be useful for estimating demographic characteristics between different sized geographic areas, such as census blocks and zip codes. </p> <br>
 
+<p> This tutorial uses ArcPy and SSutilities, so it is specifically intended for ArcGIS Pro. Often, other GIS operations will pull in different libraries such as NumPy, GeoPandas, etc. </p> <br>
 
-<h3> Looking at Areal Proportion Analysis in ModelBuilder </h3> <br> 
+<h3> The workflow for Areal Proportion Analysis </h3> <br> 
+
+<p> Before attempting to automate a GIS workflow, it is important to understand how the workflow functions. This is best done by manually executing the workflow in order to understand the steps and nuances that need to be taken, as well as which geoprocessing tools are involved.  </p> <br>
+
+<p> Areal Proportion requires that there are two different spatial layers: one of them needs to be smaller in size with population (or numeric) values, while the other larger layer may be empty (i.e. no numeric values). In the smaller spatial layer, add a field called “AREA” and calculate its geometry in your desired unit (I recommend square miles). Next, intersect both the layers, and give the new layer an easily identifiable name. In the newly intersected layer, add a field called “NEWAREA” and calculate its geometry in the same unit used in the previous “AREA” field. Now, add yet another new field called “NEWPOP” and calculate it using this formula: “ [POP] * [NEWAREA] / [AREA]”. Now, the “NEWPOP” field needs to be summed up to the aggregated units in the larger spatial layer. This can be accomplished using the Summary Statistics tool, with the “NEWPOP” field being summed up to the original larger spatial layer. This new table can be called ____ POP TABLE. Finally, to save the changes on a permanent feature class, join the table to the larger spatial layer and export it as a new shapefile or feature class.  </p> <br>
+
+<p> These steps can be seen in a modelbuilder simulation below (Figure 1). </p> <br>
+
+<figure> 
+<img src="https://i.imgur.com/XCFsAB4.jpeg" class="center" style="width: 625px"> 
+<figcaption> Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </figcaption>
+</figure> <br>
+
+<h3> Writing the Script in Python </h3> <br>
+
+<p> With the workflow established, a python script can be created. To write this script, it is important that a python interface, such as IDLE, is downloaded, as this will make the process easier. Since this article is intended for use with ArcGIS applications, this script will be written in ArcPy, though a similar script coulc be created in QGIS.  </p> <br>
 
 <p>  </p>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+</code></pre></div></div> 
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
