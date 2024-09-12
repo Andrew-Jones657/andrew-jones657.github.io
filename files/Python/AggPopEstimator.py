@@ -45,6 +45,9 @@ workSpace = r"" + desc.path
 Aggregate_Layer_Feature_Layer = "aggregateLayer"
 arcpy.management.MakeFeatureLayer(in_features=aggregateLayer, out_layer=Aggregate_Layer_Feature_Layer)
 
+# Creata the join field small spatial layer in the larger spatial layer
+Aggregate_Layer_Feature_Layer_JField = arcpy.management.AddField(in_table=Aggregate_Layer_Feature_Layer, field_name=blockJoinField, field_type="TEXT", field_is_required="NON_REQUIRED")[0] 
+
 # Add the area field to the block field
 Block_with_Area_Field = arcpy.management.AddField(in_table=blockLayer, field_name="Area", field_type="DOUBLE", field_is_required="NON_REQUIRED")[0]
 
