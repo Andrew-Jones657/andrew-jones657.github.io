@@ -142,7 +142,7 @@
 <p> These steps can be seen in a modelbuilder simulation below (Figure 1). </p> <br>
 
 <figure> 
-<img src="https://i.imgur.com/XCFsAB4.jpeg" class="center" style="width: 625px"> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/XCFsAB4.jpeg" class="center" style="width: 625px"> 
 <figcaption> Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </figcaption>
 </figure> <br>
 
