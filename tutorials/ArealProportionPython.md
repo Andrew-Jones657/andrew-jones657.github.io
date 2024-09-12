@@ -150,12 +150,21 @@
 
 <p> With the workflow established, a python script can be created. To write this script, it is important that a python interface, such as IDLE, is downloaded, as this will make the process easier. Since this article is intended for use with ArcGIS applications, this script will be written in ArcPy, though a similar script coulc be created in QGIS.  </p> <br>
 
-<p>  </p>
+<p> When working in a separate python interface, arcpy needs to first be imported to the script, this can be done by adding the command "import arcpy". "SSutilities" will also be imported to construct a results table that appears when the script has completed its run. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+import arcpy
+import SSUtilities
+</code></pre></div></div> <br>
 
+<p> Next, it is important to set up the environment settings, which include the workspace, overwriting outputs, and adding outputs to the map. This can be achieved with these codes: </p> <br>
 
-</code></pre></div></div> 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+from arcpy import env # Bring in the workspace
+arcpy.env.overwriteOutput = True
+arcpy.env.addOutputsToMap = True
+</code></pre></div></div> <br>
+
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
