@@ -165,6 +165,29 @@ arcpy.env.overwriteOutput = True
 arcpy.env.addOutputsToMap = True
 </code></pre></div></div> <br>
 
+<p> At this point, it is important to consider what should be used as an input parameter. Certainly, the small and large spatial layers should be considered parameters. Similarly, if working with multiple numeric fields, there should be a specific field used in the analysis. Finally, a “to” and “from” join field should be identified to join the large layer with the intersected layer. These will be identified using the “arcpy.GetParameterAsText(n)” command. </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+blockLayer = arcpy.GetParameterAsText(0)
+aggregateLayer = arcpy.GetParameterAsText(1)
+populationField = arcpy.GetParameterAsText(2)
+blockJoinField = arcpy.GetParameterAsText(3)
+aggregateJoinField = arcpy.GetParameterAsText(4)
+</code></pre></div></div> <br>
+
+<p> It is important to set the workspace for the feature layer to be dynamic, this can be done by using the “Describe” command. </p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+desc = arcpy.Describe(blockLayer)
+workSpace = r"" + desc.path
+</code></pre></div></div> <br>
+
+
+
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+</code></pre></div></div> <br>
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
