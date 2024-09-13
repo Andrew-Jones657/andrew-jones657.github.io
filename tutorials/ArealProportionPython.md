@@ -175,19 +175,195 @@ blockJoinField = arcpy.GetParameterAsText(3)
 aggregateJoinField = arcpy.GetParameterAsText(4)
 </code></pre></div></div> <br>
 
-<p> It is important to set the workspace for the feature layer to be dynamic, this can be done by using the “Describe” command. </p>
+<p> It is important to set the workspace for the feature layer to be dynamic, this can be done by using the “Describe” command. The 'r""' is used to assign a relative system path. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 desc = arcpy.Describe(blockLayer)
 workSpace = r"" + desc.path
 </code></pre></div></div> <br>
 
+<p> The larger spatial layer needs to become a feature layer in order to edit it or use it in a geoprocessing workflow, this can be done with the aptly named “MakeFeatureLayer” command. First, it needs to be assigned a name, “aggregateLayer”, then the “MakeFeatureLayer” command from the "Management" toolbox can be used to create the feature layer. </p> <br>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Layer_Feature_Layer = "aggregateLayer"
+arcpy.management.MakeFeatureLayer(in_features=aggregateLayer, out_layer=Aggregate_Layer_Feature_Layer)
+</code></pre></div></div> <br>
+
+<p> At the end of the workflow, the table is joined back to the larger spatial layer. In order for this to work, a field needs to be added to the layer that matches the join field in the smaller spatial layer. This can be done with the “Management.Add_Field” command.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Layer_Feature_Layer_JField = arcpy.management.AddField(in_table=Aggregate_Layer_Feature_Layer, field_name=blockJoinField, field_type="TEXT", field_is_required="NON_REQUIRED")[0] 
+</code></pre></div></div> <br>
+
+<p> An area field representing the area of each unit on the smaller spatial layer must be created.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Block_with_Area_Field = arcpy.management.AddField(in_table=blockLayer, field_name="Area", field_type="DOUBLE", field_is_required="NON_REQUIRED")[0]
+</code></pre></div></div> <br>
+
+<p> Then, the area field is calculated with calculate geometry. To do this in python, the command !shape.area@squaremiles! is used. </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Block_Filled_Area_ = arcpy.management.CalculateField(in_table=Block_with_Area_Field, field="Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
+</code></pre></div></div> <br>
+
+<p> Now, the two spatial layers can be intersected. This uses the “analysis.Intersect” option from Arcpy. Since this procedure will create a new feature layer, a system path needs to be assigned to the new file. The previous "workSpace" variable can be concatenated with a "\\" and a string, "Block_Intersect", that will serve as the new layer's name. </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Block_Intersect_ = workSpace + "\\" + "Block_Intersect" 
+arcpy.analysis.Intersect(in_features=[[Block_Filled_Area_, ""], [Aggregate_Layer_Feature_Layer_JField, ""]], out_feature_class=Aggregate_Block_Intersect_)
+</code></pre></div></div> <br>
+
+<p> Again, a field representing the area of the intersected spatial layer is added.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Block_Intersect_Empty_New_Area_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_, field_name="New_Area", field_type="DOUBLE")[0]
+</code></pre></div></div> <br>
+
+<p> Likewise, the geometry of the added field is calculated.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Block_Intersect_Populated_Area_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Area_, field="New_Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
+</code></pre></div></div> <br>
+
+<p> Another field is added to contain the areal proportion population. </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Block_Intersect_Empty_New_Pop_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_Populated_Area_, field_name=populationField, field_type="LONG")[0]
+</code></pre></div></div> <br>
+
+<p> Then, the field is calculated. To fit in the expression from the field calculator, “f” is used to denote the mathematical relationship in quotes, and visual basic is used for simplicity.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Block_Intersect_Filled_Population_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Pop_, field=populationField, expression=f"[{populationField}] * [New_Area] / [Area]", expression_type="VB")[0]
+</code></pre></div></div> <br>
+
+
+<p> Approaching the end of the workflow, the summary statistics table now needs to be created. To create a table, a desktop path and a name need to be defined – like the “Block_Intersection” feature layer earlier. The “statistics” tool is another analysis tool: to choose a summation, write “SUM” by the statistics field. The group by which the field values will be summed is the “aggregateJoinField”, which is one of the user defined inputs. </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Population_Table = workSpace + "\\" + "AGG_TABLE" 
+arcpy.analysis.Statistics(in_table=Aggregate_Block_Intersect_Filled_Population_, out_table=Aggregate_Population_Table, statistics_fields=[[populationField, "SUM"]], case_field=[aggregateJoinField])
+</code></pre></div></div> <br>
+
+<p> Finally, the join between the larger spatial layer and the summary statistics table can be performed.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Aggregate_Population_Layer_ = arcpy.management.AddJoin(in_layer_or_view=Aggregate_Layer_Feature_Layer, in_field=blockJoinField, join_table=Aggregate_Population_Table, join_field=aggregateJoinField, join_type="KEEP_ALL")[0]
+</code></pre></div></div> <br>
+
+<p>  The analytical workflow is done at this point, though with the SSUtilities package, some general information on the tool can be produced. This will require creating a small table that details the input spatial layers as well as the output. This can be done with a few strings and lists.  </p> <br>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+header = "Areal Proportion Analysis"
+# Report the input list of parameters first
+row1 = [ "The Block Layer: ", blockLayer ]
+row2 = [ "The Aggregate Layer: ", aggregateLayer  ]
+row3 = [ "The Output Dbase File Name: ", Aggregate_Population_Table ]
+total = [ row1, row2, row3 ]
+</code></pre></div></div> <br>
+
+<p> To save the joined larger spatial layer, simply export it to a shapefile or geodatabase. The entire script is depicted below and can be downloaded <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> here</a>.  </p> <br>
 
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+##----------------------------------------------------------------------
+## AggPopEstimator.py
+## Created on: 5-14-2024
+## Last Modified on: 5-15-2024
+## Created by: Andrew Jones
+## Usage: AggPopEstimator(blockLayer), AggPopEstimator(aggregateLayer),
+## AggPopEstimator(populationField), AggPopEstimator(blockJoinField), AggPopEstimator(aggregateJoinField)
+##              In order to use this script, the user needs to have a census block layer 
+##              containing population data. The user must also have a larger layer that will 
+##              act as the aggregation layer. 
+##              Additionally, the user needs to identify the desired population field as 
+##              well as the fields used to join the table to the aggregate layer. Typically 
+##              this is the same field as the block field. Remember to setup the parameters or this tool will not function!
+##              So far, this tool has successfully functioned using census blocks, block groups, tracts, and zip codes. 
+## Description: This script is designed to automate an areal proportion analysis
+##              and aggregate the population values of census blocks to larger geographic units. 
+##              The results are stored in a dBase table which can then be joined to the larger geographic unit.
+##              Areal proportion analysis assumes that the population within census blocks is evenly dispersed.
+## Note: This tool may result in an error message if it is run more than once while the aggregate table 
+##       is on the active ArcGIS Pro Table of Contents. Remove the aggregate table from the Table of Contents to avoid this.
+##       Additionally, this tool was designed to work with census boundary files. Using it on other boundaries may create unexpected
+##       results. 
+## ----------------------------------------------------------------------
+import arcpy
+import SSUtilities
+from sys import argv
+
+# Set the environmental options 
+from arcpy import env # Bring in the workspace
+arcpy.env.overwriteOutput = True
+arcpy.env.addOutputsToMap = True
+
+# Script tool arguments (Input - Global variables)
+blockLayer = arcpy.GetParameterAsText(0)
+aggregateLayer = arcpy.GetParameterAsText(1)
+populationField = arcpy.GetParameterAsText(2)
+blockJoinField = arcpy.GetParameterAsText(3)
+aggregateJoinField = arcpy.GetParameterAsText(4)
+
+# Set the workspace of the feature layer to be dynamic
+desc = arcpy.Describe(blockLayer)
+workSpace = r"" + desc.path
+
+# Make the feature layer for the aggregate layer
+Aggregate_Layer_Feature_Layer = "aggregateLayer"
+arcpy.management.MakeFeatureLayer(in_features=aggregateLayer, out_layer=Aggregate_Layer_Feature_Layer)
+
+# Creata the join field small spatial layer in the larger spatial layer
+Aggregate_Layer_Feature_Layer_JField = arcpy.management.AddField(in_table=Aggregate_Layer_Feature_Layer, field_name=blockJoinField, field_type="TEXT", field_is_required="NON_REQUIRED")[0] 
+
+# Add the area field to the block field
+Block_with_Area_Field = arcpy.management.AddField(in_table=blockLayer, field_name="Area", field_type="DOUBLE", field_is_required="NON_REQUIRED")[0]
+
+# Calculate the added area field 
+Block_Filled_Area_ = arcpy.management.CalculateField(in_table=Block_with_Area_Field, field="Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
+
+# Intersect the block and aggregate layers 
+Aggregate_Block_Intersect_ = workSpace + "\\" + "Block_Intersect" 
+arcpy.analysis.Intersect(in_features=[[Block_Filled_Area_, ""], [Aggregate_Layer_Feature_Layer, ""]], out_feature_class=Aggregate_Block_Intersect_)
+
+# Add the new area field to the intersected layer
+Aggregate_Block_Intersect_Empty_New_Area_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_, field_name="New_Area", field_type="DOUBLE")[0]
+
+# Calculate the new area field  
+Aggregate_Block_Intersect_Populated_Area_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Area_, field="New_Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
+
+# Add the new population field to the intersected layer
+Aggregate_Block_Intersect_Empty_New_Pop_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_Populated_Area_, field_name=populationField, field_type="LONG")[0]
+
+# Use Areal Proportion to calculate the new population 
+Aggregate_Block_Intersect_Filled_Population_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Pop_, field=populationField, expression=f"[{populationField}] * [New_Area] / [Area]", expression_type="VB")[0]
+
+# Run summary statistics to aggregate the population to the aggregate layer
+Aggregate_Population_Table = workSpace + "\\" + "AGG_TABLE" 
+arcpy.analysis.Statistics(in_table=Aggregate_Block_Intersect_Filled_Population_, out_table=Aggregate_Population_Table, statistics_fields=[[populationField, "SUM"]], case_field=[aggregateJoinField])
+
+# Join the table to the aggregate layer
+Aggregate_Population_Layer_ = arcpy.management.AddJoin(in_layer_or_view=Aggregate_Layer_Feature_Layer, in_field=blockJoinField, join_table=Aggregate_Population_Table, join_field=aggregateJoinField, join_type="KEEP_ALL")[0] 
+
+# Create Output Text Table
+# So the input and output can be reported in the tool report window
+header = "Create Unique Value Dbase file"
+# Report the input list of parameters first
+row1 = [ "The Block Layer: ", blockLayer ]
+row2 = [ "The Aggregate Layer: ", aggregateLayer  ]
+row3 = [ "The Output Dbase File Name: ", Aggregate_Population_Table ]
+total = [ row1, row2, row3 ]
+
+# Construct a table so it can be reported in the tool result window
+tableOut = SSUtilities.outputTextTable(total,header=header,pad=1)
+arcpy.AddMessage(tableOut)
 
 </code></pre></div></div> <br>
+
+<p>  </p> <br>
+
+<h3>  </h3> <br>
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
