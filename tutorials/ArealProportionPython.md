@@ -361,9 +361,21 @@ arcpy.AddMessage(tableOut)
 
 </code></pre></div></div> <br>
 
-<p>  </p> <br>
+<p> For the script to function like a geoprocessing tool in ArcGIS Pro, several parameters need to be established under the script’s property settings. On ArcGIS Pro, create a new toolbox under the catalog pane. Right-click on the toolset and create a new script. Copy and paste the python code from IDLE into the new script and save it.  </p> <br>
 
-<h3>  </h3> <br>
+<h3> Setting up the Script Parameters </h3> <br>
+
+<p> Each of the variables that were assigned “arcpy.GetParameterAsText” need to be defined for the script to be usable. Figure 2 below depics the parameter settings.  </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/ctqad00.jpg" class="center" style="width: 625px"> 
+<figcaption> Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro </figcaption>
+</figure> <br>
+
+
+
+
+
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
