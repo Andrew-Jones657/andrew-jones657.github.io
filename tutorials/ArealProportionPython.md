@@ -374,7 +374,15 @@ arcpy.AddMessage(tableOut)
 
 <h3> Some Cartographic Products Created with Areal Proportion Analysis </h3> <br>
 
-<p>  </p> <br>
+<p> The most obvious example of the use of Areal Proportion Analysis is working with census geographies smaller than the county level. I detail these in my <a href="https://andrew-jones657.github.io/Site_Selection"> Site Selection project</a> and <a href="https://andrew-jones657.github.io/tutorials/CensusData"> Census Data tutorial</a>.  </p> <br>
+
+
+
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpg" class="center" style="width: 625px"> 
+<figcaption> Figure 3. Estimated Population Change between 2000 and 2020 in Warren County </figcaption>
+</figure> <br>
 
 
   <div id="myModal" class="modal">
