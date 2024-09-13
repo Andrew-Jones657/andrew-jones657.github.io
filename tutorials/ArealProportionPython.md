@@ -385,6 +385,10 @@ arcpy.AddMessage(tableOut)
 </figure> <br>
 
 
+<h3> List of Figures </h3> <br>
+
+<h3> References </h3> <br>
+
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
