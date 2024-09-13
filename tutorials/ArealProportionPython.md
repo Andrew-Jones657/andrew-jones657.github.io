@@ -365,16 +365,16 @@ arcpy.AddMessage(tableOut)
 
 <h3> Setting up the Script Parameters </h3> <br>
 
-<p> Each of the variables that were assigned “arcpy.GetParameterAsText” need to be defined for the script to be usable. Figure 2 below depics the parameter settings.  </p> <br>
+<p> Each of the variables that were assigned “arcpy.GetParameterAsText” need to be defined for the script to be usable. For both of the spatial layers, they must be input as a "feature layer" Data Type. The other three parameters are simply fields. The "Default" values  Figure 2 below depicts the parameter settings.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/ctqad00.jpg" class="center" style="width: 625px"> 
 <figcaption> Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro </figcaption>
 </figure> <br>
 
+<h3> Some Cartographic Products Created with Areal Proportion Analysis </h3> <br>
 
-
-
+<p>  </p> <br>
 
 
   <div id="myModal" class="modal">
