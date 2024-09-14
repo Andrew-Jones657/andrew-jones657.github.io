@@ -129,7 +129,13 @@
 
 <p> Python has become an indispensable tool in automating Geographic Information Systems (GIS) workflows due to its versatility and the rich ecosystem of libraries it offers. By leveraging libraries such as ArcPy for Esri’s ArcGIS platform or GeoPandas for open-source GIS, Python enables users to script and automate complex geospatial tasks with ease. This includes automating data processing, performing spatial analyses, and generating maps. With Python, GIS professionals can create custom tools and workflows that streamline repetitive tasks, ensure consistency, and enhance productivity. Additionally, Python’s integration with web mapping libraries like Folium or Plotly facilitates the creation of interactive and dynamic geospatial visualizations, further expanding its utility in the GIS domain. </p> <br>
 
-<p> In this tutorial, the areal proportion analysis workflow will be automated. Areal proportion analysis involves examining the relative sizes of different spatial units within a geographic area to understand their distribution and impact. This analysis can be useful for estimating demographic characteristics between different sized geographic areas, such as census blocks and zip codes. </p> <br>
+<p> In this tutorial, the areal proportion analysis workflow will be automated. Areal proportion analysis involves examining the relative sizes of different spatial units within a geographic area to understand their distribution and impact. This analysis can be useful for estimating demographic characteristics between different sized geographic areas, such as census blocks and zip codes. Figure 1 below presents a visual depictuion of areal proportion analysis -- smaller units are aggregated into larger units. </p> <br>
+
+<figure> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/HNXFGt5.jpg" style="width:100%;max-width:625px"> 
+<figcaption> Figure 1. A Visual Depiction of Areal Proportion Analysis  </figcaption>
+</figure> <br>
+
 
 <p> This tutorial uses ArcPy and SSutilities, so it is specifically intended for ArcGIS Pro. Often, other GIS operations will pull in different libraries such as NumPy, GeoPandas, etc. </p> <br>
 
@@ -137,13 +143,13 @@
 
 <p> Before attempting to automate a GIS workflow, it is important to understand how the workflow functions. This is best done by manually executing the workflow in order to understand the steps and nuances that need to be taken, as well as which geoprocessing tools are involved.  </p> <br>
 
-<p> Areal Proportion requires that there are two different spatial layers: one of them needs to be smaller in size with population (or numeric) values, while the other larger layer may be empty (i.e. no numeric values). In the smaller spatial layer, add a field called “AREA” and calculate its geometry in your desired unit (I recommend square miles). Next, intersect both the layers, and give the new layer an easily identifiable name. In the newly intersected layer, add a field called “NEWAREA” and calculate its geometry in the same unit used in the previous “AREA” field. Now, add yet another new field called “NEWPOP” and calculate it using this formula: “ [POP] * [NEWAREA] / [AREA]”. Now, the “NEWPOP” field needs to be summed up to the aggregated units in the larger spatial layer. This can be accomplished using the Summary Statistics tool, with the “NEWPOP” field being summed up to the original larger spatial layer. This new table can be called ____ POP TABLE. Finally, to save the changes on a permanent feature class, join the table to the larger spatial layer and export it as a new shapefile or feature class.  </p> <br>
+<p> Areal proportion requires that there are two different spatial layers: one of them needs to be smaller in size with population (or numeric) values, while the other larger layer may be empty (i.e. no numeric values). In the smaller spatial layer, add a field called “AREA” and calculate its geometry in your desired unit (I recommend square miles). Next, intersect both the layers, and give the new layer an easily identifiable name. In the newly intersected layer, add a field called “NEWAREA” and calculate its geometry in the same unit used in the previous “AREA” field. Now, add yet another new field called “NEWPOP” and calculate it using this formula: “ [POP] * [NEWAREA] / [AREA]”. Now, the “NEWPOP” field needs to be summed up to the aggregated units in the larger spatial layer. This can be accomplished using the Summary Statistics tool, with the “NEWPOP” field being summed up to the original larger spatial layer. This new table can be called ____ POP TABLE. Finally, to save the changes on a permanent feature class, join the table to the larger spatial layer and export it as a new shapefile or feature class.  </p> <br>
 
-<p> These steps can be seen in a modelbuilder simulation below (Figure 1). </p> <br>
+<p> These steps can be seen in a modelbuilder simulation below (Figure 2). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XCFsAB4.jpeg" style="width:100%;max-width:625px"> 
-<figcaption> Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </figcaption>
+<figcaption> Figure 2. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </figcaption>
 </figure> <br>
 
 <h3> Writing the Script in Python </h3> <br>
@@ -369,26 +375,28 @@ arcpy.AddMessage(tableOut)
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/ctqad00.jpg" style="width:100%;max-width:625px"> 
-<figcaption> Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro </figcaption>
+<figcaption> Figure 3. The Parameter Settings for the Python Script inside ArcGIS Pro </figcaption>
 </figure> <br>
 
 <h3> Some Cartographic Products Created with Areal Proportion Analysis </h3> <br>
 
-<p> The most obvious example of the use of Areal Proportion Analysis is working with census geographies smaller than the county level. I detail these in my <a href="https://andrew-jones657.github.io/Site_Selection"> Site Selection project</a> and <a href="https://andrew-jones657.github.io/tutorials/CensusData"> Census Data tutorial</a>.  </p> <br>
+<p> The most obvious example of the use of areal proportion analysis is working with census geographies smaller than the county level. I detail these in my <a href="https://andrew-jones657.github.io/Site_Selection"> Site Selection project</a> and <a href="https://andrew-jones657.github.io/tutorials/CensusData"> Census Data tutorial</a>.  </p> <br>
 
-<p> This python script was particularly useful in the Site Selection project. In it, I had to use Areal Proportion multiple times: three times to create the population change map on the census block group level (2000 – 2010, 2010 – 2020, 2000 – 2020). In doing so, I was able to estimate the population change in Warren County, KY for my Site Selection project. Areas with positive growth were weighed higher as site selection criteria.  </p> <br>
+<p> This python script was particularly useful in the Site Selection project. In it, I had to use areal proportion multiple times: three times to create the population change map on the census block group level (2000 – 2010, 2010 – 2020, 2000 – 2020). In doing so, I was able to estimate the population change in Warren County, KY for my Site Selection project. Areas with positive growth were weighed higher as site selection criteria.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpg" style="width:100%;max-width:625px"> 
-<figcaption> Figure 3. Estimated Population Change between 2000 and 2020 in Warren County </figcaption>
+<figcaption> Figure 4. Estimated Population Change between 2000 and 2020 in Warren County </figcaption>
 </figure> <br>
 
-<p> In the same Site Selection project, I used the servica area analysis multiple times for each candidate fire station. In order to view the population value within each distance break, areal proportion was used multiple (5+) times to estimate census block values aggregated to the distance bands. Simply put, another this serves as another reason why automating reptetive geospatial workflows is worthwhile.  </p> <br>
+<p> In the same Site Selection project, I used the servica area analysis multiple times for each candidate fire station. In order to view the population value within each distance break, areal proportion was used multiple (5+) times to estimate census block values aggregated to the distance bands. Simply put, another this serves as another reason why automating reptetive geospatial workflows is worthwhile. This concludes the tutorial on automating areal proportion analysis with arcpy.  </p> <br>
 
 <h3> List of Figures </h3> <br>
-Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow <br>
-Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro <br>
-Figure 3. Estimated Population Change between 2000 and 2020 in Warren County <br>
+
+Figure 1. A Visual Depiction of Areal Proportion Analysis <br>
+Figure 2. A Modelbuilder depiction of the Areal Proportion Analysis Workflow <br>
+Figure 3. The Parameter Settings for the Python Script inside ArcGIS Pro <br>
+Figure 4. Estimated Population Change between 2000 and 2020 in Warren County <br>
 
 <h3> References </h3> <br>
 <p class="reference"> <em>What is ArcPy?—ArcGIS Pro | Documentation</em>. (n.d.). <a href="https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm"> https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm</a> </p>
