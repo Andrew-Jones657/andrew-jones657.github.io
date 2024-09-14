@@ -142,7 +142,7 @@
 <p> These steps can be seen in a modelbuilder simulation below (Figure 1). </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/XCFsAB4.jpeg" class="center" style="width: 625px"> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/XCFsAB4.jpeg" style="width:100%;max-width:625px"> 
 <figcaption> Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </figcaption>
 </figure> <br>
 
@@ -368,7 +368,7 @@ arcpy.AddMessage(tableOut)
 <p> Each of the variables that were assigned “arcpy.GetParameterAsText” need to be defined for the script to be usable. For both of the spatial layers, they must be input as a "feature layer" Data Type. The other three parameters are simply fields. The "Default" values  Figure 2 below depicts the parameter settings.  </p> <br>
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/ctqad00.jpg" class="center" style="width: 625px"> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/ctqad00.jpg" style="width:100%;max-width:625px"> 
 <figcaption> Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro </figcaption>
 </figure> <br>
 
@@ -380,12 +380,15 @@ arcpy.AddMessage(tableOut)
 
 
 <figure> 
-<img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpg" class="center" style="width: 625px"> 
+<img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpg" style="width:100%;max-width:625px"> 
 <figcaption> Figure 3. Estimated Population Change between 2000 and 2020 in Warren County </figcaption>
 </figure> <br>
 
 
 <h3> List of Figures </h3> <br>
+Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow
+Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro
+Figure 3. Estimated Population Change between 2000 and 2020 in Warren County
 
 <h3> References </h3> <br>
 
