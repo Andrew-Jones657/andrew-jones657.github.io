@@ -376,19 +376,19 @@ arcpy.AddMessage(tableOut)
 
 <p> The most obvious example of the use of Areal Proportion Analysis is working with census geographies smaller than the county level. I detail these in my <a href="https://andrew-jones657.github.io/Site_Selection"> Site Selection project</a> and <a href="https://andrew-jones657.github.io/tutorials/CensusData"> Census Data tutorial</a>.  </p> <br>
 
-
-
+<p> This python script was particularly useful in the Site Selection project. In it, I had to use Areal Proportion multiple times: three times to create the population change map on the census block group level (2000 – 2010, 2010 – 2020, 2000 – 2020). In doing so, I was able to estimate the population change in Warren County, KY for my Site Selection project. Areas with positive growth were weighed higher as site selection criteria.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/RVkydLo.jpg" style="width:100%;max-width:625px"> 
 <figcaption> Figure 3. Estimated Population Change between 2000 and 2020 in Warren County </figcaption>
 </figure> <br>
 
+<p> In the same Site Selection project, I used the servica area analysis multiple times for each candidate fire station. In order to view the population value within each distance break, areal proportion was used multiple (5+) times to estimate census block values aggregated to the distance bands. Simply put, another this serves as another reason why automating reptetive geospatial workflows is worthwhile.  </p> <br>
 
 <h3> List of Figures </h3> <br>
-Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow
-Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro
-Figure 3. Estimated Population Change between 2000 and 2020 in Warren County
+Figure 1. A Modelbuilder depiction of the Areal Proportion Analysis Workflow <br>
+Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro <br>
+Figure 3. Estimated Population Change between 2000 and 2020 in Warren County <br>
 
 <h3> References </h3> <br>
 <p class="reference"> <em>What is ArcPy?—ArcGIS Pro | Documentation</em>. (n.d.). <a href="https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm"> https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm</a> </p>
