@@ -391,6 +391,7 @@ Figure 2. The Parameter Settings for the Python Script inside ArcGIS Pro
 Figure 3. Estimated Population Change between 2000 and 2020 in Warren County
 
 <h3> References </h3> <br>
+<p class="reference"> <em>What is ArcPy?—ArcGIS Pro | Documentation</em>. (n.d.). <a href="https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm"> https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm</a> </p>
 
   <div id="myModal" class="modal">
    <span class="close">&times;</span>
