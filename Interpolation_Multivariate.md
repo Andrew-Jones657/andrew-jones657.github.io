@@ -257,7 +257,12 @@
 
 <p> (Intro context to kriging map) </p> <br>
 
-<p> (Stick kriging map in here) </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/1Z7Bm7b.jpeg" alt="Kriging" style="width:100%;max-width:625px">
+<figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies in June of 1999   </figcaption>
+</figure> <br>
+
 
 <p> (Stick kriging table parameters in here) </p> <br>
 
