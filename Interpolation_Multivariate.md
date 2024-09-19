@@ -268,9 +268,49 @@
 
 <p> (Discuss drought distribution from kriging here) </p> <br>
 
-<p> (stick standard error map here) </p>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/yTQ2iQG.jpeg" alt="KrigingSTDE" style="width:100%;max-width:625px">
+<figcaption> Figure 8. Ordinary Kriging Standard Errors of Cumulative Drought Anomalies in June of 1999   </figcaption>
+</figure> <br>
+
 
 <p> (stick standard table error in here) </p>
+
+<table class="center"> <caption> Table 3. Cross Validation Statistics </caption>
+<thead> 
+<tr>
+<th> Statistic </th>
+<th> Measured Value </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Count </td>
+<td> 56</td>
+</tr>
+<tr> 
+<td> Mean </td>
+<td> -0.042 </td>
+</tr>
+<tr>
+<td> Root-Mean-Square </td>
+<td> 3.243 </td>
+</tr>
+<tr>
+<td> Mean Standardized </td>
+<td> -0.011 </td>
+</tr>
+<tr>
+<td> Root-Mean-Square Standardized </td>
+<td> 1.011 </td>
+</tr>
+<tr> 
+<td> Average Standard Error </td>
+<td> 3.176 </td>
+</tr>
+</tbody>
+</table>
 
 <p> (Discuss standard error here) </p>
 
