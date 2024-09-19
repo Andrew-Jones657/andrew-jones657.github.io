@@ -345,7 +345,7 @@
 <figcaption> Figure 9. Probability Kriging of Cumulative Drought Anomalies in June of 1999   </figcaption>
 </figure> <br>
 
-<p> (Discuss probability here) </p>
+<p> Figure 9 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold. The areas that require drought emergency response are primarily northeastern Kentucky, though portions of central Kentucky also have a high probability. This area tends to have a higher probability (between 70% and 100%) of crossing the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
 
 <h1 style="text-align:center;"> Multivariate Methods: Applying some Measures to a Different Month </h1> <br>
 
