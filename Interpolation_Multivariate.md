@@ -266,6 +266,29 @@
 
 <p> (Stick kriging table parameters in here) </p> <br>
 
+<table class="tablecenter"> <caption> Table 2. Ordinary Kriging Parameters </caption>
+<thead>
+<tr>
+<td> Parameter </td>
+<td> Value </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Lag Size </td>
+<td> 34600 </td>
+</tr>
+<tr> 
+<td> Number of Lags </td>
+<td> 12 </td>
+</tr>
+<tr>
+<td> Model Type </td>
+<td> Spherical </td>
+</tr>
+</tbody>
+</table>
+
 <p> (Discuss drought distribution from kriging here) </p> <br>
 
 
@@ -275,9 +298,8 @@
 </figure> <br>
 
 
-<p> (stick standard table error in here) </p>
 
-<table class="center"> <caption> Table 3. Cross Validation Statistics </caption>
+<table class="tablecenter"> <caption> Table 3. Cross Validation Statistics </caption>
 <thead> 
 <tr>
 <th> Statistic </th>
