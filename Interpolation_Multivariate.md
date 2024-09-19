@@ -334,11 +334,10 @@
 <td> 3.176 </td>
 </tr>
 </tbody>
-</table>
+</table> <br>
 
-<p> (Discuss standard error here) </p>
+<p> Based on the standard error map in Figure 8, values around central Kentucky and eastern Kentucky indicate a more reliable prediction than values around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not always easy to acquire in practice.  Table 2 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
 
-<p> (Attach probabily map here) </p>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/U2M0JhB.jpeg" alt="KrigingProb" style="width:100%;max-width:625px">
