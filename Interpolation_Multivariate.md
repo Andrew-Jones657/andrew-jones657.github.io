@@ -264,6 +264,8 @@
 </figure> <br>
 
 
+<p> The trends in the kriging drought anomaly map are roughly similar to those produced in the IDW map, though the interpolation is now much more natural looking (Figure 7). The average and bull’s eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p>
+
 <p> (Stick kriging table parameters in here) </p> <br>
 
 <table class="tablecenter"> <caption> Table 2. Ordinary Kriging Parameters </caption>
