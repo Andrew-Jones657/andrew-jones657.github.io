@@ -340,6 +340,11 @@
 
 <p> (Attach probabily map here) </p>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/U2M0JhB.jpeg" alt="KrigingProb" style="width:100%;max-width:625px">
+<figcaption> Figure 9. Probability Kriging of Cumulative Drought Anomalies in June of 1999   </figcaption>
+</figure> <br>
+
 <p> (Discuss probability here) </p>
 
 <h1 style="text-align:center;"> Multivariate Methods: Applying some Measures to a Different Month </h1> <br>
