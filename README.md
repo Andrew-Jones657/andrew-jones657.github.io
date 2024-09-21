@@ -54,6 +54,10 @@
 
 <p> Outside of work, I enjoy camping, cycling, disc golf, hiking, photography, spending time with my friends and family, traveling, and walking. </p> <br> 
 
+<h3> My Contact Information </h3>
+
+<p> I can best be found on Linkedin. Feel free to send <a href="https://www.linkedin.com/in/andrew-jones-129582191/"> me </a> a message there and I will get back to you as soon as possible. </p> <br>
+
 <p> Feel free to explore some photos from my travels. I recommend using the full screen functionality at the top-left part of the web map. The ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
 
 <div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
