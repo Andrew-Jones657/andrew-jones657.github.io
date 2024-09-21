@@ -81,12 +81,10 @@
 
 <p> This page is currently under development, but I intend on adding a variety of academic and work projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p>
 
-<div class="lineThick"></div> <br>
-
 <h3> Work Projects </h3> <br> <br>
 
 
-<div class="line"></div>
+
 
  <div class="row">
   <div class="columnImg">
@@ -144,6 +142,8 @@
     <p> A site selection analysis that incorporates some network analysis tools to find a site for a new or improved professional fire station. </p>
   </div>
 </div> <br>
+
+<div class="line"></div>
 
  <div class="row">
   <div class="columnImg">
