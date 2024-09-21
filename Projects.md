@@ -145,7 +145,21 @@
   </div>
 </div> <br>
 
-<p> <a href="https://andrew-jones657.github.io/Interpolation_Multivariate"> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset </a> (WIP) </p> <br>
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="https://andrew-jones657.github.io/Interpolation_Multivariate">
+    <img src="https://i.imgur.com/1Z7Bm7b.jpeg" alt="Interpolation/MV" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset (WIP) </h5>
+    <p> An analysis of drought anomaly data in Kentucky via interpolative methods and multivariate statistics. </p>
+  </div>
+</div> <br>
+
+
 
 
 
