@@ -387,7 +387,10 @@
 
 <p> (Discuss time series plot for agg clustering) </p>
 
-<p> (Stick map here) </p>
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/jdMiKkW.jpeg" alt="AggMap" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Agglomerative Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+</figure> <br>
 
 <p> (Talk about geographic patterns in map) </p>
 
@@ -471,7 +474,9 @@
 
 <p> (Time series plot discussion) </p> <br>
 
-<p> (Final map) </p>
+<img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
+<figcaption> Figure ?. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+</figure> <br>
 
 <p> (Discuss map) </p>
 
