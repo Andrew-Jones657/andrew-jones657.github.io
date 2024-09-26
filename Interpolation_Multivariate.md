@@ -438,6 +438,12 @@
 
 <p> (Looking for ideal # of clusters with Elboew, Silhouette, Gap, Multiple methods) </p> <br>
 
+<img class="myImages" id="myImg" src="https://i.imgur.com/nlbbxHa.jpeg" alt="SilhouetteWidthK" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Silhouette Width of Two Clusters  </figcaption>
+</figure> <br>
+
+<p> (Table of Silhouette Plot Cluster Widths) </p> <br>
+
 <p> (Silhouette plot of CLuster widths) </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
