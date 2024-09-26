@@ -387,8 +387,63 @@
 
 <p> (Discuss time series plot for agg clustering) </p>
 
-<h3> K-Means </h3>
+<p> (Stick map here) </p>
 
+<p> (Talk about geographic patterns in map) </p>
+
+<h3> K-Means </h3> <br>
+
+<p> (Talk about K-Means some) </p> <br>
+
+<p> (Table of BSS / TSS Values up to 6 clusters) </p> <br>
+
+<table class="tablecenter"> <caption> Table ?. Between Sum of Squares over Total Sum of Squares Partition Formula Table </caption> 
+<thead>
+<tr>
+<th> # Clusters </th>
+<th> BSS / TSS Value </th>
+</tr>    
+</thead>
+<tmain>
+<tr>
+<td> Two clusters </td>
+<td> 46.341006 </td>
+</tr>
+<tr>
+<td> Three clusters </td>
+<td> 60.31649 </td>
+</tr>
+<tr>
+<td> Four clusters </td>
+<td> 67.4345 </td>
+</tr>
+<tr>
+<td> Five clusters </td>
+<td> 69.81098 </td>
+</tr>
+<tr>
+<td> Six clusters </td>
+<td> 76.10357 </td>
+</tr>
+</tmain>
+</table>
+
+<p> (Plot data from cluster_analysis() </p> <br>
+
+<p> (Looking for ideal # of clusters with Elboew, Silhouette, Gap, Multiple methods) </p> <br>
+
+<p> (Silhouette plot of CLuster widths) </p> <br>
+
+<img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+</figure> <br>
+
+
+<p> (Time series plot discussion) </p> <br>
+
+<p> (Final map) </p>
+
+<p> (Discuss map) </p>
 
 
 <h3> Links to R graphs </h3> <br>
