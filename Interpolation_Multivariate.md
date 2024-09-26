@@ -430,11 +430,29 @@
 
 <p> (Plot data from cluster_analysis() </p> <br>
 
+
+<img class="myImages" id="myImg" src="https://i.imgur.com/n1w7LjR.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Ideal Number of Clusters under the Elbow Method  </figcaption>
+</figure> <br>
+
+<p> Elbow discussion </p> <br>
+
+
+<img class="myImages" id="myImg" src="https://i.imgur.com/09wT6jY.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Ideal Number of Clusters under the Silhouette Method  </figcaption>
+</figure> <br>
+
+<p> Silhouette discussion </p> <br>
+
+<img class="myImages" id="myImg" src="https://i.imgur.com/0Kibk2H.jpeg" alt= "Gap" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Ideal Number of Clusters under the Gap Statistic Method  </figcaption>
+</figure> <br>
+
+<p> Gap statistic discussion </p> <br>
+
 <img class="myImages" id="myImg" src="https://i.imgur.com/Eb2uLiL.jpeg" alt="IdealKCluster" style="width:100%;max-width:625px">
 <figcaption> Figure ?. Ideal Number of Clusters to Retain based off Consensus Algorithm  </figcaption>
 </figure> <br>
-
-[img]https://i.imgur.com/Eb2uLiL.jpeg[/img]
 
 <p> (Looking for ideal # of clusters with Elboew, Silhouette, Gap, Multiple methods) </p> <br>
 
