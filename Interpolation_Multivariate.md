@@ -362,7 +362,26 @@
 
 <h3> Agglomerative Clustering </h3> <br>
 
+<p> Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though the measurements in the drought dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate, making it easier to find errors in the data, and ensuring the uniformity of the dataset. Similarly, standardization allows for better control over biased values and outliers. The data was standardized for both agglomerative clustering and k-means using the scale() function in R.  </p> <br>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/tpJ2d9C.jpeg" alt="Dendogram" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Dendogram of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+</figure> <br>
+
+<p> Stick parameters in table here </p>
+<table>
+
+</table>
+
+<p> (Discuss Dendogram and parameters used to make it) </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/Z7oLU83.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Time Series Plot of Agglomerative Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+</figure> <br>
+
+<p> (Discuss time series plot for agg clustering) </p>
 
 <h3> K-Means </h3>
 
