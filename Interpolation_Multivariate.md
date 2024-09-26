@@ -259,7 +259,7 @@
 
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/1Z7Bm7b.jpeg" alt="Kriging" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
 <figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
@@ -295,8 +295,8 @@
 
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/yTQ2iQG.jpeg" alt="KrigingSTDE" style="width:100%;max-width:625px">
-<figcaption> Figure 8. Ordinary Kriging Standard Errors of Cumulative Drought Anomalies in June of 1999   </figcaption>
+<img class="myImages" id="myImg" src="https://i.imgur.com/LnitCej.jpeg" alt="KrigingSTDE" style="width:100%;max-width:625px">
+<figcaption> Figure 8. Ordinary Kriging Standard Errors of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
 
@@ -340,7 +340,7 @@
 
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/U2M0JhB.jpeg" alt="KrigingProb" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/v2cImXo.jpeg" alt="KrigingProb" style="width:100%;max-width:625px">
 <figcaption> Figure 9. Probability Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
@@ -361,6 +361,8 @@
 <p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. From this point on, most of the data will be prepared and analyzed in R. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendogram of the cumulative drought anomalies at each weather station. Then, further tests will be conducted with K-means.     </p> <br>
 
 <h3> Agglomerative Clustering </h3> <br>
+
+
 
 <h3> K-Means </h3>
 
