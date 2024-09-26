@@ -121,7 +121,7 @@
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
-<p> This project is broken into two parts. The first looks at historical drought anomaly data from June of 1999 in Kentucky using interpolation techniques, and the second looks at September of 1998 using multivariate statistical methods.  </p>
+<p> This project is broken into two parts. The first looks at historical cumulative drought anomaly data from June of 1999 (so values include July 1998 - June 1999) in Kentucky using interpolation techniques, and the second looks at the entire dataset (July 1998 - June 2001) using multivariate statistical methods.  </p> <br>
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
@@ -131,7 +131,7 @@
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ei7BZYD.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
-<figcaption> Figure 1. Cumulative Drought Values by Weather Station as of June of 1999 </figcaption>
+<figcaption> Figure 1. Cumulative Drought Values by Weather Station from July 1998 to June 1999 </figcaption>
 </figure> <br>
 
 
@@ -144,8 +144,8 @@
 <p> Moving on, an inverse distance weighted (IDW) surface of the drought anomaly values can be created. The IDW is presented in Figure 2 below. </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/FLNvHhE.jpeg" alt="IDW" style="width:100%;max-width:625px">
-<figcaption> Figure 2. IDW of Cumulative Drought Anomalies in June of 1999  </figcaption>
+<img class="myImages" id="myImg" src="https://i.imgur.com/FgL2aYh.jpeg" alt="IDW" style="width:100%;max-width:625px">
+<figcaption> Figure 2. IDW of Cumulative Drought Anomalies from July 1998 to June 1999  </figcaption>
 </figure> <br>
 
 
@@ -163,7 +163,7 @@
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ACNMao3.jpeg" alt="Histogram" style="width:100%;max-width:625px">
-<figcaption> Figure 3. Histogram of Cumulative Drought Anomalies in June of 1999  </figcaption>
+<figcaption> Figure 3. Histogram of Cumulative Drought Anomalies from July 1998 to June 1999  </figcaption>
 </figure> <br>
 
 
@@ -228,7 +228,7 @@
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/NyMQkOO.jpeg" alt="QQPlot" style="width:100%;max-width:625px">
-<figcaption> Figure 4. QQPlot of Cumulative Drought Anomalies in June of 1999  </figcaption>
+<figcaption> Figure 4. QQPlot of Cumulative Drought Anomalies from July 1998 to June 1999  </figcaption>
 </figure> <br>
 
 
@@ -238,14 +238,14 @@
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/52T6KDS.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
-<figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies in June of 1999   </figcaption>
+<figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
 
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
-<figcaption> Figure 6. Semivariogram of Cumulative Drought Anomalies in June of 1999   </figcaption>
+<figcaption> Figure 6. Semivariogram of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
 <p> There certainly appears to be a second order trend in this data. The trend analysis in Figure 4 shows an upwards projecting U-shaped curve, indicating that drought values in central Kentucky are close to the mean while drought values in western and eastern Kentucky are far from the mean. Fortunately, this trend curve is rather broad, and will not affect the kriging interpolation too much. Similarly, the semivariogram in Figure 5 shows distant values on the right side of the figure, which denotes high and low values being diffused from the mean (or in other words, high and low values are autocorrelated with one another).   </p> <br>
@@ -260,7 +260,7 @@
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/1Z7Bm7b.jpeg" alt="Kriging" style="width:100%;max-width:625px">
-<figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies in June of 1999   </figcaption>
+<figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
 
@@ -341,7 +341,7 @@
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/U2M0JhB.jpeg" alt="KrigingProb" style="width:100%;max-width:625px">
-<figcaption> Figure 9. Probability Kriging of Cumulative Drought Anomalies in June of 1999   </figcaption>
+<figcaption> Figure 9. Probability Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
 <p> Figure 9 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold. The areas that require drought emergency response are primarily northeastern Kentucky, though portions of central Kentucky also have a high probability. This area tends to have a higher probability (between 70% and 100%) of crossing the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
@@ -352,9 +352,9 @@
 
 <h3> Picking Another Month from the Drought Anomaly Data </h3> <br>
 
-<p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, September of 1998 was chosen. </p> <br>
+<p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, June of 2001 was chosen. </p> <br>
 
-<p> (September 1998 Weather Station map here) </p> <br>
+<p> (June 2001 Weather Station map here) </p> <br>
 
 <p> (Stuff about map) </p> <br>
 
