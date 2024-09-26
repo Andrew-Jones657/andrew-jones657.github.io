@@ -352,15 +352,19 @@
 
 <h3> Picking Another Month from the Drought Anomaly Data </h3> <br>
 
-<p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only July of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, September of 1998 was chosen. </p> <br>
+<p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, September of 1998 was chosen. </p> <br>
 
 <p> (September 1998 Weather Station map here) </p> <br>
+
+<p> (Stuff about map) </p> <br>
+
+<p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. From this point on, most of the data will be prepared and analyzed in R. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendogram of the cumulative drought anomalies at each weather station. Then, further tests will be conducted with K-means.     </p> <br>
 
 <h3> Agglomerative Clustering </h3> <br>
 
 <h3> K-Means </h3>
 
-<h3> Final Cluster Map and Time-Series Plot </h3>
+
 
 <h3> Links to R graphs </h3> <br>
 
