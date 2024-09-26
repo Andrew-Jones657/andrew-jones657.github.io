@@ -430,6 +430,12 @@
 
 <p> (Plot data from cluster_analysis() </p> <br>
 
+<img class="myImages" id="myImg" src="https://i.imgur.com/Eb2uLiL.jpeg" alt="IdealKCluster" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Ideal Number of Clusters to Retain based off Consensus Algorithm  </figcaption>
+</figure> <br>
+
+[img]https://i.imgur.com/Eb2uLiL.jpeg[/img]
+
 <p> (Looking for ideal # of clusters with Elboew, Silhouette, Gap, Multiple methods) </p> <br>
 
 <p> (Silhouette plot of CLuster widths) </p> <br>
