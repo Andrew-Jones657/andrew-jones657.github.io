@@ -483,6 +483,12 @@
 
 <h3> Links to R graphs </h3> <br>
 
+<p> Histogram </p>
+<p> QQPlot </p>
+<p> Semivariogram </p>
+<p> Trend Analysis </p>
+<p>  </p>
+
 <h3> List of Figures and Tables </h3> <br>
 
 <h3> References </h3> <br>
