@@ -350,11 +350,13 @@
 
 <p> Multivariate statistics play a crucial role in Geographic Information Systems (GIS) by enabling the analysis of complex spatial data involving multiple variables simultaneously. Through techniques such as principal component analysis (PCA), cluster analysis, and canonical correlation analysis, multivariate statistics help to uncover patterns, relationships, and underlying structures within geospatial datasets. For instance, PCA can reduce the dimensionality of data, highlighting the most significant variables that influence spatial phenomena, while cluster analysis can identify distinct geographical areas with similar characteristics. By applying these statistical methods, GIS professionals can gain deeper insights into spatial processes, enhance predictive modeling, and make more informed decisions about land use, environmental management, and urban planning. </p> <br>
 
-<h3> Picking Another Month from the Drought Anomaly Data </h3> <br>
+<h3> Mapping Another Month from the Drought Anomaly Data </h3> <br>
 
 <p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, June of 2001 was chosen, as it displays the final cumulative result of the entire dataset. </p> <br>
 
-<p> (June 2001 Weather Station map here) </p> <br>
+<img class="myImages" id="myImg" src= "https://i.imgur.com/PLyAwFW.jpeg" alt="2001Map" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Cumulative Drought by Weather Station in Kentucky from July 1998 to June 2001   </figcaption>
+</figure> <br>
 
 <p> (Stuff about map) </p> <br>
 
