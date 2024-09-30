@@ -370,7 +370,9 @@
 
 <h3> Agglomerative Clustering </h3> <br>
 
-<p> Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though the measurements in the drought dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate, making it easier to find errors in the data, and ensuring the uniformity of the dataset. Similarly, standardization allows for better control over biased values and outliers. The data was standardized for both agglomerative clustering and k-means using the scale() function in R.  </p> <br>
+<p> Instead of using the raw data, the data was standardized. Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though all the measurements in this dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate and uniform, as well as making it easier to find errors in the data. Having a uniform dataset is particularly important in this case, since the cumulative values within it might otherwise create biased results. Similarly, standardization allows for better control over biased values and outliers.  </p> <br>
+
+<p> To create a dendrogram, the standardized drought values were used to create a dissimilarity matrix, which measures the distance between each recorded drought value. Then, each of those observations were paired together with their closest neighbor into groups until the entire dataset was in one group. Ward’s algorithm was used to minimize the spread of the clusters. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/tpJ2d9C.jpeg" alt="Dendogram" style="width:100%;max-width:625px">
