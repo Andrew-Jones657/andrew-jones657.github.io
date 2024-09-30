@@ -358,9 +358,11 @@
 <figcaption> Figure ?. Cumulative Drought by Weather Station in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> (Stuff about map) </p> <br>
+<p> Observing the values in the legend, there were precipitation deficiencies ranging from approximately -9 to -44 inches across Kentucky by June of 2001. The weather stations recording the highest precipitation deficiencies were in central Kentucky as well as parts of the Bluegrass. Generally, drought conditions tended to be less severe in western and northern Kentucky. </p> <br>
 
-<p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. From this point on, most of the data will be prepared and analyzed in R. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
+<p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p>
+
+<p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. From this point on, the data will be prepared and analyzed in R. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
 
 <p> (Put a plot of all data here) </p> <br>
 
