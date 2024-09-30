@@ -366,7 +366,7 @@
 
 <p> (Put a plot of all data here) </p> <br>
 
-<p> Agglomerative clustering has the advantage of displaying data in a dendogram, which is a diagram that shows the hierarchical relationship between objects. (cont...)   </p> <br>
+<p> Agglomerative clustering has the advantage of displaying data in a dendrogram, which is a diagram that shows the hierarchical relationship between objects. (cont...)   </p> <br>
 
 <h3> Agglomerative Clustering </h3> <br>
 
@@ -375,8 +375,8 @@
 <p> To create a dendrogram, the standardized drought values were used to create a dissimilarity matrix, which measures the distance between each recorded drought value. Then, each of those observations were paired together with their closest neighbor into groups until the entire dataset was in one group. Ward’s algorithm was used to minimize the spread of the clusters. </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/tpJ2d9C.jpeg" alt="Dendogram" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Dendogram of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+<img class="myImages" id="myImg" src="https://i.imgur.com/d7VIMdt.jpeg" alt="Dendrogram" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Dendrogram of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Stick parameters in table here) </p>
@@ -384,7 +384,7 @@
 
 </table>
 
-<p> (Discuss Dendogram and parameters used to make it) </p> <br>
+<p> (Discuss Dendrogram and parameters used to make it) </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Z7oLU83.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
