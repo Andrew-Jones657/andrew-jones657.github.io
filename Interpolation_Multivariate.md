@@ -355,7 +355,7 @@
 <p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, June of 2001 was chosen, as it displays the final cumulative result of the entire dataset. </p> <br>
 
 <img class="myImages" id="myImg" src= "https://i.imgur.com/PLyAwFW.jpeg" alt="2001Map" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Cumulative Drought by Weather Station in Kentucky from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 10. Cumulative Drought by Weather Station in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> Observing the values in the legend, there were precipitation deficiencies ranging from approximately -9 to -44 inches across Kentucky by June of 2001. The weather stations recording the highest precipitation deficiencies were in central Kentucky as well as parts of the Bluegrass. Generally, drought conditions tended to be less severe in western and northern Kentucky. </p> <br>
@@ -376,26 +376,39 @@
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/d7VIMdt.jpeg" alt="Dendrogram" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Dendrogram of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 11. Dendrogram of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Stick parameters in table here) </p>
-<table>
-
+<table class = "tablecenter">
+<thead>
+<th> Parameter </th>
+<th> Value </th>
+</thead>
+<tbody>
+<tr>
+<td> Number of Clusters </td>
+<td> 4 </td>    
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+</tr>
+</tbody>
 </table>
 
 <p> (Discuss Dendrogram and parameters used to make it) </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Z7oLU83.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Time Series Plot of Agglomerative Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 12. Time Series Plot of Agglomerative Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Discuss time series plot for agg clustering) </p>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/jdMiKkW.jpeg" alt="AggMap" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Agglomerative Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 13. Agglomerative Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Talk about geographic patterns in map) </p>
@@ -441,32 +454,32 @@
 
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/n1w7LjR.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Ideal Number of Clusters under the Elbow Method  </figcaption>
+<figcaption> Figure 14. Ideal Number of Clusters under the Elbow Method  </figcaption>
 </figure> <br>
 
 <p> Elbow discussion </p> <br>
 
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/09wT6jY.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Ideal Number of Clusters under the Silhouette Method  </figcaption>
+<figcaption> Figure 15. Ideal Number of Clusters under the Silhouette Method  </figcaption>
 </figure> <br>
 
 <p> Silhouette discussion </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/0Kibk2H.jpeg" alt= "Gap" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Ideal Number of Clusters under the Gap Statistic Method  </figcaption>
+<figcaption> Figure 16. Ideal Number of Clusters under the Gap Statistic Method  </figcaption>
 </figure> <br>
 
 <p> Gap statistic discussion </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/Eb2uLiL.jpeg" alt="IdealKCluster" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Ideal Number of Clusters to Retain based off Consensus Algorithm  </figcaption>
+<figcaption> Figure 17. Ideal Number of Clusters to Retain based off Consensus Algorithm  </figcaption>
 </figure> <br>
 
 <p> (Looking for ideal # of clusters with Elboew, Silhouette, Gap, Multiple methods) </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/nlbbxHa.jpeg" alt="SilhouetteWidthK" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Silhouette Width of Two Clusters  </figcaption>
+<figcaption> Figure 18. Silhouette Width of Two Clusters  </figcaption>
 </figure> <br>
 
 <p> (Table of Silhouette Plot Cluster Widths) </p> <br>
@@ -474,14 +487,14 @@
 <p> (Silhouette plot of CLuster widths) </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 19. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 
 <p> (Time series plot discussion) </p> <br>
 
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
-<figcaption> Figure ?. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 20. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Discuss map) </p>
