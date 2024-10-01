@@ -399,19 +399,27 @@
 
 <p> (Discuss Dendrogram and parameters used to make it) </p> <br>
 
+<p> The dendrogram displays the overall clustering results for four clusters, though since the dataset contains monthly information ranging from July 1998 to June 2001, it would be valuable to see how this clustered data changes from month to month. To accomplish this, the clustered data was transposed and used to create a time series graph of each cluster. </p> <br>
+
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Z7oLU83.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
 <figcaption> Figure 12. Time Series Plot of Agglomerative Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> (Discuss time series plot for agg clustering) </p>
+<p>  </p> <br>
+
+<p> Observing the time series plot in Figure 12, it is evident that each cluster has a distinct pattern. The first cluster (x1) includes the weather stations that recorded the highest initial drought values. As time progressed, the red time series line for cluster 1 rose, indicating that the drought anomalies recorded by these weather stations were gradually dissipating. The line for cluster 2 (x2) in green shows the reverse trend from cluster 1. Initially, there was little drought recorded by these weather stations, but as time progressed, the line fell, suggesting that drought anomalies became more severe. In 1998, the line for cluster 3 (x3) roughly matches the cluster 2 line, though after this period, the two lines diverge. After 1998, Cluster 3 generally moves upwards, indicating an alleviation of drought conditions at those respective weather stations. Finally, the line for cluster 4 (x4) starts highest out of all the clusters and rises far above the rest until falling in the latter half of 2000 to meet cluster 3’s line. These weather stations experienced the least severe drought conditions. It is important to remember, however, that this a time series plot of standardized drought values; by June of 2001, every weather station was experiencing a deficiency in precipitation as depicted in figure 10. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/jdMiKkW.jpeg" alt="AggMap" style="width:100%;max-width:625px">
-<figcaption> Figure 13. Agglomerative Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 13. Agglomerative Clustering Map of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> (Talk about geographic patterns in map) </p>
+<p> To visualize the cluster data presented in the time series plot, the cluster group mean centers were mapped out by weather station membership in figure 13.  </p> <br>
+
+<p> Weather stations marked with the green diamond (cluster 2) show areas where the drought started off mild and worsened over time, and stations with the light red star (cluster 1) shows areas where the drought started off severe but became milder towards the end of the period. For the two clusters showing less severe drought, the light blue square (cluster 3) depicts weather stations where the drought became less severe towards the end of the period, whereas the purple triangle (cluster 4) represents the weather stations recording the least severe drought values.  </p> <br>
+
+<p> Geographic patterns can be seen in the clustering result. Generally, western Kentucky’s weather stations were placed in clusters 3 or 4, indicating that the drought anomaly values there were lower than in other parts of Kentucky. Central Kentucky’s weather stations, however, were mainly placed into clusters 1 or 2, indicating that the drought here was more severe. Northern Kentucky and parts of the Bluegrass also had less severe drought, as evidenced by the cluster 3 markers. Eastern Kentucky experienced various regional fluctuations regarding drought severity: some counties such as Floyd, Laurel, Letcher, and Morgan had the less severe drought (represented by clusters 3 and 4), though the rest of the region suffered from more severe drought.  </p> <br>
 
 <h3> K-Means </h3> <br>
 
