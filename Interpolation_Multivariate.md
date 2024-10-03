@@ -489,12 +489,52 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Since each of the previous tests suggested a different number of clusters to retain, it proved prudent to conduct a consensus-based algorithm. With this algorithm comprised of 30 different methods, figure 17 suggests that it is ideal to retain two clusters rather than the four selected from the dendrogram earlier. This decision was supported by 11 out of 30 methods.     </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/nlbbxHa.jpeg" alt="SilhouetteWidthK" style="width:100%;max-width:625px">
-<figcaption> Figure 18. Silhouette Width of Two Clusters  </figcaption>
+<figcaption> Figure 18. Cluster Silhouette Plot  </figcaption>
 </figure> <br>
 
+<p> A cluster silhouette plot was used to review the suggestion of two clusters from the consensus algorithm (Figure 18). If a sizable majority of the values within the silhouette plot are positive, then the observations were placed within the correct group.  The possible values range from -1 < p < 1, where:  </p> <br>
 
+<p> <ul> 
+<li> a value of 0 indicates an observation is between two clusters. </li>
+<li> a value of -1 indicates an observation does not fit in its cluster at all. </li>
+<li> a value of 1 indicates an observation fits perfectly in its cluster.  </li>
+</ul> </p> <br>
 
-<p> (Silhouette plot of CLuster widths) </p> <br>
+<p> The average silhouette width for two clusters is 0.41, indicating an okay fit overall. One observation within each cluster does not fit well within it (the bars below the 0.00 line) </p> <br>
+
+<p> Table ? below presents the average silhouette width with clusters up to k=6. The best fit does occur at k=2, as it has the highest average silhouette width. </p> <br>
+
+<table class="tablecenter"> <caption> Table ?. Table of Average Silhouette Width Scores </caption>
+<thead>
+<tr>
+<th> Number of Cluster </th>
+<th> Average Silhouette Width </th>
+</tr>
+</thead>
+<tbody>
+<tr> 
+<td> 2 </td>
+<td> 0.41 </td>
+</tr>
+<tr>
+<td> 3 </td>
+<td> 0.36 </td>
+</tr>
+<tr> 
+<td> 4 </td>
+<td> 0.28 </td>
+</tr>
+<tr> 
+<td> 5 </td>
+<td> 0.24 </td>
+</tr>
+<tr>
+<td> 6 </td>
+<td> 0.26 </td> 
+</tr>
+</tbody>
+</table>
+
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
 <figcaption> Figure 19. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
