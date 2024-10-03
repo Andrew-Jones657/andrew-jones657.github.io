@@ -354,6 +354,7 @@
 
 <p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, June of 2001 was chosen, as it displays the final cumulative result of the entire dataset. </p> <br>
 
+<figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/PLyAwFW.jpeg" alt="2001Map" style="width:100%;max-width:625px">
 <figcaption> Figure 10. Cumulative Drought by Weather Station in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
@@ -460,20 +461,20 @@
 
 <p> (Plot data from cluster_analysis() </p> <br>
 
-
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/n1w7LjR.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
 <figcaption> Figure 14. Ideal Number of Clusters under the Elbow Method  </figcaption>
 </figure> <br>
 
 <p> Figure 14 above depicts an “elbow method” graph, which displays the total within sum of squares as a function of the number of clusters. In other words, this is a essentially a graph of the TSS value on Table ?. The point containing the ideal number of clusters occurs where the slope of the line decreases and the “elbow” bends: at this point, adding another cluster does not substantially improve the BSS / TSS value. In this case, the bend is located at four clusters, where the function’s slope decreases. The “elbow” can be seen between two and four clusters.  </p> <br>
 
-
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/09wT6jY.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
 <figcaption> Figure 15. Ideal Number of Clusters under the Silhouette Method  </figcaption>
 </figure> <br>
 
 <p> An alternative to the elbow method, the silhouette method is another approach that measures the quality of a clustering (Figure 15). The silhouette method calculates the average silhouette width within each potential number of clusters k, where a high score indicates that each object fits well within its cluster. In this case, the silhouette method suggests grouping the data into two clusters.  </p> <br>
-
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/0Kibk2H.jpeg" alt= "Gap" style="width:100%;max-width:625px">
 <figcaption> Figure 16. Ideal Number of Clusters under the Gap Statistic Method  </figcaption>
 </figure> <br>
@@ -482,12 +483,15 @@
 This method evaluates the total intra-cluster variation for different values of k by comparing them to their expected values derived from the null reference distribution of the data. The optimal number of clusters will be found by the value that yields the largest gap statistic. 
 Rather than being a random uniform distribution of points, this means that objects within the clustering structure are like one another. Unfortunately, since the gap statistic suggests one cluster in this case, it is not useful for this analysis. </p> <br>
 
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Eb2uLiL.jpeg" alt="IdealKCluster" style="width:100%;max-width:625px">
 <figcaption> Figure 17. Ideal Number of Clusters under the Consensus Algorithm  </figcaption>
 </figure> <br>
 
 <p> Since each of the previous tests suggested a different number of clusters to retain, it proved prudent to conduct a consensus-based algorithm. With this algorithm comprised of 30 different methods, figure 17 suggests that it is ideal to retain two clusters rather than the four selected from the dendrogram earlier. This decision was supported by 11 out of 30 methods.     </p> <br>
 
+
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/nlbbxHa.jpeg" alt="SilhouetteWidthK" style="width:100%;max-width:625px">
 <figcaption> Figure 18. Cluster Silhouette Plot  </figcaption>
 </figure> <br>
@@ -535,16 +539,23 @@ Rather than being a random uniform distribution of points, this means that objec
 </tbody>
 </table>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/97QvHQJ.jpeg" alt="PCAplot" style="width:100%;max-width:625px">
+<figcaption> Figure 19.    </figcaption>
+</figure> <br>
 
+
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
-<figcaption> Figure 19. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 20. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 
 <p> (Time series plot discussion) </p> <br>
 
+<figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
-<figcaption> Figure 20. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 21. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Discuss map) </p>
