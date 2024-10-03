@@ -478,19 +478,21 @@
 <figcaption> Figure 16. Ideal Number of Clusters under the Gap Statistic Method  </figcaption>
 </figure> <br>
 
-<p> Gap statistic discussion </p> <br>
+<p> Third is the gap statistic method (Figure 16), which can be applied to any clustering method. 
+This method evaluates the total intra-cluster variation for different values of k by comparing them to their expected values derived from the null reference distribution of the data. The optimal number of clusters will be found by the value that yields the largest gap statistic. 
+Rather than being a random uniform distribution of points, this means that objects within the clustering structure are like one another. Unfortunately, since the gap statistic suggests one cluster in this case, it is not useful for this analysis. </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/Eb2uLiL.jpeg" alt="IdealKCluster" style="width:100%;max-width:625px">
-<figcaption> Figure 17. Ideal Number of Clusters to Retain based off Consensus Algorithm  </figcaption>
+<figcaption> Figure 17. Ideal Number of Clusters under the Consensus Algorithm  </figcaption>
 </figure> <br>
 
-<p> (Looking for ideal # of clusters with Elboew, Silhouette, Gap, Multiple methods) </p> <br>
+<p> Since each of the previous tests suggested a different number of clusters to retain, it proved prudent to conduct a consensus-based algorithm. With this algorithm comprised of 30 different methods, figure 17 suggests that it is ideal to retain two clusters rather than the four selected from the dendrogram earlier. This decision was supported by 11 out of 30 methods.     </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/nlbbxHa.jpeg" alt="SilhouetteWidthK" style="width:100%;max-width:625px">
 <figcaption> Figure 18. Silhouette Width of Two Clusters  </figcaption>
 </figure> <br>
 
-<p> (Table of Silhouette Plot Cluster Widths) </p> <br>
+
 
 <p> (Silhouette plot of CLuster widths) </p> <br>
 
