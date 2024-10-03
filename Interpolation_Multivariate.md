@@ -465,14 +465,14 @@
 <figcaption> Figure 14. Ideal Number of Clusters under the Elbow Method  </figcaption>
 </figure> <br>
 
-<p> Elbow discussion </p> <br>
+<p> Figure 14 above depicts an “elbow method” graph, which displays the total within sum of squares as a function of the number of clusters. In other words, this is a essentially a graph of the TSS value on Table ?. The point containing the ideal number of clusters occurs where the slope of the line decreases and the “elbow” bends: at this point, adding another cluster does not substantially improve the BSS / TSS value. In this case, the bend is located at four clusters, where the function’s slope decreases. The “elbow” can be seen between two and four clusters.  </p> <br>
 
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/09wT6jY.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
 <figcaption> Figure 15. Ideal Number of Clusters under the Silhouette Method  </figcaption>
 </figure> <br>
 
-<p> Silhouette discussion </p> <br>
+<p> An alternative to the elbow method, the silhouette method is another approach that measures the quality of a clustering (Figure 15). The silhouette method calculates the average silhouette width within each potential number of clusters k, where a high score indicates that each object fits well within its cluster. In this case, the silhouette method suggests grouping the data into two clusters.  </p> <br>
 
 <img class="myImages" id="myImg" src="https://i.imgur.com/0Kibk2H.jpeg" alt= "Gap" style="width:100%;max-width:625px">
 <figcaption> Figure 16. Ideal Number of Clusters under the Gap Statistic Method  </figcaption>
