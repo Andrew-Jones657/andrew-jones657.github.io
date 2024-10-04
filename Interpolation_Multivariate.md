@@ -363,7 +363,9 @@
 
 <p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p>
 
-<p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. From this point on, the data will be prepared and analyzed in R. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
+<p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. From this point on, the data will be prepared and analyzed in RStudio. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
+
+<p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering. </em> </p> <br>
 
 <p> (Put a plot of all data here) </p> <br>
 
