@@ -158,7 +158,7 @@
 
 <p> Finally, some limitations of the IDW model need to be considered. Major limitations include the average and bull’s eye effect. If some of the chosen values used to interpolate are not within the threshold distance of any samples, they will not produce a surface: this can make outliers and edge values particularly difficult to interpolate around accurately. Depending on the number of points selected, proper continuity may also not be achieved if there are too few points. Each point in an IDW has the same weight, which can create issues for particularly high or low values. This can lead to the “bull’s eye” effect, where distant points will simply create a distance decay circle that does not properly reflect the subject being studied. Similarly, the range of interpolated values cannot exceed the number of observed values. To mitigate the edge effect, it is important that values are also positioned on the edge of the study area, though this is difficult to achieve in practice.  </p> <br>
 
-<p> Moving on, some exploratory data analysis will be conducted to prepare a kriging model. </p> <br>
+<p> Kriging has been mentioned a few times earlier, and it will now be explained. </p> <br>
 
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
@@ -254,9 +254,6 @@
 
 
 <h3> Kriging </h3> <br>
-
-<p> (Intro context to kriging map) </p> <br>
-
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
