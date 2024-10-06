@@ -137,11 +137,13 @@
 
 <p> First, it is important to consider visual patterns of drought intensity. There is a definite pattern to the intensity of droughts in Kentucky as of June of 1999 (Figure 1). Areas experiencing drought seem to be clustered, as moving from west to east results in going from an area with no or little droughts to an area with a large deficiency in precipitation. Western Kentucky, which typically experiences intense storms and more erratic weather than the rest of Kentucky, was generally free of droughts or only experienced a minor decrease in rainfall. Eastern Kentucky, which typically has more rain showers than the rest of the state, had multiple stations reporting a precipitation deficiency of more than ten inches. The spatial patterns occurring on this map are contrary to Kentucky’s typical precipitation patterns, as western Kentucky generally experiences droughts due to erratic precipitation and Eastern Kentucky typically has higher recorded precipitation values -- or orographic rainfall.  </p> <br>
 
-<p> There are some limitations within the dataset that need to be discussed. Since the boundary of the study area is the human-imposed border of Kentucky, critical drought values occurring just outside of Kentucky will not be calculated in the interpolation model. Similarly, there are few weather stations positioned on the edge of Kentucky, which may result in high error along the border. The edge effects can be mitigated by applying a buffer on the boundary of Kentucky and then running an interpolation model. Ideally, there would also be data on weather stations just outside of Kentucky in neighboring states so that the edge effects could be mitigated.   </p> <br>
+<p> There are some limitations within the dataset that need to be discussed. Since the boundary of the study area is the human-imposed border of Kentucky, critical drought values occurring just outside of Kentucky will not be calculated in the interpolation model. Similarly, there are few weather stations positioned on the edge of Kentucky, which may result in high error along the border. The edge effects can be mitigated by applying a buffer on the boundary of Kentucky and then running an interpolation model. Ideally, there would also be data on weather stations just outside of Kentucky in neighboring states so that the edge effects could be further mitigated.   </p> <br>
 
 <h3> Inverse Distanced Weighed Interpolation  </h3> <br>
 
-<p> Moving on, an inverse distance weighted (IDW) surface of the drought anomaly values can be created. These simple interpolation models assume that things close to one another are more alike than those further away (i.e. clustered spatial autocorrelation). The IDW is presented in Figure 2 below. </p> <br>
+<p> Moving on, an inverse distance weighted (IDW) surface of the drought anomaly values can be created. IDWs are the simplest of the interpolation methods, though they can be parameter sensitive. 
+These deterministic interpolation models are a member of the so-called "exact interpolators", since the predicted values at known locations are exactly the observed values (or 1). 
+As they are deterministic models, they assume that the spatial association of the data is known -- in this case nearby locations are weighed higher (i.e. distance decay). The IDW depicting drought anomalies is presented in Figure 2 below. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/FgL2aYh.jpeg" alt="IDW" style="width:100%;max-width:625px">
@@ -223,7 +225,7 @@
 </tbody>    
 </table> <br>
 
-<p> One assumption of kriging is that the underlieing dataset is normally distributed. To analyze the drought anomaly data for June of 1999, a normal QQplot was created (Figure 4). </p>
+<p> Kriging produces the best results when data fits the normal distribution. To analyze the drought anomaly data for June of 1999, a normal QQplot was created (Figure 4). </p>
 
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
@@ -255,7 +257,7 @@
 
 <h3> Kriging </h3> <br>
 
-<p> Kriging is a stochastic method used for spatial interpolation and modeling. Unlike the IDW model, kriging takes into account spatial autocorrelation.  It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the surface to be interpolated from an analysis of the sample points. It allows for the quantification of interpolation errors. However, it is also more complicated to conduct than an IDW, as it requires statistical modeling to produce a meaningful result.  </p> <br>
+<p> Kriging is a stochastic method used for spatial interpolation and modeling. Unlike the IDW model, kriging takes into account spatial autocorrelation, which is modeled with a mathematical function.  It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the surface to be interpolated from an analysis of the sample points. It allows for the quantification of interpolation errors. However, it is also more complicated to conduct than an IDW, as it requires statistical modeling to produce a meaningful result.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
