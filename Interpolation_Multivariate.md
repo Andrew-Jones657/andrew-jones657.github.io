@@ -257,9 +257,22 @@ As they are deterministic models, they assume that the spatial association of th
 
 
 
-<h3> Kriging </h3> <br>
+<h3> Ordinary Kriging </h3> <br>
 
-<p> Kriging is a stochastic method used for spatial interpolation and modeling. Unlike the IDW model, kriging takes into account spatial autocorrelation, which is modeled with a mathematical function.  It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the surface to be interpolated from an analysis of the sample points. It allows for the quantification of interpolation errors. However, it is also more complicated to conduct than an IDW, as it requires statistical modeling to produce a meaningful result.  </p> <br>
+<p> Ordinary kriging is a stochastic method used for spatial interpolation and modeling. Compared to the deterministic IDW method, kriging has a few underlieing assumptions concerning the data. </p> <br>
+    <ol>
+    <li> The interpolation surface has a constant mean, with no underlieing trend. </li>
+    <li> The variation of the surface is the same in each direction (also known as isotropic).  </li>
+    <li> The semivariogram consists of a basic mathematical model with some clearly defined user parameters. </li>
+    <li> The same variograms is applied over the entire study area. </li>
+    </ol> <br>
+    
+<p> Unlike the IDW model, kriging takes into account spatial autocorrelation, which is modeled with a mathematical function.  
+    It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the surface to be interpolated from an analysis of the sample points. 
+    It allows for the quantification of interpolation errors and analysis of uncertainty (there is a measure of error calculated with this). 
+    However, it is also more complicated to conduct than an IDW, as it requires statistical modeling to produce a meaningful result.  </p> <br>
+
+<p> There are also several different forms of kriging. </p>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
@@ -360,9 +373,7 @@ As they are deterministic models, they assume that the spatial association of th
 </tbody>
 </table> <br>
 
-<p> Based on the standard error map in Figure 8, values around central Kentucky and eastern Kentucky indicate a more reliable prediction than values around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not always easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
-
-<p> It is important to note that this may not be the best possible model for the data. Rather, it was the best overall model out of the numerous different models created.  </p> <br>
+<p> Based on the standard error map in Figure 8, values around central Kentucky and eastern Kentucky display a more reliably predicted values than those found around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
 
 
 <figure>
@@ -370,7 +381,7 @@ As they are deterministic models, they assume that the spatial association of th
 <figcaption> Figure 9. Probability Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
-<p> Figure 9 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold. The areas that require drought emergency response are primarily northeastern Kentucky, though portions of central Kentucky also have a high probability. This area tends to have a higher probability (between 70% and 100%) of crossing the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
+<p> Figure 9 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold (the median of the June 1999 values). The areas that require drought emergency response are primarily in northeastern Kentucky, though portions of central Kentucky also have a high probability crossing the threshold. This area tends to have a higher probability (between 70% and 100%) of crossing the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
 
 <h1 style="text-align:center;"> Multivariate Methods: Applying some Measures to a Different Month </h1> <br>
 
