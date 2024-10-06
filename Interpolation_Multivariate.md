@@ -255,6 +255,8 @@
 
 <h3> Kriging </h3> <br>
 
+<p> Kriging is a stochastic method used for spatial interpolation and modeling. Unlike the IDW model, kriging takes into account spatial autocorrelation.  It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the surface to be interpolated from an analysis of the sample points. It allows for the quantification of interpolation errors. However, it is also more complicated to conduct than an IDW, as it requires statistical modeling to produce a meaningful result.  </p> <br>
+
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
 <figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
@@ -282,8 +284,32 @@
 <td> 12 </td>
 </tr>
 <tr>
+<td> Nugget </td>
+<td> 6.8 </td>
+</tr>
+<tr>
 <td> Model Type </td>
 <td> Spherical </td>
+</tr>
+<tr>
+<td> Angle </td>
+<td> 65° </td>
+</tr>
+<tr>
+<td> Direction </td>
+<td> 65° </td>
+</tr>
+<tr>
+<td> Minor to Max Range </td>
+<td> 300,000 -- 397,000 </td>
+</tr>
+<tr>
+<td> Partial Sill </td>
+<td> 3.5 </td>
+</tr>
+<tr> 
+<td> Bandwidth </td>
+<td> 1.93 </td>
 </tr>
 </tbody>
 </table>
