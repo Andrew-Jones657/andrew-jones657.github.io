@@ -394,13 +394,11 @@ As they are deterministic models, they assume that the spatial association of th
 
 <p> Observing the values in the legend, there were precipitation deficiencies ranging from approximately -9 to -44 inches across Kentucky by June of 2001. The weather stations recording the highest precipitation deficiencies were in central Kentucky as well as parts of the Bluegrass. Generally, drought conditions tended to be less severe in western and northern Kentucky. </p> <br>
 
-<p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p>
+<p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p> <br>
 
 <p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. From this point on, the data will be prepared and analyzed in RStudio. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
 
 <p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering. </em> </p> <br>
-
-<p> (Put a plot of all data here) </p> <br>
 
 <p> Agglomerative clustering has the advantage of displaying data in a dendrogram, which is a diagram that shows the hierarchical relationship between objects. (cont...)   </p> <br>
 
@@ -415,8 +413,8 @@ As they are deterministic models, they assume that the spatial association of th
 <figcaption> Figure 11. Dendrogram of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> (Stick parameters in table here) </p>
-<table class = "tablecenter">
+
+<table class = "tablecenter"> <caption> Table 4. Dendrogram Parameters </caption>
 <thead>
 <th> Parameter </th>
 <th> Value </th>
@@ -461,9 +459,8 @@ As they are deterministic models, they assume that the spatial association of th
 
 <p> (Talk about K-Means some) </p> <br>
 
-<p> (Table of BSS / TSS Values up to 6 clusters) </p> <br>
 
-<table class="tablecenter"> <caption> Table ?. Between Sum of Squares over Total Sum of Squares Partition Formula Table </caption> 
+<table class="tablecenter"> <caption> Table 5. Between Sum of Squares over Total Sum of Squares Partition Formula Table </caption> 
 <thead>
 <tr>
 <th> # Clusters </th>
@@ -541,9 +538,9 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <p> The average silhouette width for two clusters is 0.41, indicating an okay fit overall. One observation within each cluster does not fit well within it (the bars below the 0.00 line) </p> <br>
 
-<p> Table ? below presents the average silhouette width with clusters up to k=6. The best fit does occur at k=2, as it has the highest average silhouette width. </p> <br>
+<p> Table 6 below presents the average silhouette width with clusters up to k=6. The best fit does occur at k=2, as it has the highest average silhouette width. </p> <br>
 
-<table class="tablecenter"> <caption> Table ?. Table of Average Silhouette Width Scores </caption>
+<table class="tablecenter"> <caption> Table 6. Table of Average Silhouette Width Scores </caption>
 <thead>
 <tr>
 <th> Number of Cluster </th>
@@ -572,17 +569,27 @@ Rather than being a random uniform distribution of points, this means that objec
 <td> 0.26 </td> 
 </tr>
 </tbody>
-</table>
+</table> <br>
+
+<p> Another way to view the cluster data is through the cluster plot method from the “factoextra” library. This method incorporates principal component analysis to reduce the dimensionality of the dataset (36 variables to 2) so that it can be represented in a 2D graph. Observing figure 19, there is some degree of overlap between, indicating that the differences in the measured variables between groups is only small. This was also reflected in the average silhouette width only reaching 0.42 in size. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/97QvHQJ.jpeg" alt="PCAplot" style="width:100%;max-width:625px">
-<figcaption> Figure 19.    </figcaption>
+<figcaption> Figure 19. Cluster Variance Plot   </figcaption>
 </figure> <br>
+
+<p>  </p>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/M5MBJGG.jpeg" alt="PCAplot2" style="width:100%;max-width:625px">
+<figcaption> Figure 20. Alternate Cluster Variance Plot   </figcaption>
+</figure> <br>
+
 
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
-<figcaption> Figure 20. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 21. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 
@@ -590,7 +597,7 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
-<figcaption> Figure 21. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 22. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Discuss map) </p>
@@ -608,6 +615,10 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <h3> References </h3> <br>
 <p> https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
+<p>  </p>
+<p>  </p>
+<p>  </p>
+
 
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
