@@ -143,7 +143,7 @@
 
 <p> Moving on, an inverse distance weighted (IDW) surface of the drought anomaly values can be created. IDWs are the simplest of the interpolation methods, though they can be parameter sensitive. 
 These deterministic interpolation models are a member of the so-called "exact interpolators", since the predicted values at known locations are exactly the observed values (or 1). 
-As they are deterministic models, they assume that the spatial association of the data is known -- in this case nearby locations are weighed higher (i.e. distance decay). The IDW depicting drought anomalies is presented in Figure 2 below. </p> <br>
+As they are deterministic models, they assume that the spatial association of the data is known -- in this case the weights are created by an arbitrary mathematical function (i.e. distance decay). This means that it requires expert knowledge and assumptions regarding the parameters, such as search distance and number of neighbors to use, to create an informative IDW. The IDW depicting drought anomalies is presented in Figure 2 below. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/FgL2aYh.jpeg" alt="IDW" style="width:100%;max-width:625px">
@@ -162,7 +162,7 @@ As they are deterministic models, they assume that the spatial association of th
 
 <p> Finally, some limitations of the IDW model need to be considered. Major limitations include the average and bulls eye effect. If some of the chosen values used to interpolate are not within the threshold distance of any samples, they will not produce a surface: this can make outliers and edge values particularly difficult to interpolate around accurately. Depending on the number of points selected, proper continuity may also not be achieved if there are too few points. Each point in an IDW has the same weight, which can create issues for particularly high or low values. This can lead to the “bull’s eye” effect, where distant points will simply create a distance decay circle that does not properly reflect the subject being studied. Similarly, the range of interpolated values cannot exceed the number of observed values. To mitigate the edge effect, it is important that values are also positioned on the edge of the study area, though this is difficult to achieve in practice.  </p> <br>
 
-<p> In order to create a kriging data model, some exploratory data analysis needs to be conducted. </p> <br>
+<p> In order to create a kriging data model, some exploratory data analysis needs to be conducted. First, a histogram and some general descrptive statistics for the June 1999 values can be created. </p> <br>
 
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
@@ -236,8 +236,7 @@ As they are deterministic models, they assume that the spatial association of th
 </figure> <br>
 
 
-<p> The field values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5.  Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in the histogram in Figure 4, where the right tail of the distribution is longer than the left tail. Similarly, the QQplot in Figure 5 shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a topic such as critical resource mining, then it may not be best to proceed with a kriging analysis. </p> <br>
-
+<p> The field values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5.  Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in the histogram in Figure 4, where the right tail of the distribution is longer than the left tail. Similarly, the QQplot in Figure 5 shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a subject such as critical resource mining, then more measures would have to be taken to ensure the analysis is accurate. </p> <br>
 
 
 <figure>
@@ -254,9 +253,6 @@ As they are deterministic models, they assume that the spatial association of th
 
 <p> There certainly appears to be a second order trend in this data. The trend analysis in Figure 4 shows an upwards projecting U-shaped curve, indicating that drought values in central Kentucky are close to the mean while drought values in western and eastern Kentucky are far from the mean. Fortunately, this trend curve is rather broad, and will not affect the kriging interpolation too much. Similarly, the semivariogram in Figure 5 shows distant values on the right side of the figure, which denotes high and low values being diffused from the mean (or in other words, high and low values are autocorrelated with one another).   </p> <br>
 
-
-
-
 <h3> Ordinary Kriging </h3> <br>
 
 <p> Ordinary kriging is a stochastic method used for spatial interpolation and modeling. Compared to the deterministic IDW method, kriging has a few underlieing assumptions concerning the data. </p> <br>
@@ -267,12 +263,12 @@ As they are deterministic models, they assume that the spatial association of th
     <li> The same variograms is applied over the entire study area. </li>
     </ol> <br>
     
-<p> Unlike the IDW model, kriging takes into account spatial autocorrelation, which is modeled with a mathematical function.  
-    It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the surface to be interpolated from an analysis of the sample points. 
-    It allows for the quantification of interpolation errors and analysis of uncertainty (there is a measure of error calculated with this). 
-    However, it is also more complicated to conduct than an IDW, as it requires statistical modeling to produce a meaningful result.  </p> <br>
+<p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must setup up an explicit function to describe the spatial autocorrelation.  
+    It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. 
+    Additionally, kriging allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. 
+    However, it is also more complicated to conduct than an IDW, both conceptually and in terms of computation power.  </p> <br>
 
-<p> There are also several different forms of kriging. </p>
+
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
@@ -280,7 +276,7 @@ As they are deterministic models, they assume that the spatial association of th
 </figure> <br>
 
 
-<p> The trends in the kriging drought anomaly map are roughly similar to those produced in the IDW map, though the interpolation is now much more natural looking (Figure 7). The average and bull’s eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p>
+<p> The trends in the kriging drought anomaly map are similar to those produced in the IDW map, though the interpolation is now more natural looking (Figure 7). The average and bulls eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p>
 
 <table class="tablecenter"> <caption> Table 2. Ordinary Kriging Parameters </caption>
 <thead>
