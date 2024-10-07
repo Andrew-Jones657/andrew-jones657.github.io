@@ -159,7 +159,21 @@
   </div>
 </div> <br>
 
+<div class="line"></div>
 
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href=" ">
+    <img src=" " alt="Columbia_Remote" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Detecting Land Use Change in Boone County, Missouri with Remote Sensing Techniques (WIP) </h5>
+    <p>  </p>
+  </div>
+</div> <br>
 
 
 
