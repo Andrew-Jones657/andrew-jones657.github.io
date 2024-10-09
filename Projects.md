@@ -120,14 +120,6 @@
 
 <h3> Personal Projects </h3> <br> <br>
 
-<figure>
-<a href="https://andrew-jones657.github.io/GIS_Programming"> 
-<img src="https://i.imgur.com/ixpJBjV.jpg" alt="GIS Programming" class="left">
-</a>
-
-</figure> <br>
-
-
 
  <div class="row">
   <div class="columnImg">
@@ -192,7 +184,7 @@
   </div>
   <div class="columnText">
     <h5> An Ethnic Cultural Landscape: German Breweries and Social Institutions in Covington, Kentucky, 1860-1920 </h5>
-    <p> test </p>
+    <p> This research examines institutional and cultural landscape markers of German cultural identity in the city of Covington, Kentucky, from 1860 to 1920. </p>
   </div>
 </div> 
 
