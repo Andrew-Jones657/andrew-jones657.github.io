@@ -75,7 +75,7 @@
 
 <p> Here are various GIS tutorials I have prepared. Many of the tutorials are related to the projects under my projects page in that these tutorials "fill in the gaps" concerning some of the workflows.  </p> <br>
 
-<div class="lineThick"></div> <br>
+
 
  <div class="row">
   <div class="columnImg">
