@@ -130,8 +130,8 @@
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Finding an Ideal Site for a New Fire Station in Warren County, Kentucky </h5>
-    <p> A site selection analysis that incorporates some network analysis tools to find a site for a new or improved professional fire station. </p>
+    <h5> Finding an Ideal Site for a New Fire Station </h5>
+    <p> A site selection analysis that incorporates some network analysis tools to find a site for a new or improved professional fire station in Warren County, KY. </p>
   </div>
 </div> <br>
 
@@ -139,7 +139,7 @@
 
  <div class="row">
   <div class="columnImg">
-    <a target="_blank" href="https://andrew-jones657.github.io/Interpolation_Multivariate">
+    <a target="_blank" href=" ">
     <img src="https://i.imgur.com/1Z7Bm7b.jpeg" alt="Interpolation/MV" style="width:100%">
     </a>
   </div>
@@ -156,14 +156,14 @@
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href=" ">
-    <img src=" " alt="Columbia_Remote" style="width:100%">
+    <img src="https://i.imgur.com/5SixC4A.jpeg" alt="Columbia_Remote" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Detecting Land Use Change in Boone County, Missouri with Remote Sensing Techniques (WIP) </h5>
-    <p>  </p>
+    <h5> Detecting Land Use Change with Remote Sensing Techniques (WIP) </h5>
+    <p> A remote sensing analysis that invesitages urban expansion in Boone County, Missouri betweeen 2004 and 2022. </p>
   </div>
 </div> <br>
 
