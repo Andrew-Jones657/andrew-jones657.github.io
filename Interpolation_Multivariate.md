@@ -498,7 +498,7 @@ As they are deterministic models, they assume that the spatial association of th
 <figcaption> Figure 14. Ideal Number of Clusters under the Elbow Method  </figcaption>
 </figure> <br>
 
-<p> Figure 14 above depicts an “elbow method” graph, which displays the total within sum of squares as a function of the number of clusters. In other words, this is a essentially a graph of the TSS value on Table ?. The point containing the ideal number of clusters occurs where the slope of the line decreases and the “elbow” bends: at this point, adding another cluster does not substantially improve the BSS / TSS value. In this case, the bend is located at four clusters, where the function’s slope decreases. The “elbow” can be seen between two and four clusters.  </p> <br>
+<p> Figure 14 above depicts an “elbow method” graph, which displays the total within sum of squares as a function of the number of clusters. In other words, this is a essentially a graph of the TSS value on Table 5. The point containing the ideal number of clusters occurs where the slope of the line decreases and the “elbow” bends: at this point, adding another cluster does not substantially improve the BSS / TSS value. In this case, the bend is located at four clusters, where the function’s slope decreases. The “elbow” can be seen between two and four clusters.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/09wT6jY.jpeg" alt= "Silhouette" style="width:100%;max-width:625px">
@@ -574,22 +574,15 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Another way to view the cluster data is through the cluster plot method from the “factoextra” library. This method incorporates principal component analysis to reduce the dimensionality of the dataset (36 variables to 2) so that it can be represented in a 2D graph. Observing figure 19, there is some degree of overlap between, indicating that the differences in the measured variables between groups is only small. This was also reflected in the average silhouette width only reaching 0.42 in size. </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/97QvHQJ.jpeg" alt="PCAplot" style="width:100%;max-width:625px">
-<figcaption> Figure 19. Cluster Variance Plot   </figcaption>
-</figure> <br>
-
-<p>  </p>
-
-<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/M5MBJGG.jpeg" alt="PCAplot2" style="width:100%;max-width:625px">
-<figcaption> Figure 20. Alternate Cluster Variance Plot   </figcaption>
+<figcaption> Figure 19. Cluster Variance Plot   </figcaption>
 </figure> <br>
 
 
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
-<figcaption> Figure 21. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 20. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 
@@ -597,7 +590,7 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
-<figcaption> Figure 22. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
+<figcaption> Figure 21. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
 <p> (Discuss map) </p>
