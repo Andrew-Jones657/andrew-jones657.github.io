@@ -111,8 +111,8 @@
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Warren County Public Works Stormwater Division Storymap </h5>
-    <p> A story map detailing some of responsibilities and accomplishments I had at Warren County Public Works </p>
+    <h5> GIS Services Internship Storymap </h5>
+    <p> A story map detailing my responsibilities and accomplishments at Warren County Public Works: Division of Stormwater Management. </p>
   </div>
 </div> 
 
