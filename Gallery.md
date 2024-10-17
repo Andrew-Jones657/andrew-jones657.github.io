@@ -124,6 +124,7 @@
 <figcaption> Percent Minority Population Change in Jefferson County, Kentucky 2000 - 2020 </figcaption>
 </figure> <br>
 
+<p> 10/16/2024 </p> <br>
 
 
 <div id="myModal" class="modal">
