@@ -119,6 +119,13 @@
 
 <p> This page is currently under development, but I intend to add various thematic maps I have created here. Think of it as a fun way to look at many different topics without being bogged down by a lot of text. </p>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/ImFb6we.jpeg" alt="Louisville Minority Change" style="width:100%;max-width:625px">
+<figcaption> Percent Minority Population Change in Jefferson County, Kentucky 2000 - 2020 </figcaption>
+</figure> <br>
+
+
+
 <div id="myModal" class="modal">
    <span class="close">&times;</span>
    <img class="modal-content" id="img01">
