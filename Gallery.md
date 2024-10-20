@@ -119,7 +119,7 @@
 
 <h1 style="text-align:center;"> Map Gallery </h1> <br>
 
-<p> This page is a gallery of single theme maps that I have created. Think of it as a "mapping for fun" page. </p> <br>
+<p> This is a gallery of cartographic products that I have created.   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ImFb6we.jpeg" alt="Louisville Minority Change" style="width:100%;max-width:625px">
