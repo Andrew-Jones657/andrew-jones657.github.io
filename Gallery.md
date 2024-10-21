@@ -31,7 +31,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            color: #fff;
+            color: #000000;
             background-color: #000000;
             overflow: auto;
             z-index: 60;
