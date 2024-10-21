@@ -232,6 +232,9 @@
 <div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 </div>
 <script src="./files/Strava/Strava2024.js"></script> <br> 
+<figure>
+<figcaption> My Bike Rides in Warren County in 2024 </figcaption>
+</figure> <br>
 
 <p> 10/21/2024 </p> <br>
 
