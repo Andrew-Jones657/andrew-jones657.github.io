@@ -56,13 +56,13 @@
             .panel-result {
                 cursor: pointer;
             margin: 2px 0;
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: #000000;
       }
 
             .panel-result:hover,
             .panel-result:focus {
                 color: orange;
-            background-color: rgba(0, 0, 0, 0.75);
+            background-color: #000000;
       }
 
 	      .docking-control {
