@@ -76,7 +76,7 @@
         box-sizing: border-box;
         margin: -40px 0 0 -125px;
         background-color: #000000;
-        color: #323232;
+        color: #000000;
         text-align: center;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
