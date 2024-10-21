@@ -8,10 +8,13 @@
             html,
             body,
             #viewDiv {
-                height: 100%;
+	    height: 100%;
             width: 100%;
             margin: 0;
             padding: 0;
+	    min-height: 450px;
+            mid-width: 650px;
+            border: 1px solid #444444;
       }
 
             .panel-container {
