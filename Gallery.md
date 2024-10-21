@@ -23,7 +23,7 @@
             .panel-side {
                 padding: 2px;
             box-sizing: border-box;
-            width: 300px;
+            width: 200px;
             height: 100%;
             position: absolute;
             top: 0;
