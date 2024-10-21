@@ -5,6 +5,88 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
+            html,
+            body,
+            #viewDiv {
+                height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+      }
+
+            .panel-container {
+                position: relative;
+            width: 100%;
+            height: 100%;
+      }
+
+            .panel-side {
+                padding: 2px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            overflow: auto;
+            z-index: 60;
+      }
+
+            .panel-side h3 {
+                padding: 0 20px;
+            margin: 20px 0;
+      }
+
+            .panel-side ul {
+                list - style: none;
+            margin: 0;
+            padding: 0;
+      }
+
+            .panel-side li {
+                list - style: none;
+            padding: 10px 20px;
+      }
+
+            .panel-result {
+                cursor: pointer;
+            margin: 2px 0;
+            background-color: rgba(0, 0, 0, 0.3);
+      }
+
+            .panel-result:hover,
+            .panel-result:focus {
+                color: orange;
+            background-color: rgba(0, 0, 0, 0.75);
+      }
+
+	      .docking-control {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 80px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: -40px 0 0 -125px;
+        background-color: #fff;
+        color: #323232;
+        text-align: center;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .docking-control label {
+        display: inline-block;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-size: 16px;
+      }
+
 
   h3{
   text-align: center;
@@ -108,9 +190,25 @@
     width: 100%;
   }
 }
+
+     .lineThick{
+    width: 625px;
+    height: 1px;
+    border-bottom: 2px solid black;
+    position: absolute;
+    }
+
+    .line{
+    width: 625px;
+    height: 1px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    }
+
+
     </style>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.29/"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.30/"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head> 
@@ -120,6 +218,22 @@
 <h1 style="text-align:center;"> Map Gallery </h1> <br>
 
 <p> This is a gallery of cartographic products that I have created.   </p> <br>
+
+<div class="panel-container">
+    <div class="panel-side esri-widget">
+        <h3>Bike Rides by Date</h3>
+        <ul id="strava_graphics">
+             <li>Loading&hellip;</li>
+        </ul>
+    </div>
+<div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
+</div>
+<script src="./files/Strava/Strava2024.js"></script> <br> 
+
+<p> 10/21/2024 </p> <br>
+
+
+<div class="line"></div>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ImFb6we.jpeg" alt="Louisville Minority Change" style="width:100%;max-width:625px">
