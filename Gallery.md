@@ -27,7 +27,7 @@
                 padding: 2px;
             box-sizing: border-box;
             width: 200px;
-            height: 95%;
+            height: 92%;
             position: absolute;
             top: 0;
             right: 0;
