@@ -79,9 +79,9 @@
 
 <h1 style="text-align:center;"> Welcome to my Projects Page </h1>
 
-<p> This page is currently under development, but I intend on adding a variety of academic and work projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p>
+<p> This page contains my academic, personal, and professional projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p> <br>
 
-<h3> Work Projects </h3> <br> <br>
+<h3> Work Projects </h3> <br> 
 
 
 
