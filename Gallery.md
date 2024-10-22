@@ -220,7 +220,7 @@
 
 <h1 style="text-align:center;"> Map Gallery </h1> <br>
 
-<p> This is a gallery of cartographic products that I have created.   </p> <br>
+<p> This page serves as a gallery of single-theme cartographic products that I have created. </p> <br>
 
 <div class="panel-container">
     <div class="panel-side esri-widget">
