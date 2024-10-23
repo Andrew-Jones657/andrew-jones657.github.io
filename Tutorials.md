@@ -160,9 +160,6 @@
   </div>
 </div> <br>
 
-<p> Managing GIS Data: Using PostGIS and Postgresql as a Data Warehouse (WIP) </p> <br>
-
-<p> Hosting GIS Data on the Cloud: A Guide to Setting up Geoserver on Amazon Web Services (WIP) </p> <br>
 
 </body>
 
