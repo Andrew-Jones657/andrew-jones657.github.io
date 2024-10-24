@@ -81,7 +81,7 @@
 
 <p> This page contains my academic, personal, and professional projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p> <br>
 
-<h3> Work Projects </h3> <br> 
+<h3> Professional Projects </h3> <br> 
 
 
 
