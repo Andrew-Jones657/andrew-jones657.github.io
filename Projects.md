@@ -79,7 +79,7 @@
 
 <h1 style="text-align:center;"> Welcome to my Projects Page </h1>
 
-<p> This page contains my academic, personal, and professional projects. By clicking on one of the image thumbnails below, you will be directed to that project. </p> <br>
+<p> This page contains my academic, personal, and professional projects. Click on the image thumbnails below to be directed to the respectice project. </p> <br>
 
 <h3> Professional Projects </h3> <br> 
 
