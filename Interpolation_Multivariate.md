@@ -600,9 +600,17 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <p> Histogram </p>
 <p> QQPlot </p>
-<p> Semivariogram </p>
-<p> Trend Analysis </p>
+<p> Dendrogram </p>
+<p> Agglormerative Clustering Time Series Plot </p>
+<p> Elbow Method Plot </p>
+<p> Silhouette Method Plot </p>
+<p> Gap Statistic Method Plot </p>
+<p> Consensus Algorithm Plot </p>
+<p> Cluster Silhouette Plot </p>
+<p> Cluster Variance Plot </p>
+<p> K-means Clustering Time Series Plot </p>
 <p>  </p>
+
 
 <h3> List of Figures and Tables </h3> <br>
 
