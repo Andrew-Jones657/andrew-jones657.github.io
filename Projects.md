@@ -88,8 +88,8 @@
 
  <div class="row">
   <div class="columnImg">
-    <a target="_blank" href="https://andrew-jones657.github.io/Missouri_Redistricting_2022">
-    <img src="https://i.imgur.com/Xrk6Br4.jpg" alt="Missouri's Congressional Districts" style="width:100%">
+    <a target="_blank" href="https://storymaps.arcgis.com/stories/e93386ea893b4fc8a4d15baca0e7c98f">
+    <img src="https://i.imgur.com/YBrNHhs.jpeg" alt="Missouri's Congressional Districts" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
