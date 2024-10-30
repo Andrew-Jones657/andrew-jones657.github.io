@@ -297,7 +297,7 @@
 </figure> <br>
 
 
-<p> The detailed workflow for this project is presented in Figure 2 below. As mentioned earlier, it is a complex albeit iterative analysis. The site selection process is focused on narrowing down information to whatever criteria the user deems important. The latter half of the workflow is more dependent on correctly establishing field values, parameters, and settings for the service area and location allocation analyses within the network dataset.  </p> <br>
+<p> The detailed workflow for this project is presented in Figure 2 below. As mentioned earlier, it is a complex albeit iterative analysis. The site selection process is focused on narrowing down information to criteria deemed important by the user. The latter half of the workflow is more dependent on correctly establishing field values, parameters, and settings for the service area and location allocation analyses within the network dataset.  </p> <br>
 
 <p> Click on the hyper link by Figure 2 to download the flow chart. </p> <br>
 
@@ -308,24 +308,24 @@
 
 <h3> A Brief Summary on the Site Selection Criteria </h3>
 
-<p> Some of the site selection criteria are tailored towards avoiding physical impediments. Bodies of water or floodplains were discluded as potential candidate sites. Various parts of Warren County are topographically prominent, so land parcels with a change in slope over 15 feet were avoided as candidate sites. More unique to Warren County is its karst landscape, which can result in the formation of sinkholes. Land parcels with known karst geology were removed from the candidate site list. </p> <br>
+<p> Some site selection criteria are tailored to avoid physical impediments. Bodies of water and floodplains were excluded as potential candidate sites. Various areas of Warren County are topographically prominent; therefore, land parcels with a slope change exceeding 15 feet were avoided as candidate sites. Unique to Warren County is its karst landscape, which can lead to the formation of sinkholes. Consequently, land parcels with known karst geology were removed from the candidate site list.</p> <br>
 
-<p> To respond quickly to emergencies, fire stations must be located close to major roads. To accommodate this in the site selection process, land parcels within a 1/3rd mile of major roads were weighed positively. </p> <br>
+<p> To ensure a quick response to emergencies, fire stations must be located near major roads. In the site selection process, land parcels within one-third of a mile from major roads were assigned a positive weight. </p> <br>
 
-<p> Since the presence of a professional fire station can lower home insurance rates, a quantile classification of property home values from the American Community Survey (Census Tract level) was used to ensure that these discounts were equitably distributed. Lower valued homes were weighed higher than higher valued homes.  </p> <br> 
+<p> Since the presence of a professional fire station can lower home insurance rates, a quantile classification of property home values from the American Community Survey (at the Census Tract level) was utilized to ensure equitable distribution of these discounts. Lower-valued homes were weighted more heavily than higher-valued homes.  </p> <br> 
 
-<p> Land parcels need to have enough space to accommodate a fire station. The amount of acreage that is required depends on how large the station is, with some sources recommending at least five acres (American planning association). For this study, however, the smallest existing professional fire stations land parcel size will be used -- in this case, it is a one-acre land parcel. </p> <br>
+<p> Land parcels must provide sufficient space to accommodate a fire station. The required acreage varies based on station size, with some sources recommending at least five acres (according to the American Planning Association). However, for this study, the size of the smallest existing professional fire station land parcel will be used; in this case, a one-acre land parcel will be considered.</p> <br>
 
 <h3> Demographic and Zoning Data Important for Site Selection </h3> <br>
 
-<p> Before looking at the fire response service in Warren County, it is worthwhile to observe the distribution of and changes in the overall population. Figure 3 below depicts a dot density map of Warren County, whose population at the time was 134,510 people. Bowling Green, containing more than half of Warren County’s population at 72,642 people, is essentially saddled between I-65 and I-165 in the center of the county. Suburban sprawl northeast and south of Bowling Green shows a moderate population density, and the rest of Warren County, more rural in character, has a low population density.  </p> <br>
+<p> Before the fire response service in Warren County is examined, the distribution and changes in the overall population are worth observing. Figure 3 below depicts a dot density map of Warren County, which had a population of 134,510 people at that time. Bowling Green, which contains more than half of Warren County’s population at 72,642 people, is situated between I-65 and I-165 in the center of the county. A moderate population density is observed in the suburban sprawl northeast and south of Bowling Green, while the remainder of Warren County, characterized by its more rural nature, displays a low population density.  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/MgyutPx.jpeg" alt="2020 Warren County Population Density" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Dot Density Population of Warren County in 2020 </figcaption>
 </figure> <br>
 
-<p> Beyond population density in 2020, population changes since 2000 illustrate how the population distribution has changed. Figure 4 below shows a choropleth map of percent population change between 2000 and 2020, as well as the population dot density in 2000 overlayed with the absolute population change dot density between 2000 and 2020. In this time, Warren County grew by 42,032 people, with population growth primarily occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green came into existence during this period. Some of the highest population growth occurred in the corridor between Russellville Road and I-65. Considering how much population growth occurred in newly developed suburban areas, these areas were weighed highly in the site selection analysis, as it is likely that growth will continue there.  </p> <br>
+<p> Beyond population density in 2020, changes in population since 2000 illustrate how the distribution has evolved. Figure 4 below displays a choropleth map of percent population change between 2000 and 2020, along with the population dot density in 2000 overlaid with the absolute population change dot density from 2000 to 2020. During this time, Warren County experienced growth of 42,032 people, with the majority of this growth occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green were established during this period. Some of the highest population growth was recorded in the corridor between Russellville Road and I-65. Given the significant growth in these newly developed suburban areas, a high weight was assigned to these locations in the site selection analysis, as continued growth is likely in these regions. </p> <br>
 
 <p> <em> A quick note on Figure 4: since the boundaries of census block groups change over time, one cannot directly calculate the population change between 2000 and 2020. Instead, census blocks from 2000 must be aggregated to the boundaries of the 2020 census block groups. Then, a population change estimate can be calculated. This process is also known as areal proportion analysis. </em>  </p> <br>
 
@@ -334,14 +334,14 @@
 <figcaption> Figure 4. Population Changes in Warren County between 2000 and 2020 </figcaption>
 </figure> <br>
 
-<p> Like population density and trends, existing land use represents an important element of this study.  As mentioned above in Figure 1, land use types in the site selection process were limited to agricultural, commercial, public, or vacant. These land use types were selected on the basis that they would be the easiest to rezone. The Bowling Green Warren County City County Planning Commission’s (CCPC) map of land use in Warren County shows how land use is distributed among land parcels (Figure 5).  Note that the yellow and red areas depict residential parcels. These parcels contain most of the population seen in Figures 3 and 4, so ensuring that they are close to a new or improved fire station is important.  </p> <br>
+<p> Like population density and trends, existing land use is considered an important element of this study. As mentioned above in Figure 1, land use types in the site selection process are limited to agricultural, commercial, public, or vacant. These land use types were selected on the basis that they would be the easiest to rezone. The map of land use in Warren County, produced by the Bowling Green Warren County City County Planning Commission (CCPC), illustrates how land use is distributed among land parcels (Figure 5). It should be noted that the yellow and red areas represent residential parcels. These parcels contain most of the population seen in Figures 3 and 4, making it important to ensure that they are in close proximity to a new or improved fire station.  </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/09vHtse.jpeg" alt="Land Use in Warren County" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Land Use in Warren County </figcaption>
 </figure>
 
-<p> The CCPC also has a future land use map, which shows how Warren County’s land use may change over the next 20 years (Figure 6). This map was released in 2012 with predictions for 2030. The low and rural density land use areas on this map are of particular importance, as they suggest that much of the agricultural land close to Bowling Green will take on a more populated, residential nature. Naturally, it will be important for these areas to have a good fire response service, and for this reason, low density and rural density were weighed positively in the site selection process.  </p> <br>
+<p> The CCPC also provides a future land use map, which shows how Warren County’s land use may change over the next 20 years (Figure 6). This map, released in 2012, contains predictions for 2030. The areas designated as low and rural density land use on this map are of particular importance, as they suggest that much of the agricultural land close to Bowling Green will transition to a more populated, residential nature. Consequently, it will be important for these areas to have adequate fire response services, and for this reason, low density and rural density were assigned positive weights in the site selection process. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/MdrSqxv.jpeg" alt="Future Land Use Map (2030) of Warren County" style="width:100%;max-width:625px">
@@ -351,11 +351,11 @@
 
 <h3> Considering Fire Response Times and Establishing the Network Dataset and its Parameters </h3> <br>
 
-<p> Quantifying a fire station’s response quality in a spatial model is complex. Depending on the type of emergency occurring, first responders have various goal times that they wish to meet within a certain percentage of cases. Additionally, properly handling different types of emergencies requires different types of vehicles and response procedures. Attempting to deal with every possible nuance in a GIS environment becomes difficult and extends beyond the scope of this project. To resolve this issue, some generalizations will be made regarding how fire stations respond to emergencies.  </p> <br>
+<p> Quantifying the response quality of a fire station in a spatial model is complex. Depending on the type of emergency, various goal times are set by first responders that they wish to meet within a certain percentage of cases. Additionally, different types of emergencies require different vehicles and response procedures. Addressing every possible nuance in a GIS environment is challenging and extends beyond the scope of this project. To resolve this issue, some generalizations will be made regarding the response of fire stations to emergencies.  </p> <br>
 
-<p> Bowling Green and Warren County provide two different kinds of fire services. The City of Bowling Green has a fully staffed professional fire service, whereas Warren County’s fire service is more reliant on volunteers. To represent this in a GIS, city fire stations will be classified as “professional” and county fire stations will be classified as “volunteer”. Since city fire stations are fully staffed, it is expected that they can respond to emergencies quickly, thus, they are assigned a one-minute startup delay. Volunteer fire stations, however, might require responders to first come in to prepare to respond to an emergency, so these fire stations are assigned a seven-minute startup delay. </p> <br>
+<p> Bowling Green and Warren County provide two different types of fire services. The City of Bowling Green is served by a fully staffed professional fire service, whereas Warren County’s fire service is more reliant on volunteers. In the GIS representation, city fire stations will be classified as “professional,” while county fire stations will be classified as “volunteer.” Since city fire stations are fully staffed, a one-minute startup delay is assigned to them, reflecting the expectation of a quick response to emergencies. In contrast, volunteer fire stations may require responders to arrive before preparing to respond to an emergency; therefore, a seven-minute startup delay is assigned to these fire stations. </p> <br>
 
-<p> The overall fire response will be measured in the amount of time it takes to get from a fire station to a location in Warren County – a detailed breakdown of these ratings is presented in Table 2. These ratings are based on a summary of observations from Lexipol (Moore-Merrell, 2023). Note that fire service still exists beyond the 20-minute threshold, it is simply very slow. Maximizing good fire service coverage to the highest number of people is the goal of the service area analysis, so the fire station that has the highest number of people in the first two response categories (eight minutes or less) will be chosen as the ideal station.   </p> <br>
+<p> The overall fire response will be measured by the amount of time taken to travel from a fire station to a location in Warren County—a detailed breakdown of these ratings is presented in Table 2. These ratings are based on a summary of observations from Lexipol (Moore-Merrell, 2023). It should be noted that fire service exists beyond the 20-minute threshold; however, response times are significantly slower. The goal of the service area analysis is to maximize effective fire service coverage to the highest number of people, so the fire station with the highest number of individuals in the first two response categories (eight minutes or less) will be selected as the ideal station.   </p> <br>
 
 <table class="tablecenter"> <caption>Table 2. Fire Response Time Quality </caption>
 <thead>
@@ -392,7 +392,7 @@
 </tbody>
 </table> <br>
 
-<p> Concerning travel speeds, speed limits by road type can be found in Table 3. However, the major roads in Warren County have been linear referenced, and thus have more detailed variations in their travel speed. Since fire response vehicles carry vast amounts of water, they are very heavy and cannot necessarily travel at or above the speed limit safely. For this reason, travel speed will be reduced by five miles per hour. Interstate and parkway use will also be restricted due to the high speeds.  </p> <br>
+<p> Concerning travel speeds, speed limits by road type are presented in Table 3. However, the major roads in Warren County have been linear referenced, allowing for more detailed variations in their travel speeds. Since fire response vehicles carry large amounts of water, they are very heavy and cannot necessarily travel at or above the speed limit safely. For this reason, travel speeds will be reduced by five miles per hour. Use of interstates and parkways will also be restricted due to the high speeds.  </p> <br>
 
 <table class="center"> <caption> Table 3. Speed Limits by Road Type </caption>
 <thead> 
@@ -491,7 +491,7 @@
 </tbody>
 </table> <br>
 
-<p> Having considered how fire response behavior should function, parameters for the network dataset can be setup (Table 4). Except for costs, these have been previously described. The costs represent the accumulation of travel time from the fire station to a location in Warren County. Time is created in the road network by dividing distance over travel speed, and then multiplied by 60 to convert from seconds to minutes. The delay is a generalized assumption that fire response vehicles will have to slow down at junctions to either turn or pass through carefully. Since this cost is in minutes, it was input as a 0.1667 (ten seconds) cost at junctions.     </p> <br>
+<p> Having considered how fire response behavior should function, parameters for the network dataset can be set up (Table 4). With the exception of costs, these parameters have been previously described. The costs represent the accumulation of travel time from the fire station to a location in Warren County. Time is calculated in the road network by dividing distance by travel speed and then multiplying by 60 to convert from seconds to minutes. The delay is based on a generalized assumption that fire response vehicles will need to slow down at junctions to either turn or pass through carefully. Since this cost is expressed in minutes, a value of 0.1667 (ten seconds) is input as the cost at junctions.   </p> <br>
 
 <table class="center"><caption> Table 4. Network Dataset Parameters </caption> 
 <thead>
@@ -520,7 +520,7 @@
 
 <h3> Selecting the Candidate Fire Stations </h3> <br>
 
-<p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis for determining the region that encompasses all accessible streets within a specific impedance. In this case, the service area will be divided by the cutoff times in Table 5 -- these polygons will represent travel time from all fire stations. </p> <br>
+<p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis used to determine the region that encompasses all accessible streets within a specific impedance. In this case, the service area will be divided according to the cutoff times presented in Table 5; these polygons will represent travel times from all fire stations. </p> <br>
 
 
 <table> <caption> Table 5. Parameters for the Service Area Analysis </caption>
