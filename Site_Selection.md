@@ -544,7 +544,7 @@
 </tbody>
 </table> <br>
 
-<p> After establishing the service area analysis parameters in Table 5, a service area analysis model of the current fire service in Warren County was created (Figure 7). The city of Bowling Green clearly has excellent fire service, as few parts of the city have a response time over eight minutes.  Many of the county suburbs adjacent to Bowling Green also have good service. The areas with poor fire service tend to be in rural parts of Warren County, which have low population densities as established by Figure 3. </p> <br>
+<p> After the service area analysis parameters in Table 5 are established, a service area analysis model of the current fire service in Warren County is created (Figure 7). The city of Bowling Green is clearly shown to have excellent fire service, as few parts of the city have a response time exceeding eight minutes. Many of the county suburbs adjacent to Bowling Green are also found to have good service. Areas with poor fire service tend to be located in the rural parts of Warren County, which exhibit low population densities as established by Figure 3. </p> <br>
 
 
 <figure>
@@ -552,7 +552,7 @@
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
 </figure> <br>
 
-<p> After finishing the workflow for the site selection analysis, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed on an unclassified color scheme, with darker blue sites being more desirable. The highest scoring candidate sites were in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest weighted cluster of candidate sites were south of Bowling Green in new suburban areas. Creating a new professional fire station in either of these clusters would greatly improve the current fire service, so it is best to select one site north of Bowling Green and one site south of Bowling Green -- the two best sites are highlighted with an orange boundary and lie alongside Mt. Olivet Rd to the north and Hounds Run to the south. While there were many other candidate sites, they did not weigh as highly as the two aforementioned clusters, mainly due to  lower populations. </p> <br>
+<p> After the workflow for the site selection analysis is completed, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed using an unclassified color scheme, with darker blue sites being considered more desirable. The highest-scoring candidate sites are located in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest-weighted cluster of candidate sites is found south of Bowling Green in newly developed suburban areas. Establishing a new professional fire station in either of these clusters would greatly improve the current fire service; therefore, it is deemed best to select one site north of Bowling Green and one site south of Bowling Green. The two best sites are highlighted with an orange boundary and are situated alongside Mt. Olivet Rd to the north and Hounds Run to the south. While many other candidate sites were identified, they did not weigh as highly as the two aforementioned clusters, primarily due to lower populations. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
@@ -561,7 +561,7 @@
 
 <h3> Using Location-Allocation Analysis to Find the Ideal Improved Fire Station </h3>
 
-<p> To find the volunteer fire station that, after an upgrade, would best improves the current fire service, the underlying population demand for each fire station needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that finds an optimal facility location given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to see which volunteer stations outside the current fire service experience the most population demand.  Table 6 below displays the parameters and setup for the location-allocation analysis layer. </p>
+<p> To find the volunteer fire station that would best improve the current fire service after an upgrade, the underlying population demand for each fire station needs to be analyzed. This can best be accomplished using location-allocation analysis, which is an algorithm that identifies an optimal facility location given a set of demand points. Location-allocation analysis will be applied to the current fire stations in Warren County to determine which volunteer stations outside the current fire service experience the highest population demand. The parameters and setup for the location-allocation analysis layer are displayed in Table 6 below. </p>
 
 <table> <caption> Table 6. Parameters for Location-Allocation Analysis </caption>
 <thead>
@@ -586,18 +586,18 @@
 </tbody>
 </table> <br>
 
-<p> A quick note on two of the parameters unique to location-allocation analysis. Demand points represent need for a service. The location-allocation analysis will aggregate the population demands together so that they can be viewed in tabular form. Location-allocation analysis has seven different "problem types" that can be solved -- these include minimizing the number of facilities, maximizing market share, minimizing weighted impedance, and others, but in this case, maximizing coverage is the desired effect. Warren County and the City of Bowling Green have a shared response agreement in which both entities will assist each other with fire emergencies, so there is not a limit in the amount of service a station can provide. </p> <br>
+<p> A quick note on two parameters unique to location-allocation analysis is provided. Demand points represent the need for a service. The location-allocation analysis will aggregate the population demands so that they can be viewed in tabular form. Location-allocation analysis includes seven different "problem types" that can be solved—these include minimizing the number of facilities, maximizing market share, minimizing weighted impedance, among others. However, in this case, maximizing coverage is the desired effect. A shared response agreement exists between Warren County and the City of Bowling Green, whereby both entities assist each other with fire emergencies, so there is no limit on the amount of service a station can provide. </p> <br>
 
-<p> Below is the current fire demand per fire station overlaid on the current fire service (Figure 9). The fire stations connected to more census block centroids have a higher demand from the nearby population.  </p>
+<p> Below is the current fire demand per fire station, overlaid on the current fire service (Figure 9). Fire stations connected to more census block centroids are associated with a higher demand from the nearby population. </p>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/UHlr6JD.jpeg" alt="Current Population Demands for Fire Service in Warren County, Kentucky" style="width:100%;max-width:625px">
 <figcaption> Figure 9. Current Population Demands for Fire Service in Warren County </figcaption>
 </figure> <br>
 
-<p> Looking at Table 6, the three volunteer fire stations with the highest population demand are Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, looking back at Figure 9, it is clear that much of the allocated census block population for the Alvaton and Browning stations already receive good service from other fire stations. Even though these two stations have high population demands, improving them would only slightly increase good fire response overall. It would be better to consider volunteer fire stations in densely populated suburban areas further removed from the City of Bowling Green. </p> <br>
+<p> Looking at Table 6, the three volunteer fire stations with the highest population demand are identified as Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, upon reviewing Figure 9, it is clear that much of the allocated census block population for the Alvaton and Browning stations already receives good service from other fire stations. Even though these two stations have high population demands, improvements would only slightly enhance overall fire response. It would be more beneficial to consider volunteer fire stations in densely populated suburban areas that are further removed from the City of Bowling Green. </p> <br>
 
-<p> Considering some of the locations further down Table 6, Richardsville Fire Station 3 is next after Browning Fire Station 2, but it will likely suffer from the same issue as the previous two stations. While the portion of Warren County between Morgantown Rd and Russellville Rd is growing, it's currently characterized by slow growth. Next, Alvaton Fire Station 1 and Plano Fire Station 1 appear on the list. Both of these fire stations are in densely populated suburban areas, so one of them may be a better choice as an improved fire station. The fire stations further down Table 6 are quite rural in nature or already a professional city fire station, so Alvaton Fire Station 1 and Plano Fire Station 1 will be the final selections. Alongside Woodburn Fire Station 2, these two fire stations finalize the candidate site choices.  </p> <br>
+<p> Considering some of the locations further down Table 6, Richardsville Fire Station 3 is positioned next after Browning Fire Station 2, but it is likely to face the same issue as the previous two stations. While the area of Warren County between Morgantown Rd and Russellville Rd is growing, it is currently characterized by slow growth. Next on the list are Alvaton Fire Station 1 and Plano Fire Station 1. Both of these fire stations are located in densely populated suburban areas, making one of them a better choice for improvement. The fire stations further down Table 6 are primarily rural in nature or already classified as professional city fire stations, so Alvaton Fire Station 1 and Plano Fire Station 1 will be selected as the final candidates. Alongside Woodburn Fire Station 2, these two fire stations complete the candidate site choices. </p> <br>
 
 <table class="table table-bordered table-hover table-condensed"> <caption> Table 7. Population Demand per Fire Station </caption> 
 <thead><tr><th title="Field #1">Address</th>
@@ -871,14 +871,14 @@
 
 <h3> The Top Five Candidate Fire Stations </h3> <br>
 
-<p> With the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 10 below shows how each of the new candidate stations augment the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, so it is difficult to tell which one is best from visual analysis alone. Areal proportion analysis is needed to construct a table of population values to compare the response quality for each map in Figure 10. </p> <br>
+<p> WWith the candidate fire stations selected, a service area analysis can be conducted for each station. Figure 10 below illustrates how each of the new candidate stations augments the fire response time, as well as Warren County's population density. Each candidate station covers a densely populated area, making it difficult to determine which one is best based on visual analysis alone. An areal proportion analysis is needed to construct a table of population values for comparing the response quality for each map in Figure 10. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/LoAuPiu.jpeg" alt="Fire Service Response Times for each Candidate Station" style="width:100%;max-width:625px">
 <figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
-<p> The population covered for each map in Figure 10 is presented in Table 8 below. The candidate fire stations are ranked based on which station serves as the best improvement to the current fire response under eight minutes. Each of the candidate stations provides a solid boost to the current fire performance, but Alvaton Fire Station 1 takes first place. Alvaton represents a densely populated area that does not currently have good fire service, particularly since it is further from Bowling Green than the other candidate sites. An improved fire station in Alvaton would bring the highest number of people into good coverage. </p> <br>
+<p> The population covered for each map in Figure 10 is presented in Table 8 below. The candidate fire stations are ranked based on which station serves as the best improvement to the current fire response under eight minutes. Each of the candidate stations provides a solid boost to the current fire performance, but Alvaton Fire Station 1 is ranked in first place. Alvaton represents a densely populated area that does not currently receive good fire service, particularly since it is located further from Bowling Green than the other candidate sites. An improved fire station in Alvaton would bring the highest number of people into good coverage. </p> <br>
 
 <table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
 <thead>
@@ -986,7 +986,7 @@
 </tbody>
 </table> <br>
 
-<p> To have a better look at the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and placed below (Figure 11). The differences are striking, as the entire Alvaton area now has good fire service. Unlike the other candidate stations, it is just barely connected to Bowling Green's current fire service via Highway 231.  </p> <br>
+<p> To provide a clearer view of the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and presented below (Figure 11). The differences are striking, as the entire Alvaton area is now shown to have good fire service. Unlike the other candidate stations, it is only minimally connected to Bowling Green's current fire service via Highway 231.  </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/z9eSK3q.jpeg" alt="Alvaton Fire Station 1 Improvement Response Service" style="width:100%;max-width:625px">
@@ -995,11 +995,11 @@
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p>  The project is now concluded having selected an optimal site for a fire station improvement. It is important to note that the results of this study were parameter sensitive. If "good" fire service were considered ten minutes instead of eight, then a different candidate fire station may have been ideal. Additionally, limiting whether a fire station could be improved or expanding the number of fire stations for improvement would also create different results.   </p> <br>
+<p>  The project is now concluded, having selected an optimal site for a fire station improvement. It is important to note that the results of this study were sensitive to parameters. If "good" fire service were considered to be ten minutes instead of eight, a different candidate fire station may have been deemed ideal. Additionally, limitations on whether a fire station could be improved or expansions in the number of fire stations for improvement would also yield different results.  </p> <br>
 
-<p> The original idea for this project stemmed from an urban GIS applications course from my time at Western Kentucky University. It was simpler, as it did not involve using soft constraints or opportunities (i.e. weighing spatial layers numerically) or location-allocation analysis to potentially improve a fire station. It also involved fewer types of spatial data to find a suitable site. At some point, I may redo this project with further advanced geospatial techniques and more detailed datasets.  </p>
+<p> The original idea for this project stemmed from an urban GIS applications course taken at Western Kentucky University. The project was simpler, as it did not involve the use of soft constraints or opportunities (i.e., weighing spatial layers numerically) or location-allocation analysis to potentially improve a fire station. Fewer types of spatial data were involved in finding a suitable site. At some point, this project may be redone using more advanced geospatial techniques and more detailed datasets.  </p> <br>
 
-<p> In the future, I may add further mapping enhancements to this project. </p> <br>
+
 
 <h3> List of Figures and Tables </h3> <br>
 <p> Figure 1. A Visualization of the Spatial Data used in the Site Selection Process  </p>
