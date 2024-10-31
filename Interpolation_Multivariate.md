@@ -614,6 +614,27 @@ Rather than being a random uniform distribution of points, this means that objec
 
 
 <h3> List of Figures and Tables </h3> <br>
+<p> Figure 1. </p>
+<p> Figure 2. </p>
+<p> Figure 3. </p>
+<p> Figure 4. </p>
+<p> Figure 5. </p>
+<p> Figure 6. </p>
+<p> Figure 7. </p>
+<p> Figure 8. </p>
+<p> Figure 9. </p>
+<p> Figure 10. </p>
+<p> Figure 11. </p>
+<p> Figure 12. </p>
+<p> Figure 13. </p>
+<p> Figure 14. </p>
+<p> Figure 15. </p>
+<p> Figure 16. </p>
+<p> Figure 17. </p>
+<p> Figure 18. </p>
+<p> Figure 19. </p>
+<p> Figure 20. </p>
+<p> Figure 21. </p>
 
 <h3> References </h3> <br>
 <p> https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
