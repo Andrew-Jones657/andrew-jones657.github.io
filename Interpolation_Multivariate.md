@@ -635,7 +635,12 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Figure 19. </p>
 <p> Figure 20. </p>
 <p> Figure 21. </p>
-
+<p> Table 1. </p>
+<p> Table 2. </p>
+<p> Table 3. </p>
+<p> Table 4. </p>
+<p> Table 5. </p>
+<p> Table 6. </p>
 <h3> References </h3> <br>
 <p> https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
 <p>  </p>
