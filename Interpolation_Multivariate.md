@@ -578,7 +578,7 @@ Rather than being a random uniform distribution of points, this means that objec
 <figcaption> Figure 19. Cluster Variance Plot   </figcaption>
 </figure> <br>
 
-
+<p> In comparison to the time series plot for agglomerative clustering (Figure 12), the k-means clustering plot (Figure 20) reveals two nearly mirrored trends. The first cluster represents severe drought anomalies, while the second captures less severe anomalies. Unlike the plot in Figure 12, none of the clusters intersect here, indicating two distinct trends. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
@@ -586,14 +586,15 @@ Rather than being a random uniform distribution of points, this means that objec
 </figure> <br>
 
 
-<p> (Time series plot discussion) </p> <br>
+<p> Figure 21 displays the k-means cluster map using two clusters. By simplifying to two clusters, the map shows red diamonds representing the worst drought conditions and blue triangles for mild drought conditions. The most severe drought (cluster 1) is concentrated in central Kentucky, the southern Bluegrass region, and parts of eastern Kentucky. In contrast, cluster 2 indicates mild drought conditions in western Kentucky, northern Kentucky, and some areas of eastern Kentucky. </p> <br>
+
+<p> A notable shift from the agglomerative clustering map (Figure 13) is observed near the weather stations in Perry and Knox counties. These stations are the only ones to transition from cluster 2 (severe drought) in Figure 13 to cluster 2 (mild drought) in Figure 21. This shift aligns with the edge cases identified in Figure 19. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
 <figcaption> Figure 21. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> (Discuss map) </p>
 
 
 <h3> Links to R graphs </h3> <br>
