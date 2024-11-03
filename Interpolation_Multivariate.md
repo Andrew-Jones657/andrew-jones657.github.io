@@ -601,15 +601,15 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <p> Histogram </p>
 <p> QQPlot </p>
-<p> Dendrogram </p>
-<p> Agglormerative Clustering Time Series Plot </p>
-<p> Elbow Method Plot </p>
-<p> Silhouette Method Plot </p>
-<p> Gap Statistic Method Plot </p>
-<p> Consensus Algorithm Plot </p>
-<p> Cluster Silhouette Plot </p>
-<p> Cluster Variance Plot </p>
-<p> K-means Clustering Time Series Plot </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateDendrogramPlot.R"> Dendrogram </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateAggTimeSeries.R"> Agglormerative Clustering Time Series Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateElbowPlot.R"> Elbow Method Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateSilhouettePlot.R"> Silhouette Method Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateGapStatisticPlot.R"> Gap Statistic Method Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateConsensusAlgorithm.R"> Consensus Algorithm Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateSilhouetteWidthPlot.R"> Cluster Silhouette Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateClusterPlotPCA.R"> Cluster Variance Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateKmeansTimeSeries.R"> K-means Clustering Time Series Plot </a> </p>
 <p>  </p>
 
 
