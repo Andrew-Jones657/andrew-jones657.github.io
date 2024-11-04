@@ -165,6 +165,9 @@
 <p> To create a kriging data model, preliminary exploratory data analysis is necessary. This includes generating a histogram and descriptive statistics for the June 1999 values. </p> <br>
 
 <h3> Exploratory Data Analysis </h3> <br>
+
+<p> Looking at a histogram of the data, the values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5. Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in Figure 4, where the right tail of the distribution is longer than the left tail. </p>
+
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ACNMao3.jpeg" alt="Histogram" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Histogram of Cumulative Drought Anomalies from July 1998 to June 1999  </figcaption>
@@ -227,7 +230,7 @@
 </tbody>    
 </table> <br>
 
-<p> Kriging produces the best results when data fits the normal distribution. To analyze the drought anomaly data for June of 1999, a normal QQplot was created (Figure 4). </p>
+<p> Kriging produces the best results when data fits the normal distribution. To analyze the drought anomaly data for June of 1999, a normal QQplot was created (Figure 4). Similarly, the QQplot in Figure 4 shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a subject such as critical resource mining, then more measures would have to be taken to ensure the analysis is accurate. </p> <br>
 
 <h3> Exploratory Data Analysis </h3> <br>
 <figure>
@@ -236,7 +239,7 @@
 </figure> <br>
 
 
-<p> The field values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5.  Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in the histogram in Figure 4, where the right tail of the distribution is longer than the left tail. Similarly, the QQplot in Figure 5 shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a subject such as critical resource mining, then more measures would have to be taken to ensure the analysis is accurate. </p> <br>
+<p> There certainly appears to be a second order trend in this data. The trend analysis in Figure 4 shows an upwards projecting U-shaped curve, indicating that drought values in central Kentucky are close to the mean while drought values in western and eastern Kentucky are far from the mean. Fortunately, this trend curve is rather broad, and will not affect the kriging interpolation too much. </p>
 
 
 <figure>
@@ -244,14 +247,14 @@
 <figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
-
+<p> Similarly, the semivariogram in Figure 5 shows distant values on the right side of the figure, which denotes high and low values being diffused from the mean (or in other words, high and low values are autocorrelated with one another).   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
 <figcaption> Figure 6. Semivariogram of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
-<p> There certainly appears to be a second order trend in this data. The trend analysis in Figure 4 shows an upwards projecting U-shaped curve, indicating that drought values in central Kentucky are close to the mean while drought values in western and eastern Kentucky are far from the mean. Fortunately, this trend curve is rather broad, and will not affect the kriging interpolation too much. Similarly, the semivariogram in Figure 5 shows distant values on the right side of the figure, which denotes high and low values being diffused from the mean (or in other words, high and low values are autocorrelated with one another).   </p> <br>
+
 
 <h3> Ordinary Kriging </h3> <br>
 
