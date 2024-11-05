@@ -162,11 +162,11 @@
 
 <p> Several limitations of the IDW model must be considered. Major limitations include the average effect and the bull’s eye effect. If some values used for interpolation fall outside the threshold distance from any samples, they will not produce a valid surface, making it difficult to accurately interpolate around outliers and edge values. Additionally, if too few points are selected, proper continuity may not be achieved. In IDW, each point carries the same weight, which can skew results when particularly high or low values are present, leading to the "bull's eye" effect—where distant points create distance decay circles that fail to accurately represent the area being studied. Furthermore, the range of interpolated values cannot exceed the number of observed values. To mitigate edge effects, it is crucial to have values positioned along the edges of the study area, although this is challenging in practice. </p> <br>
 
-<p> Before creating a kriging interpolation model, exploratory data analysis is necessary. This includes a number of statistical measures, such as histograms, descriptive statistics, QQplots, semivariograms, and trend analyses for the June 1999 values. </p> <br>
+<p> Before creating a kriging interpolation model, exploratory data analysis is necessary. This includes a number of statistical measures, such as histograms, descriptive statistics, QQplots, semivariograms, and trend analyses for the June 1999 values.  </p> <br>
 
 <h3> Exploratory Data Analysis </h3> <br>
 
-<p> To observe the distribution of drought deficiencies by June 1999, a histogram can be created to model the Looking at a histogram of the data, the values for June of 1999 are fairly normal, though there is a positive skew to the values of roughly 0.5 (Table 1). Unfortunately, since drought values include negative values to indicate a lack of rainfall, it is impossible to apply a log, arcsin, or box transformation to reduce skewness and kurtosis. This can be observed in Figure 4, where the right tail of the distribution is longer than the left tail. </p> <br>
+<p> To analyze the distribution of drought deficiencies as of June 1999, a histogram was created to visualize the data (Figure 3). Additionally, descriptive statistics are presented in Table 1. The histogram indicates that the data for June 1999 follows a fairly normal distribution, albeit with a slight positive skew of approximately 0.5 (Table 1). The kurtosis value is relatively high at 3.84, suggesting that many observations are clustered around the mean. However, since drought values can be negative to represent a lack of rainfall, applying transformations such as logarithmic, arcsine, or Box-Cox is not feasible for reducing skewness and kurtosis. This asymmetry is evident in Figure 3, where the right tail of the distribution is longer than the left tail. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ACNMao3.jpeg" alt="Histogram" style="width:100%;max-width:625px">
@@ -230,7 +230,7 @@
 </tbody>    
 </table> <br>
 
-<p> Kriging produces the best results when data fits the normal distribution. To analyze the drought anomaly data for June of 1999, a normal QQplot was created (Figure 4). Similarly, the QQplot in Figure 4 shows some curving past the mean on the right-hand side, denoting a degree of skewness. Considering the context of this study, however, these June 1999 drought anomaly values should be compatible with ordinary kriging interpolation methods. For consideration, if these skewness and kurtosis values existed on a dataset for a subject such as critical resource mining, then more measures would have to be taken to ensure the analysis is accurate. </p> <br>
+<p> Kriging yields optimal results when the data adheres to a normal distribution. To evaluate the drought anomaly data for June 1999, a normal QQ plot was generated (Figure 4). This QQ plot reveals a noticeable curvature on the right side, indicating some degree of skewness. However, given the context of this study, the June 1999 drought anomaly values are expected to be compatible with ordinary kriging interpolation methods. In contrast, if these skewness and kurtosis values were present in a dataset related to critical resource mining, additional measures would be necessary to ensure the accuracy of the analysis. </p> <br>
 
 
 <figure>
@@ -239,7 +239,7 @@
 </figure> <br>
 
 
-<p> There certainly appears to be a second order trend in this data. The trend analysis in Figure 4 shows an upwards projecting U-shaped curve, indicating that drought values in central Kentucky are close to the mean while drought values in western and eastern Kentucky are far from the mean. Fortunately, this trend curve is rather broad, and will not affect the kriging interpolation too much. </p>
+<p> Next, a trend analysis graph was created to assess any directional effects in the data. The analysis indicates a second-order trend, with Figure 5 illustrating an upward, U-shaped curve. This pattern suggests that drought values in central Kentucky are near the mean, while those in western and eastern Kentucky deviate significantly from it. Fortunately, the broad nature of this trend curve is unlikely to significantly impact the kriging interpolation. </p> <br>
 
 
 <figure>
@@ -247,7 +247,7 @@
 <figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
-<p> Similarly, the semivariogram in Figure 5 shows distant values on the right side of the figure, which denotes high and low values being diffused from the mean (or in other words, high and low values are autocorrelated with one another).   </p> <br>
+<p> To display the spatial autocorrelation of the recorded values at weather stations, a semivariogram was created (Figure 6). Similarly, the semivariogram in Figure 5 illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -261,6 +261,7 @@
 <p> Ordinary kriging is a stochastic method used for spatial interpolation and modeling. Compared to the deterministic IDW method, kriging has a few underlieing assumptions concerning the data. </p> <br>
     <ol>
     <li> The interpolation surface has a constant mean, with no underlieing trend. </li>
+    <li> The data arise from a stochstic stationary process. </li>
     <li> The variation of the surface is the same in each direction (also known as isotropic).  </li>
     <li> The semivariogram consists of a basic mathematical model with some clearly defined user parameters. </li>
     <li> The same variograms is applied over the entire study area. </li>
