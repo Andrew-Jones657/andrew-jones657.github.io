@@ -385,7 +385,6 @@
 </figure> <br>
 
 
-
 <p> By using kriging interpolation, a good model depicted where drought was most severe in Kentucky by June 1999. However, that was one month out of 36 different months in the dataset. It would be inefficient to attempt to create a stable kriging interpolation model for each month in this time period. Instead, it would prove valuable to incorporate multivariate statistical measures to observe similarities and differences across the entire dataset.   </p>
 
 <h1 style="text-align:center;"> Multivariate Methods: Observing Trends in the Entire Dataset </h1> <br>
@@ -413,7 +412,7 @@
 
 <p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering. </em> </p> <br>
 
-<p> Agglomerative clustering has the advantage of displaying data in a dendrogram, which is a diagram that shows the hierarchical relationship between objects. This method is visually easy to follow, as clear break points show how the data can be categorized in different numbers of clusters. Since this is a visual depiction of clustering, however, a large number of data values can render it inconvenient to use. Similarly, the order of the data is important </p> <br>
+<p> Agglomerative clustering has the advantage of displaying data in a dendrogram, which is a diagram that shows the hierarchical relationship between objects. This method is visually easy to follow, as clear break points show how the data can be categorized in different numbers of clusters. Since this is a visual depiction of clustering, however, a large number of data values can render it inconvenient to use. (Order of data?) </p> <br>
 
 <h3> Agglomerative Clustering </h3> <br>
 
@@ -470,9 +469,9 @@
 </figure> <br>
 
 
-<h3> K-Means </h3> <br>
+<h3> K-Means Clustering </h3> <br>
 
-<p> (Talk about K-Means some) </p> <br>
+<p> Another approach to multivariate clustering is k-means clustering. Under k-means, <em> n </em> observations are sorted into <em> k </em> clusters in which each observation belongs to the cluster with the nearest mean, splitting the clusters into voronoi cells. K-means minimizes within-cluster variances, but not regular Euclidean distances (expand). K-means is an efficient method in terms of computation power. Additionally, it works better on larger datasets than agglormerative clustering, and it is less sensitive to outliers. However, it can be difficult to choose an appropriate <em> k </em> value (cont...)      </p> <br>
 
 
 <table class="tablecenter"> <caption> Table 5. Between Sum of Squares over Total Sum of Squares Partition Formula Table </caption> 
