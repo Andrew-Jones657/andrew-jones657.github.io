@@ -180,7 +180,7 @@ For this particular tutorial, <a href="https://raw.githubusercontent.com/Andrew-
 <figcaption> Figure 2. The Basic CSS Design for Leaflet </figcaption>
 </figure> <br>
 
-
+<p> (I am revising here!) </p>
 
 <p> The code below creates a basic Leaflet web map of the 50 US States and the District of Columbia. The first line creates the map and map object that can later be used with other codes -- the setView command is appended to the map creation to hover the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet -- in this case it is OpenStreetMaps. This layer serves as a backdrop and point of reference for the other layer that we will input. In this case, that other layer is a geojson file of the 50 US States and Washington D.C.. If this layer had been hosted on a web server, then we could simply load the script into Leaflet. Since we are loading it from a GitHub repository, however, we have to use an additional extension to easily extract the geojson from a url. This is where the Leaflet Ajax extension comes in -- it simplifies the process of having to come up with another script. The direct url to the geojson is stored in a variable, and then a specific Leaflet Ajax command instantiates it into the map. </p> <br>
 
@@ -203,7 +203,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
-<p> To see how the html, css, and javascript work individually, CodePen can be used to display the work-in-progress map (Figure ?). On the left side, look through each of the different languages that form the basic map. On the right side, notice that the map has successfully rendered. Two more instances of CodePen will be used to display progress as the web map is developed.  </p> <br>
+<p> To see how the html, css, and javascript work individually, CodePen can be used to display the work-in-progress map (Figure 4). On the left side, look through each of the different languages that form the basic map. On the right side, notice that the map has successfully rendered. Two more instances of CodePen will be used to display progress as the web map is developed.  </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxoOGvX" data-pen-title="Leaflet Tutorial 1" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/xxoOGvX">
