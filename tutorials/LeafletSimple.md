@@ -340,15 +340,15 @@ function style(feature) {
 	</code></pre></div></div> 
  	<figcaption> Figure 11. Creating a Control Structure for the Title and Popups </figcaption> <br>
 
-<p> Next, some highlight features can be written. This will consist of three different functions involving a user's mouse click or touch on a smart device -- the "e" input variable represents the input mouse action. The last function should be familiar, as it is the "onEachFeature" function.  </p> <br>
+<p> Next, some highlight features can be written. These will consist of three different functions that involve a user's mouse click or touch on a smart device, with the "e" input variable representing the mouse action. The last function should be familiar, as it is the "onEachFeature" function.  </p> <br>
 
-<p> The first function, "highlightFeature(e)", is used to highlight whichever state the user is hovering over. First, the current position of the mouse or touch is stored as a "layer". Then, that "layer" is given stylized options similar to a renderer. The "layer.bringToFront();" function ensures that it will not appear behind the current geojson layer. Last, the underlieing information from the geojson layer is used to update the title and pop up dynamic html. </p> <br>
+<p> The first function, "highlightFeature(e)", is used to highlight the state that is being hovered over by the user. First, the current position of the mouse or touch is stored as a "layer". Then, stylized options, similar to those of a renderer, are applied to that "layer". The "layer.bringToFront();" function ensures that the layer does not appear behind the current geojson layer. Finally, the underlying information from the geojson layer is used to update the title and pop-up dynamic HTML. </p> <br>
 
-<p> The second function, "resethighlight(e)", disables the highlight on the current state when the user hovers onto another state. This one is fairly straightforward: the geojson layer is appended with a "resetStyle(e.target)" function, and then the title and popup dynamic html is updated with the "update()" function.  </p> <br>
+<p> The second function, "resetHighlight(e)", disables the highlight on the current state when the user hovers over another state. This function is fairly straightforward: the geojson layer is appended with the "resetStyle(e.target)" function, and the title and pop-up dynamic HTML are updated using the "update()" function. </p> <br>
 
-<p> The third function, "zoomToFeature(e)", zooms onto a state when it is clicked by the user. This one is also straightforward, as it uses a Leaflet map command to fit the web map to the boundary -- the user's mouse click and the "getBounds()" built in function are input parameters.  </p> <br>
+<p> The third function, "zoomToFeature(e)", is used to zoom into a state when it is clicked by the user. This function is also straightforward, as a Leaflet map command is used to fit the web map to the boundary. The user's mouse click and the built-in "getBounds()" function serve as input parameters. </p> <br>
 
-<p> The final function should look familiar, as it invokes the "onEachFeature" function. The previous "onEachFeature" function can be deleted and replaced with this one.  </p> <br>
+<p> The final function should be familiar, as it invokes the "onEachFeature" function. The previous "onEachFeature" function can be deleted and replaced with this one. </p> <br>
  
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -391,9 +391,9 @@ function style(feature) {
 </code></pre></div></div> 
 <figcaption> Figure 12. Configuring the Mouse Hover Popups  </figcaption> <br>
 
-<p> Next, a legend can be created and added to the map. Like the title and pop ups, this will be done with a control structure.  </p> <br>
+<p> Next, a legend can be created and added to the map. As with the title and pop-ups, this will be done using a control structure. </p> <br>
 
-<p> Like, the title and pop up dynamic html, some css will be needed here. </p> <br>
+<p> Similarly to the title and pop-up dynamic HTML, some CSS will be needed to style the legend and ensure that it is properly positioned and formatted on the map. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	
@@ -404,9 +404,11 @@ function style(feature) {
 </code></pre></div></div> 
 <figcaption> Figure 13. CSS for the Legend Element </figcaption> <br>
 
-<p> This next portion is a little more difficult. To setup the elements in the legend, another control structure needs to be created. Again, a legend function can be described via the DOM Util method, however, some consideration needs to take place as to how this will work. To start, the break values from legends can be assigned to a list variable called "grades". Next, a title for the legend can be created using the "push" command, though for this to work, an empty list called "labels" will take the "push" command as an input.   </p> <br>
+<p> This next portion is a little more difficult. To set up the elements in the legend, another control structure needs to be created. Again, a legend function can be described via the DOM Util method; however, some consideration must be given to how this will work. To start, the break values for the legend are assigned to a list variable called "grades." Next, a title for the legend is created using the "push" command. For this to work, an empty list called "labels" is used to receive the "push" command as input.  </p> <br>
 
-<p> Creating the legend values takes some more work, however. Since the data is represented in intervals, it would be ideal for the user to see the bottom and top breaks for each interval. A method needs to be devised that allows these lower and upper breaks to appear on the legend: this will be accomplished by creating a "from" and "to" variable. With these variables declared, a for loop can be created to join each data interval together. Using the length of the grades list, or seven units, each lower and upper break are iterated through to create a legend. Then, these breaks are pushed as labels to the dynamic html, with some descriptive div elements describing how the message should appear. To tie this dynamic html into the control structure, the "div.innerHTML" is joined using the "labels.join('<br>') parameter. Finally, the div element is returned the global level.  </p> <br>
+<p> Creating the legend values requires additional work. Since the data is represented in intervals, it would be ideal for the user to see both the lower and upper breaks for each interval. A method must be devised to allow these lower and upper breaks to appear on the legend. This is accomplished by creating "from" and "to" variables. Once these variables are declared, a "for" loop is created to iterate through each data interval. The length of the "grades" list, or seven units, is used to iterate through each lower and upper break, forming the intervals that will be displayed on the legend. </p> <br>
+
+<p> These breaks are then pushed as labels to the dynamic HTML, with descriptive div elements used to format how the message should appear. To tie the dynamic HTML into the control structure, the "div.innerHTML" is updated by joining the "labels" array using the "labels.join('<br>')" parameter. Finally, the div element is returned at the global level. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -441,9 +443,9 @@ function style(feature) {
 </code></pre></div></div> 
 <figcaption> Figure 14. Creating a Control Structure for the Legend </figcaption> <br>
 
-<p> Another useful feature is a link to the web map's ACS dataset. This can be created using the same DOM Util method as the other elements.  </p> <br>
+<p> Another useful feature is a link to the web map's ACS dataset. This can be created using the same DOM Util method as the other elements. </p> <br>
 
-<p> Like the other dynamic html elements, some css is needed to describe it. This is basically the same as the title and popup css. </p> <br>
+<p> As with the other dynamic HTML elements, some CSS will be needed to style the link. This CSS is essentially the same as the styling used for the title and pop-up elements, ensuring consistency across all dynamic features on the map. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -454,7 +456,7 @@ function style(feature) {
  </code></pre></div></div> 
  <figcaption> Figure 15. CSS for the Data Source Element </figcaption> <br>
 
- <p> This next portion should look familiar to the last one. Another data control structure is used, this time on the bottom left part of the screen. Since the legend breaks are not a concern on this one, the code is quite simple in comparison. An empty list "dSource" is created and then the text is inserted into using "dSource.push". In here, the "Data Source" caption and the link from the ACS dataset is placed. Then, it is once again joined with innerHTML, returned to the global settings, and added to the map.   </p> <br>
+ <p> This next portion should look familiar to the previous one. Another data control structure is used, this time positioned in the bottom-left part of the screen. Since the legend breaks are not a concern here, the code is much simpler in comparison. An empty list, "dSource", is created, and then the text is inserted using "dSource.push()". In this list, the "Data Source" caption and the link to the ACS dataset are placed. Afterward, the list is joined with "innerHTML", returned to the global scope, and added to the map.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	
@@ -482,14 +484,14 @@ function style(feature) {
 </code></pre></div></div> 
  <figcaption> Figure 16. Creating a Control Structure for the Data Source Element  </figcaption> <br>
 
-<p> Finally, a fullscreen option can be added to the web map. Normally, this would be a complex procedure, as writing a new script would constitute creatong another tutorial. Thankfully, there is a downloadable extension on GitHub by user Brunob that efficiently provides this functionality. Like the Leaflet tags, the fullscreen extension has some html tags that need to be loaded.  </p> <br>
+<p> Finally, a fullscreen option can be added to the web map. Normally, this would be a complex procedure, as writing a new fullscreen script would warrant its own tutorial. Fortunately, a downloadable extension by GitHub user Brunob provides this functionality efficiently. Similar to the Leaflet tags, the fullscreen extension requires some HTML tags to be loaded. </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/5D4P4ZO.jpeg" alt="Leaflet HTML Final" style="width:100%;max-width:625px">
 <figcaption> Figure 17. The Final Leaflet HTML Tags </figcaption>
 </figure> <br>
 
-<p> The implementation of the control structure for the fullscreen option is fairly simple. Creating the control structure and adding it to the map should be familiar by now. The two new parts involve console log parameters. These invoke the "window.console" and "window.console.log". For users, this will appear as a text bubble when fullscreen mode is enabled. The "window.console" is invoked using conditional logic so that the "window.console.log" message can be written. </p> <br>
+<p> The implementation of the control structure for the fullscreen option is relatively simple. Creating the control structure and adding it to the map should be familiar by now. The two new components involve console log parameters, which are used to trigger the "window.console" and "window.console.log" methods. These parameters will cause a text message to appear when fullscreen mode is enabled. The "window.console" is invoked using conditional logic, allowing the "window.console.log" message to be written to the console. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
@@ -513,7 +515,7 @@ function style(feature) {
 
 <h3> The Final Product </h3> <br>
 
-<p> Having prepared the last few adjustments, the final product can be posted on codepen and embedded into the website itself. </p> <br>
+<p> Having completed the final adjustments, the product can now be posted on CodePen. </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjQKLqe" data-pen-title="Leaflet Final" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/JjQKLqe">
@@ -523,7 +525,7 @@ function style(feature) {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
 <figcaption> Figure 19. The Final Leaflet Web Map </figcaption> <br>
 
-<p> Do note that there is a known issue with embedding leaflet maps on GitHub Webpages. It is possible that the edges of the tile layers will have thick white borders and that the geojson layer will not line up with the reference points on the tile layer. </p> <br>
+<p> It should be noted that there is a known issue with embedding Leaflet maps on GitHub Pages. It is possible that the edges of the tile layers may display thick white borders, and the GeoJSON layer may not align properly with the reference points on the tile layer (Figure 20). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/3XZuK1d.jpeg" alt="Leaflet Issue" style="width:100%;max-width:625px">
@@ -531,10 +533,7 @@ function style(feature) {
 </figure> <br>
 
 
-	
 <p> It may be possible to correct this with <a href="https://github.com/Leaflet/Leaflet.TileLayer.NoGap"> this script</a> from Ivan Sanchez.  </p> <br>
-
-
 
 
 
