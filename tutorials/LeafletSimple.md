@@ -166,23 +166,22 @@ For this particular tutorial, <a href="https://raw.githubusercontent.com/Andrew-
 
 <p> For web maps, most of the customization work is done using JavaScript. JavaScript, along with HTML and CSS, are core languages of the web and are used in the vast majority of websites worldwide. Each of these languages can be considered front-end languages, responsible for creating the visual elements with which the user interacts. To minimize errors, it is typically best for a simple web map to be started, with features added one by one. If an error does occur, the cause is not always immediately clear, so adding small pieces of code gradually makes troubleshooting more straightforward.</p> <br>
 
-<p> To start, these tags must be placed in the <head> element of the HTML in order for Leaflet and AJAX to be called. </p>
+<p> To start, these tags must be placed in the "head" element of the HTML in order for Leaflet and AJAX to be called. </p>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/AyzdnAZ.jpeg" alt="Leaflet Tags" style="width:100%;max-width:625px">
 <figcaption> Figure 1. The HTML Tags to Call Leaflet </figcaption>
 </figure> <br>
 
-<p> Additionally, some CSS should be created to add design and size to the web map. This CSS must be placed inside the <head> element, before the <script> tags shown in Figure 1 above. </p>
+<p> Additionally, some CSS should be created to add design and size to the web map. This CSS must be placed inside the "head" element, before the "script" tags shown in Figure 1 above. 
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/VXnjkpJ.jpeg" alt="Leaflet CSS" style="width:100%;max-width:625px">
 <figcaption> Figure 2. The Basic CSS Design for Leaflet </figcaption>
 </figure> <br>
 
-<p> (I am revising here!) </p>
 
-<p> The code below creates a basic Leaflet web map of the 50 US States and the District of Columbia. The first line creates the map and map object that can later be used with other codes -- the setView command is appended to the map creation to hover the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet -- in this case it is OpenStreetMaps. This layer serves as a backdrop and point of reference for the other layer that we will input. In this case, that other layer is a geojson file of the 50 US States and Washington D.C.. If this layer had been hosted on a web server, then we could simply load the script into Leaflet. Since we are loading it from a GitHub repository, however, we have to use an additional extension to easily extract the geojson from a url. This is where the Leaflet Ajax extension comes in -- it simplifies the process of having to come up with another script. The direct url to the geojson is stored in a variable, and then a specific Leaflet Ajax command instantiates it into the map. </p> <br>
+<p> The code below is used to create a basic Leaflet web map of the 50 US States and the District of Columbia. The map and map object are created by the first line, which can later be used with other codes. The setView command is appended to the map creation to position the map over the 50 contiguous states. Next, a tile layer is loaded into Leaflet, with OpenStreetMaps being used in this case. This layer is employed as a backdrop and point of reference for the other layer that will be input. In this instance, the other layer is a geojson file of the 50 US States and Washington D.C. If this layer had been hosted on a web server, the script could have been simply loaded into Leaflet. However, since it is being loaded from a GitHub repository, an additional extension is required to easily extract the geojson from a URL. The Leaflet Ajax extension is used for this purpose, simplifying the process of creating another script. The direct URL to the geojson is stored in a variable, and then it is instantiated into the map using a specific Leaflet Ajax command. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 // Create a map object and set the view (latitude-longitude) and zoom level
@@ -203,7 +202,7 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 
 <h3> The Basic Web Map on Codepen </h3> <br>
 
-<p> To see how the html, css, and javascript work individually, CodePen can be used to display the work-in-progress map (Figure 4). On the left side, look through each of the different languages that form the basic map. On the right side, notice that the map has successfully rendered. Two more instances of CodePen will be used to display progress as the web map is developed.  </p> <br>
+<p> To see how the HTML, CSS, and JavaScript work individually, CodePen can be used to display the work-in-progress map (Figure 4). On the left side, the different languages that form the basic map can be viewed. On the right side, it can be observed that the map has been successfully rendered. Two additional instances of CodePen will be used to display progress as the web map is developed.  </p> <br>
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxoOGvX" data-pen-title="Leaflet Tutorial 1" data-user="aj65714" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/aj65714/pen/xxoOGvX">
@@ -213,24 +212,24 @@ const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl).addTo(map);
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
 <figcaption> Figure 4. The Basic Leaflet Web Map on CodePen </figcaption> <br>
 
-<p> Looking at how the entire script is written in one file, Figure ? below depicts how the entire script works together. Usually, to keep things organized, the javascript portion is loaded in as a separate file. Right-click on this web page and select "View Page Source" on the dropdown menu. This will open the html, css, and javascript for the webpage. Then, scroll down to Line ??? -- this is the final Leaflet web map loaded in from a different folder on GitHub. </p> <br>
+<p> Looking at how the entire script is written in one file, Figure 5 below depicts how the entire script works together. Typically, to maintain organization, the JavaScript portion is loaded as a separate file. To view the script, right-click on the web page and select "View Page Source" from the dropdown menu. This will open the HTML, CSS, and JavaScript for the webpage. </p> <br>
 
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XaJTK4I.jpeg" alt="Leaflet Step 1 " style="width:100%;max-width:625px">
-<figcaption> Figure 5. A Snapshot look at the Entire Code for the Basic Leaflet Web Map </figcaption>
+<figcaption> Figure 5. A Snapshot Look at the Entire Code for the Basic Leaflet Web Map </figcaption>
 </figure> <br>
 
 
 <h3> Editing the Web Map to Display Information about the Geojson Layer </h3> <br>
 
-<p> The basic Leaflet instance has successfully started and the geojson layer appears to work. This map is not particularly useful yet, as it does not visualize data or convey any information about educational attainment rates to the viewer. </p> <br>
+<p> The basic Leaflet instance has been successfully initialized, and the geojson layer appears to be functioning. However, the map is not particularly useful yet, as it does not visualize any data or convey information about educational attainment rates to the viewer.</p> <br>
 
-<p> Some enhancements will be needed to make this web map more useful. Since educational attainment rates are percentages, a choropleth map would work well here. Additionally, pop up text bubbles can be created that show the percentage of adults over 25 with a Bachelor's degree or higher in each state. </p> <br>
+<p> Enhancements will be needed to make the web map more informative. Since educational attainment rates are percentages, a choropleth map would be an effective way to display this data. Additionally, pop-up text bubbles can be created to show the percentage of adults over 25 with a Bachelor's degree or higher in each state. </p> <br>
 
-<p> Two functions can be used to add color to the map's educational attainment data. Both are set to "return" their outputs to the global level -- otherwise, their values could not be used later on in other functions. The first, "function getColor(d)", is a straightforward means of assigning data intervals a shade of purple -- higher values are shaded in darker purple. In this case, the values were pulled off a quantile classification of the same data in ArcGIS Pro and rounded. The "d" input variable is simply a placeholder for a set of values, and the "?" symbol is shorthand for an if-else statement (e.g. if the value of d is greater than 21 the '#9e9ac8' hexcode is used). The final hexcode constitutes all other values. To create the hex values for the purple color ramp, <a href="https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7">Colorbrewer</a> was used. </p> <br>
-	
-<p> The second function serves as a general renderer that uses the first to fill the color. It also inputs the education attainment data into the "getColor" function and replaces the "d" input variable. </p> <br>
+<p> Two functions are used to add color to the map’s educational attainment data. Both functions are set to "return" their outputs to the global scope; otherwise, their values could not be accessed later in other functions. The first function, getColor(d), is a simple method for assigning shades of purple to different data intervals — higher values are shaded in darker purple. In this case, the values were extracted from a quantile classification of the same data in ArcGIS Pro and rounded. The d input variable serves as a placeholder for a set of values, and the "?" symbol is shorthand for an if-else statement (e.g., if the value of d is greater than 21, the hex color #9e9ac8 is used). The final hex color code is applied to all other values. To generate the hex values for the purple color ramp, <a href="https://colorbrewer2.org/#type=sequential&scheme=Purples&n=7">Colorbrewer</a> was used. </p> <br>
+
+<p> The second function acts as a general renderer that uses the "getColor" function to fill in the colors. It inputs the educational attainment data into the "getColor" function and replaces the "d" input variable accordingly. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 function getColor(d) {
@@ -255,11 +254,11 @@ function style(feature) {
           	};
 	}
 </code></pre></div></div> 
-<figcaption> Figure 6. Creating the Choropleth Map Symbology with Javascript </figcaption> <br>
+<figcaption> Figure 6. Creating the Choropleth Map Symbology with JavaScript </figcaption> <br>
 
-<p> Next, some pop up text bubbles will be created. This will allow users to see the percentage of adults over 25 holding a Bachelor's degree or higher for each state. This is done using the "onEachFeature" function, which will be added to the "L.GeoJSON.AJAX(geojsonurl).addTo(map);" line as a parameter. The "onEachFeature" function takes in the geojson layer and its fields values as inputs. The "feature.properties" are invoked using conditional logic so that the feature values in the geojson layer can be called in the popup. The "layer.bindPopup" option is used to create a popup. </p> <br>
+<p> Next, pop-up text bubbles will be created to allow users to view the percentage of adults over 25 holding a Bachelor's degree or higher in each state. This is achieved using the "onEachFeature" function, which will be added as a parameter to the "L.GeoJSON.AJAX(geojsonurl).addTo(map);" line. The "onEachFeature" function takes the geojson layer and its field values as inputs. The "feature.properties" are accessed through conditional logic, allowing the feature values in the geojson layer to be called within the popup. The "layer.bindPopup" option is used to create the pop-up itself. </p> <br>
 
-<p> The content within the popup itself consists of strings concatenated with blank spaces and the feature properties from the geojson layer. Some line breaks, denoted by '</br>' are used to separate the text. </p> <br>
+<p> The content within the pop-up consists of strings concatenated with blank spaces and the feature properties from the geojson layer. Line breaks, denoted by "</br>", are used to separate the different pieces of text within the pop-up, improving readability. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 // Create popups and bind the Name and Percent Bachelor Degree Holder fields from the geojson file to the popups
@@ -272,9 +271,10 @@ function style(feature) {
   	            }
     }
 </code></pre></div></div> 
-<figcaption> Figure 7. Creating the Basic Popups for each State with Javascript </figcaption> <br>
+<figcaption> Figure 7. Creating the Basic Popups for each State with JavaScript </figcaption> <br>
 
-<p> It is important to ensure that the "style" and "onEachFeature" functions get applied to the geojson layer. This can be added using some brackets in the L.GeoJSON.AJAX command. </p> <br>
+<p> It is important to ensure that the "style" and "onEachFeature" functions are applied to the geojson layer. This can be accomplished by including these functions as parameters within the "L.GeoJSON.AJAX" command. </p> <br>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
         // Provide the geoJSON layer 
         const geojsonLayer = new L.GeoJSON.AJAX(geojsonurl, {
@@ -292,13 +292,13 @@ function style(feature) {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
 <figcaption> Figure 9. The Work in Progress Leaflet Web Map </figcaption> <br>
 
-<p> This product is more useful than the first incarnation. The percentage of Bachelor's degree holders over 25 is now displayed as a choropleth map, and the pop ups describe the exact percentage of bacherlor's attainment in each state. There are a few more features that would bolster this product however. The web map could use a title with pop up data, legend, data source bubble, and fullscreen option.  </p> <br>
+<p> This product is now more useful than the initial version. The percentage of Bachelor's degree holders over 25 is displayed as a choropleth map, and the pop-ups provide the exact percentage of Bachelor's attainment in each state. However, there are a few more features that could further enhance the map's usability and presentation. The web map could use a title with pop-up data, legend, data attribution element, and fullscreen option.  </p> <br>
 
 <h3> Refining the Web Map for the Final Iteration </h3> <br>
 
-<p> Starting with a title, there are a few changes that can be implemented here. To start, a title would provide context to the user. Since the current pop up method is a little cumbersome (e.g. having to click every state to see data), the popups can be tied into the title by adding a mouse hover event listener. The margin of error for the educational attainment data can also be included the title. </p> <br>
+<p> Starting with a title, a few changes can be implemented here. To begin, context can be provided to the user through the addition of a title. Since the current pop-up method is somewhat cumbersome (e.g., requiring clicks on each state to see data), the pop-ups can be integrated into the title by adding a mouse hover event listener. The margin of error for the educational attainment data can also be included in the title. </p> <br>
 
-<p> First, since these are new customly defined elements, some css needs to be added in the style section. </p> <br>
+<p> First, since these are new, custom-defined elements, some CSS needs to be added to the style section. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 	// Some css for the title/pop up element we wish to create
@@ -309,11 +309,11 @@ function style(feature) {
 </code></pre></div></div> 
 <figcaption> Figure 10. Additional CSS for the Title and Hover Popup Dynamic HTML Box </figcaption>
 
-<p> Next, the title and popups can be configured. This requires defining several different functions. First, to create the box for the title and popups, a control structure must be created via "L.control();": this is a command that tells Leaflet to include a certain element such as zoom buttons, a scale bar, a layer toggle, etc. In this case, however, the control structure is a custom defined element.  </p> <br>
+<p> Next, the title and pop-ups can be configured. Several different functions need to be defined for this process. First, to create the box for the title and pop-ups, a control structure must be established using the "L.control()" command. This command instructs Leaflet to include a particular element, such as zoom buttons, a scale bar, a layer toggle, etc. In this case, however, the control structure is a custom-defined element..  </p> <br>
 
-<p> The following portion is a little more complicated. A function need to be created that will create and update a new div element on the web map. This is achieved using "L.DomUtil.create". DOM stands for Document Object Model, which functions as a universal Application Program Interface (API) for mananging dynamic html. The variable "this" is assigned a "_div" element, which is then given the update() function in the next line. Finally, it is returned so that it affects the script globally (i.e. actually updates the title/popup text element).   </p> <br>
+<p> The following portion is more complex. A function needs to be created that will generate and update a new "div" element on the web map. This is achieved using "L.DomUtil.create()". DOM (Document Object Model) serves as a universal Application Programming Interface (API) for managing dynamic HTML. The variable this is assigned a "_div" element, which is then given the "update()" function in the subsequent line. Finally, it is returned so that it affects the script globally (i.e., it actually updates the title and pop-up text element).  </p> <br>
 
-<p> Now, the popup information under the title can be populated. This is done using by adding the update option to the info variable. A function takes in the properties of the geojson layer, and its contents are described in the "contents" variable.   </p> <br>
+<p> Now, the pop-up information beneath the title can be populated. This is done by adding the "update" option to the "info" variable. A function is created that takes in the properties of the geojson layer, and its contents are defined within the "contents" variable.   </p> <br>
 
 <p> Finally, the new title and popup info are added to the map. </p> <br>
 
@@ -338,7 +338,7 @@ function style(feature) {
 	info.addTo(map);
 
 	</code></pre></div></div> 
- 	<figcaption> Figure 11. Creating a Control Structure for the Title and Popups </figcaption>
+ 	<figcaption> Figure 11. Creating a Control Structure for the Title and Popups </figcaption> <br>
 
 <p> Next, some highlight features can be written. This will consist of three different functions involving a user's mouse click or touch on a smart device -- the "e" input variable represents the input mouse action. The last function should be familiar, as it is the "onEachFeature" function.  </p> <br>
 
@@ -486,7 +486,7 @@ function style(feature) {
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/5D4P4ZO.jpeg" alt="Leaflet HTML Final" style="width:100%;max-width:625px">
-<figcaption> Figure ?. The Final Leaflet HTML Tags </figcaption>
+<figcaption> Figure 17. The Final Leaflet HTML Tags </figcaption>
 </figure> <br>
 
 <p> The implementation of the control structure for the fullscreen option is fairly simple. Creating the control structure and adding it to the map should be familiar by now. The two new parts involve console log parameters. These invoke the "window.console" and "window.console.log". For users, this will appear as a text bubble when fullscreen mode is enabled. The "window.console" is invoked using conditional logic so that the "window.console.log" message can be written. </p> <br>
@@ -508,7 +508,8 @@ function style(feature) {
 		if(window.console) window.console.log('exitFullscreen');
       });
 
-</code></pre></div></div> <br>
+</code></pre></div></div> 
+<figcaption> Figure 18. Implementing the Fullscreen Exentsion  </figcaption> <br>
 
 <h3> The Final Product </h3> <br>
 
@@ -519,14 +520,14 @@ function style(feature) {
   Leaflet Final</a> by Andrew (<a href="https://codepen.io/aj65714">@aj65714</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> <br>
-
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
+<figcaption> Figure 19. The Final Leaflet Web Map </figcaption> <br>
 
 <p> Do note that there is a known issue with embedding leaflet maps on GitHub Webpages. It is possible that the edges of the tile layers will have thick white borders and that the geojson layer will not line up with the reference points on the tile layer. </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/3XZuK1d.jpeg" alt="Leaflet Issue" style="width:100%;max-width:625px">
-<figcaption> Figure ?. The White Tile Edge Issue with Leaflet Maps on GitHub </figcaption>
+<figcaption> Figure 20. The White Tile Edge Issue with Leaflet Maps on GitHub </figcaption>
 </figure> <br>
 
 
@@ -540,7 +541,24 @@ function style(feature) {
 <h3> List of Figures and Tables </h3>
 <p> Figure 1. The HTML Tags to Call Leaflet  </p>
 <p> Figure 2. The Basic CSS Design for Leaflet  </p>
-<p> Figure 3.  </p>
+<p> Figure 3. The JavaScript for the Basic Leaflet Web Map </p>
+<p> Figure 4. The Basic Leaflet Web Map on CodePen </p>
+<p> Figure 5. A Snapshot Look at the Entire Code for the Basic Leaflet Web Map </p>
+<p> Figure 6. Creating the Choropleth Map Symbology with JavaScript </p>
+<p> Figure 7. Creating the Basic Popups for each State with JavaScript </p>
+<p> Figure 8. Applying the Style and onEachFeature Functions to the AJAX GeoJSON Load </p>
+<p> Figure 9. The Work in Progress Leaflet Web Map </p>
+<p> Figure 10. Additional CSS for the Title and Hover Popup Dynamic HTML Box  </p>
+<p> Figure 11. Creating a Control Structure for the Title and Popups </p>
+<p> Figure 12. Configuring the Mouse Hover Popups </p>
+<p> Figure 13. CSS for the Legend Element </p>
+<p> Figure 14. Creating a Control Structure for the Legend </p>
+<p> Figure 15. CSS for the Data Source Element </p>
+<p> Figure 16. Creating a Control Structure for the Data Source Element </p>
+<p> Figure 17. The Final Leaflet HTML Tags </p>
+<p> Figure 18. Implementing the Fullscreen Exentsion  </p>
+<p> Figure 19. The Final Leaflet Web Map </p>
+<p> Figure 20. The White Tile Edge Issue with Leaflet Maps on GitHub </p>
 
 <div class="wysiwyg lengthy" > <h3> References </h3> <br>
 
@@ -586,7 +604,4 @@ span.onclick = function() {
 }
 </script>
   
-</body>
 
-
-</html>
