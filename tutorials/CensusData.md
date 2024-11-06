@@ -130,9 +130,9 @@
 
   <p> GIS implementation of US Census data allows analysts to map and visualize demographic trends such as population distribution, age demographics, and socioeconomic status across different geographic areas. By integrating Census data into GIS platforms, urban planners can make informed decisions      regarding infrastructure development, resource allocation, and community outreach initiatives. This spatial data helps governments and organizations understand spatial patterns and make evidence-based policy decisions tailored to specific localities. </p> <br>
 
-  <p> In this tutorial, census files (boundaries and tables) for Boone County, Missouri will be downloaded and processed. These files will contain information about the total population as well as racial and ethnic groups at the census tract level. Both files must be processed and joined together to map demographic data.  </p> <br>
+  <p> In this tutorial, census files for Boone County, Missouri, including boundary and table data, will be downloaded and processed. These files will contain demographic information at the census tract level, such as total population and breakdowns by racial and ethnic groups. Both files will need to be processed and joined together in order to map the demographic data.  </p> <br>
 
-  <p> US Census data can best be described as hierarchical. At the lowest level, or highest geographic scale, are census blocks, which are formed by human made and natural features such as streets, roads, railroads, streams, and visible physical and cultural features. Above census blocks are block groups, tracts, counties, states, divisions, regions, and finally the entire nation. Each of these census geographies at the top of the hierarchy can be disaggregated to census blocks. Figure 1 below depicts the standard hierarchy as well as alternative offshoots.  </p> <br>
+  <p> U.S. Census data is structured hierarchically. At the smallest geographic scale are census blocks, which are defined by human-made and natural features, such as streets, roads, railroads, streams, and other visible physical and cultural landmarks. Above census blocks are block groups, census tracts, counties, states, divisions, regions, and, at the top of the hierarchy, the entire nation. Each of these higher-level geographic units can be disaggregated into smaller units, down to the census block level. The standard hierarchy, along with alternative offshoots, is depicted in Figure 1 below. </p> <br>
 
   
   <figure> 
@@ -142,49 +142,49 @@
 
   <h3> Searching for Population Tables at the Census Tract Level </h3> <br>
 
-  <p> The US Census data website can be found <a href="https://data.census.gov/">here</a>. Since this table will be implemented in GIS software, the search criteria need to be setup carefully: the US Census has many similarly named datasets. The "advanced search" option will be used to apply several filters to obtain to the specific dataset. Select “advanced search” under the main search bar to begin (Figure 2). </p>  <br>
+  <p> The U.S. Census data website can be accessed <a href="https://data.census.gov/">here</a>. Since this table will be used in GIS software, the search criteria must be set up carefully, as the U.S. Census provides many similarly named datasets. The "advanced search" option will be utilized to apply several filters in order to obtain the specific dataset required. To begin, “advanced search” should be selected under the main search bar (Figure 2). </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/BusE2V2.jpeg" alt="US Census Data" style="width:100%;max-width:625px">
   <figcaption> Figure 2. The US Census Data Website  </figcaption>
   </figure> <br>
 
-  <p> On the left side of the webpage are multiple different subjects through which the search can be refined (Figure 3). </p> <br>
+  <p> On the left side of the webpage, various subjects are listed through which the search can be refined (Figure 3). </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/mT8nRO2.jpeg" alt="US Census Advanced Search" style="width:100%;max-width:625px">
   <figcaption> Figure 3. The Advanced Search Pane on the US Census Data Website  </figcaption>
   </figure> <br>
 
-  <p> Now filters can be applied to the data. Starting with “Geographies”, click on “Census Tract”, choose “Missouri” from the popup list, then choose “Boone County”, and finally check on “All Census Tracts within Boone County, Missouri”. This limits the dataset to census tracts in Boone County, Missouri.  </p> <br>
+  <p> Filters can now be applied to the data. Starting with “Geographies,” “Census Tract” should be clicked, then “Missouri” selected from the popup list, followed by “Boone County,” and finally, “All Census Tracts within Boone County, Missouri” should be checked. This will limit the dataset to census tracts within Boone County, Missouri. </p> <br>
 
-  <p> Next, under “Topics”, select “Populations and People”. A list of ethnic and racial groups should pop up, ultimately check “Race and Ethnicity”. This will provide the option to map out specific racial or ethnic groups.  </p> <br>
+  <p> Next, under “Topics,” “Populations and People” should be selected. A list of ethnic and racial groups will appear, and “Race and Ethnicity” should be checked. This will enable the option to map specific racial or ethnic groups.  </p> <br>
 
-  <p> Now, looking at “Surveys”, there are a several different options. To map the total population in 2020, information from an official census release is needed. Select “Decennial Census” and then select “Demographic and Housing Characteristics” (Demographic Profile and Redistricting Data PL 94 - 171 would also work for this tutorial, though the next steps assume "Demographic and Housing Characteristics was chosen).  </p> <br>
+  <p> Under “Surveys,” several different options will be presented. To map the total population in 2020, data from an official census release must be used. “Decennial Census” should be selected, followed by “Demographic and Housing Characteristics” (while “Demographic Profile and Redistricting Data PL 94-171” could also be used for this tutorial, the next steps assume “Demographic and Housing Characteristics” is chosen).  </p> <br>
 
-  <p> Under “Years”, select “2020” for 2020 US Census data. At this point, the results should look like Figure 4 below. </p> <br>
+  <p> Under “Years,” “2020” should be selected for the 2020 U.S. Census data. At this point, the results should resemble those shown in Figure 4 below. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/wwVNZch.jpeg" alt="US Census Advanced Search" style="width:100%;max-width:625px">
   <figcaption> Figure 4. US Census Advanced Search Filters Input  </figcaption>
   </figure> <br>
 
-  <p> The top option, “P9”, works for the purpose of this tutorial (Figure 4). This dataset has information on whether the population is Hispanic or Latino, and not Hispanic or Latino, as well as a racial breakdown for both of those categories. For census data, it is important to note that being Hispanic or Latino is considered an ethnicity, whereas being Black or African American, Asian, American Indian or Alaska Native, Nativa Hawaiian or Pacific Islander, or White are considered racial groups.   </p> <br>
+  <p> The top option, “P9,” is suitable for the purpose of this tutorial (Figure 4). This dataset includes information on whether the population is Hispanic or Latino, or not Hispanic or Latino, as well as a racial breakdown for each of these categories. It is important to note that, for census data, Hispanic or Latino is considered an ethnicity, while groups such as Black or African American, Asian, American Indian or Alaska Native, Native Hawaiian or Pacific Islander, and White are classified as racial groups.  </p> <br>
 
-  <p> Collapse the search menu and look at the table. Note that the table needs to be downloaded in a specific way. Do not use the .zip, .csv, or .xlsx download options directly above the table. Instead, under the results menu, click the “P9” checkbox and then select “download” above it. Downloading the table in this way preserves the “GEOID” field, which is the unique identifier field used to join it to the census tract boundaries.    </p> <br>
+  <p> The search menu should be collapsed, and the table reviewed. It is important to download the table in a specific manner. The .zip, .csv, and .xlsx download options directly above the table should not be used. Instead, under the results menu, the “P9” checkbox should be selected, and then the “download” option should be clicked above it. Downloading the table in this way will preserve the “GEOID” field, which serves as the unique identifier to join the dataset with the census tract boundaries.   </p> <br>
 
-  <p> With the census dataset file downloaded, it is time to download the census tract boundaries before processing the dataset file.  </p> <br>
+  <p> With the census dataset file downloaded, the next step is to download the census tract boundaries before processing the dataset.  </p> <br>
 
   <h3> Finding GIS Boundary Files at the Census Tract Level with the US Census Web Interface </h3> <br>
 
-  <p> With the census dataset obtained, head <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"> here</a> to download the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines (Figure 5). </p> <br>
+  <p> With the census dataset obtained, the corresponding 2020 census tract TIGER (Topologically Integrated Geographic Encoding and Referencing system) Lines can be downloaded <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"> here</a> (Figure 5). </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/yyEckxw.jpeg" alt="US Census Tiger Lines" style="width:100%;max-width:625px">
   <figcaption> Figure 5. US Census TIGER Line Website  </figcaption>
   </figure> <br>
 
-  <p> Choose 2023 as the year for the boundary file. The 2020-2022 vintages would also work without issues. The data can be downloaded via the web interface or the ftp archive. The web interface is more user friendly, so choose it first. Here, there are dropdown boxes for the year and layer type. Make sure 2023 is selected for the year and census tracts are selected for the layer as shown in Figure 6 below.   </p> <br>
+  <p> The year 2023 should be selected for the boundary file, although the 2020-2022 vintages would also work without any issues. The data can be downloaded via either the web interface or the FTP archive. Since the web interface is more user-friendly, it is recommended to choose that option first. In the web interface, there are dropdown boxes for selecting the year and layer type. Ensure that 2023 is selected for the year, and that "Census Tracts" is chosen for the layer, as shown in Figure 6 below.   </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/h6e0Fp5.jpeg" alt="US Census Tiger Line Web Interface" style="width:100%;max-width:625px">
@@ -192,32 +192,32 @@
   </figure> <br>
 
 
-  <p> <em> Note why census tracts newer than 2019 must be chosen: the boundaries of census tracts, block groups, and blocks can and do change between decades. Tract boundaries may be shifted, split to create new tracts or merged to fuse tracts: this is done to reflect changes in population and urban development.   </em> </p> <br>
+  <p> <em> It is important to select census tracts from 2019 or later, as the boundaries of census tracts, block groups, and blocks can and do change between decades. Tract boundaries may be adjusted, split to create new tracts, or merged to form larger tracts in order to reflect shifts in population and urban development.   </em> </p> <br>
 
-  <p> Hit submit to go to the census tract download page. Unfortunately, every census tract in Missouri must be downloaded. Extract the zip file at the download location and add the shapefile into ArcGIS Pro or other GIS software of choice. To have a visual overlay of Boone County's location in Missouri, download the Missouri counties file from the same web interface or quickly add it from the ArcGIS Living Atlas. </p> <br>
+  <p> Once the selections have been made, "Submit" should be clicked to go to the census tract download page. Unfortunately, all census tracts in Missouri must be downloaded. After downloading the zip file, it should be extracted at the designated location, and the shapefile can then be added to ArcGIS Pro or any other GIS software of choice. To provide a visual overlay of Boone County’s location within Missouri, the Missouri counties shapefile can be downloaded from the same web interface or quickly added from the ArcGIS Living Atlas. </p> <br>
 
   <h3> Finding GIS Boundary FIles at the Census Tract Level with the US Census FTP </h3> <br>
 
-  <p> The File Transfer Protocol (FTP) archive is another way of obtaining census boundary files. It can be faster to use than the web interface, though it is more technical in nature. Go back to the main webpage of the TIGER files site and select “ftp archive” (Figure 7).  </p> <br>
+  <p> The File Transfer Protocol (FTP) archive is another method for obtaining census boundary files. While it can be faster than the web interface, it is more technical in nature. To use the FTP archive, return to the main webpage of the TIGER files site and select "FTP archive" (Figure 7).  </p> <br>
   
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/53tUw8O.jpeg" alt="US Census Tiger Line FTP" style="width:100%;max-width:625px">
   <figcaption> Figure 7. Using the Census TIGER Lines FTP  </figcaption>
   </figure> <br>
   
-  <p> Since census tracts are needed, a directory that reflects that name must be found. Scrolling down, there is the “TRACT/” folder, select that. This leads to a list of zip files, all of which are headed by “tl_2023_xx_tract.zip”. The number represented by the “xx” is the states' Federal Information Processing Standards (FIPS) code. The census bureau uses these codes to give each geographic entity a completely unique identifier – the FIPS codes become longer for smaller, higher scale geographic entities such as census blocks (which is why having a dataset file with the GEOID field was important). The FCC provides a FIPS code lookup guide <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. Looking at the FCC guide, the FIPS code for Missouri is 29, so that is the appropriate zip file to download. On the FTP site, click on "tl_2023_29_tract.zip" to download it.   </p> <br>
+  <p> Since census tracts are needed, a directory reflecting that name must be located. Scrolling down, the "TRACT/" folder should be selected. This will lead to a list of zip files, each beginning with "tl_2023_xx_tract.zip." The "xx" represents the state's Federal Information Processing Standards (FIPS) code. These codes are used by the Census Bureau to assign a unique identifier to each geographic entity. The FIPS codes become longer for smaller, higher-scale geographic units, such as census blocks, which is why having a dataset file with the GEOID field was important. A FIPS code lookup guide is provided by the FCC <a href="https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt"> here</a>. According to the guide, the FIPS code for Missouri is 29, so the zip file corresponding to that code should be downloaded. On the FTP site, "tl_2023_29_tract.zip" should be clicked to initiate the download. </p> <br>
 
 
   <h3> Processing the US Census Tract Dataset to make it Compatible with GIS </h3> <br>
 
-  <p> Open the census dataset spreadsheet that was downloaded earlier. It should look something like Figure 8 below. Notice that there are two headers, where the second acts as metadata for the first. Additionally, it has a GEOID field, which is necessary for joining it to the census tract boundaries. </p> <br>
+  <p> The census dataset spreadsheet that was downloaded earlier should be opened. It should resemble Figure 8 below. Note that there are two header rows, with the second serving as metadata for the first. Additionally, a GEOID field is present, which is essential for joining the dataset to the census tract boundaries. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/uHZOpz7.jpeg" alt="US Census Data Raw" style="width:100%;max-width:625px">
   <figcaption> Figure 8. The Raw Census Dataset  </figcaption>
   </figure> <br>
 
-<p> The second header needs to be deleted, though before doing so, be sure to rename the columns in the first header. In Figure 9 below, several of the columns in the main header were renamed.   </p> <br>
+<p> The second header should be deleted; however, before doing so, the columns in the first header must be renamed. In Figure 9 below, several columns in the main header have been renamed. </p> <br>
 
 
 
@@ -226,14 +226,14 @@
   <figcaption> Figure 9. The Processed Census Dataset  </figcaption>
   </figure> <br>
 
-  <p> Next, add the census dataset to ArcGIS Pro so that it is on the same map as the census tract boundaries. Export the census dataset to the geodatabase so that it can be edited. It is now time to join the census dataset to its tract boundaries. Use “GEOIDFQ” as the join field from the census tract boundaries and “GEO_ID” as the join field from the census tract dataset.  Figure 10 below shows the fields used for the join. </p> <br>
+  <p> Next, the census dataset should be added to ArcGIS Pro so that it appears on the same map as the census tract boundaries. The dataset must then be exported to the geodatabase to enable editing. At this point, the census dataset can be joined to its tract boundaries. "GEOIDFQ" should be used as the join field from the census tract boundaries, and "GEO_ID" should be used as the join field from the census dataset. The fields used for the join are shown in Figure 10 below. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/ABdp77Y.jpeg" alt="US Census Join" style="width:100%;max-width:625px">
   <figcaption> Figure 10. Joining the Census Tract Dataset to the Census Tract Boundaries  </figcaption>
   </figure> <br>
 
-  <p> With the two datasets joined together, export the layer to the geodatabase to save it. At this point, the census data is ready to be mapped -- for the tutorial the total population will be quickly mapped. Figure 11 below shows a simple example of a choropleth map where the percentage of the total population within each census tract is mapped.   </p> <br>
+  <p> With the two datasets joined, the layer should be exported to the geodatabase to save it. At this point, the census data is ready to be mapped. For this tutorial, the total population will be quickly mapped. Figure 11 below shows a simple example of a choropleth map, where the percentage of the total population within each census tract is displayed.  </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/3Kl75Zs.jpeg" alt="US Census Chloropleth" style="width:100%;max-width:625px">
@@ -242,29 +242,29 @@
 
   <h3> Using Older Census Datasets and the American Community Survey </h3> <br>
 
-  <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To present this, download the same census data for Boone County, but for 2010 instead of 2020. The process for obtaining the census dataset is like the 2020 data, though instead of searching for "Demographic and Housing Characteristics" or "2020", select "DEC Summary File 1" and "2010". The summary files denotation is used with older data (2000 -- 2010). Obtaining the census boundary files is simple -- repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
+  <p> The 2020 census data has the benefit of being easier to use in GIS software. Older census datasets, however, require an additional processing step. To demonstrate this, the same census data for Boone County should be downloaded, but for 2010 instead of 2020. The process for obtaining the census dataset is similar to that of the 2020 data, but instead of searching for "Demographic and Housing Characteristics" or "2020," "DEC Summary File 1" and "2010" should be selected. The "Summary File" designation is used for older data (2000–2010). Obtaining the census boundary files is straightforward—simply repeat the previous steps and select a year between 2011 and 2019.  </p> <br>
 
-  <p> The 2010 census dataset is like the 2020 census dataset, so process it in the same manner as earlier. Add both it and the 2010 census tract boundary to ArcGIS Pro. When attempting to join the two datasets, however, notice that there is no “GEOIDFQ” field in the census tract boundaries like there was in the 2020 boundaries. </p> <br>
+  <p> The 2010 census dataset is structured similarly to the 2020 dataset, so it should be processed in the same manner as before. Both the 2010 census data and the 2010 census tract boundaries should be added to ArcGIS Pro. However, when attempting to join the two datasets, it will be noticed that the “GEOIDFQ” field is missing from the 2010 census tract boundaries, unlike in the 2020 boundaries. </p> <br>
 
-  <p> Comparing the attribute table of both layers, notice that the “GEO_ID” text field in the 2010 census dataset has the correct entries to join the two layers, though it is embedded in a larger string led with “1400000US”. To correct this, create a new field for the census dataset table called “GEOID10”. Use Calculate Field with Arcade, and in the field calculation, apply RIGHT(GEOID, 11). This will preserve the 11 characters on the right side of the field and render the field identical to the "GEOID" in the census tract boundaries (Figure 12).  </p> <br>
+  <p> Upon comparing the attribute tables of both layers, it will be observed that the “GEO_ID” text field in the 2010 census dataset contains the correct entries to join the two layers, though it is embedded in a larger string prefixed with “1400000US.” To correct this, a new field called “GEOID10” should be created in the census dataset table. The Calculate Field tool should then be used with Arcade, and in the field calculation, the expression RIGHT(GEOID, 11) should be applied. This will preserve the 11 rightmost characters of the field, making it identical to the "GEOID" in the census tract boundaries (Figure 12).  </p> <br>
 
-  <em> As a side note, this GEOID identifier is a FIPS code like the one used to specify the Missouri census tract dataset on the FTP site (notice the each of the census tracts start with "29" which refers to the state Missouri). For reference, census block groups have a unique 12 digit FIPS code and census blocks have a unique 15 digit FIPS code.  </em> <br>
+  <em> As a side note, the GEOID identifier is a FIPS code, similar to the one used to specify the Missouri census tract dataset on the FTP site (notice that each census tract starts with "29," which refers to Missouri). For reference, census block groups have a unique 12-digit FIPS code, while census blocks have a unique 15-digit FIPS code.  </em> <br>
 
-  <p> Along with the census there is also the American Community Survey, which, as the name implies, is a continuous survey given to random members of the population to record detailed demographic information. The heading for it appeared earlier ("Surveys") when searching for census datasets. The process for downloading ACS data is the same as downloading census information. Do note that since it is a survey, however, there is a margin of error within the data. This can be quite significant at the census block group and tract levels. </p> <br>
+  <p> In addition to the census data, there is also the American Community Survey (ACS), which, as the name implies, is a continuous survey administered to random members of the population to collect detailed demographic information. The heading for the ACS appeared earlier ("Surveys") when searching for census datasets. The process for downloading ACS data is the same as for downloading census data. It should be noted, however, that because it is a survey, there is a margin of error within the data. This margin of error can be significant at the census block group and tract levels. </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/2kT3W8U.jpeg" alt="Trim GEO_ID Field" style="width:100%;max-width:625px">
   <figcaption> Figure 12. Trimming the GEO_ID Field in the Census Dataset to Match the Census Boundary's "GEOID" Field   </figcaption>
   </figure> <br>
 
-  <p> Setup the choropleth map for the 2010 data in the same manner as the 2020 data. Looking closely at the census tracts afterwards, there are differences in the boundaries between 2010 and 2020 (Figure 13).  </p> <br>
+  <p> The choropleth map for the 2010 data should be set up in the same manner as for the 2020 data. Afterward, by closely examining the census tracts, differences in the boundaries between the 2010 and 2020 datasets will be observed (Figure 13).  </p> <br>
 
   <figure> 
   <img class="myImages" id="myImg" src="https://i.imgur.com/Ifv6zjY.jpeg" alt="US Census Chloropleth 2010 " style="width:100%;max-width:625px">
   <figcaption> Figure 13. A Choropleth Map Created with 2010 US Census Data   </figcaption>
   </figure> <br>
 
-  <p> The same process can be repeated to download census data from 2000-2010 as well. Datasets older than 2000, however, are structured differently and much more difficult to process. Thankfully, there are sources such as the <a href="https://data2.nhgis.org/main">National Historical GIS</a> which provide these files. The search method works much like the US census website, where multiple filters are used to navigate to the desired dataset.  </p>
+<p> The same process can be repeated to download census data from 2000 to 2010. Datasets older than 2000, however, are structured differently and are much more difficult to process. Fortunately, sources such as the <a href="https://data2.nhgis.org/main">National Historical GIS</a> provide these files. The search method on these platforms is similar to that of the U.S. Census website, where multiple filters are applied to navigate to the desired dataset. </p> <br>
    
 
   <h3> List of Figures </h3> <br>
