@@ -129,7 +129,9 @@
 
 <p> Python has become an indispensable tool in automating Geographic Information Systems (GIS) workflows due to its versatility and the rich ecosystem of libraries it offers. By leveraging libraries such as ArcPy for Esri’s ArcGIS platform or GeoPandas for open-source GIS, Python enables users to script and automate complex geospatial tasks with ease. This includes automating data processing, performing spatial analyses, and generating maps. With Python, GIS professionals can create custom tools and workflows that streamline repetitive tasks, ensure consistency, and enhance productivity. Additionally, Python’s integration with web mapping libraries like Folium or Plotly facilitates the creation of interactive and dynamic geospatial visualizations, further expanding its utility in the GIS domain. </p> <br>
 
-<p> In this tutorial, the areal proportion analysis workflow will be automated. Areal proportion analysis involves examining the relative sizes of different spatial units within a geographic area to understand their distribution and impact. This analysis can be useful for estimating demographic characteristics between different sized geographic areas, such as census blocks and zip codes. Figure 1 below presents a visual depictuion of areal proportion analysis -- smaller units are aggregated into larger units. </p> <br>
+<p> In this tutorial, the workflow for areal proportion analysis will be automated. Areal proportion analysis involves examining the relative sizes of different spatial units within a geographic area to understand their distribution and impact. This type of analysis is particularly useful for estimating demographic characteristics across varying geographic scales, such as between census blocks and zip codes. </p> <br>
+
+<p> Figure 1 below provides a visual depiction of areal proportion analysis, where smaller spatial units are aggregated into larger units. </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/HNXFGt5.jpg" style="width:100%;max-width:625px"> 
@@ -137,11 +139,22 @@
 </figure> <br>
 
 
-<p> This tutorial uses ArcPy and SSutilities, so it is specifically intended for ArcGIS Pro. Often, other GIS operations will pull in different libraries such as NumPy, GeoPandas, etc. </p> <br>
+<p> This tutorial utilizes ArcPy and SSUtilities, so it is specifically designed for ArcGIS Pro. In many cases, other GIS operations may require additional libraries such as NumPy, GeoPandas, or others, depending on the specific analysis or functionality needed. </p> <br>
 
 <h3> The workflow for Areal Proportion Analysis </h3> <br> 
 
-<p> Before attempting to automate a GIS workflow, it is important to understand how the workflow functions. This is best done by manually executing the workflow in order to understand the steps and nuances that need to be taken, as well as which geoprocessing tools are involved.  </p> <br>
+<p> Before attempting to automate a GIS workflow, it is essential to understand how the workflow operates. The best way to achieve this is by manually executing the steps to familiarize yourself with the process, understand the necessary nuances, and identify which geoprocessing tools are involved.  </p> <br>
+
+<p> Areal proportion analysis requires two spatial layers: one smaller layer with population (or numeric) values, and one larger layer, which may be empty (i.e., no numeric values). </p> <br>
+
+<ol>
+  <li> <em> Prepare the Smaller Layer </em>: In the smaller spatial layer, add a field called “AREA” and calculate its geometry in your desired unit (e.g., square miles).  </li>
+  <li> <em> Intersect the Layers </em>: Next, intersect the two layers. Give the new intersected layer an easily identifiable name.  </li>
+  <li> <em> Add and Calculate Geometry in the Intersected Layer </em>: In the newly intersected layer, add a field called “NEWAREA” and calculate its geometry in the same unit used for the “AREA” field in the smaller layer.  </li>
+  <li> <em> Calculate Population Proportions </em>: Add another new field called “NEWPOP” and calculate its value using the formula: <br> <code> [POP] * [NEWAREA] / [AREA] </code> <br> This formula scales the population from the smaller units to the intersected areas based on their relative sizes.  </li>
+  <li> <em> Summing the Population Values </em>: The “NEWPOP” field needs to be summed up to the aggregated units in the larger spatial layer. This can be done using the Summary Statistics tool, which sums the "NEWPOP" field for each feature in the original larger spatial layer. <br> This new table should be saved with an identifiable name, such as POP_TABLE. </li>
+  <li> <em> Join and Export </em>: Finally, to save the changes to a permanent feature class, join the summary table to the larger spatial layer and export it as a new shapefile or feature class. </li>
+</ol> <br>
 
 <p> Areal proportion requires that there are two different spatial layers: one of them needs to be smaller in size with population (or numeric) values, while the other larger layer may be empty (i.e. no numeric values). In the smaller spatial layer, add a field called “AREA” and calculate its geometry in your desired unit (I recommend square miles). Next, intersect both the layers, and give the new layer an easily identifiable name. In the newly intersected layer, add a field called “NEWAREA” and calculate its geometry in the same unit used in the previous “AREA” field. Now, add yet another new field called “NEWPOP” and calculate it using this formula: “ [POP] * [NEWAREA] / [AREA]”. Now, the “NEWPOP” field needs to be summed up to the aggregated units in the larger spatial layer. This can be accomplished using the Summary Statistics tool, with the “NEWPOP” field being summed up to the original larger spatial layer. This new table can be called ____ POP TABLE. Finally, to save the changes on a permanent feature class, join the table to the larger spatial layer and export it as a new shapefile or feature class.  </p> <br>
 
@@ -151,6 +164,8 @@
 <img class="myImages" id="myImg" src="https://i.imgur.com/XCFsAB4.jpeg" style="width:100%;max-width:625px"> 
 <figcaption> Figure 2. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </figcaption>
 </figure> <br>
+
+
 
 <h3> Writing the Script in Python </h3> <br>
 
