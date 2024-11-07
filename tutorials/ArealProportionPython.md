@@ -400,7 +400,9 @@ tableOut = SSUtilities.outputTextTable(total,header=header,pad=1)
 arcpy.AddMessage(tableOut)
 
 </code></pre></div></div> <br>
-<figcaption> Figure 19. The Completed Script </figcaption> <br>
+<figure> 
+<figcaption> Figure 19. The Completed Script </figcaption> 
+</figure> <br>
 
 <p> To enable the script to function like a geoprocessing tool in ArcGIS Pro, several parameters must be defined under the script’s property settings. </p> <br>
 
@@ -440,23 +442,23 @@ arcpy.AddMessage(tableOut)
 
 <p> Figure 1. A Visual Depiction of Areal Proportion Analysis </p> <br>
 <p> Figure 2. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </p> <br>
-<p> Figure 3. </p> <br>
-<p> Figure 4. </p> <br>
-<p> Figure 5. </p> <br>
-<p> Figure 6. </p> <br>
-<p> Figure 7. </p> <br>
-<p> Figure 8. </p> <br>
-<p> Figure 9. </p> <br>
-<p> Figure 10. </p> <br>
-<p> Figure 11. </p> <br>
-<p> Figure 12. </p> <br>
-<p> Figure 13. </p> <br>
-<p> Figure 14. </p> <br>
-<p> Figure 15. </p> <br>
-<p> Figure 16. </p> <br>
-<p> Figure 17. </p> <br>
-<p> Figure 18. </p> <br>
-<p> Figure 19. </p> <br>
+<p> Figure 3. Import Additional Python Modules </p> <br>
+<p> Figure 4. Establish the Environmental Settings for the Workspace </p> <br>
+<p> Figure 5. Establish User-Defined Parameters  </p> <br>
+<p> Figure 6. Automatically Extract the File Location of the Input Block Layer  </p> <br>
+<p> Figure 7. Transform the Aggregate Layer into a Feature Layer </p> <br>
+<p> Figure 8. Add a Field to the Aggregate Layer to Enable Joining it to the Block Layer </p> <br>
+<p> Figure 9. Add a Field Representing the Current Area in Square Miles to the Block Layer </p> <br>
+<p> Figure 10. Calculate the Area of the Block Layer in Square Miles </p> <br>
+<p> Figure 11. Intersect the Block Layer and Aggregate Layer </p> <br>
+<p> Figure 12. Add a Field Representing the Intersected Area in Square Miles to the Intersect Layer </p> <br>
+<p> Figure 13. Calculate the Area of the Intersect Layer in Square Miles </p> <br>
+<p> Figure 14. Add a Field Representing the Areal Proportion Population in the Intersect Layer </p> <br>
+<p> Figure 15. Calculate the Areal Proportion Population of the Intersect Layer </p> <br>
+<p> Figure 16. Summarize the Areal Proportion Population of the Intersect Layer </p> <br>
+<p> Figure 17. Join the Areal Proportion Population Table to the Aggregate Layer </p> <br>
+<p> Figure 18. An Export Message that Summarizes the User's Inputs </p> <br>
+<p> Figure 19. The Completed Script </p> <br>
 <p> Figure 20. The Parameter Settings for the Python Script inside ArcGIS Pro </p> <br>
 <p> Figure 21. Estimated Population Change between 2000 and 2020 in Warren County </p> <br>
 
