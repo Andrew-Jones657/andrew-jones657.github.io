@@ -156,9 +156,7 @@
   <li> <em> Join and Export </em>: Finally, to save the changes to a permanent feature class, join the summary table to the larger spatial layer and export it as a new shapefile or feature class. </li>
 </ol> <br>
 
-<p> Areal proportion requires that there are two different spatial layers: one of them needs to be smaller in size with population (or numeric) values, while the other larger layer may be empty (i.e. no numeric values). In the smaller spatial layer, add a field called “AREA” and calculate its geometry in your desired unit (I recommend square miles). Next, intersect both the layers, and give the new layer an easily identifiable name. In the newly intersected layer, add a field called “NEWAREA” and calculate its geometry in the same unit used in the previous “AREA” field. Now, add yet another new field called “NEWPOP” and calculate it using this formula: “ [POP] * [NEWAREA] / [AREA]”. Now, the “NEWPOP” field needs to be summed up to the aggregated units in the larger spatial layer. This can be accomplished using the Summary Statistics tool, with the “NEWPOP” field being summed up to the original larger spatial layer. This new table can be called ____ POP TABLE. Finally, to save the changes on a permanent feature class, join the table to the larger spatial layer and export it as a new shapefile or feature class.  </p> <br>
-
-<p> These steps can be seen in a modelbuilder simulation below (Figure 2). </p> <br>
+<p> These steps are visualized in a modelbuilder simulation below (Figure 2). </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/XCFsAB4.jpeg" style="width:100%;max-width:625px"> 
@@ -169,16 +167,18 @@
 
 <h3> Writing the Script in Python </h3> <br>
 
-<p> With the workflow established, a python script can be created. To write this script, it is important that a python interface, such as IDLE, is downloaded, as this will make the process easier. Since this article is intended for use with ArcGIS applications, this script will be written in ArcPy, though a similar script coulc be created in QGIS.  </p> <br>
+<p> With the workflow established, a Python script can now be created to automate the process. To write this script, it is important to use a Python interface, such as IDLE, which will facilitate the development and testing of the script. Since this tutorial is focused on ArcGIS applications, the script will be written using ArcPy, although a similar script could be written in QGIS with PyQGIS.  </p> <br>
 
-<p> When working in a separate python interface, arcpy needs to first be imported to the script, this can be done by adding the command "import arcpy". "SSutilities" will also be imported to construct a results table that appears when the script has completed its run. </p> <br>
+<p> When working in a separate Python interface, the arcpy module must first be imported into the script. This can be done by adding the command: </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 import arcpy
 import SSUtilities
 </code></pre></div></div> <br>
 
-<p> Next, it is important to set up the environment settings, which include the workspace, overwriting outputs, and adding outputs to the map. This can be achieved with these codes: </p> <br>
+<p> Additionally, the SSUtilities module will be imported to construct a results table that will display once the script has completed its execution. This module is useful for creating summary reports and tracking the status of the script during its run. </p> <br>
+
+<p> Next, it is important to set up the environment settings for the script. These settings define the workspace, enable overwriting of existing outputs, and ensure that outputs are added to the map. The following ArcPy commands can be used to configure these settings: </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 from arcpy import env # Bring in the workspace
@@ -189,28 +189,32 @@ arcpy.env.addOutputsToMap = True
 <p> At this point, it is important to consider what should be used as an input parameter. Certainly, the small and large spatial layers should be considered parameters. Similarly, if working with multiple numeric fields, there should be a specific field used in the analysis. Finally, a “to” and “from” join field should be identified to join the large layer with the intersected layer. These will be identified using the “arcpy.GetParameterAsText(n)” command. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-blockLayer = arcpy.GetParameterAsText(0)
-aggregateLayer = arcpy.GetParameterAsText(1)
-populationField = arcpy.GetParameterAsText(2)
-blockJoinField = arcpy.GetParameterAsText(3)
-aggregateJoinField = arcpy.GetParameterAsText(4)
+blockLayer = arcpy.GetParameterAsText(0) # Small spatial layer (with population or numeric data)
+aggregateLayer = arcpy.GetParameterAsText(1) # Large spatial layer (to aggregate data to)
+populationField = arcpy.GetParameterAsText(2) #  The numeric field (e.g., population)
+blockJoinField = arcpy.GetParameterAsText(3) # "From" field in the smaller layer (used to join)
+aggregateJoinField = arcpy.GetParameterAsText(4) # "To" field in the larger layer (used to join)
 </code></pre></div></div> <br>
 
-<p> It is important to set the workspace for the feature layer to be dynamic, this can be done by using the “Describe” command. The 'r""' is used to assign a relative system path. </p> <br>
+<p> These parameters make the script more flexible, allowing users to easily customize the input layers and fields based on their specific dataset. Once the input parameters are set up, proceed with the geoprocessing steps and calculations as described in the workflow. </p> <br>
+
+<p> It is important to set the workspace for the feature layer dynamically to ensure that the script works in different environments or locations without needing to hardcode paths. This can be achieved using the "Describe" command in ArcPy, which provides information about the properties of a dataset, such as its path, data type, and other properties. The "Describe" function dynamically assigns the workspace to the feature layer. </p> <br>
+
+<p> To assign a relative system path for the workspace, use the r"" (raw string) syntax, which treats backslashes in file paths correctly without needing to escape them. By setting the workspace dynamically, the script becomes more flexible and portable, eliminating the need for hardcoded file paths. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-desc = arcpy.Describe(blockLayer)
-workSpace = r"" + desc.path
+desc = arcpy.Describe(blockLayer) # Get the path of the input layer dynamically
+workSpace = r"" + desc.path # Extracts the directory path of the layer
 </code></pre></div></div> <br>
 
-<p> The larger spatial layer needs to become a feature layer in order to edit it or use it in a geoprocessing workflow, this can be done with the aptly named “MakeFeatureLayer” command. First, it needs to be assigned a name, “aggregateLayer”, then the “MakeFeatureLayer” command from the "Management" toolbox can be used to create the feature layer. </p> <br>
+<p> The larger spatial layer must be converted into a feature layer to enable editing or use in a geoprocessing workflow. This conversion is performed using the “MakeFeatureLayer” tool. First, a name, such as “aggregateLayer,” should be assigned to the layer. Then, the “MakeFeatureLayer” tool from the "Management" toolbox can be executed to create the feature layer. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Layer_Feature_Layer = "aggregateLayer"
 arcpy.management.MakeFeatureLayer(in_features=aggregateLayer, out_layer=Aggregate_Layer_Feature_Layer)
 </code></pre></div></div> <br>
 
-<p> At the end of the workflow, the table is joined back to the larger spatial layer. In order for this to work, a field needs to be added to the layer that matches the join field in the smaller spatial layer. This can be done with the “Management.Add_Field” command.  </p> <br>
+<p> At the end of the workflow, the table must be joined back to the larger spatial layer. To facilitate this, a field that matches the join field in the smaller spatial layer needs to be added to the larger layer. This can be accomplished using the “Management.Add_Field” command. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Layer_Feature_Layer_JField = arcpy.management.AddField(in_table=Aggregate_Layer_Feature_Layer, field_name=blockJoinField, field_type="TEXT", field_is_required="NON_REQUIRED")[0] 
@@ -222,58 +226,58 @@ Aggregate_Layer_Feature_Layer_JField = arcpy.management.AddField(in_table=Aggreg
 Block_with_Area_Field = arcpy.management.AddField(in_table=blockLayer, field_name="Area", field_type="DOUBLE", field_is_required="NON_REQUIRED")[0]
 </code></pre></div></div> <br>
 
-<p> Then, the area field is calculated with calculate geometry. To do this in python, the command !shape.area@squaremiles! is used. </p> <br>
+<p> The area field is then calculated using the Calculate Geometry tool. In Python, this can be done with the expression !shape.area@squaremiles!. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Block_Filled_Area_ = arcpy.management.CalculateField(in_table=Block_with_Area_Field, field="Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
 </code></pre></div></div> <br>
 
-<p> Now, the two spatial layers can be intersected. This uses the “analysis.Intersect” option from Arcpy. Since this procedure will create a new feature layer, a system path needs to be assigned to the new file. The previous "workSpace" variable can be concatenated with a "\\" and a string, "Block_Intersect", that will serve as the new layer's name. </p> <br>
+<p> The two spatial layers can now be intersected using the “Analysis.Intersect” tool from ArcPy. Since this operation will create a new feature layer, a system path must be assigned to the resulting file. The existing "workSpace" variable can be concatenated with "\\" and the string "Block_Intersect" to define the name of the new layer. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_ = workSpace + "\\" + "Block_Intersect" 
 arcpy.analysis.Intersect(in_features=[[Block_Filled_Area_, ""], [Aggregate_Layer_Feature_Layer_JField, ""]], out_feature_class=Aggregate_Block_Intersect_)
 </code></pre></div></div> <br>
 
-<p> Again, a field representing the area of the intersected spatial layer is added.  </p> <br>
+<p> A field representing the area of the intersected spatial layer is added.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Empty_New_Area_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_, field_name="New_Area", field_type="DOUBLE")[0]
 </code></pre></div></div> <br>
 
-<p> Likewise, the geometry of the added field is calculated.  </p> <br>
+<p> The geometry of the added field is calculated.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Populated_Area_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Area_, field="New_Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
 </code></pre></div></div> <br>
 
-<p> Another field is added to contain the areal proportion population. </p> <br>
+<p> Another field is added to store the areal proportion population. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Empty_New_Pop_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_Populated_Area_, field_name=populationField, field_type="LONG")[0]
 </code></pre></div></div> <br>
 
-<p> Then, the field is calculated. To fit in the expression from the field calculator, “f” is used to denote the mathematical relationship in quotes, and visual basic is used for simplicity.  </p> <br>
+<p> The field is then calculated. To define the mathematical relationship in the field calculator, the expression is enclosed in quotes with "f" used to represent the formula. Visual Basic is used for simplicity in the calculation.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Filled_Population_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Pop_, field=populationField, expression=f"[{populationField}] * [New_Area] / [Area]", expression_type="VB")[0]
 </code></pre></div></div> <br>
 
 
-<p> Approaching the end of the workflow, the summary statistics table now needs to be created. To create a table, a desktop path and a name need to be defined – like the “Block_Intersection” feature layer earlier. The “statistics” tool is another analysis tool: to choose a summation, write “SUM” by the statistics field. The group by which the field values will be summed is the “aggregateJoinField”, which is one of the user defined inputs. </p> <br>
+<p> As the workflow nears completion, the summary statistics table must be created. A desktop path and a name must first be defined for the table, similar to the "Block_Intersect" feature layer created earlier. The "Statistics" tool, which is another analysis tool, is then used. To calculate the sum, "SUM" should be specified for the statistics field. The field by which the values will be grouped for summation is the “aggregateJoinField,” which is one of the user-defined inputs. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Population_Table = workSpace + "\\" + "AGG_TABLE" 
 arcpy.analysis.Statistics(in_table=Aggregate_Block_Intersect_Filled_Population_, out_table=Aggregate_Population_Table, statistics_fields=[[populationField, "SUM"]], case_field=[aggregateJoinField])
 </code></pre></div></div> <br>
 
-<p> Finally, the join between the larger spatial layer and the summary statistics table can be performed.  </p> <br>
+<p> Finally, the join between the larger spatial layer and the summary statistics table can be executed.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Population_Layer_ = arcpy.management.AddJoin(in_layer_or_view=Aggregate_Layer_Feature_Layer, in_field=blockJoinField, join_table=Aggregate_Population_Table, join_field=aggregateJoinField, join_type="KEEP_ALL")[0]
 </code></pre></div></div> <br>
 
-<p>  The analytical workflow is done at this point, though with the SSUtilities package, some general information on the tool can be produced. This will require creating a small table that details the input spatial layers as well as the output. This can be done with a few strings and lists.  </p> <br>
+<p>  The analytical workflow is now complete. However, using the SSUtilities package, general information about the tool can still be generated. This involves creating a small table that details the input spatial layers as well as the output. This can be accomplished by utilizing a few strings and lists. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 header = "Areal Proportion Analysis"
@@ -284,7 +288,7 @@ row3 = [ "The Output Dbase File Name: ", Aggregate_Population_Table ]
 total = [ row1, row2, row3 ]
 </code></pre></div></div> <br>
 
-<p> To save the joined larger spatial layer, simply export it to a shapefile or geodatabase. The entire script is depicted below and can be downloaded <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> here</a>.  </p> <br>
+<p> To save the joined larger spatial layer, export it to a shapefile or geodatabase. The entire script is depicted below and can be downloaded <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> here</a>.  </p> <br>
 
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
@@ -381,6 +385,18 @@ tableOut = SSUtilities.outputTextTable(total,header=header,pad=1)
 arcpy.AddMessage(tableOut)
 
 </code></pre></div></div> <br>
+
+<p> To enable the script to function like a geoprocessing tool in ArcGIS Pro, several parameters must be defined under the script’s property settings. </p> <br>
+
+  <ol>
+    <li> In ArcGIS Pro, create a new toolbox in the Catalog pane. </li>
+    <li> Right-click the toolset and select New > Script. </li>
+    <li> Copy the Python code from IDLE and paste it into the newly created script. </li>
+    <li> Save the script. </li>
+  </ol> <br>
+
+
+<p> Once the script is saved, the necessary parameters can be defined through the script's properties to allow for input and output handling, ensuring it functions as a geoprocessing tool within ArcGIS Pro.</p> </br>
 
 <p> For the script to function like a geoprocessing tool in ArcGIS Pro, several parameters need to be established under the script’s property settings. On ArcGIS Pro, create a new toolbox under the catalog pane. Right-click on the toolset and create a new script. Copy and paste the python code from IDLE into the new script and save it.  </p> <br>
 
