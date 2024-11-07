@@ -175,7 +175,9 @@
 import arcpy
 import SSUtilities
 </code></pre></div></div> <br>
-<figcaption> Figure 3. Import Additional Python Modules  </figcaption> <br>
+<figure>
+<figcaption> Figure 3. Import Additional Python Modules  </figcaption>
+</figure> <br>
 
 <p> Additionally, the SSUtilities module will be imported to construct a results table that will display once the script has completed its execution. This module is useful for creating summary reports and tracking the status of the script during its run. </p> <br>
 
@@ -186,7 +188,9 @@ from arcpy import env # Bring in the workspace
 arcpy.env.overwriteOutput = True
 arcpy.env.addOutputsToMap = True
 </code></pre></div></div> <br>
-<figcaption> Figure 4. Establish the Environmental Settings for the Workspace </figcaption> <br>
+<figure>
+<figcaption> Figure 4. Establish the Environmental Settings for the Workspace </figcaption> 
+</figure> <br>
 
 <p> At this point, it is important to consider what should be used as an input parameter. Certainly, the small and large spatial layers should be considered parameters. Similarly, if working with multiple numeric fields, there should be a specific field used in the analysis. Finally, a “to” and “from” join field should be identified to join the large layer with the intersected layer. These will be identified using the “arcpy.GetParameterAsText(n)” command. </p> <br>
 
@@ -197,7 +201,9 @@ populationField = arcpy.GetParameterAsText(2) #  The numeric field (e.g., popula
 blockJoinField = arcpy.GetParameterAsText(3) # "From" field in the smaller layer (used to join)
 aggregateJoinField = arcpy.GetParameterAsText(4) # "To" field in the larger layer (used to join)
 </code></pre></div></div> <br>
-<figcaption> Figure 5. Establish User-Defined Parameters  </figcaption> <br>
+<figure>
+<figcaption> Figure 5. Establish User-Defined Parameters  </figcaption> 
+</figure> <br>
 
 <p> These parameters make the script more flexible, allowing users to easily customize the input layers and fields based on their specific dataset. Once the input parameters are set up, proceed with the geoprocessing steps and calculations as described in the workflow. </p> <br>
 
@@ -209,7 +215,9 @@ aggregateJoinField = arcpy.GetParameterAsText(4) # "To" field in the larger laye
 desc = arcpy.Describe(blockLayer) # Get the path of the input layer dynamically
 workSpace = r"" + desc.path # Extracts the directory path of the layer
 </code></pre></div></div> <br>
-<figcaption> Figure 6. Automatically Extract the File Location of the Input Block Layer  </figcaption> <br>
+<figure>
+<figcaption> Figure 6. Automatically Extract the File Location of the Input Block Layer  </figcaption> 
+</figure> <br>
 
 <p> The larger spatial layer must be converted into a feature layer to enable editing or use in a geoprocessing workflow. This conversion is performed using the “MakeFeatureLayer” tool. First, a name, such as “aggregateLayer,” should be assigned to the layer. Then, the “MakeFeatureLayer” tool from the "Management" toolbox can be executed to create the feature layer. </p> <br>
 
@@ -217,28 +225,36 @@ workSpace = r"" + desc.path # Extracts the directory path of the layer
 Aggregate_Layer_Feature_Layer = "aggregateLayer"
 arcpy.management.MakeFeatureLayer(in_features=aggregateLayer, out_layer=Aggregate_Layer_Feature_Layer)
 </code></pre></div></div> <br>
-<figcaption> Figure 7. Transform the Aggregate Layer into a Feature Layer </figcaption> <br>
+<figure>
+<figcaption> Figure 7. Transform the Aggregate Layer into a Feature Layer </figcaption> 
+</figure> <br>
 
 <p> At the end of the workflow, the table must be joined back to the larger spatial layer. To facilitate this, a field that matches the join field in the smaller spatial layer needs to be added to the larger layer. This can be accomplished using the “Management.Add_Field” command. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Layer_Feature_Layer_JField = arcpy.management.AddField(in_table=Aggregate_Layer_Feature_Layer, field_name=blockJoinField, field_type="TEXT", field_is_required="NON_REQUIRED")[0] 
 </code></pre></div></div> <br>
-<figcaption> Figure 8. Add a Field to the Aggregate Layer to Enable Joining it to the Block Layer </figcaption> <br>
+<figure>
+<figcaption> Figure 8. Add a Field to the Aggregate Layer to Enable Joining it to the Block Layer </figcaption>
+</figure> <br>
 
 <p> An area field representing the area of each unit on the smaller spatial layer must be created.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Block_with_Area_Field = arcpy.management.AddField(in_table=blockLayer, field_name="Area", field_type="DOUBLE", field_is_required="NON_REQUIRED")[0]
 </code></pre></div></div> <br>
-<figcaption> Figure 9. Add a Field Representing the Current Area in Square Miles to the Block Layer </figcaption> <br>
+<figure>
+<figcaption> Figure 9. Add a Field Representing the Current Area in Square Miles to the Block Layer </figcaption> 
+</figure> <br>
 
 <p> The area field is then calculated using the Calculate Geometry tool. In Python, this can be done with the expression !shape.area@squaremiles!. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Block_Filled_Area_ = arcpy.management.CalculateField(in_table=Block_with_Area_Field, field="Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
 </code></pre></div></div> <br>
-<figcaption> Figure 10. Calculate the Area of the Block Layer in Square Miles </figcaption> <br>
+<figure>
+<figcaption> Figure 10. Calculate the Area of the Block Layer in Square Miles </figcaption> 
+</figure> <br>
 
 <p> The two spatial layers can now be intersected using the “Analysis.Intersect” tool from ArcPy. Since this operation will create a new feature layer, a system path must be assigned to the resulting file. The existing "workSpace" variable can be concatenated with "\\" and the string "Block_Intersect" to define the name of the new layer. </p> <br>
 
@@ -246,35 +262,45 @@ Block_Filled_Area_ = arcpy.management.CalculateField(in_table=Block_with_Area_Fi
 Aggregate_Block_Intersect_ = workSpace + "\\" + "Block_Intersect" 
 arcpy.analysis.Intersect(in_features=[[Block_Filled_Area_, ""], [Aggregate_Layer_Feature_Layer_JField, ""]], out_feature_class=Aggregate_Block_Intersect_)
 </code></pre></div></div> <br>
-<figcaption> Figure 11. Intersect the Block Layer and Aggregate Layer </figcaption> <br>
+<figure>
+<figcaption> Figure 11. Intersect the Block Layer and Aggregate Layer </figcaption>
+</figure> <br>
 
 <p> A field representing the area of the intersected spatial layer is added.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Empty_New_Area_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_, field_name="New_Area", field_type="DOUBLE")[0]
 </code></pre></div></div> <br>
-<figcaption> Figure 12. Add a Field Representing the Intersected Area in Square Miles to the Intersect Layer  </figcaption> <br>
+<figure>
+<figcaption> Figure 12. Add a Field Representing the Intersected Area in Square Miles to the Intersect Layer  </figcaption>
+</figure> <br>
 
 <p> The geometry of the added field is calculated.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Populated_Area_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Area_, field="New_Area", expression="!shape.area@squaremiles!", expression_type="PYTHON_9.3")[0]
 </code></pre></div></div> <br>
-<figcaption> Figure 13. Calculate the Area of the Intersect Layer in Square Miles </figcaption> <br>
+<figure>
+<figcaption> Figure 13. Calculate the Area of the Intersect Layer in Square Miles </figcaption> 
+</figure> <br>
 
 <p> Another field is added to store the areal proportion population. </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Empty_New_Pop_ = arcpy.management.AddField(in_table=Aggregate_Block_Intersect_Populated_Area_, field_name=populationField, field_type="LONG")[0]
 </code></pre></div></div> <br>
-<figcaption> Figure 14. Add a Field Representing the Areal Proportion Population in the Intersect Layer </figcaption> <br>
+<figure>
+<figcaption> Figure 14. Add a Field Representing the Areal Proportion Population in the Intersect Layer </figcaption> 
+</figure> <br>
 
 <p> The field is then calculated. To define the mathematical relationship in the field calculator, the expression is enclosed in quotes with "f" used to represent the formula. Visual Basic is used for simplicity in the calculation.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Block_Intersect_Filled_Population_ = arcpy.management.CalculateField(in_table=Aggregate_Block_Intersect_Empty_New_Pop_, field=populationField, expression=f"[{populationField}] * [New_Area] / [Area]", expression_type="VB")[0]
 </code></pre></div></div> <br>
-<figcaption> Figure 15. Calculate the Areal Proportion Population of the Intersect Layer </figcaption> <br>
+<figure>
+<figcaption> Figure 15. Calculate the Areal Proportion Population of the Intersect Layer </figcaption>
+</figure> <br>
 
 <p> As the workflow nears completion, the summary statistics table must be created. A desktop path and a name must first be defined for the table, similar to the "Block_Intersect" feature layer created earlier. The "Statistics" tool, which is another analysis tool, is then used. To calculate the sum, "SUM" should be specified for the statistics field. The field by which the values will be grouped for summation is the “aggregateJoinField,” which is one of the user-defined inputs. </p> <br>
 
@@ -282,14 +308,18 @@ Aggregate_Block_Intersect_Filled_Population_ = arcpy.management.CalculateField(i
 Aggregate_Population_Table = workSpace + "\\" + "AGG_TABLE" 
 arcpy.analysis.Statistics(in_table=Aggregate_Block_Intersect_Filled_Population_, out_table=Aggregate_Population_Table, statistics_fields=[[populationField, "SUM"]], case_field=[aggregateJoinField])
 </code></pre></div></div> <br>
-<figcaption> Figure 16. Summarize the Areal Proportion Population of the Intersect Layer  </figcaption> <br>
+<figure>
+<figcaption> Figure 16. Summarize the Areal Proportion Population of the Intersect Layer  </figcaption> 
+</figure> <br>
 
 <p> Finally, the join between the larger spatial layer and the summary statistics table can be executed.  </p> <br>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Aggregate_Population_Layer_ = arcpy.management.AddJoin(in_layer_or_view=Aggregate_Layer_Feature_Layer, in_field=blockJoinField, join_table=Aggregate_Population_Table, join_field=aggregateJoinField, join_type="KEEP_ALL")[0]
 </code></pre></div></div> <br>
-<figcaption> Figure 17. Join the Areal Proportion Population Table to the Aggregate Layer  </figcaption> <br>
+<figure>
+<figcaption> Figure 17. Join the Areal Proportion Population Table to the Aggregate Layer  </figcaption> 
+</figure> <br>
 
 <p>  The analytical workflow is now complete. However, using the SSUtilities package, general information about the tool can still be generated. This involves creating a small table that details the input spatial layers as well as the output. This can be accomplished by utilizing a few strings and lists. </p> <br>
 
@@ -301,7 +331,9 @@ row2 = [ "The Aggregate Layer: ", aggregateLayer  ]
 row3 = [ "The Output Dbase File Name: ", Aggregate_Population_Table ]
 total = [ row1, row2, row3 ]
 </code></pre></div></div> <br>
-<figcaption> Figure 18. An Export Message that Summarizes the User's Inputs </figcaption> <br>
+<figure>
+<figcaption> Figure 18. An Export Message that Summarizes the User's Inputs </figcaption>
+</figure> <br>
 
 <p> To save the joined larger spatial layer, export it to a shapefile or geodatabase. The entire script is depicted below and can be downloaded <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Python/AggPopEstimator.py"> here</a>.  </p> <br>
 
@@ -440,27 +472,27 @@ arcpy.AddMessage(tableOut)
 
 <h3> List of Figures </h3> <br>
 
-<p> Figure 1. A Visual Depiction of Areal Proportion Analysis </p> <br>
-<p> Figure 2. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </p> <br>
-<p> Figure 3. Import Additional Python Modules </p> <br>
-<p> Figure 4. Establish the Environmental Settings for the Workspace </p> <br>
-<p> Figure 5. Establish User-Defined Parameters  </p> <br>
-<p> Figure 6. Automatically Extract the File Location of the Input Block Layer  </p> <br>
-<p> Figure 7. Transform the Aggregate Layer into a Feature Layer </p> <br>
-<p> Figure 8. Add a Field to the Aggregate Layer to Enable Joining it to the Block Layer </p> <br>
-<p> Figure 9. Add a Field Representing the Current Area in Square Miles to the Block Layer </p> <br>
-<p> Figure 10. Calculate the Area of the Block Layer in Square Miles </p> <br>
-<p> Figure 11. Intersect the Block Layer and Aggregate Layer </p> <br>
-<p> Figure 12. Add a Field Representing the Intersected Area in Square Miles to the Intersect Layer </p> <br>
-<p> Figure 13. Calculate the Area of the Intersect Layer in Square Miles </p> <br>
-<p> Figure 14. Add a Field Representing the Areal Proportion Population in the Intersect Layer </p> <br>
-<p> Figure 15. Calculate the Areal Proportion Population of the Intersect Layer </p> <br>
-<p> Figure 16. Summarize the Areal Proportion Population of the Intersect Layer </p> <br>
-<p> Figure 17. Join the Areal Proportion Population Table to the Aggregate Layer </p> <br>
-<p> Figure 18. An Export Message that Summarizes the User's Inputs </p> <br>
-<p> Figure 19. The Completed Script </p> <br>
-<p> Figure 20. The Parameter Settings for the Python Script inside ArcGIS Pro </p> <br>
-<p> Figure 21. Estimated Population Change between 2000 and 2020 in Warren County </p> <br>
+<p> Figure 1. A Visual Depiction of Areal Proportion Analysis </p> 
+<p> Figure 2. A Modelbuilder depiction of the Areal Proportion Analysis Workflow </p> 
+<p> Figure 3. Import Additional Python Modules </p> 
+<p> Figure 4. Establish the Environmental Settings for the Workspace </p> 
+<p> Figure 5. Establish User-Defined Parameters  </p> 
+<p> Figure 6. Automatically Extract the File Location of the Input Block Layer  </p> 
+<p> Figure 7. Transform the Aggregate Layer into a Feature Layer </p> 
+<p> Figure 8. Add a Field to the Aggregate Layer to Enable Joining it to the Block Layer </p> 
+<p> Figure 9. Add a Field Representing the Current Area in Square Miles to the Block Layer </p> 
+<p> Figure 10. Calculate the Area of the Block Layer in Square Miles </p> 
+<p> Figure 11. Intersect the Block Layer and Aggregate Layer </p> 
+<p> Figure 12. Add a Field Representing the Intersected Area in Square Miles to the Intersect Layer </p> 
+<p> Figure 13. Calculate the Area of the Intersect Layer in Square Miles </p> 
+<p> Figure 14. Add a Field Representing the Areal Proportion Population in the Intersect Layer </p> 
+<p> Figure 15. Calculate the Areal Proportion Population of the Intersect Layer </p> 
+<p> Figure 16. Summarize the Areal Proportion Population of the Intersect Layer </p> 
+<p> Figure 17. Join the Areal Proportion Population Table to the Aggregate Layer </p> 
+<p> Figure 18. An Export Message that Summarizes the User's Inputs </p> 
+<p> Figure 19. The Completed Script </p> 
+<p> Figure 20. The Parameter Settings for the Python Script inside ArcGIS Pro </p> 
+<p> Figure 21. Estimated Population Change between 2000 and 2020 in Warren County </p> 
 
 
 
