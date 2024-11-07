@@ -396,13 +396,11 @@ arcpy.AddMessage(tableOut)
   </ol> <br>
 
 
-<p> Once the script is saved, the necessary parameters can be defined through the script's properties to allow for input and output handling, ensuring it functions as a geoprocessing tool within ArcGIS Pro.</p> </br>
-
-<p> For the script to function like a geoprocessing tool in ArcGIS Pro, several parameters need to be established under the script’s property settings. On ArcGIS Pro, create a new toolbox under the catalog pane. Right-click on the toolset and create a new script. Copy and paste the python code from IDLE into the new script and save it.  </p> <br>
+<p> Once the script is saved, the necessary parameters can be defined through the script's properties to allow for input and output handling, ensuring it functions as a geoprocessing tool within ArcGIS Pro.</p> <br>
 
 <h3> Setting up the Script Parameters </h3> <br>
 
-<p> Each of the variables that were assigned “arcpy.GetParameterAsText” need to be defined for the script to be usable. For both of the spatial layers, they must be input as a "feature layer" Data Type. The other three parameters are simply fields. The "Default" values  Figure 2 below depicts the parameter settings.  </p> <br>
+<p> Each variable that uses the "arcpy.GetParameterAsText" function must be defined for the script to be fully functional. For both spatial layers, the input parameters must be assigned the "Feature Layer" data type. The remaining three parameters are field inputs, which should be defined as appropriate field types (Figure 3).  </p> <br>
 
 <figure> 
 <img class="myImages" id="myImg" src="https://i.imgur.com/ctqad00.jpg" style="width:100%;max-width:625px"> 
@@ -411,7 +409,7 @@ arcpy.AddMessage(tableOut)
 
 <h3> Some Cartographic Products Created with Areal Proportion Analysis </h3> <br>
 
-<p> The most obvious example of the use of areal proportion analysis is working with census geographies smaller than the county level. I detail these in my <a href="https://andrew-jones657.github.io/Site_Selection"> Site Selection project</a> and <a href="https://andrew-jones657.github.io/tutorials/CensusData"> Census Data tutorial</a>.  </p> <br>
+<p> The most obvious example of the use of areal proportion analysis is working with census geographies smaller than the county level. These applications are detailed in my <a href="https://andrew-jones657.github.io/Site_Selection"> Site Selection project</a> and <a href="https://andrew-jones657.github.io/tutorials/CensusData"> Census Data tutorial</a>.  </p> <br>
 
 <p> This python script was particularly useful in the Site Selection project. In it, I had to use areal proportion multiple times: three times to create the population change map on the census block group level (2000 – 2010, 2010 – 2020, 2000 – 2020). In doing so, I was able to estimate the population change in Warren County, KY for my Site Selection project. Areas with positive growth were weighed higher as site selection criteria.  </p> <br>
 
@@ -420,7 +418,7 @@ arcpy.AddMessage(tableOut)
 <figcaption> Figure 4. Estimated Population Change between 2000 and 2020 in Warren County </figcaption>
 </figure> <br>
 
-<p> In the same Site Selection project, I used the servica area analysis multiple times for each candidate fire station. In order to view the population value within each distance break, areal proportion was used multiple (5+) times to estimate census block values aggregated to the distance bands. Simply put, another this serves as another reason why automating reptetive geospatial workflows is worthwhile. This concludes the tutorial on automating areal proportion analysis with arcpy.  </p> <br>
+<p> In the same Site Selection project, I applied service area analysis multiple times for each candidate fire station. To view the population within each distance break, areal proportion analysis was used repeatedly (more than 5 times) to estimate census block values aggregated to the distance bands. Simply put, this is another example of why automating repetitive geospatial workflows is so valuable. </p> <br>
 
 <h3> List of Figures </h3> <br>
 
