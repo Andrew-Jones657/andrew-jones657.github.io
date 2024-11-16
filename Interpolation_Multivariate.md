@@ -121,7 +121,7 @@
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
-<p> The intent of this project is to explore some geostatistical and multivariate techniques on a continuous dataset. This project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data from June of 1999 (so values include July 1998 - June 1999) in Kentucky using interpolation techniques, and the second looks at the entire dataset (July 1998 - June 2001) using multivariate statistical methods.   </p> <br>
+<p> The intent of this project is to explore geostatistical and multivariate techniques on a continuous dataset with ratio values. Much of this project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data from June of 1999 (so values include July 1998 - June 1999) in Kentucky using interpolation techniques, and the second looks at the entire dataset (July 1998 - June 2001) using multivariate statistical methods.   </p> <br>
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
@@ -506,6 +506,14 @@
 </table>
 
 <p> (Plot data from cluster_analysis() </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/7FeFH4f.jpeg" alt="AggMap" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Analysis of K-means Clustering Quality   </figcaption>
+</figure> <br>
+
+
+<p> [img][/img] </p>
 
 <p> Figure 14 below depicts an “elbow method” graph, which displays the total within sum of squares as a function of the number of clusters. In other words, this is a essentially a graph of the TSS value on Table 5. The point containing the ideal number of clusters occurs where the slope of the line decreases and the “elbow” bends: at this point, adding another cluster does not substantially improve the BSS / TSS value. In this case, the bend is located at four clusters, where the function’s slope decreases. The “elbow” can be seen between two and four clusters.  </p> <br>
 
