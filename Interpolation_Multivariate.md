@@ -243,13 +243,22 @@
 </figure> <br>
 
 
-<p> Next, a trend analysis graph was created to assess whether directional effects exist in the dataset. This was achieved by creating a 3D scatterplot, and then assessing the relationship between both latitude and longitude with the drought values.  The analysis indicates a second-order trend, with Figure 5 illustrating an upward, U-shaped curve for both latitude and longitude. This pattern suggests that drought values in central Kentucky are near the mean, while those in western and eastern Kentucky deviate significantly from it. Similarly, drought values in southern Kentucky are not as severe as drought values in northern Kentucky. Fortunately, the broad nature of this trend curve is unlikely to significantly impact the kriging interpolation. </p> <br>
+<p> Next, a trend analysis graph was created to assess whether directional effects exist in the dataset. This was achieved by creating a 3D scatterplot, and then assessing the relationship between both latitude and longitude with the drought values. Looking carefully, the 3D scatterplot reveals an outline of the shape of Kentucky. It is important to note that the low, red points are where drought anomalies are the most intense.   The analysis indicates a second-order trend, with Figure 5 illustrating an upward, U-shaped curve for both latitude and longitude. This pattern suggests that drought values in central Kentucky are near the mean, while those in western and eastern Kentucky deviate significantly from it. Similarly, drought values in southern Kentucky are not as severe as drought values in northern Kentucky. Fortunately, the broad nature of this trend curve is unlikely to significantly impact the kriging interpolation. </p> <br>
 
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/VX6OSHG.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/XQvPKTB.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
-</figure> <br>
+</figure>
+
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/BsgwwWk.jpeg" alt="LON" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/GWXSWWU.jpeg" alt="LAT" style="width:100%">
+  </div>
+</div> <br>
 
 <p> To display the spatial autocorrelation of the recorded values at weather stations, a semivariogram was created (Figure 6). Similarly, the semivariogram in Figure 6 illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
 
