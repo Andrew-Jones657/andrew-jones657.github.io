@@ -243,7 +243,7 @@
 </figure> <br>
 
 
-<p> Next, a trend analysis graph was created to assess any directional effects in the data. The analysis indicates a second-order trend, with Figure 5 illustrating an upward, U-shaped curve. This pattern suggests that drought values in central Kentucky are near the mean, while those in western and eastern Kentucky deviate significantly from it. Fortunately, the broad nature of this trend curve is unlikely to significantly impact the kriging interpolation. </p> <br>
+<p> Next, a trend analysis graph was created to assess whether directional effects exist in the dataset. This was achieved by creating a 3D scatterplot, and then assessing the relationship between both latitude and longitude with the drought values.  The analysis indicates a second-order trend, with Figure 5 illustrating an upward, U-shaped curve for both latitude and longitude. This pattern suggests that drought values in central Kentucky are near the mean, while those in western and eastern Kentucky deviate significantly from it. Similarly, drought values in southern Kentucky are not as severe as drought values in northern Kentucky. Fortunately, the broad nature of this trend curve is unlikely to significantly impact the kriging interpolation. </p> <br>
 
 
 <figure>
