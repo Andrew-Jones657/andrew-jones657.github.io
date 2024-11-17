@@ -110,6 +110,13 @@
     width: 100%;
   }
 }
+    .row {
+    display: flex;
+    }
+    .imgContainer{
+    float:left;
+    }
+    
     </style>
 </head>
 
