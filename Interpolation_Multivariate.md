@@ -255,8 +255,6 @@
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XQvPKTB.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
-<figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
-</figure>
 
  <div class="row">
   <div class="column">
@@ -265,7 +263,9 @@
   <div class="column">
     <img src="https://i.imgur.com/GWXSWWU.jpeg" alt="LAT" style="width:100%">
   </div>
-</div> <br>
+</div>
+<figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>    
+</figure>    <br>
 
 <p> To display the spatial autocorrelation of the recorded values at weather stations, a semivariogram was created (Figure 6). Similarly, the semivariogram in Figure 6 illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
 
