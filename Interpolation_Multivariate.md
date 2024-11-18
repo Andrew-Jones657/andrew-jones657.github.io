@@ -241,7 +241,7 @@
 </tbody>    
 </table> <br>
 
-<p> Kriging yields optimal results when the data adheres to a normal distribution. To evaluate the drought anomaly data for June 1999, a normal QQ plot was generated (Figure 4). This QQ plot reveals a noticeable curvature on the right side, indicating some degree of skewness. However, given the context of this study, the June 1999 drought anomaly values are expected to be compatible with ordinary kriging interpolation methods. In contrast, if these skewness and kurtosis values were present in a dataset related to critical resource mining, additional measures would be necessary to ensure the accuracy of the analysis. </p> <br>
+<p> Kriging yields optimal results when the data adheres to a normal distribution. To evaluate the drought anomaly data for June 1999, a normal QQ plot was generated (Figure 4). This QQ plot reveals a noticeable curvature on the right side, indicating some degree of skewness. However, given the context of this study, the June 1999 drought anomaly values are expected to be compatible with ordinary kriging interpolation methods.  </p> <br>
 
 
 <figure>
@@ -250,11 +250,13 @@
 </figure> <br>
 
 
-<p> Next, a trend analysis graph was created to assess whether directional effects exist in the dataset. This was achieved by creating a 3D scatterplot, and then assessing the relationship between both latitude and longitude with the drought values. Looking carefully, the 3D scatterplot reveals an outline of the shape of Kentucky. It is important to note that the low, red points are where drought anomalies are the most intense.   The analysis indicates a second-order trend, with Figure 5 illustrating an upward, U-shaped curve for both latitude and longitude. This pattern suggests that drought values in central Kentucky are near the mean, while those in western and eastern Kentucky deviate significantly from it. Similarly, drought values in southern Kentucky are not as severe as drought values in northern Kentucky. Fortunately, the broad nature of this trend curve is unlikely to significantly impact the kriging interpolation. </p> <br>
+<p> A trend analysis graph was created to determine if directional effects were present in the dataset. This was done by generating a 3D scatterplot to examine the relationship between latitude, longitude, and drought values. Upon closer inspection, the scatterplot reveals a shape resembling the outline of Kentucky. Notably, the low, red points indicate areas where drought anomalies are most severe. The analysis suggests a second-order trend, with Figure 5 showing an upward, U-shaped curve for both latitude and longitude. This pattern implies that drought values in central Kentucky are close to the mean, while those in western and eastern Kentucky show significant deviations. Similarly, the drought levels in southern Kentucky are less severe than those in northern Kentucky. </p> <br>
+    
+<p> The broad nature of this trend curve is unlikely to have a substantial effect on the kriging interpolation. If the trend effects (anisotropy) were extremely prominent, it would be possible to remove them, though doing so would limit the creation of other kriging models (e.g. standard error and prediction).   </p> <br>
 
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/XQvPKTB.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/Si8aGfA.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
  <div class="row">
   <div class="column">
     <img class="myImages" id="myImg" src="https://i.imgur.com/BsgwwWk.jpeg" alt="LON" style="width:100%">
@@ -266,7 +268,7 @@
 <figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>    
 </figure>    <br>
 
-<p> To display the spatial autocorrelation of the recorded values at weather stations, a semivariogram was created (Figure 6). Similarly, the semivariogram in Figure 6 illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
+<p> To visualize how the drought anomalies display spatial autocorrelation, a semivariogram was created (Figure 6). The semivariogram in illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -346,7 +348,9 @@
 <td> 1.93 </td>
 </tr>
 </tbody>
-</table>
+</table> <br>
+
+
 
 <p> Based on the standard error map in Figure 8 below, values around central Kentucky and eastern Kentucky display a more reliably predicted values than those found around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
 
