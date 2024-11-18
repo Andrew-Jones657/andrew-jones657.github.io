@@ -255,13 +255,12 @@
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XQvPKTB.jpeg" alt="Trend Analysis" style="width:100%;max-width:625px">
-
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/BsgwwWk.jpeg" alt="LON" style="width:100%">
+    <img class="myImages" id="myImg" src="https://i.imgur.com/BsgwwWk.jpeg" alt="LON" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/GWXSWWU.jpeg" alt="LAT" style="width:100%">
+    <img class="myImages" id="myImg" src="https://i.imgur.com/GWXSWWU.jpeg" alt="LAT" style="width:100%">
   </div>
 </div>
 <figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>    
