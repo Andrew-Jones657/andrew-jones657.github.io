@@ -128,6 +128,8 @@
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
+<p> (something to transition into intent) </p> <br>
+
 <p> The intent of this project is to explore geostatistical and multivariate techniques on a large drought dataset. Much of this project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. 
     
 Aptly, this project is broken into two parts. 
