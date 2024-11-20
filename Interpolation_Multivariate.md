@@ -128,7 +128,11 @@
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
-<p> The intent of this project is to explore geostatistical and multivariate techniques on a continuous dataset with ratio values (<em> Establish that it is not an *ideal* dataset </em>). Much of this project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data from June of 1999 (so values include July 1998 - June 1999) in Kentucky using interpolation techniques, and the second looks at the entire dataset (July 1998 - June 2001) using multivariate statistical methods.   </p> <br>
+<p> The intent of this project is to explore geostatistical and multivariate techniques on a large drought dataset. Much of this project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. 
+    
+Aptly, this project is broken into two parts. 
+    
+The first looks at historical cumulative drought anomaly data from June of 1999 (so values include July 1998 - June 1999) in Kentucky using interpolation techniques, and the second looks at the entire dataset (July 1998 - June 2001) using multivariate statistical methods.   </p> <br>
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
@@ -292,6 +296,8 @@
     It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. 
     Additionally, kriging allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. 
     However, it is also more complicated to conduct than an IDW, both conceptually and in terms of computation power.  </p> <br>
+
+<p> (Variogram modeling plot here) </p> <br>
 
 <p> The trends in the kriging drought anomaly map are similar to those produced in the IDW map, though the interpolation is now more natural looking (Figure 7). The average and bulls eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p>
 
