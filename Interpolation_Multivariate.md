@@ -123,7 +123,7 @@
 
 <body>
 
-<h1 style="text-align:center;"> Interpolation Methods: Using Kriging on a Dataset </h1> <br>
+<h1 style="text-align:center;"> Interpolation Methods </h1> <br>
 
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
@@ -650,7 +650,7 @@ Rather than being a random uniform distribution of points, this means that objec
 <figcaption> Figure 21. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-
+<p> (Discuss Results here) </p>
 
 <h3> Links to R graphs </h3> <br>
 
