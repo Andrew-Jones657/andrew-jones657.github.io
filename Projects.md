@@ -130,7 +130,7 @@
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Finding an Ideal Site for a New Fire Station </h5>
+    <h5> Site Selection and Network Analysis: Finding an Ideal Site for a New Fire Station </h5>
     <p> A site selection analysis that incorporates some network analysis tools to find a site for a new or improved professional fire station in Warren County, KY. </p>
   </div>
 </div> <br>
@@ -146,8 +146,8 @@
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Interpolation Methods and Multivariate Statistics: Analyzing a Drought Anomaly Dataset (WIP) </h5>
-    <p> An analysis of drought anomaly data in Kentucky via interpolative methods and multivariate statistics. </p>
+    <h5> GIS Data Analysis: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques (WIP) </h5>
+    <p> An analysis of historical drought anomaly data in Kentucky which explores its spatial distribution and severity. </p>
   </div>
 </div> <br>
 
@@ -162,8 +162,8 @@
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Detecting Land Use Change with Remote Sensing Techniques (WIP) </h5>
-    <p> A remote sensing analysis that invesitages urban expansion in Boone County, Missouri betweeen 2004 and 2022. </p>
+    <h5> Remote Sensing Analysis: Detecting Land Use Change with Google Earth Engine (WIP) </h5>
+    <p> A remote sensing analysis that investigates urban expansion in Boone County, Missouri betweeen 2004 and 2022. </p>
   </div>
 </div> <br>
 
