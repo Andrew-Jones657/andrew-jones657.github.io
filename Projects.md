@@ -146,8 +146,8 @@
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> GIS Data Analysis: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques (WIP) </h5>
-    <p> An analysis of historical drought anomaly data in Kentucky which explores its spatial distribution and severity. </p>
+    <h5> Data Analysis in ArcGIS Pro and R: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques (WIP) </h5>
+    <p> An analysis of a historical drought anomaly dataset of Kentucky. This project explores the severity and spatial distribution of drought deficiencies at a single point in time (June 1999) with interpolation methods as well as trends across the entire dataset. </p>
   </div>
 </div> <br>
 
