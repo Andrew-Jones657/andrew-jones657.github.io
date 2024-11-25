@@ -301,8 +301,8 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
     However, it is more complicated to create than an IDW in several manners:   </p> <br>
 
 <p> <ol> 
-    <li> Kriging requires determining an ideal distance at which to model spatial autocorrelation.  </li>
-    <li> (expand) </li>
+    <li> Kriging requires determining an ideal distance at which to model spatial autocorrelation. Modeling spatial autocorrelation requires fitting a curve through the averaged values of the semivariogram.   </li>
+    <li>  </li>
 </ol> </p>
 
 <figure>
