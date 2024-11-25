@@ -123,24 +123,25 @@
 
 <body>
 
-<h1 style="text-align:center;"> Interpolation Methods </h1> <br>
+<h1 style="text-align:center;"> Data Analysis in ArcGIS Pro and R: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques </h1> <br>
+
+<p> GIS data analysis plays a crucial role in both interpolation methods and multivariate methods by enabling the visualization, interpretation, and prediction of spatial relationships between variables. In interpolation, GIS helps estimate unknown values at unmeasured locations by using techniques like Inverse Distance Weighting (IDW), Kriging, and spline interpolation to create continuous surfaces from sparse data points. In multivariate methods, GIS facilitates the analysis of complex interactions between multiple spatial and non-spatial variables through techniques such as Principal Component Analysis (PCA), cluster analysis, and multiple regression, allowing for the identification of patterns, correlations, and predictions based on spatially distributed factors. These methods, powered by GIS, are applied across various fields like environmental monitoring, urban planning, and public health to provide deeper insights and support decision-making. </p> <br>
+
+<h3> Interpolation Methods in GIS: IDW and Kriging Methods </h3> <br>
 
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
 <p> (something to transition into intent) </p> <br>
 
-<p> The intent of this project is to explore geostatistical and multivariate techniques on a large drought dataset. Much of this project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. 
-    
-Aptly, this project is broken into two parts. 
-    
-The first looks at historical cumulative drought anomaly data from June of 1999 (so values include July 1998 - June 1999) in Kentucky using interpolation techniques, and the second looks at the entire dataset (July 1998 - June 2001) using multivariate statistical methods.   </p> <br>
+<p> The intent of this project is to explore geostatistical and multivariate techniques on a large drought dataset. Much of this project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. Aptly, this project is broken into two parts. 
+The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
 <p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data.  </p> <br>
 
-<p> The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. To begin, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). </p> <br>
+<p> The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. To begin, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). A simplified version of the dataset can be found here (link): this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ei7BZYD.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
@@ -179,7 +180,7 @@ The first looks at historical cumulative drought anomaly data from June of 1999 
 
 <p> (visual of Average and Bull's Eye effect) </p> <br>
 
-<p> Before creating a kriging interpolation model, exploratory data analysis is necessary. This includes a number of statistical measures, such as histograms, descriptive statistics, QQplots, semivariograms, and trend analyses for the June 1999 values.  </p> <br>
+<p> Before creating a kriging interpolation model, exploratory data analysis is necessary to assess whether a dataset is . This includes a number of statistical measures, such as histograms, descriptive statistics, QQplots, semivariograms, and trend analyses for the June 1999 values.  </p> <br>
 
 <h3> Exploratory Data Analysis </h3> <br>
 
@@ -278,7 +279,7 @@ The first looks at historical cumulative drought anomaly data from June of 1999 
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/EbNdkPI.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
-<figcaption> Figure 6. Semivariogram of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
+<figcaption> Figure 6. Semivariogram Cloud of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
 </figure> <br>
 
 
@@ -297,7 +298,17 @@ The first looks at historical cumulative drought anomaly data from June of 1999 
 <p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must setup up an explicit function to describe the spatial autocorrelation.  
     It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. 
     Additionally, kriging allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. 
-    However, it is more complicated to create than an IDW (expand).  </p> <br>
+    However, it is more complicated to create than an IDW in several manners:   </p> <br>
+
+<p> <ol> 
+    <li> Kriging requires determining an ideal distance at which to model spatial autocorrelation.  </li>
+    <li> (expand) </li>
+</ol> </p>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/j2TlB49.png" alt="IDWvKriging" style="width:100%;max-width:625px">
+<figcaption> Figure ?. IDW vs Kriging   </figcaption>
+</figure> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -434,7 +445,9 @@ The first looks at historical cumulative drought anomaly data from June of 1999 
 
 <p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p> <br>
 
-<h3> Introducing Multivariate Methods </h3>
+<p>  </p>
+
+<h3> Introducing Multivariate Methods: Agglomerative Clustering, K-Means, and Principle Component Analysis </h3> <br>
 
 <p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. Moving forwads, data will be prepared and analyzed in RStudio. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
 
@@ -699,8 +712,8 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Table 5. </p>
 <p> Table 6. </p>
 <h3> References </h3> <br>
-<p> https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
-<p>  </p>
+<p> Team, P. W. (n.d.). <em>Climate Division Map: NOAA Physical Sciences Laboratory</em>. https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
+<p> Posts, V. M. (2018, September 6).<em>Difference between IDW and Kriging – Variogram graph. Trang Vo</em>. https://trangthuyvo.wordpress.com/2018/09/05/difference-between-idw-and-kriging-variogram-graph/ </p>
 <p>  </p>
 <p>  </p>
 
