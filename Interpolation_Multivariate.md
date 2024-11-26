@@ -170,7 +170,8 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 
 <p> <em> Analysis of accuracy </em> refers to the examination of errors—the differences between predicted and observed values at known locations. This analysis is conducted through validation and cross-validation. Deterministic methods like IDW are limited to accuracy analysis, focusing solely on prediction accuracy based on the sample data. In contrast, <em> analysis of uncertainty </em> evaluates the trustworthiness of predicted values and the user’s confidence in them. This requires a measure of uncertainty alongside the prediction surface, which is typically limited to stochastic interpolation methods such as kriging. </p> <br>
 
-<p> (A visual comparing the two concepts here?) </p> <br>
+
+
 
 <p> The prediction accuracy of the IDW surface can be assessed using <em> validation </em> or <em> cross-validation </em> to identify errors. Validation involves sampling a subset of data to optimize the model, while cross-validation is used with smaller sample sizes. In cross-validation, each data point is removed one at a time, and the remaining points are used to make predictions for that removed point. This process is repeated for each point. While cross-validation is the default method for kriging, it is not applied to IDW surfaces.  </p> <br>
 
@@ -178,7 +179,7 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 
 <p> Several limitations of the IDW model must be considered. Major limitations include the average effect and the bull’s eye effect. If some values used for interpolation fall outside the threshold distance from any samples, they will not produce a valid surface, making it difficult to accurately interpolate around outliers and edge values. Additionally, if too few points are selected, proper continuity may not be achieved. In IDW, each point carries the same weight, which can skew results when particularly high or low values are present, leading to the "bull's eye" effect—where distant points create distance decay circles that fail to accurately represent the area being studied. Furthermore, the range of interpolated values cannot exceed the number of observed values. To mitigate edge effects, it is crucial to have values positioned along the edges of the study area, although this is challenging in practice. </p> <br>
 
-<p> (visual of Average and Bull's Eye effect) </p> <br>
+<p> (visual of Average and Bull's Eye effect) </p> <br> 
 
 <p> Before creating a kriging interpolation model, exploratory data analysis is necessary to assess whether a dataset is . This includes a number of statistical measures, such as histograms, descriptive statistics, QQplots, semivariograms, and trend analyses for the June 1999 values.  </p> <br>
 
@@ -286,7 +287,7 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 
 <h3> Ordinary Kriging </h3> <br>
 
-<p> Ordinary kriging is a stochastic method used for spatial interpolation and modeling. Compared to the deterministic IDW method, kriging has a few underlieing assumptions concerning the data. </p> <br>
+<p> Ordinary kriging is a stochastic method used for spatial interpolation and modeling. Compared to the deterministic IDW method, kriging has a few underlieing assumptions concerning the data (Figure ?). </p> <br>
     <ol>
     <li> The interpolation surface has a constant mean, with no underlieing trend. </li>
     <li> The data arise from a stochastic stationary process. </li>
@@ -294,6 +295,11 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
     <li> The semivariogram consists of a basic mathematical model with some clearly defined user parameters. </li>
     <li> The same variograms is applied over the entire study area. </li>
     </ol> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/j2TlB49.png" alt="IDWvKriging" style="width:100%;max-width:625px">
+<figcaption> Figure ?. IDW vs Kriging   </figcaption>
+</figure> <br>
     
 <p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must setup up an explicit function to describe the spatial autocorrelation.  
     It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. 
@@ -304,11 +310,6 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
     <li> Kriging requires determining an ideal distance at which to model spatial autocorrelation. Modeling spatial autocorrelation requires fitting a curve through the averaged values of the semivariogram.   </li>
     <li>  </li>
 </ol> </p>
-
-<figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/j2TlB49.png" alt="IDWvKriging" style="width:100%;max-width:625px">
-<figcaption> Figure ?. IDW vs Kriging   </figcaption>
-</figure> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -445,9 +446,9 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 
 <p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p> <br>
 
-<p>  </p>
+<p>  </p> <br>
 
-<h3> Introducing Multivariate Methods: Agglomerative Clustering, K-Means, and Principle Component Analysis </h3> <br>
+<h3> Introducing Multivariate Methods: Agglomerative Clustering and K-Means </h3> <br>
 
 <p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. Moving forwads, data will be prepared and analyzed in RStudio. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
 
