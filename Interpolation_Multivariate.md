@@ -258,7 +258,7 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 </figure> <br>
 
 
-<p> A trend analysis graph was created to determine if directional effects were present in the dataset. This was done by generating a 3D scatterplot to examine the relationship between latitude, longitude, and drought values. Upon closer inspection, the scatterplot reveals a shape resembling the outline of Kentucky. Notably, the low, red points indicate areas where drought anomalies are most severe. The analysis suggests a second-order trend, with Figure 5 showing an upward, U-shaped curve for both latitude and longitude. This pattern implies that drought values in central Kentucky are close to the mean, while those in western and eastern Kentucky show significant deviations. Similarly, the drought levels in southern Kentucky are less severe than those in northern Kentucky. </p> <br>
+<p> A trend analysis graph was created to determine if directional effects were present in the dataset. This was done by generating a 3D scatterplot to examine the relationship between latitude, longitude, and drought values. Upon closer inspection, the scatterplot reveals a shape resembling the outline of Kentucky. Notably, the low, red points indicate areas where drought anomalies are most severe. The analysis suggests a second-order trend, with Figure 5 showing an upward, U-shaped curve for both latitude and longitude. This pattern implies that drought values in central Kentucky are close to the mean, while those in western and eastern Kentucky show significant deviations from the mean. Similarly, the drought levels in southern Kentucky are less severe than those in northern Kentucky. </p> <br>
     
 <p> The broad nature of this trend curve is unlikely to have a substantial effect on the kriging interpolation. If the trend effects (anisotropy) were extremely prominent, it would be possible to remove them, though doing so would limit the creation of other kriging models (e.g. standard error and prediction).   </p> <br>
 
@@ -276,7 +276,7 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 <figcaption> Figure 5. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>    
 </figure>    <br>
 
-<p> To visualize how the drought anomalies display spatial autocorrelation, a semivariogram was created (Figure 6). The semivariogram in illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
+<p> To visualize how the drought anomalies display spatial autocorrelation, a semivariogram was created (Figure 6). The semivariogram illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/EbNdkPI.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -287,45 +287,24 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 
 <h3> Ordinary Kriging </h3> <br>
 
-<p> Ordinary kriging is a stochastic method used for spatial interpolation and modeling. Compared to the deterministic IDW method, kriging has a few underlieing assumptions concerning the data (Figure ?). </p> <br>
+<p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must create an explicit function to model the spatial autocorrelation with a semivariogram. Kriging is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. Additionally, kriging allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. Compared to the deterministic IDW method, kriging has several assumptions concerning the underlying dataset. </p> <br>
     <ol>
     <li> The interpolation surface has a constant mean, with no underlieing trend. </li>
     <li> The data arise from a stochastic stationary process. </li>
     <li> The variation of the surface is the same in each direction (also known as isotropic).  </li>
-    <li> The semivariogram consists of a basic mathematical model with some clearly defined user parameters. </li>
+    <li> The semivariogram consists of a mathematical model with clearly defined user parameters. </li>
     <li> The same variograms is applied over the entire study area. </li>
     </ol> <br>
 
+<p> The differences between kriging and the idw model are visualized in the illustration below (Figure ?).  </p>
+
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/j2TlB49.png" alt="IDWvKriging" style="width:100%;max-width:625px">
-<figcaption> Figure ?. IDW vs Kriging   </figcaption>
+<figcaption> Figure ?. Kriging vs IDW Interpolation Models (Posts, 2018)   </figcaption>
 </figure> <br>
+
+<p> The parameters below were used to model the semivariogram for kriging interpolation.  </p> <br>
     
-<p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must setup up an explicit function to describe the spatial autocorrelation.  
-    It is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. 
-    Additionally, kriging allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. 
-    However, it is more complicated to create than an IDW in several manners:   </p> <br>
-
-<p> <ol> 
-    <li> Kriging requires determining an ideal distance at which to model spatial autocorrelation. Modeling spatial autocorrelation requires fitting a curve through the averaged values of the semivariogram.   </li>
-    <li>  </li>
-</ol> </p>
-
-<figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
-<figcaption> Figure ?. The Modeled Semivariogram   </figcaption>
-</figure> <br>
-
-<p> The trends in the kriging drought anomaly map are similar to those produced in the IDW map, though the interpolation is now more natural looking (Figure 7). The average and bulls eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p>
-
-
-<figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
-<figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
-</figure> <br>
-
-
-
 <table class="tablecenter"> <caption> Table 2. Ordinary Kriging Parameters </caption>
 <thead>
 <tr>
@@ -373,6 +352,22 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 </tbody>
 </table> <br>
 
+<p> The modeled semivariogram is presented below (Figure ?).  </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
+<figcaption> Figure ?. The Modeled Semivariogram   </figcaption>
+</figure> <br>
+
+
+<p> The trends in the kriging drought anomaly map are similar to those produced in the IDW map, though the interpolation is now more natural looking (Figure 7). The average and bulls eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p>
+
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
+<figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
+</figure> <br>
 
 
 <p> Based on the standard error map in Figure 8 below, values around central Kentucky and eastern Kentucky display a more reliably predicted values than those found around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
