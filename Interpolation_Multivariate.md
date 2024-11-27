@@ -127,15 +127,16 @@
 
 <p> GIS data analysis plays a crucial role in both interpolation methods and multivariate methods by enabling the visualization, interpretation, and prediction of spatial relationships between variables. In interpolation, GIS helps estimate unknown values at unmeasured locations by using techniques like Inverse Distance Weighting (IDW), Kriging, and spline interpolation to create continuous surfaces from sparse data points. In multivariate methods, GIS facilitates the analysis of complex interactions between multiple spatial and non-spatial variables through techniques such as Principal Component Analysis (PCA), cluster analysis, and multiple regression, allowing for the identification of patterns, correlations, and predictions based on spatially distributed factors. These methods, powered by GIS, are applied across various fields like environmental monitoring, urban planning, and public health to provide deeper insights and support decision-making. </p> <br>
 
-<h3> Interpolation Methods in GIS: IDW and Kriging Methods </h3> <br>
+<h3> Interpolation Methods in GIS: IDW and Kriging Interpolation </h3> <br>
 
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
 <p> (something to transition into intent) </p> <br>
 
-<p> The intent of this project is to explore geostatistical and multivariate techniques on a large drought dataset. Much of this project is focused on data analysis, as it also incorporates R statistical programming langauge to create many of the plots. Aptly, this project is broken into two parts. 
-The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
+<p> The intent of this project is to explore a large drought dataset with data analysis techniques. The underlying dataset, in particular, is realistic in the sense that it has some degree of skewness, underlieing trends, negative values, and involves physically collected data. To conduct the data analysis, ArcGIS Pro and R statistical programming language are used. </p> <br>
+    
+<p> Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
@@ -359,26 +360,6 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 <figcaption> Figure ?. The Modeled Semivariogram   </figcaption>
 </figure> <br>
 
-
-<p> The trends in the kriging drought anomaly map are similar to those produced in the IDW map, though the interpolation is now more natural looking (Figure 7). The average and bulls eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p>
-
-
-
-<figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
-<figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
-</figure> <br>
-
-
-<p> Based on the standard error map in Figure 8 below, values around central Kentucky and eastern Kentucky display a more reliably predicted values than those found around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
-
-<figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/LnitCej.jpeg" alt="KrigingSTDE" style="width:100%;max-width:625px">
-<figcaption> Figure 8. Ordinary Kriging Standard Errors of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
-</figure> <br>
-
-
-
 <table class="tablecenter"> <caption> Table 3. Cross Validation Statistics </caption>
 <thead> 
 <tr>
@@ -414,7 +395,26 @@ The first looks at historical cumulative drought anomaly data by June of 1999 in
 </tbody>
 </table> <br>
 
-<p> Figure 9 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold, which is the median value for June 1999. The areas that require drought emergency response are primarily in northeastern Kentucky, though portions of central Kentucky also have a high probability crossing the threshold. This area tends to have a higher probability (between 70% and 100%) of crossing the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
+
+<p> The trends in the kriging drought anomaly map are similar to those produced in the IDW map, though the interpolation is now more natural looking (Figure 7). The average and bulls eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p> <br>
+
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/5IDy5kN.jpeg" alt="Kriging" style="width:100%;max-width:625px">
+<figcaption> Figure 7. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
+</figure> <br>
+
+
+<p> A powerful capability of kriging is the ability to create a model that displays the standard error of the kriging interpolation. Based on the standard error map in Figure 8 below, values around central Kentucky and eastern Kentucky display a more reliably predicted values than those found around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/LnitCej.jpeg" alt="KrigingSTDE" style="width:100%;max-width:625px">
+<figcaption> Figure 8. Ordinary Kriging Standard Errors of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>
+</figure> <br>
+
+
+<p>  Figure 9 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold, which is the median value for June 1999. The areas that require drought emergency response are primarily in northeastern Kentucky, though portions of central Kentucky also have a high probability crossing the threshold. This area tends to have a higher probability (between 70% and 100%) of crossing the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/v2cImXo.jpeg" alt="KrigingProb" style="width:100%;max-width:625px">
