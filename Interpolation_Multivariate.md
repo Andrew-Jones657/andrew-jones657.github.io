@@ -171,16 +171,17 @@
 
 <p> <em> Analysis of accuracy </em> refers to the examination of errors—the differences between predicted and observed values at known locations. This analysis is conducted through validation and cross-validation. Deterministic methods like IDW are limited to accuracy analysis, focusing solely on prediction accuracy based on the sample data. In contrast, <em> analysis of uncertainty </em> evaluates the trustworthiness of predicted values and the user’s confidence in them. This requires a measure of uncertainty alongside the prediction surface, which is typically limited to stochastic interpolation methods such as kriging. </p> <br>
 
-
-
-
 <p> The prediction accuracy of the IDW surface can be assessed using <em> validation </em> or <em> cross-validation </em> to identify errors. Validation involves sampling a subset of data to optimize the model, while cross-validation is used with smaller sample sizes. In cross-validation, each data point is removed one at a time, and the remaining points are used to make predictions for that removed point. This process is repeated for each point. While cross-validation is the default method for kriging, it is not applied to IDW surfaces.  </p> <br>
 
 <p> The <em>trustworthiness </em> of the IDW surface cannot be evaluated using IDW alone, as it lacks a measure of uncertainty; being a deterministic model, it does not account for randomness. To assess the trustworthiness of the interpolation model, a stochastic method like kriging must be employed.  </p> <br>
 
 <p> Several limitations of the IDW model must be considered. Major limitations include the average effect and the bull’s eye effect. If some values used for interpolation fall outside the threshold distance from any samples, they will not produce a valid surface, making it difficult to accurately interpolate around outliers and edge values. Additionally, if too few points are selected, proper continuity may not be achieved. In IDW, each point carries the same weight, which can skew results when particularly high or low values are present, leading to the "bull's eye" effect—where distant points create distance decay circles that fail to accurately represent the area being studied. Furthermore, the range of interpolated values cannot exceed the number of observed values. To mitigate edge effects, it is crucial to have values positioned along the edges of the study area, although this is challenging in practice. </p> <br>
 
-<p> (visual of Average and Bull's Eye effect) </p> <br> 
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/gXzBwVP.png" alt="IDW" style="width:100%;max-width:625px">
+<figcaption> Figure ?. The Bull's Eye Effect  </figcaption>
+</figure> <br>
 
 <p> Before creating a kriging interpolation model, exploratory data analysis is necessary to assess whether a dataset is . This includes a number of statistical measures, such as histograms, descriptive statistics, QQplots, semivariograms, and trend analyses for the June 1999 values.  </p> <br>
 
