@@ -660,7 +660,13 @@ Rather than being a random uniform distribution of points, this means that objec
 <figcaption> Figure 21. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> (Discuss Results here) </p>
+<p> Having observed two different methods of multivariate clustering, two different results summarized statewide trends regarding drought anomalies.  </p> <br>
+
+<p> </p> <br>
+
+<p> </p> <br>
+
+<p> Further graphical and mapping enhancements may be added to this project in the future. </p> <br>
 
 <h3> Links to R graphs </h3> <br>
 
