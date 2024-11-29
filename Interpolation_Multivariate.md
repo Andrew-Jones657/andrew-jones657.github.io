@@ -603,7 +603,7 @@ Rather than being a random uniform distribution of points, this means that objec
 
 
 
-<p> Table 6 below presents the average silhouette width with clusters up to k=6. The best fit does occur at k=2, as it has the highest average silhouette width. </p> <br>
+<p> Table 6 below presents the average silhouette width with clusters up to k=6. The best fit occurs at k=2, as it has the highest average silhouette width. </p> <br>
 
 <table class="tablecenter"> <caption> Table 6. Table of Average Silhouette Width Scores </caption>
 <thead>
@@ -660,11 +660,13 @@ Rather than being a random uniform distribution of points, this means that objec
 <figcaption> Figure 21. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> Having observed two different methods of multivariate clustering, two different results summarized statewide trends regarding drought anomalies.  </p> <br>
+<h3> Discussion and Some Final Thoughts </h3>
 
-<p> </p> <br>
+<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. As stated earlier, this project required working with a somewhat difficult dataset. As it contained a large number of variables corresponding to different months, (expand) </p> <br>
 
-<p> </p> <br>
+<p>  </p> <br>
+
+<p>  </p> <br>
 
 <p> Further graphical and mapping enhancements may be added to this project in the future. </p> <br>
 
