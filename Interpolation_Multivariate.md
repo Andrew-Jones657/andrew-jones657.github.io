@@ -134,6 +134,13 @@
 
 <p> There are many ways to interpolate spatial data. The most common methods include trend surface analysis, inverse distance weighting, global polynomial, kriging, natural neighbor, and spline interpolation. In this project, inverse distance weighing and kriging will be implemented.   </p> <br>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/Ec0rGJq.png" alt="Interpolation Techniques" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Spatial Interpolation Techniques (Shrestha, 2023) </figcaption>
+</figure> <br>
+
+
+
 <p> The intent of this project is to explore a large drought dataset with data analysis techniques. The underlying dataset, in particular, is realistic in the sense that it has some degree of skewness, underlieing trends, negative values, and involves physically collected data. To conduct the data analysis, ArcGIS Pro and R statistical programming language are used. </p> <br>
     
 <p> Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
@@ -142,7 +149,7 @@
 
 <p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data.  </p> <br>
 
-<p> The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. To begin, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). A simplified version of the dataset can be found here (link): this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. </p> <br>
+<p> The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here </a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ei7BZYD.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
@@ -719,7 +726,7 @@ Rather than being a random uniform distribution of points, this means that objec
 <h3> References </h3> <br>
 <p> Team, P. W. (n.d.). <em>Climate Division Map: NOAA Physical Sciences Laboratory</em>. https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
 <p> Posts, V. M. (2018, September 6).<em>Difference between IDW and Kriging – Variogram graph. Trang Vo</em>. https://trangthuyvo.wordpress.com/2018/09/05/difference-between-idw-and-kriging-variogram-graph/ </p>
-<p>  </p>
+<p> Shrestha, D. (2023, February 28). <em> What is Spatial Interpolation? What are the different methods of Interpolation used in GIS?</em> https://www.linkedin.com/pulse/what-spatial-interpolation-different-methods-used-gis-dinesh-shrestha/  </p>
 <p>  </p>
 
 
