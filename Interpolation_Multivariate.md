@@ -127,6 +127,11 @@
 
 <p> GIS data analysis plays a crucial role in both interpolation methods and multivariate methods by enabling the visualization, interpretation, and prediction of spatial relationships between variables. In interpolation, GIS helps estimate unknown values at unmeasured locations by using techniques like Inverse Distance Weighting (IDW), Kriging, and spline interpolation to create continuous surfaces from sparse data points. In multivariate methods, GIS facilitates the analysis of complex interactions between multiple spatial and non-spatial variables through techniques such as Principal Component Analysis (PCA), cluster analysis, and multiple regression, allowing for the identification of patterns, correlations, and predictions based on spatially distributed factors. These methods, powered by GIS, are applied across various fields like environmental monitoring, urban planning, and public health to provide deeper insights and support decision-making. </p> <br>
 
+<p> The intent of this project is to explore a large drought dataset with data analysis techniques. The underlying dataset, in particular, is realistic in the sense that it has some degree of skewness, underlieing trends, negative values, and involves physically collected data. To conduct the data analysis, ArcGIS Pro and R statistical programming language are used. </p> <br>
+
+<p> Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
+
+
 <h3> Interpolation Methods in GIS: IDW and Kriging Interpolation </h3> <br>
 
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
@@ -139,17 +144,11 @@
 <figcaption> Figure ?. Spatial Interpolation Techniques (Shrestha, 2023) </figcaption>
 </figure> <br>
 
-
-
-<p> The intent of this project is to explore a large drought dataset with data analysis techniques. The underlying dataset, in particular, is realistic in the sense that it has some degree of skewness, underlieing trends, negative values, and involves physically collected data. To conduct the data analysis, ArcGIS Pro and R statistical programming language are used. </p> <br>
-    
-<p> Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
-
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
-<p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data.  </p> <br>
+<p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data. The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces.   </p> <br>
 
-<p> The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here </a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. </p> <br>
+<p> First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here </a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ei7BZYD.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
