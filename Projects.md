@@ -133,7 +133,7 @@
     <h5> Site Selection and Network Analysis: Finding an Ideal Site for a New Fire Station </h5>
     <p> A site selection analysis that incorporates some network analysis tools to find a site for a new or improved professional fire station in Warren County, KY. </p>
   </div>
-</div> <br>
+</div> 
 
 <div class="line"></div>
 
@@ -149,7 +149,7 @@
     <h5> Data Analysis in ArcGIS Pro and R: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques (WIP) </h5>
     <p> An analysis of a historical drought anomaly dataset of Kentucky. This project explores the severity and spatial distribution of drought deficiencies at a single point in time (June 1999) with interpolation methods as well as trends across the entire dataset. </p>
   </div>
-</div> <br>
+</div> 
 
 <div class="line"></div>
 
@@ -165,7 +165,7 @@
     <h5> Remote Sensing Analysis: Detecting Land Use Change with Google Earth Engine (WIP) </h5>
     <p> A remote sensing analysis that investigates urban expansion in Boone County, Missouri betweeen 2004 and 2022. </p>
   </div>
-</div> <br>
+</div> 
 
 
 
