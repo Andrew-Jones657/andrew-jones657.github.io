@@ -668,11 +668,7 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <h3> Discussion and Some Final Thoughts </h3>
 
-<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. As stated earlier, this project required working with a somewhat difficult dataset. As it contained a large number of variables corresponding to different months, (expand) </p> <br>
-
-<p>  </p> <br>
-
-<p>  </p> <br>
+<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. Like the other projects, this project was sensitive to user-selected parameters. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters would have created a different model -- the final model was selected as the best overall model of those created. Likewise, if for instance, three clusters were selected under k-means or aggolomerative clustereing, then that may have revealed a substantially different underlying trend concerning drought deficiencies in Kentucky.   </p> <br>
 
 <p> Further graphical and mapping enhancements may be added to this project in the future. </p> <br>
 
