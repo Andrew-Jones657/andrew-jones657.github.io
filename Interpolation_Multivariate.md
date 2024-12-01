@@ -117,7 +117,7 @@
     float:left;
     }
     
-    </style>
+</style>
 </head>
 
 
@@ -131,6 +131,9 @@
 
 <p> Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
 
+<h3> Drought Anomaly Data for this Project </h3> <br>
+
+<p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data. The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. Later, multivariate clustering methods will be used to evaluate trends that characterize the drought anomalies recorded by each weather station and group them into clusters.  </p> <br>
 
 <h3> Interpolation Methods in GIS: IDW and Kriging Interpolation </h3> <br>
 
@@ -144,9 +147,7 @@
 <figcaption> Figure ?. Spatial Interpolation Techniques (Shrestha, 2023) </figcaption>
 </figure> <br>
 
-<h3> Drought Anomaly Data for this Project </h3> <br>
 
-<p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data. The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces.   </p> <br>
 
 <p> First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here </a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. </p> <br>
 
