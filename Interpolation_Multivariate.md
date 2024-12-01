@@ -135,6 +135,8 @@
 
 <p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data. The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. Later, multivariate clustering methods will be used to evaluate trends that characterize the drought anomalies recorded by each weather station and group them into clusters.  </p> <br>
 
+<p> Map of Weather Stations </p>
+
 <h3> Interpolation Methods in GIS: IDW and Kriging Interpolation </h3> <br>
 
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
@@ -161,7 +163,7 @@
 
 <p> However, there are limitations within the dataset that should be addressed. The study area is bounded by Kentucky’s borders, meaning that significant drought values occurring just outside the state will not be included in the interpolation model. Additionally, there are few weather stations along the edges of Kentucky, which may lead to increased error in those areas. To mitigate these edge effects, a buffer could be applied around Kentucky's boundary before running the interpolation model. Ideally, incorporating data from weather stations in neighboring states would further enhance the analysis by reducing edge effects.  </p> <br>
 
-<h3> Inverse Distanced Weighed Interpolation  </h3> <br>
+<h3> Inverse Distanced Weighted Interpolation  </h3> <br>
 
 <p> Next, an inverse distance weighted (IDW) surface can be created to represent the drought anomaly values. IDW is one of the simplest interpolation methods, though it can be sensitive to parameter choices. These deterministic interpolation models are known as "exact interpolators" because the predicted values at known locations exactly match the observed values. Because they are deterministic, IDWs assume that the spatial relationships in the data are well understood; in this case, weights are calculated using a mathematical function based on distance decay. Creating an informative IDW requires expert knowledge and careful consideration of parameters such as search distance and the number of neighbors. The IDW surface depicting drought anomalies is shown in Figure 2 below. </p> <br>
 
