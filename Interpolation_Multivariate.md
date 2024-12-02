@@ -702,36 +702,37 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Figure 1. Kentucky Weather Stations and Climate Divisions  </p>
 <p> Figure 2. Spatial Interpolation Techniques (Shrestha, 2023)  </p>
 <p> Figure 3. Cumulative Drought Values by Weather Station from July 1998 to June 1999  </p>
-<p> Figure 4. </p>
-<p> Figure 5. </p>
-<p> Figure 6. </p>
-<p> Figure 7. </p>
-<p> Figure 8. </p>
-<p> Figure 9. </p>
-<p> Figure 10. </p>
-<p> Figure 11. </p>
-<p> Figure 12. </p>
-<p> Figure 13. </p>
-<p> Figure 14. </p>
-<p> Figure 15. </p>
-<p> Figure 16. </p>
-<p> Figure 17. </p>
-<p> Figure 18. </p>
-<p> Figure 19. </p>
-<p> Figure 20. </p>
-<p> Figure 21. </p>
-<p> Figure 22. </p>
-<p> Figure 23. </p>
-<p> Figure 24. </p>
-<p> Figure 25. </p>
-<p> Figure 26. </p>
-<p> Figure 27. </p>
-<p> Table 1. </p>
-<p> Table 2. </p>
-<p> Table 3. </p>
-<p> Table 4. </p>
-<p> Table 5. </p>
-<p> Table 6. </p>
+<p> Figure 4. IDW of Cumulative Drought Anomalies from July 1998 to June 1999  </p>
+<p> Figure 5. The Bull's Eye Effect </p>
+<p> Figure 6. Histogram of Cumulative Drought Anomalies from July 1998 to June 1999  </p>
+<p> Figure 7. QQPlot of Cumulative Drought Anomalies from July 1998 to June 1999 </p>
+<p> Figure 8. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999 </p>
+<p> Figure 9. Semivariogram Cloud of Cumulative Drought Anomalies from July 1998 to June 1999 </p>
+<p> Figure 10. Kriging vs IDW Interpolation Models (Posts, 2018) </p>
+<p> Figure 11. The Modeled Semivariogram  </p>
+<p> Figure 12. Ordinary Kriging of Cumulative Drought Anomalies from July 1998 to June 1999  </p>
+<p> Figure 13. Ordinary Kriging Standard Errors of Cumulative Drought Anomalies from July 1998 to June 1999 </p>
+<p> Figure 14. Probability Kriging of Cumulative Drought Anomalies from July 1998 to June 1999  </p>
+<p> Figure 15. Cumulative Drought by Weather Station in Kentucky from July 1998 to June 2001  </p>
+<p> Figure 16. Dendrogram of Cumulative Drought Anomalies from July 1998 to June 2001  </p>
+<p> Figure 17. Time Series Plot of Agglomerative Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001  </p>
+<p> Figure 18. Agglomerative Clustering Map of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001  </p>
+<p> Figure 19. Analysis of K-means Clustering Quality  </p>
+<p> Figure 20. Ideal Number of Clusters under the Elbow Method </p>
+<p> Figure 21. Ideal Number of Clusters under the Silhouette Method  </p>
+<p> Figure 22. Ideal Number of Clusters under the Gap Statistic Method  </p>
+<p> Figure 23. Ideal Number of Clusters under the Consensus Algorithm </p>
+<p> Figure 24. Cluster Silhouette Plot  </p>
+<p> Figure 25. Cluster Variance Plot  </p>
+<p> Figure 26. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001  </p>
+<p> Figure 27. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001  </p>
+<p> Table 1. Descriptive Statistics for the Drought Anomalies in June of 1999  </p>
+<p> Table 2. Ordinary Kriging Parameters  </p>
+<p> Table 3. Cross Validation Statistics  </p>
+<p> Table 4. Dendrogram Parameters </p>
+<p> Table 5. Between Sum of Squares over Total Sum of Squares Partition Formula Table  </p>
+<p> Table 6. Table of Average Silhouette Width Scores  </p> <BR>
+
 <h3> References </h3> <br>
 
 <p> Team, P. W. (2020). <em>Climate Division Map: NOAA Physical Sciences Laboratory</em>. https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
