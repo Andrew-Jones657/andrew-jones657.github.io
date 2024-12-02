@@ -127,13 +127,15 @@
 
 <p> GIS data analysis plays a crucial role in both interpolation methods and multivariate methods by enabling the visualization, interpretation, and prediction of spatial relationships between variables. In interpolation, GIS helps estimate unknown values at unmeasured locations by using techniques like Inverse Distance Weighting (IDW), Kriging, and spline interpolation to create continuous surfaces from sparse data points. In multivariate methods, GIS facilitates the analysis of complex interactions between multiple spatial and non-spatial variables through techniques such as Principal Component Analysis (PCA), cluster analysis, and multiple regression, allowing for the identification of patterns, correlations, and predictions based on spatially distributed factors. These methods, powered by GIS, are applied across various fields like environmental monitoring, urban planning, and public health to provide deeper insights and support decision-making. </p> <br>
 
-<p> The intent of this project is to explore a large drought dataset with data analysis techniques. The underlying dataset, in particular, is realistic in the sense that it has some degree of skewness, underlieing trends, negative values, and involves physically collected data. To conduct the data analysis, ArcGIS Pro and R statistical programming language are used. </p> <br>
+<p> The intent of this project is to explore a large drought dataset with data analysis techniques. The underlying dataset, in particular, is realistic in the sense that it has some degree of skewness, underlieing trends, negative values, and involves physically collected data. To conduct data analysis, ArcGIS Pro and R statistical programming language are used. </p> <br>
 
-<p> Aptly, this project is broken into two parts. The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset, i.e. June 2001, using multivariate statistical methods.   </p> <br>
+<p> Aptly, this project is composed of two portions. The first looks at historical cumulative drought anomaly data by June of 1999 in Kentucky using interpolation techniques, and the second looks at the entire dataset using multivariate statistical methods.   </p> <br>
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
-<p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data. The dataset comprises 56 weather stations represented as points (Figure ?). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here </a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. These points will be interpolated to create drought anomaly surfaces. Later, multivariate clustering methods will be used to evaluate trends that characterize the drought anomalies recorded by each weather station and group them into clusters. Additionally, Kentucky's climate divisions are used as a backdrop; these climate divisions consist of counties with similar weather patterns.  </p> <br>
+<p> The drought dataset was collected between July 1998 and June 2001, and comprises 56 weather stations represented as points (Figure ?). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here</a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. Additionally, Kentucky's climate divisions are used as a backdrop; these climate divisions consist of counties with similar weather patterns. </p> <br>
+    
+<p> The dataset is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data.  These points will be interpolated to create drought anomaly surfaces. Later, multivariate clustering methods will be used to evaluate trends that characterize the drought anomalies recorded by each weather station and group them into clusters.  </p> <br>
 
 
 <figure>
@@ -147,7 +149,7 @@
 <p> Interpolation methods in GIS are vital techniques used to estimate values at unsampled locations within a geographic space based on known values from sampled points. These methods play a crucial role in generating continuous surfaces from discrete data points, facilitating spatial analysis and visualization. Common interpolation techniques include inverse distance weighting (IDW), which assigns weights to neighboring points based on their proximity; kriging, a geostatistical method that models spatial dependence; and spline interpolation, which fits a mathematical function through points to create a smooth surface. Each method has its strengths and applicability depending on the nature of the data and the spatial variability being analyzed, ensuring accurate representation and prediction in GIS applications ranging from environmental modeling to urban planning.
 </p> <br>
 
-<p> There are many ways to interpolate spatial data. The most common methods include trend surface analysis, inverse distance weighting, global polynomial, kriging, natural neighbor, and spline interpolation. In this project, inverse distance weighing and kriging will be implemented.   </p> <br>
+<p> There are many ways to interpolate spatial data. The most common methods include trend surface analysis, inverse distance weighting, global polynomial, kriging, natural neighbor, and spline interpolation. In this project, IDW and kriging models will be implemented to measure the spatial dispersion of drought anomalies in Kentucky.   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Ec0rGJq.png" alt="Interpolation Techniques" style="width:100%;max-width:625px">
@@ -156,15 +158,12 @@
 
 
 
-<p> First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1).  </p> <br>
+<p> First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 1). These are the drought deficiencies or surpluses recorded by each weather station as of June 1999. Notably, a clear pattern emerges: drought areas are clustered, with a notable transition from west to east. Western Kentucky, which typically experiences intense storms and more erratic weather, was largely free of drought or saw only minor decreases in rainfall. In contrast, eastern Kentucky, known for its higher frequency of rain showers, had multiple stations reporting precipitation deficiencies exceeding ten inches. These spatial patterns deviate from Kentucky’s usual precipitation trends, where western Kentucky often faces drought conditions and eastern Kentucky typically records higher rainfall levels, including orographic effects. </p>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ei7BZYD.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
 <figcaption> Figure 1. Cumulative Drought Values by Weather Station from July 1998 to June 1999 </figcaption>
 </figure> <br>
-
-
-<p> First, it’s important to examine the visual patterns of drought intensity in Kentucky as of June 1999 (Figure 1). A clear pattern emerges: drought areas are clustered, with a notable transition from west to east. Western Kentucky, which typically experiences intense storms and more erratic weather, was largely free of drought or saw only minor decreases in rainfall. In contrast, eastern Kentucky, known for its higher frequency of rain showers, had multiple stations reporting precipitation deficiencies exceeding ten inches. These spatial patterns deviate from Kentucky’s usual precipitation trends, where western Kentucky often faces drought conditions and eastern Kentucky typically records higher rainfall levels, including orographic effects. </p>
 
 <p> However, there are limitations within the dataset that should be addressed. The study area is bounded by Kentucky’s borders, meaning that significant drought values occurring just outside the state will not be included in the interpolation model. Additionally, there are few weather stations along the edges of Kentucky, which may lead to increased error in those areas. To mitigate these edge effects, a buffer could be applied around Kentucky's boundary before running the interpolation model. Ideally, incorporating data from weather stations in neighboring states would further enhance the analysis by reducing edge effects.  </p> <br>
 
@@ -727,7 +726,7 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Table 5. </p>
 <p> Table 6. </p>
 <h3> References </h3> <br>
-<p> Team, P. W. (n.d.). <em>Climate Division Map: NOAA Physical Sciences Laboratory</em>. https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
+<p> Team, P. W. (2020). <em>Climate Division Map: NOAA Physical Sciences Laboratory</em>. https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20 </p>
 <p> Posts, V. M. (2018, September 6).<em>Difference between IDW and Kriging – Variogram graph. Trang Vo</em>. https://trangthuyvo.wordpress.com/2018/09/05/difference-between-idw-and-kriging-variogram-graph/ </p>
 <p> Shrestha, D. (2023, February 28). <em> What is Spatial Interpolation? What are the different methods of Interpolation used in GIS?</em> https://www.linkedin.com/pulse/what-spatial-interpolation-different-methods-used-gis-dinesh-shrestha/  </p>
 <p>  </p>
