@@ -309,17 +309,17 @@
     <li> The data arise from a stochastic stationary process. </li>
     <li> The variation of the surface is the same in each direction (also known as isotropic).  </li>
     <li> The semivariogram consists of a mathematical model with clearly defined user parameters. </li>
-    <li> The same variograms is applied over the entire study area. </li>
+    <li> The same semivariogram is applied over the entire study area. </li>
     </ol> <br>
 
-<p> The differences between kriging and the idw model are visualized in the illustration below (Figure 10).  </p>
+<p> The differences between kriging and the idw model are visualized in the illustration below (Figure 10). Note that kriging uses the distance between each point to create a weighted value, whereas the IDW searches for a certain number of points and assigns a value of one for included values and zero for excluded values.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/j2TlB49.png" alt="IDWvKriging" style="width:100%;max-width:625px">
 <figcaption> Figure 10. Kriging vs IDW Interpolation Models (Posts, 2018)   </figcaption>
 </figure> <br>
 
-<p> The parameters below were used to model the semivariogram for kriging interpolation.  </p> <br>
+<p> The parameters below were used to model the semivariogram for kriging interpolation. This set of parameters was chosen from a set of 30 different kriging models, as it best matched the underlying dataset and produced the most balanced set of cross validation statistics.  </p> <br>
     
 <table class="tablecenter"> <caption> Table 2. Ordinary Kriging Parameters </caption>
 <thead>
@@ -368,7 +368,7 @@
 </tbody>
 </table> <br>
 
-<p> The modeled semivariogram is presented below (Figure 11).  </p> <br>
+<p> The modeled semivariogram is presented below (Figure 11). Note that it was an attempt to best fit through a difficult set of averaged values.   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -421,7 +421,7 @@
 </figure> <br>
 
 
-<p> A powerful capability of kriging is the ability to create a model that displays the standard error of the kriging interpolation. Based on the standard error map in Figure 13 below, values around central Kentucky and eastern Kentucky display a more reliably predicted values than those found around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
+<p> A useful capability of kriging is the ability to create a model that displays the standard error of the kriging interpolation. Based on the standard error map in Figure 13 below, drought deficiencies around central Kentucky and eastern Kentucky display reliable predicted values compared to those found around the edge of Kentucky. This is due to there being few weather stations along the edge of Kentucky, which means that there were fewer locations with drought values to use in the Kriging interpolation model. Ideally, weather stations outside of Kentucky would be included in a buffer to mitigate these higher standard error values, though such data are not easy to acquire in practice.  Table 3 reports the summary cross-validation statistics for the kriging model: while the mean and Root-Mean-Square are not quite at zero, the Root-Mean-Square standardized value is very close to one, indicating a good fit.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/LnitCej.jpeg" alt="KrigingSTDE" style="width:100%;max-width:625px">
@@ -491,8 +491,8 @@
 <td> 4 </td>    
 </tr>
 <tr>
-<td>  </td>
-<td>  </td>
+<td> Method </td>
+<td> Ward's D2 Algorithm </td>
 </tr>
 </tbody>
 </table>
@@ -501,7 +501,7 @@
 
 <p> The dendrogram displays the overall clustering results for four clusters, though since the dataset contains monthly information ranging from July 1998 to June 2001, it would be valuable to see how this clustered data changes from month to month. To accomplish this, the clustered data was transposed and used to create a time series graph of each cluster. </p> <br>
 
-<p> Observing the time series plot in Figure 17, it is evident that each cluster has a distinct pattern. The first cluster (x1) includes the weather stations that recorded the highest initial drought values. As time progressed, the red time series line for cluster 1 rose, indicating that the drought anomalies recorded by these weather stations were gradually dissipating. The line for cluster 2 (x2) in green shows the reverse trend from cluster 1. Initially, there was little drought recorded by these weather stations, but as time progressed, the line fell, suggesting that drought anomalies became more severe. In 1998, the line for cluster 3 (x3) roughly matches the cluster 2 line, though after this period, the two lines diverge. After 1998, Cluster 3 generally moves upwards, indicating an alleviation of drought conditions at those respective weather stations. Finally, the line for cluster 4 (x4) starts highest out of all the clusters and rises far above the rest until falling in the latter half of 2000 to meet cluster 3’s line. These weather stations experienced the least severe drought conditions. It is important to remember, however, that this a time series plot of standardized drought values; by June of 2001, every weather station was experiencing a deficiency in precipitation as depicted in figure ?. </p> <br>
+<p> Observing the time series plot in Figure 17, it is evident that each cluster has a distinct pattern, though some degree of symmetry is present. The first cluster (x1) includes the weather stations that recorded the highest initial drought values. As time progressed, the red time series line for cluster 1 rose, indicating that the drought anomalies recorded by these weather stations were gradually dissipating. The line for cluster 2 (x2) in green shows the reverse trend from cluster 1. Initially, there was little drought recorded by these weather stations, but as time progressed, the line fell, suggesting that drought anomalies became more severe. In 1998, the line for cluster 3 (x3) roughly matches the cluster 2 line, though after this period, the two lines diverge. After 1998, Cluster 3 generally moves upwards, indicating an alleviation of drought conditions at those respective weather stations. Finally, the line for cluster 4 (x4) starts highest out of all the clusters and rises far above the rest until falling in the latter half of 2000 to meet cluster 3’s line. These weather stations experienced the least severe drought conditions. It is important to remember, however, that this a time series plot of standardized drought values; by June of 2001, every weather station was experiencing a deficiency in precipitation as depicted in figure ?. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Z7oLU83.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
@@ -565,9 +565,6 @@
 <img class="myImages" id="myImg" src="https://i.imgur.com/7FeFH4f.jpeg" alt="AggMap" style="width:100%;max-width:625px">
 <figcaption> Figure 19. Analysis of K-means Clustering Quality   </figcaption>
 </figure> <br>
-
-
-<p> [img][/img] </p>
 
 <p> Figure 20 below depicts an “elbow method” graph, which displays the total within sum of squares as a function of the number of clusters. In other words, this is a essentially a graph of the TSS value on Table 5. The point containing the ideal number of clusters occurs where the slope of the line decreases and the “elbow” bends: at this point, adding another cluster does not substantially improve the BSS / TSS value. In this case, the bend is located at four clusters, where the function’s slope decreases. The “elbow” can be seen between two and four clusters.  </p> <br>
 
@@ -685,7 +682,8 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Histogram </p>
 <p> QQPlot </p>
 <p> Trend Analysis </p>
-<p> Variogram </p>
+<p> Variogram Cloud </p>
+<p> Modeled Variogram </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateDendrogramPlot.R"> Dendrogram </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateAggTimeSeries.R"> Agglormerative Clustering Time Series Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateElbowPlot.R"> Elbow Method Plot </a> </p>
