@@ -133,7 +133,15 @@
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
-<p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data. The dataset comprises 56 weather stations represented as points. These points will be interpolated to create drought anomaly surfaces. Later, multivariate clustering methods will be used to evaluate trends that characterize the drought anomalies recorded by each weather station and group them into clusters.  </p> <br>
+<p> The drought dataset was collected between July 1998 and June 2001. It is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data. The dataset comprises 56 weather stations represented as points (Figure ?). These points will be interpolated to create drought anomaly surfaces. Later, multivariate clustering methods will be used to evaluate trends that characterize the drought anomalies recorded by each weather station and group them into clusters. Additionally, Kentucky's climate divisions are used as a backdrop; these climate divisions consist of counties with similar weather patterns.  </p> <br>
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/N9HTp8v.jpeg" alt="Interpolation Techniques" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Kentucky Weather Stations and Climate Divisions </figcaption>
+</figure> <br>
+
+
 
 <p> Map of Weather Stations </p>
 
