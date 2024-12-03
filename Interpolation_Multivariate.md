@@ -368,10 +368,10 @@
 </tbody>
 </table> <br>
 
-<p> The modeled semivariogram is presented below (Figure 11). Note that it was an attempt to best fit through a difficult set of averaged values.   </p> <br>
+<p> The modeled semivariogram is presented below (Figure 11). Note that it was an attempt to best fit through a difficult set of averaged values. The line represents how spatial autocorrelation is measured through the study area.   </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/637kvtM.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/x65FQGE.png" alt="Modeled Semivariogram" style="width:100%;max-width:625px">
 <figcaption> Figure 11. The Modeled Semivariogram   </figcaption>
 </figure> <br>
 
@@ -559,10 +559,10 @@
 </tmain>
 </table>
 
-<p> (Plot data from cluster_analysis() </p> <br>
+<p> Using the "cluster_analysis" tool, each cluster center can be observed.  </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/7FeFH4f.jpeg" alt="AggMap" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/etJkfCt.jpeg" alt="AggMap" style="width:100%;max-width:625px">
 <figcaption> Figure 19. Analysis of K-means Clustering Quality   </figcaption>
 </figure> <br>
 
