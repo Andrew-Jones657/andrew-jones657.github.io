@@ -339,7 +339,7 @@
 </tr>
 <tr>
 <td> Nugget </td>
-<td> 6.8 </td>
+<td> 7.0024 </td>
 </tr>
 <tr>
 <td> Model Type </td>
@@ -368,11 +368,11 @@
 </tbody>
 </table> <br>
 
-<p> The modeled semivariogram is presented below (Figure 11). Note that it was an attempt to best fit through a difficult set of averaged values. The line represents how spatial autocorrelation is measured through the study area.   </p> <br>
+<p> The modeled semivariogram is presented below (Figure 11). The line represents how spatial autocorrelation is measured through the study area. Ideally, the function would run through and intersect with each of the averaged binned values -- this is not always easy to achieve in practice, particularly when accounting for directional effects.   </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/x65FQGE.png" alt="Modeled Semivariogram" style="width:100%;max-width:625px">
-<figcaption> Figure 11. The Modeled Semivariogram   </figcaption>
+<img class="myImages" id="myImg" src="https://i.imgur.com/5bngnme.png" alt="Modeled Semivariogram" style="width:100%;max-width:625px">
+<figcaption> Figure 11. The Modeled Semivariogram on ArcGIS Pro  </figcaption>
 </figure> <br>
 
 <table class="tablecenter"> <caption> Table 3. Cross Validation Statistics </caption>
