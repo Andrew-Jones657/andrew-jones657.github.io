@@ -13,7 +13,7 @@ font_import()
 windowsFonts()
 
 
-h <- drought_data %>%
+h <- drought_data %>% # Use a pipeline to pass and filter June 99 drought values into a histogram
   filter( JUN99 < 10) %>%
   ggplot( aes(x=JUN99)) +
     geom_histogram( bins=8, fill="#69b3a2", color="#e9ecef", alpha=0.9) +
