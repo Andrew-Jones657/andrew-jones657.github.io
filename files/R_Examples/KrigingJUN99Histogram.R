@@ -1,27 +1,17 @@
 library(ggplot2)
 library(tidyverse)
-library(hrbrthemes)
-library(magrittr)
 library(extrafont)
-install.packages(ggpubr)
 
 
 
-drought_data
+
+drought_data <- read.csv("path_to_dataset")
 
 fonts()
-
 loadfonts()
 font_import()
 windowsFonts()
 
-
-
-
-library(tidyverse)
-library(hrbrthemes)
-library(extrafont)
-library(magrittr)
 
 h <- drought_data %>%
   filter( JUN99 < 10) %>%
