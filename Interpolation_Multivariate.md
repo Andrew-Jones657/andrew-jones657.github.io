@@ -679,13 +679,13 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <h3> Links to R graphs </h3> <br>
 
-<p> Histogram </p>
-<p> QQPlot </p>
-<p> Trend Analysis </p>
-<p> Variogram Cloud </p>
-<p> Modeled Variogram </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/KrigingJUN99Histogram.R"> Histogram </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/KrigingJUN99QQPlot.R"> QQPlot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/KrigingTrendAnalysis.R"> Trend Analysis </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/KrigingVariogramCloud.R"> Variogram Cloud </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateDendrogramPlot.R"> Dendrogram </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateAggTimeSeries.R"> Agglormerative Clustering Time Series Plot </a> </p>
+<p> Cluster Analysis Plot </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateElbowPlot.R"> Elbow Method Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateSilhouettePlot.R"> Silhouette Method Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateGapStatisticPlot.R"> Gap Statistic Method Plot </a> </p>
