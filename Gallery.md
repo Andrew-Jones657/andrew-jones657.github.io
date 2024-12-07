@@ -76,7 +76,7 @@
         box-sizing: border-box;
         margin: -40px 0 0 -125px;
         background-color: #dccab1;
-        color: #000000;
+        color: #dccab1;
         text-align: center;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -229,7 +229,7 @@
 
 <p> 12/7/2024 </p> <br>
 
-<div class="line"></div>
+<div class="line"></div> <br>
 
 <div class="panel-container">
     <div class="panel-side esri-widget">
@@ -248,7 +248,7 @@
 <p> 10/21/2024 </p> <br>
 
 
-<div class="line"></div>
+<div class="line"></div> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ImFb6we.jpeg" alt="Louisville Minority Change" style="width:100%;max-width:625px">
