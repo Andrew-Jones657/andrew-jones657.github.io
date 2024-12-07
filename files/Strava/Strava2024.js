@@ -35,7 +35,7 @@
                     	},
                         map: map,
                         center: [-86.4463, 36.9913],
-                        zoom: 11,
+                        zoom: 9,
                         padding: {
                             right: 300
                         }
