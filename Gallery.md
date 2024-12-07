@@ -222,6 +222,15 @@
 
 <p> This page serves as a gallery of single-theme cartographic products that I have created. </p> <br>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/r7drTrN.jpeg" alt="Warren County 2024 Presidential" style="width:100%;max-width:625px">
+<figcaption> 2024 US Presidential Results, Precinct Level, Warren County Kentucky </figcaption>
+</figure> <br>
+
+<p> 12/7/2024 </p> <br>
+
+<div class="line"></div>
+
 <div class="panel-container">
     <div class="panel-side esri-widget">
         <h3>Bike Rides by Date</h3>
