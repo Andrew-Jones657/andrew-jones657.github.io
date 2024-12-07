@@ -17,13 +17,13 @@
             border: 1px solid #444444;
       }
 
-            .panel-container {
+.panel-container {
                 position: relative;
             width: 100%;
             height: 100%;
       }
 
-            .panel-side {
+.panel-side {
                 padding: 2px;
             box-sizing: border-box;
             width: 200px;
@@ -37,35 +37,35 @@
             z-index: 60;
       }
 
-            .panel-side h3 {
+.panel-side h3 {
                 padding: 0 20px;
             margin: 20px 0;
       }
 
-            .panel-side ul {
+.panel-side ul {
                 list - style: none;
             margin: 0;
             padding: 0;
       }
 
-            .panel-side li {
+.panel-side li {
                 list - style: none;
             padding: 10px 20px;
       }
 
-            .panel-result {
+.panel-result {
                 cursor: pointer;
             margin: 2px 0;
             background-color: #000000;
       }
 
-            .panel-result:hover,
+.panel-result:hover,
             .panel-result:focus {
                 color: orange;
             background-color: #000000;
       }
 
-	      .docking-control {
+.docking-control {
         position: absolute;
         z-index: 10;
         top: 50%;
@@ -75,14 +75,14 @@
         padding: 10px;
         box-sizing: border-box;
         margin: -40px 0 0 -125px;
-        background-color: #000000;
+        background-color: #dccab1;
         color: #000000;
         text-align: center;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
       }
 
-      .docking-control label {
+.docking-control label {
         display: inline-block;
         font-weight: bold;
         margin: 0 0 10px 0;
