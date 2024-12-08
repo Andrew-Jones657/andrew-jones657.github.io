@@ -36,8 +36,8 @@
             position: absolute;
             top: 0;
             right: 0;
-            color: #000000;
-            background-color: #000000;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
             overflow: auto;
             z-index: 60;
       }
