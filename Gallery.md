@@ -233,24 +233,9 @@
 
 
 <figure>
+<a target="_blank" href="https://andrew-jones657.github.io/StravaBike">
 <img class="myImages" id="myImg" src="https://i.imgur.com/YNvz8Q6.jpeg" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px">
-<figcaption> Strave Bike Rides (Click to be directed to interactive map) </figcaption>
-</figure> <br>
-
-
-
-<div class="panel-container">
-    <div class="panel-side esri-widget">
-        <h3>Bike Rides by Date</h3>
-        <ul id="strava_graphics">
-             <li>Loading&hellip;</li>
-        </ul>
-    </div>
-<div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
-</div>
-<script src="./files/Strava/Strava2024.js"></script> <br> 
-<figure>
-<figcaption> My Bike Rides in Warren County in 2024 </figcaption>
+<figcaption> Strave Bike Rides (Click to be directed to interactive map) </a> </figcaption>
 </figure> <br>
 
 <p> 10/21/2024 </p> <br>
