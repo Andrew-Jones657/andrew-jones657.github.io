@@ -53,14 +53,14 @@
 
 
     .lineThick{
-    width: 625px;
+    width: 100%;
     height: 1px;
     border-bottom: 2px solid black;
     position: absolute;
     }
 
     .line{
-    width: 625px;
+    width: 100%;
     height: 1px;
     border-bottom: 1px solid black;
     position: absolute;
