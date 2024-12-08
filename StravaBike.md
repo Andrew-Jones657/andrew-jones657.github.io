@@ -36,8 +36,8 @@
             position: absolute;
             top: 0;
             right: 0;
-            color: #000000;
-            background-color: #000000;
+            color: #00000000;
+            background-color: #00000000;
             overflow: auto;
             z-index: 60;
       }
@@ -61,13 +61,13 @@
 .panel-result {
                 cursor: pointer;
             margin: 2px 0;
-            background-color: #000000;
+            background-color: #00000000;
       }
 
 .panel-result:hover,
             .panel-result:focus {
                 color: orange;
-            background-color: #000000;
+            background-color: #00000000;
       }
 
 .docking-control {
@@ -81,7 +81,7 @@
         box-sizing: border-box;
         margin: -40px 0 0 -125px;
         background-color: #dccab1;
-        color: #dccab1;
+        color: #;
         text-align: center;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
