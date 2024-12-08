@@ -27,7 +27,7 @@
                 padding: 2px;
             box-sizing: border-box;
             width: 200px;
-            height: 92%;
+            height: 100%;
             position: absolute;
             top: 0;
             right: 0;
@@ -235,7 +235,7 @@
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/StravaBike">
 <img class="myImages2" id="myImg2" src="https://i.imgur.com/YNvz8Q6.jpeg" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px"> </a> 
-<figcaption> Strave Bike Rides (Click to be directed to interactive map) </figcaption>
+<figcaption> Strave Bike Rides (Click to be directed to interactive map, desktop recommended) </figcaption>
 </figure> <br>
 
 <p> 10/21/2024 </p> <br>
