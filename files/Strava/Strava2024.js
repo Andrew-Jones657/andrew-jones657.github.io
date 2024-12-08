@@ -6,11 +6,10 @@
 	    "esri/PopupTemplate",
 	    "esri/widgets/smartMapping/support/utils",
 	    "esri/widgets/Legend",
-	    "esri/widgets/Fullscreen",
 	    "esri/widgets/Expand",
 	    "esri/widgets/Home",
 	    "esri/core/reactiveUtils"
-    ], (Map, GeoJSONLayer, MapView, ExpressionContent, PopupTemplate, smartMappingUtils, Legend, Fullscreen, Expand, Home, reactiveUtils) => {
+    ], (Map, GeoJSONLayer, MapView, ExpressionContent, PopupTemplate, smartMappingUtils, Legend, Expand, Home, reactiveUtils) => {
                 (async () => {
 
 		    // import the geojson file containing the bike ride information
@@ -181,11 +180,7 @@
                     // listen to click event on the bike name list
                     listNode.addEventListener("click", onListClickHandler);
 
-	// add a fullscreen button
-       const fullscreen = new Fullscreen({
-  	view: view
-	});
-	
+
 	// add a home button that returns to the default view
        const homeWidget = new Home({
   	  view: view
@@ -205,7 +200,6 @@
 	  closeOnEsc: false
 	});
 
-     view.ui.add(fullscreen, "top-left");
      view.ui.add(homeWidget, "top-left");
      view.ui.add(legendExpand, "top-left");
                 })();
