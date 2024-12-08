@@ -118,7 +118,7 @@
 
 
 
-<h3> Personal Projects </h3> <br> 
+<h3> Personal Projects </h3> 
 
 
  <div class="row">
@@ -168,10 +168,7 @@
 </div> 
 
 
-
-
-<h3> Academic Projects </h3> <br> 
-
+<h3> Academic Projects </h3> 
 
 
  <div class="row">
