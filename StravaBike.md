@@ -16,6 +16,12 @@
             mid-width: 650px;
             border: 1px solid #444444;
       }
+.inner {
+  position: relative;
+  max-width: 800px;
+  padding: 20px 10px;
+  margin: 0 auto;
+      }
 .panel-container {
                 position: relative;
             width: 100%;
@@ -120,7 +126,7 @@
              <li>Loading&hellip;</li>
         </ul>
     </div>
-<div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
+<div id="viewDiv" style="width: 800px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 </div>
 <script src="./files/Strava/Strava2024.js"></script> <br> 
 <figure>
