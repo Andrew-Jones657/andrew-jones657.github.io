@@ -81,7 +81,7 @@
 
 <p> This page contains my academic, personal, and professional projects. Click on an image thumbnail to be directed to the respective project. </p> <br>
 
-<h3> Professional Projects </h3> <br> 
+<h3> Professional Projects </h3> 
 
 
 
@@ -118,7 +118,7 @@
 
 
 
-<h3> Personal Projects </h3> <br> <br>
+<h3> Personal Projects </h3> <br> 
 
 
  <div class="row">
@@ -170,7 +170,7 @@
 
 
 
-<h3> Academic Projects </h3> <br> <br>
+<h3> Academic Projects </h3> <br> 
 
 
 
