@@ -58,17 +58,19 @@
     }
 
      .lineThick{
-    width: 625px;
+    width: 300px;
     height: 1px;
     border-bottom: 2px solid black;
     position: absolute;
+    text-align: center;
     }
 
     .line{
-    width: 625px;
+    width: 300px;
     height: 1px;
     border-bottom: 1px solid black;
     position: absolute;
+    text-align: center;
     }
     
     </style>
