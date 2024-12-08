@@ -80,8 +80,8 @@
         padding: 10px;
         box-sizing: border-box;
         margin: -40px 0 0 -125px;
-        background-color: #dccab1;
-        color: #;
+        background-color: #fff;
+        color: #323232;
         text-align: center;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
