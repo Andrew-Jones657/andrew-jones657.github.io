@@ -195,14 +195,14 @@
 }
 
      .lineThick{
-    width: 625px;
+    width: 100%;
     height: 1px;
     border-bottom: 2px solid black;
     position: absolute;
     }
 
     .line{
-    width: 625px;
+    width: 100%;
     height: 1px;
     border-bottom: 1px solid black;
     position: absolute;
@@ -234,8 +234,8 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/StravaBike">
-<img class="myImages" id="myImg" src="https://i.imgur.com/YNvz8Q6.jpeg" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px">
-<figcaption> Strave Bike Rides (Click to be directed to interactive map) </a> </figcaption>
+<img class="myImages2" id="myImg2" src="https://i.imgur.com/YNvz8Q6.jpeg" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px"> </a> 
+<figcaption> Strave Bike Rides (Click to be directed to interactive map) </figcaption>
 </figure> <br>
 
 <p> 10/21/2024 </p> <br>
