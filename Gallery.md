@@ -231,6 +231,14 @@
 
 <div class="line"></div> <br>
 
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/YNvz8Q6.jpeg" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px">
+<figcaption> Strave Bike Rides (Click to be directed to interactive map) </figcaption>
+</figure> <br>
+
+
+
 <div class="panel-container">
     <div class="panel-side esri-widget">
         <h3>Bike Rides by Date</h3>
