@@ -31,12 +31,12 @@
 .panel-side {
                 padding: 2px;
             box-sizing: border-box;
-            width: 300px;
-            height: 100%;
+            width: 250px;
+            height: 92%;
             position: absolute;
             top: 0;
             right: 0;
-            color: #fff;
+            color: #000000;
             background-color: #000000;
 	    opacity: 0.8;
             overflow: auto;
