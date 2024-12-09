@@ -86,6 +86,7 @@
         background-color: #000000;
         color: #323232;
         text-align: center;
+	opacity: 0.3;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
       }
