@@ -22,7 +22,7 @@
   padding: 20px 10px;
   margin: 0 auto;
       }
-.panel-container {
+            .panel-container {
                 position: relative;
             width: 100%;
             height: 100%;
@@ -31,13 +31,14 @@
 .panel-side {
                 padding: 2px;
             box-sizing: border-box;
-            width: 200px;
-            height: 92%;
+            width: 300px;
+            height: 100%;
             position: absolute;
             top: 0;
             right: 0;
             color: #fff;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: #000000;
+	    opacity: 0.8;
             overflow: auto;
             z-index: 60;
       }
@@ -61,13 +62,15 @@
 .panel-result {
                 cursor: pointer;
             margin: 2px 0;
-            background-color: #00000000;
+            background-color: #000000;
+	    opacity: 0.8;
       }
 
 .panel-result:hover,
             .panel-result:focus {
                 color: orange;
-            background-color: #00000000;
+            background-color: #000000;
+	    opacity: 0.8;
       }
 
 .docking-control {
@@ -94,7 +97,8 @@
         padding: 0;
         font-size: 16px;
       }
-      .close {
+      
+.close {
   position: absolute;
   top: 15px;
   right: 35px;
