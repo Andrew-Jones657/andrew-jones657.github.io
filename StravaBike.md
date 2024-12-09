@@ -18,7 +18,7 @@
       }
 .inner {
   position: relative;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 20px 10px;
   margin: 0 auto;
       }
@@ -130,7 +130,7 @@
              <li>Loading&hellip;</li>
         </ul>
     </div>
-<div id="viewDiv" style="width: 800px; height: 650px;  border: 1px solid #444444;"> </div> <br>
+<div id="viewDiv" style="width: 1000px; height: 800px;  border: 1px solid #444444;"> </div> <br>
 </div>
 <script src="./files/Strava/Strava2024.js"></script> <br> 
 <figure>
