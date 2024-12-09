@@ -32,7 +32,7 @@
                 padding: 2px;
             box-sizing: border-box;
             width: 250px;
-            height: 92%;
+            height: 94%;
             position: absolute;
             top: 0;
             right: 0;
@@ -83,7 +83,7 @@
         padding: 10px;
         box-sizing: border-box;
         margin: -40px 0 0 -125px;
-        background-color: #fff;
+        background-color: #000000;
         color: #323232;
         text-align: center;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
