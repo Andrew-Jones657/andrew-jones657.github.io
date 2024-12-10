@@ -63,14 +63,14 @@
                 cursor: pointer;
             margin: 2px 0;
             background-color: #000000;
-	    opacity: 0.8;
+	    opacity: 0.9;
       }
 
 .panel-result:hover,
             .panel-result:focus {
                 color: orange;
             background-color: #000000;
-	    opacity: 0.8;
+	    opacity: 0.9;
       }
 
 .docking-control {
