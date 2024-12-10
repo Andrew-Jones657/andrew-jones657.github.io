@@ -37,7 +37,7 @@
             top: 0;
             right: 0;
             color: #a82323;
-            background-color: #000000;
+            background-color: #a82323;
 	    opacity: 0.9;
             overflow: auto;
             z-index: 60;
