@@ -115,6 +115,14 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+      #timeSlider {
+        position: absolute;
+        left: 100px;
+        right: 100px;
+        bottom: 20px;
+      }
+      
 </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.30/"></script>
@@ -125,6 +133,7 @@
   
 
 <div class="panel-container">
+    <div id="timeSlider"></div>
     <div class="panel-side esri-widget">
         <h3>Bike Rides by Date</h3>
         <ul id="strava_graphics">
