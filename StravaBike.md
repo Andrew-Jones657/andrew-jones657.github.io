@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
 	    min-height: 450px;
-            mid-width: 650px;
+            mid-width: auto;
             border: 1px solid #444444;
       }
 .inner {
@@ -32,7 +32,7 @@
                 padding: 2px;
             box-sizing: border-box;
             width: 250px;
-            height: 94%;
+            height: 96%;
             position: absolute;
             top: 0;
             right: 0;
