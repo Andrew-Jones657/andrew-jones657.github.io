@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
 	    min-height: 450px;
-            mid-width: auto;
+            min-width: auto;
             border: 1px solid #444444;
       }
 .inner {
@@ -22,105 +22,13 @@
   padding: 20px 10px;
   margin: 0 auto;
       }
-            .panel-container {
-                position: relative;
-            width: 100%;
-            height: 100%;
-      }
 
-.panel-side {
-                padding: 2px;
-            box-sizing: border-box;
-            width: 250px;
-            height: 96%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            color: #a82323;
-            background-color: #a82323;
-	    opacity: 0.9;
-            overflow: auto;
-            z-index: 60;
-      }
-
-.panel-side h3 {
-                padding: 0 20px;
-            margin: 20px 0;
-      }
-
-.panel-side ul {
-                list - style: none;
-            margin: 0;
-            padding: 0;
-      }
-
-.panel-side li {
-                list - style: none;
-            padding: 10px 20px;
-      }
-
-.panel-result {
-                cursor: pointer;
-            margin: 2px 0;
-            background-color: #000000;
-	    opacity: 0.9;
-      }
-
-.panel-result:hover,
-            .panel-result:focus {
-                color: orange;
-            background-color: #000000;
-	    opacity: 0.9;
-      }
-
-.docking-control {
-        position: absolute;
-        z-index: 10;
-        top: 50%;
-        left: 50%;
-        width: 250px;
-        height: 80px;
-        padding: 10px;
-        box-sizing: border-box;
-        margin: -40px 0 0 -125px;
-        background-color: #000000;
-        color: #eaeaea;
-        text-align: center;
-	opacity: 0.3;
-        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-      }
-
-.docking-control label {
-        display: inline-block;
-        font-weight: bold;
-        margin: 0 0 10px 0;
-        padding: 0;
-        font-size: 16px;
-      }
-      
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-      #timeSlider {
+#timeSlider {
         position: absolute;
         left: 100px;
         right: 100px;
         bottom: 0px;
+	width: auto;
       }
       
 </style>
