@@ -6,10 +6,11 @@
 	    "esri/PopupTemplate",
 	    "esri/widgets/smartMapping/support/utils",
 	    "esri/widgets/Legend",
+	    "esri/widgets/TimeSlider",
 	    "esri/widgets/Expand",
 	    "esri/widgets/Home",
 	    "esri/core/reactiveUtils"
-    ], (Map, GeoJSONLayer, MapView, ExpressionContent, PopupTemplate, smartMappingUtils, Legend, Expand, Home, reactiveUtils) => {
+    ], (Map, GeoJSONLayer, MapView, ExpressionContent, PopupTemplate, smartMappingUtils, Legend, TimeSlider, Expand, Home, reactiveUtils) => {
                 (async () => {
 
 		    // import the geojson file containing the bike ride information
@@ -17,7 +18,7 @@
 
 		    // create a map object with a labeled imagery basemap
                     const map = new Map({
-                        basemap: "hybrid"
+                        basemap: "topo"
                     });
 		
 		    // Setup the map view (zoom level, center) and dock the popups on the bottom left so users can see the selected routes
@@ -34,7 +35,7 @@
                     	},
                         map: map,
                         center: [-86.4463, 36.9913],
-                        zoom: 9,
+                        zoom: 11,
                         padding: {
                             right: 300
                         }
@@ -103,15 +104,47 @@
                     });
 
 
-                    // create the geojsonLayer using the previously defined renderer and popupTemplate. Use the "Date" field as an outfield to later organize the ride names on the side.
+                    // create the geojsonLayer using the previously defined renderer and popupTemplate. 
+		    //  Use the "Date" field as an outfield to later organize the ride names on the side.
+		    // Setup the time slider element by inputting the Date field and setting increments to weeks. 
                     const geojsonLayer = new GeoJSONLayer({
                         url: geojsonurl,
-                        outFields: ["Name", "Date", "Date_Text", "Length"], // used by queryFeatures
+                        outFields: ["Name", "Date", "Date_Text", "Length", "Month"], // used by queryFeatures
                         renderer: renderer,
                         popupTemplate: template,
-			title: "Bike Rides by Month"
+			title: "Bike Rides by Month",
+			timeInfo: {
+			  startField: "Date",
+			  interval: {
+			    // set time interval to one week
+			    unit: "weeks",
+			    value: 1
+			    }
+			}
                     });
                     map.add(geojsonLayer);
+
+		    // time slider widget initialization
+        	    const timeSlider = new TimeSlider({
+          		container: "timeSlider",
+          		mode: "time-window",
+			playrate: 2000,
+			stops: {Date},
+          		view: view,
+          		timeVisible: true
+        		});
+        		view.ui.add(timeSlider, "top-left");
+
+        		view.whenLayerView(geojsonLayer).then((lv) => {
+          		const fullTimeExtent = geojsonLayer.timeInfo.fullTimeExtent;
+
+ 			// set up time slider properties
+          		timeSlider.fullTimeExtent = fullTimeExtent;
+          		timeSlider.stops = {
+            		  interval: geojsonLayer.timeInfo.interval
+          		};
+        		});
+
 
                     let graphics;
 
@@ -179,8 +212,9 @@
                     };
                     // listen to click event on the bike name list
                     listNode.addEventListener("click", onListClickHandler);
+	
 
-
+	
 	// add a home button that returns to the default view
        const homeWidget = new Home({
   	  view: view
