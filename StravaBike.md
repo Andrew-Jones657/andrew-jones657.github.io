@@ -49,11 +49,11 @@
 
 
 <div id="timeSlider"></div>
-<div id="titleDiv" class="esri-widget">	
-    <div id="titleText">2024 Strava Recorded Bike Rides </div>
-<div id="viewDiv" style="width: 1000px; height: 800px;  border: 1px solid #444444;"> </div>
+<div id="viewDiv"></div>
+<dic id="titleDiv" class="esri-widget">	
+	<div id="titleText">2024 Strava Recorded Bike Rides </div>
+        </div>
 
-</div>
 <script src="./files/Strava/Strava2024.js"></script> <br> 
 <figure>
 <figcaption> My Bike Rides in Warren County in 2024 </figcaption>
