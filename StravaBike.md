@@ -38,7 +38,7 @@
             right: 0;
             color: #000000;
             background-color: #000000;
-	    opacity: 0.8;
+	    opacity: 0.9;
             overflow: auto;
             z-index: 60;
       }
