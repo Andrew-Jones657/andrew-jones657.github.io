@@ -149,6 +149,7 @@
 
 <p> 10/21/2024 </p> <br>
 
+<p> User Notes: Click on any visible bike ride path to see specific details regarding that ride. By default, the time slider on the top left portion of the web map is set to iterate through a week of bike rides at a time. These bike rides are symbolized by the month in which they occured. The list of bike rides by date on the right side of the interactive map is a list of all bike rides in the current view extent -- even those that may be hidden under the time slider filter. To view all bike rides, simply drag each of the two dots in the time filter as far apart from each other as possible.   </p> <br>
 
 </body>
 </html>
