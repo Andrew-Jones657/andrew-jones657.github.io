@@ -31,24 +31,27 @@
 	width: auto;
       }
       
+#titleDiv {
+        padding: 10px;
+        font-weight: 48;
+        text-align: center;
+      }
+      
 </style>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.30/"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.31/"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head>
 <body>
   
 
-<div class="panel-container">
-    <div id="timeSlider"></div>
-    <div class="panel-side esri-widget">
-        <h3>Bike Rides by Date</h3>
-        <ul id="strava_graphics">
-             <li>Loading&hellip;</li>
-        </ul>
-    </div>
-<div id="viewDiv" style="width: 1000px; height: 800px;  border: 1px solid #444444;"> </div> <br>
+
+
+<div id="timeSlider"></div>
+<div id="viewDiv" style="width: 1000px; height: 800px;  border: 1px solid #444444;"> </div>
+<div id="titleDiv" class="esri-widget">	
+<div id="titleText">2024 Strava Recorded Bike Rides </div>
 </div>
 <script src="./files/Strava/Strava2024.js"></script> <br> 
 <figure>
