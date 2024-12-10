@@ -40,7 +40,7 @@
 </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.31/"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
 
 </head>
 <body>
@@ -49,9 +49,10 @@
 
 
 <div id="timeSlider"></div>
-<div id="viewDiv" style="width: 1000px; height: 800px;  border: 1px solid #444444;"> </div>
 <div id="titleDiv" class="esri-widget">	
-<div id="titleText">2024 Strava Recorded Bike Rides </div>
+    <div id="titleText">2024 Strava Recorded Bike Rides </div>
+<div id="viewDiv" style="width: 1000px; height: 800px;  border: 1px solid #444444;"> </div>
+
 </div>
 <script src="./files/Strava/Strava2024.js"></script> <br> 
 <figure>
