@@ -36,7 +36,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            color: #000000;
+            color: #a82323;
             background-color: #000000;
 	    opacity: 0.9;
             overflow: auto;
