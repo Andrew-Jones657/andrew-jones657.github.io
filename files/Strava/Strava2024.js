@@ -1,4 +1,4 @@
-            require([
+           require([
             "esri/Map",
             "esri/layers/GeoJSONLayer",
             "esri/views/MapView",
@@ -6,13 +6,13 @@
 	    "esri/PopupTemplate",
 	    "esri/widgets/smartMapping/support/utils",
 	    "esri/widgets/Legend",
+	    "esri/widgets/Fullscreen",
 	    "esri/widgets/TimeSlider",
 	    "esri/widgets/Expand",
 	    "esri/widgets/Home",
 	    "esri/core/reactiveUtils"
-    ], (Map, GeoJSONLayer, MapView, ExpressionContent, PopupTemplate, smartMappingUtils, Legend, TimeSlider, Expand, Home, reactiveUtils) => {
-                (async () => {
-
+    ], (Map, GeoJSONLayer, MapView, ExpressionContent, PopupTemplate, smartMappingUtils, Legend, Fullscreen, TimeSlider, Expand, Home, reactiveUtils) => {
+                
 		    // import the geojson file containing the bike ride information
                     const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Strava/StravaBike2024.geojson";
 
@@ -30,7 +30,7 @@
                     		dockOptions: {
                         	// Ignore the default sizes that trigger responsive docking
                         		breakpoint: false,
-                        		position: "bottom-left"
+                        		position: "bottom-right"
 				}
                     	},
                         map: map,
@@ -133,7 +133,7 @@
           		view: view,
           		timeVisible: true
         		});
-        		view.ui.add(timeSlider, "top-left");
+        		view.ui.add(timeSlider, "bottom-left");
 
         		view.whenLayerView(geojsonLayer).then((lv) => {
           		const fullTimeExtent = geojsonLayer.timeInfo.fullTimeExtent;
@@ -145,74 +145,13 @@
           		};
         		});
 
-
-                    let graphics;
-
-                    const layerView = await view.whenLayerView(geojsonLayer);
-		    
-		    // Create a list of the features in the current view, sort them ascending by Date, and display them on the right side of the map
-                    reactiveUtils.when(
-                        () => !layerView.dataUpdating,
-                        async () => {
-                            // query all the features available for drawing.
-                            try {
-                                const featureSet = await layerView.queryFeatures({
-                                    geometry: view.extent,
-                                    returnGeometry: true,
-                                    orderByFields: ["Date"]
-                                });
-
-                                graphics = featureSet.features;
-
-                                const fragment = document.createDocumentFragment();
-
-                                graphics.forEach((result, index) => {
-                                    const attributes = result.attributes;
-                                    const name = attributes.Name;
-
-                                    // Create a list zip codes in NY
-                                    const li = document.createElement("li");
-                                    li.classList.add("panel-result");
-                                    li.tabIndex = 0;
-                                    li.setAttribute("data-result-id", index);
-                                    li.textContent = name;
-
-                                    fragment.appendChild(li);
-                                });
-                                // Empty the current list
-                                listNode.innerHTML = "";
-                                listNode.appendChild(fragment);
-                            } catch (error) {
-                                console.error("query failed: ", error);
-                            }
-                        }
-                    );
-		    // Create an event handler when an object is selected from the list 
-                    const onListClickHandler = async (event) => {
-                        const target = event.target;
-                        const resultId = target.getAttribute("data-result-id");
-
-                        // get the graphic corresponding to the clicked bike route
-                        const result = resultId && graphics && graphics[parseInt(resultId, 10)];
-
-                        if (result) {
-                            try {
-                                await view.goTo(result.geometry.extent.expand(2));
-
-                                view.openPopup({
-                                    features: [result],
-                                    location: result.geometry.centroid
-                                });
-                            } catch (error) {
-                                if (error.name != "AbortError") {
-                                    console.error(error);
-                                }
-                            }
-                        }
-                    };
-                    // listen to click event on the bike name list
-                    listNode.addEventListener("click", onListClickHandler);
+        // add the UI for a title
+        view.ui.add("titleDiv", "top-right");
 	
+	// add a fullscreen button
+       const fullscreen = new Fullscreen({
+  	view: view
+	});
 
 	
 	// add a home button that returns to the default view
@@ -224,7 +163,7 @@
        const legend = new Legend({
   	  view: view,
 	  content: [geojsonLayer],
-	  style: "card"
+	  style: "classic"
         });
 
 	// Hide the legend when it is not in use
@@ -234,7 +173,8 @@
 	  closeOnEsc: false
 	});
 
+       view.ui.add(fullscreen, "top-left");
      view.ui.add(homeWidget, "top-left");
      view.ui.add(legendExpand, "top-left");
-                })();
+                
       });
