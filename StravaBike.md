@@ -120,7 +120,7 @@
         position: absolute;
         left: 100px;
         right: 100px;
-        bottom: 20px;
+        bottom: 0px;
       }
       
 </style>
