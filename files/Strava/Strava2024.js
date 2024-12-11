@@ -16,14 +16,15 @@
 		    // import the geojson file containing the bike ride information
                     const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/Strava/StravaBike2024.geojson";
 
-		    // add the UI for a title
-        	    view.ui.add("titleDiv", "top-left");
+
 		    // create a map object with a labeled imagery basemap
 		   
                     const map = new Map({
                         basemap: "topo"
                     });
-		
+
+
+		   
 		    // Setup the map view (zoom level, center) and dock the popups on the bottom left so users can see the selected routes
                     const view = new MapView({
                         container: "viewDiv",
@@ -178,5 +179,6 @@
        view.ui.add(fullscreen, "top-left");
      view.ui.add(homeWidget, "top-left");
      view.ui.add(legendExpand, "top-left");
-                
+     // add the UI for a title
+     view.ui.add("titleDiv", "top-left");           
       });
