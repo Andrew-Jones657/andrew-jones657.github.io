@@ -516,8 +516,27 @@
 <figcaption> Figure 18. Agglomerative Clustering Map of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
+<p> Having observed the drought anomaly dataset under agglomerative clustering, it would be beneficial to look at the same dataset under a different clustering method. For the purposes of this project, k-means will be used to evaluate a different clustering composition. </p> <br>
 
 <h3> K-Means Clustering </h3> <br>
+
+<p>  K-means clustering is a popular machine learning algorithm used for unsupervised learning, specifically for partitioning a dataset into K distinct clusters based on feature similarity. </p>
+<ol>
+<li> A <em> K </em> number of clusters are selected by the user. These clusters centers may be chosen from random data points within the dataset. </li>
+<li> Each data point is assigned to the nearest cluster center based on a distance metric (usually Euclidean distance). This forms K clusters.</li>
+<li> The centroid of each cluster is recalculated by finding the mean of all data points in the cluster. </li>
+<li> Steps 2 and 3 are repeated iteratively until the centroids no longer change significantly or a predefined number of iterations is reached. </li>
+</ol> <br>
+
+<p> The K-means clustering algorithm has several advantages: </p>
+
+<ol>
+<li> It is efficient for large datasets. </li>
+<li> Implementation is simple. </li>
+<li> It works well when clusters are well-separated and spherical. </li>   
+</ol> <br>
+
+<p> However, the k-means method comes with its own share of weaknesses. Most glaring, <em>K</em> must be chosen beforehand, which can be tricky without prior knowledge of the data. (cont...). K-means is also sensitive to the initial choice of parameters: without prior knowledge of the data, this can be difficult to select. Finally, if cluster sizes are uneven, k-means may not perform as well as it could. </p> <br>
 
 <p> Another approach to multivariate clustering is k-means clustering. Under k-means, <em> n </em> observations are sorted into <em> k </em> clusters in which each observation belongs to the cluster with the nearest mean, splitting the clusters into voronoi cells. K-means minimizes within-cluster variances, but not regular Euclidean distances (expand). K-means is an efficient method in terms of computation power. Additionally, it works better on larger datasets than agglormerative clustering, and it is less sensitive to outliers. However, it can be difficult to choose an appropriate <em> k </em> value (cont...)      </p> <br>
 
