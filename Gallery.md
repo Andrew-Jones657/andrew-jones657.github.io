@@ -234,9 +234,11 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/StravaBike">
-<img class="myImages2" id="myImg2" src="https://i.imgur.com/YNvz8Q6.jpeg" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px"> </a> 
-<figcaption> Strave Bike Rides (Click to be directed to interactive map, desktop recommended) </figcaption>
+<img class="myImages2" id="myImg2" src="https://i.imgur.com/t17mFgN.png" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px"> </a> 
+<figcaption> Strave Bike Rides  </figcaption>
 </figure> <br>
+
+<p> Click on the image to be directed to the interactive map, desktop recommended. </p>
 
 <p> 10/21/2024 </p> <br>
 
