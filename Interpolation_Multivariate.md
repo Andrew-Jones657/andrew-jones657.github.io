@@ -650,11 +650,11 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Another way to view the cluster data is through the cluster plot method from the “factoextra” library. This method incorporates principal component analysis to reduce the dimensionality of the dataset (36 variables to 2) so that it can be represented in a 2D graph. Observing figure 19, there is some degree of overlap between, indicating that the differences in the measured variables between groups is only small. This was also reflected in the average silhouette width only reaching 0.42 in size. </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/M5MBJGG.jpeg" alt="PCAplot2" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/6yxs2ft.jpeg" alt="PCAplot2" style="width:100%;max-width:625px">
 <figcaption> Figure 25. Cluster Variance Plot   </figcaption>
 </figure> <br>
 
-<p> In comparison to the time series plot for agglomerative clustering from Figure ? earlier, the k-means clustering plot in Figure 26 reveals two nearly mirrored trends. The first cluster represents severe drought anomalies, while the second captures less severe anomalies. Unlike the plot in Figure ?, none of the clusters intersect here, indicating two distinct trends. </p> <br>
+<p> In comparison to the time series plot for agglomerative clustering from Figure 17 earlier, the k-means clustering plot in Figure 26 reveals two nearly mirrored trends. The first cluster represents severe drought anomalies, while the second captures less severe anomalies. Unlike the plot in Figure 17, none of the clusters intersect here, indicating two distinct trends. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
@@ -664,7 +664,7 @@ Rather than being a random uniform distribution of points, this means that objec
 
 <p> Figure 27 displays the k-means cluster map using two clusters. By simplifying to two clusters, the map shows red diamonds representing the worst drought conditions and blue triangles for mild drought conditions. The most severe drought (cluster 1) is concentrated in central Kentucky, the southern Bluegrass region, and parts of eastern Kentucky. In contrast, cluster 2 indicates mild drought conditions in western Kentucky, northern Kentucky, and some areas of eastern Kentucky. </p> <br>
 
-<p> A notable shift from the agglomerative clustering map (Figure ?) is observed near the weather stations in Perry and Knox counties. These stations are the only ones to transition from cluster 2 (severe drought) in Figure ? to cluster 2 (mild drought) in Figure 27. This shift aligns with the edge cases identified in Figure ?. </p> <br>
+<p> A notable shift from the agglomerative clustering map (Figure 18) is observed near the weather stations in Perry and Knox counties. These stations are the only ones to transition from cluster 2 (severe drought) in Figure 18 to cluster 2 (mild drought) in Figure 27. This shift aligns with the edge cases identified in Figure 25. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
@@ -685,7 +685,7 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/KrigingVariogramCloud.R"> Variogram Cloud </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateDendrogramPlot.R"> Dendrogram </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateAggTimeSeries.R"> Agglormerative Clustering Time Series Plot </a> </p>
-<p> Cluster Analysis Plot </p>
+<p>  Cluster Analysis Plot </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateElbowPlot.R"> Elbow Method Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateSilhouettePlot.R"> Silhouette Method Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateGapStatisticPlot.R"> Gap Statistic Method Plot </a> </p>
