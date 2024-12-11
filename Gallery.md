@@ -235,7 +235,7 @@
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/StravaBike">
 <img class="myImages2" id="myImg2" src="https://i.imgur.com/t17mFgN.png" alt="Strava Bike Rides Thumbnail" style="width:100%;max-width:625px"> </a> 
-<figcaption> Strave Bike Rides  </figcaption>
+<figcaption> Bike Rides Recorded with Strava, 2024  </figcaption>
 </figure> <br>
 
 <p> Click on the image to be directed to the interactive map, desktop recommended. </p>
