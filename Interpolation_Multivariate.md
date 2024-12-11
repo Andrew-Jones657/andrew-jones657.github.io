@@ -456,19 +456,15 @@
 
 <p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p> <br>
 
-<p>  </p> <br>
-
 <h3> Introducing Multivariate Methods: Agglomerative Clustering and K-Means </h3> <br>
 
-<p> Unfortunately, there are only so many ways to analyze multivariate data in ArcGIS Pro. Moving forwads, data will be prepared and analyzed in RStudio. First, a simple empirical look will be taken using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means.     </p> <br>
-
-<p> Concerning multivariate methods, it is often the case that there is no clear answer as to which method or set of parameters is statistically ideal. Heuristics and empirical observation are usually incorporated as starting points, and from there, certain measures can be chosen to help illustrate trends more clearly.  </p> <br>
+<p> Now, two types of multivariate clustering methods will be used to explore trends throughout the entire drought anomaly dataset. Unlike univariate methods, it is often the case that there is no clear answer as to which methods or set of parameters are statistically ideal. Heuristics and empirical observation are usually incorporated as starting points, and from there, certain measures can be chosen to help illustrate trends more clearly. First, a simple empirical look will be made using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means. This portion of the project is more reliant on R, as there are only so many ways to analyze multivariate data in ArcGIS Pro.      </p> <br>
 
 <p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering. </em> </p> <br>
 
-<p> Agglomerative clustering has the advantage of displaying data in a dendrogram, which is a diagram that shows the hierarchical relationship between objects. This method is visually easy to follow, as clear break points show how the data can be categorized in different numbers of clusters. Since this is a visual depiction of clustering, however, a large number of data values can render it inconvenient to use. (Order of data?) </p> <br>
-
 <h3> Agglomerative Clustering </h3> <br>
+
+<p> Agglomerative clustering has the advantage of displaying data in a dendrogram, which is a diagram that shows the hierarchical relationship between objects. This method is visually easy to follow, as clear break points show how the data can be categorized in different numbers of clusters. Since this is a visual depiction of clustering, however, a large number of data values can render it inconvenient to use. (Order of data?) </p> <br>
 
 <p> Instead of using the raw data values, the data was standardized. Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though all the measurements in this dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate and uniform, as well as making it easier to find errors in the data. Having a uniform dataset is particularly important in this case, since the cumulative values within it might otherwise create biased results. Similarly, standardization allows for better control over biased values and outliers.  </p> <br>
 
