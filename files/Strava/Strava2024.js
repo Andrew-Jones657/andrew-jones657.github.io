@@ -146,7 +146,7 @@
         		});
 
         // add the UI for a title
-        view.ui.add("titleDiv", "top-right");
+        view.ui.add("titleDiv", "bottom-left");
 	
 	// add a fullscreen button
        const fullscreen = new Fullscreen({
