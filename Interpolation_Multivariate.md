@@ -462,6 +462,9 @@
 
 <p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering. </em> </p> <br>
 
+<p> For the rest of the project, the data was standardized. Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though all the measurements in this dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate and uniform, as well as making it easier to find errors in the data. Having a uniform dataset is particularly important in this case, since the cumulative values within it might otherwise create biased results. Similarly, standardization allows for better control over biased values and outliers.  </p> <br>
+
+
 <h3> Agglomerative Clustering </h3> <br>
 
 <p> The first multivariate clustering method that will be looked at is agglomerative clustering, also called hierarchical clustering. It functions by creating a hierarchy of clusters in a bottom up manner: </p>
@@ -469,7 +472,7 @@
 <li> Each data point starts as its own individual cluster. </li> 
 <li> The two closest clusters are merged into one. </li>
 <li> This merging process continues iteratively until all data points are grouped into a single cluster or a specified number of clusters is reached. </li>
-</ol>
+</ol> <br>
 
 <p> There are several different methods for measuring the intercluster distance. Such methods include single linkage (minimum of distances), complete linkage (maximum of distances), average linkage (average of distances), Ward's algorithm (minimizes cluster spread).  </p> <br>
 
@@ -478,14 +481,11 @@
 <li> A specific number of clusters does not have to be predefined. Users can select a number of clusters from a visual breakpoint. </li>
 <li> Clusters are not limited to a specific shape, such as a sphere. They can be arbitrary in size and shape. </li>
 <li> The hierarchy of clusters can be visualized in a dendrogram, which is useful for exploring hierarchichal relationships in the data. </li>
-</ol>
+</ol> <br>
 
+<p> The biggest issue with agglomerative clustering is that it does not scale well with large datasets. This is due to it being a computationally expensive method and limits on how much data can be displayed using a single dendrogram. </p> <br>
 
-<p> The biggest issue with agglomerative clustering is that it does not scale well with large datasets. This is due to it being a computationally expensive method and limits on how much data can be displayed using a single dendrogram. </p>
-
-<p> Instead of using the raw data values, the data was standardized. Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though all the measurements in this dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate and uniform, as well as making it easier to find errors in the data. Having a uniform dataset is particularly important in this case, since the cumulative values within it might otherwise create biased results. Similarly, standardization allows for better control over biased values and outliers.  </p> <br>
-
-<p> To create a dendrogram, the standardized drought values were used to create a dissimilarity matrix, which measures the distance between each recorded drought value. Then, each of those observations were paired together with their closest neighbor into groups until the entire dataset was in one group. Ward’s algorithm was used to minimize the spread of the clusters (Figure 16). </p> <br>
+<p> To create a dendrogram, the standardized drought values were used to create a dissimilarity matrix, which measures the distance between each recorded drought value. Then, each of those observations were paired together with their closest neighbor into groups until the entire dataset was in one group. Ward’s algorithm was used to minimize the spread of the clusters (Figure 16). The dendrogram could be "cut" in a variety of different ways to observe different numbers of clusters -- it would be ideal to attempt to keep a similar number of observations within each clustering. To start, the dendrogram will be cut as to create four clusters.   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/d7VIMdt.jpeg" alt="Dendrogram" style="width:100%;max-width:625px">
@@ -493,28 +493,9 @@
 </figure> <br>
 
 
-<table class = "tablecenter"> <caption> Table 4. Dendrogram Parameters </caption>
-<thead>
-<th> Parameter </th>
-<th> Value </th>
-</thead>
-<tbody>
-<tr>
-<td> Number of Clusters </td>
-<td> 4 </td>    
-</tr>
-<tr>
-<td> Method </td>
-<td> Ward's D2 Algorithm </td>
-</tr>
-</tbody>
-</table>
+<p> The dendrogram displays how the weather stations with the most similar recorded drought anomalies can be grouped together into four clusters. Since this dataset contains 36 variables regarding recorded drought anomalies (July 1998 to June 2001), it would be valuable to see how each cluster changes from month to month. To accomplish this, the clustered data was transposed and used to create a time series graph of each cluster's mean center. </p> <br>
 
-<p> (Discuss Dendrogram and parameters used to make it) </p> <br>
-
-<p> The dendrogram displays the overall clustering results for four clusters, though since the dataset contains monthly information ranging from July 1998 to June 2001, it would be valuable to see how this clustered data changes from month to month. To accomplish this, the clustered data was transposed and used to create a time series graph of each cluster. </p> <br>
-
-<p> Observing the time series plot in Figure 17, it is evident that each cluster has a distinct pattern, though some degree of symmetry is present. The first cluster (x1) includes the weather stations that recorded the highest initial drought values. As time progressed, the red time series line for cluster 1 rose, indicating that the drought anomalies recorded by these weather stations were gradually dissipating. The line for cluster 2 (x2) in green shows the reverse trend from cluster 1. Initially, there was little drought recorded by these weather stations, but as time progressed, the line fell, suggesting that drought anomalies became more severe. In 1998, the line for cluster 3 (x3) roughly matches the cluster 2 line, though after this period, the two lines diverge. After 1998, Cluster 3 generally moves upwards, indicating an alleviation of drought conditions at those respective weather stations. Finally, the line for cluster 4 (x4) starts highest out of all the clusters and rises far above the rest until falling in the latter half of 2000 to meet cluster 3’s line. These weather stations experienced the least severe drought conditions. It is important to remember, however, that this a time series plot of standardized drought values; by June of 2001, every weather station was experiencing a deficiency in precipitation as depicted in figure ?. </p> <br>
+<p> Observing the time series plot in Figure 17, it is evident that each cluster has a distinct pattern, though some degree of symmetry is present. The first cluster line in red includes the weather stations that recorded the highest initial drought values. As time progressed, the red time series line for cluster 1 rose, indicating that the drought anomalies recorded by these weather stations were gradually dissipating. The line for cluster 2 in green shows the reverse trend from cluster 1. Initially, there was little drought recorded by these weather stations, but as time progressed, the line fell, suggesting that drought anomalies became more severe. In 1998, the cyan line for cluster 3 roughly matches the cluster 2 line, though after this period, the two lines diverge. After 1998, cluster 3 moves upwards, indicating an alleviation of drought conditions at those respective weather stations. Finally, the purple line for cluster 4 starts higher than the other clusters and trends above the rest until falling in the latter half of 2000 to meet cluster 3. The weather stations in cluster 4 experienced the least severe drought conditions. It is important to remember, however, that this is a time series plot of standardized drought values; by June of 2001, every weather station was experiencing a deficiency in precipitation as depicted in figure 15. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Z7oLU83.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
@@ -541,7 +522,7 @@
 <p> Another approach to multivariate clustering is k-means clustering. Under k-means, <em> n </em> observations are sorted into <em> k </em> clusters in which each observation belongs to the cluster with the nearest mean, splitting the clusters into voronoi cells. K-means minimizes within-cluster variances, but not regular Euclidean distances (expand). K-means is an efficient method in terms of computation power. Additionally, it works better on larger datasets than agglormerative clustering, and it is less sensitive to outliers. However, it can be difficult to choose an appropriate <em> k </em> value (cont...)      </p> <br>
 
 
-<table class="tablecenter"> <caption> Table 5. Between Sum of Squares over Total Sum of Squares Partition Formula Table </caption> 
+<table class="tablecenter"> <caption> Table 4. Between Sum of Squares over Total Sum of Squares Partition Formula Table </caption> 
 <thead>
 <tr>
 <th> # Clusters </th>
@@ -627,7 +608,7 @@ Rather than being a random uniform distribution of points, this means that objec
 
 
 
-<p> Table 6 below presents the average silhouette width with clusters up to k=6. The best fit occurs at k=2, as it has the highest average silhouette width. </p> <br>
+<p> Table 5 below presents the average silhouette width with clusters up to k=6. The best fit occurs at k=2, as it has the highest average silhouette width. </p> <br>
 
 <table class="tablecenter"> <caption> Table 6. Table of Average Silhouette Width Scores </caption>
 <thead>
@@ -740,9 +721,8 @@ Rather than being a random uniform distribution of points, this means that objec
 <p> Table 1. Descriptive Statistics for the Drought Anomalies in June of 1999  </p>
 <p> Table 2. Ordinary Kriging Parameters  </p>
 <p> Table 3. Cross Validation Statistics  </p>
-<p> Table 4. Dendrogram Parameters </p>
-<p> Table 5. Between Sum of Squares over Total Sum of Squares Partition Formula Table  </p>
-<p> Table 6. Table of Average Silhouette Width Scores  </p> <BR>
+<p> Table 4. Between Sum of Squares over Total Sum of Squares Partition Formula Table  </p>
+<p> Table 5. Table of Average Silhouette Width Scores  </p> <BR>
 
 <h3> References </h3> <br>
 
