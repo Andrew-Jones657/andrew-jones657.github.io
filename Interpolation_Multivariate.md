@@ -464,7 +464,24 @@
 
 <h3> Agglomerative Clustering </h3> <br>
 
-<p> Agglomerative clustering has the advantage of displaying data in a dendrogram, which is a diagram that shows the hierarchical relationship between objects. This method is visually easy to follow, as clear break points show how the data can be categorized in different numbers of clusters. Since this is a visual depiction of clustering, however, a large number of data values can render it inconvenient to use. (Order of data?) </p> <br>
+<p> The first multivariate clustering method that will be looked at is agglomerative clustering, also called hierarchical clustering. It functions by creating a hierarchy of clusters in a bottom up manner: </p>
+<ol>
+<li> Each data point starts as its own individual cluster. </li> 
+<li> The two closest clusters are merged into one. </li>
+<li> This merging process continues iteratively until all data points are grouped into a single cluster or a specified number of clusters is reached. </li>
+</ol>
+
+<p> There are several different methods for measuring the intercluster distance. Such methods include single linkage (minimum of distances), complete linkage (maximum of distances), average linkage (average of distances), Ward's algorithm (minimizes cluster spread).  </p> <br>
+
+<p> Agglomerative clustering has several advantages:  </p>
+<ol>
+<li> A specific number of clusters does not have to be predefined. Users can select a number of clusters from a visual breakpoint. </li>
+<li> Clusters are not limited to a specific shape, such as a sphere. They can be arbitrary in size and shape. </li>
+<li> The hierarchy of clusters can be visualized in a dendrogram, which is useful for exploring hierarchichal relationships in the data. </li>
+</ol>
+
+
+<p> The biggest issue with agglomerative clustering is that it does not scale well with large datasets. This is due to it being a computationally expensive method and limits on how much data can be displayed using a single dendrogram. </p>
 
 <p> Instead of using the raw data values, the data was standardized. Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though all the measurements in this dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate and uniform, as well as making it easier to find errors in the data. Having a uniform dataset is particularly important in this case, since the cumulative values within it might otherwise create biased results. Similarly, standardization allows for better control over biased values and outliers.  </p> <br>
 
