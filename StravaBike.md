@@ -50,7 +50,7 @@
 
 <div id="timeSlider"></div>
 <div id="viewDiv"></div>
-<dic id="titleDiv" class="esri-widget">	
+<div id="titleDiv" class="esri-widget">	
 	<div id="titleText">2024 Strava Recorded Bike Rides </div>
         </div>
 
