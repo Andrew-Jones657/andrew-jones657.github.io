@@ -12,7 +12,7 @@
             width: 100%;
             margin: 0;
             padding: 0;
-	    min-height: 450px;
+	    min-height: 750px;
             min-width: auto;
             border: 1px solid #444444;
       }
