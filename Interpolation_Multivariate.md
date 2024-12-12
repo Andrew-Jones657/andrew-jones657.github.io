@@ -536,10 +536,9 @@
 <li> It works well when clusters are well-separated and spherical. </li>   
 </ol> <br>
 
-<p> However, the k-means method comes with its own share of weaknesses. Most glaring, <em>K</em> must be chosen beforehand, which can be tricky without prior knowledge of the data. (cont...). K-means is also sensitive to the initial choice of parameters: without prior knowledge of the data, this can be difficult to select. Finally, if cluster sizes are uneven, k-means may not perform as well as it could. </p> <br>
+<p> However, the k-means method comes with its own share of weaknesses. Most glaring, <em>K</em> must be chosen before the analysis can be conducted, which can be tricky without prior knowledge of the data. Choosing an inappropriate value for <em>K</em> may result in an ineffective clustering reuslt. K-means is also sensitive to the initial placement of centroids: this can lead to suboptimal solutions if the initial placement does not characterize the cluster well. Finally, since k-means assumes clusters are roughly equal in size and spherical, this method may not work well on datasets with a different structure. </p> <br>
 
-<p> Another approach to multivariate clustering is k-means clustering. Under k-means, <em> n </em> observations are sorted into <em> k </em> clusters in which each observation belongs to the cluster with the nearest mean, splitting the clusters into voronoi cells. K-means minimizes within-cluster variances, but not regular Euclidean distances (expand). K-means is an efficient method in terms of computation power. Additionally, it works better on larger datasets than agglormerative clustering, and it is less sensitive to outliers. However, it can be difficult to choose an appropriate <em> k </em> value (cont...)      </p> <br>
-
+<p> Before attempting to conduct a k-means analysis, it would be prudent to examine the ideal number of clusters for this dataset. (cont...) </p>
 
 <table class="tablecenter"> <caption> Table 4. Between Sum of Squares over Total Sum of Squares Partition Formula Table </caption> 
 <thead>
