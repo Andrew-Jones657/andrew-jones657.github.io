@@ -310,7 +310,7 @@
 
 <h3> Ordinary Kriging </h3> <br>
 
-<p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must create an explicit function to model the spatial autocorrelation with a semivariogram. Kriging is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. Additionally, kriging allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. Compared to the deterministic IDW method, kriging has several assumptions concerning the underlying dataset. </p> <br>
+<p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must create a function to model the spatial autocorrelation with a semivariogram. Kriging is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. Kriging also allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. Unlike the IDW method, kriging has several assumptions concerning the underlying dataset. </p> <br>
     <ol>
     <li> The interpolation surface has a constant mean, with no underlieing trend. </li>
     <li> The data arise from a stochastic stationary process. </li>
