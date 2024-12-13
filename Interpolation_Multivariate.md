@@ -291,7 +291,15 @@
 <figcaption> Figure 8. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>    
 </figure>    <br>
 
-<p> One particular type of geostatistical graph helpful for kriging is the semivariogram, which shows the relationship between the distance between two points and the difference in their values. To visualize how the drought anomalies display spatial autocorrelation, a semivariogram was created (Figure 9). The semivariogram illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another. Later on, the values in this semivariogram will be averaged into a certain number of bins and used to model a stochastic function through the averaged values: this function will describe spatial autocorrelation in the kriging surface.  </p> <br>
+<p> One particular type of geostatistical graph helpful for kriging is the semivariogram, which shows the relationship between the distance between two points and the difference in their values. There are several characteristic terms associated with a semivariogram: </p> <br>
+
+<ol>
+<li> The <em> nugget </em> is the value of the semivariogram at a very small distance, often at zero distance. It represents the initial variability or spatial variability that is observed when two data points are very close to each other. Graphically, the nugget is the value where the semivariogram curve starts, before it begins to rise as the distance between points increases. </li>
+<li> The <em> range </em> is the distance at which the semivariogram reaches a <em> sill </em> (or the value at which it levels off). Beyond this range, the values of the semivariogram do not change much, meaning that the data points are no longer strongly correlated. </li>
+<li> The <em> partial sill </em> is the difference between the sill and the nugget. The <em> sill </em> is the value at which the semivariogram levels off at large distances. The partial sill indicates much variation remains in the data after accounting for the nugget. </li>
+</ol> <br>
+    
+<p> The semivariogram cloud below (Figure 9) illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another. Later on, the values in this semivariogram will be averaged into a certain number of lags and used to model a stochastic function through the lags: this function will describe spatial autocorrelation for the kriging surface.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/EbNdkPI.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
