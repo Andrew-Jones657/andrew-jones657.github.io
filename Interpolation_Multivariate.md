@@ -273,9 +273,9 @@
 </figure> <br>
 
 
-<p> A trend analysis graph was created to determine if directional effects were present in the dataset. This was done by generating a 3D scatterplot to examine the relationship between latitude, longitude, and drought values. Upon closer inspection, the scatterplot reveals a shape resembling the outline of Kentucky. Notably, the low, red points indicate areas where drought anomalies are most severe. The analysis suggests a second-order trend, with Figure 8 showing an upward, U-shaped curve for both latitude and longitude. This pattern implies that drought values in central Kentucky are close to the mean, while those in western and eastern Kentucky show significant deviations from the mean. Similarly, the drought levels in southern Kentucky are less severe than those in northern Kentucky. </p> <br>
+<p> A trend analysis graph was created to determine if directional effects were present in the dataset. This was done by generating a 3D scatterplot to examine the relationship between latitude, longitude, and drought values. Upon closer inspection, the scatterplot reveals a shape resembling the outline of Kentucky. Notably, the low, red points indicate areas where drought anomalies are most severe. The analysis suggests a second-order trend, with Figure 8 showing an upward, U-shaped curve for both latitude and longitude. This pattern implies that drought values in central Kentucky are close to the spatial mean, while those in western and eastern Kentucky show significant deviations from the mean. Similarly, the drought levels in southern Kentucky are less severe than those in northern Kentucky. </p> <br>
     
-<p> The broad nature of this trend curve is unlikely to have a substantial effect on the kriging interpolation. If the trend effects (anisotropy) were extremely prominent, it would be possible to remove them, though doing so would limit the creation of other kriging models (e.g. standard error and prediction).   </p> <br>
+<p> The broad nature of this trend curve is unlikely to have a substantial effect on the kriging interpolation. If the trend effects (anisotropy) were extremely prominent, it would be possible to remove them, though doing so would limit the creation of other kriging models (e.g. standard error and prediction). The directional effects will be accounted for in the kriging model by setting a direction and angle that corresponds with the shifts in drought values in eastern and western Kentucky.  </p> <br>
 
 
 <figure>
@@ -291,7 +291,7 @@
 <figcaption> Figure 8. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>    
 </figure>    <br>
 
-<p> To visualize how the drought anomalies display spatial autocorrelation, a semivariogram was created (Figure 9). The semivariogram illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another.  </p> <br>
+<p> One particular type of geostatistical graph helpful for kriging is the semivariogram, which shows the relationship between the distance between two points and the difference in their values. To visualize how the drought anomalies display spatial autocorrelation, a semivariogram was created (Figure 9). The semivariogram illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another. Later on, the values in this semivariogram will be averaged into a certain number of bins and used to model a stochastic function through the averaged values: this function will describe spatial autocorrelation in the kriging surface.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/EbNdkPI.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
