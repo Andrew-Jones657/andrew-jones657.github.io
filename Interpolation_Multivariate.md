@@ -266,7 +266,7 @@
 </table> <br>
 
 
-<p> Kriging yields optimal results when the data adheres to a normal distribution. To evaluate the drought anomaly data for June 1999, a normal QQ plot was generated (Figure 7). This QQ plot reveals a noticeable curvature on the right side, indicating some degree of skewness. A Shapiro-Wilk normality test yielded a W-score of 0.99647 and a p-value of 0.1209. Under a 95% confidence level, one fails to reject the null hypothesis that the sample data (June 1999) is from a normal distribution. The signifigance level, <em> α</em>, would have to be set to 0.13 (or 87% confidence) to reject the null hypothesis. Given the exploratory context of this study, the June 1999 drought anomaly values are expected to be compatible with ordinary kriging interpolation methods. </p> <br>
+<p> Kriging yields optimal results when the data adheres to a normal distribution. To evaluate the drought anomaly data for June 1999, a normal QQ plot was generated (Figure 7). This QQ plot reveals a noticeable curvature on the right side, indicating some degree of skewness. A Shapiro-Wilk normality test yielded a W-score of 0.99647 and a p-value of 0.1209. Under a 95% confidence level, one fails to reject the null hypothesis that the sample data (June 1999) is from a normal distribution. The significance level, <em> α</em>, would have to be set to 0.13 (or 87% confidence) to reject the null hypothesis. Given the exploratory context of this study, the June 1999 drought anomaly values are expected to be compatible with ordinary kriging interpolation methods. </p> <br>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <figure>                                                                                          
 <img class="myImages" id="myImg" src="https://i.imgur.com/NyMQkOO.jpeg" alt="QQPlot" style="width:100%;max-width:625px">
 <figcaption> Figure 7. QQPlot of Cumulative Drought Anomalies from July 1998 to June 1999  </figcaption>
@@ -299,7 +299,7 @@
 <li> The <em> partial sill </em> is the difference between the sill and the nugget. The <em> sill </em> is the value at which the semivariogram levels off at large distances. The partial sill indicates much variation remains in the data after accounting for the nugget. </li>
 </ol> <br>
     
-<p> The semivariogram cloud below (Figure 9) illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another. Later on, the values in this semivariogram will be averaged into a certain number of lags and used to model a stochastic function through the lags: this function will describe spatial autocorrelation for the kriging surface.  </p> <br>
+<p> The semivariogram cloud below (Figure 9) illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another. Later on, the values in this semivariogram will be averaged into a certain number of points and used to model a function: this function will describe spatial autocorrelation for the kriging surface.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/EbNdkPI.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -326,7 +326,7 @@
 <figcaption> Figure 10. Kriging vs IDW Interpolation Models (Posts, 2018)   </figcaption>
 </figure> <br>
 
-<p> The parameters below were used to model the semivariogram for kriging interpolation. This set of parameters was chosen from a set of 30 different kriging models, as it best matched the underlying dataset and produced the most balanced set of cross validation statistics.  </p> <br>
+<p> The parameters below were used to model the semivariogram for kriging interpolation. This set of parameters was chosen from a set of numerous kriging models, as it best matched the underlying dataset and produced the most balanced set of cross validation statistics.  </p> <br>
     
 <table class="tablecenter"> <caption> Table 2. Ordinary Kriging Parameters </caption>
 <thead>
