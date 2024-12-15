@@ -665,7 +665,7 @@
 <p> Another time series plot was created to show the cluster mean centers for each month under a two-cluster configuration. Compared to the agglomerative clustering time series plot in Figure 17, the k-means clustering plot in Figure 25 reveals two nearly mirrored trends. The first cluster represents severe drought anomalies, while the second captures less severe anomalies. Unlike the plot in Figure 17, the clusters in Figure 25 do not overlap, indicating two distinct trends. </p> <br>
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
+<img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="KTimeSeries" style="width:100%;max-width:625px">
 <figcaption> Figure 25. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
@@ -697,6 +697,12 @@
 
 
 <p> (cluster plot with 3 cluster) </p>
+
+<figure>
+<img class="myImages" id="myImg" src= "https://i.imgur.com/0N0U0Ua.jpeg" alt="KTimeSeries3" style="width:100%;max-width:625px">
+<figcaption> Figure 29. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001: Three Clusters   </figcaption>
+</figure> <br>
+
 
 <p> (time series plot with 3 clusters) </p>
 
