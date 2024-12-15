@@ -613,7 +613,7 @@
 <li> a value of 1 indicates an observation fits perfectly in its cluster.  </li>
 </ul> </p> <br>
 
-<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, one observation in each cluster does not fit well, as indicated by the bars falling below the 0.00 line. </p> <br>
+<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, one observation in each cluster does not fit well, as indicated by the bars falling below the 0.00 line.  </p> <br>
 
 
 <figure>
@@ -662,7 +662,7 @@
 <figcaption> Figure 24. Cluster Variance Plot   </figcaption>
 </figure> <br>
 
-<p> In comparison to the time series plot for agglomerative clustering from Figure 17 earlier, the k-means clustering plot in Figure 25 reveals two nearly mirrored trends. The first cluster represents severe drought anomalies, while the second captures less severe anomalies. Unlike the plot in Figure 17, none of the clusters intersect here, indicating two distinct trends. </p> <br>
+<p> Another time series plot was created to show the cluster mean centers for each month under a two-cluster configuration. Compared to the agglomerative clustering time series plot in Figure 17, the k-means clustering plot in Figure 25 reveals two nearly mirrored trends. The first cluster represents severe drought anomalies, while the second captures less severe anomalies. Unlike the plot in Figure 17, the clusters in Figure 25 do not overlap, indicating two distinct trends. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/XwFVhAb.jpeg" alt="AggTimeSeries" style="width:100%;max-width:625px">
@@ -670,9 +670,9 @@
 </figure> <br>
 
 
-<p> Figure 26 displays the k-means cluster map using two clusters. By simplifying to two clusters, the map shows red diamonds representing the worst drought conditions and blue triangles for mild drought conditions. The most severe drought (cluster 1) is concentrated in central Kentucky, the southern Bluegrass region, and parts of eastern Kentucky. In contrast, cluster 2 indicates mild drought conditions in western Kentucky, northern Kentucky, and some areas of eastern Kentucky. </p> <br>
+<p> Finally, another cluster map is created using two clusters (Figure 26). In this simplified version, the map shows red diamonds for the most severe drought conditions and blue triangles for mild drought conditions. Cluster 1, representing the worst drought, is concentrated in central Kentucky, the southern Bluegrass region, and parts of eastern Kentucky. In contrast, Cluster 2 indicates mild drought conditions in western Kentucky, northern Kentucky, and some areas of eastern Kentucky. </p> <br>
 
-<p> A notable shift from the agglomerative clustering map (Figure 18) is observed near the weather stations in Perry and Knox counties. These stations are the only ones to transition from cluster 2 (severe drought) in Figure 18 to cluster 2 (mild drought) in Figure 26. This shift aligns with the edge cases identified in Figure 25. </p> <br>
+<p> A notable shift from the agglomerative clustering map (Figure 18) is observed near the weather stations in Perry (Barbourville) and Knox (Hazard Waterworks) counties in southeastern Kentucky. These stations are the only ones to transition from cluster 2 (severe drought) in Figure 18 to cluster 2 (mild drought) in Figure 26. Both of these weather stations are on the left-most side of cluster 2 in the PCA plot in Figure 25. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
