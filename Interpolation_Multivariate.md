@@ -598,7 +598,7 @@
 <figcaption> Figure 21. Ideal Number of Clusters under the Gap Statistic Method  </figcaption>
 </figure> <br>
 
-<p> Since each of the previous methods suggested a different number of clusters, it was prudent to apply a consensus-based algorithm. Comprising 30 different methods, this algorithm, as shown in Figure 22, suggests that retaining two clusters is preferable to the four clusters identified earlier from the dendrogram. This conclusion is supported by 11 out of the 30 methods.     </p> <br>
+<p> Since each of the previous methods suggested a different number of clusters, it was prudent to apply a consensus-based algorithm. Comprising 30 different methods, this algorithm, as shown in Figure 22, suggests that retaining two clusters is preferable to the four clusters identified earlier from the dendrogram. This conclusion is supported by 11 out of the 30 methods. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Eb2uLiL.jpeg" alt="IdealKCluster" style="width:100%;max-width:625px">
@@ -613,7 +613,7 @@
 <li> a value of 1 indicates an observation fits perfectly in its cluster.  </li>
 </ul> </p> <br>
 
-<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, one observation in each cluster does not fit well, as indicated by the bars falling below the 0.00 line. These observations are Grayson 3 SW in cluster 2 and Hazard Waterworks in cluster 1. </p> <br>
+<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, one observation in each cluster does not fit well, as indicated by the bars falling below the 0.00 line. These observations are Grayson 3 SW in cluster 2 and Hazard Waterworks in cluster 1. It may be worth examining this in detail later. </p> <br>
 
 
 <figure>
@@ -679,7 +679,30 @@
 <figcaption> Figure 26. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<h3> Discussion and Some Final Thoughts </h3>
+<h3> K-Means Clustering: Three Clusters </h3> <br>
+
+<p> </p>
+
+<figure>
+<img class="myImages" id="myImg" src= "https://i.imgur.com/ZXM5217.jpeg" alt="ClusterSilhouette3" style="width:100%;max-width:625px">
+<figcaption> Figure 27. Cluster Silhouette Plot: Three Clusters   </figcaption>
+</figure> <br>
+
+<p> (silhouette plot with 3 clusters) </p>
+
+<figure>
+<img class="myImages" id="myImg" src= "https://i.imgur.com/e4m7FYA.jpeg" alt="ClusterPCAPlot3" style="width:100%;max-width:625px">
+<figcaption> Figure 28. Cluster Variance Plot: Three Clusters   </figcaption>
+</figure> <br>
+
+
+<p> (cluster plot with 3 cluster) </p>
+
+<p> (time series plot with 3 clusters) </p>
+
+<p> (Map with 3 clusters) </p>
+
+<h3> Discussion and Some Final Thoughts </h3> <br>
 
 <p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. Like the other projects, this project was sensitive to user-selected parameters. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters would have created a different model -- the final model was selected as the best overall model of those created. Likewise, if for instance, three clusters were selected under k-means or aggolomerative clustereing, then that may have revealed a substantially different underlying trend concerning drought deficiencies in Kentucky.   </p> <br>
 
