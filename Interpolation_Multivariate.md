@@ -613,7 +613,7 @@
 <li> a value of 1 indicates an observation fits perfectly in its cluster.  </li>
 </ul> </p> <br>
 
-<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, one observation in each cluster does not fit well, as indicated by the bars falling below the 0.00 line.  </p> <br>
+<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, one observation in each cluster does not fit well, as indicated by the bars falling below the 0.00 line. These observations are Grayson 3 SW in cluster 2 and Hazard Waterworks in cluster 1. </p> <br>
 
 
 <figure>
