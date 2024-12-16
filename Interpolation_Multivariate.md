@@ -674,14 +674,18 @@
 
 <p> A notable shift from the agglomerative clustering map (Figure 18) is observed near the weather stations in Perry (Barbourville) and Knox (Hazard Waterworks) counties in southeastern Kentucky. These stations are the only ones to transition from cluster 2 (severe drought) in Figure 18 to cluster 2 (mild drought) in Figure 26. Both of these weather stations are on the left-most side of cluster 2 in the PCA plot in Figure 25. </p> <br>
 
+
+
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/WHAg7RG.jpeg" alt="KMeansMap" style="width:100%;max-width:625px">
 <figcaption> Figure 26. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
+<p> Since the workflow and code has already been created and used on creating a k-means model with two clusters, it would be prudent to observe how well the data works under a three cluster organization. </p> <br>
+
 <h3> K-Means Clustering: Three Clusters </h3> <br>
 
-<p> </p>
+<p> Once again, a silhouette plot was created using three clusters instead of two (Figure 27). While the average silhouette width is smaller at 0.36, the individual observations fit better in these silhouettes, as none of them extend below the 0.00 line.   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/ZXM5217.jpeg" alt="ClusterSilhouette3" style="width:100%;max-width:625px">
