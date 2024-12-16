@@ -463,9 +463,13 @@
 
 <p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p> <br>
 
+<p> (Introduce why multivariate methods are useful here for insight, add something on trend effect over time, how these stations could be grouped together, etc.) </p> <br>
+
+<p> At this point, it would be insightful to evaluate and observe shared characteristics from the overall group of variables. Suffice to say, it would be burdensome to create and even more tedious to navigate 34 more maps for each of the remaining months. Instead, multivariate clustering methods will be used to group similar weather stations together and create various visuals such as time series plots and maps.  </p> <br>
+
 <h3> Introducing Multivariate Methods: Agglomerative Clustering and K-Means </h3> <br>
 
-<p> Now, two types of multivariate clustering methods will be used to explore trends throughout the entire drought anomaly dataset. Unlike univariate methods, it is often the case that there is no clear answer as to which methods or set of parameters are statistically ideal. Heuristics and empirical observation are usually incorporated as starting points, and from there, certain measures can be chosen to help illustrate trends more clearly. First, a simple empirical look will be made using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means. This portion of the project is more reliant on R, as there are only so many ways to analyze multivariate data in ArcGIS Pro.      </p> <br>
+<p> Two types of multivariate clustering methods will be used to explore trends throughout the entire drought anomaly dataset. Unlike univariate methods, it is often the case that there is no clear answer as to which methods or set of parameters are statistically ideal. Heuristics, empirical observation, and background knowledge are usually incorporated as starting points, and from there, certain measures can be chosen to help illustrate trends more clearly. First, a simple empirical look will be made using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means. This portion of the project is more reliant on R, as there are only so many ways to analyze multivariate data in ArcGIS Pro.      </p> <br>
 
 <p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering. </em> </p> <br>
 
@@ -613,7 +617,7 @@
 <li> a value of 1 indicates an observation fits perfectly in its cluster.  </li>
 </ul> </p> <br>
 
-<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, one observation in each cluster does not fit well, as indicated by the bars falling below the 0.00 line. These observations are Grayson 3 SW in cluster 2 and Hazard Waterworks in cluster 1. It may be worth examining this in detail later. </p> <br>
+<p> The average silhouette width for two clusters is 0.41, indicating an acceptable fit overall. However, each cluster has one outlier (indicated by the bars falling below the 0.00 line). These observations are Grayson 3 SW in cluster 2 and Hazard Waterworks in cluster 1. It would be worthwhile to examine this further after finishing the analysis of two clusters. </p> <br>
 
 
 <figure>
@@ -681,11 +685,11 @@
 <figcaption> Figure 26. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> Since the workflow and code has already been created and used on creating a k-means model with two clusters, it would be prudent to observe how well the data works under a three cluster organization. </p> <br>
+<p> To date, agglomerative clustering has been applied to this dataset with four clusters, while k-means has been used with two clusters. As shown earlier in the consensus algorithm in Figure 22, most algorithms agreed on two clusters, although three clusters received the second-highest score. Since the workflow and code for the k-means model with two clusters have already been established, it would be prudent to explore how the data performs when organized into three clusters. </p> <br>
 
 <h3> K-Means Clustering: Three Clusters </h3> <br>
 
-<p> Once again, a silhouette plot was created using three clusters instead of two (Figure 27). While the average silhouette width is smaller at 0.36, the individual observations fit better in these silhouettes, as none of them extend below the 0.00 line.   </p> <br>
+<p> Once again, a cluster silhouette plot was created using three clusters instead of two (Figure 27). While the average silhouette width is smaller at 0.36, the individual observations fit better in these silhouettes, as none of them extend below the 0.00 line.   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/ZXM5217.jpeg" alt="ClusterSilhouette3" style="width:100%;max-width:625px">
@@ -715,13 +719,13 @@
 <figcaption> Figure 30. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001: Three Clusters   </figcaption>
 </figure> <br>
 
-<p> (Map with 3 clusters) </p>
+<p> Finally, there is the question of which of these clustering schemes is the most effective. As stated at the beginning of this section, it is not necessarily obvious which  </p>
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. Like the other projects, this project was sensitive to user-selected parameters. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters would have created a different model -- the final model was selected as the best overall model of those created. Likewise, if for instance, three clusters were selected under k-means or aggolomerative clustereing, then that may have revealed a substantially different underlying trend concerning drought deficiencies in Kentucky.   </p> <br>
+<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. Like the other projects, this project was sensitive to user-selected parameters. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters, or choosing a different kriging type, would have created a different model. Likewise, the agglomerative clustering was done on a simple observational basis and choosing a different starting point for k could have affected the quality of the k-means partitioning.   </p> <br>
 
-<p> This project only scratched the surface of interpolation and multivariate methods, and mainly was intended to show an applied use of some techniques on a spatial dataset. </p>
+<p> This project served as a simple survery of some surface interpolation and multivariate methods, and mainly was intended to show an applied use of some techniques on a spatial dataset. </p>
 
 <p> Further graphical and mapping enhancements may be added to this project in the future. </p> <br>
 
