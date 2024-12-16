@@ -139,14 +139,14 @@
 
  <div class="row">
   <div class="columnImg">
-    <a target="_blank" href=" ">
+    <a target="_blank" href="https://andrew-jones657.github.io/Interpolation_Multivariate">
     <img src="https://i.imgur.com/1Z7Bm7b.jpeg" alt="Interpolation/MV" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Data Analysis in ArcGIS Pro and R: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques (WIP) </h5>
+    <h5> Data Analysis in ArcGIS Pro and R: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques </h5>
     <p> An analysis of a historical drought anomaly dataset of Kentucky. This project explores the severity and spatial distribution of drought deficiencies at a single point in time (June 1999) with interpolation methods as well as trends across the entire dataset. </p>
   </div>
 </div> 
