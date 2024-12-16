@@ -692,7 +692,7 @@
 <figcaption> Figure 27. Cluster Silhouette Plot: Three Clusters   </figcaption>
 </figure> <br>
 
-<p> (silhouette plot with 3 clusters) </p>
+<p> Another PCA cluster plot can be created as well (Figure 28). Note that each weather station retains the same position as in Figure 24, but with three clusters, there are no longer any edge cases that would fit better in a different cluster.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/e4m7FYA.jpeg" alt="ClusterPCAPlot3" style="width:100%;max-width:625px">
@@ -700,7 +700,7 @@
 </figure> <br>
 
 
-<p> (cluster plot with 3 cluster) </p>
+<p> The time series trends presented in Figure 29 below may be the most interesting out of the possible cluster choices. Cluster 1 in this case consists of the weather stations that had the least severe drought conditions: this is similar to cluster 4 from the agglomerative clustering time series (Figure 17). Clusters 2 and 3 have a near symmetrical layout, where cluster 2 is displays moderately severe drought values that began to subside towards the end of the time period and cluster 3 displays weather stations where the drought became most severe twoards the end of the time period.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/0N0U0Ua.jpeg" alt="KTimeSeries3" style="width:100%;max-width:625px">
@@ -708,7 +708,7 @@
 </figure> <br>
 
 
-<p> (time series plot with 3 clusters) </p>
+<p> Finally, the k-means with three clusters can be mapped (Figure 30). This presents a fairly interesting result, as cluster 3 now represents the areas that suffered the least from severe drought -- these areas are not particularly spatially clustered, though most of them appear in western Kentucky, Louisville, and some portions of central and eastern Kentucky. Cluster 1, which represents the areas with the most severe drought trends, is primarily centered in parts of central Kentucky and southern parts of the Bluegrass region. Some portions of eastern Kentucky most severly affected by drought are also in cluster 1. Cluster 2, which represents areas with moderately severe drought, is scattered throughout the state, though northern Kentucky and some parts of eastern and western kentucky tend to hold most of cluster 2's members.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/34iU25q.jpeg" alt="KTimeMap3" style="width:100%;max-width:625px">
