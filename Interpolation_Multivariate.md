@@ -770,10 +770,10 @@
 <p> Figure 24. Cluster Variance Plot  </p>
 <p> Figure 25. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001  </p>
 <p> Figure 26. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001  </p>
-<p> Figure 27.</p>
-<p> Figure 28.</p>
-<p> Figure 29.</p>
-<p> Figure 30.</p>
+<p> Figure 27. Cluster Silhouette Plot: Three Clusters </p>
+<p> Figure 28. Cluster Variance Plot: Three Clusters </p>
+<p> Figure 29. Time Series Plot of K-mean Cluster Mean Centers of Cumulative Drought Anomalies from July 1998 to June 2001: Three Clusters </p>
+<p> Figure 30. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001: Three Clusters </p>
 <p> Table 1. Descriptive Statistics for the Drought Anomalies in June of 1999  </p>
 <p> Table 2. Ordinary Kriging Parameters  </p>
 <p> Table 3. Cross Validation Statistics  </p>
