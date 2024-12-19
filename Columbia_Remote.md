@@ -122,6 +122,53 @@
 
 <body>
 
+<h1> Remote Sensing Analysis: Detecting Land Use Change with Google Earth Engine </h1> <br>
+
+
+<p> Remote sensing has emerged as a powerful tool for monitoring land use change, providing valuable insights into environmental and urban dynamics. By utilizing satellite imagery and aerial photography, researchers can analyze variations in land cover over time, detecting shifts from natural landscapes to urban developments, agricultural expansion, or deforestation. This technology allows for the collection of large-scale data, enabling the assessment of changes in land use patterns across diverse regions. Moreover, remote sensing facilitates the identification of trends and the impacts of human activities on ecosystems, aiding in effective land management and policymaking. Through advanced analytical techniques, such as machine learning and image classification, remote sensing continues to enhance our understanding of the complex interplay between human development and environmental sustainability. </p> <br>
+
+<p> This project is focused on urban development in Boone County, Missouri between 2000 and 2024 using remote sensing methods. Boone County, located in the center of Missouri, has experienced enormous population growth since the 1940s. Its county seat, Columbia, holds over two thirds of its population (Table 1).  Alongside this growth comes the expansion of the City of Columbia and the construction of new subdivisions in both Columbia and Boone County. The final goal will be to create a cartographic product showing newly developed urban and suburban areas in Boone County. </p> <br> 
+
+<table>
+<thead>
+<th> Year </th>
+<th> Boone County Population Change </th>
+<th> City of Columbia Population Change </th>
+</thead>
+<tr>
+<td> 1980 </td>
+<td> 100,376 (24.1%) </td>
+<td> 62,061 (6.0%) </td>
+</tr>
+<tr> 
+<td> 1990 </td>
+<td> 112,379 (12.0%) </td>
+<td> 69,101 (11.0%) </td>
+</tr>
+<tr>
+<td> 2000 </td>
+<td> 135,343 (20.5%) </td>
+<td> 84,531 (28.4%) </td>
+</tr>
+<tr>
+<td> 2010 </td>
+<td> 162,642 (20.1%) </td>
+<td> 108,500 (28.4%) </td>
+</tr>
+<tr>
+<td> 2020 </td>
+<td> 183,610 (12.9%) </td>
+<td> 126,654 (16.4%) </td>
+</tr>
+<tr>
+<td> 2023* </td>
+<td> 189,643 (3.28%) </td>
+<td> 129,330 (2.4%) </td>
+</tr>
+</table>
+
+<h3> Census Data and Municipal Boundaries </h3> <br>
+
 <p> blah blah blah </p> <br> 
 
 <script>
