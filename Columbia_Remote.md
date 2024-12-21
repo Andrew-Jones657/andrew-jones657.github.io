@@ -169,7 +169,18 @@
 
 <h3> Census Data and Municipal Boundaries </h3> <br>
 
+
 <p> blah blah blah </p> <br> 
+
+<h3> Why use Google Earth Engine? </h3> <br>
+
+
+
+<h3> Processing Imagery </h3> <br>
+
+<h3> Links to Google Earth Engine Javascript </h3> <br>
+
+<h3> References </h3>
 
 <script>
 // create references to the modal...
