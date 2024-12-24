@@ -172,6 +172,14 @@
 
 <p> blah blah blah </p> <br> 
 
+<h3> A Visual Observation of Boone County and Gathering Training Data </h3>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/auNwaMJ.jpeg" alt="Training Data" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Boone County Image Classification Training Data </figcaption>
+</figure> <br>
+
+
 <h3> Why use Google Earth Engine? </h3> <br>
 
 
