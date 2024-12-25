@@ -172,6 +172,13 @@
 
 <p> blah blah blah </p> <br> 
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/1qZsXMo.jpeg" alt="Municipality Changes" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Boone County Municipality Growth between 2000 and 2020 </figcaption>
+</figure> <br>
+
+
+
 <h3> A Visual Observation of Boone County and Gathering Training Data </h3>
 
 <figure>
