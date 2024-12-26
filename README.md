@@ -42,6 +42,10 @@
 
 <p> In May of 2020, I graduated from Western Kentucky University with Bachelor's degrees in Human Geography and German Language and Culture, as well as minors in mathematics and GIS. At first glance, it's an unusual combination of subjects, but each of them tie together well. My minors provided a much stronger quantitative and scientific backbone to my geography degree, while my German degree allowed me to experience more of the liberal arts side of things.  </p> <br>
 
+<h3> My areas of interest </h3>
+
+<p> My general areas of interest include cultural and historical geography, German-American culture, and human-environment interactions. In particular, I enjoy (and can spend a long amount of time) observing historical remote sensing imagery and land use change as well as the development and spatial diffusion of cities -- particularly in those I have resided. On the quantitative side, I tend towards being a fan of data (spatial) analysis, statistical programming, and mathematical optimization. I am often found combining these areas by incorporating census data with other data sources to explore various spatial questions in human geography. </p> <br>
+
 <h3> What I used to do  </h3>
 
 <p> Most recently, I worked at <b> the Missouri House of Representatives </b> as the GIS redistricting analyst. In this position, I assisted representatives with drafting congressional district plans and I provided all sorts of data figures from the 2020 US Census. I also helped update the House's web map API from the old Google Maps API to the Leaflet API, and I created 163 custom maps for each of the newly redistricted state house districts.  <br> <br> I have also worked at <b> Warren County Public Works Division of Stormwater Management </b> as a GIS services intern. Here, I had the opportunity to do various GIS related tasks for the department, and I learned a lot about database management by helping create the stormwater asset collection form that I later used to collect over 1000 stormwater assets across Warren County, KY.    </p> <br>
