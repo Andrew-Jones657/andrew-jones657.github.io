@@ -127,7 +127,7 @@
 
 <p> Remote sensing has emerged as a powerful tool for monitoring land use change, providing valuable insights into environmental and urban dynamics. By utilizing satellite imagery and aerial photography, researchers can analyze variations in land cover over time, detecting shifts from natural landscapes to urban developments, agricultural expansion, or deforestation. This technology allows for the collection of large-scale data, enabling the assessment of changes in land use patterns across diverse regions. Moreover, remote sensing facilitates the identification of trends and the impacts of human activities on ecosystems, aiding in effective land management and policymaking. Through advanced analytical techniques, such as machine learning and image classification, remote sensing continues to enhance our understanding of the complex interplay between human development and environmental sustainability. </p> <br>
 
-<p> This project is focused on urban development in Boone County, Missouri between 2000 and 2024 using remote sensing methods. Boone County, located in the center of Missouri, has experienced enormous population growth since the 1940s. Its county seat, Columbia, holds over two thirds of its population (Table 1).  Alongside this growth comes the expansion of the City of Columbia and the construction of new subdivisions in both Columbia and Boone County. The final goal will be to create a cartographic product showing newly developed urban and suburban areas in Boone County. </p> <br>
+<p> This project is focused on urban development in Boone County, Missouri between 2000 and 2024 using remote sensing methods. Boone County, located in the center of Missouri, has experienced enormous population growth since the 1940s. Its county seat, Columbia, holds over two thirds of its population.  Alongside this growth comes the expansion of the City of Columbia and the construction of new subdivisions in both Columbia and Boone County. The final goal will be to create a cartographic product showing newly developed urban and suburban areas in Boone County. </p> <br>
 
 <h3> Census Data and Municipal Boundaries </h3> <br>
 
@@ -197,6 +197,8 @@
 <h3> Processing Imagery </h3> <br>
 
 <h3> Links to Google Earth Engine Javascript </h3> <br>
+
+<h3> List of Figures and Tables </h3>
 
 <h3> References </h3>
 
