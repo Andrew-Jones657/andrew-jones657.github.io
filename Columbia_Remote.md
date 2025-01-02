@@ -194,11 +194,20 @@ object-fit: cover;
 
 <p> However, the nature of this expansion, particularly in terms of developed neighborhoods, is not easily discernible. Figure 1 only illustrates areas that have been incorporated into nearby municipalities, and it is also possible that new suburban areas exist outside the City of Columbia. This is where a land use classification map becomes particularly useful in identifying overall development. </p> <br>
 
-<h3> A Visual Observation of Boone County and Gathering Training Data </h3>
+<h3> Preparing Data for a Supervised Land Use Classification Model  </h3> <br>
+
+<p> To create a land use classification map, a machine learning algorithm is used to convert satellite imagery into a land use classification raster. This process involves simplifying a complex dataset into a limited number of classes. To achieve this, either a supervised or unsupervised algorithm can be employed (Figure 2). For this study, supervised classification will be used to accurately characterize each classification scheme. </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/tWJAHm5.jpeg" alt="Supervised Unsupervised" style="width:100%;max-width:625px">
+<figcaption> Figure 2. Supervised vs Unsupervised Classification (Mishra, 2020) </figcaption>
+</figure> <br>
+
+<p> In supervised classification, training data—hand-drawn or selected—provides representative samples for each land use class. For this study, the land use classes included "water," "urban," "treetop," "agriculture," and "pastoral." Typically, at least fifty samples per class are recommended, although more may be required in practice (Lillesand et al., 2004). In this study, 200 observations were collected for each class, resulting in 1000 total observations (Figure 3). These observations were placed on a 2004 orthophoto from the Missouri Spatial Data Information Service.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/auNwaMJ.jpeg" alt="Training Data" style="width:100%;max-width:625px">
-<figcaption> Figure 2. Boone County Image Classification Training Data </figcaption>
+<figcaption> Figure 3. Boone County Image Classification Training Data </figcaption>
 </figure> <br>
 
 
@@ -240,7 +249,23 @@ object-fit: cover;
 
 <h3> The Confusion Matrix </h3> <br>
 
+<p> To evaluate the effectiveness of the land use classification scheme, a confusion matrix was generated along with the imagery export. A confusion matrix compares actual values to predicted values, with the diagonal elements (from the top-left to the bottom-right) representing the correctly classified values, or true positives (Figure ?). The off-diagonal elements indicate errors, reflecting either false positives or false negatives. The following images were created using an online confusion matrix calculator by Marco Vanetti (2007). </p> <br>
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/GXNIidu.png" alt="2000 Land Use Matrix " style="width:100%;max-width:625px">
+<figcaption> Figure ?. 2000 Land Use Classification Confusion Matrix </figcaption>
+</figure> <br>
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/3CRxN13.png" alt="2024 Land Use Matrix " style="width:100%;max-width:625px">
+<figcaption> Figure ?. 2024 Land Use Classification Confusion Matrix </figcaption>
+</figure> <br>
+
 <h3> Moving to ArcGIS Pro </h3> <br>
+
+
 
 <h3> Final Products </h3> <br>
 
