@@ -110,10 +110,18 @@
     width: 100%;
   }
 }
-    .row {
+
+.row {
     display: flex;
     }
-    .imgContainer{
+
+/* Create three equal columns that sits next to each other */
+    .column {
+    flex: 50%;
+    padding: 5px;
+    }
+
+.imgContainer{
     float:left;
     }
     
@@ -190,11 +198,40 @@
 </figure> <br>
 
 
-<h3> Why use Google Earth Engine? </h3> <br>
+<h3> Google Earth Engine </h3> <br>
+
+
+<h3> Selecting a Satellite, Imagery, and Spectral Bands for Land Classification </h3> <br>
+
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/GQ0kO2P.png" alt="Raw 2000 Bands 1_4_5" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/u16FlSN.png" alt="Raw 2024 7_6_4" style="width:100%">
+  </div>
+</div> <br>
+
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/PBy7nzX.png" alt="Raw 2000 Bands 4_5_6" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/Q8Y8sSy.png" alt="Raw 2024 5_6_10" style="width:100%">
+  </div>
+</div> <br>
 
 
 
-<h3> Processing Imagery </h3> <br>
+<h3> Classifying Imagery in Google Earth Engine </h3> <br>
+
+<h3> The Confusion Matrix </h3> <br>
+
+<h3> Moving to ArcGIS Pro </h3> <br>
+
+<h3> Final Products </h3> <br>
+
+<h3> Discussion </h3> <br>
 
 <h3> Links to Google Earth Engine Javascript </h3> <br>
 
