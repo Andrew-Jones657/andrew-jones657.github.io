@@ -124,6 +124,10 @@
 .imgContainer{
     float:left;
     }
+
+.img{
+object-fit: cover;
+    }
     
 </style>
 </head>
@@ -224,6 +228,15 @@
 
 
 <h3> Classifying Imagery in Google Earth Engine </h3> <br>
+
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/TgDDXEA.png" alt="Raw 2000 Land Use" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/lEPgdrB.png" alt="Raw 2024 Land Use" style="width:100%">
+  </div>
+</div> <br>
 
 <h3> The Confusion Matrix </h3> <br>
 
