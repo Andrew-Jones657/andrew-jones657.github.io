@@ -212,16 +212,16 @@ object-fit: cover;
     <img src="https://i.imgur.com/GQ0kO2P.png" alt="Raw 2000 Bands 1_4_5" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/u16FlSN.png" alt="Raw 2024 7_6_4" style="width:100%">
+    <img src="https://i.imgur.com/eVqj7wh.png" alt="Raw 2024 7_6_4" style="width:100%">
   </div>
 </div> <br>
 
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/PBy7nzX.png" alt="Raw 2000 Bands 4_5_6" style="width:100%">
+    <img src="https://i.imgur.com/rr5C23W.png" alt="Raw 2000 Bands 4_5_6" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/Q8Y8sSy.png" alt="Raw 2024 5_6_10" style="width:100%">
+    <img src="https://i.imgur.com/yB0TgyL.png" alt="Raw 2024 5_6_10" style="width:100%">
   </div>
 </div> <br>
 
@@ -231,10 +231,10 @@ object-fit: cover;
 
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/TgDDXEA.png" alt="Raw 2000 Land Use" style="width:100%">
+    <img src="https://i.imgur.com/KJGSiYJ.png" alt="Raw 2000 Land Use" style="width:100%">
   </div>
   <div class="column">
-    <img src="https://i.imgur.com/lEPgdrB.png" alt="Raw 2024 Land Use" style="width:100%">
+    <img src="https://i.imgur.com/LFLo2zR.png" alt="Raw 2024 Land Use" style="width:100%">
   </div>
 </div> <br>
 
