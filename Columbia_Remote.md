@@ -203,16 +203,20 @@ object-fit: cover;
 <figcaption> Figure 2. Supervised vs Unsupervised Classification (Mishra, 2020) </figcaption>
 </figure> <br>
 
-<p> In supervised classification, training data—hand-drawn or selected—provides representative samples for each land use class. For this study, the land use classes included "water," "urban," "treetop," "agriculture," and "pastoral." Typically, at least fifty samples per class are recommended, although more may be required in practice (Lillesand et al., 2004). In this study, 200 observations were collected for each class, resulting in 1000 total observations (Figure 3). These observations were placed on a 2004 orthophoto from the Missouri Spatial Data Information Service.  </p> <br>
+<p> In supervised classification, training data—hand-drawn or selected—provides representative samples for each land use class. For this study, the land use classes included "water," "urban," "treetop," "agriculture," and "pastoral." Typically, at least fifty samples per class are recommended, although more may be required in practice (Lillesand et al., 2004). In this study, 200 observations were collected for each class, resulting in 1000 total observations (Figure 3). These observations were placed on a 2004 orthophoto from the Missouri Spatial Data Information Service, given latitude and longitude values, and then exported to a spreadsheet. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/auNwaMJ.jpeg" alt="Training Data" style="width:100%;max-width:625px">
 <figcaption> Figure 3. Boone County Image Classification Training Data </figcaption>
 </figure> <br>
 
+<p> Since this project spans from 2000 to 2024, sourcing remote sensing imagery for these years is essential. However, the Missouri Spatial Data Information Service only offers orthophotos from 2004 and 2022. Additionally, attempting to classify large files like these on a personal computer would be time-consuming and inefficient. In this case, it is more effective to pursue a cloud-based solution. One particularly useful platform for collecting, analyzing, and disseminating remote sensing imagery is Google Earth Engine.  </p> <br>
 
 <h3> Google Earth Engine </h3> <br>
 
+<p> Google Earth Engine (GEE) is a powerful cloud-based platform designed for analyzing and visualizing geospatial data. It provides access to a vast repository of satellite imagery, geospatial datasets, and other environmental data, enabling researchers, scientists, and developers to perform large-scale spatial analysis and monitoring. With tools for processing and analyzing data from sources like NASA, USGS, and various global satellite networks, GEE supports applications in fields such as environmental monitoring, disaster management, agriculture, and climate change. Its cloud infrastructure allows users to conduct complex analyses efficiently without needing local computational resources. Additionally, Google Earth Engine facilitates collaboration and sharing of data and results through its online interface and APIs. </p> <br>
+
+<p> </p> <br>
 
 <h3> Selecting a Satellite, Imagery, and Spectral Bands for Land Classification </h3> <br>
 
@@ -249,7 +253,14 @@ object-fit: cover;
 
 <h3> The Confusion Matrix </h3> <br>
 
-<p> To evaluate the effectiveness of the land use classification scheme, a confusion matrix was generated along with the imagery export. A confusion matrix compares actual values to predicted values, with the diagonal elements (from the top-left to the bottom-right) representing the correctly classified values, or true positives (Figure ?). The off-diagonal elements indicate errors, reflecting either false positives or false negatives. The following images were created using an online confusion matrix calculator by Marco Vanetti (2007). </p> <br>
+<p> To evaluate the effectiveness of the land use classification scheme, a confusion matrix was generated along with the imagery export. A confusion matrix compares actual values to predicted values, with the diagonal elements (from the top-left to the bottom-right) representing the correctly classified values, or true positives (Figure ?). The off-diagonal elements indicate errors, reflecting either false positives or false negatives. </p> 
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/H9DoLdK.png" alt="Confusion Matrix" style="width:100%;max-width:625px">
+<figcaption> Figure ?. The Confusion Matrix (?) </figcaption>
+</figure> <br>
+
+<p> The following images were created using an online confusion matrix calculator by Marco Vanetti (2007). Observing Figure ? below,   </p> <br>
 
 
 <figure>
@@ -263,15 +274,45 @@ object-fit: cover;
 <figcaption> Figure ?. 2024 Land Use Classification Confusion Matrix </figcaption>
 </figure> <br>
 
-<h3> Moving to ArcGIS Pro </h3> <br>
+<h3> Refining the Land Use Rasters on ArcGIS Pro </h3> <br>
+
+
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/Kalby2c.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Boone County 2000 Land Use </figcaption>
+</figure> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/si4PMeO.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
+<figcaption> Figure ?. Boone County 2000 Land Use </figcaption>
+</figure> <br>
+
 
 
 
 <h3> Final Products </h3> <br>
 
+
+<p> Final Land Use Change Map </p>
+
+
 <h3> Discussion </h3> <br>
 
 <h3> Links to Google Earth Engine Javascript </h3> <br>
+
+<p> 2000 Raw Imagery </p>
+
+<p> 2024 Raw Imagery </p>
+
+<p> 2000 Raw Imagery (Bands 4, 5, 6) </p>
+
+<p> 2024 Raw Imagery (Bands 5, 6, 10) </p>
+
+<p> 2000 Land Use Classification </p>
+
+<p> 2024 Land Use Classification </p>
 
 <h3> List of Figures and Tables </h3>
 
