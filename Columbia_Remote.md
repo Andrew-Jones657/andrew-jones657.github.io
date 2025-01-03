@@ -253,14 +253,24 @@ object-fit: cover;
 
 <h3> The Confusion Matrix </h3> <br>
 
-<p> To evaluate the effectiveness of the land use classification scheme, a confusion matrix was generated along with the imagery export. A confusion matrix compares actual values to predicted values, with the diagonal elements (from the top-left to the bottom-right) representing the correctly classified values, or true positives (Figure ?). The off-diagonal elements indicate errors, reflecting either false positives or false negatives. </p> 
+<p> To evaluate the effectiveness of the land use classification scheme, a confusion matrix was generated along with the imagery export. A confusion matrix compares actual values to predicted values, with the diagonal elements (from the top-left to the bottom-right) representing the correctly classified values, or true positives (Figure ?). The off-diagonal elements indicate errors, reflecting either false positives or false negatives. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/H9DoLdK.png" alt="Confusion Matrix" style="width:100%;max-width:625px">
 <figcaption> Figure ?. The Confusion Matrix (?) </figcaption>
 </figure> <br>
 
-<p> The following images were created using an online confusion matrix calculator by Marco Vanetti (2007). Observing Figure ? below,   </p> <br>
+<p> To evaluate the quality of the land classification categories, Cohen’s kappa coefficient can be used to consider the possibility of the land classification agreement occurring by chance. The coefficient takes a value between -1 and 1, where:</p>
+
+<ul>
+<li> Below 0.20 indicates none to slight agreement </li>
+<li> .21 to .39 indicates fair agreement  </li>
+<li> .40 to .59 indicates moderate agreement </li>
+<li> .60 to .79 indicates substantial agreement </li>
+<li> .80 to 1 indicates almost perfect agreement </li>
+</ul> <br>
+
+<p> The following images were created using an online confusion matrix calculator by Marco Vanetti (2007). Observing Figure ? below, the overall accuracy is approximately 83%. Most of the false hits occured in the agriculture and pastoral classifications, as these were the most difficult to distinguish from one another. Water, urban, and tree cover performed quite well at over 90% in each class.  </p> <br>
 
 
 <figure>
@@ -268,7 +278,8 @@ object-fit: cover;
 <figcaption> Figure ?. 2000 Land Use Classification Confusion Matrix </figcaption>
 </figure> <br>
 
-
+<p> Similarly, the confusion matrix for the 2024 imagery is approximately 83% accurate overall.  </p>
+ 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/3CRxN13.png" alt="2024 Land Use Matrix " style="width:100%;max-width:625px">
 <figcaption> Figure ?. 2024 Land Use Classification Confusion Matrix </figcaption>
