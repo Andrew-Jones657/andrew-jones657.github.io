@@ -216,9 +216,13 @@ object-fit: cover;
 
 <p> Google Earth Engine (GEE) is a powerful cloud-based platform designed for analyzing and visualizing geospatial data. It provides access to a vast repository of satellite imagery, geospatial datasets, and other environmental data, enabling researchers, scientists, and developers to perform large-scale spatial analysis and monitoring. With tools for processing and analyzing data from sources like NASA, USGS, and various global satellite networks, GEE supports applications in fields such as environmental monitoring, disaster management, agriculture, and climate change. Its cloud infrastructure allows users to conduct complex analyses efficiently without needing local computational resources. Additionally, Google Earth Engine facilitates collaboration and sharing of data and results through its online interface and APIs. </p> <br>
 
-<p> </p> <br>
+<p> Incorporating GEE into this workflow simplifies many potential challenges. Through GEE, a plethora of satellite images spanning a multitude of years are now easily accessible and available for analysis. This makes obtaining imagery much easier than attempting to search through specific local, statewide, and municipal sources. Moreover, GEE is capable of handling complex land use classification analyses, significantly reducing the time required for processing. </p> <br>
+
+<p> The caveat to the advantages of GEE is that it requires JavaScript to perform commands and operations. While this presents a more difficult learning curve for users, there are many example scripts that can be modified to perform many common remote sensing workflows. Additionally, scripts can easily be shared through the JavaScript code, making it easy to reproduce workflows and satellite imagery products. </p>
 
 <h3> Selecting a Satellite, Imagery, and Spectral Bands for Land Classification </h3> <br>
+
+<p> For this project, Landsat satellite imagery will be used. Landsat is a joint NASA/USGS program which provides the longest continuous space-based record of Earth’s land in existence. Since the period of this study is over twenty years, suitable imagery can be found from Landsat5 and Landsat8. The imagery from 2000 is a composite between June 1st and September 1st, and the imagery from 2024 is a composite between April 1st and June 1st. There is no particular significance to these dates, they are simply the clearest overall composites selected from those years.  </p> <br>
 
  <div class="row">
   <div class="column">
