@@ -229,24 +229,18 @@ object-fit: cover;
 
 <p> For this project, Landsat satellite imagery will be used. Landsat is a joint NASA/USGS program which provides the longest continuous space-based record of Earth’s land in existence. Since the period of this study is over twenty years, suitable imagery can be found from Landsat5 and Landsat8. The imagery from 2000 is a composite between June 1st and September 1st, and the imagery from 2024 is a composite between April 1st and June 1st. There is no particular significance to these dates, they are simply the clearest overall composites selected from those years.  </p> <br>
 
- <div class="row">
-  <div class="column">
-    <img src="https://i.imgur.com/GQ0kO2P.png" alt="Raw 2000 Bands 1_4_5" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://i.imgur.com/eVqj7wh.png" alt="Raw 2024 7_6_4" style="width:100%">
-  </div>
-</div> <br>
 
- <div class="row">
-  <div class="column">
-    <img src="https://i.imgur.com/rr5C23W.png" alt="Raw 2000 Bands 4_5_6" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://i.imgur.com/yB0TgyL.png" alt="Raw 2024 5_6_10" style="width:100%">
-  </div>
-</div> <br>
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/siPVHwu.jpeg" alt="Landsat RGB" style="width:100%;max-width:625px">
+<figcaption> Figure 5. Simple RGB Landsat Imagery for 2000 and 2024  </figcaption>
+</figure> <br>
 
+<p>  </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/bZOb8Ua.jpeg" alt="Landsat Special" style="width:100%;max-width:625px">
+<figcaption> Figure 6. Specific Landsat Imagery to Detect Urban Features for 2000 and 2024  </figcaption>
+</figure> <br>
 
 
 <h3> Classifying Imagery in Google Earth Engine </h3> <br>
