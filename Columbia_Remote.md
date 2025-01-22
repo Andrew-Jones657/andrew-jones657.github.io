@@ -247,16 +247,20 @@ object-fit: cover;
 <figcaption> Figure 6. Specific Landsat Imagery to Detect Urban Features for 2000 and 2024  </figcaption>
 </figure> <br>
 
+<p> Next, the remote sensing imagery can be classified using GEE.   </p> <br>
 
 <h3> Classifying Imagery in Google Earth Engine </h3> <br>
 
-
+<p> The training data from Figure 3 and the spectral band combinations from Figure 6 can be used as parameters for the land classification algorithm. Additionally, a rectangular boundary can be drawn to limit the export results to areas around Boone County. The results of the algorithm are presented in Figure 7 below. The JavaScript code to replicate this workflow can be found at the bottom of this web page. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/6Wbbi9S.jpeg" alt="Raw Land Use" style="width:100%;max-width:625px">
 <figcaption> Figure 7. The Land Use Layers from Google Earth Engine  </figcaption>
 </figure> <br>
 
+<p> Visually, the land classification algorithm performed well in terms of identifying actual urban areas, water, and treetops. The difference between pastoral and agriculture was more discrete, so those two classifications are more comingled. One challenge with Columbia is the amount of tree cover in some old neighborhoods west of downtown – these neighborhoods may be classified as something other than urban due to the prolific tree cover present. Fortunately, since this study is looking at newly developed neighborhoods, this should not present too many issues. </p> <br>
+
+<p> While a simple visual analysis is helpful in quickly determining whether a land classification algorithm was successful, there are also proper methods of quantifying the algorithm’s quality. A confusion matrix can be used to evaluate the quality of the land use classification scheme with more statistical rigor.  </p> <br>
 
 <h3> The Confusion Matrix </h3> <br>
 
