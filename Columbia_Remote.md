@@ -218,6 +218,11 @@ object-fit: cover;
 
 <p> Incorporating GEE into this workflow simplifies many potential challenges. Through GEE, a plethora of satellite images spanning a multitude of years are now easily accessible and available for analysis. This makes obtaining imagery much easier than attempting to search through specific local, statewide, and municipal sources. Moreover, GEE is capable of handling complex land use classification analyses, significantly reducing the time required for processing. </p> <br>
 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/Ig4Yc1f.png" alt="GEE Console" style="width:100%;max-width:625px">
+<figcaption> Figure 4. The Google Earth Engine Console </figcaption>
+</figure> <br>
+
 <p> The caveat to the advantages of GEE is that it requires JavaScript to perform commands and operations. While this presents a more difficult learning curve for users, there are many example scripts that can be modified to perform many common remote sensing workflows. Additionally, scripts can easily be shared through the JavaScript code, making it easy to reproduce workflows and satellite imagery products. </p>
 
 <h3> Selecting a Satellite, Imagery, and Spectral Bands for Land Classification </h3> <br>
