@@ -268,10 +268,27 @@ object-fit: cover;
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/H9DoLdK.png" alt="Confusion Matrix" style="width:100%;max-width:625px">
-<figcaption> Figure ?. The Confusion Matrix (?) </figcaption>
+<figcaption> Figure 8. The Confusion Matrix (?) </figcaption>
 </figure> <br>
 
-<p> To evaluate the quality of the land classification categories, Cohen’s kappa coefficient can be used to consider the possibility of the land classification agreement occurring by chance. The coefficient takes a value between -1 and 1, where:</p>
+<p> There are a few important terms to understand concerning confusion matrices. The <em>overall accuracy</em> is the number of false positives and negatives divided by the number of true positives and negatives. This measure provides a general assessment of the quality of a land classification algorithm. Additionally, there are the <em>User Accuracy (Precision)</em> and <em>Prediction Accuracy (Recall)</em>. The user accuracy refers to the probability that a value predicted to be in a certain class is truly in that class. The prediction accuracy is the probability that a given value was classified correctly. </p> <br>
+
+<p> The confusion matrix for the 2000 land use classification can be found in Figure 9 below. The matrix images were created using an online confusion matrix calculator by Marco Vanetti (2007). The overall accuracy for the 2000 classification was 83.162%, with the highest accuracy being reported in the water, urban, and tree cover classes. These tend to be distinct, so it makes sense that the algorithm was able to identify them successfully. The agriculture and pasture classes faired worse, which was understandable given that these two are more difficult to separate from one another. In particular, agriculture classification is difficult due to the various appearances of different crops as well as harvest times.  </p> <br>
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/GXNIidu.png" alt="2000 Land Use Matrix " style="width:100%;max-width:625px">
+<figcaption> Figure 9. 2000 Land Use Classification Confusion Matrix </figcaption>
+</figure> <br>
+
+<p> The overall accuracy for the 2024 classification was 83.681%, which is roughly the same as in Figure 9 above. It is important to note that the same set of training data was used for both of these classifications, so it would have been surprising if Figure 10 had a significantly different overall accuracy. Again, the results for the confusion matrix were quite similar as well. Water, urban, and tree cover classification faired well, whereas agriculture and pasture were more difficult to correctly classify.  </p> <br>
+ 
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/3CRxN13.png" alt="2024 Land Use Matrix " style="width:100%;max-width:625px">
+<figcaption> Figure 10. 2024 Land Use Classification Confusion Matrix </figcaption>
+</figure> <br>
+
+<p> To evaluate the quality of the land classification categories, Cohen’s kappa coefficient can be used to consider the possibility of the land classification agreement occurring by chance (or the agreement between the classification and the truth values). The coefficient takes a value between -1 and 1, where: </p>
 
 <ul>
 <li> Below 0.20 indicates none to slight agreement </li>
@@ -281,20 +298,8 @@ object-fit: cover;
 <li> .80 to 1 indicates almost perfect agreement </li>
 </ul> <br>
 
-<p> The following images were created using an online confusion matrix calculator by Marco Vanetti (2007). Observing Figure ? below, the overall accuracy is approximately 83%. Most of the false hits occured in the agriculture and pastoral classifications, as these were the most difficult to distinguish from one another. Water, urban, and tree cover performed quite well at over 90% in each class.  </p> <br>
+<p> (expand on results for each matrix) </p>
 
-
-<figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/GXNIidu.png" alt="2000 Land Use Matrix " style="width:100%;max-width:625px">
-<figcaption> Figure ?. 2000 Land Use Classification Confusion Matrix </figcaption>
-</figure> <br>
-
-<p> Similarly, the confusion matrix for the 2024 imagery is approximately 83% accurate overall.  </p>
- 
-<figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/3CRxN13.png" alt="2024 Land Use Matrix " style="width:100%;max-width:625px">
-<figcaption> Figure ?. 2024 Land Use Classification Confusion Matrix </figcaption>
-</figure> <br>
 
 <h3> Refining the Land Use Rasters on ArcGIS Pro </h3> <br>
 
@@ -303,12 +308,12 @@ object-fit: cover;
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Kalby2c.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Boone County 2000 Land Use </figcaption>
+<figcaption> Figure 11. Boone County 2000 Land Use </figcaption>
 </figure> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/si4PMeO.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
-<figcaption> Figure ?. Boone County 2000 Land Use </figcaption>
+<figcaption> Figure 12. Boone County 2000 Land Use </figcaption>
 </figure> <br>
 
 
