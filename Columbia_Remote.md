@@ -229,13 +229,18 @@ object-fit: cover;
 
 <p> For this project, Landsat satellite imagery will be used. Landsat is a joint NASA/USGS program which provides the longest continuous space-based record of Earth’s land in existence. Since the period of this study is over twenty years, suitable imagery can be found from Landsat5 and Landsat8. The imagery from 2000 is a composite between June 1st and September 1st, and the imagery from 2024 is a composite between April 1st and June 1st. There is no particular significance to these dates, they are simply the clearest overall composites selected from those years.  </p> <br>
 
+<p> One key aspect of remote sensing analysis is selecting the appropriate spectral bands of a satellite. Spectral bands are specific sensors on a satellite that capture distinct electromagnetic wavelengths. The choice of spectral bands significantly affects the appearance of satellite imagery, with certain combinations being ideal for highlighting features such as urban sprawl, forest cover, water bodies, and other spatial phenomena. Since the 2000 imagery is from Landsat 5 and the 2024 imagery is from Landsat 8, different band combinations must be used for each satellite to achieve optimal results in urban classification. Figure 5 below shows imagery from 2000 and 2024 using a simple RGB color scheme: this corresponds to bands 3, 2, and 1 on Landsat 5 and bands 4, 3, and 2 on Landsat 8. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/siPVHwu.jpeg" alt="Landsat RGB" style="width:100%;max-width:625px">
 <figcaption> Figure 5. Simple RGB Landsat Imagery for 2000 and 2024  </figcaption>
 </figure> <br>
 
-<p>  </p> <br>
+<p> For the land classification algorithm to be effective, each of the land use types must appear distinct from one another. The traditional band combinations used to identify urban areas in Landsat imagery include bands (1, 4, 5) for Landsat 5 and bands (7, 6, 4) for Landsat 8. Both band sets were tested with the land use classification model, but ultimately, another set of bands created better results.  </p> <br>
+
+<p> To identify unique features in Landsat 5 imagery, Gautam et al. (2017) suggested a different set of bands. For this study, the Landsat 5 imagery was classified using bands 4, 5, 6, which correspond to near infrared (0.76 - 0.90 μm), shortwave infrared 1 (1.55 - 1.75 μm), and thermal infrared 1 (10.40 - 12.50 μm). This combination of spectral bands renders imagery that depicts urban areas in purple, tree cover in brown, water in dark blue, agriculture in tan or green, and pasture in light green.  </p> <br>
+
+<p> A similar focus on the infrared sensors was applied to the Landsat 8 imagery. The imagery was ultimately classified using bands 5, 6, 10, which correspond to near infrared (0.85 - 0.88 μm), shortwave infrared 1(1.57 - 1.65 μm), and thermal infrared 1 (10.60 - 11.19 μm). This helped mitigate the dark appearance of the Landsat 8 imagery. Figure 6 below depicts the altered imagery side-by-side below.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/bZOb8Ua.jpeg" alt="Landsat Special" style="width:100%;max-width:625px">
@@ -245,14 +250,13 @@ object-fit: cover;
 
 <h3> Classifying Imagery in Google Earth Engine </h3> <br>
 
- <div class="row">
-  <div class="column">
-    <img src="https://i.imgur.com/KJGSiYJ.png" alt="Raw 2000 Land Use" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://i.imgur.com/LFLo2zR.png" alt="Raw 2024 Land Use" style="width:100%">
-  </div>
-</div> <br>
+
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/6Wbbi9S.jpeg" alt="Raw Land Use" style="width:100%;max-width:625px">
+<figcaption> Figure 7. The Land Use Layers from Google Earth Engine  </figcaption>
+</figure> <br>
+
 
 <h3> The Confusion Matrix </h3> <br>
 
