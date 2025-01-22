@@ -298,25 +298,28 @@ object-fit: cover;
 <li> .80 to 1 indicates almost perfect agreement </li>
 </ul> <br>
 
-<p> (expand on results for each matrix) </p>
+<p> (expand on results for each matrix) </p> <br>
 
 
 <h3> Refining the Land Use Rasters on ArcGIS Pro </h3> <br>
 
+<p> A few tools in ArcGIS Pro are helpful in cleaning up the land use classification layers. By applying a majority filter and boundary clean, the land use layers have fewer single erroneous pixels and the boundaries between classification types are smoothed and generalized. </p>
 
-
+<p> The final result for the 2000 land use classification is presented below in Figure 11. Visually, it has performed well at reflecting the different land cover types. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/Kalby2c.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
 <figcaption> Figure 11. Boone County 2000 Land Use </figcaption>
 </figure> <br>
 
+<p> Similarly, in Figure 12 below, the 2024 land use classification is presented. In comparison to the previous figure, the urban areas have notably expanded, particularly in Ashland, Centralia, Columbia, Hallsville, and Sturges. Fewer tree cover is present: this may be due to increased development, but it is also possible that there was less vegetative growth due to the choice of satellite imagery from Spring rather than Summer.  </p> <br>
+
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/si4PMeO.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
 <figcaption> Figure 12. Boone County 2000 Land Use </figcaption>
 </figure> <br>
 
-
+<p> With the land classification layers prepared, it is now possible to use raster tools to reclassify the land use layers as "urban" or "not urban" and then calculate the difference in the urban class from 2000 to 2024. The remaining layer will represent new urban areas that developed between 2000 and 2024.  </p> <br>
 
 
 <h3> Final Products </h3> <br>
@@ -325,7 +328,12 @@ object-fit: cover;
 <p> Final Land Use Change Map </p>
 
 
-<h3> Discussion </h3> <br>
+<h3> Discussion and Some Final Thoughts </h3> <br>
+
+<p> There remains the question of whether the land use classification in this project could be considered of good quality. Olson (2008) contends that while modern users are comfortable with an 80% overall accuracy rate in classified imagery, the traditional standard has been an 85% overall accuracy rate. Both confusion matrices revealed an accuracy rate of around 83%, which indicates that, while the models were good in identifying new urban growth, a further refinement of training data might assist in removing false hits and better capturing urban areas.  </p> <br>
+
+<p> As with all projects on this site, further mapping and graphical enhancements may be periodically added.  </p>
+
 
 <h3> Links to Google Earth Engine Javascript </h3> <br>
 
