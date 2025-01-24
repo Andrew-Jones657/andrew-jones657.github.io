@@ -343,7 +343,7 @@ object-fit: cover;
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/si4PMeO.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
-<figcaption> Figure 12. Boone County 2000 Land Use </figcaption>
+<figcaption> Figure 12. Boone County 2024 Land Use </figcaption>
 </figure> <br>
 
 <p> With the land classification layers prepared, it is now possible to use raster tools to reclassify the land use layers as "urban" or "not urban" and then calculate the difference in the urban class from 2000 to 2024. The remaining layer will represent new urban areas that developed between 2000 and 2024.  </p> <br>
@@ -352,7 +352,7 @@ object-fit: cover;
 <h3> Final Products </h3> <br>
 
 
-<p> Final Land Use Change Map </p>
+<p> An interactive Leaflet web map below displays the final results of the project. The red polygons denote areas that have experienced urbanization since 2000. As mentioned in the discussion for Figure 12,  Note that while polygons outside of Boone County were removed from the layer, some areas that suggest urbanization are actually the false positives from the land classification algorithm earlier.    </p> <br>
 
 
 <div id="map"></div>
@@ -361,6 +361,8 @@ object-fit: cover;
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
+<p> Generally, the land classification algorithm performed well at identifying areas that developed since 2000. These were clearly delineated in the Leaflet web map.  </p>
+
 <p> There remains the question of whether the land use classification in this project could be considered of good quality. Olson (2008) contends that while modern users are comfortable with an 80% overall accuracy rate in classified imagery, the traditional standard has been an 85% overall accuracy rate. Both confusion matrices revealed an accuracy rate of around 83%, which indicates that, while the models were good in identifying new urban growth, a further refinement of training data might assist in removing false hits and better capturing urban areas.  </p> <br>
 
 <p> As with all projects on this site, further mapping and graphical enhancements may be periodically added.  </p>
@@ -368,21 +370,29 @@ object-fit: cover;
 
 <h3> Links to Google Earth Engine JavaScript </h3> <br>
 
-<p> 2000 Raw Imagery </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/ClassifyL5_00_456.js"> 2000 Land Use Classification </a> </p>
 
-<p> 2024 Raw Imagery </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/ClassifyL8_24_5610.js"> 2024 Land Use Classification </a> </p>
 
-<p> 2000 Raw Imagery (Bands 4, 5, 6) </p>
+<h3> List of Figures and Tables </h3> <br>
 
-<p> 2024 Raw Imagery (Bands 5, 6, 10) </p>
-
-<p> 2000 Land Use Classification </p>
-
-<p> 2024 Land Use Classification </p>
-
-<h3> List of Figures and Tables </h3>
+<p> Figure 1. Boone County Municipality Growth between 2000 and 2020 </p>
+<p> Figure 2. Supervised vs Unsupervised Classification </p>
+<p> Figure 3. Boone County Image Classification Training Data </p>
+<p> Figure 4. The Google Earth Engine Console </p>
+<p> Figure 5. Simple RGB Landsat Imagery for 2000 and 2024 </p>
+<p> Figure 6. Specific Landsat Imagery to Detect Urban Features for 2000 and 2024 </p>
+<p> Figure 7. The Land Use Layers from Google Earth Engine </p>
+<p> Figure 8. The Confusion Matrix </p>
+<p> Figure 9. 2000 Land Use Classification Confusion Matrix </p>
+<p> Figure 10. 2024 Land Use Classification Confusion Matrix </p>
+<p> Figure 11. Boone County 2000 Land Use </p>
+<p> Figure 12. Boone County 2024 Land Use </p>
+<p> Table 1. Boone County and Columbia Population Change since 1980 </p>
 
 <h3> References </h3>
+
+
 
 <script>
 // create references to the modal...
