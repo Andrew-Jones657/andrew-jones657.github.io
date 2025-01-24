@@ -367,7 +367,7 @@ object-fit: cover;
 
 <p> There remains the question of whether the land use classification in this project could be considered of good quality. Olson (2008) contends that while modern users are comfortable with an 80% overall accuracy rate in classified imagery, the traditional standard has been an 85% overall accuracy rate. Both confusion matrices revealed an accuracy rate of around 83%, which indicates that, while the models were good in identifying new urban growth, a further refinement of training data might assist in removing false hits and better capturing urban areas.  </p> <br>
 
-<p> This project stemmed from my interest in urban geography and my time living in Columbia, MO, when I worked at the Missouri House of Representatives. Initially, I was going to run this workflow on Bowling Green, KY, but  </p>
+<p> This project stemmed from my interest in urban geography and my time living in Columbia, MO, when I worked at the Missouri House of Representatives. Initially, this project was going to be focused on Bowling Green, KY, but since I had already done the site selection and network analysis project on Bowling Green, I thought it would be better to use a different location. I never had the opportunity to take a full remote sensing class at Western Kentucky University, so it was quite a learning experience to go through and prepare this material. </p> <br>
 
 <p> As with all projects on this site, further mapping and graphical enhancements may be periodically added.  </p>
 
