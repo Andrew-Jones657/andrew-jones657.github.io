@@ -361,18 +361,31 @@ object-fit: cover;
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p> Generally, the land classification algorithm performed well at identifying areas that developed since 2000. These were clearly delineated in the Leaflet web map.  </p>
+<p> This project represented a common workflow in remote sensing analysis, namely detecting urban growth with remote sensing imagery, land classification analysis, and raster analysis. </p> <br>
+
+<p> Generally, the land classification algorithm performed well at identifying areas that developed since 2000. These were clearly delineated in the Leaflet web map. There was some degree of error as highlighted in the confusion matrix section, though these errors generally did not detract from accurately detecting areas of urban growth.   </p> <br>
 
 <p> There remains the question of whether the land use classification in this project could be considered of good quality. Olson (2008) contends that while modern users are comfortable with an 80% overall accuracy rate in classified imagery, the traditional standard has been an 85% overall accuracy rate. Both confusion matrices revealed an accuracy rate of around 83%, which indicates that, while the models were good in identifying new urban growth, a further refinement of training data might assist in removing false hits and better capturing urban areas.  </p> <br>
 
+<p> This project stemmed from my interest in urban geography and my time living in Columbia, MO, when I worked at the Missouri House of Representatives. Initially, I was going to run this workflow on Bowling Green, KY, but  </p>
+
 <p> As with all projects on this site, further mapping and graphical enhancements may be periodically added.  </p>
 
+
+<h3> GeoJSON Links </h3>
+
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/BooneTrainingData.geojson"> Image Classification Training Data </a> </p>
+
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/BooneGrowth.geojson"> Boone County Urban Growth Areas </a> </p>
+
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/Boone.geojson"> Boone County, Missouri Boundary </a> </p>
 
 <h3> Links to Google Earth Engine JavaScript </h3> <br>
 
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/ClassifyL5_00_456.js"> 2000 Land Use Classification </a> </p>
 
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/ClassifyL8_24_5610.js"> 2024 Land Use Classification </a> </p>
+
 
 <h3> List of Figures and Tables </h3> <br>
 
@@ -408,7 +421,7 @@ object-fit: cover;
 
 <p> Mishra, S. S. (2020). <em> GETTING TO KNOW ABOUT IMAGE CLASSIFICATION - ( PART 2 ) => Discussing about methods and types of image classification</em>. https://www.linkedin.com/pulse/getting-know-image-classification-part-2-discussing-mishra </p>
 
-<p> E Olson, C., Jr. (n.d.). Is 80% Accuracy Good Enough? In <em>Asprs</em>. The Future of Land Imaging . . . Going Operational, Denver, Mountain, United States of America. https://www.asprs.org/a/publications/proceedings/pecora17/0026.pdf </p>
+<p> E Olson, C., Jr. (2008). Is 80% Accuracy Good Enough? In <em>Asprs</em>. The Future of Land Imaging . . . Going Operational, Denver, Mountain, United States of America. https://www.asprs.org/a/publications/proceedings/pecora17/0026.pdf </p>
 
 <p> <em> T-Test, Chi-Square, ANOVA, Regression, Correlation</em>. . . (2025). https://datatab.net/tutorial/cohens-kappa </p>
 
