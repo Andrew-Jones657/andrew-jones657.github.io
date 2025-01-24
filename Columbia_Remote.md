@@ -131,11 +131,6 @@
     display: flex;
     }
 
-/* Create three equal columns that sits next to each other */
-    .column {
-    flex: 50%;
-    padding: 5px;
-    }
 
 .imgContainer{
     float:left;
@@ -371,7 +366,7 @@ object-fit: cover;
 <p> As with all projects on this site, further mapping and graphical enhancements may be periodically added.  </p>
 
 
-<h3> Links to Google Earth Engine Javascript </h3> <br>
+<h3> Links to Google Earth Engine JavaScript </h3> <br>
 
 <p> 2000 Raw Imagery </p>
 
