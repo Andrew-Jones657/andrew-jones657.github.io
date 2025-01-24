@@ -403,7 +403,16 @@ object-fit: cover;
 <p> Gautum, V., Murugan, P., & Annadurai, M. (2017). <em> A New Three Band Index for Identifying Urban Areas using Satellite Images</em>. Global Civil Engineering Challanges in Sustainable Development and Climate Change[ICGCSC-17]. https://www.researchgate.net/publication/315447944_A_New_Three_Band_Index_for_Identifying_Urban_Areas_using_Satellite_Images </p>
 
 <p> Kevin Butler. (2019). <em> Band Combinations for Landsat 8</em>. ArcGIS Blog. https://www.esri.com/arcgis-blog/products/product/imagery/band-combinations-for-landsat-8/ </p>
+ 
+<p> Lillesand, T.M., Kiefer, R.W. and Chipman, J.W. (2004). <em> Remote Sensing and Image Interpretation</em>. 5th Edition, John Wiley, New York. </p>
 
+<p> Mishra, S. S. (2020). <em> GETTING TO KNOW ABOUT IMAGE CLASSIFICATION - ( PART 2 ) => Discussing about methods and types of image classification</em>. https://www.linkedin.com/pulse/getting-know-image-classification-part-2-discussing-mishra </p>
+
+<p> E Olson, C., Jr. (n.d.). Is 80% Accuracy Good Enough? In <em>Asprs</em>. The Future of Land Imaging . . . Going Operational, Denver, Mountain, United States of America. https://www.asprs.org/a/publications/proceedings/pecora17/0026.pdf </p>
+
+<p> <em> T-Test, Chi-Square, ANOVA, Regression, Correlation</em>. . . (2025). https://datatab.net/tutorial/cohens-kappa </p>
+
+<p> <em> Common landsat Band Combinations</em>. (2021). USGS. https://www.usgs.gov/media/images/common-landsat-band-combinations </p>
 
 <script>
 // create references to the modal...
