@@ -392,6 +392,17 @@ object-fit: cover;
 
 <h3> References </h3>
 
+<p> <em> How to interpret a confusion matrix for a machine learning model</em>. (2025). https://www.evidentlyai.com/classification-metrics/confusion-matrix </p> 
+
+<p> Marco Vanetti. <em> Confusion matrix online calculator</em>. (2007). https://marcovanetti.com/pages/cfmatrix/?noc=5 </p>
+
+<p> Denise Nedea. <em> Confusion Matrix Calculator</em>. (2020). MDApp. https://www.mdapp.co/confusion-matrix-calculator-406/ </p>
+
+<p> Anonym. (2023). <em> The many band combinations of Landsat 8</em>. NV5 Geospatial. https://www.nv5geospatialsoftware.com/Learn/Blogs/Blog-Details/the-many-band-combinations-of-landsat-8 </p>
+
+<p> Gautum, V., Murugan, P., & Annadurai, M. (2017). <em> A New Three Band Index for Identifying Urban Areas using Satellite Images</em>. Global Civil Engineering Challanges in Sustainable Development and Climate Change[ICGCSC-17]. https://www.researchgate.net/publication/315447944_A_New_Three_Band_Index_for_Identifying_Urban_Areas_using_Satellite_Images </p>
+
+<p> Kevin Butler. (2019). <em> Band Combinations for Landsat 8</em>. ArcGIS Blog. https://www.esri.com/arcgis-blog/products/product/imagery/band-combinations-for-landsat-8/ </p>
 
 
 <script>
