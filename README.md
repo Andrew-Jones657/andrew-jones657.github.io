@@ -66,7 +66,7 @@
 
 <div id="viewDiv" style="width: 100%; height: 450px;  border: 1px solid #444444;"> </div> <br>
 
-<script src="./files/travelmap/travel_map.js"></script> <br> 
+<script src="./files/travelmap/travel_map24.js"></script> <br> 
 
 <p> Curious about the web map? You can create something similar following this <a href="./tutorials/GoogleLocation"> tutorial</a>. </p> <br>
     
