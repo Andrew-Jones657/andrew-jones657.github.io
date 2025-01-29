@@ -113,9 +113,9 @@
          },  {
             heading: "Mammoth Cave National Park, February 2023",
             classes: [{
-                label: "Colorado",
+                label: "Kentucky",
                 symbol: {type: "simple-marker", color: "rgba(150, 75, 0, 1)",  outline: { color: "rgba(217, 138, 60, 0.8)",  width: 5 }  },
-                values: "2022 Feb Kentucky"	  
+                values: "2023 Feb Kentucky"	  
 	    }]
          }, {
             heading: "Austin, June 2023",
