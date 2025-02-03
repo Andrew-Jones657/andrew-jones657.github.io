@@ -217,23 +217,7 @@
 						closeOnEsc: false
 	});
 
-		// enable users to hover over points and automatically open popups 
-	view.on("pointer-move", function (event) { 
-          view.hitTest(event).then(function (response) { 
-            if (response.results.length) { 
-              var graphic = response.results.filter(function (result) { 
-               // check if the graphic belongs to the layer of interest 
-               return result.graphic.layer === geojsonLayer; 
-             })[0].graphic; 
-             view.popup.open({ 
-               location: graphic.geometry.centroid, 
-               features: [graphic] 
-             }); 
-           } else { 
-             view.popup.close(); 
-           } 
-         }); 
-       }); 
+
 
 						view.ui.add(fullscreen, "top-left");
 						view.ui.add(homeWidget, "top-left");
