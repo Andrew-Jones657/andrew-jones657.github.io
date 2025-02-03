@@ -194,7 +194,7 @@
 
        view.ui.add(fullscreen, "top-left");
      view.ui.add(homeWidget, "top-left");
-     view.ui.add(legendExpand, "top-left");
+     view.ui.add(legendExpand, "bottom-right");
      // add the UI for a title
      view.ui.add("titleDiv", "top-right");           
       });
