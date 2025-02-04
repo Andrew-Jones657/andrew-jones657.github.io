@@ -103,7 +103,7 @@
             heading: "Saloon",
             classes: [{
                 label: "Saloon",
-                symbol: {type: "simple-marker", color: "rgba(255, 0, 0, 1)",  outline: { color: "rgba(255, 255, 0, 1)",  width: 1 }  },
+                symbol: {type: "simple-marker", color: "rgba(255, 0, 0, 1)",  outline: { color: "rgba(0, 0, 0, 1)",  width: 1 }  },
                 values: "Saloon no" 
 	    }]
          }, {
@@ -117,7 +117,7 @@
             heading: "Social Association",
             classes: [{
                 label: "Social Association",
-                symbol: {type: "simple-marker", color: "rgba(230, 230, 0, 1)", outline: { color: "rgba(255, 255, 0, 1)",  width: 1 }  },
+                symbol: {type: "simple-marker", color: "rgba(230, 230, 0, 1)", outline: { color: "rgba(0, 0, 0, 1)",  width: 1 }  },
                 values: "Social Association no"
 	    }]
 	  }, {
