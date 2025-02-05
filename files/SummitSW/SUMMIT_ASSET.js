@@ -222,6 +222,7 @@
 						view.ui.add(fullscreen, "top-left");
 						view.ui.add(homeWidget, "top-left");
 						view.ui.add(legendExpand, "bottom-right");
+		          			view.ui.add("titleDiv", "top-right");
     });
 
 
