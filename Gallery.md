@@ -223,6 +223,16 @@
 <p> This page serves as a gallery of single-theme cartographic products that I have created. </p> <br>
 
 <figure>
+<a target="_blank" href="https://andrew-jones657.github.io/Covington_German_App">
+<img class="myImages" id="myImg" src=" " alt="Covington German Web Map" style="width:100%;max-width:625px">
+<figcaption>  </figcaption>
+</figure> <br>
+
+<p> 2/4/2025 </p> <br>
+
+<div class="line"></div> <br>
+
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/r7drTrN.jpeg" alt="Warren County 2024 Presidential" style="width:100%;max-width:625px">
 <figcaption> 2024 US Presidential Results, Precinct Level, Warren County Kentucky </figcaption>
 </figure> <br>
