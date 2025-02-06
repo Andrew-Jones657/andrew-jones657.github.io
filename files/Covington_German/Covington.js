@@ -3,27 +3,33 @@
 		"esri/Basemap", 
 		"esri/widgets/Home", 
 		"esri/layers/GeoJSONLayer",
+		"esri/layers/MediaLayer",
+		"esri/layers/support/ImageElement",
+		"esri/layers/support/ExtentAndRotationGeoreference",
 		"esri/renderers/UniqueValueRenderer", 
 		"esri/symbols/SimpleFillSymbol",
+        	"esri/geometry/Extent",
+        	"esri/geometry/SpatialReference",
+        	"esri/widgets/Slider",
 	        "esri/widgets/Legend",
 		"esri/widgets/Fullscreen", 
 		"esri/widgets/Expand",
 		"esri/views/MapView",
 		"esri/core/reactiveUtils"
-		], (Map, Basemap, Home, GeoJSONLayer, UniqueValueRenderer, SimpleFillSymbol, Legend, Fullscreen, Expand, MapView, reactiveUtils) => {
+		], (Map, Basemap, Home, GeoJSONLayer, MediaLayer, ImageElement, ExtentAndRotationGeoreference, UniqueValueRenderer, SimpleFillSymbol, Extent, SpatialReference, Slider, Legend, Fullscreen, Expand, MapView, reactiveUtils) => {
 
 	// Declare a variable for the layer view that will later be used to feature filters by year
         let yearLayerView;
-
+	
+	// Link to geoJSON file containing historical social institutions
 	const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/Covington_German/Institutions_1861_1920.geojson";
 
 
-       // Define the popup for each point which shows the name of the institution, its historical location, what kind of institution it was, and whether it was German or not
+	// Define the popup for each point which shows the name of the institution, its historical location, what kind of institution it was, and whether it was German or not
        const template = {
 	 title: "{Name}",
 	 content: "Name: {Name} <br> Year: {Year} <br> Historical Location: {Address} <br> Institution Type: {Type} <br> German: {German}"
 	};	
-
 
        // Create a unique value symbology using the "Type_German" variable and "uniqueValueGroups []" so that institutions/German institions are grouped by a unique color and German institutions have a yellow outline  
        const renderer = ({
@@ -130,6 +136,125 @@
 	  }]
 	});
 
+
+
+        // --------------- This section focuses on adding in the georeferenced map to the back ground ------------------- //
+        // image information used to create image elements to be
+        // added to the media layer
+        const imageInfos = [
+          {
+            name: "covington1909",
+            title: "Covington 1909",
+            extent: {
+                xmin: -84.565464,
+                ymin: 39.030186,
+                xmax: -84.483335,
+                ymax: 39.098458
+            }
+          }
+        ];
+
+        // create image elements for each image
+        function createImageElement(name, box) {
+          const imageElement = new ImageElement({
+            image: `https://i.imgur.com/IBt0viU.png`,
+            georeference: new ExtentAndRotationGeoreference({
+              extent: new Extent({
+                spatialReference: {
+                  wkid: 4269, 
+                },
+                xmin: box.xmin,
+                ymin: box.ymin,
+                xmax: box.xmax,
+                ymax: box.ymax
+              })
+            })
+          });
+          return imageElement;
+        }
+
+        let imageElements = [];
+        // loop through images and set up ImageElement object for MediaLayer.
+        imageInfos.forEach((image, i) => {
+          const elementDiv = document.createElement("div");
+          elementDiv.classList.add("elementDiv");
+
+          const imageElement = {
+            name: image.name,
+            title: image.title,
+            element: createImageElement(image.name, image.extent)
+          };
+          imageElements.push(imageElement);
+
+          // create calcite checkboxes to allow users to add and remove
+          // image elements from the MediaLayer.
+          const label = document.createElement("calcite-label");
+          label.layout = "inline-space-between";
+          label.disableSpacing = true;
+          label.innerHTML = image.title;
+          const checkBox = document.createElement("calcite-checkbox");
+          checkBox.name = image.name;
+          checkBox.value = image.name;
+          checkBox.checked = true;
+
+          // Remove the image element from the MediaLayer if it exists
+          // Add the image element to the layer if it does not exist in the layer.source.elements.
+          checkBox.addEventListener("calciteCheckboxChange", (event) => {
+            const selectedImageElement = imageElements.find(
+              (item) => item.name === event.target.name
+            );
+            if (checkBox.checked) {
+              layer.source.elements.add(selectedImageElement.element);
+            } else {
+              layer.source.elements.remove(selectedImageElement.element);
+            }
+          });
+
+          label.appendChild(checkBox);
+          const visibleDiv = document.createElement("div");
+          visibleDiv.classList.add("leftPadding", "rightPadding");
+          visibleDiv.appendChild(label);
+          document.getElementById("elementsDiv").appendChild(visibleDiv);
+
+          const slider = new Slider({
+            min: 0,
+            max: 1,
+            precision: 2,
+            container: document.createElement("div"),
+            values: [1],
+            label: image.name
+          });
+
+          slider.on("thumb-drag", (event) => {
+            const selectedImageElement = imageElements.find(
+              (item) => item.name === slider.label
+            );
+            selectedImageElement.element.opacity = slider.values[0];
+          });
+
+          const sliderLabel = document.createElement("calcite-label");
+          sliderLabel.layout = "inline";
+          sliderLabel.innerHTML = "opacity";
+          sliderLabel.appendChild(slider.container);
+
+          const sliderDiv = document.createElement("div");
+          sliderDiv.classList.add("leftPadding");
+          sliderDiv.appendChild(sliderLabel);
+          document.getElementById("elementsDiv").appendChild(sliderDiv);
+        });
+
+        // MediaLayer - add imageElements
+        const georefLayer = new MediaLayer({
+          source: [
+            imageElements[0].element
+          ],
+          opacity: 1,
+          title: "Covington",
+          blendMode: "normal"
+        });
+
+	        // --------------- End georeferencing section ------------------- //
+
 	// load in the geoJSON covington institutions point layer
 	const geojsonLayer = new GeoJSONLayer({
 		url: geojsonurl,
@@ -139,21 +264,37 @@
 	});
 
 
-	// create a new map object with the dark grey basemap and geojson point layer
-	const map = new Map({
-		basemap: "dark-gray",
-		layers: [geojsonLayer]
-	});
+        const map = new Map({
+          basemap: "dark-gray",
+          layers: [georefLayer, geojsonLayer]
+        });
 
+        const view = new MapView({
+          container: "viewDiv",
+          map: map,
+          zoom: 14,
+          center: [-84.509852, 39.081289]
+        });
 
-	// set the view position for the map
-	const view = new MapView({
-		container: "viewDiv",
-		map: map,
-		zoom: 13,
-		center: [-84.509852, 39.081289]
-	});
+	// enable users to hover over points and automatically open popups 
+	view.on("pointer-move", function (event) { 
+          view.hitTest(event).then(function (response) { 
+            if (response.results.length) { 
+              var graphic = response.results.filter(function (result) { 
+               // check if the graphic belongs to the layer of interest 
+               return result.graphic.layer === myGroupLayer; 
+             })[0].graphic; 
+             view.popup.open({ 
+               location: graphic.geometry.centroid, 
+               features: [graphic] 
+             }); 
+           } else { 
+             view.popup.close(); 
+           } 
+         }); 
+       }); 
 
+	// ----------------------- This section is focused on creating the filter to limit the geojsonLayer view by Year ---------------------------- // 
 	// Define nodes to query the year elements and use the "getElementById" method to extract the information from the html div elements (the same years as in the geojson layer)
         const yearsNodes = document.querySelectorAll(`.year-item`);
         const yearsElement = document.getElementById("years-filter");
@@ -173,7 +314,7 @@
           };
         }
 	
-      // Setup layer view to react to geojson layer (Covington Institutions)
+	// this is where the app fails to load
         view.whenLayerView(geojsonLayer).then((layerView) => {
           // Covington institutions layer loaded
           // get a reference to the Covington institutions layerview
@@ -196,26 +337,10 @@
           });
 
           view.ui.add(yearsExpand, "top-left");
-          view.ui.add("titleDiv", "top-right");
+          view.ui.add("titleDiv", "bottom-left");
 	  });
 
-	// enable users to hover over points and automatically open popups 
-	view.on("pointer-move", function (event) { 
-          view.hitTest(event).then(function (response) { 
-            if (response.results.length) { 
-              var graphic = response.results.filter(function (result) { 
-               // check if the graphic belongs to the layer of interest 
-               return result.graphic.layer === geojsonLayer; 
-             })[0].graphic; 
-             view.popup.open({ 
-               location: graphic.geometry.centroid, 
-               features: [graphic] 
-             }); 
-           } else { 
-             view.popup.close(); 
-           } 
-         }); 
-       }); 
+	// ----------------------- End filter section ---------------------------- // 
 
        	// add a fullscreen button
        const fullscreen = new Fullscreen({
@@ -238,7 +363,26 @@
 	  closeOnEsc: false
 	});
 
-       view.ui.add(fullscreen, "top-left");
+     view.ui.add(fullscreen, "top-left");
      view.ui.add(homeWidget, "top-left");
      view.ui.add(legendExpand, "bottom-right");
-});
+
+        view.ui.add(
+          new Expand({
+            view: view,
+            expanded: true,
+            content: document.getElementById("infoDiv")
+          }),
+          "top-right"
+        );
+
+        document
+          .getElementById("layerBlending")
+          .addEventListener("calciteSwitchChange", () => {
+            layer.blendMode =
+              layer.blendMode === "normal" ? "luminosity" : "normal";
+          });
+
+
+
+      });
