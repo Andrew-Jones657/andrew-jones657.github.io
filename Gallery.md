@@ -210,8 +210,8 @@
 
 
     </style>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.30/"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.31/"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head> 
@@ -224,8 +224,8 @@
 
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Covington_German_App">
-<img class="myImages" id="myImg" src=" " alt="Covington German Web Map" style="width:100%;max-width:625px">
-<figcaption>  </figcaption>
+<img class="myImages" id="myImg" src="https://i.imgur.com/h2rvQAN.png" alt="Covington German Web Map" style="width:100%;max-width:625px"> </a>
+<figcaption> Covington's German Element: Social Institutions from 1861 to 1920 </figcaption>
 </figure> <br>
 
 <p> 2/4/2025 </p> <br>
