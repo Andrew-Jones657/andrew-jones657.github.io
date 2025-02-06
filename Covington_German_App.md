@@ -10,20 +10,17 @@
       Covington's German Element, Social Institutions from 1861 to 1920
     </title>
 
-<script type="module" src="https://js.arcgis.com/calcite-components/2.13.2/calcite.esm.js"></script>
-<link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.13.2/calcite.css"/>
-
-<link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/dark/main.css"/>
-<script src="https://js.arcgis.com/4.31/"></script>
-
 <style>
       html,
       body,
       #viewDiv {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+	    height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+	    min-height: 750px;
+      min-width: auto;
+      border: 1px solid #444444;
       }
 
       .inner {
@@ -88,6 +85,11 @@
       
 </style>
 
+<script type="module" src="https://js.arcgis.com/calcite-components/2.13.2/calcite.esm.js"></script>
+<link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.13.2/calcite.css"/>
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/dark/main.css"/>
+<script src="https://js.arcgis.com/4.31/"></script>
 
 </head>
 
@@ -127,7 +129,9 @@
       <br />
       <calcite-label layout="inline-space-between"> Toggle layer blending<calcite-switch unchecked id="layerBlending"></calcite-switch> </calcite-label>
     </calcite-panel>
+    
 <script src="./files/Covington_German/Covington.js"></script> <br> 
+    
 <figure>
 <figcaption> Covington's German Element Web Map </figcaption>
 </figure> <br>
