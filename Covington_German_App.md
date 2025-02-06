@@ -26,6 +26,13 @@
         padding: 0;
       }
 
+      .inner {
+      position: relative;
+      max-width: 1000px;
+      padding: 20px 10px;
+      margin: 0 auto;
+      }
+  
       #infoDiv {
         padding: 10px;
         width: 320px;
