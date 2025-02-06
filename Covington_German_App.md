@@ -1,35 +1,43 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>
+      Covington's German Element, Social Institutions from 1861 to 1920
+    </title>
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv= "X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <style>
-            html,
-            body,
-            #viewDiv {
-	          height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-	          min-height: 750px;
-            min-width: auto;
-            border: 1px solid #444444;
-      }
-.inner {
-        position: relative;
-        max-width: 1000px;
-        padding: 20px 10px;
-        margin: 0 auto;
+<script type="module" src="https://js.arcgis.com/calcite-components/2.13.2/calcite.esm.js"></script>
+<link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.13.2/calcite.css"/>
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/dark/main.css"/>
+<script src="https://js.arcgis.com/4.31/"></script>
+
+<style>
+      html,
+      body,
+      #viewDiv {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
       }
 
-  #years-filter {
+      #infoDiv {
+        padding: 10px;
+        width: 320px;
+      }
+
+     #years-filter {
         height: 280px;
         width: 160px;
         visibility: hidden;
       }
 
-  .year-item {
+      .year-item {
         width: 100%;
         padding: 12px;
         text-align: center;
@@ -38,35 +46,48 @@
         height: 40px;
       }
 
-  .year-item:focus {
+      .year-item:focus {
         background-color: dimgrey;
       }
 
-  .year-item:hover {
+      .year-item:hover {
         background-color: dimgrey;
       }
 
-#titleDiv {
+      #titleDiv {
         padding: 10px;
       }
 
-#titleText {
+      #titleText {
         font-size: 20pt;
         font-weight: 60;
         padding-bottom: 10px;
       }
+
+      .esri-slider {
+        height: 40px;
+        background: none;
+        width: 75%;
+      }
+
+      .leftPadding{
+        padding-left: 5px;
+      }
+
+      .rightPadding{
+        padding-right: 5px;
+        font-weight: bold;
+      }
       
 </style>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.31/"></script>
 
 
 </head>
 
 <body>
 
-  <div id="years-filter" class="esri-widget">
-      <div class="season-item visible-year" data-year="1861">
+ <div id="years-filter" class="esri-widget">
+      <div class="year-item visible-year" data-year="1861">
         1861
       </div>
       <div class="year-item visible-year" data-year="1871">
@@ -88,11 +109,17 @@
         1920
       </div>
     </div>
-    <div id="viewDiv"> </div>
+    <div id="viewDiv"></div>
     <div id="titleDiv" class="esri-widget">
       <div id="titleText">Covington's German Element</div>
       <div>German Social Institutions from 1861 to 1920</div>
     </div>
+    <calcite-panel slot="contextual-panel" id="infoDiv" heading="1909 Covington KY Sanborn Fire Insurance Map">
+      <br />
+      <div id="elementsDiv"></div>
+      <br />
+      <calcite-label layout="inline-space-between"> Toggle layer blending<calcite-switch unchecked id="layerBlending"></calcite-switch> </calcite-label>
+    </calcite-panel>
 <script src="./files/Covington_German/Covington.js"></script> <br> 
 <figure>
 <figcaption> Covington's German Element Web Map </figcaption>
