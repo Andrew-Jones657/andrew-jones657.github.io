@@ -133,9 +133,9 @@
 </figure> <br>
 
 <ol>
-<li> The research this web map is based on can be found <a href=https://digitalcommons.wku.edu/stu_hon_theses/866/> here </a>. City Directories from Ancestry.com were used to locate and plot these social institutions, as well as research the backgrounds of the institutions’ owners to determine whether the owner was a German immigrant. </li>
+<li> The research this web map is based on can be found <a href="https://digitalcommons.wku.edu/stu_hon_theses/866/"> here </a>. City Directories from Ancestry.com were used to locate and plot these social institutions, as well as research the backgrounds of the institutions’ owners to determine whether the owner was a German immigrant. </li>
 <li> German identity is strictly defined in this study. For an institution to be considered German-owned, it had to be owned by first generation German immigrants.  </li>
-<li> The addresses in the web map popups are historical, meaning that the street numbers do not translate accurately to modern addresses. Sanborn Fire Insurance maps, which display where the historical addresses were situated, were used to plot the latitude-longitude values of these addresses. </li>
+<li> The addresses in the web map popups are historical, meaning that the street numbers do not translate accurately to modern addresses. Sanborn Fire Insurance maps, which display where the historical addresses were situated, were used to plot the latitude-longitude values of these addresses. The georeferenced image in the background of web map is one such map from 1909. </li>
 <li> This web app initially displays ALL data from 1860 to 1920, use the ">>" arrows on the top left to narrow it down to a specific year. The legend can be expanded by clicking on the bottom right widget.   </li>
 <li> Broadly speaking, German institutions dominate the cultural landscape by around 1880. Pay particular attention to the difference between 1910 and 1920, as several different factors, such as backlash from World War I, the Temperance Movement, and the Anti-Saloon League, force cultural assimilation on German immigrants and their descendants.  </li>
 </ol>
