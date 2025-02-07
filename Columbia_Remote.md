@@ -358,6 +358,10 @@ object-fit: cover;
 <div id="map"></div>
 
 <script src="./files/ColumbiaRemote/Boone00_24_Growth.js"></script> <br> 
+<figure>
+<figcaption> Figure 13. Urbanization in Boone County since 2000 </figcaption>
+</figure> <br>
+
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
@@ -401,6 +405,7 @@ object-fit: cover;
 <p> Figure 10. 2024 Land Use Classification Confusion Matrix </p>
 <p> Figure 11. Boone County 2000 Land Use </p>
 <p> Figure 12. Boone County 2024 Land Use </p>
+<p> Figure 13. Urbanization in Boone County since 2000 </p>
 <p> Table 1. Boone County and Columbia Population Change since 1980 </p>
 
 <h3> References </h3>
