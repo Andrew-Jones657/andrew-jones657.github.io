@@ -325,7 +325,7 @@ object-fit: cover;
 <li> .80 to 1 indicates almost perfect agreement </li>
 </ul> <br>
 
-<p> (expand on results for each matrix) </p> <br>
+<p> In this case, the confusion matrices both reported a kappa value of around 0.79, indicating that there is substantial agreement between the classification and the truth values.   </p> <br>
 
 
 <h3> Refining the Land Use Rasters on ArcGIS Pro </h3> <br>
