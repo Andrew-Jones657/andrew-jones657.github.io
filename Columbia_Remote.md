@@ -166,11 +166,11 @@ object-fit: cover;
 
 <p> Remote sensing has emerged as a powerful tool for monitoring land use change, providing valuable insights into environmental and urban dynamics. By utilizing satellite imagery and aerial photography, researchers can analyze variations in land cover over time, detecting shifts from natural landscapes to urban developments, agricultural expansion, or deforestation. This technology allows for the collection of large-scale data, enabling the assessment of changes in land use patterns across diverse regions. Moreover, remote sensing facilitates the identification of trends and the impacts of human activities on ecosystems, aiding in effective land management and policymaking. Through advanced analytical techniques, such as machine learning and image classification, remote sensing continues to enhance our understanding of the complex interplay between human development and environmental sustainability. </p> <br>
 
-<p> This project is focused on urban development in Boone County, Missouri between 2000 and 2024 using remote sensing methods. Boone County, located in the center of Missouri, has experienced enormous population growth since the 1940s. Its county seat, Columbia, holds over two thirds of its population.  Alongside this growth comes the expansion of the City of Columbia and the construction of new subdivisions in both Columbia and Boone County. The final goal will be to create a cartographic product showing newly developed urban and suburban areas in Boone County. </p> <br>
+<p> This project is focused on depicting urban development in Boone County, Missouri between 2000 and 2024 using remote sensing methods. Boone County, located in the center of Missouri, has experienced enormous population growth since the 1940s. Its county seat, Columbia, holds over two-thirds of its population.  Alongside this growth comes the expansion of the City of Columbia and the construction of new subdivisions in both Columbia and Boone County. The final cartographic product will depict newly developed urban and suburban areas in Boone County. </p> <br>
 
 <h3> Census Data and Municipal Boundaries </h3> <br>
 
-<p> Since 1980, both Boone County and its seat, Columbia, have experienced significant population growth. Boone County’s population has nearly doubled, while Columbia’s has more than doubled (Table 1). Since 2000, both the county and the city have grown by over 45,000 residents. Much of this growth is attributed to the development of new suburban areas. </p> <br>
+<p> Since 1980, both Boone County and its seat, Columbia, have experienced significant population growth. Boone County’s population has nearly doubled, while the City of Columbia’s has more than doubled (Table 1). Since 2000, both the county and the city have grown by over 45,000 residents. Much of this growth is attributed to the development of new suburban areas. </p> <br>
 
 <table class="tablecenter"> <caption> Table 1. Boone County and Columbia Population Change since 1980 </caption>
 <thead>
@@ -210,7 +210,7 @@ object-fit: cover;
 </tr>
 </table> <br>
 
-<p> The census boundaries (or municipal boundaries of cities and towns) in Boone County were sourced from the US Census Bureau. These datasets are essential for tracking the growth of municipalities and for later preparing the land classification map, serving as a reference to identify areas that transitioned to suburban development. </p> <br>
+<p> Municipal boundaries in Boone County were obtained from the US Census Bureau. These datasets are essential for tracking the growth of municipalities and for later preparing a land use classification map, which will serve as a reference to identify areas that transitioned to suburban development. </p> <br>
 
 <p> When combined with the 2000 and 2020 US Census TIGER boundaries, a simple illustration shows how Columbia expanded over this period. Notably, Columbia grew in all directions, and many of the smaller towns also experienced growth (Figure 1). This growth is further reflected in the strong population increase shown in Table 1. </p> <br>
 
@@ -219,11 +219,11 @@ object-fit: cover;
 <figcaption> Figure 1. Boone County Municipality Growth between 2000 and 2020 </figcaption>
 </figure> <br>
 
-<p> However, the nature of this expansion, particularly in terms of developed neighborhoods, is not easily discernible. Figure 1 only illustrates areas that have been incorporated into nearby municipalities, and it is also possible that new suburban areas exist outside the City of Columbia. This is where a land use classification map becomes particularly useful in identifying overall development. </p> <br>
+<p> However, the nature of this expansion, particularly in terms of developed neighborhoods, is not easily discernible. Figure 1 only illustrates areas that have been incorporated into nearby municipalities -- it is also possible that new suburban areas exist outside the City of Columbia. This is where a land use classification map becomes particularly useful in identifying specific areas of development. </p> <br>
 
 <h3> Preparing Data for a Supervised Land Use Classification Model  </h3> <br>
 
-<p> To create a land use classification map, a machine learning algorithm is used to convert satellite imagery into a land use classification raster. This process involves simplifying a complex dataset into a limited number of classes. To achieve this, either a supervised or unsupervised algorithm can be employed (Figure 2). For this study, supervised classification will be used to accurately characterize each classification scheme. </p> <br>
+<p> To create a land use classification map, a machine learning algorithm must be used to convert satellite imagery into a land use classification raster. This process involves reducing a complex dataset into a limited number of classes. To achieve this, either a supervised or unsupervised algorithm can be employed (Figure 2). For this study, supervised classification will be used to accurately characterize each classification scheme. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/tWJAHm5.jpeg" alt="Supervised Unsupervised" style="width:100%;max-width:625px">
