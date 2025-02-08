@@ -1,4 +1,0 @@
-{
-  "type" : "FeatureCollection",
-  "features" : [{"type":"Feature","id":33,"geometry":{"type":"Point","coordinates":[-86.406727882183446,37.061828153119372]},"properties":{"OBJECTID":33,"OBJECTID_1":null,"TYPE":"FIRE","Place_name":"MT OLIVET STATION 1","CITY":null,"STATE":null,"ZIPCODE":null,"ALIAS":null,"PRE_DIR":null,"STREET":null,"SUFTYPE":null,"SUFDIR":null,"SUBHOUSE":null,"HOUSENO":null,"ADDRESS":null,"SUBD":null,"Bus_phone":null,"created_us":null,"created_da":null,"last_edite":null,"last_edi_1":null,"NOTE":null,"StreetID":null,"latitude":null,"longitude":null,"ServiceAre":null,"GlobalID":null,"Prof_Vol":"Candidate","Delay":1,"Candidate":0,"Required":1}}]
-}
