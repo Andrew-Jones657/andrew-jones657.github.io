@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <style>
 
+html, body, #map{
+       width: 100%;
+       height: 100%;
+       border: 1px solid #444444;
+       min-height: 450px;
+       min-width: 625px;
+    }
+
   h3{
   text-align: center;
   }
@@ -110,10 +118,33 @@
 }
     </style>
 
+  <style>
+	.info { 
+	padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); 
+	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } 
+	.info h4 { margin: 0 0 5px; color: #777; }
+	.legend { text-align: left; line-height: 18px; color: #555; } 
+	.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.8; }
+	.dataSource { 	padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); 
+	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;  }
+   </style>
 
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
 
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.css" />
+  <script src="https://unpkg.com/leaflet.fullscreen@latest/Control.FullScreen.js"></script> 
+
+<script src="./files/LeafletTutorial/L.TileLayer.NoGap.js"> </script>
 
 </head>
 
@@ -878,6 +909,13 @@
 <figcaption> Figure 10. Fire Service Response Times for each Candidate Station </figcaption>
 </figure> <br>
 
+<p> To provide a more detailed look at each of the maps from Figure 10, a Leaflet web map was created to display the results of the service area analysis for the current fire service and the potential candidate stations (Figure 11). </p> <br>
+
+<figure>
+<script src="./files/FireSiteSelection/FireService.js"> </script>
+<figcaption> Figure 11. Fire Service Response Times Leaflet Web Map  </figcaption>
+</figure> <br>
+
 <p> The population covered for each map in Figure 10 is presented in Table 8 below. The candidate fire stations are ranked based on which station serves as the best improvement to the current fire response under eight minutes. Each of the candidate stations provides a solid boost to the current fire performance, but Alvaton Fire Station 1 is ranked in first place. Alvaton represents a densely populated area that does not currently receive good fire service, particularly since it is located further from Bowling Green than the other candidate sites. An improved fire station in Alvaton would bring the highest number of people into good coverage. </p> <br>
 
 <table class="tablecenter"><caption> Table 8. Population covered by Fire Response under each potential Candidate Station </caption>  
@@ -986,11 +1024,11 @@
 </tbody>
 </table> <br>
 
-<p> To provide a clearer view of the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and presented below (Figure 11). The differences are striking, as the entire Alvaton area is now shown to have good fire service. Unlike the other candidate stations, it is only minimally connected to Bowling Green's current fire service via Highway 231.  </p> <br>
+<p> To provide a clearer view of the fire service from the improved Alvaton Fire Station 1, it was singled out from Figure 10 and presented below (Figure 12). The differences are striking, as the entire Alvaton area is now shown to have good fire service. Unlike the other candidate stations, it is only minimally connected to Bowling Green's current fire service via Highway 231.  </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/z9eSK3q.jpeg" alt="Alvaton Fire Station 1 Improvement Response Service" style="width:100%;max-width:625px">
-<figcaption> Figure 11. Alvaton Fire Station 1 Improvement Response Service </figcaption>
+<figcaption> Figure 12. Alvaton Fire Station 1 Improvement Response Service </figcaption>
 </figure> <br>
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
@@ -1012,7 +1050,8 @@
 <p> Figure 8. Candidate Sites for New Fire Stations in Warren County </p>
 <p> Figure 9. Current Population Demands for Fire Service in Warren County </p>
 <p> Figure 10. Fire Service Response Times for each Candidate Station  </p>
-<p> Figure 11. Alvaton Fire Station 1 Improvement Response Service </p>
+<p> Figure 11. Fire Service Response Times Leaflet Web Map </p>
+<p> Figure 12. Alvaton Fire Station 1 Improvement Response Service </p>
 <p> Table 1. Spatial Data used in the Site Selection Analysis  </p>
 <p> Table 2. Fire Response Time Quality  </p>
 <p> Table 3. Speed Limits by Road Type </p>
