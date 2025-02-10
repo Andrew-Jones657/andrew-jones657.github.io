@@ -911,8 +911,10 @@ html, body, #map{
 
 <p> To provide a more detailed look at each of the maps from Figure 10, a Leaflet web map was created to display the results of the service area analysis for the current fire service and the potential candidate stations (Figure 11). </p> <br>
 
-<figure>
+<div id="map"></div>
+
 <script src="./files/FireSiteSelection/FireService.js"> </script>
+<figure>
 <figcaption> Figure 11. Fire Service Response Times Leaflet Web Map  </figcaption>
 </figure> <br>
 
