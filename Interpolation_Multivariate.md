@@ -685,7 +685,7 @@
 <figcaption> Figure 26. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001   </figcaption>
 </figure> <br>
 
-<p> To date, agglomerative clustering has been applied to this dataset with four clusters, while k-means has been used with two clusters. As shown earlier in the consensus algorithm in Figure 22, most algorithms agreed on two clusters, although three clusters received the second-highest score. Since the workflow and code for the k-means model with two clusters have already been established, it would be prudent to explore how the data performs when organized into three clusters. </p> <br>
+<p> So far, agglomerative clustering has been applied to this dataset using four clusters, while k-means has been used with two clusters. As shown earlier in the consensus algorithm in Figure 22, most algorithms agreed on two clusters for k-means. However, three clusters received the second-highest score. Since the workflow and code for the k-means model with two clusters have already been created, it would be prudent to explore how the clustering performs and what trends exist when the dataset is organized into three clusters. </p> <br>
 
 <h3> K-Means Clustering: Three Clusters </h3> <br>
 
@@ -719,11 +719,12 @@
 <figcaption> Figure 30. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001: Three Clusters   </figcaption>
 </figure> <br>
 
-<p> Finally, there is the question of which of these clustering schemes is the most effective. As stated at the beginning of this section, it is not necessarily obvious which  </p>
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. Like the other projects, this project was sensitive to user-selected parameters. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters, or choosing a different kriging type, would have created a different model. Likewise, the agglomerative clustering was done on a simple observational basis and choosing a different starting point for k could have affected the quality of the k-means partitioning.   </p> <br>
+<p> Finally, there is the question of which of these clustering schemes is the most effective. As stated at the beginning of this section, it is not necessarily obvious which clustering method will best group the dataset. (cont...)  </p> <br>
+
+<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. Like the other projects, this project was sensitive to user-selected parameters, trial and error in creating a solid kriging model, and heuristic analysis in creating grouping models. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters, or choosing a different kriging type, would have created a different model. Likewise, the agglomerative clustering was done on a simple observational basis and choosing a different starting point for k could have strongly affected the quality of the k-means partitioning.   </p> <br>
 
 <p> This project served as a simple survery of some surface interpolation and multivariate methods, and mainly was intended to show an applied use of some techniques on a spatial dataset. </p>
 
