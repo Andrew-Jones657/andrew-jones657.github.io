@@ -21,7 +21,7 @@ add them to the application. Hopefully that fills out the map a little bit more!
 
 <p> Finally, I created some cartographic products for the map gallery section. These have been quite enjoyable to work on since they do not take long to create. I have been attempting to alternate between static and interactive web maps, though I would like to do one that is completely cartography focused still -- I will have to find a suitable subject to map! </p> <br>
 
-<p> Beyond that, I think I am really coming to the point where I want to look for work full-time again. I will still be modifying things here, but generally things here are looking pretty solid. </p> <br>
+<p> Beyond that, I think I am really coming to the point where I want to look for work full-time again. I will still be modifying things here, but generally things here are looking pretty solid.  </p> <br>
 
 <p2> 2/12/2025 </p2>
 
