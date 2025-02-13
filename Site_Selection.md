@@ -328,7 +328,7 @@ html, body, #map{
 </figure> <br>
 
 
-<p> The detailed workflow for this project is presented in Figure 2 below. As mentioned earlier, it is a complex albeit iterative analysis. The site selection process is focused on narrowing down information to criteria deemed important by the user. The latter half of the workflow is more dependent on correctly establishing field values, parameters, and settings for the service area and location allocation analyses within the network dataset.  </p> <br>
+<p> The detailed workflow for this project is presented in Figure 2 below. As mentioned earlier, it is a complex, albeit iterative analysis. The site selection process is focused on narrowing down information to criteria deemed important by the user. The latter half of the workflow is more dependent on correctly establishing field values, parameters, and settings for the service area and location allocation analyses within the network dataset.  </p> <br>
 
 <p> Click on the hyper link by Figure 2 to download the flow chart. </p> <br>
 
@@ -356,7 +356,7 @@ html, body, #map{
 <figcaption> Figure 3. Dot Density Population of Warren County in 2020 </figcaption>
 </figure> <br>
 
-<p> Beyond population density in 2020, changes in population since 2000 illustrate how the distribution has evolved. Figure 4 below displays a choropleth map of percent population change between 2000 and 2020, along with the population dot density in 2000 overlaid with the absolute population change dot density from 2000 to 2020. During this time, Warren County experienced growth of 42,032 people, with the majority of this growth occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green were established during this period. Some of the highest population growth was recorded in the corridor between Russellville Road and I-65. Given the significant growth in these newly developed suburban areas, a high weight was assigned to these locations in the site selection analysis, as continued growth is likely in these regions. </p> <br>
+<p> Beyond population density in 2020, population change since 2000 illustrates which areas in Warren County may require improved fire service. Figure 4 below displays a choropleth map of percent population change between 2000 and 2020, along with the population dot density in 2000 overlaid with the absolute population change dot density from 2000 to 2020. During this time, Warren County experienced growth of 42,032 people, with most of this growth occurring in newly developed suburbs. Subdivisions such as Whispering Hills in western Bowling Green, Northridge to the northeast of Bowling Green, and Springfield south of Bowling Green were established during this period. Some of the highest population growth was recorded in the corridor between Russellville Road and I-65. Given the significant growth in these newly developed suburban areas, a high weight was assigned to these locations in the site selection analysis, as continued growth is likely in these regions. </p> <br>
 
 <p> <em> A quick note on Figure 4: since the boundaries of census block groups change over time, one cannot directly calculate the population change between 2000 and 2020. Instead, census blocks from 2000 must be aggregated to the boundaries of the 2020 census block groups. Then, a population change estimate can be calculated. This process is also known as areal proportion analysis. </em>  </p> <br>
 
@@ -365,7 +365,7 @@ html, body, #map{
 <figcaption> Figure 4. Population Changes in Warren County between 2000 and 2020 </figcaption>
 </figure> <br>
 
-<p> Like population density and trends, existing land use is considered an important element of this study. As mentioned above in Figure 1, land use types in the site selection process are limited to agricultural, commercial, public, or vacant. These land use types were selected on the basis that they would be the easiest to rezone. The map of land use in Warren County, produced by the Bowling Green Warren County City County Planning Commission (CCPC), illustrates how land use is distributed among land parcels (Figure 5). It should be noted that the yellow and red areas represent residential parcels. These parcels contain most of the population seen in Figures 3 and 4, making it important to ensure that they are in close proximity to a new or improved fire station.  </p> <br>
+<p> Like population density and trends, existing land use is considered an important element of this study. As mentioned above in Figure 1, land use types in the site selection process are limited to agricultural, commercial, public, or vacant. These land use types were selected on the basis that they would be the easiest to rezone. The map of land use in Warren County, produced by the Bowling Green Warren County City County Planning Commission (CCPC), illustrates how land use is distributed among land parcels (Figure 5). It should be noted that the yellow and red areas represent residential parcels. These parcels contain most of the population seen in Figures 3 and 4, making it important to ensure that they are near a new or improved fire station.  </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/09vHtse.jpeg" alt="Land Use in Warren County" style="width:100%;max-width:625px">
@@ -522,7 +522,7 @@ html, body, #map{
 </tbody>
 </table> <br>
 
-<p> Having considered how fire response behavior should function, parameters for the network dataset can be set up (Table 4). With the exception of costs, these parameters have been previously described. The costs represent the accumulation of travel time from the fire station to a location in Warren County. Time is calculated in the road network by dividing distance by travel speed and then multiplying by 60 to convert from seconds to minutes. The delay is based on a generalized assumption that fire response vehicles will need to slow down at junctions to either turn or pass through carefully. Since this cost is expressed in minutes, a value of 0.1667 (ten seconds) is input as the cost at junctions.   </p> <br>
+<p> Having considered how fire response behavior should function, parameters for the network dataset can be set up (Table 4). Except for costs, these parameters have been previously described. The costs represent the accumulation of travel time from the fire station to a location in Warren County. Time is calculated in the road network by dividing distance by travel speed and then multiplying by 60 to convert from seconds to minutes. The delay is based on a generalized assumption that fire response vehicles will need to slow down at junctions to either turn or pass through carefully. Since this cost is expressed in minutes, a value of 0.1667 (ten seconds) is input as the cost at junctions.   </p> <br>
 
 <table class="center"><caption> Table 4. Network Dataset Parameters </caption> 
 <thead>
@@ -543,13 +543,13 @@ html, body, #map{
 <tr> 
 <td> Volunteer (Seven-Minute Startup Delay) </td>
 <td> </td>
-<td> Delay in Minutes ( 10 seconds per junction ) </td>
+<td> Delay in Minutes (10 seconds per junction) </td>
 <td> </td>
 </tr>
 </tbody>
 </table> <br>
 
-<h3> Selecting the Candidate Fire Stations </h3> <br>
+<h3> Selecting Candidate Fire Stations </h3> <br>
 
 <p> To measure the response quality of the current and candidate fire stations, a service area analysis model will be created. Service area analysis is a type of network analysis used to determine the region that encompasses all accessible streets within a specific impedance. In this case, the service area will be divided according to the cutoff times presented in Table 5; these polygons will represent travel times from all fire stations. </p> <br>
 
@@ -575,7 +575,7 @@ html, body, #map{
 </tbody>
 </table> <br>
 
-<p> After the service area analysis parameters in Table 5 are established, a service area analysis model of the current fire service in Warren County is created (Figure 7). The city of Bowling Green is clearly shown to have excellent fire service, as few parts of the city have a response time exceeding eight minutes. Many of the county suburbs adjacent to Bowling Green are also found to have good service. Areas with poor fire service tend to be located in the rural parts of Warren County, which exhibit low population densities as established by Figure 3. </p> <br>
+<p> After the service area analysis parameters in Table 5 are established, a service area analysis model of the current fire service in Warren County is created (Figure 7). The city of Bowling Green is clearly shown to have excellent fire service, as few parts of the city have a response time exceeding eight minutes. Many of the county suburbs adjacent to Bowling Green are also found to have good service. Areas with poor fire service tend to be in the rural parts of Warren County, which exhibit low population densities as established by Figure 3. </p> <br>
 
 
 <figure>
@@ -583,7 +583,7 @@ html, body, #map{
 <figcaption> Figure 7. Current Fire Service in Warren County</figcaption>
 </figure> <br>
 
-<p> After the workflow for the site selection analysis is completed, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed using an unclassified color scheme, with darker blue sites being considered more desirable. The highest-scoring candidate sites are located in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest-weighted cluster of candidate sites is found south of Bowling Green in newly developed suburban areas. Establishing a new professional fire station in either of these clusters would greatly improve the current fire service; therefore, it is deemed best to select one site north of Bowling Green and one site south of Bowling Green. The two best sites are highlighted with an orange boundary and are situated alongside Mt. Olivet Rd to the north and Hounds Run to the south. While many other candidate sites were identified, they did not weigh as highly as the two aforementioned clusters, primarily due to lower populations. </p> <br>
+<p> After the workflow for the site selection analysis is completed, the final candidate sites are presented in Figure 8 below. The candidate land parcels are weighed using an unclassified color scheme, with darker blue sites being considered more desirable. The highest-scoring candidate sites are in suburban areas north of Bowling Green along Highway 526 and Highway 957. The second highest-weighted cluster of candidate sites is found south of Bowling Green in newly developed suburban areas. Establishing a new professional fire station in either of these clusters would greatly improve the current fire service; therefore, it is deemed best to select one site north of Bowling Green and one site south of Bowling Green. The two best sites are highlighted with an orange boundary and are situated alongside Mt. Olivet Rd to the north and Hounds Run to the south. Other candidate sites were identified, though smaller populations in these sites mean they did not score as high as they Mt. Olivet and Hounds Run sites. </p> <br>
 
 <figure>
 <img class="myImages" src="https://i.imgur.com/mPZVjOY.jpeg" alt="Candidate Sites for New Fire Stations in Warren County" style="width:100%;max-width:625px">
@@ -628,7 +628,7 @@ html, body, #map{
 
 <p> Looking at Table 6, the three volunteer fire stations with the highest population demand are identified as Woodburn Fire Station 2, Alvaton Fire Station 4, and Browning Fire Station 2. However, upon reviewing Figure 9, it is clear that much of the allocated census block population for the Alvaton and Browning stations already receives good service from other fire stations. Even though these two stations have high population demands, improvements would only slightly enhance overall fire response. It would be more beneficial to consider volunteer fire stations in densely populated suburban areas that are further removed from the City of Bowling Green. </p> <br>
 
-<p> Considering some of the locations further down Table 6, Richardsville Fire Station 3 is positioned next after Browning Fire Station 2, but it is likely to face the same issue as the previous two stations. While the area of Warren County between Morgantown Rd and Russellville Rd is growing, it is currently characterized by slow growth. Next on the list are Alvaton Fire Station 1 and Plano Fire Station 1. Both of these fire stations are located in densely populated suburban areas, making one of them a better choice for improvement. The fire stations further down Table 6 are primarily rural in nature or already classified as professional city fire stations, so Alvaton Fire Station 1 and Plano Fire Station 1 will be selected as the final candidates. Alongside Woodburn Fire Station 2, these two fire stations complete the candidate site choices. </p> <br>
+<p> Considering some of the locations further down Table 6, Richardsville Fire Station 3 is positioned after Browning Fire Station 2, but it is likely to face the same issue as the previous two stations. While the corridor between Morgantown Rd and Russellville Rd is growing, it is currently characterized by slow growth. Next on the list are Alvaton Fire Station 1 and Plano Fire Station 1. Both of these fire stations are located in densely populated suburban areas, making one of them a better choice for improvement. The fire stations further down Table 6 are primarily rural in nature or already classified as professional city fire stations, so Alvaton Fire Station 1 and Plano Fire Station 1 will be selected as the final candidates. Alongside Woodburn Fire Station 2, these two fire stations complete the candidate site choices. </p> <br>
 
 <table class="table table-bordered table-hover table-condensed"> <caption> Table 7. Population Demand per Fire Station </caption> 
 <thead><tr><th title="Field #1">Address</th>
@@ -1035,7 +1035,7 @@ html, body, #map{
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p>  The project is now concluded, having selected an optimal site for a fire station improvement. It is important to note that the results of this study were sensitive to parameters. If "good" fire service were considered to be ten minutes instead of eight, a different candidate fire station may have been deemed ideal. Additionally, limitations on whether a fire station could be improved or expansions in the number of fire stations for improvement would also yield different results.  </p> <br>
+<p>  The project is now concluded, having selected an optimal site for an improved fire station. It is important to note that the results of this study were sensitive to parameters. If "good" fire service were considered to be ten minutes instead of eight, a different candidate fire station may have been deemed ideal. Additionally, limitations on whether a fire station could be improved or expansions in the number of fire stations for improvement would also yield different results.  </p> <br>
 
 <p> The original idea for this project stemmed from an urban GIS applications course taken at Western Kentucky University. The project was simpler, as it did not involve the use of soft constraints or opportunities (i.e., weighing spatial layers numerically) or location-allocation analysis to potentially improve a fire station. Fewer types of spatial data were involved in finding a suitable site. At some point, this project may be redone using more advanced geospatial techniques and more detailed datasets.  </p> <br>
 
