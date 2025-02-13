@@ -1124,6 +1124,4 @@ span.onclick = function() {
 }
 </script>
 
-</body>
 
-</html>
