@@ -133,7 +133,7 @@
 
 <h3> Drought Anomaly Data for this Project </h3> <br>
 
-<p> The drought dataset was collected between July 1998 and June 2001, and comprises 56 weather stations represented as points (Figure 1). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here</a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. Additionally, <a href="https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20"> Kentucky's climate divisions </a>are used as a backdrop; these climate divisions consist of counties with similar weather patterns. </p> <br>
+<p> The drought dataset was collected between July 1998 and June 2001 and comprises 56 weather stations represented as points (Figure 1). A simplified version of the dataset can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/KYDrought/KYDrought.geojson"> here</a>: this simplified dataset contains the reference information as well as cumulative drought values for June 1999 and June 2001. Additionally, <a href="https://psl.noaa.gov/data/usclimdivs/data/map.html#Kentucky%20"> Kentucky's climate divisions </a>are used as a backdrop; these climate divisions consist of counties with similar weather patterns. </p> <br>
     
 <p> The dataset is cumulative, meaning that each month’s data includes values from previous months. Most values in the dataset are negative, indicating a deficiency in precipitation at the weather stations. For the initial portion of the project, drought anomaly values from June 1999 will be analyzed, covering a full year of data.  These points will be interpolated to create drought anomaly surfaces. Later, multivariate clustering methods will be applied to evaluate trends characterizing the drought anomalies recorded by each weather station, and the stations will be grouped into clusters. </p> <br>
 
@@ -158,7 +158,7 @@
 
 
 
-<p> First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 3). This map displays the drought deficiencies or surpluses recorded by each weather station as of June 1999. Notably, a clear pattern emerges: areas experiencing drought are clustered, with a notable transition from west to east. Western Kentucky, which typically experiences intense storms and more erratic weather, was largely free of drought or experienced only minor decreases in rainfall. In contrast, eastern Kentucky, known for its higher frequency of rain showers, had multiple stations reporting precipitation deficiencies exceeding ten inches. These spatial patterns deviate from Kentucky’s usual precipitation trends, where western Kentucky often faces drought conditions and eastern Kentucky typically records higher rainfall levels, including orographic effects. </p>
+<p> First, it is essential to conduct a visual analysis of the drought data using a choropleth and graduated symbol map (Figure 3). This map displays the drought deficiencies or surpluses recorded by each weather station as of June 1999. A clear pattern emerges: areas experiencing drought are clustered, with a notable transition from west to east. Western Kentucky, which typically experienced intense storms and more erratic weather, was largely free of drought or experienced only minor decreases in rainfall. In contrast, eastern Kentucky, known for its higher frequency of rain showers, had multiple stations reporting precipitation deficiencies exceeding ten inches. These spatial patterns deviate from Kentucky’s usual precipitation trends, where western Kentucky often faces drought conditions and eastern Kentucky typically records higher rainfall levels, including orographic effects. </p>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/ei7BZYD.jpeg" alt="Drought by Weather Station" style="width:100%;max-width:625px">
@@ -291,15 +291,15 @@
 <figcaption> Figure 8. Trend Analysis of Cumulative Drought Anomalies from July 1998 to June 1999   </figcaption>    
 </figure>    <br>
 
-<p> One particular type of geostatistical graph helpful for kriging is the semivariogram, which shows the relationship between the distance between two points and the difference in their values. A semivariogram has several properties: </p> <br>
+<p> One geostatistical graph helpful for kriging is the semivariogram, which shows the relationship between the distance between two points and the difference in their values. A semivariogram has several properties: </p> <br>
 
 <ol>
-<li> The <em> nugget </em> is the value of the semivariogram at a very small distance, often at zero distance. It represents the initial variability or spatial variability that is observed when two data points are very close to each other. When spatial autocorrelation is modeled with a semivariogram, the nugget is the value where the curve starts, before it begins to rise as the distance between points increases. </li>
+<li> The <em> nugget </em> is the value of the semivariogram at a very small distance, often at no distance (i.e., x=0 on the graph). It represents the initial variability or spatial variability that is observed when two data points are very close to each other. When spatial autocorrelation is modeled with a semivariogram, the nugget is the value where the curve starts, before it begins to rise as the distance between points increases. </li>
 <li> The <em> range </em> is the distance at which the semivariogram reaches a <em> sill </em> (or the value at which it levels off). Beyond this range, the values of the semivariogram do not change much, meaning that the data points are no longer strongly correlated. </li>
 <li> The <em> partial sill </em> is the difference between the sill and the nugget. The <em> sill </em> is the value at which the semivariogram levels off at large distances. The partial sill indicates much variation remains in the data after accounting for the nugget. </li>
 </ol> <br>
     
-<p> The semivariogram cloud below (Figure 9) illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another. Later on, the values in this semivariogram will be averaged into a certain number of points and used to model a function: this function will describe spatial autocorrelation for the kriging surface.  </p> <br>
+<p> The semivariogram cloud below (Figure 9) illustrates distant values on the right side, indicating that both high and low values are dispersed from the mean. In other words, high and low values exhibit autocorrelation with one another. Later, the values in this semivariogram will be averaged into a certain number of points and used to model a function: this function will describe spatial autocorrelation for the kriging surface.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/EbNdkPI.jpeg" alt="Semivariogram" style="width:100%;max-width:625px">
@@ -312,14 +312,14 @@
 
 <p> Unlike the IDW model, kriging is based on a description of spatial autocorrelation given by sample data, as the user must create a function to model the spatial autocorrelation with a semivariogram. Kriging is an optimal method in the sense that it makes the best use of what can be inferred about the spatial structure in the interpolation surface from an analysis of the sample points. Kriging also allows for the quantification of interpolation errors and analysis of uncertainty, which lends it more statistical rigor. Unlike the IDW method, kriging has several assumptions concerning the underlying dataset. </p> <br>
     <ol>
-    <li> The interpolation surface has a constant mean, with no underlieing trend. </li>
+    <li> The interpolation surface has a constant mean, with no underlying trend. </li>
     <li> The data arise from a stochastic stationary process. </li>
     <li> The variation of the surface is the same in each direction (also known as isotropic).  </li>
     <li> The semivariogram consists of a mathematical model with clearly defined user parameters. </li>
     <li> The same semivariogram is applied over the entire study area. </li>
     </ol> <br>
 
-<p> The differences between kriging and the idw model are visualized in the illustration below (Figure 10). Note that kriging uses the distance between each point to create a weighted value, whereas the IDW searches for a certain number of points and assigns a value of one for included values and zero for excluded values.  </p> <br>
+<p> The differences between kriging and the IDW model are visualized in the illustration below (Figure 10). Note that kriging uses the distance between each point to create a weighted value, whereas the IDW searches for a certain number of points and assigns a value of one for included values and zero for excluded values.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/j2TlB49.png" alt="IDWvKriging" style="width:100%;max-width:625px">
@@ -418,7 +418,7 @@
 </table> <br>
 
 
-<p> Although the trends from the kriging model are similar to those produced in the IDW map, the interpolation appears cleaner now (Figure 12). The average and bull's eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. In particular, northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in droughts as the area around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross validation statistics.  </p> <br>
+<p> Although the trends from the kriging model are like those produced in the IDW map, the interpolation appears cleaner now (Figure 12). The average and bull's eye effect from the IDW are no longer present here. Like in the IDW, there is a west to east trend in Kentucky, where drought anomalies are more severe in the eastern portion of the state compared to the western portion. Northeastern Kentucky and now central Kentucky appear to be suffering the most severe droughts. Some areas, however, show variation in drought anomalies as the areas around Louisville and southeastern Kentucky are not as affected as central and northeastern Kentucky. Numerous kriging models were created before selecting this one: the parameters in Table 2 created a kriging map that best balanced the values of the cross-validation statistics.  </p> <br>
 
 
 
@@ -436,7 +436,7 @@
 </figure> <br>
 
 
-<p> Another way to depict kriging interpolation is through a probability map, which can be useful for decision management issues. Figure 14 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold, which is the median value for June 1999. The areas that require drought emergency response are primarily in northeastern Kentucky, though portions of central Kentucky also have a high probability crossing the threshold. This area tends to have a higher probability (between 70% and 100%) of crossing the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
+<p> Another way to depict kriging interpolation is through a probability map, which can be useful for decision management issues. Figure 14 shows a probability map of cumulative precipitation anomalies in Kentucky potentially crossing the -7.5 in. drought marker threshold, which is the median value for June 1999. The areas that require drought emergency response are primarily in northeastern Kentucky, though portions of central Kentucky also have a high probability of crossing the threshold. This area tends to have a higher probability (between 70% and 100%) of falling below the -7.5 in. cumulative precipitation amount. The weather station map, IDW, and Kriging map all reported that this area was experiencing the highest degree of drought in Kentucky during June 1999. So, out of all the areas in Kentucky afflicted by drought, northeastern Kentucky should receive most of the remediation efforts.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/v2cImXo.jpeg" alt="KrigingProb" style="width:100%;max-width:625px">
@@ -444,7 +444,7 @@
 </figure> <br>
 
 
-<p> By using kriging interpolation, a good model depicted where drought was most severe in Kentucky by June 1999. However, that was one month out of 36 different months in the dataset. It would be inefficient to attempt to create a stable kriging interpolation model for each month in this time period. Instead, it would prove valuable to incorporate multivariate statistical measures to observe similarities and differences across the entire dataset.   </p>
+<p> By using kriging interpolation, a good model depicted where drought was most severe in Kentucky by June 1999. However, that was one month out of 36 different months in the dataset. It would be inefficient to attempt to create a stable kriging interpolation model for each month in this period. Instead, it would prove valuable to incorporate multivariate statistical measures to observe similarities and differences across the entire dataset.   </p>
 
 <h1 style="text-align:center;"> Multivariate Methods: Observing Trends in the Entire Dataset </h1> <br>
 
@@ -452,7 +452,7 @@
 
 <h3> Mapping Another Month from the Drought Anomaly Data </h3> <br>
 
-<p> As mentioned prior, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, June of 2001 was chosen, as it displays the final cumulative result of the entire dataset (Figure 15). </p> <br>
+<p> As discussed earlier, the drought dataset is a cumulative dataset that was collected between July of 1998 and June of 2001. For the interpolative methods, only June of 1999 was analyzed (meaning one year of accumulated drought values). In this portion of the analysis, multivariate statistical methods will be used to analyze trends in the entire dataset. To start, a visualization for a different month was created. In this case, June of 2001 was chosen, as it displays the final cumulative result of the entire dataset (Figure 15). </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/PLyAwFW.jpeg" alt="2001Map" style="width:100%;max-width:625px">
@@ -463,40 +463,38 @@
 
 <p> Compared to the values from June 1999, the cumulative effects of the drought in June 2001 can be observed, as the most severe droughts peak at -44 inches compared to -18. Northeastern Kentucky, where the drought had been most severe in June 1999, has some of the mildest drought values by June of 2001. The directional effects (west to northeast) that were present in June of 1999 have also changed, as the most severe drought values are now in central Kentucky.  </p> <br>
 
-<p> (Introduce why multivariate methods are useful here for insight, add something on trend effect over time, how these stations could be grouped together, etc.) </p> <br>
-
-<p> At this point, it would be insightful to evaluate and observe shared characteristics from the overall group of variables. Suffice to say, it would be burdensome to create and even more tedious to navigate 34 more maps for each of the remaining months. Instead, multivariate clustering methods will be used to group similar weather stations together and create various visuals such as time series plots and maps.  </p> <br>
+<p> At this point, it would be insightful to evaluate and observe shared characteristics from all of the variables. Suffice to say, it would be burdensome to create and even more tedious to navigate through 34 maps for each of the remaining months. Instead, multivariate clustering methods will be used to group similar weather stations together and create various visuals such as time series plots and maps that help describe drought trends in each weather station group.  </p> <br>
 
 <h3> Introducing Multivariate Methods: Agglomerative Clustering and K-Means </h3> <br>
 
-<p> Two types of multivariate clustering methods will be used to explore trends throughout the entire drought anomaly dataset. Unlike univariate methods, it is often the case that there is no clear answer as to which methods or set of parameters are statistically ideal. Heuristics, empirical observation, and background knowledge are usually incorporated as starting points, and from there, certain measures can be chosen to help illustrate trends more clearly. First, a simple empirical look will be made using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means. This portion of the project is more reliant on R, as there are only so many ways to analyze multivariate data in ArcGIS Pro.      </p> <br>
+<p> Two types of multivariate clustering methods will be used to explore trends throughout the entire drought dataset. Unlike univariate methods, it is often the case that there is no clear answer as to which methods or set of parameters are statistically ideal. Heuristics, empirical observation, and background knowledge are usually incorporated as starting points, and from there, certain measures can be chosen to help illustrate trends more clearly. First, a simple empirical look will be made using agglomerative clustering methods to create a dendrogram of the cumulative drought anomalies at each weather station. Then, a more refined analysis will be conducted with K-means. This portion of the project is more reliant on R, as there are only so many ways to analyze multivariate data in ArcGIS Pro.      </p> <br>
 
-<p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering. </em> </p> <br>
+<p> <em> Note: It is possible to conduct a K-means analysis in ArcGIS Pro with the multivariate clustering tool in the spatial statistics toolbox. A time-series box plot can also be created from this tool, as well as an analysis of the psuedo-F score. For agglomerative clustering, a dendrogram can be created in ArcGIS Pro, though it requires a signature file. RStudio, however, provides algorithms that can be used to depict and evaluate the quality of a clustering analysis. </em> </p> <br>
 
 <p> For the rest of the project, the data was standardized. Standardization is essential in cluster analysis, which includes both hierarchical and k-means clustering. Even though all the measurements in this dataset are in inches, standardization has the additional benefits of ensuring that the dataset is accurate and uniform, as well as making it easier to find errors in the data. Having a uniform dataset is particularly important in this case, since the cumulative values within it might otherwise create biased results. Similarly, standardization allows for better control over biased values and outliers.  </p> <br>
 
 
 <h3> Agglomerative Clustering </h3> <br>
 
-<p> The first multivariate clustering method that will be looked at is agglomerative clustering, also called hierarchical clustering. It functions by creating a hierarchy of clusters in a bottom up manner: </p>
+<p> The first multivariate clustering method that will be looked at is agglomerative clustering, also called hierarchical clustering. It functions by creating a hierarchy of clusters in a bottom-up manner: </p>
 <ol>
 <li> Each data point starts as its own individual cluster. </li> 
 <li> The two closest clusters are merged into one. </li>
-<li> This merging process continues iteratively until all data points are grouped into a single cluster or a specified number of clusters is reached. </li>
+<li> This merging process continues iteratively until all data points are grouped into a single cluster, or a specified number of clusters is reached. </li>
 </ol> <br>
 
 <p> There are several different methods for measuring the intercluster distance. Such methods include single linkage (minimum of distances), complete linkage (maximum of distances), average linkage (average of distances), Ward's algorithm (minimizes cluster spread).  </p> <br>
 
 <p> Agglomerative clustering has several advantages:  </p>
 <ol>
-<li> A specific number of clusters does not have to be predefined. Users can select a number of clusters from a visual breakpoint. </li>
+<li> A specific number of clusters does not have to be predefined. Users can specify a certain number of clusters using a visual breakpoint. </li>
 <li> Clusters are not limited to a specific shape, such as a sphere. They can be arbitrary in size and shape. </li>
-<li> The hierarchy of clusters can be visualized in a dendrogram, which is useful for exploring hierarchichal relationships in the data. </li>
+<li> The hierarchy of clusters can be visualized in a dendrogram, which is useful for exploring hierarchical relationships in the data. </li>
 </ol> <br>
 
 <p> The biggest issue with agglomerative clustering is that it does not scale well with large datasets. This is due to it being a computationally expensive method and limits on how much data can be displayed using a single dendrogram. </p> <br>
 
-<p> To create a dendrogram, the standardized drought values were used to create a dissimilarity matrix, which measures the distance between each recorded drought value. Then, each of those observations were paired together with their closest neighbor into groups until the entire dataset was in one group. Ward’s algorithm was used to minimize the spread of the clusters (Figure 16). The dendrogram could be "cut" in a variety of different ways to observe different numbers of clusters -- it would be ideal to attempt to keep a similar number of observations within each clustering. To start, the dendrogram will be cut as to create four clusters.   </p> <br>
+<p> To create a dendrogram, the standardized drought values were used to create a dissimilarity matrix, which measures the distance between each recorded drought value. Then, each of those observations were paired together with their closest neighbor into groups until the entire dataset was in one group. Ward’s algorithm was used to minimize the spread of the clusters (Figure 16). The dendrogram could be "cut" in a variety of different ways to observe different numbers of clusters -- it would be ideal to attempt to keep a similar number of observations within each clustering. To start, the dendrogram will be "cut" so that the dataset is split into four clusters.   </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/d7VIMdt.jpeg" alt="Dendrogram" style="width:100%;max-width:625px">
@@ -533,7 +531,7 @@
 <li> A <em> K </em> number of clusters are selected by the user. These clusters centers may be chosen from random data points within the dataset. </li>
 <li> Each data point is assigned to the nearest cluster center based on a distance metric (usually Euclidean distance). This forms K clusters.</li>
 <li> The centroid of each cluster is recalculated by finding the mean of all data points in the cluster. </li>
-<li> Steps 2 and 3 are repeated iteratively until the centroids no longer change significantly or a predefined number of iterations is reached. </li>
+<li> Steps 2 and 3 are repeated iteratively until the centroids no longer change significantly, or a predefined number of iterations is reached. </li>
 </ol> <br>
 
 <p> The K-means clustering algorithm has several advantages: </p>
