@@ -702,7 +702,7 @@
 </figure> <br>
 
 
-<p> The time series trends presented in Figure 29 below may be the most interesting out of the possible cluster choices. Cluster 1 in this case consists of the weather stations that had the least severe drought conditions: this is similar to cluster 4 from the agglomerative clustering time series (Figure 17). Clusters 2 and 3 have a near symmetrical layout, where cluster 2 is displays moderately severe drought values that began to subside towards the end of the time period and cluster 3 displays weather stations where the drought became most severe twoards the end of the time period.  </p> <br>
+<p> The time series trends presented in Figure 29 below may be the most interesting out of the possible cluster choices. Cluster 1 in this case consists of the weather stations that had the least severe drought conditions: this is like cluster 4 from the agglomerative clustering time series (Figure 17). Clusters 2 and 3 have a near symmetrical layout, where cluster 2 displays moderately severe drought values that began to subside towards the end of the period and cluster 3 displays weather stations where the drought became most severe towards the end of the period.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/0N0U0Ua.jpeg" alt="KTimeSeries3" style="width:100%;max-width:625px">
@@ -710,7 +710,7 @@
 </figure> <br>
 
 
-<p> Finally, the k-means with three clusters can be mapped (Figure 30). This presents a fairly interesting result, as cluster 3 now represents the areas that suffered the least from severe drought -- these areas are not particularly spatially clustered, though most of them appear in western Kentucky, Louisville, and some portions of central and eastern Kentucky. Cluster 1, which represents the areas with the most severe drought trends, is primarily centered in parts of central Kentucky and southern parts of the Bluegrass region. Some portions of eastern Kentucky most severly affected by drought are also in cluster 1. Cluster 2, which represents areas with moderately severe drought, is scattered throughout the state, though northern Kentucky and some parts of eastern and western kentucky tend to hold most of cluster 2's members.  </p> <br>
+<p> Finally, the k-means with three clusters can be mapped (Figure 30). This presents an interesting result, as cluster 3 now represents the areas that suffered the least from severe drought -- these areas are not particularly spatially clustered, though most of them appear in western Kentucky, Louisville, and some portions of central and eastern Kentucky. Cluster 1, which represents the areas with the most severe drought trends, is primarily centered in parts of central Kentucky and southern parts of the Bluegrass region. Some portions of eastern Kentucky, most severely affected by drought, are also in cluster 1. Cluster 2, which represents areas with moderately severe drought, is scattered throughout the state, though northern Kentucky and some parts of eastern and western Kentucky tend to hold most of cluster 2's members.  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src= "https://i.imgur.com/34iU25q.jpeg" alt="KTimeMap3" style="width:100%;max-width:625px">
