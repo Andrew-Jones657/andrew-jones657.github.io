@@ -39,11 +39,7 @@
                     	},
                         map: map,
                         center: [-86.4463, 36.9913],
-                        zoom: 11,
-                        padding: {
-                            right: 300
-                        }
-
+                        zoom: 11
                     });
 
 		    //
