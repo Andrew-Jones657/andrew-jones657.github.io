@@ -20,7 +20,7 @@
 
 	// Declare a variable for the layer view that will later be used to feature filters by year
         let yearLayerView;
-	
+
 	// Link to geoJSON file containing historical social institutions
 	const geojsonurl = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/Covington_German/Institutions_1861_1920.geojson";
 
@@ -136,8 +136,6 @@
 	  }]
 	});
 
-
-
         // --------------- This section focuses on adding in the georeferenced map to the back ground ------------------- //
         // image information used to create image elements to be
         // added to the media layer
@@ -244,7 +242,7 @@
         });
 
         // MediaLayer - add imageElements
-        const georefLayer = new MediaLayer({
+        const layer = new MediaLayer({
           source: [
             imageElements[0].element
           ],
@@ -252,7 +250,6 @@
           title: "Covington",
           blendMode: "normal"
         });
-
 	        // --------------- End georeferencing section ------------------- //
 
 	// load in the geoJSON covington institutions point layer
@@ -266,33 +263,17 @@
 
         const map = new Map({
           basemap: "dark-gray",
-          layers: [georefLayer, geojsonLayer]
+          layers: [layer, geojsonLayer]
         });
 
         const view = new MapView({
           container: "viewDiv",
           map: map,
           zoom: 14,
-          center: [-84.509852, 39.081289]
+          center: [-84.509852, 39.081289],
         });
 
-	// enable users to hover over points and automatically open popups 
-	view.on("pointer-move", function (event) { 
-          view.hitTest(event).then(function (response) { 
-            if (response.results.length) { 
-              var graphic = response.results.filter(function (result) { 
-               // check if the graphic belongs to the layer of interest 
-               return result.graphic.layer === myGroupLayer; 
-             })[0].graphic; 
-             view.popup.open({ 
-               location: graphic.geometry.centroid, 
-               features: [graphic] 
-             }); 
-           } else { 
-             view.popup.close(); 
-           } 
-         }); 
-       }); 
+
 
 	// ----------------------- This section is focused on creating the filter to limit the geojsonLayer view by Year ---------------------------- // 
 	// Define nodes to query the year elements and use the "getElementById" method to extract the information from the html div elements (the same years as in the geojson layer)
@@ -342,6 +323,27 @@
 
 	// ----------------------- End filter section ---------------------------- // 
 
+	// enable users to hover over points and automatically open popups 
+	view.on("pointer-move", function(event) {
+  	  view.hitTest(event).then(function(response) {
+    	    if (response.results.length) {
+      		const filteredResults = response.results.filter(result => result.graphic.layer === geojsonLayer);
+
+      		if (filteredResults.length > 0) {
+        	  const graphic = filteredResults[0].graphic;
+          	    view.popup.open({
+            		location: graphic.geometry.centroid,
+            		features: [graphic]
+          	    });
+      		} else {
+        	  view.popup.close();
+      		}
+    	     } else {
+       		view.popup.close();
+    	     }
+  	   });
+	  });
+
        	// add a fullscreen button
        const fullscreen = new Fullscreen({
   	view: view
@@ -382,7 +384,6 @@
             layer.blendMode =
               layer.blendMode === "normal" ? "luminosity" : "normal";
           });
-
 
 
       });
