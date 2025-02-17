@@ -95,7 +95,7 @@
 
 <body>
 
- <div id="years-filter" class="esri-widget">
+<div id="years-filter" class="esri-widget">
       <div class="year-item visible-year" data-year="1861">
         1861
       </div>
@@ -123,11 +123,20 @@
       <div id="titleText">Covington's German Element</div>
       <div>German Social Institutions from 1861 to 1920</div>
     </div>
-    <calcite-panel slot="contextual-panel" id="infoDiv" heading="1909 Covington KY Sanborn Fire Insurance Map">
+    <calcite-panel
+      slot="contextual-panel"
+      id="infoDiv"
+      heading="1909 Covington KY Sanborn Fire Insurance Map"
+    >
       <br />
       <div id="elementsDiv"></div>
       <br />
-      <calcite-label layout="inline-space-between"> Toggle layer blending<calcite-switch unchecked id="layerBlending"></calcite-switch> </calcite-label>
+      <calcite-label layout="inline-space-between"
+        >Toggle layer blending<calcite-switch
+          unchecked
+          id="layerBlending"
+        ></calcite-switch>
+      </calcite-label>
     </calcite-panel>
     
 <script src="./files/Covington_German/Covington.js"></script> <br> 
