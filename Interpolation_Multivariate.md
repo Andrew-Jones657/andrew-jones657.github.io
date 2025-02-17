@@ -717,14 +717,11 @@
 <figcaption> Figure 30. K-Means Clustering of Cumulative Drought Anomalies in Kentucky from July 1998 to June 2001: Three Clusters   </figcaption>
 </figure> <br>
 
+<p> In the end, which clustering method worked best: two, three, or four clusters? As discussed earlier, it is difficult to ascertain the ideal number of clusters when using multivariate methods. Each clustering set presented a different view of the trends in the underlying dataset: although a consensus algorithm suggested two clusters would create an ideal partition, the choice of three clusters seemed to best partition dataset into unique clusters. Similarly, using two or four clusters produced nearly symmetrical time series graphs, whereas using three clusters created a unique time series plot that better captured some of the weather stations recorded drought trends that were otherwise difficult to characterize. </p> <br>
 
 <h3> Discussion and Some Final Thoughts </h3> <br>
 
-<p> Finally, there is the question of which of these clustering schemes is the most effective. As stated at the beginning of this section, it is not necessarily obvious which clustering method will best group the dataset. (cont...)  </p> <br>
-
-<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. Like the other projects, this project was sensitive to user-selected parameters, trial and error in creating a solid kriging model, and heuristic analysis in creating grouping models. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters, or choosing a different kriging type, would have created a different model. Likewise, the agglomerative clustering was done on a simple observational basis and choosing a different starting point for k could have strongly affected the quality of the k-means partitioning.   </p> <br>
-
-<p> This project served as a simple survery of some surface interpolation and multivariate methods, and mainly was intended to show an applied use of some techniques on a spatial dataset. </p>
+<p> Having explored some interpolation and multivariate methods in GIS and R, this project is now concluded. This project served as a simple survey of some surface interpolation and multivariate methods, and mainly was intended to show an applied use of some techniques on a spatial dataset.  Like the other projects, this project was sensitive to user-selected parameters, trial and error in creating a solid kriging model, and heuristic analysis in creating grouping models. During the interpolation phase, choosing a different number of points to interpolate with the IDW would have altered it greatly. Similarly, altering the kriging parameters, or choosing a different kriging type, would have created a different model. Likewise, the agglomerative clustering was done on a simple observational basis and choosing a different starting point for k could have strongly affected the quality of the k-means partitioning.   </p> <br>
 
 <p> Further graphical and mapping enhancements may be added to this project in the future. </p> <br>
 
@@ -735,7 +732,7 @@
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/KrigingTrendAnalysis.R"> Trend Analysis </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/KrigingVariogramCloud.R"> Variogram Cloud </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateDendrogramPlot.R"> Dendrogram </a> </p>
-<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateAggTimeSeries.R"> Agglormerative Clustering Time Series Plot </a> </p>
+<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateAggTimeSeries.R"> Agglomerative Clustering Time Series Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateElbowPlot.R"> Elbow Method Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateSilhouettePlot.R"> Silhouette Method Plot </a> </p>
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/R_Examples/MultivariateGapStatisticPlot.R"> Gap Statistic Method Plot </a> </p>
