@@ -224,9 +224,10 @@
 
 
 <figure>
-<img class="myImages" id="myImg" src="https://i.imgur.com/f7a7Etc.jpeg" alt="Nordlingen" style="width:100%;max-width:625px"> </a>
-</figure> <br>
+<img class="myImages" id="myImg" src="https://i.imgur.com/f7a7Etc.jpeg" alt="Nordlingen" style="width:100%;max-width:625px"> 
 <figcaption> The Nördlinger Ries </figcaption>
+</figure> <br>
+
 
 <p> 2/20/2025 </p> <br>
 
