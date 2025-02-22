@@ -351,6 +351,13 @@ object-fit: cover;
 
 <h3> Final Products </h3> <br>
 
+<p> Having prepared the land use layers, urban growth in Columbia is depicted in Figure 13. Note that this map is simplified rendition, as it only displays areas over 60,000 sqaure feet. (update update)  </p> <br>
+
+<figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/8TwOgBB.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
+<figcaption> Figure 13. Urbanization in Boone County since 2000 </figcaption>
+</figure> <br>
+
 
 <p> An interactive Leaflet web map below displays the final results of the project. The red polygons denote areas that have experienced urbanization since 2000. As mentioned in the discussion for Figure 12,  Note that while polygons outside of Boone County were removed from the layer, some areas that suggest urbanization are actually the false positives from the land classification algorithm earlier.    </p> <br>
 
@@ -359,7 +366,7 @@ object-fit: cover;
 
 <script src="./files/ColumbiaRemote/Boone00_24_Growth.js"></script> <br> 
 <figure>
-<figcaption> Figure 13. Urbanization in Boone County since 2000 </figcaption>
+<figcaption> Figure 14. Urbanization in Boone County since 2000 -- Interactive Leaflet Web Map </figcaption>
 </figure> <br>
 
 
@@ -406,6 +413,7 @@ object-fit: cover;
 <p> Figure 11. Boone County 2000 Land Use </p>
 <p> Figure 12. Boone County 2024 Land Use </p>
 <p> Figure 13. Urbanization in Boone County since 2000 </p>
+<p> Figure 13. Urbanization in Boone County since 2000 -- Interactive Leaflet Web Map </p>
 <p> Table 1. Boone County and Columbia Population Change since 1980 </p>
 
 <h3> References </h3>
