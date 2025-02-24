@@ -16,7 +16,7 @@
 
     const booneLayer = new L.GeoJSON.AJAX(booneUrl, {color: 'black'}).addTo(map);
 
-    const boonePlaces00 = new L.GeoJSON.AJAX(boonePlaces00url, {color: 'gold'}).addTo(map);
+    const boonePlaces00 = new L.GeoJSON.AJAX(boonePlaces00url, {color: 'gold', fillColor: 'none' }).addTo(map);
 
     const boonePlaces20 = new L.GeoJSON.AJAX(boonePlaces20url, {color: 'green'}).addTo(map);
 
@@ -30,7 +30,7 @@
 		const div = L.DomUtil.create('div', 'info dataSource');
 		let dSource = [];
 		dSource.push(
-			`<div ><p style='data-source'><h4> Urban Development Areas from 2000 to 2024 </h4> <br> Boone County, Missouri </p></div>`
+			`<div ><p style='data-source'><h4> Urban Development from 2000 to 2024 </h4> <br> Boone County, Missouri </p></div>`
 		);
 
 		div.innerHTML = dSource.join('<br>');
