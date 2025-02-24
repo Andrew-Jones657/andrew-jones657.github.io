@@ -250,7 +250,7 @@ object-fit: cover;
 <figcaption> Figure 4. The Google Earth Engine Console </figcaption>
 </figure> <br>
 
-<p> The caveat to the advantages of GEE is that it requires JavaScript to perform commands and operations. While this presents a more difficult learning curve for users, there are many example scripts that can be modified to perform many common remote sensing workflows. Additionally, scripts can easily be shared through the JavaScript code, making it easy to reproduce workflows and satellite imagery products. </p>
+<p> The caveat to the advantages of GEE is that it requires JavaScript to perform commands and operations. While this presents a more difficult learning curve for users, there are many example scripts that can be modified to perform many common remote sensing workflows. Additionally, scripts can easily be shared through the JavaScript code, making it easy to reproduce workflows and satellite imagery products. </p> <br>
 
 <h3> Selecting a Satellite, Imagery, and Spectral Bands for Land Classification </h3> <br>
 
@@ -351,7 +351,7 @@ object-fit: cover;
 
 <h3> Final Products </h3> <br>
 
-<p> Having prepared the land use layers, urban growth in Columbia is depicted in Figure 13. Note that this map is simplified rendition, as it only displays areas over 60,000 sqaure feet. (update update)  </p> <br>
+<p> Having prepared the land use layers, urban growth in Columbia is depicted in Figure 13. As discussed earlier by Figure 1, Columbia and other municipalities expand in all directions. The neighborhoods that experienced the most development by land area include Hominy Branch, Kings Meadow, Mexico Gravel, Stonecrest, Thornbrook, and Vanderveen Crossing. Note that this map is simplified rendition, as it only displays areas over 60,000 sqaure feet. (update update)  </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/8TwOgBB.jpeg" alt="2000 Land Use" style="width:100%;max-width:625px">
