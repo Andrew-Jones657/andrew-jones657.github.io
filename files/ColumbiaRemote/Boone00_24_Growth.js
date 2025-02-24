@@ -14,13 +14,13 @@
 
     const boonePlaces20url = "https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/BoonePlaces20.geojson";
 
-    const booneLayer = new L.GeoJSON.AJAX(booneUrl, {color: 'black'}).addTo(map);
+    const booneLayer = new L.GeoJSON.AJAX(booneUrl, {color: 'black', fillColor: 'none'}).addTo(map);
 
-    const boonePlaces00 = new L.GeoJSON.AJAX(boonePlaces00url, {color: 'gold', fillColor: 'none' });
+    const boonePlaces00 = new L.GeoJSON.AJAX(boonePlaces00url, {color: 'gold', fillColor: 'none'});
 
-    const boonePlaces20 = new L.GeoJSON.AJAX(boonePlaces20url, {color: 'green'. fillColor: 'none'});
+    const boonePlaces20 = new L.GeoJSON.AJAX(boonePlaces20url, {color: 'green', fillColor: 'none'});
 
-    const geojsonLayer = new L.GeoJSON.AJAX(geojsonUrl, {color: 'red'}).addTo(map);
+    const geojsonLayer = new L.GeoJSON.AJAX(geojsonUrl, {color: 'red'});
 
     L.control.layers({"New Development":geojsonLayer}, {"2000 Census Places": boonePlaces00}, {"2020 Census Places":boonePlaces20}).addTo(map);
 
