@@ -389,8 +389,6 @@ object-fit: cover;
 
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/BooneGrowth.geojson"> Boone County Urban Growth Areas </a> </p>
 
-<p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/Boone.geojson"> Boone County, Missouri Boundary </a> </p>
-
 <h3> Links to Google Earth Engine JavaScript </h3> <br>
 
 <p> <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/refs/heads/main/files/ColumbiaRemote/ClassifyL5_00_456.js"> 2000 Land Use Classification </a> </p>
