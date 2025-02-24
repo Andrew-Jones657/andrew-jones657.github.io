@@ -21,3 +21,21 @@
     const boonePlaces20 = new L.GeoJSON.AJAX(boonePlaces20url, {color: 'green'}).addTo(map);
 
     const geojsonLayer = new L.GeoJSON.AJAX(geojsonUrl, {color: 'red'}).addTo(map);
+
+
+	const dataSource = L.control({position: 'bottomleft'});
+
+	dataSource.onAdd = function (map) {
+
+		const div = L.DomUtil.create('div', 'info dataSource');
+		let dSource = [];
+		dSource.push(
+			`<div ><p style='data-source'><h4> Urban Development Areas from 2000 to 2024 </h4> <br> Boone County, Missouri </p></div>`
+		);
+
+		div.innerHTML = dSource.join('<br>');
+		return div;
+
+	};
+
+	dataSource.addTo(map);
