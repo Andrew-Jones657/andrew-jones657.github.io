@@ -22,7 +22,7 @@
 
     const geojsonLayer = new L.GeoJSON.AJAX(geojsonUrl, {color: 'red'});
 
-    L.control.layers({"New Development":geojsonLayer}, {"2000 Census Places": boonePlaces00}, {"2020 Census Places":boonePlaces20}).addTo(map);
+    L.control.layers({"New Development": geojsonLayer}, {"2000 Census Places": boonePlaces00}, {"2020 Census Places": boonePlaces20}).addTo(map);
 
 	const dataSource = L.control({position: 'bottomleft'});
 
