@@ -20,9 +20,9 @@
 
     const boonePlaces20 = new L.GeoJSON.AJAX(boonePlaces20url, {color: 'green', fillColor: 'none'});
 
-    const geojsonLayer = new L.GeoJSON.AJAX(geojsonUrl, {color: 'red'});
+    const geojsonLayer = new L.GeoJSON.AJAX(geojsonUrl, {color: 'red'}).addTo(map);
 
-    L.control.layers({"New Development": geojsonLayer}, {"2000 Census Places": boonePlaces00, "2020 Census Places": boonePlaces20}).addTo(map);
+    L.control.layers({"ESRI Imagery": tiles}, {"New Development": geojsonLayer, "2000 Census Places": boonePlaces00, "2020 Census Places": boonePlaces20}).addTo(map);
 
 	const dataSource = L.control({position: 'bottomleft'});
 
