@@ -124,14 +124,14 @@
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href="https://andrew-jones657.github.io/Site_Selection">
-    <img src="https://i.imgur.com/hdprVyx.jpeg" alt="Site Selection" style="width:100%">
+    <img src="https://i.imgur.com/IiHuszG.png" alt="Site Selection" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Site Selection and Network Analysis: Finding an Ideal Site for a New Fire Station </h5>
-    <p> A site selection analysis that incorporates some network analysis tools to find an ideal site for a new or improved professional fire station in Warren County, Kentucky. </p>
+    <h5> Site Selection Analysis: Finding an Ideal Site for a New Fire Station </h5>
+    <p> A site selection analysis that incorporates demographic and network analysis to find an ideal site for a new or improved professional fire station in Warren County, Kentucky. </p>
   </div>
 </div> 
 
@@ -140,14 +140,14 @@
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href="https://andrew-jones657.github.io/Interpolation_Multivariate">
-    <img src="https://i.imgur.com/1Z7Bm7b.jpeg" alt="Interpolation/MV" style="width:100%">
+    <img src="https://i.imgur.com/AQF924D.png" alt="Interpolation/MV" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
     <h5> Data Analysis in ArcGIS Pro and R: Analyzing a Drought Anomaly Dataset with Interpolation Methods and Multivariate Techniques </h5>
-    <p> An analysis of a historical drought anomaly dataset of Kentucky. This project explores the severity and spatial distribution of drought deficiencies at a single point in time (June 1999) with interpolation methods as well as multivariate clustering methods (July 1998 -- June 2001). </p>
+    <p> An analysis of a historical drought anomaly dataset of Kentucky with interpolation methods as well as multivariate clustering methods. </p>
   </div>
 </div> 
 
@@ -156,13 +156,13 @@
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href="https://andrew-jones657.github.io/Columbia_Remote">
-    <img src="https://i.imgur.com/5SixC4A.jpeg" alt="Columbia_Remote" style="width:100%">
+    <img src="https://i.imgur.com/BXXytD1.png" alt="Columbia_Remote" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
   </div>
   <div class="columnText">
-    <h5> Remote Sensing Analysis: Detecting Land Use Change with Google Earth Engine </h5>
+    <h5> A Remote Sensing Analysis on the Cloud: Detecting Land Use Change with Google Earth Engine </h5>
     <p> A remote sensing analysis that investigates urban growth in Boone County, Missouri betweeen 2000 and 2024. </p>
   </div>
 </div> 
