@@ -294,11 +294,11 @@ object-fit: cover;
 
 <h3> The Confusion Matrix </h3> <br>
 
-<p> To evaluate the effectiveness of the land use classification scheme, a confusion matrix was generated along with the imagery export. A confusion matrix compares actual values to predicted values, with the diagonal elements (from the top-left to the bottom-right) representing the correctly classified values, or true positives (Figure ?). The off-diagonal elements indicate errors, reflecting either false positives or false negatives. </p> <br>
+<p> To evaluate the effectiveness of the land use classification scheme, a confusion matrix was generated along with the imagery export. A confusion matrix compares actual values to predicted values, with the diagonal elements (from the top-left to the bottom-right) representing the correctly classified values, or true positives (Figure 8). The off-diagonal elements indicate errors, reflecting either false positives or false negatives. </p> <br>
 
 <figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/H9DoLdK.png" alt="Confusion Matrix" style="width:100%;max-width:625px">
-<figcaption> Figure 8. The Confusion Matrix (?) </figcaption>
+<figcaption> Figure 8. The Confusion Matrix </figcaption>
 </figure> <br>
 
 <p> There are a few important terms to understand concerning confusion matrices. The <em>overall accuracy</em> is the number of false positives and negatives divided by the number of true positives and negatives. This measure provides a general assessment of the quality of a land classification algorithm. Additionally, there are the <em>User Accuracy (Precision)</em> and <em>Prediction Accuracy (Recall)</em>. The user accuracy refers to the probability that a value predicted to be in a certain class is truly in that class. The prediction accuracy is the probability that a given value was classified correctly. </p> <br>
