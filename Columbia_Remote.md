@@ -22,6 +22,10 @@
   cursor: pointer;
   transition: 0.3s;
   }
+
+  #myImg:hover {
+  opacity: 0.7;
+        }
   
   html, body {
 	height: 100%;
