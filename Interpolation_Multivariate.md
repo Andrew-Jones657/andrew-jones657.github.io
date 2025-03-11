@@ -20,9 +20,6 @@
   transition: 0.3s;
   }
 
-  h3 {
-  text-align: center;
-  }
   
   figure figcaption {
   text-align: center; 
