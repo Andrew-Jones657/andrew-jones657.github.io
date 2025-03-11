@@ -131,18 +131,7 @@
   }
 }
 
-.row {
-    display: flex;
-    }
 
-
-.imgContainer{
-    float:left;
-    }
-
-.img{
-object-fit: cover;
-    }
     
 </style>
 
