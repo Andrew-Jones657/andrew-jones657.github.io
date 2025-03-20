@@ -44,7 +44,7 @@
 
 <h3> My areas of interest </h3>
 
-<p> My general areas of interest include cultural and historical geography, German-American culture, and human-environment interactions. In particular, I enjoy (and can spend a long amount of time) observing historical remote sensing imagery and land use change as well as the development and spatial diffusion of cities -- particularly in those I have resided. On the quantitative side, I tend towards being a fan of data (spatial) analysis, statistical programming, and mathematical optimization. I am often found combining these areas by incorporating census data with other data sources to explore various spatial questions in human geography. </p> <br>
+<p> My general areas of interest include cultural and historical geography, German-American culture, and human-environment interactions. In particular, I enjoy (and can spend a large amount of time) observing historical remote sensing imagery and land use change as well as the development and spatial diffusion of cities -- particularly in those I have resided. On the quantitative side, I tend towards being a fan of data (spatial) analysis, statistical programming, and mathematical optimization. I am often found combining these interests by incorporating census data with other data sources to explore various questions and trends in human geography. </p> <br>
 
 <h3> What I used to do  </h3>
 
@@ -56,11 +56,11 @@
 
 <h3> My hobbies </h3> 
 
-<p> Outside of work, I enjoy camping, cycling, disc golf, hiking, photography, spending time with my friends and family, traveling, and walking. </p> <br> 
+<p> Outside of work, I enjoy camping, cycling, disc golf, hiking, kayaking, photography, reading, spending time with my friends and family, traveling, and walking. Much of my love for the outdoors stems from my time in Boy Scouts of America (Troop 1079), where I spent a lot of time out in the sun at summer camp, learned some neat life and outdoor skills, and managed to obtain the rank of Eagle Scout   </p> <br> 
 
 <h3> My Contact Information </h3>
 
-<p> I can best be found on Linkedin. Feel free to send <a href="https://www.linkedin.com/in/andrew-jones-129582191/"> me </a> a message there and I will get back to you as soon as possible. </p> <br>
+<p> I can best be found on Linkedin. Feel free to send <a href="https://www.linkedin.com/in/andrewjones657/"> me </a> a message there and I will get back to you as soon as possible. </p> <br>
 
 <p> Feel free to explore some photos from my travels. I recommend using the full screen functionality at the top-left part of the web map. The ribbon at the top-right contains bookmarks that will center the map extent directly on destinations.  </p> <br>
 
