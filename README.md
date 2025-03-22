@@ -56,7 +56,7 @@
 
 <h3> My hobbies </h3> 
 
-<p> Outside of work, I enjoy camping, cycling, disc golf, hiking, kayaking, photography, reading, spending time with my friends and family, traveling, and walking. Much of my love for the outdoors stems from my time in Boy Scouts of America (Troop 1079), where I spent a lot of time out in the sun at summer camp, learned some neat life and outdoor skills, and managed to obtain the rank of Eagle Scout   </p> <br> 
+<p> Outside of work, I enjoy camping, cycling, disc golf, hiking, kayaking, photography, reading, spending time with my friends and family, traveling, and walking. Much of my love for the outdoors stems from my time in Boy Scouts of America (Troop 1079), where I spent a lot of time out in the sun at summer camp, learned some neat life and outdoor skills, and managed to obtain the rank of Eagle Scout: my <a href="https://i.imgur.com/NL4xMji.jpeg"> eagle scout project </a> was painting the historic Mentz Hotel in Park City, KY.   </p> <br> 
 
 <h3> My Contact Information </h3>
 
