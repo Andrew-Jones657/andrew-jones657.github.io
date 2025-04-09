@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.31/"></script>
 
+</div>
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEPNKDPP7J"></script>
 <script>
@@ -34,8 +37,6 @@
 
   gtag('config', 'G-KEPNKDPP7J');
 </script>
-
-</div>
 
 <h1> <b> A little bit about me </b> </h1>
 
