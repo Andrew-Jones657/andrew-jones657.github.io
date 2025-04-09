@@ -74,6 +74,9 @@
     </style>
 
 
+</head> 
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEPNKDPP7J"></script>
 <script>
@@ -83,8 +86,6 @@
 
   gtag('config', 'G-KEPNKDPP7J');
 </script>
-
-</head> 
 
 <body>
 
