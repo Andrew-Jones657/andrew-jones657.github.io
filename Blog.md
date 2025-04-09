@@ -5,6 +5,8 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
 
+</head>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEPNKDPP7J"></script>
@@ -15,8 +17,6 @@
 
   gtag('config', 'G-KEPNKDPP7J');
 </script>
-
-</head>
 
 <main>
 
