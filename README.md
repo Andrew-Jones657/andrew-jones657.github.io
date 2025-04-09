@@ -25,6 +25,15 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.31/"></script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEPNKDPP7J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KEPNKDPP7J');
+</script>
 
 </div>
 
