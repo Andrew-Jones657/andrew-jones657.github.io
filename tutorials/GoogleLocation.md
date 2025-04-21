@@ -208,7 +208,7 @@
 <p> At this point, the location history can be used in any way desired. Personally, I chose to use my Google data to create an ArcGIS JavaScript API web map that would display some of my travel photos. To do this, around 120 points that corresponded with photo locations were selected. The photos were uploaded to Imgur, and a unique field for the image links was created and populated with the Imgur URLs. The location data shapefile was then converted into a GeoJSON file (using the <em> Features To JSON </em> tool) to ensure it would work seamlessly for online display.   </p> <br>
 
 
-<p> Below is the interactive web map of my travel photos; it is identical to the one on the front page of this website. The code for it can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/travelmap/travel_map.js">here</a>.  </p> <br>
+<p> Below is an older version of the interactive web map of my travel photos from the front page of this website. The code for it can be found <a href="https://raw.githubusercontent.com/Andrew-Jones657/andrew-jones657.github.io/main/files/travelmap/travel_map.js">here</a>.  </p> <br>
 
 <div id="viewDiv" style="width: 650px; height: 450px;  border: 1px solid #444444;"> </div> <br>
 <script src="/files/travelmap/travel_map.js"></script> <br> 
