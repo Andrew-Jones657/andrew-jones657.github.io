@@ -38,6 +38,9 @@
   gtag('config', 'G-KEPNKDPP7J');
 </script>
 
+<a href="https://andrew-jones657.github.io/"> Home </a>  &nbsp; <a href="https://andrew-jones657.github.io/Blog"> Blog </a> &nbsp;  <a href="https://andrew-jones657.github.io/Projects"> Projects </a> &nbsp; <a href="https://andrew-jones657.github.io/Tutorials"> Tutorials </a> &nbsp; <a href="https://andrew-jones657.github.io/Gallery"> Map Gallery </a>   
+
+
 <h1> <b> A little bit about me </b> </h1>
 
 <img src="https://i.imgur.com/rvoF1z4.jpeg" title="source: imgur.com" width="180" height=auto style="float:right; border-radius: 30px" >
