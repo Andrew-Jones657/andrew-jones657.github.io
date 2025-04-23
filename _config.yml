@@ -1,4 +1,12 @@
 theme: jekyll-theme-slate
 title: Andrew Jones 
-description: <a href="https://andrew-jones657.github.io/"> Home </a>  &nbsp; <a href="https://andrew-jones657.github.io/Blog"> Blog </a> &nbsp;  <a href="https://andrew-jones657.github.io/Projects"> Projects </a> &nbsp; <a href="https://andrew-jones657.github.io/Tutorials"> Tutorials </a> &nbsp; <a href="https://andrew-jones657.github.io/Gallery"> Map Gallery </a>    
+description: <p.links> <a href="https://andrew-jones657.github.io/"> Home </a>  &nbsp; <a href="https://andrew-jones657.github.io/Blog"> Blog </a> &nbsp;  <a href="https://andrew-jones657.github.io/Projects"> Projects </a> &nbsp; <a href="https://andrew-jones657.github.io/Tutorials"> Tutorials </a> &nbsp; <a href="https://andrew-jones657.github.io/Gallery"> Map Gallery </a> </plinks>   
 
+<style type="text/css">
+
+p.links {
+  color: White;
+  text-align: center;
+}
+
+</style>
