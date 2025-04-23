@@ -1,10 +1,10 @@
 <style> 
-p (
+p2 {
 text-align: center
 }
 </style>
 
 theme: jekyll-theme-slate
-title: <p> Andrew Jones </p>
-description: <p> <a href="https://andrew-jones657.github.io/"> Home </a>   <a href="https://andrew-jones657.github.io/Blog"> Blog </a>   <a href="https://andrew-jones657.github.io/Projects"> Projects </a> <a href="https://andrew-jones657.github.io/Tutorials"> Tutorials </a> <a href="https://andrew-jones657.github.io/Gallery"> Map Gallery </a> </p>     
+title: <p2> Andrew Jones </p2>
+description: <p2> <a href="https://andrew-jones657.github.io/"> Home </a>   <a href="https://andrew-jones657.github.io/Blog"> Blog </a>   <a href="https://andrew-jones657.github.io/Projects"> Projects </a> <a href="https://andrew-jones657.github.io/Tutorials"> Tutorials </a> <a href="https://andrew-jones657.github.io/Gallery"> Map Gallery </a> </p2>     
 
