@@ -1,7 +1,9 @@
 <style> 
+
 p2 {
-text-align: center
+text-align: center;
 }
+
 </style>
 
 theme: jekyll-theme-slate
