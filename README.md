@@ -22,6 +22,11 @@
         border: 1px solid #444444;
         }
 
+h1 {
+  text-align: center; 
+}
+
+
 h3 {
   text-align: center; 
 }
