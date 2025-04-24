@@ -18,9 +18,17 @@
         height: 100%;
         width: 100%;
         min-height: 450px;
-        mid-width: 650px;
+        min-width: 650px;
         border: 1px solid #444444;
         }
+
+h3 {
+  text-align: center; 
+}
+
+h5 {
+  text-align: center; 
+}
     </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
     <script src="https://js.arcgis.com/4.31/"></script>
