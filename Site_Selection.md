@@ -14,6 +14,14 @@ html, body, #map{
        min-width: 625px;
     }
 
+  h1{
+  text-align: center;
+  }
+
+  h2{
+  text-align: center;
+  }
+
   h3{
   text-align: center;
   }
