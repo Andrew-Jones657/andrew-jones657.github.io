@@ -22,27 +22,27 @@
         border: 1px solid #444444;
         }
 
-h1 {
+h1{
   text-align: center; 
 }
 
-h2 {
+h2{
   text-align: center; 
 }
 
-h3 {
+h3{
   text-align: center; 
 }
 
-h4 {
+h4{
   text-align: center; 
 }
 
-h5 {
+h5{
   text-align: center; 
 }
 
-h6 {
+h6{
   text-align: center; 
 }
     </style>
