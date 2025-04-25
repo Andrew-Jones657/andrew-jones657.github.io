@@ -17,6 +17,10 @@ html, body, #map{
   h3{
   text-align: center;
   }
+
+  h5{
+  text-align: center;
+  }
   
   .tablecenter {
   margin-left: auto;
