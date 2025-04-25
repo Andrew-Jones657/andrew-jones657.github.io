@@ -1,3 +1,31 @@
+<head>
+<style>
+h1{
+  text-align: center; 
+}
+
+h2{
+  text-align: center; 
+}
+
+h3{
+  text-align: center; 
+}
+
+h4{
+  text-align: center; 
+}
+
+h5{
+  text-align: center; 
+}
+
+h6{
+  text-align: center; 
+}
+</style>
+</head>
+
 <div>
     <meta charset="utf-8" />
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
@@ -22,32 +50,11 @@
         border: 1px solid #444444;
         }
 
-h1{
-  text-align: center; 
-}
 
-h2{
-  text-align: center; 
-}
-
-h3{
-  text-align: center; 
-}
-
-h4{
-  text-align: center; 
-}
-
-h5{
-  text-align: center; 
-}
-
-h6{
-  text-align: center; 
-}
-    </style>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.31/"></script>
+</style>
+    
+<link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
+<script src="https://js.arcgis.com/4.31/"></script>
 
 </div>
 
