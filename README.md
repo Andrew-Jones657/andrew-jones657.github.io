@@ -1,5 +1,6 @@
 <head>
 <style>
+  
 h1{
   text-align: center; 
 }
@@ -23,7 +24,9 @@ h5{
 h6{
   text-align: center; 
 }
+
 </style>
+
 </head>
 
 <div>
