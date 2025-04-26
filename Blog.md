@@ -20,7 +20,7 @@
 
 <main>
 
-<h1> Welcome to my blog! </h1>
+<h1> Welcome to my Blog! </h1>
 
 <div style="border: 2px solid rgb(0, 0, 0); overflow: hidden; text-align:left; max-width: 736px;">
 <iframe scrolling="no" src="https://andrew-jones657.github.io/blog_posts/2-12-2025-Closing-In" style="border: none; height: 1100px; width:100%; margin-top: -250px; margin-bottom: -10px">
