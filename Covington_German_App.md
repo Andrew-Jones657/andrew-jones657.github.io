@@ -70,7 +70,7 @@
       .esri-slider {
         height: 40px;
         background: none;
-        width: 75%;
+        width: 70%;
       }
 
       .leftPadding{
@@ -125,7 +125,7 @@
     <calcite-panel
       slot="contextual-panel"
       id="infoDiv"
-      heading="1909 Covington KY Sanborn Fire Insurance Map"
+      heading="Sanborn Fire Insurance Map (1909)"
     >
       <br />
       <div id="elementsDiv"></div>
