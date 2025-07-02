@@ -436,6 +436,8 @@
    <div id="caption"></div>   
 </div> <br>
 
+
+
 <script>
 // create references to the modal...
 var modal = document.getElementById('myModal');
