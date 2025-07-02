@@ -351,7 +351,7 @@
 </figure> <br>
 
 
-<p> An interactive Leaflet web map below displays the final results of the project. The red polygons denote areas that have experienced urbanization since 2000. As mentioned in the discussion for Figure 12,  Note that while polygons outside of Boone County were removed from the layer, some areas that suggest urbanization are actually the false positives from the land classification algorithm earlier.    </p> <br>
+<p> An interactive Leaflet web map below displays the final results of the project (Figure 14). The red polygons denote areas that have experienced urbanization since 2000. Note that while polygons outside of Boone County were removed from the layer, some areas that suggest urbanization are actually false positives from the land classification algorithm earlier.    </p> <br>
 
 
 <div id="map"></div>
