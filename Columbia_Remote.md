@@ -430,6 +430,12 @@
 
 <p> <em> Common landsat Band Combinations</em>. (2021). USGS. https://www.usgs.gov/media/images/common-landsat-band-combinations </p>
 
+<div id="myModal" class="modal">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="img01">
+   <div id="caption"></div>   
+</div> <br>
+
 <script>
 // create references to the modal...
 var modal = document.getElementById('myModal');
