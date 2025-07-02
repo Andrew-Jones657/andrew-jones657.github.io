@@ -142,7 +142,7 @@
         const imageInfos = [
           {
             name: "covington1909",
-            title: "Covington 1909",
+            title: "Georeferenced Basemap",
             extent: {
                 xmin: -84.565464,
                 ymin: 39.030186,
@@ -232,7 +232,7 @@
 
           const sliderLabel = document.createElement("calcite-label");
           sliderLabel.layout = "inline";
-          sliderLabel.innerHTML = "opacity";
+          sliderLabel.innerHTML = "Opacity";
           sliderLabel.appendChild(slider.container);
 
           const sliderDiv = document.createElement("div");
