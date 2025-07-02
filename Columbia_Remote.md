@@ -153,7 +153,7 @@
 
 <body>
 
-<h1> Detecting Land Use Change with Google Earth Engine </h1> <br>
+<h1 style="text-align:center;"> Detecting Land Use Change with Google Earth Engine </h1> <br>
 
 
 <p> Remote sensing has emerged as a powerful tool for monitoring land use change, providing valuable insights into environmental and urban dynamics. By utilizing satellite imagery and aerial photography, researchers can analyze variations in land cover over time, detecting shifts from natural landscapes to urban developments, agricultural expansion, or deforestation. This technology allows for the collection of large-scale data, enabling the assessment of changes in land use patterns across diverse regions. Moreover, remote sensing facilitates the identification of trends and the impacts of human activities on ecosystems, aiding in effective land management and policymaking. Through advanced analytical techniques, such as machine learning and image classification, remote sensing continues to enhance our understanding of the complex interplay between human development and environmental sustainability. </p> <br>
