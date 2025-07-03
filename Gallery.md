@@ -260,6 +260,8 @@
 <figcaption> Covington's German Element: Social Institutions from 1861 to 1920 </figcaption>
 </figure> <br>
 
+<p> Click on the image to be directed to the interactive map, desktop recommended. </p> 
+
 <p> 2/4/2025 </p> <br>
 
 <div class="line"></div> <br>
