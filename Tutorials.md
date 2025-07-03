@@ -12,9 +12,21 @@
     width: 500px;
     }
 
-    h3{
-    text-align:center;
-    }
+  h1{
+  text-align: center;
+  }
+
+  h2{
+  text-align: center;
+  }
+
+  h3{
+  text-align: center;
+  }
+
+  h5{
+  text-align: center;
+  }
 
     img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
