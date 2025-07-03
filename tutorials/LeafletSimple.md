@@ -21,9 +21,23 @@
   cursor: pointer;
   transition: 0.3s;
         }
-    h3 {
-	    text-align: center;
-    }
+	    
+  h1{
+  text-align: center;
+  }
+
+  h2{
+  text-align: center;
+  }
+
+  h3{
+  text-align: center;
+  }
+
+  h5{
+  text-align: center;
+  }
+    
   #myImg:hover {
   opacity: 0.7;
         }
