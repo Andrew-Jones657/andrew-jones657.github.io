@@ -14,6 +14,22 @@
         width: 100%;
         }
         
+  h1{
+  text-align: center;
+  }
+
+  h2{
+  text-align: center;
+  }
+
+  h3{
+  text-align: center;
+  }
+
+  h5{
+  text-align: center;
+  }
+  
 #viewDiv {
             padding: 0;
             margin: 0;
