@@ -5,6 +5,26 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
 
+<style>
+
+  h1{
+  text-align: center;
+  }
+
+  h2{
+  text-align: center;
+  }
+
+  h3{
+  text-align: center;
+  }
+
+  h5{
+  text-align: center;
+  }
+    
+</style>
+
 </head>
 
 
