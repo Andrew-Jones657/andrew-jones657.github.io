@@ -8,10 +8,22 @@
   <title> New Urban Areas in Columbia, MO 2000-2024 </title>
     
  <style>
+  h1{
+  text-align: center;
+  }
+
+  h2{
+  text-align: center;
+  }
+
   h3{
   text-align: center;
   }
-  
+
+  h5{
+  text-align: center;
+  }
+	 
   .tablecenter {
   margin-left: auto;
   margin-right: auto;
