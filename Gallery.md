@@ -235,6 +235,16 @@
 
 
 <figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/ojy2Ad7.jpeg" alt="BG_Income" style="width:100%;max-width:625px"> 
+<figcaption> Diversity, Housing, and Income in Bowling Green KY </figcaption>
+</figure> <br>
+
+<p> 7/2/2025 </p> <br>
+
+<div class="line"></div> <br>
+
+
+<figure>
 <img class="myImages" id="myImg" src="https://i.imgur.com/f7a7Etc.jpeg" alt="Nordlingen" style="width:100%;max-width:625px"> 
 <figcaption> The Nördlinger Ries </figcaption>
 </figure> <br>
