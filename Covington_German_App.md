@@ -86,7 +86,7 @@
       .esri-slider {
         height: 40px;
         background: none;
-        width: 70%;
+        width: 80%;
       }
 
       .leftPadding{
