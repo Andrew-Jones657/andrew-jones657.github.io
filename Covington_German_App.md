@@ -41,7 +41,7 @@
       .inner {
       position: relative;
       max-width: 1200px;
-      padding: 20px 10px;
+      padding: 10px 10px;
       margin: 0 auto;
       }
   
