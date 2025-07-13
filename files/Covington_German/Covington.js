@@ -232,7 +232,7 @@
 
           const sliderLabel = document.createElement("calcite-label");
           sliderLabel.layout = "inline";
-          sliderLabel.innerHTML = "Opacity";
+          sliderLabel.innerHTML = "Opac.";
           sliderLabel.appendChild(slider.container);
 
           const sliderDiv = document.createElement("div");
