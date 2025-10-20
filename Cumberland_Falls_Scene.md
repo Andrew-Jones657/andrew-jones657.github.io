@@ -87,11 +87,6 @@
   </div>
   
 <script type="module" src="./files/Cumberland_Falls/Cumberland.js"></script> <br> 
-  
-<figure>
-<figcaption> Cumberland Falls Web Map </figcaption>
-</figure> <br>
-
 
 </body>
 
