@@ -17,10 +17,11 @@
       width: 100%;
       margin: 0;
       padding: 0;
-	    min-height: 750px;
+	  min-height: 750px;
       min-width: auto;
       border: 1px solid #444444;
       }
+
   h1{
   text-align: center;
   }
@@ -80,11 +81,6 @@
 <body>
 
   <div id="viewDiv"></div>
-  <div id="titleDiv" class="esri-widget">
-      <div id="titleText">Cumberland Falls State Resort Park</div>
-      <div>Photos and Trails, July 2024</div>
-  </div>
-
 
 <script src="./files/Cumberland_Falls/Cumberland.js"></script> <br> 
   
