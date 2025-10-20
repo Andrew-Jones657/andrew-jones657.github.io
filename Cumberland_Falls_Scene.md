@@ -49,29 +49,6 @@
         width: 320px;
       }
 
-     #years-filter {
-        height: 280px;
-        width: 160px;
-        visibility: hidden;
-      }
-
-      .year-item {
-        width: 100%;
-        padding: 12px;
-        text-align: center;
-        vertical-align: baseline;
-        cursor: pointer;
-        height: 40px;
-      }
-
-      .year-item:focus {
-        background-color: dimgrey;
-      }
-
-      .year-item:hover {
-        background-color: dimgrey;
-      }
-
       #titleDiv {
         padding: 10px;
       }
@@ -82,11 +59,7 @@
         padding-bottom: 10px;
       }
 
-      .esri-slider {
-        height: 40px;
-        background: none;
-        width: 80%;
-      }
+
 
       .leftPadding{
         padding-left: 5px;
@@ -111,11 +84,15 @@
       <div id="titleText">Cumberland Falls State Resort Park</div>
       <div>Photos and Trails, July 2024</div>
   </div>
+
+
+<script src="./files/Cumberland_Falls/Cumberland.js"></script> <br> 
   
 <figure>
 <figcaption> Cumberland Falls Web Map </figcaption>
 </figure> <br>
 
-<script src="./files/Cumberland_Falls/Cumberland.js"></script> <br> 
 
 </body>
+
+</html>
