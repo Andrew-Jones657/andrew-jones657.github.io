@@ -99,9 +99,6 @@
       
 </style>
 
-<script type="module" src="https://js.arcgis.com/calcite-components/2.13.2/calcite.esm.js"></script>
-<link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.13.2/calcite.css"/>
-
 <link rel="stylesheet" href="https://js.arcgis.com/4.33/esri/themes/light/main.css" />
 <script src="https://js.arcgis.com/4.33/"></script>
 
@@ -114,8 +111,11 @@
       <div id="titleText">Cumberland Falls State Resort Park</div>
       <div>Photos and Trails, July 2024</div>
   </div>
+  
+<figure>
+<figcaption> Cumberland Falls Web Map </figcaption>
+</figure> <br>
 
-
-<script src="./files/Covington_German/Covington.js"></script> <br> 
+<script src="./files/Cumberland_Falls/Cumberland.js"></script> <br> 
 
 </body>
