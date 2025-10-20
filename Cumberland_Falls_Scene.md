@@ -109,11 +109,11 @@
 
 <body>
 
-
+  <div id="viewDiv"></div>
   <div id="titleDiv" class="esri-widget">
       <div id="titleText">Cumberland Falls State Resort Park</div>
       <div>Photos and Trails, July 2024</div>
-    </div>
+  </div>
 
 
 <script src="./files/Covington_German/Covington.js"></script> <br> 
