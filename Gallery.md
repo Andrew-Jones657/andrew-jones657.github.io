@@ -248,7 +248,7 @@
 <figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Cumberland_Falls_Scene">
 <img class="myImages" id="myImg" src="https://i.imgur.com/wo2uwKP.png" alt="Cumberland" style="width:100%;max-width:625px"> </a>
-<figcaption> Covington's German Element: Social Institutions from 1861 to 1920 </figcaption>
+<figcaption> Cumberland Falls Photos and Trails 3D Scene </figcaption>
 </figure> <br>
 
 
