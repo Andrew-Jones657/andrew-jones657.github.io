@@ -83,7 +83,7 @@
   <div id="viewDiv"></div>
   <div id="titleDiv" class="esri-widget">
       <div id="titleText">Cumberland Falls State Resort Park</div>
-      <div>Photos and Trails, July 2024</div>
+      <div>Photos and Trails, July 2025</div>
   </div>
   
 <script type="module" src="./files/Cumberland_Falls/Cumberland.js"></script> <br> 
