@@ -217,9 +217,9 @@ h6{
   </div>
 </div> 
 
+<h3> ESRI GIS Applications </h3>
 
-
-
+<p> WIP </p>
 
 
 </body>
