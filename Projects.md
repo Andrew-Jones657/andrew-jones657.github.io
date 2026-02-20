@@ -111,7 +111,7 @@ h6{
 
 <h1 style="text-align:center;"> Welcome to my Projects Page </h1>
 
-<p> This page contains my academic, personal, and professional projects. Click on an image thumbnail to be directed to the respective project. </p> <br>
+<p> This page contains my academic, personal, and professional projects, as well as ESRI GIS applications that I have created. Click on an image thumbnail to be directed to the respective project. </p> <br>
 
 <h3> Professional Experience StoryMaps </h3> 
 
