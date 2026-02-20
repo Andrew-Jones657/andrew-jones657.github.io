@@ -238,7 +238,7 @@ h6{
  <div class="row">
   <div class="columnImg">
     <a target="_blank" href="">
-    <img src="https://i.imgur.com/D35Ub0N.jpeg" alt="Paranormal Dashboard" style="width:100%">
+    <img src="https://i.imgur.com/b8Ml8yl.png" alt="Paranormal Dashboard" style="width:100%">
     </a>
   </div>
   <div class="columnSpace"> 
