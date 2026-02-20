@@ -113,7 +113,7 @@ h6{
 
 <p> This page contains my academic, personal, and professional projects. Click on an image thumbnail to be directed to the respective project. </p> <br>
 
-<h3> Professional Projects </h3> 
+<h3> Professional Experience StoryMaps </h3> 
 
 
 
@@ -150,7 +150,7 @@ h6{
 
 
 
-<h3> Personal Projects </h3> 
+<h3> Personal GIS Projects </h3> 
 
 
  <div class="row">
@@ -200,7 +200,7 @@ h6{
 </div> 
 
 
-<h3> Academic Projects </h3> 
+<h3> Academic Publications </h3> 
 
 
  <div class="row">
