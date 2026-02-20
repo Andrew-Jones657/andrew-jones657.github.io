@@ -219,7 +219,35 @@ h6{
 
 <h3> ESRI GIS Applications </h3>
 
-<p> WIP </p>
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="">
+    <img src="https://i.imgur.com/02M7j5n.png" alt="Fire Service GIS Data Browser" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Site Selection Project: ArcGIS Experience Builder GIS Data Browser </h5>
+    <p> This ArcGIS Experience Builder app displays the GIS layers I used in the site selection project. (WIP -- Not available yet) </p>
+  </div>
+</div> 
+
+<div class="line"></div>
+
+ <div class="row">
+  <div class="columnImg">
+    <a target="_blank" href="">
+    <img src="https://i.imgur.com/D35Ub0N.jpeg" alt="Paranormal Dashboard" style="width:100%">
+    </a>
+  </div>
+  <div class="columnSpace"> 
+  </div>
+  <div class="columnText">
+    <h5> Warren County, KY Paranormal Places: ArcGIS Dashboard </h5>
+    <p> An ArcGIS Dashboard that ties in ArcGIS Field Maps and Survey123 data to display locations with paranormal accounts in Warren County, KY (WIP -- Not available yet) </p>
+  </div>
+</div> 
 
 
 </body>
