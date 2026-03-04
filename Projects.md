@@ -221,7 +221,7 @@ h6{
 
  <div class="row">
   <div class="columnImg">
-    <a target="_blank" href="">
+    <a target="_blank" href="https://experience.arcgis.com/experience/1948c1538ddf4ddb98e204e3de6b8499/">
     <img src="https://i.imgur.com/02M7j5n.png" alt="Fire Service GIS Data Browser" style="width:100%">
     </a>
   </div>
@@ -229,7 +229,7 @@ h6{
   </div>
   <div class="columnText">
     <h5> Site Selection Project: ArcGIS Experience Builder GIS Data Browser </h5>
-    <p> This ArcGIS Experience Builder app displays the GIS layers I used in the site selection project. (WIP -- Not available yet) </p>
+    <p> This ArcGIS Experience Builder web app displays the GIS layers used in the site selection project. </p>
   </div>
 </div> 
 
