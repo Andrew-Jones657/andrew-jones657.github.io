@@ -171,6 +171,8 @@ box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;  }
 
 <p> To assess potential upgrades to existing fire stations, population density, long-term trends, and possible future land use changes will be analyzed. As fire stations are central to this analysis, a site that optimally enhances fire response services for the surrounding population will need to be identified. This will be achieved through service area analysis, areal proportion analysis, and location allocation analysis methods. </p> <br>
 
+<p> As of 3/4/2026, I have created an ArcGIS Experience Builder web app to allow viewing the GIS layers used in this project. The web app can be found <a href="https://experience.arcgis.com/experience/1948c1538ddf4ddb98e204e3de6b8499/"> here </a>. </p>
+
 <p> <em> To best read content on this article, you may need zoom in on your browser using CTRL and the + key or CTRL and UP on the mouse scroll wheel. You can also click on images to see a zoomed in pop up. </em> </p> <br>
 
 <h3> Spatial Data for the Site Selection Analysis and General Workflow </h3> <br>
