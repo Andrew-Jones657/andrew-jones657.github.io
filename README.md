@@ -95,11 +95,11 @@ h6{
 
 <h3> What I used to do  </h3>
 
-<p> Most recently, I worked at <b> the Missouri House of Representatives </b> as the GIS redistricting analyst. In this position, I assisted representatives with drafting congressional district plans and I provided all sorts of data figures from the 2020 US Census. I also helped update the House's web map API from the old Google Maps API to the Leaflet API, and I created 163 custom maps for each of the newly redistricted state house districts.  <br> <br> I have also worked at <b> Warren County Public Works Division of Stormwater Management </b> as a GIS services intern. Here, I had the opportunity to do various GIS related tasks for the department, and I learned a lot about database management by helping create the stormwater asset collection form that I later used to collect over 1000 stormwater assets across Warren County, KY.    </p> <br>
+<p> Most recently, I was working as a freelance analyst performing GIS analysis and some other  I also worked at <b> the Missouri House of Representatives </b> as the GIS redistricting analyst. In this position, I assisted representatives with drafting congressional district plans and I provided all sorts of data figures from the 2020 US Census. I also helped update the House's web map API from the old Google Maps API to the Leaflet API, and I created 163 custom maps for each of the newly redistricted state house districts.  <br> <br> I have also worked at <b> Warren County Public Works Division of Stormwater Management </b> as a GIS services intern. Here, I had the opportunity to do various GIS related tasks for the department, and I learned a lot about database management by helping create the stormwater asset collection form that I later used to collect over 1000 stormwater assets across Warren County, KY.    </p> <br>
 
 <h3> What I am doing now </h3>
 
-<p> Currently, I am searching for a new position! Since my temporary position at the Missouri House of Representatives ended in July of 2023, I have been spending my time helping my family out with temporary health issues, traveling, and working part time as a freelance analyst. </p> <br>
+<p> Currently, I am a GIS Technician with the City of Clarksville, Tennessee. This position is within the city street department, which primarily involves providing infrastructure and public utility updates for the city's enterprise GIS. This also includes aerial photography and 3D/point cloud rendering of capital infrastructure and capital projects. So far I have learned a good bit here -- it's very different from my position at the Missouri House of Representatives!  </p> <br>
 
 <h3> My hobbies </h3> 
 
