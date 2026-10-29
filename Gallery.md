@@ -246,6 +246,17 @@
 <p> This page serves as a gallery of single-theme cartographic products that I have created. </p> <br>
 
 <figure>
+<img class="myImages" id="myImg" src="https://i.imgur.com/bcmw1kS.png" alt="Clarksville" style="width:100%;max-width:625px"> 
+<figcaption> Clarksville From Above </figcaption>
+</figure> <br>
+
+<p> 10/29/2026 </p> <br>
+
+<div class="line"></div> <br>
+
+
+
+<figure>
 <a target="_blank" href="https://andrew-jones657.github.io/Cumberland_Falls_Scene">
 <img class="myImages" id="myImg" src="https://i.imgur.com/wo2uwKP.png" alt="Cumberland" style="width:100%;max-width:625px"> </a>
 <figcaption> Cumberland Falls Photos and Trails 3D Scene </figcaption>
